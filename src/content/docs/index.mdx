@@ -7,7 +7,7 @@ hero:
   tagline: Deutsch · English · Svenska
   actions:
     - text: Swedish Basics
-      link: ./language-specific-rules/#swedish
+      link: ./grammar/nouns-articles/swedish-en-ett/
       icon: right-arrow
     - text: Browse Grammar
       link: ./grammar/
@@ -16,9 +16,25 @@ hero:
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import LanguageComparison from '../../components/LanguageComparison.astro';
 
 A personal language reference for comparing German, English, and Swedish, with
 Swedish as the current learning focus.
+
+<LanguageComparison title="One meaning, three languages">
+	<p slot="de">Ich habe ein Auto.</p>
+	<p slot="en">I have a car.</p>
+	<p slot="sv">Jag har en bil.</p>
+</LanguageComparison>
+
+## Swedish quick start
+
+- [Learn when to use *en* and *ett*](./grammar/nouns-articles/swedish-en-ett/)
+- [Understand V2 word order](./grammar/sentence-structure/swedish-v2/)
+- [Place *inte* with BIFF](./grammar/sentence-structure/swedish-biff/)
+- [Build Swedish noun forms](./grammar/nouns-articles/swedish-noun-forms/)
+- [Match adjective endings](./grammar/adjectives-adverbs/swedish-adjective-agreement/)
+- [Recognize the core verb forms](./grammar/verbs/swedish-verb-forms/)
 
 ## Explore the reference
 

@@ -1,0 +1,109 @@
+---
+title: Swedish Adjective Comparison
+description: Form Swedish comparatives and superlatives with regular endings, irregular forms, and mer or mest.
+---
+
+Swedish adjectives can express three degrees: positive, comparative, and
+superlative. Many short adjectives use the endings
+<span lang="sv">-are</span> and <span lang="sv">-ast</span>; other adjectives
+change irregularly or use <span lang="sv">mer</span> and
+<span lang="sv">mest</span>.
+
+**Level:** A2  
+**Focus:** Swedish adjectives
+
+## Regular comparison
+
+| Degree | Ending | Example |
+| --- | --- | --- |
+| positive | base form | <span lang="sv">snabb</span> |
+| comparative | often <span lang="sv">-are</span> | <span lang="sv">snabbare</span> |
+| superlative | often <span lang="sv">-ast</span> | <span lang="sv">snabbast</span> |
+
+In a comparison, <span lang="sv">än</span> means “than”:
+
+<p lang="sv">Tåget är snabbare än bussen.</p>
+
+The basic predicative superlative does not need an ending for gender or number:
+
+<p lang="sv">Det här tåget är snabbast.</p>
+
+## Frequent irregular forms
+
+| Positive | Comparative | Superlative | Meaning |
+| --- | --- | --- | --- |
+| <span lang="sv">stor</span> | <span lang="sv">större</span> | <span lang="sv">störst</span> | big |
+| <span lang="sv">liten</span> | <span lang="sv">mindre</span> | <span lang="sv">minst</span> | small |
+| <span lang="sv">gammal</span> | <span lang="sv">äldre</span> | <span lang="sv">äldst</span> | old |
+| <span lang="sv">bra</span> | <span lang="sv">bättre</span> | <span lang="sv">bäst</span> | good |
+| <span lang="sv">dålig</span> | <span lang="sv">sämre</span> | <span lang="sv">sämst</span> | bad |
+
+These common forms are best learned as sets.
+
+## Comparison with *mer* and *mest*
+
+Some adjectives, especially longer adjectives and many participial adjectives,
+are commonly compared with <span lang="sv">mer</span> and
+<span lang="sv">mest</span>:
+
+<p lang="sv">komplicerad → mer komplicerad → mest komplicerad</p>
+
+<p lang="sv">överraskande → mer överraskande → mest överraskande</p>
+
+Usage can vary for some adjectives. When both a suffixed form and a
+<span lang="sv">mer</span> construction occur, follow established usage rather
+than mechanically applying one rule to every word.
+
+## Attributive superlatives
+
+Before a definite noun, use the adjective's definite superlative form. Its
+ending depends on the comparison pattern:
+
+- <span lang="sv">den snabbaste bilen</span>
+- <span lang="sv">det största huset</span>
+- <span lang="sv">de bästa resultaten</span>
+
+This construction also uses the definite article and definite noun expected by
+[Swedish adjective agreement](../swedish-adjective-agreement/). A masculine
+singular form in <span lang="sv">-e</span>, such as
+<span lang="sv">den bäste spelaren</span>, also occurs, especially when a male
+person is explicitly meant. The non-masculine-specific form, for example
+<span lang="sv">den bästa spelaren</span>, is also widely used.
+
+## Direct comparison
+
+| Language | Positive → comparative → superlative |
+| --- | --- |
+| <span lang="de">🇩🇪 Deutsch</span> | <span lang="de">groß → größer → am größten</span> |
+| <span lang="en">🇬🇧 English</span> | <span lang="en">big → bigger → biggest</span> |
+| <span lang="sv">🇸🇪 Svenska</span> | <span lang="sv">stor → större → störst</span> |
+
+All three languages have regular and irregular patterns. English
+<span lang="en">more / most</span> can be a useful bridge to Swedish
+<span lang="sv">mer / mest</span>, but the languages do not choose the analytic
+pattern for exactly the same set of adjectives.
+
+:::caution[Common mistakes]
+Do not combine both comparison strategies:
+
+<span lang="sv">❌ mer snabbare</span>  
+<span lang="sv">✅ snabbare</span>
+
+Learn irregular sets instead of adding regular endings:
+
+<span lang="sv">❌ braare / braast</span>  
+<span lang="sv">✅ bättre / bäst</span>
+:::
+
+:::tip[Memory tip]
+Store each frequent adjective as a three-step ladder:
+<span lang="sv"><strong>stor — större — störst</strong></span>. If the adjective
+is long or participial, check whether <span lang="sv">mer — mest</span> is the
+natural pattern.
+:::
+
+## Related topics
+
+- [Swedish adjective agreement](../swedish-adjective-agreement/)
+- [Swedish en / ett](../../nouns-articles/swedish-en-ett/)
+- [Swedish noun forms](../../nouns-articles/swedish-noun-forms/)

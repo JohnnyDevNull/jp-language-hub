@@ -1,0 +1,88 @@
+---
+title: Swedish BIFF
+description: Use the BIFF memory rule to place inte and other sentence adverbs in Swedish subordinate clauses.
+---
+
+**BIFF** is a Swedish memory rule for the placement of sentence adverbs in
+subordinate clauses:
+
+> **B**isats: **I**nte **F**öre **F**init  
+> In a subordinate clause, <span lang="sv">inte</span> comes before the finite verb.
+
+**Level:** A2  
+**Focus:** Swedish subordinate-clause word order
+
+## Core contrast
+
+| Clause | Swedish | Position of *inte* |
+| --- | --- | --- |
+| Main clause | <span lang="sv">Jag <strong>kommer inte</strong> idag.</span> | after the finite verb |
+| Subordinate clause | <span lang="sv">… eftersom jag <strong>inte kommer</strong> idag.</span> | before the finite verb |
+
+A practical subordinate-clause pattern is:
+
+> **subordinator + subject + sentence adverb + finite verb + rest**
+
+<p lang="sv">Jag stannar hemma <strong>eftersom jag inte mår bra</strong>.</p>
+
+## Common subordinators
+
+BIFF becomes useful after words such as:
+
+- <span lang="sv">att</span> — that
+- <span lang="sv">eftersom</span> — because
+- <span lang="sv">om</span> — if / whether
+- <span lang="sv">när</span> — when
+- <span lang="sv">fast</span> — although / even though
+- <span lang="sv">innan</span> — before
+
+Examples:
+
+- <span lang="sv">Jag vet att hon inte arbetar idag.</span>
+- <span lang="sv">Vi går ut om det inte regnar.</span>
+- <span lang="sv">Han ringde när jag inte var hemma.</span>
+
+## More than *inte*
+
+The same position is used by many sentence adverbs, for example
+<span lang="sv">alltid</span>, <span lang="sv">aldrig</span>,
+<span lang="sv">kanske</span>, and <span lang="sv">redan</span>, although their
+exact meaning and preferred placement can depend on context.
+
+<p lang="sv">Hon säger att hon <strong>aldrig äter</strong> kött.</p>
+
+## Direct comparison
+
+| Language | Main clause | Subordinate clause |
+| --- | --- | --- |
+| <span lang="de">🇩🇪 Deutsch</span> | <span lang="de">Ich komme heute nicht.</span> | <span lang="de">… weil ich heute nicht komme.</span> |
+| <span lang="en">🇬🇧 English</span> | <span lang="en">I am not coming today.</span> | <span lang="en">… because I am not coming today.</span> |
+| <span lang="sv">🇸🇪 Svenska</span> | <span lang="sv">Jag kommer inte idag.</span> | <span lang="sv">… eftersom jag inte kommer idag.</span> |
+
+English does not show the Swedish finite-verb contrast clearly. German also
+changes subordinate-clause order, but its finite verb normally moves to the end;
+that is not the Swedish rule.
+
+:::caution[Common mistake]
+Do not keep main-clause placement inside a subordinate clause.
+
+<span lang="sv">❌ Jag stannar hemma eftersom jag mår inte bra.</span>  
+<span lang="sv">✅ Jag stannar hemma eftersom jag inte mår bra.</span>
+:::
+
+:::note[BIFF is a learning rule]
+BIFF helps locate sentence adverbs; it is not a complete grammar of Swedish
+subordinate clauses. You still need the subordinator, a subject, the appropriate
+verb forms, and the rest of the clause.
+:::
+
+:::tip[Memory tip]
+In a **BI**sats, put **I**nte **F**öre the **F**inite verb.
+:::
+
+## Related topics
+
+- [Placement of *inte*](../inte-placement/)
+- [Swedish V2](../swedish-v2/)
+- [Swedish inversion](../swedish-inversion/)
+- [Swedish basic word order](../swedish-basic-word-order/)

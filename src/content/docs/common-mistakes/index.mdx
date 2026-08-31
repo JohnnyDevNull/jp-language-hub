@@ -1,0 +1,52 @@
+---
+title: Common Mistakes
+description: Typical transfer errors between German, English, and Swedish.
+---
+
+import MistakeBox from '../../../components/MistakeBox.astro';
+
+This section collects mistakes caused by transferring familiar patterns from
+one language into another. Each correction links the visible symptom to the
+underlying rule.
+
+## Word order after a fronted element
+
+<MistakeBox
+	incorrect="Idag jag köper en bil."
+	correct="Idag köper jag en bil."
+	lang="sv"
+>
+	A fronted time expression occupies the first position, so the finite verb
+	must come next. See [Swedish V2](../grammar/sentence-structure/swedish-v2/).
+</MistakeBox>
+
+## Main clause order inside a subordinate clause
+
+<MistakeBox
+	incorrect="... eftersom jag kommer inte idag."
+	correct="... eftersom jag inte kommer idag."
+	lang="sv"
+>
+	In a typical Swedish subordinate clause, a sentence adverb such as `inte`
+	precedes the finite verb. See
+	[BIFF](../grammar/sentence-structure/swedish-biff/).
+</MistakeBox>
+
+## Missing noun agreement
+
+<MistakeBox incorrect="ett stor hus" correct="ett stort hus" lang="sv">
+	The adjective agrees with an `ett` noun. See
+	[adjective agreement](../grammar/adjectives-adverbs/swedish-adjective-agreement/).
+</MistakeBox>
+
+## Using a reflexive possessive for the wrong owner
+
+<MistakeBox
+	incorrect="Anna såg Erik och hans hund. (if the dog belongs to Anna)"
+	correct="Anna såg Erik och sin hund."
+	lang="sv"
+>
+	Use `sin`, `sitt`, or `sina` when the possessive refers back to the subject of
+	the same clause. See
+	[reflexive possessives](../grammar/pronouns-function-words/sin-sitt-sina/).
+</MistakeBox>

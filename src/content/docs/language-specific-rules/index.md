@@ -20,12 +20,10 @@ countable and uncountable nouns, phrasal verbs, and irregular verbs.
 
 ## Swedish
 
-Swedish is the current learning focus. The first references will cover:
+Swedish is the current learning focus. Start with these compact references:
 
-- en and ett nouns
-- indefinite, definite, and plural noun forms
-- adjective agreement and comparison
-- V2, inversion, subordinate-clause word order, and BIFF
-- verb groups, the supine, and particle verbs
-- sin, sitt, and sina
-- common pronoun and preposition patterns
+- [*en* and *ett*](./swedish/en-ett/)
+- [V2 and BIFF](./swedish/v2-biff/)
+- [*sin*, *sitt*, and *sina*](./swedish/sin-sitt-sina/)
+
+Each summary links to the complete canonical grammar explanation.

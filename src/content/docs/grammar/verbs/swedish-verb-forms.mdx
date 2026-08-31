@@ -1,0 +1,103 @@
+---
+title: Swedish verb forms
+description: An overview of the core Swedish verb forms and how they work together.
+---
+
+import VerbTable from '../../../../components/VerbTable.astro';
+
+Swedish verbs do not change according to person or number. The same form is
+used with <span lang="sv">jag</span>, <span lang="sv">du</span>,
+<span lang="sv">hon</span>, and <span lang="sv">de</span>. The main learning
+task is therefore recognizing the form and choosing the right tense.
+
+## Core forms
+
+Using <span lang="sv">köpa</span> (“buy”) as an example:
+
+| Form | Swedish | Main use |
+| --- | --- | --- |
+| Infinitive | <span lang="sv">(att) köpa</span> | Dictionary form; used after <span lang="sv">att</span> and many modal verbs |
+| Imperative | <span lang="sv">köp!</span> | Commands and requests |
+| Present | <span lang="sv">köper</span> | Present situations, habits, and some future events |
+| Preterite | <span lang="sv">köpte</span> | Events located in a completed past time frame |
+| Supine | <span lang="sv">köpt</span> | Used with <span lang="sv">har</span> or <span lang="sv">hade</span> |
+| Perfect | <span lang="sv">har köpt</span> | Past events connected to the present |
+
+<VerbTable
+	forms={[
+		{ label: 'Infinitive', value: 'att köpa' },
+		{ label: 'Imperative', value: 'köp' },
+		{ label: 'Present', value: 'köper' },
+		{ label: 'Preterite', value: 'köpte' },
+		{ label: 'Supine', value: 'köpt' },
+		{ label: 'Perfect', value: 'har köpt' },
+	]}
+	caption="Core forms of köpa"
+/>
+
+:::note[One form for every person]
+<span lang="sv">Jag köper</span>, <span lang="sv">du köper</span>, and
+<span lang="sv">de köper</span> all use the same present form.
+:::
+
+## The form chain
+
+Learning a new Swedish verb as a short form chain is more useful than learning
+only its infinitive:
+
+| Infinitive | Imperative | Present | Preterite | Supine |
+| --- | --- | --- | --- | --- |
+| <span lang="sv">att tala</span> | <span lang="sv">tala!</span> | <span lang="sv">talar</span> | <span lang="sv">talade</span> | <span lang="sv">talat</span> |
+| <span lang="sv">att köpa</span> | <span lang="sv">köp!</span> | <span lang="sv">köper</span> | <span lang="sv">köpte</span> | <span lang="sv">köpt</span> |
+| <span lang="sv">att bo</span> | <span lang="sv">bo!</span> | <span lang="sv">bor</span> | <span lang="sv">bodde</span> | <span lang="sv">bott</span> |
+| <span lang="sv">att skriva</span> | <span lang="sv">skriv!</span> | <span lang="sv">skriver</span> | <span lang="sv">skrev</span> | <span lang="sv">skrivit</span> |
+
+These examples represent different [Swedish verb groups](../swedish-verb-groups/).
+The group is useful as a pattern, but irregular forms still need to be learned.
+
+## Building compound tenses
+
+The supine combines with a finite form of <span lang="sv">ha</span>:
+
+- Perfect: <span lang="sv">Jag har köpt en bok.</span> — I have bought a book.
+- Pluperfect: <span lang="sv">Jag hade köpt boken.</span> — I had bought the book.
+
+The supine is not the same as the infinitive or the preterite:
+
+- <span lang="sv">Jag vill köpa boken.</span> — infinitive after a modal verb
+- <span lang="sv">Jag köpte boken i går.</span> — preterite
+- <span lang="sv">Jag har köpt boken.</span> — supine after <span lang="sv">har</span>
+
+## Direct comparison
+
+| Deutsch | English | Svenska |
+| --- | --- | --- |
+| <span lang="de">Ich kaufe ein Auto.</span> | <span lang="en">I am buying a car.</span> | <span lang="sv">Jag köper en bil.</span> |
+| <span lang="de">Ich kaufte ein Auto.</span> | <span lang="en">I bought a car.</span> | <span lang="sv">Jag köpte en bil.</span> |
+| <span lang="de">Ich habe ein Auto gekauft.</span> | <span lang="en">I have bought a car.</span> | <span lang="sv">Jag har köpt en bil.</span> |
+
+English may use a progressive form where Swedish uses the ordinary present.
+The similar-looking perfect constructions are useful bridges, but their usage
+does not match perfectly in every context.
+
+## Common mistakes
+
+- ❌ <span lang="sv">Jag har köpa en bok.</span>
+  ✅ <span lang="sv">Jag har köpt en bok.</span>
+- ❌ <span lang="sv">Hon köper och jag köperer.</span>
+  ✅ <span lang="sv">Hon köper och jag köper.</span>
+- Do not infer the preterite or supine from the infinitive alone when a verb is
+  irregular. Learn the form chain.
+
+:::tip[Memory tip]
+Store each verb as at least three forms: present — preterite — supine. Add the
+infinitive when it is not already obvious.
+:::
+
+## Related topics
+
+- [Swedish present](../swedish-present/)
+- [Swedish preterite](../swedish-preterite/)
+- [Swedish perfect](../swedish-perfect/)
+- [Swedish verb groups](../swedish-verb-groups/)
+- [Swedish verb forms cheat sheet](../../../cheat-sheets/swedish-verb-forms/)

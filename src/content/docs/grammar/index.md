@@ -9,18 +9,33 @@ different patterns can be compared across German, English, and Swedish.
 The first complete references will focus on Swedish while keeping comparisons
 with German and English visible where they help explain a rule.
 
-## Structure
+## Sentence structure
 
-- **Sentence Structure:** basic word order, questions, negation, V2, inversion,
-  subordinate clauses, and BIFF
-- **Verbs:** tense, conjugation, verb groups, modal verbs, passive forms,
-  particles, and participles
-- **Nouns & Articles:** gender, definiteness, plural forms, genitive, and
-  compound nouns
-- **Adjectives & Adverbs:** agreement, comparison, definite forms, and sentence
-  adverbs
-- **Pronouns & Function Words:** personal, possessive, reflexive, relative, and
-  interrogative pronouns, prepositions, and conjunctions
+- [Basic Swedish word order](./sentence-structure/swedish-basic-word-order/)
+- [The Swedish V2 rule](./sentence-structure/swedish-v2/)
+- [Swedish inversion](./sentence-structure/swedish-inversion/)
+- [BIFF and subordinate clauses](./sentence-structure/swedish-biff/)
+- [Placement of *inte*](./sentence-structure/inte-placement/)
 
-Detailed topic pages will be added only when they contain a complete and useful
-reference.
+## Nouns and articles
+
+- [Swedish *en* and *ett*](./nouns-articles/swedish-en-ett/)
+- [Indefinite and definite noun forms](./nouns-articles/swedish-noun-forms/)
+- [Swedish plural overview](./nouns-articles/swedish-plural-overview/)
+
+## Adjectives and adverbs
+
+- [Swedish adjective agreement](./adjectives-adverbs/swedish-adjective-agreement/)
+- [Swedish adjective comparison](./adjectives-adverbs/swedish-adjective-comparison/)
+
+## Verbs
+
+- [Swedish verb forms](./verbs/swedish-verb-forms/)
+- [Present tense](./verbs/swedish-present/)
+- [Preterite](./verbs/swedish-preterite/)
+- [Perfect](./verbs/swedish-perfect/)
+- [Swedish verb groups](./verbs/swedish-verb-groups/)
+
+## Pronouns and function words
+
+- [Swedish *sin*, *sitt*, and *sina*](./pronouns-function-words/sin-sitt-sina/)

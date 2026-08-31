@@ -1,0 +1,102 @@
+---
+title: Swedish sin, sitt, and sina
+description: How Swedish reflexive possessives refer back to the subject of a clause.
+---
+
+Swedish uses <span lang="sv">sin</span>, <span lang="sv">sitt</span>, and
+<span lang="sv">sina</span> when a third-person subject possesses something
+and the possessive refers back to that same subject.
+
+## Core rule
+
+The form agrees with the thing possessed—not with the possessor:
+
+| Possessed noun | Form | Example |
+| --- | --- | --- |
+| Singular <span lang="sv">en</span> noun | <span lang="sv">sin</span> | <span lang="sv">Sara tar sin jacka.</span> |
+| Singular <span lang="sv">ett</span> noun | <span lang="sv">sitt</span> | <span lang="sv">Sara säljer sitt hus.</span> |
+| Plural noun | <span lang="sv">sina</span> | <span lang="sv">Sara träffar sina vänner.</span> |
+
+In each sentence, Sara owns the jacket, house, or friends. Her gender does not
+choose the form; the noun's gender or number does.
+
+:::tip[Two questions]
+First ask: “Does the possessive refer back to the third-person subject of this
+clause?” If yes, then ask: “Is the possessed noun en, ett, or plural?”
+:::
+
+## Own or somebody else's?
+
+The contrast with <span lang="sv">hans</span>, <span lang="sv">hennes</span>,
+or <span lang="sv">deras</span> can change who owns the object:
+
+| Swedish | Meaning |
+| --- | --- |
+| <span lang="sv">Anna tog sin jacka.</span> | Anna took her own jacket. |
+| <span lang="sv">Anna tog hennes jacka.</span> | Anna took another woman's jacket. |
+| <span lang="sv">Erik tog sin jacka.</span> | Erik took his own jacket. |
+| <span lang="sv">Erik tog hans jacka.</span> | Erik took another man's jacket. |
+| <span lang="sv">De tog sina jackor.</span> | They took their own jackets. |
+| <span lang="sv">De tog deras jackor.</span> | They took another group's jackets. |
+
+Context must identify the other person or group when
+<span lang="sv">hans</span>, <span lang="sv">hennes</span>, or
+<span lang="sv">deras</span> is used.
+
+## The clause boundary matters
+
+The relevant subject is the subject of the same clause:
+
+<span lang="sv">Anna sa att Erik tog sin jacka.</span>
+
+In the subordinate clause, <span lang="sv">Erik</span> is the subject, so
+<span lang="sv">sin jacka</span> normally means Erik's own jacket—not Anna's.
+
+Compare:
+
+<span lang="sv">Anna sa att Erik tog hennes jacka.</span>
+
+Here <span lang="sv">hennes</span> can refer to Anna or another woman, as
+determined by context.
+
+## Where sin, sitt, and sina do not apply
+
+They are third-person reflexive possessives. First- and second-person subjects
+use their ordinary possessives:
+
+- <span lang="sv">Jag tar min jacka.</span>
+- <span lang="sv">Du tar din jacka.</span>
+- <span lang="sv">Vi tar våra jackor.</span>
+
+They also do not normally appear inside the subject itself:
+
+- <span lang="sv">Hans bil är ny.</span> — His car is new.
+- <span lang="sv">Hennes vänner kommer.</span> — Her friends are coming.
+
+## Direct comparison
+
+German and English do not encode the same own-versus-other distinction in the
+possessive form:
+
+| Deutsch | English | Svenska |
+| --- | --- | --- |
+| <span lang="de">Anna nimmt ihre Jacke.</span> | <span lang="en">Anna takes her jacket.</span> | <span lang="sv">Anna tar sin jacka.</span> |
+
+The German and English sentences can be ambiguous without context. Swedish
+normally uses <span lang="sv">sin</span> to make “her own” explicit.
+
+## Common mistakes
+
+- ❌ <span lang="sv">Anna säljer hennes hus.</span> when Anna sells her own house
+  ✅ <span lang="sv">Anna säljer sitt hus.</span>
+- ❌ <span lang="sv">Erik träffar sin vänner.</span>
+  ✅ <span lang="sv">Erik träffar sina vänner.</span>
+- ❌ Choosing <span lang="sv">sin</span> because the possessor is one person.
+  Choose by the possessed noun: <span lang="sv">sin bil</span>,
+  <span lang="sv">sitt hus</span>, <span lang="sv">sina böcker</span>.
+
+## Related topics
+
+- [Swedish en and ett](../../nouns-articles/swedish-en-ett/)
+- [Swedish noun forms](../../nouns-articles/swedish-noun-forms/)
+- [Quick summary: sin, sitt, and sina](../../../language-specific-rules/swedish/sin-sitt-sina/)

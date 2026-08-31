@@ -1,0 +1,45 @@
+---
+title: Vocabulary
+description: Vocabulary organized by real-life domains and usage.
+---
+
+import VocabularyCard from '../../../components/VocabularyCard.astro';
+
+Vocabulary is organized by situations in which words are used, not as isolated
+translation pairs. Entries include the grammatical and usage information needed
+to use a word correctly.
+
+## Domains
+
+- Basic vocabulary
+- Home, food, and shopping
+- Transport and travel
+- People, relationships, and leisure
+- Small talk, feelings, and opinions
+- Society and everyday life in Sweden
+- Work, meetings, and business communication
+
+CEFR levels are metadata where they are meaningful, but they do not determine
+the primary navigation.
+
+## Store enough information to use a word
+
+A Swedish noun is more useful as a compact set of forms than as a single
+translation:
+
+<VocabularyCard
+	swedish="bil"
+	gender="en"
+	german="Auto"
+	english="car"
+	level="A1"
+	forms={[
+		{ label: 'Definite singular', value: 'bilen' },
+		{ label: 'Indefinite plural', value: 'bilar' },
+		{ label: 'Definite plural', value: 'bilarna' },
+	]}
+/>
+
+Entries may also include example sentences, collocations, register, common
+mistakes, synonyms, and controlled tags. Prepositions are recorded as part of
+constructions such as `vänta på`, not as context-free translation pairs.

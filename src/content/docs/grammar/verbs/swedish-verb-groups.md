@@ -1,0 +1,102 @@
+---
+title: Swedish verb groups
+description: A practical overview of the main regular Swedish conjugation patterns.
+---
+
+Swedish verb groups describe recurring patterns for the present, preterite,
+and supine. They help predict forms, but the forms of common irregular verbs
+still need to be learned individually.
+
+## Overview
+
+| Group | Infinitive | Present | Preterite | Supine |
+| --- | --- | --- | --- | --- |
+| 1 | <span lang="sv">tala</span> | <span lang="sv">talar</span> | <span lang="sv">talade</span> | <span lang="sv">talat</span> |
+| 2a | <span lang="sv">stänga</span> | <span lang="sv">stänger</span> | <span lang="sv">stängde</span> | <span lang="sv">stängt</span> |
+| 2b | <span lang="sv">köpa</span> | <span lang="sv">köper</span> | <span lang="sv">köpte</span> | <span lang="sv">köpt</span> |
+| 3 | <span lang="sv">bo</span> | <span lang="sv">bor</span> | <span lang="sv">bodde</span> | <span lang="sv">bott</span> |
+| 4 / irregular | <span lang="sv">skriva</span> | <span lang="sv">skriver</span> | <span lang="sv">skrev</span> | <span lang="sv">skrivit</span> |
+
+The labels and subgroup boundaries can vary slightly between learning
+materials. The form chain is more important than the number assigned to it.
+
+## Group 1: -ar, -ade, -at
+
+Group 1 verbs normally have an infinitive ending in unstressed
+<span lang="sv">-a</span>. The full infinitive remains before the endings:
+
+- <span lang="sv">tala → talar → talade → talat</span>
+- <span lang="sv">arbeta → arbetar → arbetade → arbetat</span>
+
+This is the largest and most productive regular group.
+
+## Group 2: -er, -de/-te, -t
+
+For many group 2 verbs, remove the infinitive's final
+<span lang="sv">-a</span> to find the stem:
+
+- <span lang="sv">stäng-a → stänger → stängde → stängt</span>
+- <span lang="sv">köp-a → köper → köpte → köpt</span>
+
+The preterite ending is usually <span lang="sv">-de</span> after a voiced
+stem ending and <span lang="sv">-te</span> after certain voiceless consonants.
+For a beginner, it is safer to learn the preterite and supine with each verb
+than to rely only on spelling rules.
+
+Some group 2 verbs show spelling adjustments, for example
+<span lang="sv">läsa → läste → läst</span>.
+
+## Group 3: short infinitives
+
+Group 3 typically contains short infinitives ending in a stressed vowel other
+than <span lang="sv">-a</span>:
+
+- <span lang="sv">bo → bor → bodde → bott</span>
+- <span lang="sv">nå → når → nådde → nått</span>
+
+The common pattern is present <span lang="sv">-r</span>, preterite
+<span lang="sv">-dde</span>, and supine <span lang="sv">-tt</span>.
+
+## Group 4 and irregular verbs
+
+These verbs do not follow the regular weak-verb endings. Many change their stem
+vowel:
+
+- <span lang="sv">skriva → skriver → skrev → skrivit</span>
+- <span lang="sv">komma → kommer → kom → kommit</span>
+
+Other frequent verbs are irregular in different ways:
+
+- <span lang="sv">vara → är → var → varit</span>
+- <span lang="sv">göra → gör → gjorde → gjort</span>
+
+Do not try to manufacture these forms from one universal rule.
+
+## A practical learning method
+
+1. Learn the infinitive together with present, preterite, and supine.
+2. Use the group to notice and reuse a pattern.
+3. Mark genuinely irregular forms instead of treating every verb as irregular.
+4. Revisit the form in a complete sentence.
+
+:::tip[Memory tip]
+Say the chain aloud: <span lang="sv">köpa — köper — köpte — köpt</span>.
+The rhythm makes the relationship between the forms easier to retrieve.
+:::
+
+## Common mistakes
+
+- ❌ <span lang="sv">köpa → köpade</span>
+  ✅ <span lang="sv">köpa → köpte</span>
+- ❌ <span lang="sv">skriva → skrivade</span>
+  ✅ <span lang="sv">skriva → skrev</span>
+- A verb ending in <span lang="sv">-a</span> is not automatically group 1.
+  Compare <span lang="sv">tala</span> with <span lang="sv">köpa</span>.
+
+## Related topics
+
+- [Swedish verb forms](../swedish-verb-forms/)
+- [Swedish present](../swedish-present/)
+- [Swedish preterite](../swedish-preterite/)
+- [Swedish perfect](../swedish-perfect/)
+- [Swedish verb forms cheat sheet](../../../cheat-sheets/swedish-verb-forms/)
