@@ -10,8 +10,9 @@ Before generating code, modifying code, refactoring, or proposing architecture
 changes:
 
 1. Read [`docs/rules/engineering-guidelines.md`](docs/rules/engineering-guidelines.md).
-2. Follow all applicable rules.
-3. Validate the solution against those rules.
+2. Read [`docs/rules/architecture-guidelines.md`](docs/rules/architecture-guidelines.md).
+3. Follow all applicable rules.
+4. Validate the solution against those rules.
 
 If no compliant solution can be determined, stop and ask an engineer.
 
