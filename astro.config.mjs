@@ -9,18 +9,20 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'JP Language Hub',
+			locales: {
+				root: {
+					label: 'English',
+					lang: 'en',
+				},
+			},
 			sidebar: [
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
-				},
+				{ label: 'Home', link: '/' },
+				{ slug: 'grammar' },
+				{ slug: 'vocabulary' },
+				{ slug: 'language-specific-rules' },
+				{ slug: 'common-mistakes' },
+				{ slug: 'cheat-sheets' },
+				{ slug: 'practice' },
 			],
 		}),
 	],

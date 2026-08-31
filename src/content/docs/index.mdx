@@ -1,40 +1,50 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: Home
+description: A personal language reference for German, English, and Swedish.
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  title: JP Language Hub
+  tagline: Deutsch · English · Svenska
   actions:
-    - text: Example Guide
-      link: /jp-language-hub/guides/example/
+    - text: Swedish Basics
+      link: ./language-specific-rules/#swedish
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: Browse Grammar
+      link: ./grammar/
+      icon: open-book
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+A personal language reference for comparing German, English, and Swedish, with
+Swedish as the current learning focus.
+
+## Explore the reference
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Grammar" icon="open-book">
+		Sentence structure, verbs, nouns, adjectives, and function words.
+		[Open Grammar](./grammar/)
 	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
+	<Card title="Vocabulary" icon="document">
+		Vocabulary organized by real-life situations instead of isolated lists.
+		[Open Vocabulary](./vocabulary/)
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Language-specific Rules" icon="puzzle">
+		Quick access to patterns that are especially important in one language.
+		[Open Language-specific Rules](./language-specific-rules/)
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="Common Mistakes" icon="warning">
+		Typical transfer errors, false friends, and misleading direct translations.
+		[Open Common Mistakes](./common-mistakes/)
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Cheat Sheets" icon="list-format">
+		Compact references for forms, word order, and recurring patterns.
+		[Open Cheat Sheets](./cheat-sheets/)
+	</Card>
+	<Card title="Practice" icon="pencil">
+		Focused exercises will be added after the core reference is established.
+		[Open Practice](./practice/)
 	</Card>
 </CardGrid>
