@@ -4,6 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://johnnydevnull.github.io',
+	base: '/jp-language-hub',
 	integrations: [
 		starlight({
 			title: 'JP Language Hub',
