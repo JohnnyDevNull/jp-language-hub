@@ -26,6 +26,14 @@ npm run dev -- --background
 Manage the background server with `npm run astro -- dev stop`,
 `npm run astro -- dev status`, and `npm run astro -- dev logs`.
 
+## Commit messages
+
+All commit messages must follow the Conventional Commits format:
+
+```
+<type>[optional scope]: <description>
+```
+
 ## Documentation
 
 Full documentation: https://docs.astro.build
