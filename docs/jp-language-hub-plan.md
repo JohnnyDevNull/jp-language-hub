@@ -111,13 +111,14 @@ The website must be optimized for:
 
 # 2. Learning Context
 
-Primary language:
+Primary learner/reference language:
 
 ```text
 German
 ```
 
-German is the reference language.
+German is the learner's primary reference language for understanding language
+comparisons. It is not the website's default meta language.
 
 Current approximate English level:
 
@@ -189,7 +190,10 @@ And:
 🇸🇪 Jag har köpt.
 ```
 
-Use German as the primary explanation/reference language.
+Use English as the default meta language for navigation, UI labels, page
+structure, and explanations.
+
+Use German as the learner's primary comparison/reference language.
 
 Use English as an additional bridge to Swedish where useful.
 
@@ -276,6 +280,38 @@ Prefer Starlight for:
 - pagination where appropriate
 
 Do not build replacement systems for these features unless Starlight cannot satisfy a concrete requirement.
+
+## Internationalization and Meta Language
+
+Use Starlight's native internationalization structure and language selector.
+Do not build a custom locale router or language dropdown.
+
+Supported meta languages:
+
+```text
+English
+German
+Swedish
+```
+
+English is the default meta language and the initial source language for all
+content. Keep English content directly in `src/content/docs/` and use locale
+directories for translations:
+
+```text
+src/content/docs/       → English (`/`)
+src/content/docs/de/    → German (`/de/`)
+src/content/docs/sv/    → Swedish (`/sv/`)
+```
+
+German and Swedish must initially fall back to the English source content when
+a translated page does not yet exist. Establish and validate the information
+architecture in English first, then add translations incrementally using the
+same relative file paths as their English source pages.
+
+Meta-language localization applies to navigation, UI labels, page structure,
+and explanatory prose. German, English, and Swedish learning examples remain in
+their respective languages and must retain the appropriate language metadata.
 
 ---
 
@@ -885,7 +921,9 @@ Preferred order:
 🇸🇪 Svenska
 ```
 
-German is the primary reference language.
+German remains the learner's primary comparison/reference language. This does
+not define the page's meta language; explanations and structural labels use
+English by default.
 
 English often functions as a bridge.
 
@@ -1744,12 +1782,15 @@ jp-language-hub/
 │   ├── components/
 │   ├── content/
 │   │   └── docs/
+│   │       ├── index.mdx
 │   │       ├── grammar/
 │   │       ├── vocabulary/
 │   │       ├── language-specific-rules/
 │   │       ├── common-mistakes/
 │   │       ├── cheat-sheets/
-│   │       └── practice/
+│   │       ├── practice/
+│   │       ├── de/
+│   │       └── sv/
 │   │
 │   ├── data/
 │   │   ├── vocabulary/
@@ -2326,7 +2367,8 @@ swedish-biff
 sin-sitt-sina
 ```
 
-User-facing explanations may primarily be German.
+User-facing explanations use English as the default meta language. German and
+Swedish translations mirror the English content structure when added.
 
 Swedish and English examples should remain in their respective languages.
 
@@ -2378,6 +2420,8 @@ The MVP must contain:
 - working base path
 - Starlight navigation
 - Starlight search
+- Starlight language selector
+- English meta-language content with German and Swedish fallback routes
 - light/dark mode
 - project styling
 - responsive behavior
@@ -2572,6 +2616,12 @@ German
 English
 Swedish
 
+Default meta language:
+English
+
+Meta-language locales:
+English root with German and Swedish falling back to English until translated
+
 Primary current language-learning focus:
 Swedish
 
@@ -2643,7 +2693,11 @@ verb forms
 sin / sitt / sina
 ```
 
-Keep German as the primary reference language.
+Keep German as the learner's primary comparison/reference language.
+
+Use English as the default meta language for navigation, page structure, and
+explanations. Provide German and Swedish locale routes through Starlight and
+fall back to English until translations are added.
 
 Use English as a bridge where useful.
 

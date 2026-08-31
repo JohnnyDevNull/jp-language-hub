@@ -10,10 +10,19 @@ export default defineConfig({
 		starlight({
 			title: 'JP Language Hub',
 			customCss: ['./src/styles/global.css'],
+			defaultLocale: 'root',
 			locales: {
 				root: {
 					label: 'English',
 					lang: 'en',
+				},
+				de: {
+					label: 'Deutsch',
+					lang: 'de',
+				},
+				sv: {
+					label: 'Svenska',
+					lang: 'sv',
 				},
 			},
 			sidebar: [
