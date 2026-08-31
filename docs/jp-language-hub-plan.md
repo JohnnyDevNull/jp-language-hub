@@ -31,7 +31,7 @@ When uncertain:
 
 > Choose the simplest, maintainable, current, Astro/Starlight-idiomatic solution.
 
-Use current stable versions of Astro, Starlight and Ion that are mutually compatible.
+Use current stable versions of Astro and Starlight that are mutually compatible.
 
 If package APIs or setup instructions have changed, verify the current official documentation and adapt the implementation instead of following outdated syntax literally.
 
@@ -216,7 +216,6 @@ Use:
 ```text
 Astro
 Astro Starlight
-Starlight Ion
 Markdown / MDX
 Astro Content Collections
 HTML
@@ -282,22 +281,19 @@ Do not build replacement systems for these features unless Starlight cannot sati
 
 # 6. Theme
 
-Use:
+Use Starlight's default theme as the visual foundation.
 
-```text
-Starlight Ion
-```
+Customize Starlight subtly with project-specific CSS so that the site develops
+its own language-reference identity while retaining a professional
+documentation appearance.
 
-Ion is the visual foundation.
-
-Do not redesign Ion from scratch.
-
-Customize Ion subtly so that the site develops its own language-reference identity while retaining a professional documentation appearance.
+Do not add a third-party theme unless a concrete design requirement justifies
+the additional dependency. A compatible theme may be evaluated later.
 
 The final visual direction should feel like:
 
 ```text
-Ion
+Starlight
 +
 modern documentation
 +
@@ -1274,7 +1270,7 @@ Only add custom static search/index generation if Starlight's built-in search is
 
 # 29. Design System
 
-Use Ion as the base.
+Use Starlight's default design system as the base.
 
 Keep the interface:
 
@@ -1456,7 +1452,7 @@ Requirements:
 - usable in MDX
 - language accent colors
 - light/dark compatible
-- visually consistent with Ion
+- visually consistent with Starlight
 
 Prefer subtle accents such as:
 
@@ -1672,7 +1668,7 @@ Minimum requirements:
 
 Use ARIA only when native semantics are insufficient.
 
-Do not degrade accessibility when customizing Ion.
+Do not degrade accessibility when customizing Starlight.
 
 ---
 
@@ -2375,7 +2371,6 @@ The MVP must contain:
 
 - Astro
 - Starlight
-- Ion
 - static build
 - Git repository
 - GitHub Pages configuration
@@ -2479,7 +2474,7 @@ No obvious console/runtime errors in normal use.
 
 ## Design
 
-- Ion is clearly used as the visual base
+- Starlight is clearly used as the visual base
 - custom language styling integrates cleanly
 - DE/EN/SE comparison is easy to scan
 - mobile layout is usable
@@ -2533,7 +2528,6 @@ The implementation agent may autonomously decide:
 
 - exact current Astro version
 - exact current Starlight version
-- exact compatible Ion version
 - current installation commands
 - Starlight config structure
 - content schema implementation
@@ -2565,7 +2559,7 @@ Documentation framework:
 Astro Starlight
 
 Theme:
-Starlight Ion
+Starlight default theme with project-specific custom CSS
 
 Hosting:
 GitHub Pages
@@ -2619,7 +2613,6 @@ Implement `jp-language-hub` as a polished static language knowledge base using:
 ```text
 Astro
 Starlight
-Ion
 Markdown / MDX
 Content Collections
 CSS
@@ -2630,7 +2623,8 @@ GitHub Pages
 
 Use Starlight for documentation infrastructure.
 
-Use Ion for the visual foundation.
+Use Starlight's default theme for the visual foundation and customize it only
+where the language-reference design requires it.
 
 Build custom language-reference components on top of that foundation.
 
