@@ -1,0 +1,4 @@
+@layer starlight, tokens, foundations, layout, components, utilities, integrations;
+
+@import url('./tokens/design.css') layer(tokens);
+@import url('./integrations/starlight.css') layer(integrations);

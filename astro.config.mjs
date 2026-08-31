@@ -9,6 +9,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'JP Language Hub',
+			customCss: ['./src/styles/global.css'],
 			locales: {
 				root: {
 					label: 'English',

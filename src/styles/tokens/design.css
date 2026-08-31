@@ -1,0 +1,51 @@
+:root {
+	--jplh-color-language-de-low: var(--sl-color-orange-low);
+	--jplh-color-language-de: var(--sl-color-orange);
+	--jplh-color-language-de-high: var(--sl-color-orange-high);
+	--jplh-color-language-en-low: var(--sl-color-blue-low);
+	--jplh-color-language-en: var(--sl-color-blue);
+	--jplh-color-language-en-high: var(--sl-color-blue-high);
+	--jplh-color-language-sv-low: #10383d;
+	--jplh-color-language-sv: #22b8c7;
+	--jplh-color-language-sv-high: #b7eef2;
+
+	/* Semantic content colors */
+	--jplh-color-rule-low: var(--sl-color-gray-6);
+	--jplh-color-rule: var(--sl-color-gray-3);
+	--jplh-color-rule-high: var(--sl-color-gray-1);
+	--jplh-color-example-low: var(--sl-color-blue-low);
+	--jplh-color-example: var(--sl-color-blue);
+	--jplh-color-example-high: var(--sl-color-blue-high);
+	--jplh-color-memory-low: var(--sl-color-green-low);
+	--jplh-color-memory: var(--sl-color-green);
+	--jplh-color-memory-high: var(--sl-color-green-high);
+	--jplh-color-mistake-low: var(--sl-color-red-low);
+	--jplh-color-mistake: var(--sl-color-red);
+	--jplh-color-mistake-high: var(--sl-color-red-high);
+	--jplh-color-special-rule-low: var(--sl-color-purple-low);
+	--jplh-color-special-rule: var(--sl-color-purple);
+	--jplh-color-special-rule-high: var(--sl-color-purple-high);
+
+	/* Spacing */
+	--jplh-space-2xs: 0.25rem;
+	--jplh-space-xs: 0.5rem;
+	--jplh-space-sm: 0.75rem;
+	--jplh-space-md: 1rem;
+	--jplh-space-lg: 1.5rem;
+	--jplh-space-xl: 2rem;
+	--jplh-space-2xl: 3rem;
+
+	/* Shape and borders */
+	--jplh-radius-sm: 0.25rem;
+	--jplh-radius-md: 0.5rem;
+	--jplh-radius-lg: 0.75rem;
+	--jplh-radius-pill: 999px;
+	--jplh-border-width: 1px;
+	--jplh-accent-border-width: 0.25rem;
+}
+
+:root[data-theme='light'] {
+	--jplh-color-language-sv-low: #d8f3f5;
+	--jplh-color-language-sv: #00818f;
+	--jplh-color-language-sv-high: #00515b;
+}

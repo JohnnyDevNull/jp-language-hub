@@ -67,11 +67,13 @@ The directories have these responsibilities:
 Declare and preserve an explicit cascade order:
 
 ```css
-@layer tokens, foundations, layout, components, utilities, integrations;
+@layer starlight, tokens, foundations, layout, components, utilities, integrations;
 ```
 
-Do not add unlayered project rules. Import each stylesheet into its matching
-layer through the global entry point.
+The external `starlight` layer must remain first so project layers have an
+explicit and predictable position relative to framework styles. Do not add
+unlayered project rules. Import each stylesheet into its matching layer through
+the global entry point.
 
 ## CSS Ownership and Naming
 
