@@ -1,0 +1,12 @@
+---
+interface Props {
+	title?: string;
+}
+
+const { title = 'Rule' } = Astro.props;
+---
+
+<aside class="rule-box" aria-label={title}>
+	<p class="rule-box-title">{title}</p>
+	<div class="rule-box-content"><slot /></div>
+</aside>

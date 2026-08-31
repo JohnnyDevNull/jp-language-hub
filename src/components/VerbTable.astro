@@ -1,0 +1,26 @@
+---
+interface VerbForm {
+	label: string;
+	value: string;
+}
+
+interface Props {
+	forms: VerbForm[];
+	caption?: string;
+	lang?: 'de' | 'en' | 'sv';
+}
+
+const { forms, caption = 'Verb forms', lang = 'sv' } = Astro.props;
+---
+
+<table class="verb-table" lang={lang}>
+	<caption class="verb-table-caption">{caption}</caption>
+	<tbody>
+		{forms.map((form) => (
+			<tr class="verb-table-row">
+				<th scope="row">{form.label}</th>
+				<td>{form.value}</td>
+			</tr>
+		))}
+	</tbody>
+</table>

@@ -1,0 +1,53 @@
+---
+interface VocabularyForm {
+	label: string;
+	value: string;
+}
+
+interface Props {
+	swedish: string;
+	gender?: 'en' | 'ett';
+	german?: string;
+	english?: string;
+	forms?: VocabularyForm[];
+	level?: string;
+}
+
+const { swedish, gender, german, english, forms = [], level } = Astro.props;
+---
+
+<article class="vocabulary-card">
+	<header class="vocabulary-card-header">
+		<p class="vocabulary-card-word" lang="sv">
+			{gender && <span class="vocabulary-card-gender">{gender}</span>}
+			{swedish}
+		</p>
+		{level && <p class="vocabulary-card-level">{level}</p>}
+	</header>
+	{forms.length > 0 && (
+		<dl class="vocabulary-card-forms" lang="sv">
+			{forms.map((form) => (
+				<div class="vocabulary-card-form">
+					<dt>{form.label}</dt>
+					<dd>{form.value}</dd>
+				</div>
+			))}
+		</dl>
+	)}
+	{(german || english) && (
+		<dl class="vocabulary-card-translations">
+			{german && (
+				<div class="vocabulary-card-translation">
+					<dt><span aria-hidden="true">🇩🇪</span> Deutsch</dt>
+					<dd lang="de">{german}</dd>
+				</div>
+			)}
+			{english && (
+				<div class="vocabulary-card-translation">
+					<dt><span aria-hidden="true">🇬🇧</span> English</dt>
+					<dd lang="en">{english}</dd>
+				</div>
+			)}
+		</dl>
+	)}
+</article>

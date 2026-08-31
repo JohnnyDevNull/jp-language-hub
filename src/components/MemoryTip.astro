@@ -1,0 +1,12 @@
+---
+interface Props {
+	title?: string;
+}
+
+const { title = 'Memory tip' } = Astro.props;
+---
+
+<aside class="memory-tip" aria-label={title}>
+	<p class="memory-tip-title">{title}</p>
+	<div class="memory-tip-content"><slot /></div>
+</aside>

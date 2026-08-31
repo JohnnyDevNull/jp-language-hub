@@ -1,0 +1,40 @@
+---
+interface Props {
+	indefiniteSingular: string;
+	definiteSingular: string;
+	indefinitePlural: string;
+	definitePlural: string;
+	caption?: string;
+}
+
+const {
+	indefiniteSingular,
+	definiteSingular,
+	indefinitePlural,
+	definitePlural,
+	caption = 'Swedish noun forms',
+} = Astro.props;
+---
+
+<table class="noun-forms" lang="sv">
+	<caption class="noun-forms-caption">{caption}</caption>
+	<thead>
+		<tr>
+			<th scope="col">Number</th>
+			<th scope="col">Indefinite</th>
+			<th scope="col">Definite</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">Singular</th>
+			<td>{indefiniteSingular}</td>
+			<td>{definiteSingular}</td>
+		</tr>
+		<tr>
+			<th scope="row">Plural</th>
+			<td>{indefinitePlural}</td>
+			<td>{definitePlural}</td>
+		</tr>
+	</tbody>
+</table>

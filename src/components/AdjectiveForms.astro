@@ -1,0 +1,25 @@
+---
+interface AdjectiveForm {
+	label: string;
+	value: string;
+}
+
+interface Props {
+	forms: AdjectiveForm[];
+	caption?: string;
+}
+
+const { forms, caption = 'Swedish adjective forms' } = Astro.props;
+---
+
+<table class="adjective-forms" lang="sv">
+	<caption class="adjective-forms-caption">{caption}</caption>
+	<tbody>
+		{forms.map((form) => (
+			<tr class="adjective-forms-row">
+				<th scope="row">{form.label}</th>
+				<td>{form.value}</td>
+			</tr>
+		))}
+	</tbody>
+</table>

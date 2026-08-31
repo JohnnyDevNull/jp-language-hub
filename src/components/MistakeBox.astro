@@ -1,0 +1,25 @@
+---
+interface Props {
+	title?: string;
+	incorrect?: string;
+	correct?: string;
+	lang?: 'de' | 'en' | 'sv';
+}
+
+const { title = 'Common mistake', incorrect, correct, lang } = Astro.props;
+---
+
+<aside class="mistake-box" aria-label={title}>
+	<p class="mistake-box-title">{title}</p>
+	{incorrect && (
+		<p class="mistake-box-example mistake-box-example-incorrect" lang={lang}>
+			<span>Incorrect:</span> {incorrect}
+		</p>
+	)}
+	{correct && (
+		<p class="mistake-box-example mistake-box-example-correct" lang={lang}>
+			<span>Correct:</span> {correct}
+		</p>
+	)}
+	<div class="mistake-box-content"><slot /></div>
+</aside>

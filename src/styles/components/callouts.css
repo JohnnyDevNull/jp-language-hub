@@ -1,0 +1,64 @@
+:is(.rule-box, .example-box, .mistake-box, .memory-tip, .special-rule) {
+	border: var(--jplh-border-width) solid var(--jplh-callout-border);
+	border-inline-start-width: var(--jplh-accent-border-width);
+	border-radius: var(--jplh-radius-md);
+	background: var(--jplh-callout-background);
+	padding: var(--jplh-space-md);
+}
+
+:is(.rule-box-title, .example-box-title, .mistake-box-title, .memory-tip-title, .special-rule-title) {
+	margin: 0 0 var(--jplh-space-xs);
+	color: var(--jplh-callout-title);
+	font-weight: 700;
+}
+
+:is(.rule-box-content, .example-box-content, .mistake-box-content, .memory-tip-content, .special-rule-content) > :first-child {
+	margin-block-start: 0;
+}
+
+:is(.rule-box-content, .example-box-content, .mistake-box-content, .memory-tip-content, .special-rule-content) > :last-child {
+	margin-block-end: 0;
+}
+
+.rule-box {
+	--jplh-callout-background: var(--jplh-color-rule-low);
+	--jplh-callout-border: var(--jplh-color-rule);
+	--jplh-callout-title: var(--jplh-color-rule-high);
+}
+
+.example-box {
+	--jplh-callout-background: var(--jplh-color-example-low);
+	--jplh-callout-border: var(--jplh-color-example);
+	--jplh-callout-title: var(--jplh-color-example-high);
+}
+
+.mistake-box {
+	--jplh-callout-background: var(--jplh-color-mistake-low);
+	--jplh-callout-border: var(--jplh-color-mistake);
+	--jplh-callout-title: var(--jplh-color-mistake-high);
+}
+
+.mistake-box-example {
+	margin: var(--jplh-space-xs) 0;
+	font-weight: 600;
+}
+
+.mistake-box-example-incorrect {
+	color: var(--jplh-color-mistake-high);
+}
+
+.mistake-box-example-correct {
+	color: var(--jplh-color-memory-high);
+}
+
+.memory-tip {
+	--jplh-callout-background: var(--jplh-color-memory-low);
+	--jplh-callout-border: var(--jplh-color-memory);
+	--jplh-callout-title: var(--jplh-color-memory-high);
+}
+
+.special-rule {
+	--jplh-callout-background: var(--jplh-color-special-rule-low);
+	--jplh-callout-border: var(--jplh-color-special-rule);
+	--jplh-callout-title: var(--jplh-color-special-rule-high);
+}

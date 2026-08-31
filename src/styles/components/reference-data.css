@@ -1,0 +1,97 @@
+:is(.vocabulary-card, .verb-table, .noun-forms, .adjective-forms) {
+	margin: var(--jplh-space-lg) 0;
+}
+
+.vocabulary-card {
+	border: var(--jplh-border-width) solid var(--sl-color-gray-5);
+	border-radius: var(--jplh-radius-md);
+	background: var(--sl-color-gray-6);
+	padding: var(--jplh-space-md);
+}
+
+.vocabulary-card-header {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: var(--jplh-space-sm);
+	border-block-end: var(--jplh-border-width) solid var(--sl-color-gray-5);
+	padding-block-end: var(--jplh-space-sm);
+}
+
+.vocabulary-card-word,
+.vocabulary-card-level {
+	margin: 0;
+}
+
+.vocabulary-card-word {
+	font-size: var(--sl-text-h4);
+	font-weight: 700;
+}
+
+.vocabulary-card-gender {
+	margin-inline-end: var(--jplh-space-2xs);
+	color: var(--jplh-color-language-sv);
+}
+
+.vocabulary-card-level {
+	border-radius: var(--jplh-radius-pill);
+	background: var(--sl-color-gray-5);
+	padding: var(--jplh-space-2xs) var(--jplh-space-xs);
+	font-size: var(--sl-text-xs);
+	font-weight: 700;
+}
+
+.vocabulary-card-forms,
+.vocabulary-card-translations {
+	margin: var(--jplh-space-md) 0 0;
+}
+
+.vocabulary-card-form,
+.vocabulary-card-translation {
+	display: grid;
+	grid-template-columns: minmax(7rem, 1fr) 2fr;
+	gap: var(--jplh-space-sm);
+	padding-block: var(--jplh-space-2xs);
+}
+
+.vocabulary-card-form dt,
+.vocabulary-card-translation dt {
+	color: var(--sl-color-gray-3);
+	font-weight: 600;
+}
+
+.vocabulary-card-form dd,
+.vocabulary-card-translation dd {
+	margin: 0;
+}
+
+:is(.verb-table, .noun-forms, .adjective-forms) {
+	width: 100%;
+	border-collapse: collapse;
+	border: var(--jplh-border-width) solid var(--sl-color-gray-5);
+	border-radius: var(--jplh-radius-md);
+	overflow: hidden;
+}
+
+:is(.verb-table-caption, .noun-forms-caption, .adjective-forms-caption) {
+	padding: var(--jplh-space-sm) var(--jplh-space-md);
+	background: var(--sl-color-gray-6);
+	color: var(--sl-color-text);
+	font-weight: 700;
+	text-align: start;
+}
+
+:is(.verb-table, .noun-forms, .adjective-forms) th,
+:is(.verb-table, .noun-forms, .adjective-forms) td {
+	border-block-start: var(--jplh-border-width) solid var(--sl-color-gray-5);
+	padding: var(--jplh-space-xs) var(--jplh-space-sm);
+	text-align: start;
+}
+
+:is(.verb-table, .noun-forms, .adjective-forms) th {
+	font-weight: 600;
+}
+
+.noun-forms thead {
+	background: var(--sl-color-gray-6);
+}

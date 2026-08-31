@@ -1,0 +1,59 @@
+.language-comparison {
+	margin: var(--jplh-space-lg) 0;
+}
+
+.language-comparison-title {
+	margin-block-end: var(--jplh-space-sm);
+	font-weight: 700;
+}
+
+.language-comparison-columns {
+	display: grid;
+	gap: var(--jplh-space-sm);
+}
+
+.language-comparison-language {
+	border: var(--jplh-border-width) solid var(--language-comparison-border);
+	border-block-start: var(--jplh-accent-border-width) solid var(--language-comparison-accent);
+	border-radius: var(--jplh-radius-md);
+	background: var(--language-comparison-background);
+	padding: var(--jplh-space-md);
+}
+
+.language-comparison-language-de {
+	--language-comparison-accent: var(--jplh-color-language-de);
+	--language-comparison-background: var(--jplh-color-language-de-low);
+	--language-comparison-border: var(--jplh-color-language-de);
+}
+
+.language-comparison-language-en {
+	--language-comparison-accent: var(--jplh-color-language-en);
+	--language-comparison-background: var(--jplh-color-language-en-low);
+	--language-comparison-border: var(--jplh-color-language-en);
+}
+
+.language-comparison-language-sv {
+	--language-comparison-accent: var(--jplh-color-language-sv);
+	--language-comparison-background: var(--jplh-color-language-sv-low);
+	--language-comparison-border: var(--jplh-color-language-sv);
+}
+
+.language-comparison-language-name {
+	margin: 0 0 var(--jplh-space-xs);
+	color: var(--language-comparison-accent);
+	font-weight: 700;
+}
+
+.language-comparison-content > :first-child {
+	margin-block-start: 0;
+}
+
+.language-comparison-content > :last-child {
+	margin-block-end: 0;
+}
+
+@media (width >= 48rem) {
+	.language-comparison-columns {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}

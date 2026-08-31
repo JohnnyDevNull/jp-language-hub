@@ -1,0 +1,13 @@
+---
+interface Props {
+	title?: string;
+	lang?: 'de' | 'en' | 'sv';
+}
+
+const { title = 'Example', lang } = Astro.props;
+---
+
+<aside class="example-box" aria-label={title}>
+	<p class="example-box-title">{title}</p>
+	<div class="example-box-content" lang={lang}><slot /></div>
+</aside>
