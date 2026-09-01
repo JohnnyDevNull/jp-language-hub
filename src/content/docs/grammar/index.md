@@ -42,3 +42,4 @@ with German and English visible where they help explain a rule.
 ## Pronouns and function words
 
 - [Swedish *sin*, *sitt*, and *sina*](./pronouns-function-words/swedish/sin-sitt-sina/)
+- [Swedish *någon*, *något*, *ingen*, and *inget*](./pronouns-function-words/swedish/nagon-nagot-ingen-inget/)

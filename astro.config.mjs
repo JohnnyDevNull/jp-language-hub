@@ -94,7 +94,12 @@ export default defineConfig({
 							items: [
 								{
 									label: 'Swedish',
-									items: [{ slug: 'grammar/pronouns-function-words/swedish/sin-sitt-sina' }],
+									items: [
+										{ slug: 'grammar/pronouns-function-words/swedish/sin-sitt-sina' },
+										{
+											slug: 'grammar/pronouns-function-words/swedish/nagon-nagot-ingen-inget',
+										},
+									],
 								},
 							],
 						},
