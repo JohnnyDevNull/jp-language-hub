@@ -1,7 +1,28 @@
 ---
 title: Swedish perfect
 description: How Swedish forms and uses the perfect tense with har and the supine.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+tags:
+  - grammar
+  - verbs
+  - swedish-specific
+related:
+  - /grammar/verbs/swedish/verb-forms/
+  - /grammar/verbs/swedish/preterite/
+  - /grammar/verbs/swedish/verb-groups/
+  - /grammar/sentence-structure/swedish/v2/
+  - /grammar/sentence-structure/swedish/biff/
 ---
+
+import MistakeBox from '../../../../../components/MistakeBox.astro';
+import RelatedTopics from '../../../../../components/RelatedTopics.astro';
 
 The Swedish perfect connects a past event or state to the present. It is formed
 with present-tense <span lang="sv">har</span> plus the verb's supine.
@@ -23,10 +44,10 @@ supine is a dedicated verb form:
 | <span lang="sv">skriva</span> | <span lang="sv">skrev</span> | <span lang="sv">skrivit</span> | <span lang="sv">har skrivit</span> |
 | <span lang="sv">bo</span> | <span lang="sv">bodde</span> | <span lang="sv">bott</span> | <span lang="sv">har bott</span> |
 
-:::caution[Supine, not infinitive]
+<MistakeBox title="Supine, not infinitive">
 After <span lang="sv">har</span>, use <span lang="sv">köpt</span>, not
 <span lang="sv">köpa</span> or <span lang="sv">köpte</span>.
-:::
+</MistakeBox>
 
 ## Main uses
 
@@ -82,17 +103,21 @@ supine. This distinction helps when applying V2 and BIFF.
 
 ## Common mistakes
 
-- ❌ <span lang="sv">Jag har köpa boken.</span>
-  ✅ <span lang="sv">Jag har köpt boken.</span>
-- ❌ <span lang="sv">Jag har köpte boken.</span>
-  ✅ <span lang="sv">Jag har köpt boken.</span>
-- Avoid mechanically copying the German perfect whenever Swedish places the
-  event in a finished past time frame.
+<MistakeBox title="Common mistakes">
+	- ❌ <span lang="sv">Jag har köpa boken.</span>
+	  ✅ <span lang="sv">Jag har köpt boken.</span>
+	- ❌ <span lang="sv">Jag har köpte boken.</span>
+	  ✅ <span lang="sv">Jag har köpt boken.</span>
+	- Avoid mechanically copying the German perfect whenever Swedish places the
+	  event in a finished past time frame.
+</MistakeBox>
 
-## Related topics
-
-- [Swedish verb forms](../swedish-verb-forms/)
-- [Swedish preterite](../swedish-preterite/)
-- [Swedish verb groups](../swedish-verb-groups/)
-- [Swedish V2](../../sentence-structure/swedish-v2/)
-- [Swedish BIFF](../../sentence-structure/swedish-biff/)
+<RelatedTopics
+	topics={[
+		{ href: '../verb-forms/', label: 'Swedish verb forms' },
+		{ href: '../preterite/', label: 'Swedish preterite' },
+		{ href: '../verb-groups/', label: 'Swedish verb groups' },
+		{ href: '../../../sentence-structure/swedish/v2/', label: 'Swedish V2' },
+		{ href: '../../../sentence-structure/swedish/biff/', label: 'Swedish BIFF' },
+	]}
+/>

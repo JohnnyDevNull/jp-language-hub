@@ -1,0 +1,57 @@
+{
+  "sv-kopa": {
+    "language": "sv",
+    "lemma": "köpa",
+    "partOfSpeech": "verb",
+    "translations": {
+      "en": "buy"
+    },
+    "tags": ["verbs", "swedish-specific"],
+    "group": "2b",
+    "morphology": {
+      "imperative": "köp",
+      "present": "köper",
+      "preterite": "köpte",
+      "supine": "köpt"
+    }
+  },
+  "sv-tala": {
+    "language": "sv",
+    "lemma": "tala",
+    "partOfSpeech": "verb",
+    "tags": ["verbs", "swedish-specific"],
+    "group": "1",
+    "morphology": {
+      "imperative": "tala",
+      "present": "talar",
+      "preterite": "talade",
+      "supine": "talat"
+    }
+  },
+  "sv-bo": {
+    "language": "sv",
+    "lemma": "bo",
+    "partOfSpeech": "verb",
+    "tags": ["verbs", "swedish-specific"],
+    "group": "3",
+    "morphology": {
+      "imperative": "bo",
+      "present": "bor",
+      "preterite": "bodde",
+      "supine": "bott"
+    }
+  },
+  "sv-skriva": {
+    "language": "sv",
+    "lemma": "skriva",
+    "partOfSpeech": "verb",
+    "tags": ["verbs", "swedish-specific"],
+    "group": "4",
+    "morphology": {
+      "imperative": "skriv",
+      "present": "skriver",
+      "preterite": "skrev",
+      "supine": "skrivit"
+    }
+  }
+}

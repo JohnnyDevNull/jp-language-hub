@@ -15,7 +15,7 @@ individual word. BIFF is a memory aid, not a complete account of every
 subordinate-clause rule.
 
 Read the canonical explanations for
-[Swedish V2](../../../grammar/sentence-structure/swedish-v2/) and
-[Swedish BIFF](../../../grammar/sentence-structure/swedish-biff/). Use the
+[Swedish V2](../../../grammar/sentence-structure/swedish/v2/) and
+[Swedish BIFF](../../../grammar/sentence-structure/swedish/biff/). Use the
 [V2 and BIFF cheat sheet](../../../cheat-sheets/swedish-v2-biff/) when you only need
 the sentence templates.

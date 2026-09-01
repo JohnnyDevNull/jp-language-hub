@@ -4,6 +4,12 @@ description: Vocabulary organized by real-life domains and usage.
 ---
 
 import VocabularyCard from '../../../components/VocabularyCard.astro';
+import { getEntry } from 'astro:content';
+
+export const carEntry = await getEntry('vocabulary', 'sv-bil');
+export const car = carEntry?.data ?? (() => {
+	throw new Error('Missing required vocabulary entry: sv-bil');
+})();
 
 Vocabulary is organized by situations in which words are used, not as isolated
 translation pairs. Entries include the grammatical and usage information needed
@@ -28,15 +34,15 @@ A Swedish noun is more useful as a compact set of forms than as a single
 translation:
 
 <VocabularyCard
-	swedish="bil"
-	gender="en"
-	german="Auto"
-	english="car"
-	level="A1"
+	swedish={car.lemma}
+	gender={car.morphology.gender}
+	german={car.translations?.de}
+	english={car.translations?.en}
+	level={car.levels?.join('–')}
 	forms={[
-		{ label: 'Definite singular', value: 'bilen' },
-		{ label: 'Indefinite plural', value: 'bilar' },
-		{ label: 'Definite plural', value: 'bilarna' },
+		{ label: 'Definite singular', value: car.morphology.definiteSingular },
+		{ label: 'Indefinite plural', value: car.morphology.indefinitePlural },
+		{ label: 'Definite plural', value: car.morphology.definitePlural },
 	]}
 />
 

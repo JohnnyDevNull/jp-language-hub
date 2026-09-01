@@ -34,41 +34,69 @@ export default defineConfig({
 						{
 							label: 'Sentence Structure',
 							items: [
-								{ slug: 'grammar/sentence-structure/swedish-basic-word-order' },
-								{ slug: 'grammar/sentence-structure/swedish-v2' },
-								{ slug: 'grammar/sentence-structure/swedish-inversion' },
-								{ slug: 'grammar/sentence-structure/swedish-biff' },
-								{ slug: 'grammar/sentence-structure/inte-placement' },
+								{
+									label: 'Swedish',
+									items: [
+										{ slug: 'grammar/sentence-structure/swedish/basic-word-order' },
+										{ slug: 'grammar/sentence-structure/swedish/v2' },
+										{ slug: 'grammar/sentence-structure/swedish/inversion' },
+										{ slug: 'grammar/sentence-structure/swedish/biff' },
+										{ slug: 'grammar/sentence-structure/swedish/inte-placement' },
+									],
+								},
+								{ label: 'German', slug: 'grammar/sentence-structure/german' },
+								{ label: 'English', slug: 'grammar/sentence-structure/english' },
+								{ label: 'Comparisons', slug: 'grammar/sentence-structure/comparisons' },
 							],
 						},
 						{
 							label: 'Nouns & Articles',
 							items: [
-								{ slug: 'grammar/nouns-articles/swedish-en-ett' },
-								{ slug: 'grammar/nouns-articles/swedish-noun-forms' },
-								{ slug: 'grammar/nouns-articles/swedish-plural-overview' },
+								{
+									label: 'Swedish',
+									items: [
+										{ slug: 'grammar/nouns-articles/swedish/en-ett' },
+										{ slug: 'grammar/nouns-articles/swedish/noun-forms' },
+										{ slug: 'grammar/nouns-articles/swedish/plural-overview' },
+									],
+								},
 							],
 						},
 						{
 							label: 'Adjectives & Adverbs',
 							items: [
-								{ slug: 'grammar/adjectives-adverbs/swedish-adjective-agreement' },
-								{ slug: 'grammar/adjectives-adverbs/swedish-adjective-comparison' },
+								{
+									label: 'Swedish',
+									items: [
+										{ slug: 'grammar/adjectives-adverbs/swedish/agreement' },
+										{ slug: 'grammar/adjectives-adverbs/swedish/adjective-comparison' },
+									],
+								},
 							],
 						},
 						{
 							label: 'Verbs',
 							items: [
-								{ slug: 'grammar/verbs/swedish-verb-forms' },
-								{ slug: 'grammar/verbs/swedish-present' },
-								{ slug: 'grammar/verbs/swedish-preterite' },
-								{ slug: 'grammar/verbs/swedish-perfect' },
-								{ slug: 'grammar/verbs/swedish-verb-groups' },
+								{
+									label: 'Swedish',
+									items: [
+										{ slug: 'grammar/verbs/swedish/verb-forms' },
+										{ slug: 'grammar/verbs/swedish/present' },
+										{ slug: 'grammar/verbs/swedish/preterite' },
+										{ slug: 'grammar/verbs/swedish/perfect' },
+										{ slug: 'grammar/verbs/swedish/verb-groups' },
+									],
+								},
 							],
 						},
 						{
 							label: 'Pronouns & Function Words',
-							items: [{ slug: 'grammar/pronouns-function-words/sin-sitt-sina' }],
+							items: [
+								{
+									label: 'Swedish',
+									items: [{ slug: 'grammar/pronouns-function-words/swedish/sin-sitt-sina' }],
+								},
+							],
 						},
 					],
 				},
@@ -82,7 +110,17 @@ export default defineConfig({
 						{ slug: 'language-specific-rules/swedish/sin-sitt-sina' },
 					],
 				},
-				{ slug: 'common-mistakes' },
+				{
+					label: 'Common Mistakes',
+					items: [
+						{ label: 'Overview', slug: 'common-mistakes' },
+						{ slug: 'common-mistakes/de-to-en' },
+						{ slug: 'common-mistakes/de-to-sv' },
+						{ slug: 'common-mistakes/en-to-sv' },
+						{ slug: 'common-mistakes/false-friends' },
+						{ slug: 'common-mistakes/direct-translation-errors' },
+					],
+				},
 				{
 					label: 'Cheat Sheets',
 					items: [

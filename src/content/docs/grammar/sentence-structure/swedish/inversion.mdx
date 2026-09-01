@@ -1,14 +1,33 @@
 ---
 title: Swedish Inversion
 description: Place the subject correctly when a Swedish main clause begins with time, place, an object, or another constituent.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+  - swedish-specific
+  - important
+related:
+  - /grammar/sentence-structure/swedish/v2/
+  - /grammar/sentence-structure/swedish/basic-word-order/
+  - /grammar/sentence-structure/swedish/biff/
 ---
+
+import MemoryTip from '../../../../../components/MemoryTip.astro';
+import MistakeBox from '../../../../../components/MistakeBox.astro';
+import RelatedTopics from '../../../../../components/RelatedTopics.astro';
 
 Inversion occurs when a Swedish declarative main clause begins with something
 other than the subject. The finite verb remains in the second position, so the
 subject follows the verb.
-
-**Level:** A1–A2  
-**Focus:** Swedish main clauses
 
 ## Core rule
 
@@ -28,7 +47,7 @@ The useful main-clause pattern is:
 
 > **fronted constituent + finite verb + subject + rest of clause**
 
-This is the visible consequence of the [V2 rule](../swedish-v2/).
+This is the visible consequence of the [V2 rule](../v2/).
 
 ## With more than one verb
 
@@ -69,21 +88,24 @@ However, it is useful to distinguish the two patterns:
 - a statement keeps the verb in position two after a fronted constituent;
 - a yes/no question normally starts with the finite verb.
 
-:::caution[Common mistake]
+<MistakeBox
+	incorrect="Efter jobbet jag ska handla."
+	correct="Efter jobbet ska jag handla."
+	lang="sv"
+>
 Fronting an expression does not create an extra position before the ordinary
 sentence. It changes the order of the main clause.
+</MistakeBox>
 
-<span lang="sv">❌ Efter jobbet jag ska handla.</span>  
-<span lang="sv">✅ Efter jobbet ska jag handla.</span>
-:::
-
-:::tip[Memory tip]
+<MemoryTip>
 If the subject is not first, listen for the pair **verb + subject** immediately
 after the opening block: <span lang="sv">Idag <strong>kommer jag</strong> …</span>
-:::
+</MemoryTip>
 
-## Related topics
-
-- [Swedish V2](../swedish-v2/)
-- [Swedish basic word order](../swedish-basic-word-order/)
-- [Swedish BIFF](../swedish-biff/)
+<RelatedTopics
+	topics={[
+		{ href: '../v2/', label: 'Swedish V2' },
+		{ href: '../basic-word-order/', label: 'Swedish basic word order' },
+		{ href: '../biff/', label: 'Swedish BIFF' },
+	]}
+/>

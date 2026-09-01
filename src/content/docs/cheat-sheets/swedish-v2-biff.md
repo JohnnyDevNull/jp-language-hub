@@ -51,5 +51,5 @@ of every Swedish clause type.
 
 ## Full references
 
-- [Swedish V2](../../grammar/sentence-structure/swedish-v2/)
-- [Swedish BIFF](../../grammar/sentence-structure/swedish-biff/)
+- [Swedish V2](../../grammar/sentence-structure/swedish/v2/)
+- [Swedish BIFF](../../grammar/sentence-structure/swedish/biff/)

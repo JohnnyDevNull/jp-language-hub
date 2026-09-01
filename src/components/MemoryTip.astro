@@ -7,6 +7,6 @@ const { title = 'Memory tip' } = Astro.props;
 ---
 
 <aside class="memory-tip" aria-label={title}>
-	<p class="memory-tip-title">{title}</p>
+	<p class="memory-tip-title" aria-hidden="true">{title}</p>
 	<div class="memory-tip-content"><slot /></div>
 </aside>

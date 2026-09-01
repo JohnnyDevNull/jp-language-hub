@@ -1,0 +1,64 @@
+{
+  "sv-bil": {
+    "language": "sv",
+    "lemma": "bil",
+    "partOfSpeech": "noun",
+    "translations": {
+      "de": "Auto",
+      "en": "car"
+    },
+    "levels": ["A1"],
+    "tags": ["vocabulary", "nouns", "swedish-specific"],
+    "morphology": {
+      "gender": "en",
+      "definiteSingular": "bilen",
+      "indefinitePlural": "bilar",
+      "definitePlural": "bilarna"
+    }
+  },
+  "sv-hus": {
+    "language": "sv",
+    "lemma": "hus",
+    "partOfSpeech": "noun",
+    "translations": {
+      "en": "house"
+    },
+    "tags": ["vocabulary", "nouns", "swedish-specific"],
+    "morphology": {
+      "gender": "ett",
+      "definiteSingular": "huset",
+      "indefinitePlural": "hus",
+      "definitePlural": "husen"
+    }
+  },
+  "sv-apple": {
+    "language": "sv",
+    "lemma": "äpple",
+    "partOfSpeech": "noun",
+    "translations": {
+      "en": "apple"
+    },
+    "tags": ["vocabulary", "nouns", "swedish-specific"],
+    "morphology": {
+      "gender": "ett",
+      "definiteSingular": "äpplet",
+      "indefinitePlural": "äpplen",
+      "definitePlural": "äpplena"
+    }
+  },
+  "sv-flicka": {
+    "language": "sv",
+    "lemma": "flicka",
+    "partOfSpeech": "noun",
+    "translations": {
+      "en": "girl"
+    },
+    "tags": ["vocabulary", "nouns", "swedish-specific"],
+    "morphology": {
+      "gender": "en",
+      "definiteSingular": "flickan",
+      "indefinitePlural": "flickor",
+      "definitePlural": "flickorna"
+    }
+  }
+}

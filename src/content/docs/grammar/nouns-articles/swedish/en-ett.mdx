@@ -1,19 +1,40 @@
 ---
 title: Swedish en / ett
 description: Learn Swedish noun gender, indefinite articles, definite suffixes, and the connection between en or ett and adjective agreement.
+metaLanguage: en
+grammarLanguage: sv
+levels:
+  - A1
+tags:
+  - grammar
+  - nouns
+  - swedish-specific
+  - important
+related:
+  - /grammar/nouns-articles/swedish/noun-forms/
+  - /grammar/nouns-articles/swedish/plural-overview/
+  - /grammar/adjectives-adverbs/swedish/agreement/
+  - /grammar/adjectives-adverbs/swedish/adjective-comparison/
 ---
 
-import MemoryTip from '../../../../components/MemoryTip.astro';
-import NounForms from '../../../../components/NounForms.astro';
-import RelatedTopics from '../../../../components/RelatedTopics.astro';
-import RuleBox from '../../../../components/RuleBox.astro';
-import TagList from '../../../../components/TagList.astro';
+import MemoryTip from '../../../../../components/MemoryTip.astro';
+import MistakeBox from '../../../../../components/MistakeBox.astro';
+import NounForms from '../../../../../components/NounForms.astro';
+import RelatedTopics from '../../../../../components/RelatedTopics.astro';
+import RuleBox from '../../../../../components/RuleBox.astro';
+import TagList from '../../../../../components/TagList.astro';
 
 Most Swedish nouns belong to one of two grammatical genders. An **en-word** uses
 <span lang="sv">en</span>; an **ett-word** uses <span lang="sv">ett</span>.
 The noun's gender affects articles, definite forms, and adjective endings.
 
-<TagList tags={['Swedish', 'A1', 'grammar', 'nouns', 'important']} />
+<TagList
+	tags={[
+		'Swedish',
+		...(frontmatter.levels ?? []),
+		...(frontmatter.tags ?? []).filter((tag) => tag !== 'swedish-specific'),
+	]}
+/>
 
 ## Core rule
 
@@ -58,7 +79,7 @@ Compare:
 | <span lang="en">🇬🇧 English</span> | <span lang="en">a car</span> | <span lang="en">the car</span> |
 | <span lang="sv">🇸🇪 Svenska</span> | <span lang="sv">en bil</span> | <span lang="sv">bilen</span> |
 
-See [Swedish noun forms](../swedish-noun-forms/) for spelling patterns and
+See [Swedish noun forms](../noun-forms/) for spelling patterns and
 plural definiteness.
 
 ## Adjective agreement
@@ -73,19 +94,18 @@ article makes that grammatical information visible:
 
 The basic pattern is **base form** with an en-word, often **-t** with an ett-word,
 and often **-a** in the plural. Adjectives also have irregular and spelling-
-dependent forms; the canonical explanation is [Swedish adjective agreement](../../adjectives-adverbs/swedish-adjective-agreement/).
+dependent forms; the canonical explanation is [Swedish adjective agreement](../../../adjectives-adverbs/swedish/agreement/).
 
 ## Definite adjective constructions
 
-When an adjective modifies a definite noun, standard Swedish normally uses a
-free definite article, the definite adjective form, **and** the definite noun:
+When an adjective modifies a definite noun, standard Swedish normally marks
+definiteness with both a separate article and the noun's definite suffix:
 
-- <span lang="sv">den stora bilen</span>
-- <span lang="sv">det stora huset</span>
-- <span lang="sv">de stora bilarna</span>
+<p lang="sv">den stora bilen</p>
 
-This is called **double definiteness**. Compare English
-<span lang="en">the big car</span>, which marks definiteness only once.
+This is called **double definiteness**. See
+[Swedish adjective agreement](../../../adjectives-adverbs/swedish/agreement/#definite-noun-phrases-and-double-definiteness)
+for the complete pattern, gender and number forms, and the possessive exception.
 
 ## Plural
 
@@ -96,9 +116,9 @@ The plural ending cannot be derived from en or ett alone:
 - <span lang="sv">ett äpple → äpplen</span>
 
 Learn the important plural forms with the noun. See the
-[Swedish plural overview](../swedish-plural-overview/).
+[Swedish plural overview](../plural-overview/).
 
-:::caution[Common mistakes]
+<MistakeBox title="Common mistakes">
 Do not assume that an object's natural properties determine en or ett, and do
 not use <span lang="sv">en</span> as a universal article.
 
@@ -109,7 +129,7 @@ Also keep the adjective consistent:
 
 <span lang="sv">❌ ett stor hus</span>  
 <span lang="sv">✅ ett stort hus</span>
-:::
+</MistakeBox>
 
 <MemoryTip>
 	Treat the article as part of the word: learn
@@ -120,14 +140,14 @@ Also keep the adjective consistent:
 
 <RelatedTopics
 	topics={[
-		{ href: '../swedish-noun-forms/', label: 'Swedish noun forms' },
-		{ href: '../swedish-plural-overview/', label: 'Swedish plural overview' },
+		{ href: '../noun-forms/', label: 'Swedish noun forms' },
+		{ href: '../plural-overview/', label: 'Swedish plural overview' },
 		{
-			href: '../../adjectives-adverbs/swedish-adjective-agreement/',
+			href: '../../../adjectives-adverbs/swedish/agreement/',
 			label: 'Swedish adjective agreement',
 		},
 		{
-			href: '../../adjectives-adverbs/swedish-adjective-comparison/',
+			href: '../../../adjectives-adverbs/swedish/adjective-comparison/',
 			label: 'Swedish adjective comparison',
 		},
 	]}

@@ -1,14 +1,34 @@
 ---
 title: Swedish Basic Word Order
 description: Build clear Swedish main clauses, questions, and subordinate clauses from a reliable basic pattern.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+  - swedish-specific
+  - important
+related:
+  - /grammar/sentence-structure/swedish/v2/
+  - /grammar/sentence-structure/swedish/inversion/
+  - /grammar/sentence-structure/swedish/biff/
+  - /grammar/sentence-structure/swedish/inte-placement/
 ---
+
+import MemoryTip from '../../../../../components/MemoryTip.astro';
+import MistakeBox from '../../../../../components/MistakeBox.astro';
+import RelatedTopics from '../../../../../components/RelatedTopics.astro';
 
 Swedish word order carries grammatical meaning. The most useful starting point is
 the neutral main-clause pattern, but that pattern changes when another sentence
 element is placed first or when the clause is subordinate.
-
-**Level:** A1–A2  
-**Focus:** Swedish sentence structure
 
 ## Core rule
 
@@ -40,7 +60,7 @@ do not change according to person:
 
 The three languages can look similar in a neutral sentence. The important
 difference appears when the first constituent changes: Swedish and German use
-[V2 word order](../swedish-v2/), whereas English normally keeps the subject
+[V2 word order](../v2/), whereas English normally keeps the subject
 before the verb.
 
 ## A constituent can contain several words
@@ -76,25 +96,28 @@ Compare the placement of <span lang="sv">inte</span>:
 | Main clause | <span lang="sv">Jag kommer inte idag.</span> | subject + finite verb + <span lang="sv">inte</span> |
 | Subordinate clause | <span lang="sv">… eftersom jag inte kommer idag.</span> | conjunction + subject + <span lang="sv">inte</span> + finite verb |
 
-The [BIFF rule](../swedish-biff/) is a useful way to remember this subordinate-
+The [BIFF rule](../biff/) is a useful way to remember this subordinate-
 clause pattern.
 
-:::caution[Common mistake]
+<MistakeBox
+	incorrect="Idag jag köper en bil."
+	correct="Idag köper jag en bil."
+	lang="sv"
+>
 Do not copy English subject–verb order after a fronted Swedish adverbial.
+</MistakeBox>
 
-<span lang="sv">❌ Idag jag köper en bil.</span>  
-<span lang="sv">✅ Idag köper jag en bil.</span>
-:::
-
-:::tip[Memory tip]
+<MemoryTip>
 Start with **who + does what**, then add the rest. If something else moves to
 the front of a main clause, keep the finite verb in position two and move the
 subject behind it.
-:::
+</MemoryTip>
 
-## Related topics
-
-- [Swedish V2](../swedish-v2/)
-- [Swedish inversion](../swedish-inversion/)
-- [Swedish BIFF](../swedish-biff/)
-- [Placement of *inte*](../inte-placement/)
+<RelatedTopics
+	topics={[
+		{ href: '../v2/', label: 'Swedish V2' },
+		{ href: '../inversion/', label: 'Swedish inversion' },
+		{ href: '../biff/', label: 'Swedish BIFF' },
+		{ href: '../inte-placement/', label: 'Placement of inte' },
+	]}
+/>

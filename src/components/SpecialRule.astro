@@ -8,6 +8,6 @@ const { language, title = language ? `${language}-specific rule` : 'Language-spe
 ---
 
 <aside class="special-rule" aria-label={title}>
-	<p class="special-rule-title">{title}</p>
+	<p class="special-rule-title" aria-hidden="true">{title}</p>
 	<div class="special-rule-content"><slot /></div>
 </aside>

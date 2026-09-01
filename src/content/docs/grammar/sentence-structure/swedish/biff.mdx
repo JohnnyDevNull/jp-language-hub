@@ -1,16 +1,35 @@
 ---
 title: Swedish BIFF
 description: Use the BIFF memory rule to place inte and other sentence adverbs in Swedish subordinate clauses.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+  - swedish-specific
+  - important
+related:
+  - /grammar/sentence-structure/swedish/inte-placement/
+  - /grammar/sentence-structure/swedish/v2/
+  - /grammar/sentence-structure/swedish/inversion/
+  - /grammar/sentence-structure/swedish/basic-word-order/
 ---
+
+import MemoryTip from '../../../../../components/MemoryTip.astro';
+import MistakeBox from '../../../../../components/MistakeBox.astro';
+import RelatedTopics from '../../../../../components/RelatedTopics.astro';
 
 **BIFF** is a Swedish memory rule for the placement of sentence adverbs in
 subordinate clauses:
 
 > **B**isats: **I**nte **F**öre **F**init  
 > In a subordinate clause, <span lang="sv">inte</span> comes before the finite verb.
-
-**Level:** A2  
-**Focus:** Swedish subordinate-clause word order
 
 ## Core contrast
 
@@ -63,12 +82,13 @@ English does not show the Swedish finite-verb contrast clearly. German also
 changes subordinate-clause order, but its finite verb normally moves to the end;
 that is not the Swedish rule.
 
-:::caution[Common mistake]
+<MistakeBox
+	incorrect="Jag stannar hemma eftersom jag mår inte bra."
+	correct="Jag stannar hemma eftersom jag inte mår bra."
+	lang="sv"
+>
 Do not keep main-clause placement inside a subordinate clause.
-
-<span lang="sv">❌ Jag stannar hemma eftersom jag mår inte bra.</span>  
-<span lang="sv">✅ Jag stannar hemma eftersom jag inte mår bra.</span>
-:::
+</MistakeBox>
 
 :::note[BIFF is a learning rule]
 BIFF helps locate sentence adverbs; it is not a complete grammar of Swedish
@@ -76,13 +96,15 @@ subordinate clauses. You still need the subordinator, a subject, the appropriate
 verb forms, and the rest of the clause.
 :::
 
-:::tip[Memory tip]
+<MemoryTip>
 In a **BI**sats, put **I**nte **F**öre the **F**inite verb.
-:::
+</MemoryTip>
 
-## Related topics
-
-- [Placement of *inte*](../inte-placement/)
-- [Swedish V2](../swedish-v2/)
-- [Swedish inversion](../swedish-inversion/)
-- [Swedish basic word order](../swedish-basic-word-order/)
+<RelatedTopics
+	topics={[
+		{ href: '../inte-placement/', label: 'Placement of inte' },
+		{ href: '../v2/', label: 'Swedish V2' },
+		{ href: '../inversion/', label: 'Swedish inversion' },
+		{ href: '../basic-word-order/', label: 'Swedish basic word order' },
+	]}
+/>

@@ -7,6 +7,6 @@ const { title = 'Rule' } = Astro.props;
 ---
 
 <aside class="rule-box" aria-label={title}>
-	<p class="rule-box-title">{title}</p>
+	<p class="rule-box-title" aria-hidden="true">{title}</p>
 	<div class="rule-box-content"><slot /></div>
 </aside>

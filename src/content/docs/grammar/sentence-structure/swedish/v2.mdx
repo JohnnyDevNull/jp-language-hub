@@ -1,17 +1,36 @@
 ---
 title: Swedish V2
 description: Understand why the finite verb normally occupies the second constituent position in Swedish main clauses.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+  - swedish-specific
+  - important
+related:
+  - /grammar/sentence-structure/swedish/basic-word-order/
+  - /grammar/sentence-structure/swedish/inversion/
+  - /grammar/sentence-structure/swedish/biff/
+  - /grammar/sentence-structure/swedish/inte-placement/
 ---
 
-import ExampleBox from '../../../../components/ExampleBox.astro';
-import SpecialRule from '../../../../components/SpecialRule.astro';
+import ExampleBox from '../../../../../components/ExampleBox.astro';
+import MemoryTip from '../../../../../components/MemoryTip.astro';
+import MistakeBox from '../../../../../components/MistakeBox.astro';
+import RelatedTopics from '../../../../../components/RelatedTopics.astro';
+import SpecialRule from '../../../../../components/SpecialRule.astro';
 
 **V2** means that the finite verb normally occupies the second position in a
 Swedish declarative main clause. It is one of the most important rules for
 producing natural Swedish sentences.
-
-**Level:** A1–A2  
-**Focus:** Swedish main clauses
 
 ## Core rule
 
@@ -73,29 +92,32 @@ Common choices include:
 
 Changing position one changes the emphasis, not the V2 requirement.
 
-:::caution[Common mistake]
+<MistakeBox
+	incorrect="På måndag morgon jag börjar mitt nya jobb."
+	correct="På måndag morgon börjar jag mitt nya jobb."
+	lang="sv"
+>
 Do not count individual words and do not leave the subject before the verb after
 fronting another constituent.
-
-<span lang="sv">❌ På måndag morgon jag börjar mitt nya jobb.</span>  
-<span lang="sv">✅ På måndag morgon börjar jag mitt nya jobb.</span>
-:::
+</MistakeBox>
 
 <SpecialRule language="Swedish" title="Scope of V2">
 	V2 describes declarative **main clauses**. A subordinate clause has a
 	different internal pattern; in particular, sentence adverbs such as
 	<span lang="sv">inte</span> normally come before the finite verb. See
-	[Swedish BIFF](../swedish-biff/).
+	[Swedish BIFF](../biff/).
 </SpecialRule>
 
-:::tip[Memory tip]
+<MemoryTip>
 Think in blocks: **first block → finite verb → subject (if it was not first) →
 the rest**.
-:::
+</MemoryTip>
 
-## Related topics
-
-- [Swedish basic word order](../swedish-basic-word-order/)
-- [Swedish inversion](../swedish-inversion/)
-- [Swedish BIFF](../swedish-biff/)
-- [Placement of *inte*](../inte-placement/)
+<RelatedTopics
+	topics={[
+		{ href: '../basic-word-order/', label: 'Swedish basic word order' },
+		{ href: '../inversion/', label: 'Swedish inversion' },
+		{ href: '../biff/', label: 'Swedish BIFF' },
+		{ href: '../inte-placement/', label: 'Placement of inte' },
+	]}
+/>

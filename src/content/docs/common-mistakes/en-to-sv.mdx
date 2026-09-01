@@ -1,0 +1,48 @@
+---
+title: English to Swedish Mistakes
+description: Common Swedish mistakes caused by transferring English word order and agreement patterns.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - en
+  - sv
+tags:
+  - common-mistakes
+  - comparison
+  - sentence-structure
+---
+
+import MistakeBox from '../../../components/MistakeBox.astro';
+
+English is a useful bridge to Swedish vocabulary, but Swedish keeps several
+word-order and agreement distinctions that English does not show.
+
+## Word order after a fronted element
+
+<MistakeBox
+	incorrect="Idag jag köper en bil."
+	correct="Idag köper jag en bil."
+	lang="sv"
+>
+	A fronted time expression occupies the first position, so the finite verb
+	must come next. See [Swedish V2](../../grammar/sentence-structure/swedish/v2/).
+</MistakeBox>
+
+## Main clause order inside a subordinate clause
+
+<MistakeBox
+	incorrect="... eftersom jag kommer inte idag."
+	correct="... eftersom jag inte kommer idag."
+	lang="sv"
+>
+	In a typical Swedish subordinate clause, a sentence adverb such as `inte`
+	precedes the finite verb. See
+	[BIFF](../../grammar/sentence-structure/swedish/biff/).
+</MistakeBox>
+
+## Missing noun agreement
+
+<MistakeBox incorrect="ett stor hus" correct="ett stort hus" lang="sv">
+	The adjective agrees with an `ett` noun. See
+	[adjective agreement](../../grammar/adjectives-adverbs/swedish/agreement/).
+</MistakeBox>

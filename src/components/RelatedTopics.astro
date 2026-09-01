@@ -16,7 +16,7 @@ const { topics = [], title = 'Related topics' } = Astro.props;
 {
 	topics.length > 0 && (
 		<nav class="related-topics" aria-label={title}>
-			<p class="related-topics-title">{title}</p>
+			<p class="related-topics-title" aria-hidden="true">{title}</p>
 			<ul class="related-topics-items">
 				{topics.map((topic) => (
 					<li class="related-topics-item">

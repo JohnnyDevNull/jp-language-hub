@@ -40,6 +40,6 @@ an isolated translation pair.
 
 ## Full references
 
-- [Swedish noun forms](../../grammar/nouns-articles/swedish-noun-forms/)
-- [Swedish en and ett](../../grammar/nouns-articles/swedish-en-ett/)
-- [Swedish adjective agreement](../../grammar/adjectives-adverbs/swedish-adjective-agreement/)
+- [Swedish noun forms](../../grammar/nouns-articles/swedish/noun-forms/)
+- [Swedish en and ett](../../grammar/nouns-articles/swedish/en-ett/)
+- [Swedish adjective agreement](../../grammar/adjectives-adverbs/swedish/agreement/)

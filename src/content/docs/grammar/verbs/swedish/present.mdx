@@ -1,7 +1,27 @@
 ---
 title: Swedish present tense
 description: How Swedish forms and uses the present tense.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+tags:
+  - grammar
+  - verbs
+  - swedish-specific
+related:
+  - /grammar/verbs/swedish/verb-forms/
+  - /grammar/verbs/swedish/verb-groups/
+  - /grammar/verbs/swedish/preterite/
+  - /grammar/verbs/swedish/perfect/
 ---
+
+import MistakeBox from '../../../../../components/MistakeBox.astro';
+import RelatedTopics from '../../../../../components/RelatedTopics.astro';
 
 The Swedish present tense describes what happens now, what happens regularly,
 and—in a clear context—what is planned or expected to happen later.
@@ -71,20 +91,24 @@ In a subordinate clause, the order normally changes:
 <span lang="sv">… eftersom jag inte arbetar idag.</span>
 
 This is a word-order rule, not a different present-tense form. See the pages on
-[Swedish V2](../../sentence-structure/swedish-v2/) and
-[Swedish BIFF](../../sentence-structure/swedish-biff/).
+[Swedish V2](../../../sentence-structure/swedish/v2/) and
+[Swedish BIFF](../../../sentence-structure/swedish/biff/).
 
 ## Common mistakes
 
-- Do not add a person ending modeled on English or German: Swedish uses
-  <span lang="sv">jag kommer</span> and <span lang="sv">hon kommer</span>.
-- Do not translate the English progressive word for word. Usually
-  <span lang="en">I am working</span> becomes <span lang="sv">jag arbetar</span>.
-- Learn irregular present forms individually.
+<MistakeBox title="Common mistakes">
+	- Do not add a person ending modeled on English or German: Swedish uses
+	  <span lang="sv">jag kommer</span> and <span lang="sv">hon kommer</span>.
+	- Do not translate the English progressive word for word. Usually
+	  <span lang="en">I am working</span> becomes <span lang="sv">jag arbetar</span>.
+	- Learn irregular present forms individually.
+</MistakeBox>
 
-## Related topics
-
-- [Swedish verb forms](../swedish-verb-forms/)
-- [Swedish verb groups](../swedish-verb-groups/)
-- [Swedish preterite](../swedish-preterite/)
-- [Swedish perfect](../swedish-perfect/)
+<RelatedTopics
+	topics={[
+		{ href: '../verb-forms/', label: 'Swedish verb forms' },
+		{ href: '../verb-groups/', label: 'Swedish verb groups' },
+		{ href: '../preterite/', label: 'Swedish preterite' },
+		{ href: '../perfect/', label: 'Swedish perfect' },
+	]}
+/>

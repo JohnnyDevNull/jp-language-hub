@@ -16,4 +16,4 @@ The form agrees with the possessed noun, not with the possessor. Use
 <span lang="sv">deras</span> when referring to somebody else.
 
 For clause boundaries, contrasts, and common mistakes, read the canonical
-[sin, sitt, and sina reference](../../../grammar/pronouns-function-words/sin-sitt-sina/).
+[sin, sitt, and sina reference](../../../grammar/pronouns-function-words/swedish/sin-sitt-sina/).

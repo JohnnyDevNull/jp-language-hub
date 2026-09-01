@@ -1,7 +1,25 @@
 ---
 title: Swedish verb groups
 description: A practical overview of the main regular Swedish conjugation patterns.
+metaLanguage: en
+grammarLanguage: sv
+levels:
+  - A2
+tags:
+  - grammar
+  - verbs
+  - swedish-specific
+related:
+  - /grammar/verbs/swedish/verb-forms/
+  - /grammar/verbs/swedish/present/
+  - /grammar/verbs/swedish/preterite/
+  - /grammar/verbs/swedish/perfect/
+  - /cheat-sheets/swedish-verb-forms/
 ---
+
+import MemoryTip from '../../../../../components/MemoryTip.astro';
+import MistakeBox from '../../../../../components/MistakeBox.astro';
+import RelatedTopics from '../../../../../components/RelatedTopics.astro';
 
 Swedish verb groups describe recurring patterns for the present, preterite,
 and supine. They help predict forms, but the forms of common irregular verbs
@@ -79,24 +97,31 @@ Do not try to manufacture these forms from one universal rule.
 3. Mark genuinely irregular forms instead of treating every verb as irregular.
 4. Revisit the form in a complete sentence.
 
-:::tip[Memory tip]
+<MemoryTip>
 Say the chain aloud: <span lang="sv">köpa — köper — köpte — köpt</span>.
 The rhythm makes the relationship between the forms easier to retrieve.
-:::
+</MemoryTip>
 
 ## Common mistakes
 
-- ❌ <span lang="sv">köpa → köpade</span>
-  ✅ <span lang="sv">köpa → köpte</span>
-- ❌ <span lang="sv">skriva → skrivade</span>
-  ✅ <span lang="sv">skriva → skrev</span>
-- A verb ending in <span lang="sv">-a</span> is not automatically group 1.
-  Compare <span lang="sv">tala</span> with <span lang="sv">köpa</span>.
+<MistakeBox title="Common mistakes">
+	- ❌ <span lang="sv">köpa → köpade</span>
+	  ✅ <span lang="sv">köpa → köpte</span>
+	- ❌ <span lang="sv">skriva → skrivade</span>
+	  ✅ <span lang="sv">skriva → skrev</span>
+	- A verb ending in <span lang="sv">-a</span> is not automatically group 1.
+	  Compare <span lang="sv">tala</span> with <span lang="sv">köpa</span>.
+</MistakeBox>
 
-## Related topics
-
-- [Swedish verb forms](../swedish-verb-forms/)
-- [Swedish present](../swedish-present/)
-- [Swedish preterite](../swedish-preterite/)
-- [Swedish perfect](../swedish-perfect/)
-- [Swedish verb forms cheat sheet](../../../cheat-sheets/swedish-verb-forms/)
+<RelatedTopics
+	topics={[
+		{ href: '../verb-forms/', label: 'Swedish verb forms' },
+		{ href: '../present/', label: 'Swedish present' },
+		{ href: '../preterite/', label: 'Swedish preterite' },
+		{ href: '../perfect/', label: 'Swedish perfect' },
+		{
+			href: '../../../../cheat-sheets/swedish-verb-forms/',
+			label: 'Swedish verb forms cheat sheet',
+		},
+	]}
+/>

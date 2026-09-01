@@ -48,8 +48,8 @@ Learn present — preterite — supine as one spoken chain:
 
 ## Full references
 
-- [Swedish verb forms](../../grammar/verbs/swedish-verb-forms/)
-- [Swedish present](../../grammar/verbs/swedish-present/)
-- [Swedish preterite](../../grammar/verbs/swedish-preterite/)
-- [Swedish perfect](../../grammar/verbs/swedish-perfect/)
-- [Swedish verb groups](../../grammar/verbs/swedish-verb-groups/)
+- [Swedish verb forms](../../grammar/verbs/swedish/verb-forms/)
+- [Swedish present](../../grammar/verbs/swedish/present/)
+- [Swedish preterite](../../grammar/verbs/swedish/preterite/)
+- [Swedish perfect](../../grammar/verbs/swedish/perfect/)
+- [Swedish verb groups](../../grammar/verbs/swedish/verb-groups/)

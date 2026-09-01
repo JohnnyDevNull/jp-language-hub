@@ -1,14 +1,32 @@
 ---
 title: Swedish Plural Overview
 description: Recognize the main Swedish noun plural patterns and learn why each noun should be stored with its plural forms.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - nouns
+  - swedish-specific
+related:
+  - /grammar/nouns-articles/swedish/en-ett/
+  - /grammar/nouns-articles/swedish/noun-forms/
+  - /grammar/adjectives-adverbs/swedish/agreement/
 ---
+
+import MemoryTip from '../../../../../components/MemoryTip.astro';
+import MistakeBox from '../../../../../components/MistakeBox.astro';
+import RelatedTopics from '../../../../../components/RelatedTopics.astro';
 
 Swedish nouns form the indefinite plural in several ways. Gender and word
 ending provide useful clues, but they do not predict every noun. For reliable
 use, learn a noun with its gender and plural.
-
-**Level:** A1–A2  
-**Focus:** Swedish noun plurals
 
 ## Main plural patterns
 
@@ -72,24 +90,28 @@ the noun singular; number and context show that it is plural.
 Like German, Swedish has several plural patterns and stem changes. English
 <span lang="en">-s</span> is therefore not a safe model for Swedish.
 
-:::caution[Common mistake]
+<MistakeBox>
 Do not infer that all en-words take one ending and all ett-words another:
 
 <span lang="sv">en bil → bilar</span>, but
 <span lang="sv">en telefon → telefoner</span>;  
 <span lang="sv">ett äpple → äpplen</span>, but
 <span lang="sv">ett hus → hus</span>.
-:::
+</MistakeBox>
 
-:::tip[Memory tip]
+<MemoryTip>
 Learn the four forms, not a guessed group number:
 <span lang="sv"><strong>ett äpple — äpplet — äpplen — äpplena</strong></span>.
 The pattern will become familiar through repeated examples.
-:::
+</MemoryTip>
 
-## Related topics
-
-- [Swedish en / ett](../swedish-en-ett/)
-- [Swedish noun forms](../swedish-noun-forms/)
-- [Swedish adjective agreement](../../adjectives-adverbs/swedish-adjective-agreement/)
-
+<RelatedTopics
+	topics={[
+		{ href: '../en-ett/', label: 'Swedish en / ett' },
+		{ href: '../noun-forms/', label: 'Swedish noun forms' },
+		{
+			href: '../../../adjectives-adverbs/swedish/agreement/',
+			label: 'Swedish adjective agreement',
+		},
+	]}
+/>

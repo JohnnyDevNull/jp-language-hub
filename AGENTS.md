@@ -14,6 +14,12 @@ changes:
 3. Follow all applicable rules.
 4. Validate the solution against those rules.
 
+Before adding or modifying content frontmatter, tags, levels, related links, or
+structured content metadata:
+
+1. Read [`docs/rules/content-metadata.md`](docs/rules/content-metadata.md).
+2. Follow the validated metadata vocabulary and field semantics.
+
 If no compliant solution can be determined, stop and ask an engineer.
 
 ## Development

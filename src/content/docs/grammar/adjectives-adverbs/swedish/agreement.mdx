@@ -1,0 +1,177 @@
+---
+title: Swedish Adjective Agreement
+description: Choose the Swedish adjective form for en-words, ett-words, plurals, and definite noun phrases.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - adjectives
+  - swedish-specific
+  - important
+related:
+  - /grammar/nouns-articles/swedish/en-ett/
+  - /grammar/nouns-articles/swedish/noun-forms/
+  - /grammar/adjectives-adverbs/swedish/adjective-comparison/
+---
+
+import { getEntry } from 'astro:content';
+import AdjectiveForms from '../../../../../components/AdjectiveForms.astro';
+import MemoryTip from '../../../../../components/MemoryTip.astro';
+import MistakeBox from '../../../../../components/MistakeBox.astro';
+import RelatedTopics from '../../../../../components/RelatedTopics.astro';
+
+export const stor = (await getEntry('adjectives', 'sv-stor'))?.data ?? (() => {
+	throw new Error('Missing adjective entry: sv-stor');
+})();
+export const gul = (await getEntry('adjectives', 'sv-gul'))?.data ?? (() => {
+	throw new Error('Missing adjective entry: sv-gul');
+})();
+export const glad = (await getEntry('adjectives', 'sv-glad'))?.data ?? (() => {
+	throw new Error('Missing adjective entry: sv-glad');
+})();
+
+Swedish adjectives agree with the gender and number of the noun they describe.
+Attributive adjectives inside noun phrases also reflect whether the phrase is
+indefinite or definite. The central beginner pattern is **base form**, **-t**,
+and **-a**.
+
+## Core pattern
+
+| Noun phrase | Adjective form | Example |
+| --- | --- | --- |
+| indefinite en singular | base form | <span lang="sv">en <strong>{stor.morphology.en}</strong> bil</span> |
+| indefinite ett singular | often <span lang="sv">-t</span> | <span lang="sv">ett <strong>{stor.morphology.ett}</strong> hus</span> |
+| indefinite plural | often <span lang="sv">-a</span> | <span lang="sv"><strong>{stor.morphology.plural}</strong> bilar</span> |
+| definite | often <span lang="sv">-a</span> | <span lang="sv">den <strong>{stor.morphology.definite}</strong> bilen</span> |
+
+The same plural adjective form is used with en-words and ett-words:
+
+- <span lang="sv">stora bilar</span>
+- <span lang="sv">stora hus</span>
+
+<AdjectiveForms
+	forms={[
+		{ label: 'en-form', value: stor.morphology.en },
+		{ label: 'ett-form', value: stor.morphology.ett },
+		{ label: 'plural / definite', value: stor.morphology.plural },
+		{ label: 'comparative', value: stor.comparison?.comparative ?? '' },
+		{ label: 'superlative', value: stor.comparison?.superlative ?? '' },
+	]}
+	caption="Core forms of stor"
+/>
+
+## Indefinite forms
+
+Start from the dictionary or en-form:
+
+<p lang="sv">stor</p>
+
+Add <span lang="sv">-t</span> for the regular ett-form and
+<span lang="sv">-a</span> for the regular plural:
+
+<p lang="sv">stor → stort → stora</p>
+
+Another regular example:
+
+<p lang="sv">{gul.morphology.en} → {gul.morphology.ett} → {gul.morphology.plural}</p>
+
+Spelling can change when endings are added, and some adjectives are irregular.
+For example:
+
+- <span lang="sv">{glad.morphology.en} → {glad.morphology.ett} → {glad.morphology.plural}</span>
+- <span lang="sv">liten → litet → små</span>
+- <span lang="sv">bra → bra → bra</span>
+
+Learn frequent exceptions through complete phrases.
+
+## Definite noun phrases and double definiteness
+
+A noun without an attributive adjective normally marks definiteness only with
+its suffix:
+
+<p lang="sv">bilen · huset · bilarna</p>
+
+When an attributive adjective is added, standard Swedish normally marks
+definiteness twice: with a separate definite article before the adjective and
+with the definite suffix on the noun. This construction is called **double
+definiteness**.
+
+| Number and gender | Definite article | Adjective | Definite noun | Complete phrase |
+| --- | --- | --- | --- | --- |
+| en singular | <span lang="sv">den</span> | <span lang="sv">{stor.morphology.definite}</span> | <span lang="sv">bilen</span> | <span lang="sv">den {stor.morphology.definite} bilen</span> |
+| ett singular | <span lang="sv">det</span> | <span lang="sv">{stor.morphology.definite}</span> | <span lang="sv">huset</span> | <span lang="sv">det {stor.morphology.definite} huset</span> |
+| plural | <span lang="sv">de</span> | <span lang="sv">{stor.morphology.definite}</span> | <span lang="sv">bilarna</span> | <span lang="sv">de {stor.morphology.definite} bilarna</span> |
+
+The three-part pattern is therefore:
+
+<p lang="sv"><strong>den / det / de + definite adjective + definite noun</strong></p>
+
+The article marks gender or number, the adjective commonly uses its
+<span lang="sv">-a</span> form, and the noun keeps its definite suffix. English
+usually marks the same phrase only once in <span lang="en">the big car</span>;
+Swedish uses both <span lang="sv">den</span> and <span lang="sv">-en</span> in
+<span lang="sv">den stora bilen</span>.
+
+Possessives are an important exception to the standard pattern. The adjective
+uses the definite form, but there is no separate definite article and the noun
+does not take its definite suffix:
+
+<p lang="sv">min stora bil</p>
+
+See [Swedish noun forms](../../../nouns-articles/swedish/noun-forms/) for the
+noun suffixes themselves.
+
+## After verbs such as *vara* and *bli*
+
+Predicative adjectives agree with the subject but do not use double
+definiteness:
+
+- <span lang="sv">Bilen är stor.</span>
+- <span lang="sv">Huset är stort.</span>
+- <span lang="sv">Bilarna är stora.</span>
+
+## Direct comparison
+
+| Language | Examples |
+| --- | --- |
+| <span lang="de">🇩🇪 Deutsch</span> | <span lang="de">ein großes Auto · große Autos · das große Auto</span> |
+| <span lang="en">🇬🇧 English</span> | <span lang="en">a big car · big cars · the big car</span> |
+| <span lang="sv">🇸🇪 Svenska</span> | <span lang="sv">en stor bil · stora bilar · den stora bilen</span> |
+
+English adjectives do not agree with the noun. German adjectives agree too,
+but German endings depend on case and article type as well as gender and number.
+Do not transfer the German ending system directly to Swedish.
+
+<MistakeBox title="Common mistakes">
+Keep article, adjective, and noun compatible:
+
+<span lang="sv">❌ ett stor hus</span>
+<span lang="sv">✅ ett stort hus</span>
+
+In a standard definite phrase, do not omit either part of double definiteness:
+
+<span lang="sv">❌ det stora hus</span>
+<span lang="sv">✅ det stora huset</span>
+</MistakeBox>
+
+<MemoryTip>
+Remember the three-part rhythm:
+<span lang="sv"><strong>en stor — ett stort — flera stora</strong></span>.
+For a definite phrase, use the familiar <span lang="sv">-a</span> form:
+<span lang="sv">den stora bilen</span>.
+</MemoryTip>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../../nouns-articles/swedish/en-ett/', label: 'Swedish en / ett' },
+		{ href: '../../../nouns-articles/swedish/noun-forms/', label: 'Swedish noun forms' },
+		{ href: '../adjective-comparison/', label: 'Swedish adjective comparison' },
+	]}
+/>

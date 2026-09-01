@@ -1,0 +1,45 @@
+{
+  "sv-stor": {
+    "language": "sv",
+    "lemma": "stor",
+    "partOfSpeech": "adjective",
+    "translations": {
+      "en": "big"
+    },
+    "tags": ["adjectives", "swedish-specific"],
+    "morphology": {
+      "en": "stor",
+      "ett": "stort",
+      "plural": "stora",
+      "definite": "stora"
+    },
+    "comparison": {
+      "comparative": "större",
+      "superlative": "störst"
+    }
+  },
+  "sv-gul": {
+    "language": "sv",
+    "lemma": "gul",
+    "partOfSpeech": "adjective",
+    "tags": ["adjectives", "swedish-specific"],
+    "morphology": {
+      "en": "gul",
+      "ett": "gult",
+      "plural": "gula",
+      "definite": "gula"
+    }
+  },
+  "sv-glad": {
+    "language": "sv",
+    "lemma": "glad",
+    "partOfSpeech": "adjective",
+    "tags": ["adjectives", "swedish-specific"],
+    "morphology": {
+      "en": "glad",
+      "ett": "glatt",
+      "plural": "glada",
+      "definite": "glada"
+    }
+  }
+}

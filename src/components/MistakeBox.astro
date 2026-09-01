@@ -10,7 +10,7 @@ const { title = 'Common mistake', incorrect, correct, lang } = Astro.props;
 ---
 
 <aside class="mistake-box" aria-label={title}>
-	<p class="mistake-box-title">{title}</p>
+	<p class="mistake-box-title" aria-hidden="true">{title}</p>
 	{incorrect && (
 		<p class="mistake-box-example mistake-box-example-incorrect" lang={lang}>
 			<span>Incorrect:</span> {incorrect}

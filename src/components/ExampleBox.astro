@@ -8,6 +8,6 @@ const { title = 'Example', lang } = Astro.props;
 ---
 
 <aside class="example-box" aria-label={title}>
-	<p class="example-box-title">{title}</p>
+	<p class="example-box-title" aria-hidden="true">{title}</p>
 	<div class="example-box-content" lang={lang}><slot /></div>
 </aside>

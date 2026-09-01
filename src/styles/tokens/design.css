@@ -5,9 +5,9 @@
 	--jplh-color-language-en-low: var(--sl-color-blue-low);
 	--jplh-color-language-en: var(--sl-color-blue);
 	--jplh-color-language-en-high: var(--sl-color-blue-high);
-	--jplh-color-language-sv-low: #10383d;
-	--jplh-color-language-sv: #22b8c7;
-	--jplh-color-language-sv-high: #b7eef2;
+	--jplh-color-language-sv-low: var(--sl-color-accent-low);
+	--jplh-color-language-sv: var(--sl-color-accent);
+	--jplh-color-language-sv-high: var(--sl-color-accent-high);
 
 	/* Semantic content colors */
 	--jplh-color-rule-low: var(--sl-color-gray-6);
@@ -42,10 +42,4 @@
 	--jplh-radius-pill: 999px;
 	--jplh-border-width: 1px;
 	--jplh-accent-border-width: 0.25rem;
-}
-
-:root[data-theme='light'] {
-	--jplh-color-language-sv-low: #d8f3f5;
-	--jplh-color-language-sv: #00818f;
-	--jplh-color-language-sv-high: #00515b;
 }

@@ -70,7 +70,7 @@
 	border-collapse: collapse;
 	border: var(--jplh-border-width) solid var(--sl-color-gray-5);
 	border-radius: var(--jplh-radius-md);
-	overflow: hidden;
+	overflow-x: auto;
 }
 
 :is(.verb-table-caption, .noun-forms-caption, .adjective-forms-caption) {
