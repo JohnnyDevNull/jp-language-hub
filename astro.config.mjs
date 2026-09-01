@@ -95,6 +95,7 @@ export default defineConfig({
 								{
 									label: 'Swedish',
 									items: [
+										{ slug: 'grammar/pronouns-function-words/swedish/possessive-pronouns' },
 										{ slug: 'grammar/pronouns-function-words/swedish/sin-sitt-sina' },
 										{
 											slug: 'grammar/pronouns-function-words/swedish/nagon-nagot-ingen-inget',
