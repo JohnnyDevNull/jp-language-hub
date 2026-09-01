@@ -27,7 +27,6 @@ import { getCollection } from 'astro:content';
 import MemoryTip from '../../../../../components/MemoryTip.astro';
 import MistakeBox from '../../../../../components/MistakeBox.astro';
 import RelatedTopics from '../../../../../components/RelatedTopics.astro';
-import VerbTable from '../../../../../components/VerbTable.astro';
 
 export const verbs = (await getCollection('verbs')).sort((left, right) =>
 	left.data.group.localeCompare(right.data.group),
@@ -45,17 +44,14 @@ task is therefore recognizing the form and choosing the right tense.
 
 Using <span lang="sv">köpa</span> (“buy”) as an example:
 
-<VerbTable
-	forms={[
-		{ label: 'Infinitive', value: `att ${buy.lemma}` },
-		{ label: 'Imperative', value: buy.morphology.imperative },
-		{ label: 'Present', value: buy.morphology.present },
-		{ label: 'Preterite', value: buy.morphology.preterite },
-		{ label: 'Supine', value: buy.morphology.supine },
-		{ label: 'Perfect', value: `har ${buy.morphology.supine}` },
-	]}
-	caption={`Core forms of ${buy.lemma}`}
-/>
+| Form | Swedish form | Typical use |
+| --- | --- | --- |
+| Infinitive | <span lang="sv">att {buy.lemma}</span> | After modal verbs: <span lang="sv">Jag vill köpa boken.</span> |
+| Imperative | <span lang="sv">{buy.morphology.imperative}!</span> | Commands: <span lang="sv">{buy.morphology.imperative} boken!</span> |
+| Present | <span lang="sv">{buy.morphology.present}</span> | Now, generally, or repeatedly: <span lang="sv">Jag köper en bok.</span> |
+| Preterite | <span lang="sv">{buy.morphology.preterite}</span> | Completed past events: <span lang="sv">Jag köpte en bok.</span> |
+| Supine | <span lang="sv">{buy.morphology.supine}</span> | After <span lang="sv">har</span> or <span lang="sv">hade</span>: <span lang="sv">Jag har köpt en bok.</span> |
+| Perfect | <span lang="sv">har {buy.morphology.supine}</span> | A compound tense built with <span lang="sv">har</span> + supine. |
 
 :::note[One form for every person]
 <span lang="sv">Jag köper</span>, <span lang="sv">du köper</span>, and
