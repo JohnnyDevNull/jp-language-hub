@@ -10,4 +10,14 @@ export default defineConfig(
 	js.configs.recommended,
 	tseslint.configs.recommended,
 	astro.configs.recommended,
+	{
+		files: ['scripts/**/*.mjs'],
+		languageOptions: {
+			globals: {
+				URL: 'readonly',
+				console: 'readonly',
+				process: 'readonly',
+			},
+		},
+	},
 );

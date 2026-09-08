@@ -9,10 +9,11 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "npm run lint:eslint && npm run lint:css",
-    "lint:eslint": "eslint \"src/**/*.{astro,js,mjs,ts}\" \"*.mjs\" --max-warnings 0",
+    "lint:eslint": "eslint \"src/**/*.{astro,js,mjs,ts}\" \"scripts/**/*.mjs\" \"*.mjs\" --max-warnings 0",
     "lint:css": "stylelint \"src/**/*.css\" --allow-empty-input --max-warnings 0",
     "check": "astro check",
-    "quality": "npm run lint && npm run check"
+    "quality": "npm run lint && npm run check && npm run validate:links",
+    "validate:links": "node scripts/validate-doc-links.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.10",

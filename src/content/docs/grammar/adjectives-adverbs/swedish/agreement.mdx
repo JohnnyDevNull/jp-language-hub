@@ -24,10 +24,10 @@ related:
 ---
 
 import { getEntry } from 'astro:content';
-import AdjectiveForms from '../../../../../components/AdjectiveForms.astro';
-import MemoryTip from '../../../../../components/MemoryTip.astro';
-import MistakeBox from '../../../../../components/MistakeBox.astro';
-import RelatedTopics from '../../../../../components/RelatedTopics.astro';
+import AdjectiveForms from '~/components/AdjectiveForms.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
 
 export const stor = (await getEntry('adjectives', 'sv-stor'))?.data ?? (() => {
 	throw new Error('Missing adjective entry: sv-stor');
