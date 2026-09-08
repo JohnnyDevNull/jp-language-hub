@@ -39,6 +39,7 @@ with German and English visible where they help explain a rule.
 - [Preterite](./verbs/swedish/preterite/)
 - [Perfect](./verbs/swedish/perfect/)
 - [Swedish verb groups](./verbs/swedish/verb-groups/)
+- [Swedish particle verbs](./verbs/swedish/particle-verbs/)
 
 ## Pronouns and function words
 

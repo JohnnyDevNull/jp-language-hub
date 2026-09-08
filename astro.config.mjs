@@ -86,6 +86,7 @@ export default defineConfig({
 										{ slug: 'grammar/verbs/swedish/preterite' },
 										{ slug: 'grammar/verbs/swedish/perfect' },
 										{ slug: 'grammar/verbs/swedish/verb-groups' },
+										{ slug: 'grammar/verbs/swedish/particle-verbs' },
 									],
 								},
 							],
