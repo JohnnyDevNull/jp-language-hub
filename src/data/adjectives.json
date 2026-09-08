@@ -41,5 +41,24 @@
       "plural": "glada",
       "definite": "glada"
     }
+  },
+  "sv-snabb": {
+    "language": "sv",
+    "lemma": "snabb",
+    "partOfSpeech": "adjective",
+    "translations": {
+      "en": "fast"
+    },
+    "tags": ["adjectives", "swedish-specific"],
+    "morphology": {
+      "en": "snabb",
+      "ett": "snabbt",
+      "plural": "snabba",
+      "definite": "snabba"
+    },
+    "comparison": {
+      "comparative": "snabbare",
+      "superlative": "snabbast"
+    }
   }
 }

@@ -1,9 +1,78 @@
 {
+  "sv-tala": {
+    "language": "sv",
+    "lemma": "tala",
+    "partOfSpeech": "verb",
+    "translations": {
+      "de": "sprechen",
+      "en": "speak"
+    },
+    "tags": ["verbs", "swedish-specific"],
+    "group": "1",
+    "morphology": {
+      "imperative": "tala",
+      "present": "talar",
+      "preterite": "talade",
+      "supine": "talat"
+    }
+  },
+  "sv-arbeta": {
+    "language": "sv",
+    "lemma": "arbeta",
+    "partOfSpeech": "verb",
+    "translations": {
+      "de": "arbeiten",
+      "en": "work"
+    },
+    "tags": ["verbs", "swedish-specific"],
+    "group": "1",
+    "morphology": {
+      "imperative": "arbeta",
+      "present": "arbetar",
+      "preterite": "arbetade",
+      "supine": "arbetat"
+    }
+  },
+  "sv-stanga": {
+    "language": "sv",
+    "lemma": "stänga",
+    "partOfSpeech": "verb",
+    "translations": {
+      "de": "schließen",
+      "en": "close"
+    },
+    "tags": ["verbs", "swedish-specific"],
+    "group": "2a",
+    "morphology": {
+      "imperative": "stäng",
+      "present": "stänger",
+      "preterite": "stängde",
+      "supine": "stängt"
+    }
+  },
+  "sv-ringa": {
+    "language": "sv",
+    "lemma": "ringa",
+    "partOfSpeech": "verb",
+    "translations": {
+      "de": "anrufen",
+      "en": "call"
+    },
+    "tags": ["verbs", "swedish-specific"],
+    "group": "2a",
+    "morphology": {
+      "imperative": "ring",
+      "present": "ringer",
+      "preterite": "ringde",
+      "supine": "ringt"
+    }
+  },
   "sv-kopa": {
     "language": "sv",
     "lemma": "köpa",
     "partOfSpeech": "verb",
     "translations": {
+      "de": "kaufen",
       "en": "buy"
     },
     "tags": ["verbs", "swedish-specific"],
@@ -15,23 +84,31 @@
       "supine": "köpt"
     }
   },
-  "sv-tala": {
+  "sv-lasa": {
     "language": "sv",
-    "lemma": "tala",
+    "lemma": "läsa",
     "partOfSpeech": "verb",
+    "translations": {
+      "de": "lesen",
+      "en": "read"
+    },
     "tags": ["verbs", "swedish-specific"],
-    "group": "1",
+    "group": "2b",
     "morphology": {
-      "imperative": "tala",
-      "present": "talar",
-      "preterite": "talade",
-      "supine": "talat"
+      "imperative": "läs",
+      "present": "läser",
+      "preterite": "läste",
+      "supine": "läst"
     }
   },
   "sv-bo": {
     "language": "sv",
     "lemma": "bo",
     "partOfSpeech": "verb",
+    "translations": {
+      "de": "wohnen",
+      "en": "live"
+    },
     "tags": ["verbs", "swedish-specific"],
     "group": "3",
     "morphology": {
@@ -41,10 +118,31 @@
       "supine": "bott"
     }
   },
+  "sv-tro": {
+    "language": "sv",
+    "lemma": "tro",
+    "partOfSpeech": "verb",
+    "translations": {
+      "de": "glauben",
+      "en": "believe"
+    },
+    "tags": ["verbs", "swedish-specific"],
+    "group": "3",
+    "morphology": {
+      "imperative": "tro",
+      "present": "tror",
+      "preterite": "trodde",
+      "supine": "trott"
+    }
+  },
   "sv-skriva": {
     "language": "sv",
     "lemma": "skriva",
     "partOfSpeech": "verb",
+    "translations": {
+      "de": "schreiben",
+      "en": "write"
+    },
     "tags": ["verbs", "swedish-specific"],
     "group": "4",
     "morphology": {
@@ -52,6 +150,108 @@
       "present": "skriver",
       "preterite": "skrev",
       "supine": "skrivit"
+    }
+  },
+  "sv-vara": {
+    "language": "sv",
+    "lemma": "vara",
+    "partOfSpeech": "verb",
+    "translations": {
+      "de": "sein",
+      "en": "be"
+    },
+    "tags": ["verbs", "swedish-specific", "important"],
+    "group": "4",
+    "morphology": {
+      "imperative": "var",
+      "present": "är",
+      "preterite": "var",
+      "supine": "varit"
+    }
+  },
+  "sv-ha": {
+    "language": "sv",
+    "lemma": "ha",
+    "partOfSpeech": "verb",
+    "translations": {
+      "de": "haben",
+      "en": "have"
+    },
+    "tags": ["verbs", "swedish-specific", "important"],
+    "group": "4",
+    "morphology": {
+      "imperative": "ha",
+      "present": "har",
+      "preterite": "hade",
+      "supine": "haft"
+    }
+  },
+  "sv-gora": {
+    "language": "sv",
+    "lemma": "göra",
+    "partOfSpeech": "verb",
+    "translations": {
+      "de": "machen",
+      "en": "do"
+    },
+    "tags": ["verbs", "swedish-specific", "important"],
+    "group": "4",
+    "morphology": {
+      "imperative": "gör",
+      "present": "gör",
+      "preterite": "gjorde",
+      "supine": "gjort"
+    }
+  },
+  "sv-ga": {
+    "language": "sv",
+    "lemma": "gå",
+    "partOfSpeech": "verb",
+    "translations": {
+      "de": "gehen",
+      "en": "go"
+    },
+    "tags": ["verbs", "swedish-specific", "important"],
+    "group": "4",
+    "morphology": {
+      "imperative": "gå",
+      "present": "går",
+      "preterite": "gick",
+      "supine": "gått"
+    }
+  },
+  "sv-se": {
+    "language": "sv",
+    "lemma": "se",
+    "partOfSpeech": "verb",
+    "translations": {
+      "de": "sehen",
+      "en": "see"
+    },
+    "tags": ["verbs", "swedish-specific", "important"],
+    "group": "4",
+    "morphology": {
+      "imperative": "se",
+      "present": "ser",
+      "preterite": "såg",
+      "supine": "sett"
+    }
+  },
+  "sv-veta": {
+    "language": "sv",
+    "lemma": "veta",
+    "partOfSpeech": "verb",
+    "translations": {
+      "de": "wissen",
+      "en": "know"
+    },
+    "tags": ["verbs", "swedish-specific", "important"],
+    "group": "4",
+    "morphology": {
+      "imperative": "vet",
+      "present": "vet",
+      "preterite": "visste",
+      "supine": "vetat"
     }
   }
 }
