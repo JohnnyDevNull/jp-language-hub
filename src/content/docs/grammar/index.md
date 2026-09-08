@@ -55,3 +55,5 @@ with German and English visible where they help explain a rule.
 - [Swedish prepositions](./pronouns-function-words/swedish/prepositions/)
 - [Swedish relative pronouns](./pronouns-function-words/swedish/relative-pronouns/)
 - [Swedish question words](./pronouns-function-words/swedish/interrogatives/)
+- [Swedish *man*, *varandra*, and *var sin*](./pronouns-function-words/swedish/man-varandra-varsin/)
+- [Swedish *där-* and *här-* adverbs](./pronouns-function-words/swedish/dar-har-adverbs/)

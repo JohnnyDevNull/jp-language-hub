@@ -118,6 +118,8 @@ export default defineConfig({
 										{ slug: 'grammar/pronouns-function-words/swedish/prepositions' },
 										{ slug: 'grammar/pronouns-function-words/swedish/relative-pronouns' },
 										{ slug: 'grammar/pronouns-function-words/swedish/interrogatives' },
+										{ slug: 'grammar/pronouns-function-words/swedish/man-varandra-varsin' },
+										{ slug: 'grammar/pronouns-function-words/swedish/dar-har-adverbs' },
 									],
 								},
 							],
