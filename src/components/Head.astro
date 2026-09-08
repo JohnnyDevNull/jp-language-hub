@@ -1,0 +1,32 @@
+---
+import Default from '@astrojs/starlight/components/Head.astro';
+import { LEARN_LANGUAGE_STORAGE_KEY, LEARN_LANGUAGES } from '~/lib/learn-languages';
+import { localizedLearnPath } from '~/lib/learn-language-paths';
+
+const { locale } = Astro.locals.starlightRoute;
+const homePath = localizedLearnPath(locale);
+const learnPaths = LEARN_LANGUAGES.map(({ id }) => localizedLearnPath(locale, id));
+---
+
+<Default><slot /></Default>
+
+{/* Runs before paint so a returning visitor never sees home flash by. */}
+<script is:inline define:vars={{ homePath, learnPaths, storageKey: LEARN_LANGUAGE_STORAGE_KEY }}>
+	if (window.location.pathname === homePath) {
+		let stored;
+		try {
+			stored = window.localStorage.getItem(storageKey);
+		} catch {
+			// Private browsing blocks storage; home simply stays home.
+		}
+
+		// Only on a fresh arrival: reaching home from inside the site is a
+		// deliberate click and must not bounce back into a learning tree.
+		const cameFromSite =
+			document.referrer !== '' && new URL(document.referrer).origin === window.location.origin;
+
+		if (stored && !cameFromSite && learnPaths.includes(stored)) {
+			window.location.replace(stored);
+		}
+	}
+</script>

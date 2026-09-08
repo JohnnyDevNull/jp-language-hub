@@ -10,6 +10,11 @@ export default defineConfig({
 		starlight({
 			title: 'JP Language Hub',
 			customCss: ['./src/styles/global.css'],
+			components: {
+				Head: './src/components/Head.astro',
+				Sidebar: './src/components/Sidebar.astro',
+			},
+			routeMiddleware: './src/starlight/learn-language-sidebar.ts',
 			defaultLocale: 'root',
 			locales: {
 				root: {

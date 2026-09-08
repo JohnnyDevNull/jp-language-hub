@@ -1,0 +1,17 @@
+.learn-language-select {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--jplh-space-xs);
+	margin-block-end: var(--jplh-space-md);
+	padding-block-end: var(--jplh-space-sm);
+	border-block-end: var(--jplh-border-width) solid var(--sl-color-hairline-light);
+}
+
+.learn-language-select-title {
+	margin: 0;
+	color: var(--sl-color-gray-3);
+	font-size: var(--sl-text-xs);
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}

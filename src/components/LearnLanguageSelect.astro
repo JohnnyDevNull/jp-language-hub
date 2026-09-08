@@ -1,0 +1,51 @@
+---
+import Select from '@astrojs/starlight/components/Select.astro';
+import { LEARN_LANGUAGES, getLearnLanguageFromPathname } from '~/lib/learn-languages';
+import { localizedLearnPath } from '~/lib/learn-language-paths';
+
+const { locale } = Astro.locals.starlightRoute;
+const activeLanguageId = getLearnLanguageFromPathname(Astro.url.pathname);
+---
+
+<div class="learn-language-select">
+	<p class="learn-language-select-title" aria-hidden="true">Learning</p>
+	<learn-language-select>
+		<Select
+			icon="open-book"
+			label="Select the language you are learning"
+			options={LEARN_LANGUAGES.map(({ id, label }) => ({
+				value: localizedLearnPath(locale, id),
+				selected: id === activeLanguageId,
+				label,
+			}))}
+			width="7em"
+		/>
+	</learn-language-select>
+</div>
+
+<script>
+	import { LEARN_LANGUAGE_STORAGE_KEY } from '~/lib/learn-languages';
+
+	class LearnLanguageSelect extends HTMLElement {
+		constructor() {
+			super();
+			const select = this.querySelector('select');
+			if (!select) return;
+
+			select.addEventListener('change', (event) => {
+				if (!(event.currentTarget instanceof HTMLSelectElement)) return;
+				const { value } = event.currentTarget;
+
+				try {
+					window.localStorage.setItem(LEARN_LANGUAGE_STORAGE_KEY, value);
+				} catch {
+					// Private browsing blocks storage; navigation still works without it.
+				}
+
+				window.location.pathname = value;
+			});
+		}
+	}
+
+	customElements.define('learn-language-select', LearnLanguageSelect);
+</script>
