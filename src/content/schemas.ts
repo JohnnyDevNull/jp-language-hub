@@ -5,6 +5,7 @@ export const cefrLevelSchema = z.enum(['A1', 'A2', 'B1', 'B2', 'C1']);
 export const contentTagSchema = z.enum([
 	'grammar',
 	'sentence-structure',
+	'sentence-patterns',
 	'nouns',
 	'verbs',
 	'adjectives',

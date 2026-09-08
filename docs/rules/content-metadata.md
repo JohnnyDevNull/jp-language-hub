@@ -21,6 +21,7 @@ Use only tags that help classify or retrieve content:
 
 - `grammar`
 - `sentence-structure`
+- `sentence-patterns`
 - `nouns`
 - `verbs`
 - `adjectives`

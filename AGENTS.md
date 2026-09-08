@@ -24,6 +24,11 @@ structured content metadata:
 1. Read [`docs/rules/content-metadata.md`](docs/rules/content-metadata.md).
 2. Follow the validated metadata vocabulary and field semantics.
 
+Before writing or restructuring a reference page:
+
+1. Read [`docs/rules/content-didactics.md`](docs/rules/content-didactics.md).
+2. Follow the standard page order, the component rules, and the length budget.
+
 If no compliant solution can be determined, stop and ask an engineer.
 
 ## Language layers (mandatory)
