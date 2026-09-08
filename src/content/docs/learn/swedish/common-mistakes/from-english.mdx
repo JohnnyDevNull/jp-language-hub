@@ -1,48 +1,150 @@
 ---
 title: English to Swedish mistakes
-description: Common Swedish mistakes caused by transferring English word order and agreement patterns.
+description: Common Swedish mistakes caused by transferring English word order, article, and agreement patterns.
 metaLanguage: en
 grammarLanguage: sv
 comparisonLanguages:
   - en
   - sv
+levels:
+  - A1
+  - A2
+  - B1
 tags:
   - common-mistakes
   - comparison
-  - sentence-structure
+  - grammar
+related:
+  - /learn/swedish/grammar/verbs/present/
+  - /learn/swedish/grammar/nouns-articles/noun-forms/
+  - /learn/swedish/grammar/adjectives-adverbs/agreement/
+  - /learn/swedish/grammar/sentence-structure/v2/
+  - /learn/swedish/grammar/pronouns-function-words/prepositions/
+  - /learn/swedish/grammar/pronouns-function-words/interrogatives/
 ---
 
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
 
-English is a useful bridge to Swedish vocabulary, but Swedish keeps several
-word-order and agreement distinctions that English does not show.
+<KeyTakeaway>
+- Swedish has one present tense; there is no progressive and no auxiliary
+  *do*.
+- The definite article is a suffix on the noun, not a separate word:
+  <Sv>huset</Sv>.
+- Swedish inflects adjectives and inverts the verb after a fronted element,
+  where English does neither.
+</KeyTakeaway>
 
-## Word order after a fronted element
+English gives you most of the vocabulary and almost none of the morphology.
+These are the patterns it exports by mistake.
 
-<MistakeBox
-	incorrect="Idag jag köper en bil."
-	correct="Idag köper jag en bil."
-	lang="sv"
->
-	A fronted time expression occupies the first position, so the finite verb
-	must come next. See [V2](../../grammar/sentence-structure/v2/).
+## Building a progressive
+
+<MistakeBox incorrect="Jag är arbetande nu." correct="Jag arbetar nu." lang="sv">
+	One present tense covers both "I work" and "I am working". When the ongoing
+	action really matters, Swedish uses a construction, not a participle:
+	<Sv>Jag håller på att arbeta.</Sv> or <Sv>Jag sitter och arbetar.</Sv> See
+	[present tense](/learn/swedish/grammar/verbs/present/).
 </MistakeBox>
 
-## Main clause order inside a subordinate clause
+## Reaching for do-support
 
-<MistakeBox
-	incorrect="... eftersom jag kommer inte idag."
-	correct="... eftersom jag inte kommer idag."
-	lang="sv"
->
-	In a typical Swedish subordinate clause, a sentence adverb such as `inte`
-	precedes the finite verb. See
-	[BIFF](../../grammar/sentence-structure/biff/).
+| English | Swedish |
+| --- | --- |
+| Do you speak Swedish? | <Sv>Talar du svenska?</Sv> |
+| I don't know. | <Sv>Jag vet inte.</Sv> |
+| Where does she live? | <Sv>Var bor hon?</Sv> |
+| Didn't you see it? | <Sv>Såg du det inte?</Sv> |
+
+Questions are formed by inversion alone, and negation by adding
+<Sv>inte</Sv>. See
+[question words](/learn/swedish/grammar/pronouns-function-words/interrogatives/).
+
+## Writing a separate definite article
+
+<MistakeBox incorrect="den hus, det stora hus" correct="huset, det stora huset" lang="sv">
+	Definiteness is a suffix: <Sv>hus</Sv> → <Sv>huset</Sv>, <Sv>bil</Sv> →
+	<Sv>bilen</Sv>, plural <Sv>husen</Sv>, <Sv>bilarna</Sv>. With an adjective
+	both the article *and* the suffix appear — double definiteness. See
+	[noun forms](/learn/swedish/grammar/nouns-articles/noun-forms/).
 </MistakeBox>
 
-## Missing noun agreement
+## Dropping adjective agreement
 
-<MistakeBox incorrect="ett stor hus" correct="ett stort hus" lang="sv">
-	The adjective agrees with an `ett` noun. See
-	[adjective agreement](../../grammar/adjectives-adverbs/agreement/).
+English adjectives never change. Swedish ones change three ways:
+
+| Form | Example |
+| --- | --- |
+| <Sv>en</Sv> noun | <Sv>en stor bil</Sv> |
+| <Sv>ett</Sv> noun | <Sv>ett stort hus</Sv> |
+| plural / definite | <Sv>stora hus</Sv>, <Sv>det stora huset</Sv> |
+
+See [adjective agreement](/learn/swedish/grammar/adjectives-adverbs/agreement/).
+
+## for and since
+
+| English | Swedish |
+| --- | --- |
+| I have lived here for three years. | <Sv>Jag har bott här i tre år.</Sv> |
+| I have lived here since 2020. | <Sv>Jag har bott här sedan 2020.</Sv> |
+| I haven't seen him for three years. | <Sv>Jag har inte sett honom på tre år.</Sv> |
+
+A stretch of time is <Sv>i</Sv>, a starting point is <Sv>sedan</Sv>, and a
+negated stretch takes <Sv>på</Sv>.
+
+## Translating prepositions one by one
+
+| English | Swedish | Not |
+| --- | --- | --- |
+| wait for | <Sv>vänta på</Sv> | *vänta för* |
+| listen to | <Sv>lyssna på</Sv> | <Sv>lyssna</Sv> with no preposition |
+| think about | <Sv>tänka på</Sv> | *tänka om* (= rethink) |
+| ask for | <Sv>be om</Sv> | *be för* |
+| interested in | <Sv>intresserad av</Sv> | *intresserad i* |
+| on Monday | <Sv>på måndag</Sv> | *i måndag* |
+| in the morning | <Sv>på morgonen</Sv> | *i morgonen* |
+
+The preposition belongs to the construction. See
+[prepositions](/learn/swedish/grammar/pronouns-function-words/prepositions/).
+
+## Keeping English order after a fronted element
+
+<MistakeBox incorrect="Idag jag köper en bil." correct="Idag köper jag en bil." lang="sv">
+	A fronted time expression fills the first position, so the finite verb comes
+	next and the subject moves behind it. English keeps subject before verb; do
+	not copy that. See [V2](/learn/swedish/grammar/sentence-structure/v2/).
 </MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Translate: I am reading a book right now.',
+			answer: 'Jag läser en bok just nu.',
+		},
+		{
+			prompt: 'Translate: Do you live in Stockholm?',
+			answer: 'Bor du i Stockholm?',
+		},
+		{
+			prompt: 'Translate: the big house',
+			answer: 'det stora huset',
+		},
+		{
+			prompt: 'Translate: I have worked here for two years.',
+			answer: 'Jag har jobbat här i två år.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '/learn/swedish/grammar/verbs/present/', label: 'Present tense' },
+		{ href: '/learn/swedish/grammar/nouns-articles/noun-forms/', label: 'Noun forms' },
+		{ href: '/learn/swedish/grammar/adjectives-adverbs/agreement/', label: 'Adjective agreement' },
+		{ href: '/learn/swedish/grammar/sentence-structure/v2/', label: 'V2 rule' },
+		{ href: '/false-friends/', label: 'False friends' },
+	]}
+/>

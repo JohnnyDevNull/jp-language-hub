@@ -2,6 +2,7 @@
 title: False friends
 description: Similar-looking German, English, and Swedish words that differ in meaning.
 metaLanguage: en
+grammarLanguage: comparison
 comparisonLanguages:
   - de
   - en
@@ -10,22 +11,119 @@ tags:
   - common-mistakes
   - comparison
   - vocabulary
+related:
+  - /learn/swedish/vocabulary/
+  - /learn/swedish/common-mistakes/from-german/
+  - /learn/swedish/common-mistakes/from-english/
+  - /direct-translation-errors/
 ---
 
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
 
-Similar spelling does not guarantee the same meaning. Record false friends with
-their intended meaning and an example rather than as isolated translation pairs.
+<KeyTakeaway>
+- A familiar-looking Swedish word is a warning sign, not a translation.
+- The dangerous pairs are the everyday ones: <Sv>rolig</Sv>, <Sv>full</Sv>,
+  <Sv>gift</Sv>, <Sv>semester</Sv>, <Sv>middag</Sv>.
+- Store a false friend with the word you actually meant, so the correct form is
+  one lookup away.
+</KeyTakeaway>
 
-## German *eventuell* and English *eventually*
+Similar spelling does not guarantee the same meaning. Each entry below gives the
+misleading word, what it really means, and the word you probably wanted.
+
+## Traps for German speakers
+
+| Swedish | Actually means | You probably meant | Example |
+| --- | --- | --- | --- |
+| <Sv>snäll</Sv> | kind, nice | *schnell* → <Sv>snabb</Sv> | <Sv>Han är snäll mot alla.</Sv> |
+| <Sv>rolig</Sv> | funny, enjoyable | *ruhig* → <Sv>lugn</Sv> | <Sv>Filmen var rolig.</Sv> |
+| <Sv>kul</Sv> | fun | *kühl* → <Sv>sval</Sv> | <Sv>Det var kul!</Sv> |
+| <Sv>middag</Sv> | dinner (evening meal) | *Mittag* → <Sv>lunch</Sv> | <Sv>Vi äter middag klockan sju.</Sv> |
+| <Sv>semester</Sv> | holiday, vacation | *Semester* → <Sv>termin</Sv> | <Sv>Jag har semester i juli.</Sv> |
+| <Sv>öl</Sv> | beer | *Öl* → <Sv>olja</Sv> | <Sv>En öl, tack.</Sv> |
+| <Sv>glass</Sv> | ice cream | *Glas* → <Sv>glas</Sv> | <Sv>Barnen vill ha glass.</Sv> |
+| <Sv>springa</Sv> | to run | *springen* → <Sv>hoppa</Sv> | <Sv>Jag springer varje morgon.</Sv> |
+| <Sv>bekant</Sv> | an acquaintance | *bekannt* (famous) → <Sv>känd</Sv> | <Sv>Hon är en gammal bekant.</Sv> |
+| <Sv>art</Sv> | species | *Art* (kind) → <Sv>sort</Sv>, <Sv>slag</Sv> | <Sv>Vilken art är det?</Sv> |
+| <Sv>nödig</Sv> | needing the toilet | *nötig* → <Sv>nödvändig</Sv> | <Sv>Jag är nödig.</Sv> |
+| <Sv>rar</Sv> | sweet, endearing | *rar* (scarce) → <Sv>sällsynt</Sv> | <Sv>Vilken rar liten katt.</Sv> |
+| <Sv>by</Sv> | village | *bei* → <Sv>hos</Sv>, <Sv>vid</Sv> | <Sv>Vi bor i en liten by.</Sv> |
+| <Sv>kör</Sv> | drives; also choir | *Chor* → only the noun <Sv>kör</Sv> | <Sv>Hon kör bil.</Sv> / <Sv>Vi sjunger i kör.</Sv> |
+| <Sv>hemsk</Sv> | awful, horrible | *heimisch* → <Sv>hemtrevlig</Sv> | <Sv>Vädret var hemskt.</Sv> |
 
 <MistakeBox
-	incorrect="I will eventually join the meeting. (if attendance is uncertain)"
-	correct="I might join the meeting."
-	lang="en"
+	incorrect="Jag är full."
+	correct="Jag är mätt."
+	lang="sv"
 >
-	German `eventuell` means "possibly" or "maybe". English `eventually` means
-	"in the end" or "after some time". See how the
-	[vocabulary reference](../learn/swedish/vocabulary/) stores words with the context needed
-	to use them correctly.
+	<Sv>full</Sv> said about a person means **drunk**. After a meal you are
+	<Sv>mätt</Sv>. The literal sense survives for containers:
+	<Sv>Glaset är fullt.</Sv>
 </MistakeBox>
+
+<MistakeBox
+	incorrect="Jag vill ha ett rum som är rolig."
+	correct="Jag vill ha ett rum som är lugnt."
+	lang="sv"
+>
+	Asking for a *ruhig* hotel room with <Sv>rolig</Sv> asks for an amusing one.
+	Note the agreement too: <Sv>ett lugnt rum</Sv>.
+</MistakeBox>
+
+## Traps for English speakers
+
+| Swedish | Actually means | You probably meant | Example |
+| --- | --- | --- | --- |
+| <Sv>fart</Sv> | speed | flatulence → <Sv>fjärt</Sv>, <Sv>prutt</Sv> | <Sv>Bilen har hög fart.</Sv> |
+| <Sv>slut</Sv> | end, finished, sold out | (no shared meaning) | <Sv>Filmen är slut.</Sv> |
+| <Sv>barn</Sv> | child, children | barn → <Sv>lada</Sv> | <Sv>Vi har två barn.</Sv> |
+| <Sv>bra</Sv> | good, well | bra → <Sv>behå</Sv> | <Sv>Maten var bra.</Sv> |
+| <Sv>kock</Sv> | cook, chef | (no shared meaning) | <Sv>Han är kock på en restaurang.</Sv> |
+| <Sv>sex</Sv> | six; also sex | usually just the number | <Sv>Klockan är sex.</Sv> |
+| <Sv>sky</Sv> | meat juices, gravy; to shun | sky → <Sv>himmel</Sv> | <Sv>Kött med sky.</Sv> / <Sv>Han skyr socker.</Sv> |
+| <Sv>hyra</Sv> | to rent | hire a person → <Sv>anställa</Sv> | <Sv>Vi hyr en bil i Malmö.</Sv> |
+
+<MistakeBox
+	incorrect="Tack för giftet!"
+	correct="Tack för gåvan!"
+	lang="sv"
+>
+	<Sv>gift</Sv> is either the adjective **married** (<Sv>Hon är gift.</Sv>) or
+	the noun <Sv>ett gift</Sv>, **poison** — so <Sv>Tack för giftet!</Sv> is
+	perfectly grammatical and thanks your host for the poison. A present is <Sv>en gåva</Sv> or
+	<Sv>en present</Sv>.
+</MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Say “I am full” after dinner, in Swedish.',
+			answer: 'Jag är mätt. (Jag är full = I am drunk.)',
+		},
+		{
+			prompt: 'You want a quiet evening. Which adjective: rolig or lugn?',
+			answer: 'lugn — en lugn kväll. rolig means funny.',
+		},
+		{
+			prompt: 'Translate: Ich habe im Juli Urlaub.',
+			answer: 'Jag har semester i juli. (Semester = termin.)',
+		},
+		{
+			prompt: 'What is en glass, and what is ett glas?',
+			answer: 'en glass = an ice cream; ett glas = a glass.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '/direct-translation-errors/', label: 'Direct translation errors' },
+		{ href: '/learn/swedish/common-mistakes/from-german/', label: 'Carried over from German' },
+		{ href: '/learn/swedish/common-mistakes/from-english/', label: 'Carried over from English' },
+		{ href: '/learn/swedish/vocabulary/', label: 'Vocabulary reference' },
+	]}
+/>

@@ -6,25 +6,151 @@ grammarLanguage: sv
 comparisonLanguages:
   - de
   - sv
+levels:
+  - A1
+  - A2
+  - B1
 tags:
   - common-mistakes
   - comparison
-  - pronouns
+  - grammar
+related:
+  - /learn/swedish/grammar/nouns-articles/en-ett/
+  - /learn/swedish/grammar/adjectives-adverbs/agreement/
+  - /learn/swedish/grammar/pronouns-function-words/sin-sitt-sina/
+  - /learn/swedish/grammar/sentence-structure/biff/
+  - /learn/swedish/grammar/sentence-structure/inte-placement/
+  - /learn/swedish/grammar/verbs/particle-verbs/
 ---
 
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
 
-German can be a useful bridge to Swedish, but similar-looking structures do not
-always express the same distinction.
+<KeyTakeaway>
+- German gender does not predict <Sv>en</Sv> or <Sv>ett</Sv>; the two systems
+  are unrelated.
+- Swedish inflects the predicative adjective where German leaves it bare:
+  <Sv>Huset är stort.</Sv>
+- <Sv>inte</Sv> follows the finite verb in a main clause, where German *nicht*
+  drifts to the end.
+</KeyTakeaway>
 
-## Using a reflexive possessive for the wrong owner
+German is the best available bridge to Swedish, which is exactly why its
+patterns slip through unnoticed. Each entry links to the rule that fixes it.
+
+## Guessing en/ett from German gender
+
+<MistakeBox incorrect="ett bok, en brev, en bord" correct="en bok, ett brev, ett bord" lang="sv">
+	*das Buch* is <Sv>en bok</Sv>, *der Brief* is <Sv>ett brev</Sv>, *der Tisch*
+	is <Sv>ett bord</Sv>. Learn the gender with the noun, and use the ending
+	signals instead of German. See
+	[en/ett](/learn/swedish/grammar/nouns-articles/en-ett/).
+</MistakeBox>
+
+## Leaving the predicative adjective bare
+
+German inflects an adjective before a noun but not after *sein*. Swedish
+inflects it in both positions:
+
+| German | Swedish |
+| --- | --- |
+| ein großes Haus | <Sv>ett stort hus</Sv> |
+| Das Haus ist groß. | <Sv>Huset är stort.</Sv> |
+| Die Häuser sind groß. | <Sv>Husen är stora.</Sv> |
+
+See [adjective agreement](/learn/swedish/grammar/adjectives-adverbs/agreement/).
+
+## sin instead of hans/hennes
 
 <MistakeBox
-	incorrect="Anna såg Erik och hans hund. (if the dog belongs to Anna)"
+	incorrect="Anna såg Erik och hans hund. (if the dog is Anna's)"
 	correct="Anna såg Erik och sin hund."
 	lang="sv"
 >
-	Use `sin`, `sitt`, or `sina` when the possessive refers back to the subject of
-	the same clause. See
-	[reflexive possessives](../../grammar/pronouns-function-words/sin-sitt-sina/).
+	Use <Sv>sin</Sv>, <Sv>sitt</Sv>, <Sv>sina</Sv> when the owner is the subject
+	of the same clause; <Sv>hans</Sv> and <Sv>hennes</Sv> point at someone else.
+	German *sein* covers both, so the distinction has to be made consciously. See
+	[sin, sitt, sina](/learn/swedish/grammar/pronouns-function-words/sin-sitt-sina/).
 </MistakeBox>
+
+## German subordinate word order
+
+<MistakeBox
+	incorrect="Jag stannar hemma eftersom jag idag inte arbetar."
+	correct="Jag stannar hemma eftersom jag inte arbetar idag."
+	lang="sv"
+>
+	German sends the verb to the end of the subordinate clause. Swedish keeps
+	subject, then <Sv>inte</Sv>, then the verb. See
+	[BIFF](/learn/swedish/grammar/sentence-structure/biff/).
+</MistakeBox>
+
+## Looking for the missing case system
+
+Swedish nouns have no case. Do not compensate with extra prepositions or
+article forms:
+
+| German | Swedish |
+| --- | --- |
+| Ich gebe dem Mann das Buch. | <Sv>Jag ger mannen boken.</Sv> |
+| das Buch des Mannes | <Sv>mannens bok</Sv> |
+| mit dem Auto | <Sv>med bilen</Sv> |
+
+Only pronouns still inflect: <Sv>med mig</Sv>, <Sv>till honom</Sv>, never
+*med jag*.
+
+## Assuming German verb particles
+
+German separable prefixes travel to the end of the clause. A Swedish loose
+particle stays right behind the verb, and only <Sv>inte</Sv> gets in between:
+
+| German | Swedish |
+| --- | --- |
+| Ich stehe um sieben auf. | <Sv>Jag går upp klockan sju.</Sv> |
+| Ich mag Fisch nicht. | <Sv>Jag tycker inte om fisk.</Sv> |
+
+See [particle verbs](/learn/swedish/grammar/verbs/particle-verbs/).
+
+## Putting inte where nicht goes
+
+<MistakeBox incorrect="Jag kommer idag inte." correct="Jag kommer inte idag." lang="sv">
+	In a main clause <Sv>inte</Sv> comes directly after the finite verb, before
+	adverbials and most objects. See
+	[placement of inte](/learn/swedish/grammar/sentence-structure/inte-placement/).
+	For *kein* use <Sv>ingen</Sv>, <Sv>inget</Sv>, <Sv>inga</Sv>:
+	<Sv>Jag har ingen bil.</Sv>
+</MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Translate: Der Brief ist lang.',
+			answer: 'Brevet är långt. (ett brev, so långt)',
+		},
+		{
+			prompt: 'Correct: Jag åker inte till Göteborg eftersom jag tid inte har.',
+			answer: 'Jag åker inte till Göteborg eftersom jag inte har tid.',
+		},
+		{
+			prompt: 'Anna met Erik and her own sister. Say it in Swedish.',
+			answer: 'Anna träffade Erik och sin syster.',
+		},
+		{
+			prompt: 'Negate: Jag tycker om fisk.',
+			answer: 'Jag tycker inte om fisk.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '/learn/swedish/grammar/nouns-articles/en-ett/', label: 'en and ett' },
+		{ href: '/learn/swedish/grammar/adjectives-adverbs/agreement/', label: 'Adjective agreement' },
+		{ href: '/learn/swedish/grammar/sentence-structure/inte-placement/', label: 'Placement of inte' },
+		{ href: '/learn/swedish/grammar/verbs/particle-verbs/', label: 'Particle verbs' },
+		{ href: '/false-friends/', label: 'False friends' },
+	]}
+/>

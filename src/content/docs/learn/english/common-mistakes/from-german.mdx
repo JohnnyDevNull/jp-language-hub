@@ -1,30 +1,153 @@
 ---
 title: German to English mistakes
-description: Common English mistakes caused by transferring German sentence patterns.
+description: Common English mistakes caused by transferring German tense, vocabulary, and word-order patterns.
 metaLanguage: en
 grammarLanguage: en
 comparisonLanguages:
   - de
   - en
+  - sv
+levels:
+  - A2
+  - B1
+  - B2
 tags:
   - common-mistakes
   - comparison
-  - sentence-structure
+  - grammar
+related:
+  - /learn/english/
+  - /false-friends/
+  - /direct-translation-errors/
 ---
 
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
 
-German and English often use similar neutral sentence patterns, but they react
-differently when another element is placed first.
+<KeyTakeaway>
+- A finished action with a finished time expression takes the past simple, not
+  the present perfect: *I saw him yesterday.*
+- An ongoing situation that started in the past takes the present perfect:
+  *I have lived here for three years.*
+- English keeps the subject before the verb after a fronted element, and puts
+  a frequency adverb before the main verb.
+</KeyTakeaway>
 
-## German inversion in an English statement
+German and English share enough structure that the differences hide well.
+These are the ones that persist into fluent speech.
+
+## since and for
+
+<LanguageComparison title="Duration up to now">
+	<p slot="de">Ich wohne seit drei Jahren hier.</p>
+	<p slot="en">I have lived here for three years.</p>
+	<p slot="sv">Jag har bott här i tre år.</p>
+</LanguageComparison>
+
+German uses the present tense with *seit* for both a duration and a starting
+point. English needs the present perfect, plus *for* for a stretch of time and
+*since* for a point in time: *since 2020*, *for three years*.
+
+## become and get
+
+<MistakeBox incorrect="I become 30 next month." correct="I turn 30 next month." lang="en">
+	German *bekommen* means **get** or **receive**, and *werden* means
+	**become**. *Become* is only for changing into something else: *she became a
+	doctor*. For ages, use *turn* or *be*; for receiving, use *get*.
+</MistakeBox>
+
+## Words that only look English
+
+| German | Not English | English |
+| --- | --- | --- |
+| Handy | *a handy* | a mobile phone, a cell phone |
+| Beamer | *a beamer* | a projector |
+| Chef | *my chef* | my boss |
+| eventuell | *eventually* | possibly, maybe |
+| aktuell | *actually* | current, up to date |
+
+*Eventually* means *in the end*, and *actually* means *in fact* — both are the
+opposite of what a German speaker usually intends.
+
+## information and other uncountables
+
+<MistakeBox incorrect="I need more informations." correct="I need more information." lang="en">
+	*Information* has no plural. The same applies to *advice*, *furniture*,
+	*equipment*, *news* (singular despite the *-s*), and *knowledge*. Count them
+	with a phrase: *two pieces of information*, *a piece of advice*.
+</MistakeBox>
+
+## make and do
+
+| German | Not English | English |
+| --- | --- | --- |
+| ein Foto machen | *make a photo* | take a photo |
+| Hausaufgaben machen | *make homework* | do your homework |
+| einen Kurs machen | *make a course* | take a course |
+| Sport machen | *make sport* | do sport, exercise |
+| einen Fehler machen | — | make a mistake |
+
+## Adverb placement
+
+<MistakeBox incorrect="I go often to the cinema." correct="I often go to the cinema." lang="en">
+	A frequency adverb goes before the main verb, but after *be* and after an
+	auxiliary: *she is often late*, *I have often wondered*. German puts it in
+	the middle field, which lands after the verb.
+</MistakeBox>
+
+## get to know
 
 <MistakeBox
-	incorrect="Today am I buying a car."
-	correct="Today I am buying a car."
+	incorrect="I have got to know her last year."
+	correct="I got to know her last year."
 	lang="en"
 >
-	German normally places the finite verb before the subject after a fronted time
-	expression. English normally keeps the subject before the verb. See the
-	[German-English-Swedish V2 comparison](../../../swedish/grammar/sentence-structure/v2/).
+	Two errors at once: *kennenlernen* is *get to know* or *meet*, and *last
+	year* is a finished time, so the past simple is required. *I have got to* on
+	its own means *I must*.
 </MistakeBox>
+
+## Present perfect for a finished past
+
+<LanguageComparison title="Finished action, finished time">
+	<p slot="de">Ich habe ihn gestern gesehen.</p>
+	<p slot="en">I saw him yesterday.</p>
+	<p slot="sv">Jag såg honom igår.</p>
+</LanguageComparison>
+
+German uses the *Perfekt* for the spoken past regardless of the time
+expression. English blocks the present perfect as soon as the time is over:
+*yesterday*, *last week*, *in 2019*, *when I was a child*.
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Correct: I work here since 2021.',
+			answer: 'I have worked here since 2021.',
+		},
+		{
+			prompt: 'Correct: I have visited Rome in 2019.',
+			answer: 'I visited Rome in 2019.',
+		},
+		{
+			prompt: 'Correct: Can you send me two informations about the course?',
+			answer: 'Can you send me two pieces of information about the course?',
+		},
+		{
+			prompt: 'Correct: I drink often tea in the evening.',
+			answer: 'I often drink tea in the evening.',
+		},
+	]}
+	answerLang="en"
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '/false-friends/', label: 'False friends' },
+		{ href: '/direct-translation-errors/', label: 'Direct translation errors' },
+		{ href: '/learn/english/', label: 'English overview' },
+	]}
+/>

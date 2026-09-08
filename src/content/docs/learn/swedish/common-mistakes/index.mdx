@@ -2,6 +2,7 @@
 title: Common Mistakes
 description: Typical transfer errors that show up when learning Swedish.
 metaLanguage: en
+grammarLanguage: sv
 comparisonLanguages:
   - de
   - en
@@ -9,19 +10,50 @@ comparisonLanguages:
 tags:
   - common-mistakes
   - comparison
+related:
+  - /learn/swedish/common-mistakes/from-german/
+  - /learn/swedish/common-mistakes/from-english/
+  - /false-friends/
+  - /direct-translation-errors/
 ---
 
-This section collects Swedish mistakes caused by transferring familiar patterns
-from a language you already know. Use the source-language pages to diagnose a
-transfer pattern, or browse the cross-language categories for vocabulary and
-translation traps.
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+
+<KeyTakeaway>
+- Most errors in Swedish are not gaps in knowledge but patterns imported from a
+  language you already speak.
+- Diagnose by source language first: German transfer and English transfer
+  produce different mistakes.
+- Word-level traps (<Sv>rolig</Sv>, <Sv>full</Sv>) and construction-level traps
+  (*es gibt*, *ich habe Hunger*) have their own pages.
+</KeyTakeaway>
+
+Four pages, split by where the mistake comes from.
 
 ## By source language
 
-- [Carried over from German](./from-german/) - Swedish mistakes influenced by German.
-- [Carried over from English](./from-english/) - Swedish mistakes influenced by English.
+| Page | Consult it when |
+| --- | --- |
+| [Carried over from German](/learn/swedish/common-mistakes/from-german/) | You guessed <Sv>en</Sv>/<Sv>ett</Sv> from German gender, put <Sv>inte</Sv> at the end of the clause, or used <Sv>hans</Sv> where <Sv>sin</Sv> belongs. |
+| [Carried over from English](/learn/swedish/common-mistakes/from-english/) | You built a progressive ("I am working"), used do-support in a question, or wrote a separate word for *the*. |
 
 ## Across language pairs
 
-- [False friends](../../../false-friends/) - familiar-looking words with different meanings.
-- [Direct translation errors](../../../direct-translation-errors/) - expressions that require a different construction or collocation.
+| Page | Consult it when |
+| --- | --- |
+| [False friends](/false-friends/) | A single word looks familiar and the sentence still came out wrong. |
+| [Direct translation errors](/direct-translation-errors/) | Every word is right but the construction is not Swedish. |
+
+Both cross-pair pages sit outside the learning trees, because a false friend
+belongs to a language pair rather than to one learning language.
+
+<RelatedTopics
+	topics={[
+		{ href: '/learn/swedish/common-mistakes/from-german/', label: 'Carried over from German' },
+		{ href: '/learn/swedish/common-mistakes/from-english/', label: 'Carried over from English' },
+		{ href: '/false-friends/', label: 'False friends' },
+		{ href: '/direct-translation-errors/', label: 'Direct translation errors' },
+	]}
+/>
