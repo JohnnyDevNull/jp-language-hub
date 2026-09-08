@@ -11,3 +11,12 @@
 	--sl-color-accent: #00818f;
 	--sl-color-accent-low: #d8f3f5;
 }
+
+/* Starlight caps content at 45rem and splits the space beyond content plus
+   sidebar evenly between the main pane and the table-of-contents column, which
+   on a wide monitor leaves the ToC hundreds of pixels it cannot use while
+   paradigm tables squeeze their cells. Raising this one value rebalances the
+   whole layout, because Starlight derives both column widths from it. */
+:root {
+	--sl-content-width: min(80rem, 100%);
+}
