@@ -23,6 +23,7 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - A familiar-looking Swedish word is a warning sign, not a translation.
@@ -31,6 +32,8 @@ import Sv from '~/components/Sv.astro';
 - Store a false friend with the word you actually meant, so the correct form is
   one lookup away.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Similar spelling does not guarantee the same meaning. Each entry below gives the
 misleading word, what it really means, and the word you probably wanted.
@@ -121,9 +124,9 @@ misleading word, what it really means, and the word you probably wanted.
 
 <RelatedTopics
 	topics={[
-		{ href: '/direct-translation-errors/', label: 'Direct translation errors' },
-		{ href: '/learn/swedish/common-mistakes/from-german/', label: 'Carried over from German' },
-		{ href: '/learn/swedish/common-mistakes/from-english/', label: 'Carried over from English' },
-		{ href: '/learn/swedish/vocabulary/', label: 'Vocabulary reference' },
+		{ href: '../direct-translation-errors/', label: 'Direct translation errors' },
+		{ href: '../learn/swedish/common-mistakes/from-german/', label: 'Carried over from German' },
+		{ href: '../learn/swedish/common-mistakes/from-english/', label: 'Carried over from English' },
+		{ href: '../learn/swedish/vocabulary/', label: 'Vocabulary reference' },
 	]}
 />

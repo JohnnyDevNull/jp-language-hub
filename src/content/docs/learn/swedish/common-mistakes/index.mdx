@@ -20,6 +20,7 @@ related:
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Most errors in Swedish are not gaps in knowledge but patterns imported from a
@@ -30,30 +31,32 @@ import Sv from '~/components/Sv.astro';
   (*es gibt*, *ich habe Hunger*) have their own pages.
 </KeyTakeaway>
 
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
 Four pages, split by where the mistake comes from.
 
 ## By source language
 
 | Page | Consult it when |
 | --- | --- |
-| [Carried over from German](/learn/swedish/common-mistakes/from-german/) | You guessed <Sv>en</Sv>/<Sv>ett</Sv> from German gender, put <Sv>inte</Sv> at the end of the clause, or used <Sv>hans</Sv> where <Sv>sin</Sv> belongs. |
-| [Carried over from English](/learn/swedish/common-mistakes/from-english/) | You built a progressive ("I am working"), used do-support in a question, or wrote a separate word for *the*. |
+| [Carried over from German](./from-german/) | You guessed <Sv>en</Sv>/<Sv>ett</Sv> from German gender, put <Sv>inte</Sv> at the end of the clause, or used <Sv>hans</Sv> where <Sv>sin</Sv> belongs. |
+| [Carried over from English](./from-english/) | You built a progressive ("I am working"), used do-support in a question, or wrote a separate word for *the*. |
 
 ## Across language pairs
 
 | Page | Consult it when |
 | --- | --- |
-| [False friends](/false-friends/) | A single word looks familiar and the sentence still came out wrong. |
-| [Direct translation errors](/direct-translation-errors/) | Every word is right but the construction is not Swedish. |
+| [False friends](../../../false-friends/) | A single word looks familiar and the sentence still came out wrong. |
+| [Direct translation errors](../../../direct-translation-errors/) | Every word is right but the construction is not Swedish. |
 
 Both cross-pair pages sit outside the learning trees, because a false friend
 belongs to a language pair rather than to one learning language.
 
 <RelatedTopics
 	topics={[
-		{ href: '/learn/swedish/common-mistakes/from-german/', label: 'Carried over from German' },
-		{ href: '/learn/swedish/common-mistakes/from-english/', label: 'Carried over from English' },
-		{ href: '/false-friends/', label: 'False friends' },
-		{ href: '/direct-translation-errors/', label: 'Direct translation errors' },
+		{ href: './from-german/', label: 'Carried over from German' },
+		{ href: './from-english/', label: 'Carried over from English' },
+		{ href: '../../../false-friends/', label: 'False friends' },
+		{ href: '../../../direct-translation-errors/', label: 'Direct translation errors' },
 	]}
 />

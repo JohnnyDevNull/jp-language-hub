@@ -23,7 +23,7 @@ page above did not teach.
 Work through the page, then answer its quick check before revealing anything.
 The self-checks live on the pages themselves, because a prompt is only fair
 next to the rule it tests. Start from the
-[learning path](/learn/swedish/learning-path/) if you want them in order.
+[learning path](../learn/swedish/learning-path/) if you want them in order.
 
 ## What a practice area would add
 
@@ -38,7 +38,7 @@ A quick check verifies one page. It cannot do the two things a drill area could:
 Neither is implemented. When one is, it will still have no accounts, no
 scoring, and no saved progress: nothing about your answers is stored anywhere.
 
-Until then the [cheat sheets](/learn/swedish/cheat-sheets/) are the fastest way
+Until then the [cheat sheets](../learn/swedish/cheat-sheets/) are the fastest way
 to review a paradigm you got wrong, and the
-[common mistakes](/learn/swedish/common-mistakes/) pages explain why a wrong
+[common mistakes](../learn/swedish/common-mistakes/) pages explain why a wrong
 answer felt right.

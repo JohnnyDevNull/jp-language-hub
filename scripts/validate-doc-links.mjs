@@ -63,6 +63,16 @@ function resolveTarget(link, pageRoute) {
 	return pathname.endsWith('/') ? pathname : `${pathname}/`;
 }
 
+/**
+ * The site is served from a base path, and Astro does not rewrite links written
+ * in the page body, so an absolute site path renders verbatim and 404s in
+ * production while resolving perfectly here. Only `related` may be absolute:
+ * the schema requires it and components resolve it themselves.
+ */
+function isAbsoluteSitePath(link) {
+	return link.startsWith('/');
+}
+
 /** Excludes external schemes, protocol-relative URLs and pure fragments. */
 function isInternal(link) {
 	return !/^(?:[a-z][a-z0-9+.-]*:|\/\/|#)/i.test(link);
@@ -89,6 +99,16 @@ for (const file of files) {
 	];
 
 	for (const { link, field } of candidates) {
+		if (field !== 'related' && isAbsoluteSitePath(link)) {
+			problems.push({
+				file,
+				field,
+				link,
+				target: 'an absolute site path, which drops the base path when rendered',
+			});
+			continue;
+		}
+
 		const target = resolveTarget(link, pageRoute);
 		if (target && !knownRoutes.has(target)) {
 			problems.push({ file, field, link, target });
@@ -101,6 +121,7 @@ if (problems.length > 0) {
 	for (const { file, field, link, target } of problems) {
 		console.error(`  ${file}\n    ${field}: ${link}\n    resolves to: ${target}\n`);
 	}
+	console.error('Write page-body links relative to the page, for example ../verbs/present/.');
 	process.exit(1);
 }
 

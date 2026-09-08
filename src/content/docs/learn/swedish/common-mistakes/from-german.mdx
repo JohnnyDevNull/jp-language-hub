@@ -28,6 +28,7 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - German gender does not predict <Sv>en</Sv> or <Sv>ett</Sv>; the two systems
@@ -38,6 +39,8 @@ import Sv from '~/components/Sv.astro';
   drifts to the end.
 </KeyTakeaway>
 
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
 German is the best available bridge to Swedish, which is exactly why its
 patterns slip through unnoticed. Each entry links to the rule that fixes it.
 
@@ -47,7 +50,7 @@ patterns slip through unnoticed. Each entry links to the rule that fixes it.
 	*das Buch* is <Sv>en bok</Sv>, *der Brief* is <Sv>ett brev</Sv>, *der Tisch*
 	is <Sv>ett bord</Sv>. Learn the gender with the noun, and use the ending
 	signals instead of German. See
-	[en/ett](/learn/swedish/grammar/nouns-articles/en-ett/).
+	[en/ett](../../grammar/nouns-articles/en-ett/).
 </MistakeBox>
 
 ## Leaving the predicative adjective bare
@@ -61,7 +64,7 @@ inflects it in both positions:
 | Das Haus ist groß. | <Sv>Huset är stort.</Sv> |
 | Die Häuser sind groß. | <Sv>Husen är stora.</Sv> |
 
-See [adjective agreement](/learn/swedish/grammar/adjectives-adverbs/agreement/).
+See [adjective agreement](../../grammar/adjectives-adverbs/agreement/).
 
 ## sin instead of hans/hennes
 
@@ -73,7 +76,7 @@ See [adjective agreement](/learn/swedish/grammar/adjectives-adverbs/agreement/).
 	Use <Sv>sin</Sv>, <Sv>sitt</Sv>, <Sv>sina</Sv> when the owner is the subject
 	of the same clause; <Sv>hans</Sv> and <Sv>hennes</Sv> point at someone else.
 	German *sein* covers both, so the distinction has to be made consciously. See
-	[sin, sitt, sina](/learn/swedish/grammar/pronouns-function-words/sin-sitt-sina/).
+	[sin, sitt, sina](../../grammar/pronouns-function-words/sin-sitt-sina/).
 </MistakeBox>
 
 ## German subordinate word order
@@ -85,7 +88,7 @@ See [adjective agreement](/learn/swedish/grammar/adjectives-adverbs/agreement/).
 >
 	German sends the verb to the end of the subordinate clause. Swedish keeps
 	subject, then <Sv>inte</Sv>, then the verb. See
-	[BIFF](/learn/swedish/grammar/sentence-structure/biff/).
+	[BIFF](../../grammar/sentence-structure/biff/).
 </MistakeBox>
 
 ## Looking for the missing case system
@@ -112,14 +115,14 @@ particle stays right behind the verb, and only <Sv>inte</Sv> gets in between:
 | Ich stehe um sieben auf. | <Sv>Jag går upp klockan sju.</Sv> |
 | Ich mag Fisch nicht. | <Sv>Jag tycker inte om fisk.</Sv> |
 
-See [particle verbs](/learn/swedish/grammar/verbs/particle-verbs/).
+See [particle verbs](../../grammar/verbs/particle-verbs/).
 
 ## Putting inte where nicht goes
 
 <MistakeBox incorrect="Jag kommer idag inte." correct="Jag kommer inte idag." lang="sv">
 	In a main clause <Sv>inte</Sv> comes directly after the finite verb, before
 	adverbials and most objects. See
-	[placement of inte](/learn/swedish/grammar/sentence-structure/inte-placement/).
+	[placement of inte](../../grammar/sentence-structure/inte-placement/).
 	For *kein* use <Sv>ingen</Sv>, <Sv>inget</Sv>, <Sv>inga</Sv>:
 	<Sv>Jag har ingen bil.</Sv>
 </MistakeBox>
@@ -147,10 +150,10 @@ See [particle verbs](/learn/swedish/grammar/verbs/particle-verbs/).
 
 <RelatedTopics
 	topics={[
-		{ href: '/learn/swedish/grammar/nouns-articles/en-ett/', label: 'en and ett' },
-		{ href: '/learn/swedish/grammar/adjectives-adverbs/agreement/', label: 'Adjective agreement' },
-		{ href: '/learn/swedish/grammar/sentence-structure/inte-placement/', label: 'Placement of inte' },
-		{ href: '/learn/swedish/grammar/verbs/particle-verbs/', label: 'Particle verbs' },
-		{ href: '/false-friends/', label: 'False friends' },
+		{ href: '../../grammar/nouns-articles/en-ett/', label: 'en and ett' },
+		{ href: '../../grammar/adjectives-adverbs/agreement/', label: 'Adjective agreement' },
+		{ href: '../../grammar/sentence-structure/inte-placement/', label: 'Placement of inte' },
+		{ href: '../../grammar/verbs/particle-verbs/', label: 'Particle verbs' },
+		{ href: '../../../../false-friends/', label: 'False friends' },
 	]}
 />

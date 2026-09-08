@@ -26,6 +26,7 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - A finished action with a finished time expression takes the past simple, not
@@ -35,6 +36,8 @@ import RelatedTopics from '~/components/RelatedTopics.astro';
 - English keeps the subject before the verb after a fronted element, and puts
   a frequency adverb before the main verb.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 German and English share enough structure that the differences hide well.
 These are the ones that persist into fluent speech.
@@ -146,8 +149,8 @@ expression. English blocks the present perfect as soon as the time is over:
 
 <RelatedTopics
 	topics={[
-		{ href: '/false-friends/', label: 'False friends' },
-		{ href: '/direct-translation-errors/', label: 'Direct translation errors' },
-		{ href: '/learn/english/', label: 'English overview' },
+		{ href: '../../../../false-friends/', label: 'False friends' },
+		{ href: '../../../../direct-translation-errors/', label: 'Direct translation errors' },
+		{ href: '../../', label: 'English overview' },
 	]}
 />

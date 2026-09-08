@@ -24,6 +24,7 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Translate the whole construction, including its verb and its preposition, not
@@ -33,6 +34,8 @@ import Sv from '~/components/Sv.astro';
 - Swedish answers a negative question with <Sv>jo</Sv>, never with
   <Sv>ja</Sv>.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 These are not vocabulary gaps. Every word is known; the construction around it
 is different.
@@ -134,9 +137,9 @@ but asks how something is *going* — a task, a project — not how you feel.
 
 <RelatedTopics
 	topics={[
-		{ href: '/false-friends/', label: 'False friends' },
-		{ href: '/learn/swedish/common-mistakes/from-german/', label: 'Carried over from German' },
-		{ href: '/learn/swedish/grammar/pronouns-function-words/prepositions/', label: 'Prepositions' },
-		{ href: '/learn/swedish/vocabulary/', label: 'Vocabulary reference' },
+		{ href: '../false-friends/', label: 'False friends' },
+		{ href: '../learn/swedish/common-mistakes/from-german/', label: 'Carried over from German' },
+		{ href: '../learn/swedish/grammar/pronouns-function-words/prepositions/', label: 'Prepositions' },
+		{ href: '../learn/swedish/vocabulary/', label: 'Vocabulary reference' },
 	]}
 />
