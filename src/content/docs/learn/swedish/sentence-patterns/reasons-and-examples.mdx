@@ -1,0 +1,132 @@
+---
+title: Reasons and examples
+description: Swedish connectors for giving a reason, explaining a point, giving an example, and comparing.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+  - B1
+tags:
+  - sentence-patterns
+  - sentence-structure
+related:
+  - /learn/swedish/grammar/sentence-structure/biff/
+  - /learn/swedish/grammar/sentence-structure/inversion/
+  - /learn/swedish/grammar/adjectives-adverbs/adjective-comparison/
+  - /learn/swedish/sentence-patterns/conditions-and-consequences/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+
+<KeyTakeaway>
+- <Sv>eftersom</Sv> and <Sv>därför att</Sv> both mean "because", but only
+  <Sv>eftersom</Sv> can open the sentence.
+- <Sv>därför</Sv> is the *consequence* adverb ("therefore") and takes the finite
+  verb straight after it: <Sv>Därför stannar jag hemma.</Sv>
+- Reason clauses are subordinate clauses, so <Sv>inte</Sv> goes before the
+  finite verb inside them.
+</KeyTakeaway>
+
+The pair <Sv>därför</Sv> and <Sv>därför att</Sv> is the single most useful
+distinction on this page, and the one German speakers get wrong most often.
+
+## Giving a reason
+
+| Pattern | What it does | Register |
+| --- | --- | --- |
+| <Sv>… eftersom …</Sv> | because; may also stand first in the sentence | neutral |
+| <Sv>… därför att …</Sv> | because; answers *why*, never sentence-initial | neutral |
+| <Sv>… för …</Sv> | because, joining two main clauses | spoken |
+| <Sv>Det beror på att …</Sv> | that is because | neutral |
+| <Sv>Anledningen är att …</Sv> | the reason is that | neutral to formal |
+| <Sv>på grund av …</Sv> + noun | because of | neutral |
+| <Sv>tack vare …</Sv> + noun | thanks to; positive reason only | neutral |
+
+## Explaining a point
+
+| Pattern | What it does | Register |
+| --- | --- | --- |
+| <Sv>Det betyder att …</Sv> | that means that | neutral |
+| <Sv>Med andra ord …</Sv> | in other words | neutral |
+| <Sv>Vad jag menar är att …</Sv> | reformulating your own point | neutral |
+| <Sv>alltså</Sv> | so, that is; also fills a pause | spoken |
+
+## Giving an example and comparing
+
+| Pattern | What it does | Register |
+| --- | --- | --- |
+| <Sv>till exempel</Sv> (<Sv>t.ex.</Sv>) | for example | neutral |
+| <Sv>Ta … som exempel.</Sv> | take X as an example | neutral |
+| <Sv>jämfört med …</Sv> | compared with | neutral |
+| <Sv>till skillnad från …</Sv> | unlike | neutral |
+| <Sv>precis som …</Sv> | just like | neutral |
+| <Sv>… medan …</Sv> | whereas, contrasting two facts | neutral |
+| <Sv>å ena sidan … å andra sidan …</Sv> | on the one hand … on the other | formal |
+
+## Direct comparison
+
+<LanguageComparison title="Reason clause in second position">
+	<p slot="de">Ich bleibe zu Hause, weil es regnet.</p>
+	<p slot="en">I'm staying home because it's raining.</p>
+	<p slot="sv">Jag stannar hemma eftersom det regnar.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Reason clause first">
+	<p slot="de">Weil es regnet, bleibe ich zu Hause.</p>
+	<p slot="en">Because it's raining, I'm staying home.</p>
+	<p slot="sv">Eftersom det regnar stannar jag hemma.</p>
+</LanguageComparison>
+
+The fronted clause is one constituent, so the finite verb <Sv>stannar</Sv>
+follows it directly and the subject comes after the verb. Swapping in
+<Sv>därför att</Sv> here is wrong; it cannot open the sentence.
+
+<LanguageComparison title="Consequence: därför">
+	<p slot="de">Es regnet, deshalb bleibe ich zu Hause.</p>
+	<p slot="en">It's raining, so I'm staying home.</p>
+	<p slot="sv">Det regnar, därför stannar jag hemma.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Contrasting two languages">
+	<p slot="de">Im Gegensatz zum Deutschen hat Schwedisch keine Kasus.</p>
+	<p slot="en">Unlike German, Swedish has no cases.</p>
+	<p slot="sv">Till skillnad från tyska har svenska inga kasus.</p>
+</LanguageComparison>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Join with a reason clause and front it: “Det regnar.” + “Jag stannar hemma.”',
+			answer: 'Eftersom det regnar stannar jag hemma.',
+		},
+		{
+			prompt: 'Say: It is raining, therefore I am staying home.',
+			answer: 'Det regnar, därför stannar jag hemma.',
+		},
+		{
+			prompt: 'Say: The reason is that I do not have time.',
+			answer: 'Anledningen är att jag inte har tid.',
+		},
+		{
+			prompt: 'Which of eftersom and därför att cannot start a sentence?',
+			answer: 'därför att',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../conditions-and-consequences/', label: 'Conditions and consequences' },
+		{ href: '../opinions-and-uncertainty/', label: 'Opinions and uncertainty' },
+		{ href: '../../grammar/sentence-structure/biff/', label: 'BIFF' },
+		{ href: '../../grammar/adjectives-adverbs/adjective-comparison/', label: 'Adjective comparison' },
+	]}
+/>

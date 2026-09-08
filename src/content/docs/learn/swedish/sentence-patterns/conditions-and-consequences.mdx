@@ -1,0 +1,130 @@
+---
+title: Conditions and consequences
+description: Swedish patterns for if-clauses, counterfactuals, and stating what follows from something.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+  - B1
+tags:
+  - sentence-patterns
+  - sentence-structure
+related:
+  - /learn/swedish/grammar/sentence-structure/inversion/
+  - /learn/swedish/grammar/sentence-structure/biff/
+  - /learn/swedish/grammar/verbs/preterite/
+  - /learn/swedish/sentence-patterns/reasons-and-examples/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+
+<KeyTakeaway>
+- A fronted <Sv>om</Sv>-clause fills position one, so the main clause starts
+  with its finite verb: <Sv>Om det regnar stannar jag hemma.</Sv>
+- Swedish has no separate word for "unless": use <Sv>om … inte</Sv>.
+- A counterfactual uses the preterite in the condition and
+  <Sv>skulle</Sv> + infinitive in the result.
+</KeyTakeaway>
+
+Conditions are where word order and pattern meet: the phrase list is short, but
+the clause after it has to be built correctly.
+
+## Expressing a condition
+
+| Pattern | What it does | Register |
+| --- | --- | --- |
+| <Sv>Om …</Sv> | plain condition | neutral |
+| <Sv>Om … så …</Sv> | marks the main clause explicitly; common in speech | spoken |
+| <Sv>Ifall …</Sv> | in case, if | neutral |
+| <Sv>om … inte …</Sv> | unless | neutral |
+| <Sv>så länge …</Sv> | as long as | neutral |
+| <Sv>Om jag var du skulle jag …</Sv> | if I were you | neutral |
+| <Sv>Tänk om …</Sv> | what if, imagine if | spoken |
+| <Sv>Vad händer om …?</Sv> | what happens if | neutral |
+| <Sv>i så fall</Sv> | in that case | neutral |
+
+## Expressing a consequence
+
+| Pattern | What it does | Register |
+| --- | --- | --- |
+| <Sv>… så …</Sv> | so, joining result to cause | spoken |
+| <Sv>därför</Sv> | therefore; finite verb follows it | neutral |
+| <Sv>annars</Sv> | otherwise; finite verb follows it | neutral |
+| <Sv>Det innebär att …</Sv> | that means, that entails | formal |
+| <Sv>vilket betyder att …</Sv> | which means that | neutral |
+| <Sv>Det leder till att …</Sv> | that leads to | neutral to formal |
+| <Sv>… så att …</Sv> | so that, marking the result | neutral |
+
+<Sv>därför</Sv> and <Sv>annars</Sv> are adverbs in position one, which is why
+the subject lands after the verb: <Sv>annars kommer vi för sent</Sv>, not
+<Sv>annars vi kommer</Sv>.
+
+## Direct comparison
+
+<LanguageComparison title="Condition first">
+	<p slot="de">Wenn es regnet, bleibe ich zu Hause.</p>
+	<p slot="en">If it rains, I'll stay home.</p>
+	<p slot="sv">Om det regnar stannar jag hemma.</p>
+</LanguageComparison>
+
+German behaves the same way — the fronted clause forces the verb into second
+position — so German is the right model here and English the misleading one.
+
+<LanguageComparison title="Unless">
+	<p slot="de">Wir gehen raus, wenn es nicht regnet.</p>
+	<p slot="en">We'll go out unless it rains.</p>
+	<p slot="sv">Vi går ut om det inte regnar.</p>
+</LanguageComparison>
+
+Note <Sv>om det inte regnar</Sv>: inside a subordinate clause <Sv>inte</Sv>
+comes before the finite verb.
+
+<LanguageComparison title="Counterfactual">
+	<p slot="de">Wenn ich Zeit hätte, würde ich mitkommen.</p>
+	<p slot="en">If I had time, I would come along.</p>
+	<p slot="sv">Om jag hade tid skulle jag följa med.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Otherwise">
+	<p slot="de">Beeil dich, sonst kommen wir zu spät.</p>
+	<p slot="en">Hurry up, otherwise we'll be late.</p>
+	<p slot="sv">Skynda dig, annars kommer vi för sent.</p>
+</LanguageComparison>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Complete: “Om det regnar ___ jag hemma.”',
+			answer: 'stannar',
+		},
+		{
+			prompt: 'Say: Hurry up, otherwise we will be late.',
+			answer: 'Skynda dig, annars kommer vi för sent.',
+		},
+		{
+			prompt: 'Say: If I had time, I would come along.',
+			answer: 'Om jag hade tid skulle jag följa med.',
+		},
+		{
+			prompt: 'Express “unless it rains” in Swedish.',
+			answer: 'om det inte regnar',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../reasons-and-examples/', label: 'Reasons and examples' },
+		{ href: '../../grammar/sentence-structure/inversion/', label: 'Inversion' },
+		{ href: '../../grammar/sentence-structure/biff/', label: 'BIFF' },
+		{ href: '../../grammar/verbs/preterite/', label: 'Preterite' },
+	]}
+/>
