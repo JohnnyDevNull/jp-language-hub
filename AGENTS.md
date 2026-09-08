@@ -4,6 +4,10 @@
 
 Before working on the project, read the [project concept and implementation plan](docs/jp-language-hub-plan.md).
 
+`CLAUDE.md` is a symlink to this file, so both names resolve to one file. Edit
+`AGENTS.md`; never write to both paths, and never replace the symlink with a
+copy that then has to be kept in sync.
+
 ## Required reading
 
 Before generating code, modifying code, refactoring, or proposing architecture
