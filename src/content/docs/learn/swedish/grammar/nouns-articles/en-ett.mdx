@@ -1,0 +1,242 @@
+---
+title: Swedish en / ett
+description: Learn Swedish noun gender, indefinite articles, definite suffixes, and the connection between en or ett and adjective agreement.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - nouns
+  - swedish-specific
+  - important
+related:
+  - /learn/swedish/grammar/nouns-articles/noun-forms/
+  - /learn/swedish/grammar/nouns-articles/plural-overview/
+  - /learn/swedish/grammar/adjectives-adverbs/agreement/
+  - /learn/swedish/grammar/adjectives-adverbs/adjective-comparison/
+---
+
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import NounForms from '~/components/NounForms.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import RuleBox from '~/components/RuleBox.astro';
+import TagList from '~/components/TagList.astro';
+
+Most Swedish nouns belong to one of two grammatical genders. An **en-word** uses
+<span lang="sv">en</span>; an **ett-word** uses <span lang="sv">ett</span>.
+The noun's gender affects articles, definite forms, and adjective endings.
+
+<TagList
+	tags={[
+		'Swedish',
+		...(frontmatter.levels ?? []),
+		...(frontmatter.tags ?? []).filter((tag) => tag !== 'swedish-specific'),
+	]}
+/>
+
+## Core rule
+
+| Gender | Indefinite singular | Meaning |
+| --- | --- | --- |
+| en-word | <span lang="sv">en bil</span> | a car |
+| ett-word | <span lang="sv">ett hus</span> | a house |
+
+There is no completely reliable rule that predicts the gender of every Swedish
+noun. Learn the article together with the noun: not merely
+<span lang="sv">bil</span>, but <span lang="sv">en bil</span>. Some word
+endings are regular enough to narrow the guess down, and compounds follow a
+rule that always holds.
+
+<RuleBox>
+	Learn a Swedish noun together with its article. The article is part of the
+	word's grammatical information: it records the noun's gender and helps you
+	choose compatible forms elsewhere in the noun phrase.
+</RuleBox>
+
+## Endings that point to a gender
+
+en-words are the clear majority in Swedish, so <span lang="sv">en</span> is the
+better guess when you have nothing else to go on. Many derivational endings
+narrow it down further.
+
+These endings are normally en-words:
+
+| Ending | Examples |
+| --- | --- |
+| <span lang="sv">-a</span> | <span lang="sv">en flicka</span>, <span lang="sv">en gata</span>, <span lang="sv">en vecka</span> |
+| <span lang="sv">-are</span> | <span lang="sv">en lärare</span>, <span lang="sv">en bagare</span> |
+| <span lang="sv">-else</span> | <span lang="sv">en händelse</span>, <span lang="sv">en rörelse</span> |
+| <span lang="sv">-het</span> | <span lang="sv">en möjlighet</span>, <span lang="sv">en nyhet</span> |
+| <span lang="sv">-ning</span>, <span lang="sv">-ing</span> | <span lang="sv">en tidning</span>, <span lang="sv">en övning</span> |
+| <span lang="sv">-dom</span> | <span lang="sv">en sjukdom</span>, <span lang="sv">en visdom</span> |
+| <span lang="sv">-lek</span> | <span lang="sv">en kärlek</span>, <span lang="sv">en storlek</span> |
+| <span lang="sv">-nad</span> | <span lang="sv">en byggnad</span>, <span lang="sv">en skillnad</span> |
+| <span lang="sv">-tion</span>, <span lang="sv">-sion</span> | <span lang="sv">en station</span>, <span lang="sv">en diskussion</span> |
+| <span lang="sv">-ist</span>, <span lang="sv">-ent</span>, <span lang="sv">-ör</span> | <span lang="sv">en turist</span>, <span lang="sv">en student</span>, <span lang="sv">en frisör</span> |
+
+These endings are normally ett-words:
+
+| Ending | Examples |
+| --- | --- |
+| <span lang="sv">-ande</span>, <span lang="sv">-ende</span> | <span lang="sv">ett meddelande</span>, <span lang="sv">ett leende</span> |
+| <span lang="sv">-eri</span> | <span lang="sv">ett bageri</span>, <span lang="sv">ett tryckeri</span> |
+| <span lang="sv">-um</span> | <span lang="sv">ett museum</span>, <span lang="sv">ett centrum</span>, <span lang="sv">ett faktum</span> |
+| <span lang="sv">-ment</span> | <span lang="sv">ett dokument</span>, <span lang="sv">ett argument</span> |
+| <span lang="sv">-tek</span> | <span lang="sv">ett bibliotek</span>, <span lang="sv">ett apotek</span> |
+| <span lang="sv">-gram</span> | <span lang="sv">ett program</span>, <span lang="sv">ett diagram</span> |
+
+Three cases need care:
+
+- <span lang="sv">-a</span> has a small group of ett-words:
+  <span lang="sv">ett öga</span>, <span lang="sv">ett öra</span>,
+  <span lang="sv">ett hjärta</span>.
+- <span lang="sv">-ande</span> and <span lang="sv">-ende</span> are ett-words
+  when they name an action, but en-words when they name a person:
+  <span lang="sv">ett meddelande</span> against
+  <span lang="sv">en studerande</span>.
+- <span lang="sv">-skap</span> is genuinely split. Concrete and collective
+  nouns tend to be ett-words (<span lang="sv">ett landskap</span>,
+  <span lang="sv">ett sällskap</span>), while relations and qualities tend to
+  be en-words (<span lang="sv">en vänskap</span>,
+  <span lang="sv">en kunskap</span>). Check this ending rather than guessing.
+
+An ending such as <span lang="sv">-e</span> gives no useful signal at all:
+compare <span lang="sv">en pojke</span> with
+<span lang="sv">ett äpple</span>.
+
+Nouns for people and animals are usually en-words —
+<span lang="sv">en man</span>, <span lang="sv">en kvinna</span>,
+<span lang="sv">en hund</span> — but not always:
+<span lang="sv">ett barn</span>, <span lang="sv">ett djur</span>,
+<span lang="sv">ett lejon</span>.
+
+## Compounds follow their last element
+
+This rule has no exceptions and is the most useful of all, because Swedish
+builds compounds constantly. The gender of a compound is the gender of its
+**final** element; the earlier elements do not matter:
+
+| Parts | Compound |
+| --- | --- |
+| <span lang="sv">en cykel</span> + <span lang="sv">ett hjul</span> | <span lang="sv">ett cykelhjul</span> |
+| <span lang="sv">ett tåg</span> + <span lang="sv">en station</span> | <span lang="sv">en tågstation</span> |
+| <span lang="sv">en sommar</span> + <span lang="sv">ett hus</span> | <span lang="sv">ett sommarhus</span> |
+| <span lang="sv">en post</span> + <span lang="sv">ett kontor</span> | <span lang="sv">ett postkontor</span> |
+
+The definite and plural forms follow the last element too:
+<span lang="sv">ett cykelhjul → cykelhjulet</span>,
+<span lang="sv">en tågstation → tågstationen</span>.
+
+<RuleBox title="Reliable shortcut">
+	For any compound noun, look up only the last element. Its gender, definite
+	suffix, and plural carry over to the whole word.
+</RuleBox>
+
+## Indefinite and definite
+
+Swedish normally uses a separate article for the indefinite singular but adds a
+suffix to the noun for the simple definite form:
+
+| Gender | Indefinite | Definite |
+| --- | --- | --- |
+| en-word | <span lang="sv">en bil</span> | <span lang="sv">bilen</span> |
+| ett-word | <span lang="sv">ett hus</span> | <span lang="sv">huset</span> |
+
+<NounForms
+	indefiniteSingular="en bil"
+	definiteSingular="bilen"
+	indefinitePlural="bilar"
+	definitePlural="bilarna"
+	caption="Core forms of bil"
+/>
+
+Compare:
+
+| Language | Indefinite | Definite |
+| --- | --- | --- |
+| <span lang="de">🇩🇪 Deutsch</span> | <span lang="de">ein Auto</span> | <span lang="de">das Auto</span> |
+| <span lang="en">🇬🇧 English</span> | <span lang="en">a car</span> | <span lang="en">the car</span> |
+| <span lang="sv">🇸🇪 Svenska</span> | <span lang="sv">en bil</span> | <span lang="sv">bilen</span> |
+
+See [Swedish noun forms](../noun-forms/) for spelling patterns and
+plural definiteness.
+
+## Adjective agreement
+
+The noun phrase's gender and number determine the basic adjective form. The
+article makes that grammatical information visible:
+
+- <span lang="sv">en <strong>stor</strong> bil</span> — a big car
+- <span lang="sv">ett <strong>stort</strong> hus</span> — a big house
+- <span lang="sv"><strong>stora</strong> bilar</span> — big cars
+- <span lang="sv"><strong>stora</strong> hus</span> — big houses
+
+The basic pattern is **base form** with an en-word, often **-t** with an ett-word,
+and often **-a** in the plural. Adjectives also have irregular and spelling-
+dependent forms; the canonical explanation is [Swedish adjective agreement](../../adjectives-adverbs/agreement/).
+
+## Definite adjective constructions
+
+When an adjective modifies a definite noun, standard Swedish normally marks
+definiteness with both a separate article and the noun's definite suffix:
+
+<p lang="sv">den stora bilen</p>
+
+This is called **double definiteness**. See
+[Swedish adjective agreement](../../adjectives-adverbs/agreement/#definite-noun-phrases-and-double-definiteness)
+for the complete pattern, gender and number forms, and the possessive exception.
+
+## Plural
+
+The plural ending cannot be derived from en or ett alone:
+
+- <span lang="sv">en bil → bilar</span>
+- <span lang="sv">ett hus → hus</span>
+- <span lang="sv">ett äpple → äpplen</span>
+
+Learn the important plural forms with the noun. See the
+[Swedish plural overview](../plural-overview/).
+
+<MistakeBox title="Common mistakes">
+Do not assume that an object's natural properties determine en or ett, and do
+not use <span lang="sv">en</span> as a universal article. Do not take the
+gender of a compound from its first element either:
+<span lang="sv">❌ en cykelhjul</span>, <span lang="sv">✅ ett cykelhjul</span>.
+
+<span lang="sv">❌ en hus</span>  
+<span lang="sv">✅ ett hus</span>
+
+Also keep the adjective consistent:
+
+<span lang="sv">❌ ett stor hus</span>  
+<span lang="sv">✅ ett stort hus</span>
+</MistakeBox>
+
+<MemoryTip>
+	Treat the article as part of the word: learn
+	<span lang="sv"><strong>en bil</strong></span> and
+	<span lang="sv"><strong>ett hus</strong></span>. Add the four noun forms when
+	you can: <span lang="sv">en bil, bilen, bilar, bilarna</span>.
+</MemoryTip>
+
+<RelatedTopics
+	topics={[
+		{ href: '../noun-forms/', label: 'Swedish noun forms' },
+		{ href: '../plural-overview/', label: 'Swedish plural overview' },
+		{
+			href: '../../adjectives-adverbs/agreement/',
+			label: 'Swedish adjective agreement',
+		},
+		{
+			href: '../../adjectives-adverbs/adjective-comparison/',
+			label: 'Swedish adjective comparison',
+		},
+	]}
+/>

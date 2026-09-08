@@ -27,102 +27,71 @@ export default defineConfig({
 			},
 			sidebar: [
 				{ label: 'Home', link: '/' },
+
+				// Swedish learning tree.
 				{
 					label: 'Grammar',
 					items: [
-						{ label: 'Overview', slug: 'grammar' },
+						{ label: 'Overview', slug: 'learn/swedish/grammar' },
 						{
 							label: 'Sentence Structure',
 							items: [
-								{
-									label: 'Swedish',
-									items: [
-										{ slug: 'grammar/sentence-structure/swedish/basic-word-order' },
-										{ slug: 'grammar/sentence-structure/swedish/v2' },
-										{ slug: 'grammar/sentence-structure/swedish/inversion' },
-										{ slug: 'grammar/sentence-structure/swedish/biff' },
-										{ slug: 'grammar/sentence-structure/swedish/inte-placement' },
-									],
-								},
-								{ label: 'German', slug: 'grammar/sentence-structure/german' },
-								{ label: 'English', slug: 'grammar/sentence-structure/english' },
-								{ label: 'Comparisons', slug: 'grammar/sentence-structure/comparisons' },
+								{ slug: 'learn/swedish/grammar/sentence-structure/basic-word-order' },
+								{ slug: 'learn/swedish/grammar/sentence-structure/v2' },
+								{ slug: 'learn/swedish/grammar/sentence-structure/inversion' },
+								{ slug: 'learn/swedish/grammar/sentence-structure/biff' },
+								{ slug: 'learn/swedish/grammar/sentence-structure/inte-placement' },
 							],
 						},
 						{
 							label: 'Nouns & Articles',
 							items: [
-								{
-									label: 'Swedish',
-									items: [
-										{ slug: 'grammar/nouns-articles/swedish/en-ett' },
-										{ slug: 'grammar/nouns-articles/swedish/noun-forms' },
-										{ slug: 'grammar/nouns-articles/swedish/plural-overview' },
-									],
-								},
+								{ slug: 'learn/swedish/grammar/nouns-articles/en-ett' },
+								{ slug: 'learn/swedish/grammar/nouns-articles/noun-forms' },
+								{ slug: 'learn/swedish/grammar/nouns-articles/plural-overview' },
 							],
 						},
 						{
 							label: 'Numerals',
-							items: [
-								{
-									label: 'Swedish',
-									items: [{ slug: 'grammar/numerals/swedish/numbers' }],
-								},
-							],
+							items: [{ slug: 'learn/swedish/grammar/numerals/numbers' }],
 						},
 						{
 							label: 'Adjectives & Adverbs',
 							items: [
-								{
-									label: 'Swedish',
-									items: [
-										{ slug: 'grammar/adjectives-adverbs/swedish/agreement' },
-										{ slug: 'grammar/adjectives-adverbs/swedish/adjective-comparison' },
-										{ slug: 'grammar/adjectives-adverbs/swedish/adverbs' },
-									],
-								},
+								{ slug: 'learn/swedish/grammar/adjectives-adverbs/agreement' },
+								{ slug: 'learn/swedish/grammar/adjectives-adverbs/adjective-comparison' },
+								{ slug: 'learn/swedish/grammar/adjectives-adverbs/adverbs' },
 							],
 						},
 						{
 							label: 'Verbs',
 							items: [
-								{
-									label: 'Swedish',
-									items: [
-										{ slug: 'grammar/verbs/swedish/verb-forms' },
-										{ slug: 'grammar/verbs/swedish/tense-perspectives' },
-										{ slug: 'grammar/verbs/swedish/present' },
-										{ slug: 'grammar/verbs/swedish/preterite' },
-										{ slug: 'grammar/verbs/swedish/perfect' },
-										{ slug: 'grammar/verbs/swedish/verb-groups' },
-										{ slug: 'grammar/verbs/swedish/particle-verbs' },
-										{ slug: 'grammar/verbs/swedish/passive' },
-									],
-								},
+								{ slug: 'learn/swedish/grammar/verbs/verb-forms' },
+								{ slug: 'learn/swedish/grammar/verbs/tense-perspectives' },
+								{ slug: 'learn/swedish/grammar/verbs/present' },
+								{ slug: 'learn/swedish/grammar/verbs/preterite' },
+								{ slug: 'learn/swedish/grammar/verbs/perfect' },
+								{ slug: 'learn/swedish/grammar/verbs/verb-groups' },
+								{ slug: 'learn/swedish/grammar/verbs/particle-verbs' },
+								{ slug: 'learn/swedish/grammar/verbs/passive' },
 							],
 						},
 						{
 							label: 'Pronouns & Function Words',
 							items: [
+								{ slug: 'learn/swedish/grammar/pronouns-function-words/possessive-pronouns' },
+								{ slug: 'learn/swedish/grammar/pronouns-function-words/sin-sitt-sina' },
 								{
-									label: 'Swedish',
-									items: [
-										{ slug: 'grammar/pronouns-function-words/swedish/possessive-pronouns' },
-										{ slug: 'grammar/pronouns-function-words/swedish/sin-sitt-sina' },
-										{
-											slug: 'grammar/pronouns-function-words/swedish/nagon-nagot-ingen-inget',
-										},
-										{
-											slug: 'grammar/pronouns-function-words/swedish/demonstratives-har-dar',
-										},
-										{ slug: 'grammar/pronouns-function-words/swedish/prepositions' },
-										{ slug: 'grammar/pronouns-function-words/swedish/relative-pronouns' },
-										{ slug: 'grammar/pronouns-function-words/swedish/interrogatives' },
-										{ slug: 'grammar/pronouns-function-words/swedish/man-varandra-varsin' },
-										{ slug: 'grammar/pronouns-function-words/swedish/dar-har-adverbs' },
-									],
+									slug: 'learn/swedish/grammar/pronouns-function-words/nagon-nagot-ingen-inget',
 								},
+								{
+									slug: 'learn/swedish/grammar/pronouns-function-words/demonstratives-har-dar',
+								},
+								{ slug: 'learn/swedish/grammar/pronouns-function-words/prepositions' },
+								{ slug: 'learn/swedish/grammar/pronouns-function-words/relative-pronouns' },
+								{ slug: 'learn/swedish/grammar/pronouns-function-words/interrogatives' },
+								{ slug: 'learn/swedish/grammar/pronouns-function-words/man-varandra-varsin' },
+								{ slug: 'learn/swedish/grammar/pronouns-function-words/dar-har-adverbs' },
 							],
 						},
 					],
@@ -130,46 +99,54 @@ export default defineConfig({
 				{
 					label: 'Vocabulary',
 					items: [
-						{ label: 'Overview', slug: 'vocabulary' },
-						{ slug: 'vocabulary/swedish/telling-time' },
+						{ label: 'Overview', slug: 'learn/swedish/vocabulary' },
+						{ slug: 'learn/swedish/vocabulary/telling-time' },
 					],
 				},
 				{
 					label: 'Language-specific Rules',
 					items: [
-						{ label: 'Overview', slug: 'language-specific-rules' },
-						{ slug: 'language-specific-rules/swedish/en-ett' },
-						{ slug: 'language-specific-rules/swedish/v2-biff' },
-						{ slug: 'language-specific-rules/swedish/sin-sitt-sina' },
-						{ slug: 'language-specific-rules/swedish/pronunciation-basics' },
+						{ label: 'Overview', slug: 'learn/swedish/language-specific-rules' },
+						{ slug: 'learn/swedish/language-specific-rules/en-ett' },
+						{ slug: 'learn/swedish/language-specific-rules/v2-biff' },
+						{ slug: 'learn/swedish/language-specific-rules/sin-sitt-sina' },
+						{ slug: 'learn/swedish/language-specific-rules/pronunciation-basics' },
 					],
 				},
 				{
 					label: 'Common Mistakes',
 					items: [
-						{ label: 'Overview', slug: 'common-mistakes' },
-						{ slug: 'common-mistakes/de-to-en' },
-						{ slug: 'common-mistakes/de-to-sv' },
-						{ slug: 'common-mistakes/en-to-sv' },
-						{ slug: 'common-mistakes/false-friends' },
-						{ slug: 'common-mistakes/direct-translation-errors' },
+						{ label: 'Overview', slug: 'learn/swedish/common-mistakes' },
+						{ slug: 'learn/swedish/common-mistakes/from-german' },
+						{ slug: 'learn/swedish/common-mistakes/from-english' },
 					],
 				},
 				{
 					label: 'Cheat Sheets',
 					items: [
-						{ label: 'Overview', slug: 'cheat-sheets' },
-						{ slug: 'cheat-sheets/swedish-en-ett-adjectives' },
-						{ slug: 'cheat-sheets/swedish-v2-biff' },
-						{ slug: 'cheat-sheets/swedish-noun-forms' },
-						{ slug: 'cheat-sheets/swedish-verb-forms' },
-						{ slug: 'cheat-sheets/swedish-particle-verbs' },
-						{ slug: 'cheat-sheets/swedish-numbers' },
-						{ slug: 'cheat-sheets/swedish-relative-pronouns' },
-						{ slug: 'cheat-sheets/swedish-question-words' },
-						{ slug: 'cheat-sheets/swedish-adverbs' },
+						{ label: 'Overview', slug: 'learn/swedish/cheat-sheets' },
+						{ slug: 'learn/swedish/cheat-sheets/en-ett-adjectives' },
+						{ slug: 'learn/swedish/cheat-sheets/v2-biff' },
+						{ slug: 'learn/swedish/cheat-sheets/noun-forms' },
+						{ slug: 'learn/swedish/cheat-sheets/verb-forms' },
+						{ slug: 'learn/swedish/cheat-sheets/particle-verbs' },
+						{ slug: 'learn/swedish/cheat-sheets/numbers' },
+						{ slug: 'learn/swedish/cheat-sheets/relative-pronouns' },
+						{ slug: 'learn/swedish/cheat-sheets/question-words' },
+						{ slug: 'learn/swedish/cheat-sheets/adverbs' },
 					],
 				},
+
+				// German learning tree.
+				{ label: 'Overview', slug: 'learn/german' },
+
+				// English learning tree.
+				{ label: 'Overview', slug: 'learn/english' },
+				{ slug: 'learn/english/common-mistakes/from-german' },
+
+				// Shared by every learning language.
+				{ slug: 'false-friends' },
+				{ slug: 'direct-translation-errors' },
 				{ slug: 'practice' },
 			],
 		}),

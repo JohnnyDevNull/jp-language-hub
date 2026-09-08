@@ -44,6 +44,11 @@ function extractRelatedRoutes(frontmatter) {
 	return routes;
 }
 
+/** Hero action links live in frontmatter and are not covered by `related`. */
+function extractFrontmatterLinks(frontmatter) {
+	return [...frontmatter.matchAll(/^\s+link:\s*(\S+)\s*$/gm)].map((match) => match[1]);
+}
+
 function extractBodyLinks(body) {
 	const markdownLinks = [...body.matchAll(/\]\(([^)\s]+)\)/g)];
 	const hrefProps = [...body.matchAll(/href:\s*'([^']+)'/g)];
@@ -58,6 +63,7 @@ function resolveTarget(link, pageRoute) {
 	return pathname.endsWith('/') ? pathname : `${pathname}/`;
 }
 
+/** Excludes external schemes, protocol-relative URLs and pure fragments. */
 function isInternal(link) {
 	return !/^(?:[a-z][a-z0-9+.-]*:|\/\/|#)/i.test(link);
 }
@@ -74,6 +80,9 @@ for (const file of files) {
 
 	const candidates = [
 		...extractRelatedRoutes(frontmatter).map((link) => ({ link, field: 'related' })),
+		...extractFrontmatterLinks(frontmatter)
+			.filter(isInternal)
+			.map((link) => ({ link, field: 'hero link' })),
 		...extractBodyLinks(body)
 			.filter(isInternal)
 			.map((link) => ({ link, field: 'link' })),
