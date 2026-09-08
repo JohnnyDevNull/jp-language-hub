@@ -1,6 +1,8 @@
 ---
-title: Swedish adverbs
+title: Adverbs cheat sheet
 description: A compact guide to adverb formation, the irregular chains, and the direction and position pairs.
+sidebar:
+  label: Adverbs
 ---
 
 ## Formation
@@ -73,6 +75,6 @@ Then the two sets you cannot derive:
 
 ## Full references
 
-- [Swedish adverbs](../../grammar/adjectives-adverbs/adverbs/)
-- [Swedish adjective agreement](../../grammar/adjectives-adverbs/agreement/)
+- [Adverbs](../../grammar/adjectives-adverbs/adverbs/)
+- [Adjective agreement](../../grammar/adjectives-adverbs/agreement/)
 - [Placement of *inte*](../../grammar/sentence-structure/inte-placement/)

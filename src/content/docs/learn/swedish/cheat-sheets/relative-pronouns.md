@@ -1,6 +1,8 @@
 ---
-title: Swedish relative pronouns
+title: Relative pronouns cheat sheet
 description: A compact guide to som, vilket, vars, and where the preposition goes.
+sidebar:
+  label: Relative pronouns
 ---
 
 ## som covers almost everything
@@ -55,6 +57,6 @@ the verb: <span lang="sv">Mannen som **inte** bor här</span>.
 
 ## Full references
 
-- [Swedish relative pronouns](../../grammar/pronouns-function-words/relative-pronouns/)
-- [Swedish question words](../../grammar/pronouns-function-words/interrogatives/)
+- [Relative pronouns](../../grammar/pronouns-function-words/relative-pronouns/)
+- [Question words](../../grammar/pronouns-function-words/interrogatives/)
 - [BIFF and subordinate clauses](../../grammar/sentence-structure/biff/)

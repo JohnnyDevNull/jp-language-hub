@@ -1,6 +1,8 @@
 ---
-title: Swedish particle verbs
+title: Particle verbs cheat sheet
 description: A compact guide to particle placement and the most frequent Swedish particle verbs.
+sidebar:
+  label: Particle verbs
 ---
 
 ## Word order
@@ -67,6 +69,6 @@ first, particle second, object last.
 
 ## Full references
 
-- [Swedish particle verbs](../../grammar/verbs/particle-verbs/)
-- [Swedish prepositions](../../grammar/pronouns-function-words/prepositions/)
+- [Particle verbs](../../grammar/verbs/particle-verbs/)
+- [Prepositions](../../grammar/pronouns-function-words/prepositions/)
 - [Placement of *inte*](../../grammar/sentence-structure/inte-placement/)

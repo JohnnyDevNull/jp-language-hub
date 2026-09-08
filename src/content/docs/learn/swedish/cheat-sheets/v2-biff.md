@@ -1,6 +1,8 @@
 ---
-title: Swedish V2 and BIFF
+title: V2 and BIFF cheat sheet
 description: Compact Swedish main-clause and subordinate-clause word-order templates.
+sidebar:
+  label: V2 and BIFF
 ---
 
 ## Main clause: V2
@@ -51,5 +53,5 @@ of every Swedish clause type.
 
 ## Full references
 
-- [Swedish V2](../../grammar/sentence-structure/v2/)
-- [Swedish BIFF](../../grammar/sentence-structure/biff/)
+- [V2 rule](../../grammar/sentence-structure/v2/)
+- [BIFF](../../grammar/sentence-structure/biff/)

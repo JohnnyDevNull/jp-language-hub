@@ -1,6 +1,8 @@
 ---
-title: Swedish verb forms
+title: Verb forms cheat sheet
 description: A compact guide to the core forms of common Swedish verbs.
+sidebar:
+  label: Verb forms
 ---
 
 ## Form chain
@@ -64,9 +66,9 @@ Learn present — preterite — supine as one spoken chain:
 
 ## Full references
 
-- [Swedish verb forms](../../grammar/verbs/verb-forms/)
-- [Swedish present](../../grammar/verbs/present/)
-- [Swedish preterite](../../grammar/verbs/preterite/)
-- [Swedish perfect](../../grammar/verbs/perfect/)
-- [Swedish verb groups](../../grammar/verbs/verb-groups/)
-- [Swedish passive](../../grammar/verbs/passive/)
+- [Verb forms](../../grammar/verbs/verb-forms/)
+- [Present tense](../../grammar/verbs/present/)
+- [Preterite](../../grammar/verbs/preterite/)
+- [Perfect](../../grammar/verbs/perfect/)
+- [Verb groups](../../grammar/verbs/verb-groups/)
+- [Passive](../../grammar/verbs/passive/)

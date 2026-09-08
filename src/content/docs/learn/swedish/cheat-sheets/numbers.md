@@ -1,6 +1,8 @@
 ---
-title: Swedish numbers
+title: Numbers cheat sheet
 description: A compact guide to Swedish cardinals, ordinals, and large numbers.
+sidebar:
+  label: Numbers
 ---
 
 ## Cardinals
@@ -59,6 +61,6 @@ ten comes first, exactly as in English.
 
 ## Full references
 
-- [Swedish numbers](../../grammar/numerals/numbers/)
-- [Swedish en and ett](../../grammar/nouns-articles/en-ett/)
-- [Swedish telling time](../../vocabulary/telling-time/)
+- [Numbers](../../grammar/numerals/numbers/)
+- [en and ett](../../grammar/nouns-articles/en-ett/)
+- [Telling time](../../vocabulary/telling-time/)

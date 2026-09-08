@@ -1,5 +1,5 @@
 ---
-title: Swedish pronunciation basics
+title: Pronunciation basics
 description: A compact beginner reference for Swedish vowels and common spelling-to-sound patterns.
 metaLanguage: en
 grammarLanguage: sv

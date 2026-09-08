@@ -1,6 +1,8 @@
 ---
-title: Swedish noun forms
+title: Noun forms cheat sheet
 description: A compact guide to indefinite, definite, singular, and plural Swedish nouns.
+sidebar:
+  label: Noun forms
 ---
 
 Learn a Swedish noun as a four-form chain.
@@ -40,6 +42,6 @@ an isolated translation pair.
 
 ## Full references
 
-- [Swedish noun forms](../../grammar/nouns-articles/noun-forms/)
-- [Swedish en and ett](../../grammar/nouns-articles/en-ett/)
-- [Swedish adjective agreement](../../grammar/adjectives-adverbs/agreement/)
+- [Noun forms](../../grammar/nouns-articles/noun-forms/)
+- [en and ett](../../grammar/nouns-articles/en-ett/)
+- [Adjective agreement](../../grammar/adjectives-adverbs/agreement/)

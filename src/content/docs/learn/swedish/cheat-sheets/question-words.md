@@ -1,6 +1,8 @@
 ---
-title: Swedish question words
+title: Question words cheat sheet
 description: A compact guide to the v-words and the word order of direct and indirect questions.
+sidebar:
+  label: Question words
 ---
 
 ## The words
@@ -62,6 +64,6 @@ Direct questions need no <span lang="sv">som</span>:
 
 ## Full references
 
-- [Swedish question words](../../grammar/pronouns-function-words/interrogatives/)
-- [Swedish relative pronouns](../../grammar/pronouns-function-words/relative-pronouns/)
-- [Swedish V2](../../grammar/sentence-structure/v2/)
+- [Question words](../../grammar/pronouns-function-words/interrogatives/)
+- [Relative pronouns](../../grammar/pronouns-function-words/relative-pronouns/)
+- [V2 rule](../../grammar/sentence-structure/v2/)

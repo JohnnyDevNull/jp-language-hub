@@ -1,6 +1,8 @@
 ---
-title: Swedish en, ett, and adjective endings
+title: en, ett, and adjective endings cheat sheet
 description: A compact guide to Swedish noun gender and basic adjective agreement.
+sidebar:
+  label: en, ett, and adjective endings
 ---
 
 ## Gender shortcuts
@@ -63,6 +65,6 @@ Never inflected: <span lang="sv">bra, kul, äkta, rosa, lila, beige</span> —
 
 ## Full references
 
-- [Swedish en and ett](../../grammar/nouns-articles/en-ett/)
-- [Swedish adjective agreement](../../grammar/adjectives-adverbs/agreement/)
-- [Swedish noun forms](../../grammar/nouns-articles/noun-forms/)
+- [en and ett](../../grammar/nouns-articles/en-ett/)
+- [Adjective agreement](../../grammar/adjectives-adverbs/agreement/)
+- [Noun forms](../../grammar/nouns-articles/noun-forms/)
