@@ -4,8 +4,21 @@ JP Language Hub is a static personal reference for comparing German, English,
 and Swedish. The current learning focus is Swedish grammar, with direct
 comparisons to German and English where they clarify a rule.
 
-The site uses English as its default meta language. German and Swedish locale
-routes fall back to English until translated content is added.
+## Language layers
+
+The project keeps three language layers apart, and the navigation depends on
+the distinction:
+
+- **Meta language** — the language explanations are written in. English is the
+  default; German and Swedish locale routes fall back to English until
+  translated content is added.
+- **Learning language** — the language being learned. It is the route prefix
+  `/learn/<language>/`, and each learning language has its own sidebar tree,
+  chosen through a select above the navigation. Swedish is the current focus;
+  German and English hold an entry page only.
+- **Comparison languages** — German, English and Swedish shown side by side to
+  explain a rule. A dimension inside a page via `LanguageComparison`, never
+  separate pages.
 
 ## Stack
 
@@ -50,6 +63,16 @@ npm run build
 npm run preview
 ```
 
+`npm run quality` runs ESLint, Stylelint, Astro Check and the internal link
+validator. The validator resolves `related` routes, relative body links and
+frontmatter hero links against the real pages — run it after moving or
+renaming content, because `related` is otherwise only shape-checked and a
+stale route would build successfully:
+
+```bash
+npm run validate:links
+```
+
 ## Content structure
 
 English source content lives directly in `src/content/docs/`. German and
@@ -58,27 +81,41 @@ Swedish translations use matching paths below `src/content/docs/de/` and
 
 ```text
 src/content/docs/
-├── grammar/
-│   ├── sentence-structure/
-│   ├── nouns-articles/
-│   ├── adjectives-adverbs/
-│   ├── verbs/
-│   └── pronouns-function-words/
-├── vocabulary/
-├── language-specific-rules/
-├── common-mistakes/
-├── cheat-sheets/
+├── learn/
+│   ├── swedish/
+│   │   ├── grammar/
+│   │   │   ├── sentence-structure/
+│   │   │   ├── nouns-articles/
+│   │   │   ├── numerals/
+│   │   │   ├── adjectives-adverbs/
+│   │   │   ├── verbs/
+│   │   │   └── pronouns-function-words/
+│   │   ├── vocabulary/
+│   │   ├── common-mistakes/
+│   │   ├── cheat-sheets/
+│   │   └── pronunciation-basics.md
+│   ├── german/
+│   └── english/
+├── false-friends.mdx
+├── direct-translation-errors.mdx
 └── practice/
 ```
 
-Canonical explanations belong under `grammar/`. Language-specific rules and
-cheat sheets stay concise and link back to the canonical page.
+Canonical explanations belong under `learn/<language>/grammar/`. Cheat sheets
+stay concise and link back to the canonical page. Content that belongs to no
+single learning language stays outside `learn/` and appears in every tree.
+
+The sidebar is one tree in `astro.config.mjs`, scoped per request by
+`src/starlight/learn-language-sidebar.ts`. Do not add a second sidebar array
+per language.
 
 ## Adding a reference page
 
-1. Choose the narrowest matching grammar directory and a stable kebab-case
-   slug.
-2. Add a Markdown or MDX file with at least a title and description.
+1. Choose the narrowest matching directory under
+   `learn/<language>/grammar/` and a stable kebab-case slug.
+2. Add a Markdown or MDX file with at least a title and description. The tree
+   already names the language, so do not repeat it in the title, and use
+   sentence case.
 3. Explain one clearly defined concept using accurate examples.
 4. Add common mistakes, a memory aid, and related links when useful.
 5. Add the page to the Starlight sidebar in `astro.config.mjs`.
@@ -88,10 +125,15 @@ Example frontmatter:
 
 ```yaml
 ---
-title: Swedish V2 word order
+title: V2 rule
 description: How the finite verb takes the second position in Swedish main clauses.
+related:
+  - /learn/swedish/grammar/sentence-structure/biff/
 ---
 ```
+
+Import components through the `~/*` alias (`~/components/RuleBox.astro`), not
+through relative `../../` chains, so pages survive being moved.
 
 ## Adding vocabulary
 
@@ -116,7 +158,8 @@ a concrete interaction requires them.
 
 - Astro components: `PascalCase.astro`
 - Content slugs and CSS files: `kebab-case`
-- CSS classes: component-owned BEM-style names
+- CSS classes: component-owned flat names, prefixed with the component root
+  (`.related-topics-title`)
 - Code, documentation, and commit messages: English
 - Commits: Conventional Commits
 

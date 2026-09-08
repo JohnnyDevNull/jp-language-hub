@@ -12,7 +12,8 @@ Docs frontmatter may use the following optional, validated fields:
   field when assigning a level would be artificial.
 - `tags`: unique values from the controlled vocabulary below.
 - `related`: absolute site routes, for example
-  `/grammar/verbs/swedish/present/`.
+  `/learn/swedish/grammar/verbs/present/`. Only the shape is validated by the
+  schema; `npm run validate:links` checks that the target exists.
 
 ## Controlled Tag Vocabulary
 

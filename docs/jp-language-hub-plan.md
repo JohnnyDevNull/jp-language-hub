@@ -457,15 +457,34 @@ Do not use broken root-relative links.
 
 # 9. Information Architecture
 
-Top-level user-facing areas:
+The site distinguishes three language layers. Each has exactly one role, and
+conflating them is what makes the navigation confusing:
+
+1. **Meta language** — the language the explanations are written in. Handled by
+   Starlight's locale switcher. Orthogonal to content; never a sidebar axis.
+2. **Learning language** — the language being learned. This is the route
+   prefix `/learn/<language>/` and the only content axis besides the topic.
+3. **Comparison languages** — German, English and Swedish shown side by side
+   to explain a rule. An in-page dimension only, never separate pages.
+
+Each learning language therefore has its own navigation tree, selected through
+a control above the sidebar. Top-level areas inside a tree:
 
 ```text
 Home
 Grammar
 Vocabulary
-Language-specific Rules
 Common Mistakes
 Cheat Sheets
+Pronunciation
+```
+
+Content that belongs to no single learning language stays outside the prefix
+and appears in every tree:
+
+```text
+False Friends
+Direct Translation Errors
 Practice
 ```
 
@@ -746,24 +765,23 @@ Do not teach prepositions as isolated direct translations where usage depends on
 
 # 15. Language-specific Rules
 
-Create a dedicated:
+Do **not** create a separate "Language-specific Rules" section. It was tried
+and removed: with one learning language per tree, a section whose pages only
+summarize a canonical grammar page produced the same topic label three times
+in the navigation (grammar page, summary, cheat sheet) while adding nothing.
 
-```text
-Language-specific Rules
-```
+Express language-specific behavior in one of two places instead:
 
-section.
+- **In the canonical page**, via the `SpecialRule` callout, when a rule is a
+  peculiarity of the language rather than a general pattern.
+- **As a cheat sheet**, when the value is fast recall after the topic has been
+  learned.
 
-This section is supplementary.
+A topic that genuinely has no canonical grammar counterpart is simply its own
+page in the learning tree — pronunciation is the current example.
 
-Canonical full explanations remain in their appropriate grammar topic.
-
-Language-specific pages should:
-
-- summarize important special behavior
-- provide quick reference
-- link to canonical explanations
-- avoid duplicating long independent explanations
+The topic lists below stay as planning material for the German and English
+learning trees, which currently hold only an entry page.
 
 ## German
 
@@ -828,21 +846,26 @@ Create compact quick-reference pages.
 Initial targets:
 
 ```text
-Swedish en / ett
-Swedish noun forms
-Swedish adjective agreement
-Swedish adjective comparison
-Swedish V2
-Swedish BIFF
-Swedish V2 + BIFF
-Swedish pronouns
-Swedish verb groups
-Swedish verb forms
+en / ett
+noun forms
+adjective agreement
+adjective comparison
+V2
+BIFF
+V2 + BIFF
+pronouns
+verb groups
+verb forms
 DE/EN/SE personal pronouns
 DE/EN/SE possessive pronouns
 DE/EN/SE tense comparison
 common irregular verbs
 ```
+
+A cheat sheet shares its topic name with the canonical grammar page, so it
+needs a `title` that stays distinguishable in search ("Noun forms cheat
+sheet") plus a short `sidebar.label` ("Noun forms") so the sidebar under Cheat
+Sheets does not repeat the section name.
 
 Cheat sheets must be:
 
@@ -909,6 +932,22 @@ Not every section is mandatory on every page.
 
 Do not add empty or meaningless sections merely for consistency.
 
+## Page titles
+
+The learning tree already names the language, so a title inside it must not
+repeat it:
+
+- No language prefix in titles, sidebar entries, related-topic labels or link
+  texts. Write "Present tense", not "Swedish present tense".
+- Content pages use sentence case. Section index pages keep title case.
+- Swedish example words keep their own casing where they open a title or
+  label: `en / ett`, `sin, sitt, and sina`, `där- and här- adverbs`.
+- Link texts in prose stay lowercase where the sentence requires it; the same
+  link as a list item or related-topic label is capitalized.
+
+Pages outside the learning trees — home above all — do name the language,
+because there it carries information.
+
 ---
 
 # 19. Language Comparison Order
@@ -952,7 +991,6 @@ Grammar → Nouns & Articles → en / ett
 Other areas may contain:
 
 ```text
-Special Rules → Swedish → en / ett summary
 Cheat Sheets → en / ett quick reference
 Adjective Agreement → link to en / ett
 ```
@@ -1783,11 +1821,16 @@ jp-language-hub/
 │   ├── content/
 │   │   └── docs/
 │   │       ├── index.mdx
-│   │       ├── grammar/
-│   │       ├── vocabulary/
-│   │       ├── language-specific-rules/
-│   │       ├── common-mistakes/
-│   │       ├── cheat-sheets/
+│   │       ├── learn/
+│   │       │   ├── swedish/
+│   │       │   │   ├── grammar/
+│   │       │   │   ├── vocabulary/
+│   │       │   │   ├── common-mistakes/
+│   │       │   │   └── cheat-sheets/
+│   │       │   ├── german/
+│   │       │   └── english/
+│   │       ├── false-friends.mdx
+│   │       ├── direct-translation-errors.mdx
 │   │       ├── practice/
 │   │       ├── de/
 │   │       └── sv/
@@ -1818,7 +1861,16 @@ Do not create custom layouts or page routing unnecessarily.
 
 Configure the Starlight sidebar logically.
 
-Target structure:
+The sidebar is configured as a single tree in `astro.config.mjs` and scoped per
+request by a Starlight route middleware, which keeps the active learning
+language and drops entries under any other `/learn/<language>/` prefix. Groups
+left without entries are removed, so an inactive language never appears as an
+empty heading. Do not maintain one sidebar array per language.
+
+Pagination is computed before route middleware runs, so prev/next ends that
+leave the scoped tree have to be recomputed from it.
+
+Target structure for the active learning language:
 
 ```text
 Home
@@ -1848,17 +1900,36 @@ Vocabulary
 ├── Business Communication
 └── Advanced Business
 
-Language-specific Rules
-├── German
-├── English
-└── Swedish
-
 Common Mistakes
+├── From German
+└── From English
 
 Cheat Sheets
 
+Pronunciation
+```
+
+Followed by the entries shared across every learning language:
+
+```text
+False Friends
+Direct Translation Errors
 Practice
 ```
+
+The learning language is chosen through a select above the sidebar, built from
+Starlight's own `Select` component so it matches the meta-language switcher.
+It belongs above the navigation, not in the header: two language controls in
+the same place are easy to confuse.
+
+The choice is remembered in `localStorage` and applied on a fresh arrival at
+home, from the `Head` override — home uses the splash template and renders no
+sidebar. Gate that redirect on an external referrer so reaching home from
+inside the site is not bounced away.
+
+A static build cannot vary a sidebar per visitor, so pages outside
+`/learn/` render the default learning language's tree. Do not promise
+per-visitor navigation there.
 
 Do not create empty navigation clutter.
 
@@ -1888,11 +1959,14 @@ Primary cards/links:
 ```text
 Grammar
 Vocabulary
-Language-specific Rules
+Pronunciation
 Common Mistakes
 Cheat Sheets
 Practice
 ```
+
+Home sits outside the learning trees, so naming the language explicitly is
+information rather than repetition. Keep "Swedish" in its headings and links.
 
 Also provide a prominent:
 
@@ -1968,16 +2042,6 @@ At least:
 sin / sitt / sina
 ```
 
-## Language-specific Rules
-
-At least summaries for:
-
-```text
-Swedish en / ett
-Swedish V2 + BIFF
-Swedish sin / sitt / sina
-```
-
 ## Cheat Sheets
 
 At least:
@@ -1985,8 +2049,8 @@ At least:
 ```text
 en / ett + adjective endings
 V2 + BIFF
-Swedish noun forms
-Swedish verb forms
+Noun forms
+Verb forms
 ```
 
 ---

@@ -22,6 +22,24 @@ structured content metadata:
 
 If no compliant solution can be determined, stop and ask an engineer.
 
+## Content structure
+
+Learning content lives under `src/content/docs/learn/<language>/`; Swedish is
+the current focus. Each learning language has its own sidebar tree, scoped at
+request time by `src/starlight/learn-language-sidebar.ts` out of the single
+sidebar array in `astro.config.mjs`. Do not add a second array per language.
+
+Content that belongs to no single learning language (false friends, direct
+translation errors, practice) stays outside `learn/` and appears in every tree.
+
+The tree already names the language, so a page title must not repeat it: write
+`title: Present tense`, not `title: Swedish present tense`. Import components
+through the `~/*` alias rather than relative `../../` chains.
+
+After moving or renaming content, run `npm run quality`. It includes an
+internal link validator, because `related` routes are otherwise only
+shape-checked and a stale route would build successfully.
+
 ## Development
 
 When starting the dev server, use background mode:
