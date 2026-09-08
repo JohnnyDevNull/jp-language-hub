@@ -13,7 +13,8 @@
     "lint:css": "stylelint \"src/**/*.css\" --allow-empty-input --max-warnings 0",
     "check": "astro check",
     "quality": "npm run lint && npm run check && npm run validate:links",
-    "validate:links": "node scripts/validate-doc-links.mjs"
+    "validate:links": "node scripts/validate-doc-links.mjs",
+    "report:length": "node scripts/report-content-length.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.10",
