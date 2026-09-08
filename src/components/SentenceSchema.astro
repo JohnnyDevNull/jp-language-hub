@@ -1,0 +1,44 @@
+---
+interface SentenceSchemaRow {
+	/* Row header, for example the clause type being compared. */
+	label?: string;
+	cells: string[];
+	lang?: 'de' | 'en' | 'sv';
+}
+
+interface Props {
+	columns: string[];
+	rows: SentenceSchemaRow[];
+	caption: string;
+	rowHeader?: string;
+	lang?: 'de' | 'en' | 'sv';
+}
+
+const { columns, rows, caption, rowHeader = 'Clause', lang = 'sv' } = Astro.props;
+
+const hasRowHeaders = rows.some((row) => row.label !== undefined);
+---
+
+<div class="sentence-schema" role="region" aria-label={caption} tabindex="0">
+	<table class="sentence-schema-table">
+		<caption class="sentence-schema-caption">{caption}</caption>
+		<thead>
+			<tr>
+				{hasRowHeaders && <th scope="col">{rowHeader}</th>}
+				{columns.map((column) => (
+					<th scope="col">{column}</th>
+				))}
+			</tr>
+		</thead>
+		<tbody>
+			{rows.map((row) => (
+				<tr>
+					{hasRowHeaders && <th scope="row">{row.label}</th>}
+					{row.cells.map((cell) => (
+						<td lang={row.lang ?? lang}>{cell}</td>
+					))}
+				</tr>
+			))}
+		</tbody>
+	</table>
+</div>

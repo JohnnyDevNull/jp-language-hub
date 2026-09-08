@@ -1,0 +1,40 @@
+.sentence-schema {
+	margin: var(--jplh-space-lg) 0;
+	overflow-x: auto;
+}
+
+.sentence-schema-table {
+	width: 100%;
+	border-collapse: collapse;
+	border: var(--jplh-border-width) solid var(--sl-color-gray-5);
+}
+
+.sentence-schema-caption {
+	padding: var(--jplh-space-sm) var(--jplh-space-md);
+	background: var(--sl-color-gray-6);
+	color: var(--sl-color-text);
+	font-weight: 700;
+	text-align: start;
+}
+
+.sentence-schema-table th,
+.sentence-schema-table td {
+	border: var(--jplh-border-width) solid var(--sl-color-gray-5);
+	padding: var(--jplh-space-xs) var(--jplh-space-sm);
+	text-align: start;
+	white-space: nowrap;
+}
+
+.sentence-schema-table thead th {
+	background: var(--sl-color-gray-6);
+	color: var(--jplh-color-takeaway-high);
+	font-size: var(--sl-text-xs);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.sentence-schema-table tbody th {
+	background: var(--sl-color-gray-6);
+	font-weight: 600;
+}

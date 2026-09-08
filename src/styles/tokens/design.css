@@ -22,6 +22,9 @@
 	--jplh-color-mistake-low: var(--sl-color-red-low);
 	--jplh-color-mistake: var(--sl-color-red);
 	--jplh-color-mistake-high: var(--sl-color-red-high);
+	--jplh-color-takeaway-low: var(--sl-color-accent-low);
+	--jplh-color-takeaway: var(--sl-color-accent);
+	--jplh-color-takeaway-high: var(--sl-color-accent-high);
 	--jplh-color-special-rule-low: var(--sl-color-purple-low);
 	--jplh-color-special-rule: var(--sl-color-purple);
 	--jplh-color-special-rule-high: var(--sl-color-purple-high);

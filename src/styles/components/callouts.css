@@ -1,4 +1,4 @@
-:is(.rule-box, .example-box, .mistake-box, .memory-tip, .special-rule) {
+:is(.key-takeaway, .rule-box, .example-box, .mistake-box, .memory-tip, .special-rule) {
 	border: var(--jplh-border-width) solid var(--jplh-callout-border);
 	border-inline-start-width: var(--jplh-accent-border-width);
 	border-radius: var(--jplh-radius-md);
@@ -6,18 +6,29 @@
 	padding: var(--jplh-space-md);
 }
 
-:is(.rule-box-title, .example-box-title, .mistake-box-title, .memory-tip-title, .special-rule-title) {
+:is(.key-takeaway-title, .rule-box-title, .example-box-title, .mistake-box-title, .memory-tip-title, .special-rule-title) {
 	margin: 0 0 var(--jplh-space-xs);
 	color: var(--jplh-callout-title);
 	font-weight: 700;
 }
 
-:is(.rule-box-content, .example-box-content, .mistake-box-content, .memory-tip-content, .special-rule-content) > :first-child {
+:is(.key-takeaway-content, .rule-box-content, .example-box-content, .mistake-box-content, .memory-tip-content, .special-rule-content) > :first-child {
 	margin-block-start: 0;
 }
 
-:is(.rule-box-content, .example-box-content, .mistake-box-content, .memory-tip-content, .special-rule-content) > :last-child {
+:is(.key-takeaway-content, .rule-box-content, .example-box-content, .mistake-box-content, .memory-tip-content, .special-rule-content) > :last-child {
 	margin-block-end: 0;
+}
+
+.key-takeaway {
+	--jplh-callout-background: var(--jplh-color-takeaway-low);
+	--jplh-callout-border: var(--jplh-color-takeaway);
+	--jplh-callout-title: var(--jplh-color-takeaway-high);
+}
+
+.key-takeaway-content ul {
+	margin: 0;
+	padding-inline-start: var(--jplh-space-md);
 }
 
 .rule-box {

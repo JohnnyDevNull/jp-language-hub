@@ -7,4 +7,6 @@
 @import url('./components/reference-data.css') layer(components);
 @import url('./components/tag-list.css') layer(components);
 @import url('./components/related-topics.css') layer(components);
+@import url('./components/quick-check.css') layer(components);
+@import url('./components/sentence-schema.css') layer(components);
 @import url('./integrations/starlight.css') layer(integrations);

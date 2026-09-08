@@ -1,0 +1,30 @@
+---
+interface QuickCheckItem {
+	prompt: string;
+	answer: string;
+}
+
+interface Props {
+	items: QuickCheckItem[];
+	title?: string;
+	/* Language of the answers, which are normally the target-language forms. */
+	answerLang?: 'de' | 'en' | 'sv';
+}
+
+const { items, title = 'Quick check', answerLang = 'sv' } = Astro.props;
+---
+
+<section class="quick-check" aria-label={title}>
+	<p class="quick-check-title" aria-hidden="true">{title}</p>
+	<ol class="quick-check-items">
+		{items.map((item) => (
+			<li class="quick-check-item">
+				<p class="quick-check-prompt">{item.prompt}</p>
+				<details class="quick-check-answer">
+					<summary class="quick-check-answer-toggle">Show answer</summary>
+					<p class="quick-check-answer-text" lang={answerLang}>{item.answer}</p>
+				</details>
+			</li>
+		))}
+	</ol>
+</section>
