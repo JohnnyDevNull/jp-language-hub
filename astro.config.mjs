@@ -108,16 +108,7 @@ export default defineConfig({
 						{ slug: 'learn/swedish/vocabulary/telling-time' },
 					],
 				},
-				{
-					label: 'Language-specific Rules',
-					items: [
-						{ label: 'Overview', slug: 'learn/swedish/language-specific-rules' },
-						{ slug: 'learn/swedish/language-specific-rules/en-ett' },
-						{ slug: 'learn/swedish/language-specific-rules/v2-biff' },
-						{ slug: 'learn/swedish/language-specific-rules/sin-sitt-sina' },
-						{ slug: 'learn/swedish/language-specific-rules/pronunciation-basics' },
-					],
-				},
+				{ slug: 'learn/swedish/pronunciation-basics' },
 				{
 					label: 'Common Mistakes',
 					items: [
