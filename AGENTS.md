@@ -56,6 +56,47 @@ Before adding content, routes, navigation entries or metadata, decide which
 layer the change belongs to and apply that layer's rule. If a change appears
 to require two layers at once, stop and ask an engineer.
 
+## Links and the base path (mandatory)
+
+The site is served from a base path — `base: '/jp-language-hub'` in
+`astro.config.mjs`, because GitHub Pages publishes it under the repository
+name.
+
+Astro does not rewrite links written in a page body. An absolute site path
+such as `/learn/swedish/grammar/verbs/present/` is emitted verbatim, so in
+production it 404s: the real URL is `/jp-language-hub/learn/...`. The same
+applies to an `href` prop handed to a component, because `RelatedTopics` and
+`TagList` pass it straight to the anchor.
+
+Both `astro dev` and `astro preview` reject a base-less path with a 404 for a
+browser navigation, so such a link is broken locally as well — it just stays
+invisible until someone clicks it. Requests that do not ask for HTML (a curl
+without an `Accept` header, for instance) are answered on either path, so a
+curl check is not evidence that a link works.
+
+The rules:
+
+1. **Write page-body links relative to the page.** Markdown links and
+   component `href` props must never start with `/`. From
+   `/learn/swedish/learning-path/`, write `../grammar/verbs/present/`. A
+   relative link also keeps the reader inside the current meta locale, so a
+   `/de/` page links to `/de/` pages.
+2. **`related` frontmatter is the one exception** and must stay absolute. The
+   content schema requires that shape, and its consumers resolve it
+   themselves.
+3. **Build computed paths through `import.meta.env.BASE_URL`**, never by
+   string-concatenating a leading slash. Reuse the helpers in `src/lib/`
+   (`learn-language-paths.ts`, `content-index-paths.ts`) before adding
+   another one.
+
+`npm run validate:links` enforces rule 1 and rejects absolute page-body
+links. Before it did, 91 such links shipped broken in a single change. They
+pointed at pages that genuinely exist, so the build succeeded and the
+validator resolved every one of them as a valid route; nobody happened to
+click them. That check is now the only automated thing standing between an
+absolute link and a broken deploy. When in doubt, grep the built output: no
+`href="/…"` in `dist/` may lack the base.
+
 ## Content structure
 
 Learning content lives under `src/content/docs/learn/<language>/`; Swedish is
