@@ -16,6 +16,7 @@ compact, link back to complete explanations, and remain usable on small screens.
 - [Swedish numbers](./swedish-numbers/)
 - [Swedish relative pronouns](./swedish-relative-pronouns/)
 - [Swedish question words](./swedish-question-words/)
+- [Swedish adverbs](./swedish-adverbs/)
 
 Detailed grammar pages remain the canonical source when a short overview is not
 enough.

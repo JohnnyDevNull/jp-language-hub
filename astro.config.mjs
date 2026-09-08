@@ -167,6 +167,7 @@ export default defineConfig({
 						{ slug: 'cheat-sheets/swedish-numbers' },
 						{ slug: 'cheat-sheets/swedish-relative-pronouns' },
 						{ slug: 'cheat-sheets/swedish-question-words' },
+						{ slug: 'cheat-sheets/swedish-adverbs' },
 					],
 				},
 				{ slug: 'practice' },
