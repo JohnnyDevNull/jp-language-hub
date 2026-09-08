@@ -34,6 +34,7 @@ export default defineConfig({
 				{ label: 'Home', link: '/' },
 
 				// Swedish learning tree.
+				{ slug: 'learn/swedish/learning-path' },
 				{
 					label: 'Grammar',
 					items: [
@@ -106,6 +107,17 @@ export default defineConfig({
 					items: [
 						{ label: 'Overview', slug: 'learn/swedish/vocabulary' },
 						{ slug: 'learn/swedish/vocabulary/telling-time' },
+					],
+				},
+				{
+					label: 'Sentence Patterns',
+					items: [
+						{ label: 'Overview', slug: 'learn/swedish/sentence-patterns' },
+						{ slug: 'learn/swedish/sentence-patterns/opinions-and-uncertainty' },
+						{ slug: 'learn/swedish/sentence-patterns/agreeing-and-disagreeing' },
+						{ slug: 'learn/swedish/sentence-patterns/reasons-and-examples' },
+						{ slug: 'learn/swedish/sentence-patterns/conditions-and-consequences' },
+						{ slug: 'learn/swedish/sentence-patterns/keeping-a-conversation-going' },
 					],
 				},
 				{ slug: 'learn/swedish/pronunciation-basics' },
