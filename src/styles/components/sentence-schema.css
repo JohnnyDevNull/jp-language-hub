@@ -3,8 +3,14 @@
 	overflow-x: auto;
 }
 
+/* Starlight sets display:block on every table in markdown content, which stops
+   it being a table box: width:100% then stretches the bordered block across the
+   whole column while the rows keep their own content width, drawing a border
+   around empty space. Restore a real table box and let it size to its content —
+   a paradigm is only as wide as the forms it holds. */
 .sentence-schema-table {
-	width: 100%;
+	display: table;
+	width: fit-content;
 	border-collapse: collapse;
 	border: var(--jplh-border-width) solid var(--sl-color-gray-5);
 }
