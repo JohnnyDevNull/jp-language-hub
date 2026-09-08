@@ -3,6 +3,21 @@ title: en, ett, and adjective endings cheat sheet
 description: A compact guide to Swedish noun gender and basic adjective agreement.
 sidebar:
   label: en, ett, and adjective endings
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - cheat-sheet
+  - nouns
+  - adjectives
+related:
+  - /learn/swedish/grammar/nouns-articles/en-ett/
+  - /learn/swedish/grammar/adjectives-adverbs/agreement/
 ---
 
 ## Gender shortcuts

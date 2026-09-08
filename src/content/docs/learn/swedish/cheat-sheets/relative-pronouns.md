@@ -3,6 +3,20 @@ title: Relative pronouns cheat sheet
 description: A compact guide to som, vilket, vars, and where the preposition goes.
 sidebar:
   label: Relative pronouns
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+  - B1
+tags:
+  - cheat-sheet
+  - pronouns
+related:
+  - /learn/swedish/grammar/pronouns-function-words/relative-pronouns/
 ---
 
 ## som covers almost everything

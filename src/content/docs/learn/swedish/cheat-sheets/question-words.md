@@ -3,6 +3,20 @@ title: Question words cheat sheet
 description: A compact guide to the v-words and the word order of direct and indirect questions.
 sidebar:
   label: Question words
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - cheat-sheet
+  - pronouns
+related:
+  - /learn/swedish/grammar/pronouns-function-words/interrogatives/
 ---
 
 ## The words

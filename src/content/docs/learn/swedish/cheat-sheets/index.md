@@ -1,6 +1,10 @@
 ---
 title: Cheat Sheets
 description: Compact, mobile-friendly references for recurring language patterns.
+metaLanguage: en
+grammarLanguage: sv
+tags:
+  - cheat-sheet
 ---
 
 Cheat sheets provide a fast reminder after a topic has been learned. They stay

@@ -3,6 +3,18 @@ title: Numbers cheat sheet
 description: A compact guide to Swedish cardinals, ordinals, and large numbers.
 sidebar:
   label: Numbers
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - en
+  - sv
+levels:
+  - A1
+tags:
+  - cheat-sheet
+  - grammar
+related:
+  - /learn/swedish/grammar/numerals/numbers/
 ---
 
 ## Cardinals

@@ -3,6 +3,20 @@ title: Verb forms cheat sheet
 description: A compact guide to the core forms of common Swedish verbs.
 sidebar:
   label: Verb forms
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - cheat-sheet
+  - verbs
+related:
+  - /learn/swedish/grammar/verbs/verb-forms/
+  - /learn/swedish/grammar/verbs/verb-groups/
 ---
 
 ## Form chain

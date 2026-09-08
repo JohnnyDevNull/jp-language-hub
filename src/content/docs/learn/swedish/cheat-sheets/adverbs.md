@@ -3,6 +3,21 @@ title: Adverbs cheat sheet
 description: A compact guide to adverb formation, the irregular chains, and the direction and position pairs.
 sidebar:
   label: Adverbs
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+  - B1
+tags:
+  - cheat-sheet
+  - adjectives
+related:
+  - /learn/swedish/grammar/adjectives-adverbs/adverbs/
+  - /learn/swedish/grammar/pronouns-function-words/dar-har-adverbs/
 ---
 
 ## Formation

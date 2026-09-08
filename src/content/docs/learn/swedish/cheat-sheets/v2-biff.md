@@ -3,6 +3,20 @@ title: V2 and BIFF cheat sheet
 description: Compact Swedish main-clause and subordinate-clause word-order templates.
 sidebar:
   label: V2 and BIFF
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - cheat-sheet
+  - sentence-structure
+related:
+  - /learn/swedish/grammar/sentence-structure/v2/
+  - /learn/swedish/grammar/sentence-structure/biff/
 ---
 
 ## Main clause: V2

@@ -3,6 +3,20 @@ title: Noun forms cheat sheet
 description: A compact guide to indefinite, definite, singular, and plural Swedish nouns.
 sidebar:
   label: Noun forms
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - cheat-sheet
+  - nouns
+related:
+  - /learn/swedish/grammar/nouns-articles/noun-forms/
+  - /learn/swedish/grammar/nouns-articles/plural-overview/
 ---
 
 Learn a Swedish noun as a four-form chain.

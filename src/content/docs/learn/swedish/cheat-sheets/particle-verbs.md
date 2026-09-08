@@ -3,6 +3,19 @@ title: Particle verbs cheat sheet
 description: A compact guide to particle placement and the most frequent Swedish particle verbs.
 sidebar:
   label: Particle verbs
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - B1
+tags:
+  - cheat-sheet
+  - verbs
+related:
+  - /learn/swedish/grammar/verbs/particle-verbs/
 ---
 
 ## Word order
