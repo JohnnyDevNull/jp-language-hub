@@ -115,6 +115,8 @@ export default defineConfig({
 											slug: 'grammar/pronouns-function-words/swedish/demonstratives-har-dar',
 										},
 										{ slug: 'grammar/pronouns-function-words/swedish/prepositions' },
+										{ slug: 'grammar/pronouns-function-words/swedish/relative-pronouns' },
+										{ slug: 'grammar/pronouns-function-words/swedish/interrogatives' },
 									],
 								},
 							],

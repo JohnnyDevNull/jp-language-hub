@@ -52,3 +52,5 @@ with German and English visible where they help explain a rule.
 - [Swedish *någon*, *något*, *ingen*, and *inget*](./pronouns-function-words/swedish/nagon-nagot-ingen-inget/)
 - [Swedish demonstratives with *här* and *där*](./pronouns-function-words/swedish/demonstratives-har-dar/)
 - [Swedish prepositions](./pronouns-function-words/swedish/prepositions/)
+- [Swedish relative pronouns](./pronouns-function-words/swedish/relative-pronouns/)
+- [Swedish question words](./pronouns-function-words/swedish/interrogatives/)
