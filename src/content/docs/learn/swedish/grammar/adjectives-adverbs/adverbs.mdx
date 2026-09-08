@@ -13,7 +13,6 @@ levels:
 tags:
   - grammar
   - adjectives
-  - swedish-specific
   - important
 related:
   - /learn/swedish/grammar/adjectives-adverbs/agreement/
@@ -31,6 +30,7 @@ import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => {
 	throw new Error('Missing adjective entry: sv-snabb');
@@ -45,6 +45,8 @@ export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => 
 - Sentence adverbs take the <Sv>inte</Sv> slot: after the finite verb in a main
   clause, before it in a subordinate clause.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Most Swedish adverbs are simply the ett-form of an adjective. That makes the
 formation easy — the harder parts are a handful of irregular adverbs, the

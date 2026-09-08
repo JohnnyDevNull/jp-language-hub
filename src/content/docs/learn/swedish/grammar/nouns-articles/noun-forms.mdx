@@ -13,7 +13,6 @@ levels:
 tags:
   - grammar
   - nouns
-  - swedish-specific
   - important
 related:
   - /learn/swedish/grammar/pronouns-function-words/demonstratives-har-dar/
@@ -29,6 +28,7 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Every noun has four central forms: indefinite and definite, singular and
@@ -37,6 +37,8 @@ import Sv from '~/components/Sv.astro';
 - The definite plural is built on the indefinite plural, so that form has to be
   known first.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 A Swedish noun is commonly learned through four forms: indefinite singular,
 definite singular, indefinite plural, and definite plural. Seeing these forms

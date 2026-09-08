@@ -13,7 +13,6 @@ levels:
 tags:
   - grammar
   - sentence-structure
-  - swedish-specific
 related:
   - /learn/swedish/grammar/sentence-structure/biff/
   - /learn/swedish/grammar/sentence-structure/v2/
@@ -28,6 +27,7 @@ import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import SentenceSchema from '~/components/SentenceSchema.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - <Sv>inte</Sv> follows the finite verb in a main clause and precedes it in a
@@ -36,6 +36,8 @@ import Sv from '~/components/Sv.astro';
 - With two verbs, <Sv>inte</Sv> sits between the finite verb and the non-finite
   verb.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 The position of Swedish <Sv>inte</Sv> depends on the type of clause. The central
 contrast is simple: it normally follows the finite verb in a main clause but

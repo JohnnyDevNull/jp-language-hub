@@ -23,6 +23,7 @@ related:
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Fluent speech runs on reusable frames, not on isolated words: learn
@@ -32,6 +33,8 @@ import Sv from '~/components/Sv.astro';
 - Five pages cover the recurring communicative functions; pick the function,
   not the word.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Grammar pages explain why a Swedish sentence is shaped the way it is. These
 pages give you the openings that carry a real conversation while you are still

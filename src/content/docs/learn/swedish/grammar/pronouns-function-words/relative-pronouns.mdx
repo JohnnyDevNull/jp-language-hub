@@ -13,7 +13,6 @@ levels:
 tags:
   - grammar
   - pronouns
-  - swedish-specific
   - important
 related:
   - /learn/swedish/grammar/sentence-structure/biff/
@@ -30,6 +29,7 @@ import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - <Sv>Som</Sv> is invariable and covers people and things, as subject and as
@@ -39,6 +39,8 @@ import Sv from '~/components/Sv.astro';
 - <Sv>Vilket</Sv> refers back to a whole clause, and <Sv>vars</Sv> is the
   formal *whose*.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Swedish relative clauses are easier than German ones: the relative pronoun does
 not change with gender, number, or case. In almost every everyday sentence the

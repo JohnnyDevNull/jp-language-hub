@@ -13,7 +13,6 @@ levels:
 tags:
   - grammar
   - verbs
-  - swedish-specific
   - important
 related:
   - /learn/swedish/grammar/verbs/verb-forms/
@@ -30,6 +29,7 @@ import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - A particle is stressed and changes the meaning of the verb; an unstressed
@@ -39,6 +39,8 @@ import Sv from '~/components/Sv.astro';
 - <Sv>Inte</Sv> comes between the finite verb and the particle:
   <Sv>Jag tycker inte om henne.</Sv>
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 A particle verb is a verb plus a short stressed word such as
 <Sv>på</Sv>, <Sv>av</Sv>,

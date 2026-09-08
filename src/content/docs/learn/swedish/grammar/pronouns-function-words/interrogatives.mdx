@@ -14,7 +14,6 @@ levels:
 tags:
   - grammar
   - pronouns
-  - swedish-specific
   - important
 related:
   - /learn/swedish/grammar/sentence-structure/v2/
@@ -31,6 +30,7 @@ import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - In a direct question the question word comes first and the finite verb second:
@@ -40,6 +40,8 @@ import Sv from '~/components/Sv.astro';
 - <Sv>Vem</Sv> and <Sv>vad</Sv> add <Sv>som</Sv> when they are the subject of
   their own clause.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Swedish question words nearly all begin with <Sv>v-</Sv>, which
 makes them easy to recognize. The harder part is the word order, which differs

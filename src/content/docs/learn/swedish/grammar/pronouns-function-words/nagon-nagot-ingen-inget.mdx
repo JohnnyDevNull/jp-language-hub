@@ -13,7 +13,6 @@ levels:
 tags:
   - grammar
   - pronouns
-  - swedish-specific
 related:
   - /learn/swedish/grammar/nouns-articles/en-ett/
   - /learn/swedish/grammar/nouns-articles/plural-overview/
@@ -27,6 +26,7 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Before a noun, the form follows the noun: <Sv>någon</Sv> for an <Sv>en</Sv>
@@ -35,6 +35,8 @@ import Sv from '~/components/Sv.astro';
 - <Sv>ingen</Sv>, <Sv>inget</Sv>, and <Sv>inga</Sv> are the negative forms of
   the same three-way choice.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Swedish uses <Sv>någon</Sv>, <Sv>något</Sv>, and
 <Sv>några</Sv> for indefinite meaning: “some”, “any”,

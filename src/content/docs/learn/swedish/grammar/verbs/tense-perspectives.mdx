@@ -12,7 +12,6 @@ levels:
 tags:
   - grammar
   - verbs
-  - swedish-specific
   - important
 related:
   - /learn/swedish/grammar/verbs/present/
@@ -28,6 +27,7 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Choose a tense by asking where the action sits relative to **now** or to a
@@ -36,6 +36,8 @@ import Sv from '~/components/Sv.astro';
 - The past perspective is pluperfect — preterite — <Sv>skulle</Sv> +
   infinitive.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Swedish tense choices become easier when they are viewed from two perspectives:
 what is anchored around **now** and what is anchored around a point in the

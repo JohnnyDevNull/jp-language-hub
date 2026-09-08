@@ -1080,10 +1080,10 @@ important
 common-mistake
 irregular
 cheat-sheet
-swedish-specific
-english-specific
-german-specific
 ```
+
+A learning language is not a property. It is the route prefix; see
+`docs/rules/content-metadata.md`, which holds the authoritative vocabulary.
 
 Do not create an uncontrolled tag explosion.
 
@@ -2075,7 +2075,6 @@ Tags:
 grammar
 noun
 important
-swedish-specific
 ```
 
 Explain that Swedish nouns primarily use:

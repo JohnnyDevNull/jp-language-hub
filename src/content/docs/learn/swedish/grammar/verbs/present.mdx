@@ -12,7 +12,6 @@ levels:
 tags:
   - grammar
   - verbs
-  - swedish-specific
 related:
   - /learn/swedish/grammar/verbs/tense-perspectives/
   - /learn/swedish/grammar/verbs/verb-forms/
@@ -28,6 +27,7 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 import VerbTable from '~/components/VerbTable.astro';
 
 export const verbs = await getCollection('verbs');
@@ -50,6 +50,8 @@ export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-sk
 - Swedish has no progressive form; the ordinary present also covers
   <span lang="en">I am working</span> and, in a clear context, a planned future.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 The Swedish present tense describes what happens now, what happens regularly,
 and—in a clear context—what is planned or expected to happen later.

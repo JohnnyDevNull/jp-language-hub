@@ -6,7 +6,7 @@
     "translations": {
       "en": "big"
     },
-    "tags": ["adjectives", "swedish-specific"],
+    "tags": ["adjectives"],
     "morphology": {
       "en": "stor",
       "ett": "stort",
@@ -22,7 +22,7 @@
     "language": "sv",
     "lemma": "gul",
     "partOfSpeech": "adjective",
-    "tags": ["adjectives", "swedish-specific"],
+    "tags": ["adjectives"],
     "morphology": {
       "en": "gul",
       "ett": "gult",
@@ -34,7 +34,7 @@
     "language": "sv",
     "lemma": "glad",
     "partOfSpeech": "adjective",
-    "tags": ["adjectives", "swedish-specific"],
+    "tags": ["adjectives"],
     "morphology": {
       "en": "glad",
       "ett": "glatt",
@@ -49,7 +49,7 @@
     "translations": {
       "en": "fast"
     },
-    "tags": ["adjectives", "swedish-specific"],
+    "tags": ["adjectives"],
     "morphology": {
       "en": "snabb",
       "ett": "snabbt",

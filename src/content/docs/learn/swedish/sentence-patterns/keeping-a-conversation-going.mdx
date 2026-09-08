@@ -25,6 +25,7 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Swedish keeps a conversation alive with very short questions:
@@ -35,6 +36,8 @@ import Sv from '~/components/Sv.astro';
 - An interruption is prefaced, not just started:
   <Sv>Förlåt att jag avbryter, men …</Sv>
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 These are the phrases that make a conversation feel two-sided. None of them
 carries content, which is exactly why they can be learned as fixed units.

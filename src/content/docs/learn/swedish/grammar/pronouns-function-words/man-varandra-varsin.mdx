@@ -13,7 +13,6 @@ levels:
 tags:
   - grammar
   - pronouns
-  - swedish-specific
 related:
   - /learn/swedish/grammar/pronouns-function-words/nagon-nagot-ingen-inget/
   - /learn/swedish/grammar/pronouns-function-words/sin-sitt-sina/
@@ -29,6 +28,7 @@ import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - <Sv>Man</Sv> is the general subject, with the object form <Sv>en</Sv> and the
@@ -37,6 +37,8 @@ import Sv from '~/components/Sv.astro';
 - <Sv>Var sin</Sv> and <Sv>var sitt</Sv> mean one each, and follow the gender of
   the thing possessed.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 This page collects the pronouns Swedish uses to talk about people in general
 and about people in relation to each other.

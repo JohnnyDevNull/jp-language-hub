@@ -12,7 +12,6 @@ levels:
 tags:
   - grammar
   - verbs
-  - swedish-specific
 related:
   - /learn/swedish/grammar/verbs/tense-perspectives/
   - /learn/swedish/grammar/verbs/verb-forms/
@@ -28,6 +27,7 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 import VerbTable from '~/components/VerbTable.astro';
 
 export const verbs = await getCollection('verbs');
@@ -50,6 +50,8 @@ export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-sk
 - Use it whenever the event sits in a finished past time frame; use the
   perfect when the present result matters.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 The Swedish preterite places an event or state in a past time frame. It is the
 normal tense for completed past events, narratives, and descriptions of what

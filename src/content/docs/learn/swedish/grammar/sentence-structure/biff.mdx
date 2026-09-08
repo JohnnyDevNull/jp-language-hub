@@ -12,7 +12,6 @@ levels:
 tags:
   - grammar
   - sentence-structure
-  - swedish-specific
   - important
 related:
   - /learn/swedish/grammar/sentence-structure/inte-placement/
@@ -29,6 +28,7 @@ import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import SentenceSchema from '~/components/SentenceSchema.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - In a subordinate clause, <Sv>inte</Sv> comes **before** the finite verb; in a
@@ -37,6 +37,8 @@ import Sv from '~/components/Sv.astro';
   the sentence adverb.
 - The same position is used by other sentence adverbs, not only <Sv>inte</Sv>.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 **BIFF** is a Swedish memory rule for the placement of sentence adverbs in
 subordinate clauses:

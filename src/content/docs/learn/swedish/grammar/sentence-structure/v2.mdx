@@ -13,7 +13,6 @@ levels:
 tags:
   - grammar
   - sentence-structure
-  - swedish-specific
   - important
 related:
   - /learn/swedish/grammar/sentence-structure/basic-word-order/
@@ -32,6 +31,7 @@ import RelatedTopics from '~/components/RelatedTopics.astro';
 import SentenceSchema from '~/components/SentenceSchema.astro';
 import SpecialRule from '~/components/SpecialRule.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - The finite verb is the second **constituent**, not the second word.
@@ -39,6 +39,8 @@ import Sv from '~/components/Sv.astro';
   moves behind the verb.
 - Only the finite verb counts. Non-finite verbs stay later in the clause.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 **V2** means that the finite verb normally occupies the second position in a
 Swedish declarative main clause. It is one of the most important rules for

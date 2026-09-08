@@ -12,7 +12,6 @@ levels:
 tags:
   - grammar
   - sentence-structure
-  - swedish-specific
 related:
   - /learn/swedish/grammar/sentence-structure/v2/
   - /learn/swedish/grammar/sentence-structure/biff/
@@ -28,6 +27,7 @@ import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - <Sv>där</Sv>, <Sv>här</Sv>, and <Sv>var</Sv> plus a preposition form one
@@ -38,6 +38,8 @@ import Sv from '~/components/Sv.astro';
 - Position uses <Sv>här</Sv> and <Sv>där</Sv>, direction uses <Sv>hit</Sv> and
   <Sv>dit</Sv>.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Swedish combines <Sv>där</Sv>, <Sv>här</Sv>, and
 <Sv>var</Sv> with a preposition to form single words. German

@@ -13,7 +13,6 @@ levels:
 tags:
   - grammar
   - nouns
-  - swedish-specific
   - important
 related:
   - /learn/swedish/grammar/nouns-articles/noun-forms/
@@ -41,17 +40,11 @@ import TagList from '~/components/TagList.astro';
 - A compound takes the gender of its **last** element, without exception.
 </KeyTakeaway>
 
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
 Most Swedish nouns belong to one of two grammatical genders. An **en-word** uses
 <Sv>en</Sv>; an **ett-word** uses <Sv>ett</Sv>.
 The noun's gender affects articles, definite forms, and adjective endings.
-
-<TagList
-	tags={[
-		'Swedish',
-		...(frontmatter.levels ?? []),
-		...(frontmatter.tags ?? []).filter((tag) => tag !== 'swedish-specific'),
-	]}
-/>
 
 ## Core rule
 

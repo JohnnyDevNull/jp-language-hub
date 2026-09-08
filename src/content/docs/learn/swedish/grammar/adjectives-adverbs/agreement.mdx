@@ -13,7 +13,6 @@ levels:
 tags:
   - grammar
   - adjectives
-  - swedish-specific
   - important
 related:
   - /learn/swedish/grammar/verbs/passive/
@@ -32,6 +31,7 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 export const stor = (await getEntry('adjectives', 'sv-stor'))?.data ?? (() => {
 	throw new Error('Missing adjective entry: sv-stor');
@@ -50,6 +50,8 @@ export const glad = (await getEntry('adjectives', 'sv-glad'))?.data ?? (() => {
 - A definite phrase marks definiteness twice: article plus definite adjective
   plus definite noun — <Sv>den stora bilen</Sv>.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Swedish adjectives agree with the gender and number of the noun they describe.
 Attributive adjectives inside noun phrases also reflect whether the phrase is

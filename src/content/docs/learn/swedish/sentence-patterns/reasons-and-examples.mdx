@@ -25,6 +25,7 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - <Sv>eftersom</Sv> and <Sv>därför att</Sv> both mean "because", but only
@@ -34,6 +35,8 @@ import Sv from '~/components/Sv.astro';
 - Reason clauses are subordinate clauses, so <Sv>inte</Sv> goes before the
   finite verb inside them.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 The pair <Sv>därför</Sv> and <Sv>därför att</Sv> is the single most useful
 distinction on this page, and the one German speakers get wrong most often.

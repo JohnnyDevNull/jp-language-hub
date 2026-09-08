@@ -12,7 +12,6 @@ levels:
 tags:
   - grammar
   - verbs
-  - swedish-specific
   - important
 related:
   - /learn/swedish/grammar/verbs/verb-forms/
@@ -29,6 +28,7 @@ import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - The s-passive adds <Sv>-s</Sv> to every verb form and is the default for
@@ -38,6 +38,8 @@ import Sv from '~/components/Sv.astro';
 - An <Sv>-s</Sv> form is not always a passive: <Sv>hoppas</Sv> and
   <Sv>Vi ses!</Sv> are not.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Swedish has two passive constructions. The **s-passive** adds
 <Sv>-s</Sv> to the verb and has no German equivalent. The

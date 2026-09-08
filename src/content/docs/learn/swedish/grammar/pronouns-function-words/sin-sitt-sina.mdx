@@ -12,7 +12,6 @@ levels:
 tags:
   - grammar
   - pronouns
-  - swedish-specific
 related:
   - /learn/swedish/grammar/pronouns-function-words/possessive-pronouns/
   - /learn/swedish/grammar/nouns-articles/en-ett/
@@ -26,6 +25,7 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Use <Sv>sin</Sv>, <Sv>sitt</Sv>, or <Sv>sina</Sv> when the possessive refers
@@ -35,6 +35,8 @@ import Sv from '~/components/Sv.astro';
 - The form follows the possessed noun: <Sv>sin jacka</Sv>, <Sv>sitt hus</Sv>,
   <Sv>sina vänner</Sv>.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Swedish uses <Sv>sin</Sv>, <Sv>sitt</Sv>, and
 <Sv>sina</Sv> when a third-person subject possesses something

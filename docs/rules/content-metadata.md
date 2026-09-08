@@ -28,10 +28,18 @@ Use only tags that help classify or retrieve content:
 - `pronouns`
 - `vocabulary`
 - `comparison`
-- `swedish-specific`
 - `common-mistakes`
 - `cheat-sheet`
 - `important`
 
 Keep tag sets small. Add a new value only when multiple real pages need a
 classification that the existing vocabulary cannot express.
+
+A tag must express something the page's own position cannot. The learning
+language in particular is never a tag: it is the route prefix
+`learn/<language>/` and nothing else. A `swedish-specific` tag existed until it
+sat on 32 of 60 pages and on no page outside the Swedish tree, which made it a
+second encoding of the prefix — and, by the language layers in `AGENTS.md`, a
+second content axis where there must be only one. Divergence from German and
+English belongs in the page body, through `comparisonLanguages`, a
+`## Direct comparison` section or `SpecialRule`.

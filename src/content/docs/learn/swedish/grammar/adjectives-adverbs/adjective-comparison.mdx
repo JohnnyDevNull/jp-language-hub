@@ -13,7 +13,6 @@ tags:
   - grammar
   - adjectives
   - comparison
-  - swedish-specific
 related:
   - /learn/swedish/grammar/adjectives-adverbs/agreement/
   - /learn/swedish/grammar/nouns-articles/en-ett/
@@ -29,6 +28,7 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => {
 	throw new Error('Missing adjective entry: sv-snabb');
@@ -41,6 +41,8 @@ export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => 
 - Long and participial adjectives use <Sv>mer</Sv> and <Sv>mest</Sv> instead of
   the endings — never both at once.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Swedish adjectives can express three degrees: positive, comparative, and
 superlative. Many short adjectives use the endings

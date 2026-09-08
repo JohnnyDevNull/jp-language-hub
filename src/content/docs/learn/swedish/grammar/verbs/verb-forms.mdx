@@ -13,7 +13,6 @@ levels:
 tags:
   - grammar
   - verbs
-  - swedish-specific
   - important
 related:
   - /learn/swedish/grammar/verbs/tense-perspectives/
@@ -32,6 +31,7 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 import VerbTable from '~/components/VerbTable.astro';
 
 export const verbs = (await getCollection('verbs')).sort((left, right) =>
@@ -49,6 +49,8 @@ export const buy = verbs.find(({ id }) => id === 'sv-kopa')?.data ?? (() => {
 - The supine is the form after <Sv>har</Sv> or <Sv>hade</Sv>; it is never the
   infinitive and never the preterite.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Swedish verbs do not change according to person or number. The main learning
 task is therefore recognizing the form and choosing the right tense.

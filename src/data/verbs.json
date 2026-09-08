@@ -7,7 +7,7 @@
       "de": "sprechen",
       "en": "speak"
     },
-    "tags": ["verbs", "swedish-specific"],
+    "tags": ["verbs"],
     "group": "1",
     "morphology": {
       "imperative": "tala",
@@ -24,7 +24,7 @@
       "de": "arbeiten",
       "en": "work"
     },
-    "tags": ["verbs", "swedish-specific"],
+    "tags": ["verbs"],
     "group": "1",
     "morphology": {
       "imperative": "arbeta",
@@ -41,7 +41,7 @@
       "de": "schließen",
       "en": "close"
     },
-    "tags": ["verbs", "swedish-specific"],
+    "tags": ["verbs"],
     "group": "2a",
     "morphology": {
       "imperative": "stäng",
@@ -58,7 +58,7 @@
       "de": "anrufen",
       "en": "call"
     },
-    "tags": ["verbs", "swedish-specific"],
+    "tags": ["verbs"],
     "group": "2a",
     "morphology": {
       "imperative": "ring",
@@ -75,7 +75,7 @@
       "de": "kaufen",
       "en": "buy"
     },
-    "tags": ["verbs", "swedish-specific"],
+    "tags": ["verbs"],
     "group": "2b",
     "morphology": {
       "imperative": "köp",
@@ -92,7 +92,7 @@
       "de": "lesen",
       "en": "read"
     },
-    "tags": ["verbs", "swedish-specific"],
+    "tags": ["verbs"],
     "group": "2b",
     "morphology": {
       "imperative": "läs",
@@ -109,7 +109,7 @@
       "de": "wohnen",
       "en": "live"
     },
-    "tags": ["verbs", "swedish-specific"],
+    "tags": ["verbs"],
     "group": "3",
     "morphology": {
       "imperative": "bo",
@@ -126,7 +126,7 @@
       "de": "glauben",
       "en": "believe"
     },
-    "tags": ["verbs", "swedish-specific"],
+    "tags": ["verbs"],
     "group": "3",
     "morphology": {
       "imperative": "tro",
@@ -143,7 +143,7 @@
       "de": "schreiben",
       "en": "write"
     },
-    "tags": ["verbs", "swedish-specific"],
+    "tags": ["verbs"],
     "group": "4",
     "morphology": {
       "imperative": "skriv",
@@ -160,7 +160,7 @@
       "de": "sein",
       "en": "be"
     },
-    "tags": ["verbs", "swedish-specific", "important"],
+    "tags": ["verbs", "important"],
     "group": "4",
     "morphology": {
       "imperative": "var",
@@ -177,7 +177,7 @@
       "de": "haben",
       "en": "have"
     },
-    "tags": ["verbs", "swedish-specific", "important"],
+    "tags": ["verbs", "important"],
     "group": "4",
     "morphology": {
       "imperative": "ha",
@@ -194,7 +194,7 @@
       "de": "machen",
       "en": "do"
     },
-    "tags": ["verbs", "swedish-specific", "important"],
+    "tags": ["verbs", "important"],
     "group": "4",
     "morphology": {
       "imperative": "gör",
@@ -211,7 +211,7 @@
       "de": "gehen",
       "en": "go"
     },
-    "tags": ["verbs", "swedish-specific", "important"],
+    "tags": ["verbs", "important"],
     "group": "4",
     "morphology": {
       "imperative": "gå",
@@ -228,7 +228,7 @@
       "de": "sehen",
       "en": "see"
     },
-    "tags": ["verbs", "swedish-specific", "important"],
+    "tags": ["verbs", "important"],
     "group": "4",
     "morphology": {
       "imperative": "se",
@@ -245,7 +245,7 @@
       "de": "wissen",
       "en": "know"
     },
-    "tags": ["verbs", "swedish-specific", "important"],
+    "tags": ["verbs", "important"],
     "group": "4",
     "morphology": {
       "imperative": "vet",

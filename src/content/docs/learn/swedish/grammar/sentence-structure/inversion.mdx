@@ -13,7 +13,6 @@ levels:
 tags:
   - grammar
   - sentence-structure
-  - swedish-specific
   - important
 related:
   - /learn/swedish/grammar/sentence-structure/v2/
@@ -29,6 +28,7 @@ import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import SentenceSchema from '~/components/SentenceSchema.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - As soon as something other than the subject opens a main clause, the subject
@@ -36,6 +36,8 @@ import Sv from '~/components/Sv.astro';
 - Only the finite verb moves; infinitives and supines stay later in the clause.
 - German inverts in exactly the same way, English normally does not.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Inversion occurs when a Swedish declarative main clause begins with something
 other than the subject. The finite verb remains in the second position, so the

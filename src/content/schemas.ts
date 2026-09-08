@@ -12,7 +12,6 @@ export const contentTagSchema = z.enum([
 	'pronouns',
 	'vocabulary',
 	'comparison',
-	'swedish-specific',
 	'common-mistakes',
 	'cheat-sheet',
 	'important',

@@ -11,7 +11,6 @@ levels:
   - A1
 tags:
   - vocabulary
-  - swedish-specific
   - important
 related:
   - /learn/swedish/grammar/numerals/numbers/
@@ -27,6 +26,7 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Clock time runs through five words only: <Sv>klockan</Sv>, <Sv>över</Sv>,
@@ -36,6 +36,8 @@ import Sv from '~/components/Sv.astro';
 - Minutes are counted from the nearest reference point, which may be the half
   hour: <Sv>tio i halv nio</Sv> is 8:20.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Swedish clock time is a small closed system. Learn the five words and the two
 directions they point in, and every time of day follows.

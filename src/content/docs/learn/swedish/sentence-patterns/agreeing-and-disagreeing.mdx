@@ -13,7 +13,6 @@ levels:
   - B1
 tags:
   - sentence-patterns
-  - swedish-specific
 related:
   - /learn/swedish/sentence-patterns/opinions-and-uncertainty/
   - /learn/swedish/grammar/sentence-structure/inversion/
@@ -26,6 +25,7 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - A positive answer to a negative question is <Sv>jo</Sv>, not <Sv>ja</Sv> —
@@ -35,6 +35,8 @@ import Sv from '~/components/Sv.astro';
 - Short answers repeat the auxiliary with <Sv>det</Sv>:
   <Sv>Jo, det gör jag.</Sv>
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Agreement and disagreement are almost entirely formulaic. The only part that
 needs real grammar is the short answer, which reuses the verb of the question.

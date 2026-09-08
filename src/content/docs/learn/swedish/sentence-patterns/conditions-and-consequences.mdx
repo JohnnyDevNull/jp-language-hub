@@ -25,6 +25,7 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - A fronted <Sv>om</Sv>-clause fills position one, so the main clause starts
@@ -33,6 +34,8 @@ import Sv from '~/components/Sv.astro';
 - A counterfactual uses the preterite in the condition and
   <Sv>skulle</Sv> + infinitive in the result.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Conditions are where word order and pattern meet: the phrase list is short, but
 the clause after it has to be built correctly.

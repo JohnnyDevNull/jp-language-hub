@@ -13,7 +13,6 @@ levels:
 tags:
   - grammar
   - vocabulary
-  - swedish-specific
   - important
 related:
   - /learn/swedish/grammar/nouns-articles/en-ett/
@@ -29,6 +28,7 @@ import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Numbers are spoken and written ten before unit, as one word and without
@@ -38,6 +38,8 @@ import Sv from '~/components/Sv.astro';
 - In a compound ordinal only the last element becomes an ordinal:
   <Sv>tjugoförsta</Sv>.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Swedish numbers are regular and, unlike German, they are built in the order in
 which they are spoken. Once the first twenty are secure, the rest follows a

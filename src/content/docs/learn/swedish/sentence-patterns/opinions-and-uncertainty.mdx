@@ -25,6 +25,7 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - <Sv>tycker</Sv> states a personal judgement, <Sv>tror</Sv> a belief about
@@ -34,6 +35,8 @@ import Sv from '~/components/Sv.astro';
   often dropped than English *that*.
 - Negate the frame, not the content: <Sv>Jag tror inte att han kommer.</Sv>
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 These frames carry the sentence while you think about the rest of it. Learn them
 as whole units, including the <Sv>att</Sv> that follows.

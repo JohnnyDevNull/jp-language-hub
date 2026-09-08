@@ -13,7 +13,6 @@ levels:
 tags:
   - grammar
   - sentence-structure
-  - swedish-specific
   - important
 related:
   - /learn/swedish/grammar/sentence-structure/v2/
@@ -30,6 +29,7 @@ import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import SentenceSchema from '~/components/SentenceSchema.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - The neutral main clause runs subject, finite verb, sentence adverb, remaining
@@ -38,6 +38,8 @@ import Sv from '~/components/Sv.astro';
 - Swedish verbs do not change according to person, so the position of the verb
   carries the grammar instead.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Swedish word order carries grammatical meaning. The most useful starting point is
 the neutral main-clause pattern, but that pattern changes when another sentence

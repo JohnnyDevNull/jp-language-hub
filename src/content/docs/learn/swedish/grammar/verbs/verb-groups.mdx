@@ -8,7 +8,6 @@ levels:
 tags:
   - grammar
   - verbs
-  - swedish-specific
 related:
   - /learn/swedish/grammar/verbs/verb-forms/
   - /learn/swedish/grammar/verbs/present/
@@ -24,6 +23,7 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 import VerbTable from '~/components/VerbTable.astro';
 
 export const verbs = await getCollection('verbs');
@@ -46,6 +46,8 @@ export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-sk
 - An infinitive in <Sv>-a</Sv> is not automatically group 1: compare
   <Sv>tala</Sv> with <Sv>köpa</Sv>.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Swedish verb groups describe recurring patterns for the present, preterite,
 and supine. They help predict forms, but the forms of common irregular verbs

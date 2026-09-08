@@ -19,6 +19,7 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
 import VocabularyCard from '~/components/VocabularyCard.astro';
 import { getCollection, getEntry } from 'astro:content';
 
@@ -62,6 +63,8 @@ export const starters = starterIds.map((id) => {
 - The plural ending follows from the lemma's shape, so learning it once per
   word is cheaper than guessing it every time you speak.
 </KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Most of the work in Swedish vocabulary is not the meaning of a word, it is its
 gender and its plural. Both are unpredictable from German, so they belong in the
