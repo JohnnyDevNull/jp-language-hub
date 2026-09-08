@@ -63,6 +63,15 @@ export default defineConfig({
 							],
 						},
 						{
+							label: 'Numerals',
+							items: [
+								{
+									label: 'Swedish',
+									items: [{ slug: 'grammar/numerals/swedish/numbers' }],
+								},
+							],
+						},
+						{
 							label: 'Adjectives & Adverbs',
 							items: [
 								{

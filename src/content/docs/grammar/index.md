@@ -31,6 +31,10 @@ with German and English visible where they help explain a rule.
 - [Swedish adjective agreement](./adjectives-adverbs/swedish/agreement/)
 - [Swedish adjective comparison](./adjectives-adverbs/swedish/adjective-comparison/)
 
+## Numerals
+
+- [Swedish numbers](./numerals/swedish/numbers/)
+
 ## Verbs
 
 - [Swedish verb forms](./verbs/swedish/verb-forms/)
