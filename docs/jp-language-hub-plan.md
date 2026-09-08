@@ -2778,3 +2778,43 @@ Do not stop at boilerplate.
 The first completed state should already feel like a useful, polished language reference that can be used immediately and expanded systematically.
 
 Work autonomously until the MVP and acceptance criteria above are satisfied.
+
+---
+
+# Deferred Work
+
+Items that are part of the concept but intentionally not implemented yet. Each
+one names the condition under which it becomes the next step.
+
+## Pronunciation audio and IPA
+
+`learn/swedish/pronunciation-basics` currently teaches pronunciation through
+spelling patterns and German comparisons only. It contains no IPA and no audio,
+which is the one part of Swedish that text cannot carry: the `u` and `y`
+vowels, the `sj-`/`tj-` consonants, vowel length, and word accent 2.
+
+Target state:
+
+1. IPA for every vowel and for the consonant patterns that German speakers get
+   wrong, next to the existing German cue rather than replacing it. The cue is
+   what a beginner uses; the IPA is what makes the page precise.
+2. Minimal-pair audio for the contrasts that carry meaning, starting with
+   `glas`/`glass`, `tak`/`tack`, `sil`/`syl`, and one accent-2 pair.
+3. Audio attached to the pronunciation reference only. Do not scatter audio
+   across grammar pages.
+
+Constraints:
+
+- Audio files are static assets committed to the repository and served from the
+  GitHub Pages base path. No external player, no third-party embed, no runtime
+  dependency on a dictionary API.
+- Use the native `<audio>` element with a visible label and a text alternative
+  naming the word and its transcription. Sound must never be the only carrier
+  of the information.
+- Splitting `pronunciation-basics` into `vowels`, `consonants` and `accent`
+  becomes the right call once audio makes each section independently useful.
+  Until then it stays one page.
+
+Blocked on: a licensing-clean source for the recordings, either self-recorded
+or a source whose license permits redistribution in a public repository.
+Resolve that before writing any of the markup above.
