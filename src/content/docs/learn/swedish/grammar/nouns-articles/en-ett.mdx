@@ -22,15 +22,27 @@ related:
   - /learn/swedish/grammar/adjectives-adverbs/adjective-comparison/
 ---
 
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import NounForms from '~/components/NounForms.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import RuleBox from '~/components/RuleBox.astro';
+import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
+<KeyTakeaway>
+- Every noun carries a gender, so learn it as <Sv>en bil</Sv> or
+  <Sv>ett hus</Sv>, never as the bare noun.
+- <Sv>en</Sv> is the better guess: en-words are the clear majority, and several
+  derivational endings make the guess safer.
+- A compound takes the gender of its **last** element, without exception.
+</KeyTakeaway>
+
 Most Swedish nouns belong to one of two grammatical genders. An **en-word** uses
-<span lang="sv">en</span>; an **ett-word** uses <span lang="sv">ett</span>.
+<Sv>en</Sv>; an **ett-word** uses <Sv>ett</Sv>.
 The noun's gender affects articles, definite forms, and adjective endings.
 
 <TagList
@@ -45,12 +57,12 @@ The noun's gender affects articles, definite forms, and adjective endings.
 
 | Gender | Indefinite singular | Meaning |
 | --- | --- | --- |
-| en-word | <span lang="sv">en bil</span> | a car |
-| ett-word | <span lang="sv">ett hus</span> | a house |
+| en-word | <Sv>en bil</Sv> | a car |
+| ett-word | <Sv>ett hus</Sv> | a house |
 
 There is no completely reliable rule that predicts the gender of every Swedish
 noun. Learn the article together with the noun: not merely
-<span lang="sv">bil</span>, but <span lang="sv">en bil</span>. Some word
+<Sv>bil</Sv>, but <Sv>en bil</Sv>. Some word
 endings are regular enough to narrow the guess down, and compounds follow a
 rule that always holds.
 
@@ -62,7 +74,7 @@ rule that always holds.
 
 ## Endings that point to a gender
 
-en-words are the clear majority in Swedish, so <span lang="sv">en</span> is the
+en-words are the clear majority in Swedish, so <Sv>en</Sv> is the
 better guess when you have nothing else to go on. Many derivational endings
 narrow it down further.
 
@@ -70,52 +82,52 @@ These endings are normally en-words:
 
 | Ending | Examples |
 | --- | --- |
-| <span lang="sv">-a</span> | <span lang="sv">en flicka</span>, <span lang="sv">en gata</span>, <span lang="sv">en vecka</span> |
-| <span lang="sv">-are</span> | <span lang="sv">en lärare</span>, <span lang="sv">en bagare</span> |
-| <span lang="sv">-else</span> | <span lang="sv">en händelse</span>, <span lang="sv">en rörelse</span> |
-| <span lang="sv">-het</span> | <span lang="sv">en möjlighet</span>, <span lang="sv">en nyhet</span> |
-| <span lang="sv">-ning</span>, <span lang="sv">-ing</span> | <span lang="sv">en tidning</span>, <span lang="sv">en övning</span> |
-| <span lang="sv">-dom</span> | <span lang="sv">en sjukdom</span>, <span lang="sv">en visdom</span> |
-| <span lang="sv">-lek</span> | <span lang="sv">en kärlek</span>, <span lang="sv">en storlek</span> |
-| <span lang="sv">-nad</span> | <span lang="sv">en byggnad</span>, <span lang="sv">en skillnad</span> |
-| <span lang="sv">-tion</span>, <span lang="sv">-sion</span> | <span lang="sv">en station</span>, <span lang="sv">en diskussion</span> |
-| <span lang="sv">-ist</span>, <span lang="sv">-ent</span>, <span lang="sv">-ör</span> | <span lang="sv">en turist</span>, <span lang="sv">en student</span>, <span lang="sv">en frisör</span> |
+| <Sv>-a</Sv> | <Sv>en flicka</Sv>, <Sv>en gata</Sv>, <Sv>en vecka</Sv> |
+| <Sv>-are</Sv> | <Sv>en lärare</Sv>, <Sv>en bagare</Sv> |
+| <Sv>-else</Sv> | <Sv>en händelse</Sv>, <Sv>en rörelse</Sv> |
+| <Sv>-het</Sv> | <Sv>en möjlighet</Sv>, <Sv>en nyhet</Sv> |
+| <Sv>-ning</Sv>, <Sv>-ing</Sv> | <Sv>en tidning</Sv>, <Sv>en övning</Sv> |
+| <Sv>-dom</Sv> | <Sv>en sjukdom</Sv>, <Sv>en visdom</Sv> |
+| <Sv>-lek</Sv> | <Sv>en kärlek</Sv>, <Sv>en storlek</Sv> |
+| <Sv>-nad</Sv> | <Sv>en byggnad</Sv>, <Sv>en skillnad</Sv> |
+| <Sv>-tion</Sv>, <Sv>-sion</Sv> | <Sv>en station</Sv>, <Sv>en diskussion</Sv> |
+| <Sv>-ist</Sv>, <Sv>-ent</Sv>, <Sv>-ör</Sv> | <Sv>en turist</Sv>, <Sv>en student</Sv>, <Sv>en frisör</Sv> |
 
 These endings are normally ett-words:
 
 | Ending | Examples |
 | --- | --- |
-| <span lang="sv">-ande</span>, <span lang="sv">-ende</span> | <span lang="sv">ett meddelande</span>, <span lang="sv">ett leende</span> |
-| <span lang="sv">-eri</span> | <span lang="sv">ett bageri</span>, <span lang="sv">ett tryckeri</span> |
-| <span lang="sv">-um</span> | <span lang="sv">ett museum</span>, <span lang="sv">ett centrum</span>, <span lang="sv">ett faktum</span> |
-| <span lang="sv">-ment</span> | <span lang="sv">ett dokument</span>, <span lang="sv">ett argument</span> |
-| <span lang="sv">-tek</span> | <span lang="sv">ett bibliotek</span>, <span lang="sv">ett apotek</span> |
-| <span lang="sv">-gram</span> | <span lang="sv">ett program</span>, <span lang="sv">ett diagram</span> |
+| <Sv>-ande</Sv>, <Sv>-ende</Sv> | <Sv>ett meddelande</Sv>, <Sv>ett leende</Sv> |
+| <Sv>-eri</Sv> | <Sv>ett bageri</Sv>, <Sv>ett tryckeri</Sv> |
+| <Sv>-um</Sv> | <Sv>ett museum</Sv>, <Sv>ett centrum</Sv>, <Sv>ett faktum</Sv> |
+| <Sv>-ment</Sv> | <Sv>ett dokument</Sv>, <Sv>ett argument</Sv> |
+| <Sv>-tek</Sv> | <Sv>ett bibliotek</Sv>, <Sv>ett apotek</Sv> |
+| <Sv>-gram</Sv> | <Sv>ett program</Sv>, <Sv>ett diagram</Sv> |
 
 Three cases need care:
 
-- <span lang="sv">-a</span> has a small group of ett-words:
-  <span lang="sv">ett öga</span>, <span lang="sv">ett öra</span>,
-  <span lang="sv">ett hjärta</span>.
-- <span lang="sv">-ande</span> and <span lang="sv">-ende</span> are ett-words
+- <Sv>-a</Sv> has a small group of ett-words:
+  <Sv>ett öga</Sv>, <Sv>ett öra</Sv>,
+  <Sv>ett hjärta</Sv>.
+- <Sv>-ande</Sv> and <Sv>-ende</Sv> are ett-words
   when they name an action, but en-words when they name a person:
-  <span lang="sv">ett meddelande</span> against
-  <span lang="sv">en studerande</span>.
-- <span lang="sv">-skap</span> is genuinely split. Concrete and collective
-  nouns tend to be ett-words (<span lang="sv">ett landskap</span>,
-  <span lang="sv">ett sällskap</span>), while relations and qualities tend to
-  be en-words (<span lang="sv">en vänskap</span>,
-  <span lang="sv">en kunskap</span>). Check this ending rather than guessing.
+  <Sv>ett meddelande</Sv> against
+  <Sv>en studerande</Sv>.
+- <Sv>-skap</Sv> is genuinely split. Concrete and collective
+  nouns tend to be ett-words (<Sv>ett landskap</Sv>,
+  <Sv>ett sällskap</Sv>), while relations and qualities tend to
+  be en-words (<Sv>en vänskap</Sv>,
+  <Sv>en kunskap</Sv>). Check this ending rather than guessing.
 
-An ending such as <span lang="sv">-e</span> gives no useful signal at all:
-compare <span lang="sv">en pojke</span> with
-<span lang="sv">ett äpple</span>.
+An ending such as <Sv>-e</Sv> gives no useful signal at all:
+compare <Sv>en pojke</Sv> with
+<Sv>ett äpple</Sv>.
 
 Nouns for people and animals are usually en-words —
-<span lang="sv">en man</span>, <span lang="sv">en kvinna</span>,
-<span lang="sv">en hund</span> — but not always:
-<span lang="sv">ett barn</span>, <span lang="sv">ett djur</span>,
-<span lang="sv">ett lejon</span>.
+<Sv>en man</Sv>, <Sv>en kvinna</Sv>,
+<Sv>en hund</Sv> — but not always:
+<Sv>ett barn</Sv>, <Sv>ett djur</Sv>,
+<Sv>ett lejon</Sv>.
 
 ## Compounds follow their last element
 
@@ -125,14 +137,14 @@ builds compounds constantly. The gender of a compound is the gender of its
 
 | Parts | Compound |
 | --- | --- |
-| <span lang="sv">en cykel</span> + <span lang="sv">ett hjul</span> | <span lang="sv">ett cykelhjul</span> |
-| <span lang="sv">ett tåg</span> + <span lang="sv">en station</span> | <span lang="sv">en tågstation</span> |
-| <span lang="sv">en sommar</span> + <span lang="sv">ett hus</span> | <span lang="sv">ett sommarhus</span> |
-| <span lang="sv">en post</span> + <span lang="sv">ett kontor</span> | <span lang="sv">ett postkontor</span> |
+| <Sv>en cykel</Sv> + <Sv>ett hjul</Sv> | <Sv>ett cykelhjul</Sv> |
+| <Sv>ett tåg</Sv> + <Sv>en station</Sv> | <Sv>en tågstation</Sv> |
+| <Sv>en sommar</Sv> + <Sv>ett hus</Sv> | <Sv>ett sommarhus</Sv> |
+| <Sv>en post</Sv> + <Sv>ett kontor</Sv> | <Sv>ett postkontor</Sv> |
 
 The definite and plural forms follow the last element too:
-<span lang="sv">ett cykelhjul → cykelhjulet</span>,
-<span lang="sv">en tågstation → tågstationen</span>.
+<Sv>ett cykelhjul → cykelhjulet</Sv>,
+<Sv>en tågstation → tågstationen</Sv>.
 
 <RuleBox title="Reliable shortcut">
 	For any compound noun, look up only the last element. Its gender, definite
@@ -146,8 +158,8 @@ suffix to the noun for the simple definite form:
 
 | Gender | Indefinite | Definite |
 | --- | --- | --- |
-| en-word | <span lang="sv">en bil</span> | <span lang="sv">bilen</span> |
-| ett-word | <span lang="sv">ett hus</span> | <span lang="sv">huset</span> |
+| en-word | <Sv>en bil</Sv> | <Sv>bilen</Sv> |
+| ett-word | <Sv>ett hus</Sv> | <Sv>huset</Sv> |
 
 <NounForms
 	indefiniteSingular="en bil"
@@ -159,11 +171,17 @@ suffix to the noun for the simple definite form:
 
 Compare:
 
-| Language | Indefinite | Definite |
-| --- | --- | --- |
-| <span lang="de">🇩🇪 Deutsch</span> | <span lang="de">ein Auto</span> | <span lang="de">das Auto</span> |
-| <span lang="en">🇬🇧 English</span> | <span lang="en">a car</span> | <span lang="en">the car</span> |
-| <span lang="sv">🇸🇪 Svenska</span> | <span lang="sv">en bil</span> | <span lang="sv">bilen</span> |
+<LanguageComparison title="Indefinite singular">
+	<p slot="de">ein Auto</p>
+	<p slot="en">a car</p>
+	<p slot="sv">en bil</p>
+</LanguageComparison>
+
+<LanguageComparison title="Definite singular">
+	<p slot="de">das Auto</p>
+	<p slot="en">the car</p>
+	<p slot="sv">bilen</p>
+</LanguageComparison>
 
 See [noun forms](../noun-forms/) for spelling patterns and
 plural definiteness.
@@ -173,10 +191,10 @@ plural definiteness.
 The noun phrase's gender and number determine the basic adjective form. The
 article makes that grammatical information visible:
 
-- <span lang="sv">en <strong>stor</strong> bil</span> — a big car
-- <span lang="sv">ett <strong>stort</strong> hus</span> — a big house
-- <span lang="sv"><strong>stora</strong> bilar</span> — big cars
-- <span lang="sv"><strong>stora</strong> hus</span> — big houses
+- <Sv>en <strong>stor</strong> bil</Sv> — a big car
+- <Sv>ett <strong>stort</strong> hus</Sv> — a big house
+- <Sv><strong>stora</strong> bilar</Sv> — big cars
+- <Sv><strong>stora</strong> hus</Sv> — big houses
 
 The basic pattern is **base form** with an en-word, often **-t** with an ett-word,
 and often **-a** in the plural. Adjectives also have irregular and spelling-
@@ -197,34 +215,55 @@ for the complete pattern, gender and number forms, and the possessive exception.
 
 The plural ending cannot be derived from en or ett alone:
 
-- <span lang="sv">en bil → bilar</span>
-- <span lang="sv">ett hus → hus</span>
-- <span lang="sv">ett äpple → äpplen</span>
+- <Sv>en bil → bilar</Sv>
+- <Sv>ett hus → hus</Sv>
+- <Sv>ett äpple → äpplen</Sv>
 
 Learn the important plural forms with the noun. See the
 [plural overview](../plural-overview/).
 
 <MistakeBox title="Common mistakes">
 Do not assume that an object's natural properties determine en or ett, and do
-not use <span lang="sv">en</span> as a universal article. Do not take the
+not use <Sv>en</Sv> as a universal article. Do not take the
 gender of a compound from its first element either:
-<span lang="sv">❌ en cykelhjul</span>, <span lang="sv">✅ ett cykelhjul</span>.
+<Sv>❌ en cykelhjul</Sv>, <Sv>✅ ett cykelhjul</Sv>.
 
-<span lang="sv">❌ en hus</span>  
-<span lang="sv">✅ ett hus</span>
+<Sv>❌ en hus</Sv>  
+<Sv>✅ ett hus</Sv>
 
 Also keep the adjective consistent:
 
-<span lang="sv">❌ ett stor hus</span>  
-<span lang="sv">✅ ett stort hus</span>
+<Sv>❌ ett stor hus</Sv>  
+<Sv>✅ ett stort hus</Sv>
 </MistakeBox>
 
 <MemoryTip>
 	Treat the article as part of the word: learn
-	<span lang="sv"><strong>en bil</strong></span> and
-	<span lang="sv"><strong>ett hus</strong></span>. Add the four noun forms when
-	you can: <span lang="sv">en bil, bilen, bilar, bilarna</span>.
+	<Sv><strong>en bil</strong></Sv> and
+	<Sv><strong>ett hus</strong></Sv>. Add the four noun forms when
+	you can: <Sv>en bil, bilen, bilar, bilarna</Sv>.
 </MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Add the article: ___ tidning, ___ bibliotek.',
+			answer: 'en tidning, ett bibliotek',
+		},
+		{
+			prompt: 'en sommar + ett hus — what is the compound, with its article?',
+			answer: 'ett sommarhus',
+		},
+		{
+			prompt: 'Give the definite singular of ett hus and of en bil.',
+			answer: 'huset, bilen',
+		},
+		{
+			prompt: 'Correct this phrase: ett stor hus.',
+			answer: 'ett stort hus',
+		},
+	]}
+/>
 
 <RelatedTopics
 	topics={[

@@ -22,17 +22,30 @@ related:
   - /learn/swedish/common-mistakes/from-german/
 ---
 
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+
+<KeyTakeaway>
+- A particle is stressed and changes the meaning of the verb; an unstressed
+  small word after the verb is a preposition.
+- The particle stays next to the verb and before the object, also before a
+  pronoun: <Sv>Han slog på den.</Sv>
+- <Sv>Inte</Sv> comes between the finite verb and the particle:
+  <Sv>Jag tycker inte om henne.</Sv>
+</KeyTakeaway>
 
 A particle verb is a verb plus a short stressed word such as
-<span lang="sv">på</span>, <span lang="sv">av</span>,
-<span lang="sv">om</span>, <span lang="sv">ut</span>, or
-<span lang="sv">med</span>. Together they form one unit of meaning that the
+<Sv>på</Sv>, <Sv>av</Sv>,
+<Sv>om</Sv>, <Sv>ut</Sv>, or
+<Sv>med</Sv>. Together they form one unit of meaning that the
 two parts do not reveal on their own:
-<span lang="sv">tycka om</span> means *to like*, not *to think about*.
+<Sv>tycka om</Sv> means *to like*, not *to think about*.
 
 Particle verbs are extremely frequent in everyday Swedish, so they are worth
 learning as complete units from the beginning.
@@ -41,10 +54,10 @@ learning as complete units from the beginning.
 
 Stress is the most reliable way to identify a particle:
 
-- <span lang="sv">Jag tycker **om** henne.</span> — *I like her.* The particle
-  <span lang="sv">om</span> is stressed.
-- <span lang="sv">Jag **tit**tar på henne.</span> — *I am looking at her.*
-  Here <span lang="sv">på</span> is an unstressed preposition.
+- <Sv>Jag tycker **om** henne.</Sv> — *I like her.* The particle
+  <Sv>om</Sv> is stressed.
+- <Sv>Jag **tit**tar på henne.</Sv> — *I am looking at her.*
+  Here <Sv>på</Sv> is an unstressed preposition.
 
 <RuleBox title="Rule">
 If the small word after the verb is stressed and changes the meaning of the
@@ -57,8 +70,8 @@ it is a preposition.
 The particle follows the verb directly and comes **before** the object, no
 matter whether the object is a noun or a pronoun:
 
-- <span lang="sv">Han slog på radion.</span> — *He switched on the radio.*
-- <span lang="sv">Han slog på den.</span> — *He switched it on.*
+- <Sv>Han slog på radion.</Sv> — *He switched on the radio.*
+- <Sv>Han slog på den.</Sv> — *He switched it on.*
 
 This is the point where English habits cause errors: English can split the
 verb (*switch it on*), Swedish cannot.
@@ -69,22 +82,32 @@ In a compound tense the particle follows the supine:
 
 ### Negation goes between verb and particle
 
-<span lang="sv">Inte</span> is placed after the finite verb and therefore
+<Sv>Inte</Sv> is placed after the finite verb and therefore
 **before** the particle:
 
-- <span lang="sv">Jag tycker inte om henne.</span>
-- <span lang="sv">Han slog inte på radion.</span>
+- <Sv>Jag tycker inte om henne.</Sv>
+- <Sv>Han slog inte på radion.</Sv>
 
 See [Placement of *inte*](../../sentence-structure/inte-placement/) for
 the general pattern.
 
 ## Direct comparison
 
-| Language | Pattern | Example |
-| --- | --- | --- |
-| German | separable prefix moves to the end of the clause | <span lang="de">Ich rufe ihn an.</span> |
-| English | particle can be split from the verb by a pronoun | *I call him up.* |
-| Swedish | particle stays next to the verb, before the object | <span lang="sv">Jag ringer upp honom.</span> |
+<LanguageComparison title="Particle and pronoun object">
+	<p slot="de">Ich rufe ihn an.</p>
+	<p slot="en">I call him up.</p>
+	<p slot="sv">Jag ringer upp honom.</p>
+</LanguageComparison>
+
+German moves the separable prefix to the end of the clause, English may split
+the particle from the verb with a pronoun, and Swedish keeps the particle
+directly after the verb and before the object.
+
+<LanguageComparison title="Negated particle verb">
+	<p slot="de">Ich mag sie nicht.</p>
+	<p slot="en">I do not like her.</p>
+	<p slot="sv">Jag tycker inte om henne.</p>
+</LanguageComparison>
 
 For German speakers this is good news: nothing has to be moved to the end of
 the sentence. The particle simply stays where the verb is.
@@ -93,21 +116,21 @@ the sentence. The particle simply stays where the verb is.
 
 | Swedish | English | German |
 | --- | --- | --- |
-| <span lang="sv">tycka om</span> | to like | <span lang="de">mögen</span> |
-| <span lang="sv">komma ihåg</span> | to remember | <span lang="de">sich erinnern</span> |
-| <span lang="sv">komma på</span> | to think of, to realize | <span lang="de">einfallen</span> |
-| <span lang="sv">se ut</span> | to look, to appear | <span lang="de">aussehen</span> |
-| <span lang="sv">känna igen</span> | to recognize | <span lang="de">wiedererkennen</span> |
-| <span lang="sv">ta med</span> | to bring along | <span lang="de">mitnehmen</span> |
-| <span lang="sv">ta på sig</span> | to put on (clothes) | <span lang="de">anziehen</span> |
-| <span lang="sv">ta av sig</span> | to take off (clothes) | <span lang="de">ausziehen</span> |
-| <span lang="sv">ta reda på</span> | to find out | <span lang="de">herausfinden</span> |
-| <span lang="sv">slå på</span> | to switch on | <span lang="de">einschalten</span> |
-| <span lang="sv">stänga av</span> | to switch off | <span lang="de">ausschalten</span> |
-| <span lang="sv">tala om</span> | to tell, to inform | <span lang="de">erzählen, mitteilen</span> |
-| <span lang="sv">hålla på</span> | to be busy doing something | <span lang="de">gerade dabei sein</span> |
-| <span lang="sv">passa på</span> | to take the opportunity, to watch out | <span lang="de">aufpassen, die Gelegenheit nutzen</span> |
-| <span lang="sv">hitta på</span> | to make up, to come up with | <span lang="de">sich ausdenken</span> |
+| <Sv>tycka om</Sv> | to like | <span lang="de">mögen</span> |
+| <Sv>komma ihåg</Sv> | to remember | <span lang="de">sich erinnern</span> |
+| <Sv>komma på</Sv> | to think of, to realize | <span lang="de">einfallen</span> |
+| <Sv>se ut</Sv> | to look, to appear | <span lang="de">aussehen</span> |
+| <Sv>känna igen</Sv> | to recognize | <span lang="de">wiedererkennen</span> |
+| <Sv>ta med</Sv> | to bring along | <span lang="de">mitnehmen</span> |
+| <Sv>ta på sig</Sv> | to put on (clothes) | <span lang="de">anziehen</span> |
+| <Sv>ta av sig</Sv> | to take off (clothes) | <span lang="de">ausziehen</span> |
+| <Sv>ta reda på</Sv> | to find out | <span lang="de">herausfinden</span> |
+| <Sv>slå på</Sv> | to switch on | <span lang="de">einschalten</span> |
+| <Sv>stänga av</Sv> | to switch off | <span lang="de">ausschalten</span> |
+| <Sv>tala om</Sv> | to tell, to inform | <span lang="de">erzählen, mitteilen</span> |
+| <Sv>hålla på</Sv> | to be busy doing something | <span lang="de">gerade dabei sein</span> |
+| <Sv>passa på</Sv> | to take the opportunity, to watch out | <span lang="de">aufpassen, die Gelegenheit nutzen</span> |
+| <Sv>hitta på</Sv> | to make up, to come up with | <span lang="de">sich ausdenken</span> |
 
 Store each entry with its particle, exactly as you would store a noun with its
 gender. Several of these entries cannot be reduced to a single translation:
@@ -115,51 +138,51 @@ what follows the particle decides the meaning.
 
 ## The same verb in different constructions
 
-### <span lang="sv">hålla på</span>
+### <Sv>hålla på</Sv>
 
 | Construction | Meaning | Example |
 | --- | --- | --- |
-| <span lang="sv">hålla på med</span> + noun | to be busy with | <span lang="sv">Vad håller du på med?</span> — *What are you doing?* |
-| <span lang="sv">hålla på att</span> + infinitive | to be in the middle of doing | <span lang="sv">Jag håller på att laga mat.</span> — *I am cooking right now.* |
-| <span lang="sv">hålla på att</span> + infinitive | to almost do something | <span lang="sv">Jag höll på att ramla.</span> — *I almost fell.* |
-| on its own | to keep at it | <span lang="sv">Han höll på i timmar.</span> — *He kept at it for hours.* |
+| <Sv>hålla på med</Sv> + noun | to be busy with | <Sv>Vad håller du på med?</Sv> — *What are you doing?* |
+| <Sv>hålla på att</Sv> + infinitive | to be in the middle of doing | <Sv>Jag håller på att laga mat.</Sv> — *I am cooking right now.* |
+| <Sv>hålla på att</Sv> + infinitive | to almost do something | <Sv>Jag höll på att ramla.</Sv> — *I almost fell.* |
+| on its own | to keep at it | <Sv>Han höll på i timmar.</Sv> — *He kept at it for hours.* |
 
 The last two rows share the same construction, so only the context separates
 them. A present tense usually describes an ongoing action, while a preterite
-with a verb such as <span lang="sv">ramla</span> or
-<span lang="sv">tappa</span> usually means *almost*.
+with a verb such as <Sv>ramla</Sv> or
+<Sv>tappa</Sv> usually means *almost*.
 
-### <span lang="sv">passa på</span>
-
-| Construction | Meaning | Example |
-| --- | --- | --- |
-| <span lang="sv">passa på att</span> + infinitive | to seize the opportunity | <span lang="sv">Passa på att köpa biljetter nu!</span> — *Take the chance to buy tickets now!* |
-| on its own, often imperative | to pay attention, to watch out | <span lang="sv">Passa på när du går över gatan.</span> — *Pay attention when you cross the street.* |
-
-Without the particle, <span lang="sv">passa</span> is a different verb
-altogether: <span lang="sv">Byxorna passar.</span> — *The trousers fit.*
-
-### <span lang="sv">komma på</span>
+### <Sv>passa på</Sv>
 
 | Construction | Meaning | Example |
 | --- | --- | --- |
-| + noun | to come up with | <span lang="sv">Jag kom på en bra idé.</span> — *I came up with a good idea.* |
-| + <span lang="sv">att</span> clause | to realize, to remember suddenly | <span lang="sv">Jag kom på att jag glömt nyckeln.</span> — *I realized I had forgotten the key.* |
+| <Sv>passa på att</Sv> + infinitive | to seize the opportunity | <Sv>Passa på att köpa biljetter nu!</Sv> — *Take the chance to buy tickets now!* |
+| on its own, often imperative | to pay attention, to watch out | <Sv>Passa på när du går över gatan.</Sv> — *Pay attention when you cross the street.* |
 
-### <span lang="sv">se ut</span>
+Without the particle, <Sv>passa</Sv> is a different verb
+altogether: <Sv>Byxorna passar.</Sv> — *The trousers fit.*
 
-| Construction | Meaning | Example |
-| --- | --- | --- |
-| <span lang="sv">se ut som</span> | to look like | <span lang="sv">Han ser ut som sin pappa.</span> — *He looks like his father.* |
-| <span lang="sv">se ut att</span> | to seem to | <span lang="sv">Det ser ut att bli regn.</span> — *It looks like rain.* |
-| <span lang="sv">hur ser … ut</span> | how something looks or stands | <span lang="sv">Hur ser det ut med tiden?</span> — *How are we doing for time?* |
-
-### <span lang="sv">ta på sig</span>
+### <Sv>komma på</Sv>
 
 | Construction | Meaning | Example |
 | --- | --- | --- |
-| + clothing | to put on | <span lang="sv">Ta på dig jackan.</span> — *Put on your jacket.* |
-| + abstract noun | to take on, to accept | <span lang="sv">Han tog på sig ansvaret.</span> — *He took on the responsibility.* |
+| + noun | to come up with | <Sv>Jag kom på en bra idé.</Sv> — *I came up with a good idea.* |
+| + <Sv>att</Sv> clause | to realize, to remember suddenly | <Sv>Jag kom på att jag glömt nyckeln.</Sv> — *I realized I had forgotten the key.* |
+
+### <Sv>se ut</Sv>
+
+| Construction | Meaning | Example |
+| --- | --- | --- |
+| <Sv>se ut som</Sv> | to look like | <Sv>Han ser ut som sin pappa.</Sv> — *He looks like his father.* |
+| <Sv>se ut att</Sv> | to seem to | <Sv>Det ser ut att bli regn.</Sv> — *It looks like rain.* |
+| <Sv>hur ser … ut</Sv> | how something looks or stands | <Sv>Hur ser det ut med tiden?</Sv> — *How are we doing for time?* |
+
+### <Sv>ta på sig</Sv>
+
+| Construction | Meaning | Example |
+| --- | --- | --- |
+| + clothing | to put on | <Sv>Ta på dig jackan.</Sv> — *Put on your jacket.* |
+| + abstract noun | to take on, to accept | <Sv>Han tog på sig ansvaret.</Sv> — *He took on the responsibility.* |
 
 ## Separated and prefixed forms
 
@@ -169,38 +192,60 @@ different:
 
 | Separated | Prefixed |
 | --- | --- |
-| <span lang="sv">tala om</span> — to tell | <span lang="sv">tilltala</span> — to address someone, to appeal to |
-| <span lang="sv">gå av</span> — to get off, to break | <span lang="sv">avgå</span> — to resign, to depart |
-| <span lang="sv">gå ut</span> — to go out | <span lang="sv">utgå</span> — to be omitted, to proceed from |
+| <Sv>tala om</Sv> — to tell | <Sv>tilltala</Sv> — to address someone, to appeal to |
+| <Sv>gå av</Sv> — to get off, to break | <Sv>avgå</Sv> — to resign, to depart |
+| <Sv>gå ut</Sv> — to go out | <Sv>utgå</Sv> — to be omitted, to proceed from |
 
 Do not treat the two forms as interchangeable. Learn the one you actually need
 and check the other separately.
 
 When a particle verb becomes an adjective or a noun, the parts are written
-together: <span lang="sv">radion är påslagen</span>,
-<span lang="sv">tågets avgång</span>.
+together: <Sv>radion är påslagen</Sv>,
+<Sv>tågets avgång</Sv>.
 
 <MemoryTip>
-Say the verb aloud and listen for the beat. <span lang="sv">tycka **OM**</span>
-has its weight on the particle; <span lang="sv">**TIT**ta på</span> has it on
+Say the verb aloud and listen for the beat. <Sv>tycka **OM**</Sv>
+has its weight on the particle; <Sv>**TIT**ta på</Sv> has it on
 the verb. The stress tells you which of the two you are dealing with.
 </MemoryTip>
 
 ## Common mistakes
 
 <MistakeBox title="Common mistakes">
-	- ❌ <span lang="sv">Jag tycker om inte henne.</span>
-	  ✅ <span lang="sv">Jag tycker inte om henne.</span>
-	- ❌ <span lang="sv">Han slog den på.</span> — English word order
-	  ✅ <span lang="sv">Han slog på den.</span>
-	- ❌ <span lang="sv">Jag tilltalar dig att jag kommer.</span>
-	  ✅ <span lang="sv">Jag talar om att jag kommer.</span>
+	- ❌ <Sv>Jag tycker om inte henne.</Sv>
+	  ✅ <Sv>Jag tycker inte om henne.</Sv>
+	- ❌ <Sv>Han slog den på.</Sv> — English word order
+	  ✅ <Sv>Han slog på den.</Sv>
+	- ❌ <Sv>Jag tilltalar dig att jag kommer.</Sv>
+	  ✅ <Sv>Jag talar om att jag kommer.</Sv>
 	- Do not translate a German separable verb by moving the particle to the end
 	  of the clause. Swedish keeps it next to the verb.
 	- Do not learn a single translation for
-	  <span lang="sv">hålla på</span> or <span lang="sv">passa på</span>. Learn
+	  <Sv>hålla på</Sv> or <Sv>passa på</Sv>. Learn
 	  the construction that follows the particle.
 </MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Replace the object with a pronoun: Han slog på radion.',
+			answer: 'Han slog på den.',
+		},
+		{
+			prompt: 'Negate: Jag tycker om henne.',
+			answer: 'Jag tycker inte om henne.',
+		},
+		{
+			prompt:
+				'Particle or preposition in “Jag tittar på henne”, and why?',
+			answer: 'Preposition: på is unstressed and only introduces the object.',
+		},
+		{
+			prompt: 'Say “I am cooking right now” with hålla på.',
+			answer: 'Jag håller på att laga mat.',
+		},
+	]}
+/>
 
 <RelatedTopics
 	topics={[

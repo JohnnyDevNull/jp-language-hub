@@ -23,26 +23,54 @@ related:
 ---
 
 import ExampleBox from '~/components/ExampleBox.astro';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
 import SpecialRule from '~/components/SpecialRule.astro';
+import Sv from '~/components/Sv.astro';
+
+<KeyTakeaway>
+- The finite verb is the second **constituent**, not the second word.
+- Whatever fills position one, the finite verb follows it; the subject then
+  moves behind the verb.
+- Only the finite verb counts. Non-finite verbs stay later in the clause.
+</KeyTakeaway>
 
 **V2** means that the finite verb normally occupies the second position in a
 Swedish declarative main clause. It is one of the most important rules for
-producing natural Swedish sentences.
+producing natural Swedish sentences, and German speakers already know it.
 
 ## Core rule
 
 > In a Swedish declarative main clause, the **finite verb** normally comes in
 > the **second constituent position**.
 
-In a neutral sentence, the subject fills position one:
+Read the clause as a row of fields. Position one is a single field no matter how
+many words it holds, and the finite verb owns position two:
 
-<p lang="sv"><strong>Jag</strong> <strong>köper</strong> en bil idag.</p>
+<SentenceSchema
+	caption="V2 in a declarative main clause"
+	rowHeader="Variant"
+	columns={['1 Fundament', '2 Finite verb', '3 Subject', 'Rest']}
+	rows={[
+		{ label: 'Neutral', cells: ['Jag', 'köper', '', 'en bil idag.'] },
+		{ label: 'Time first', cells: ['Idag', 'köper', 'jag', 'en bil.'] },
+		{ label: 'Object first', cells: ['Den boken', 'har', 'jag', 'redan läst.'] },
+		{
+			label: 'Deutsch',
+			lang: 'de',
+			cells: ['Heute', 'kaufe', 'ich', 'ein Auto.'],
+		},
+	]}
+/>
 
-If a time expression is moved to position one, the finite verb remains second
-and the subject moves after it:
+In a neutral sentence the subject itself fills position one, so position three
+stays empty. As soon as something else is fronted, the subject moves behind the
+verb:
 
 <ExampleBox title="Time expression in position one" lang="sv">
 	<p><strong>Idag</strong> <strong>köper</strong> jag en bil.</p>
@@ -54,9 +82,8 @@ One constituent may contain several words:
 
 <p lang="sv"><strong>Efter jobbet</strong> <strong>köper</strong> jag mat.</p>
 
-<span lang="sv">Efter jobbet</span> is one adverbial constituent. The verb
-<span lang="sv">köper</span> is still in the second sentence position even
-though it is the third written word.
+<Sv>Efter jobbet</Sv> is one adverbial constituent. The verb <Sv>köper</Sv> is
+still in the second sentence position even though it is the third written word.
 
 ## Compound verb phrases
 
@@ -65,16 +92,21 @@ V2 applies to the **finite** verb, not to every verb in the clause:
 <p lang="sv">Idag <strong>vill</strong> jag köpa en bil.</p>
 <p lang="sv">Idag <strong>har</strong> jag köpt en bil.</p>
 
-The non-finite verbs <span lang="sv">köpa</span> and
-<span lang="sv">köpt</span> stay later in the clause.
+The non-finite verbs <Sv>köpa</Sv> and <Sv>köpt</Sv> stay later in the clause.
 
 ## Direct comparison
 
-| Language | Neutral | Time first |
-| --- | --- | --- |
-| <span lang="de">🇩🇪 Deutsch</span> | <span lang="de">Ich kaufe heute ein Auto.</span> | <span lang="de">Heute kaufe ich ein Auto.</span> |
-| <span lang="en">🇬🇧 English</span> | <span lang="en">I am buying a car today.</span> | <span lang="en">Today I am buying a car.</span> |
-| <span lang="sv">🇸🇪 Svenska</span> | <span lang="sv">Jag köper en bil idag.</span> | <span lang="sv">Idag köper jag en bil.</span> |
+<LanguageComparison title="Neutral order">
+	<p slot="de">Ich kaufe heute ein Auto.</p>
+	<p slot="en">I am buying a car today.</p>
+	<p slot="sv">Jag köper en bil idag.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Time expression first">
+	<p slot="de">Heute kaufe ich ein Auto.</p>
+	<p slot="en">Today I am buying a car.</p>
+	<p slot="sv">Idag köper jag en bil.</p>
+</LanguageComparison>
 
 German is a useful bridge because its main clauses also normally follow V2.
 English does not generally invert the subject and verb after an initial time
@@ -84,11 +116,11 @@ expression.
 
 Common choices include:
 
-- the subject: <span lang="sv">Jag arbetar hemma idag.</span>
-- time: <span lang="sv">Idag arbetar jag hemma.</span>
-- place: <span lang="sv">Hemma arbetar jag bäst.</span>
-- an object: <span lang="sv">Den boken har jag redan läst.</span>
-- a subordinate clause: <span lang="sv">När jag är klar går jag hem.</span>
+- the subject: <Sv>Jag arbetar hemma idag.</Sv>
+- time: <Sv>Idag arbetar jag hemma.</Sv>
+- place: <Sv>Hemma arbetar jag bäst.</Sv>
+- an object: <Sv>Den boken har jag redan läst.</Sv>
+- a subordinate clause: <Sv>När jag är klar går jag hem.</Sv>
 
 Changing position one changes the emphasis, not the V2 requirement.
 
@@ -104,14 +136,31 @@ fronting another constituent.
 <SpecialRule language="Swedish" title="Scope of V2">
 	V2 describes declarative **main clauses**. A subordinate clause has a
 	different internal pattern; in particular, sentence adverbs such as
-	<span lang="sv">inte</span> normally come before the finite verb. See
-	[BIFF](../biff/).
+	<Sv>inte</Sv> normally come before the finite verb. See [BIFF](../biff/).
 </SpecialRule>
 
 <MemoryTip>
 Think in blocks: **first block → finite verb → subject (if it was not first) →
 the rest**.
 </MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Front the time expression: Jag åker till Malmö i morgon.',
+			answer: 'I morgon åker jag till Malmö.',
+		},
+		{
+			prompt:
+				'Why is köper still in position two in “Efter jobbet köper jag mat”?',
+			answer: 'Efter jobbet is two words but one constituent, so it fills position one.',
+		},
+		{
+			prompt: 'Correct this sentence: Den boken jag har redan läst.',
+			answer: 'Den boken har jag redan läst.',
+		},
+	]}
+/>
 
 <RelatedTopics
 	topics={[

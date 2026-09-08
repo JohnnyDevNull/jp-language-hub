@@ -21,9 +21,21 @@ related:
   - /learn/swedish/grammar/sentence-structure/biff/
 ---
 
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+
+<KeyTakeaway>
+- As soon as something other than the subject opens a main clause, the subject
+  moves behind the finite verb.
+- Only the finite verb moves; infinitives and supines stay later in the clause.
+- German inverts in exactly the same way, English normally does not.
+</KeyTakeaway>
 
 Inversion occurs when a Swedish declarative main clause begins with something
 other than the subject. The finite verb remains in the second position, so the
@@ -31,33 +43,54 @@ subject follows the verb.
 
 ## Core rule
 
-Neutral order:
-
-<p lang="sv"><strong>Jag</strong> <strong>jobbar</strong> hemma idag.</p>
-
-Time first:
-
-<p lang="sv"><strong>Idag</strong> <strong>jobbar</strong> <strong>jag</strong> hemma.</p>
-
-Place first:
-
-<p lang="sv"><strong>Hemma</strong> <strong>jobbar</strong> <strong>jag</strong> idag.</p>
-
-The useful main-clause pattern is:
-
 > **fronted constituent + finite verb + subject + rest of clause**
 
-This is the visible consequence of the [V2 rule](../v2/).
+The neutral clause and its fronted variants only differ in what fills position
+one. The subject then appears in position three instead:
+
+<SentenceSchema
+	caption="Fronted constituents against the neutral order"
+	rowHeader="Position one"
+	columns={[
+		'1 Fundament',
+		'2 Finite verb',
+		'3 Subject',
+		'Satsadverbial',
+		'Non-finite verb',
+		'Rest',
+	]}
+	rows={[
+		{
+			label: 'Subject (neutral)',
+			cells: ['Jag', 'jobbar', '', '', '', 'hemma idag.'],
+		},
+		{ label: 'Time', cells: ['Idag', 'jobbar', 'jag', '', '', 'hemma.'] },
+		{ label: 'Place', cells: ['Hemma', 'jobbar', 'jag', '', '', 'idag.'] },
+		{ label: 'Object', cells: ['Den boken', 'har', 'jag', 'redan', 'läst', ''] },
+		{
+			label: 'Subordinate clause',
+			cells: ['När mötet är slut', 'går', 'vi', '', '', 'hem.'],
+		},
+		{
+			label: 'Deutsch (same shift)',
+			lang: 'de',
+			cells: ['Heute', 'arbeite', 'ich', '', '', 'zu Hause.'],
+		},
+	]}
+/>
+
+This is the visible consequence of the [V2 rule](../v2/): whatever the opening
+field contains, it is one constituent, and the finite verb owns the next field.
 
 ## With more than one verb
 
 Only the finite verb moves before the subject:
 
-- <span lang="sv">Imorgon <strong>ska</strong> vi träffa Anna.</span>
-- <span lang="sv">I går <strong>hade</strong> jag inte ätit frukost.</span>
+- <Sv>Imorgon <strong>ska</strong> vi träffa Anna.</Sv>
+- <Sv>I går <strong>hade</strong> jag inte ätit frukost.</Sv>
 
-The infinitive <span lang="sv">träffa</span> and the supine
-<span lang="sv">ätit</span> remain later in the clause.
+The infinitive <Sv>träffa</Sv> and the supine <Sv>ätit</Sv> remain later in the
+clause.
 
 ## After an initial subordinate clause
 
@@ -65,17 +98,6 @@ An entire subordinate clause can occupy the first position. The following main
 clause then uses inversion:
 
 <p lang="sv"><strong>När mötet är slut</strong> <strong>går</strong> vi hem.</p>
-
-Compare German and English:
-
-| Language | Example |
-| --- | --- |
-| <span lang="de">🇩🇪 Deutsch</span> | <span lang="de">Wenn das Meeting vorbei ist, gehen wir nach Hause.</span> |
-| <span lang="en">🇬🇧 English</span> | <span lang="en">When the meeting is over, we go home.</span> |
-| <span lang="sv">🇸🇪 Svenska</span> | <span lang="sv">När mötet är slut går vi hem.</span> |
-
-Swedish and German place the main-clause finite verb before the subject here.
-English normally does not.
 
 ## Inversion and questions
 
@@ -86,7 +108,25 @@ Yes/no questions also place the finite verb before the subject:
 However, it is useful to distinguish the two patterns:
 
 - a statement keeps the verb in position two after a fronted constituent;
-- a yes/no question normally starts with the finite verb.
+- a yes/no question normally starts with the finite verb, leaving position one
+  empty.
+
+## Direct comparison
+
+<LanguageComparison title="Time first">
+	<p slot="de">Heute arbeite ich zu Hause.</p>
+	<p slot="en">Today I am working at home.</p>
+	<p slot="sv">Idag jobbar jag hemma.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Subordinate clause first">
+	<p slot="de">Wenn das Meeting vorbei ist, gehen wir nach Hause.</p>
+	<p slot="en">When the meeting is over, we go home.</p>
+	<p slot="sv">När mötet är slut går vi hem.</p>
+</LanguageComparison>
+
+Swedish and German place the main-clause finite verb before the subject here.
+English normally does not.
 
 <MistakeBox
 	incorrect="Efter jobbet jag ska handla."
@@ -99,8 +139,25 @@ sentence. It changes the order of the main clause.
 
 <MemoryTip>
 If the subject is not first, listen for the pair **verb + subject** immediately
-after the opening block: <span lang="sv">Idag <strong>kommer jag</strong> …</span>
+after the opening block: <Sv>Idag <strong>kommer jag</strong> …</Sv>
 </MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Front the place expression: Jag jobbar hemma idag.',
+			answer: 'Hemma jobbar jag idag.',
+		},
+		{
+			prompt: 'Correct this sentence: Imorgon vi ska träffa Anna.',
+			answer: 'Imorgon ska vi träffa Anna.',
+		},
+		{
+			prompt: 'Add the main clause “vi går hem” after “När mötet är slut”.',
+			answer: 'När mötet är slut går vi hem.',
+		},
+	]}
+/>
 
 <RelatedTopics
 	topics={[

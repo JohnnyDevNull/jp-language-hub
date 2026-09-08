@@ -21,8 +21,35 @@ related:
   - /learn/swedish/grammar/verbs/verb-groups/
 ---
 
+import { getCollection } from 'astro:content';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import VerbTable from '~/components/VerbTable.astro';
+
+export const verbs = await getCollection('verbs');
+export const representative = (id) => {
+	const entry = verbs.find((candidate) => candidate.id === id);
+	if (!entry) {
+		throw new Error(`Missing required verb entry: ${id}`);
+	}
+	return entry.data;
+};
+export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-skriva'].map(
+	representative,
+);
+
+<KeyTakeaway>
+- The preterite is the normal tense for a completed past event, a past
+  sequence and a past state.
+- It is identical for every subject: <Sv>jag arbetade</Sv>,
+  <Sv>de arbetade</Sv>.
+- Use it whenever the event sits in a finished past time frame; use the
+  perfect when the present result matters.
+</KeyTakeaway>
 
 The Swedish preterite places an event or state in a past time frame. It is the
 normal tense for completed past events, narratives, and descriptions of what
@@ -33,38 +60,40 @@ happened then.
 Like all Swedish finite verb forms, the preterite is identical for every
 subject:
 
-- <span lang="sv">Jag arbetade.</span>
-- <span lang="sv">Hon arbetade.</span>
-- <span lang="sv">De arbetade.</span>
+- <Sv>Jag arbetade.</Sv>
+- <Sv>Hon arbetade.</Sv>
+- <Sv>De arbetade.</Sv>
 
-The form depends on the verb group:
+The form depends on the verb group. One representative verb per group:
 
-| Pattern | Infinitive | Preterite | Supine |
-| --- | --- | --- | --- |
-| Group 1 | <span lang="sv">tala</span> | <span lang="sv">talade</span> | <span lang="sv">talat</span> |
-| Group 2 | <span lang="sv">stänga</span> | <span lang="sv">stängde</span> | <span lang="sv">stängt</span> |
-| Group 2 | <span lang="sv">köpa</span> | <span lang="sv">köpte</span> | <span lang="sv">köpt</span> |
-| Group 3 | <span lang="sv">bo</span> | <span lang="sv">bodde</span> | <span lang="sv">bott</span> |
-| Irregular | <span lang="sv">skriva</span> | <span lang="sv">skrev</span> | <span lang="sv">skrivit</span> |
+<VerbTable
+	caption="Preterite forms, one verb per group"
+	forms={groupExamples.map((verb) => ({
+		label: `Group ${verb.group}: ${verb.lemma}`,
+		value: verb.morphology.preterite,
+	}))}
+/>
 
-See [verb groups](../verb-groups/) for the basic patterns.
+Group 1 adds <Sv>-ade</Sv>, group 2 adds <Sv>-de</Sv> or <Sv>-te</Sv>, group 3
+adds <Sv>-dde</Sv>, and group 4 changes the stem vowel instead. See
+[verb groups](../verb-groups/) for the basic patterns.
 
 ## When to use it
 
 ### A completed past event
 
-<span lang="sv">Jag köpte boken i går.</span> — I bought the book yesterday.
+<Sv>Jag köpte boken i går.</Sv> — I bought the book yesterday.
 
 ### A past sequence
 
-<span lang="sv">Hon vaknade, åt frukost och gick till jobbet.</span>
+<Sv>Hon vaknade, åt frukost och gick till jobbet.</Sv>
 
 The three verbs move the story forward: she woke up, ate breakfast, and went to
 work.
 
 ### A past state or habit
 
-<span lang="sv">När jag bodde i Göteborg cyklade jag till jobbet.</span>
+<Sv>När jag bodde i Göteborg cyklade jag till jobbet.</Sv>
 
 The preterite can describe both repeated actions and states in a finished past
 period.
@@ -73,24 +102,31 @@ period.
 
 Use the preterite when the event belongs to a clearly completed past frame:
 
-<span lang="sv">Jag såg filmen förra veckan.</span>
+<Sv>Jag såg filmen förra veckan.</Sv>
 
 Use the perfect when the present result or experience is central and the event
 is not placed in a completed past frame:
 
-<span lang="sv">Jag har sett filmen.</span>
+<Sv>Jag har sett filmen.</Sv>
 
 This distinction is about perspective, not merely the presence of a time word.
 An ongoing time period can still allow the perfect:
 
-<span lang="sv">Jag har druckit två koppar kaffe idag.</span>
+<Sv>Jag har druckit två koppar kaffe idag.</Sv>
 
 ## Direct comparison
 
-| Deutsch | English | Svenska |
-| --- | --- | --- |
-| <span lang="de">Ich kaufte gestern das Buch.</span> | <span lang="en">I bought the book yesterday.</span> | <span lang="sv">Jag köpte boken i går.</span> |
-| <span lang="de">Als ich in Göteborg wohnte …</span> | <span lang="en">When I lived in Gothenburg …</span> | <span lang="sv">När jag bodde i Göteborg …</span> |
+<LanguageComparison title="Completed past event">
+	<p slot="de">Ich kaufte gestern das Buch.</p>
+	<p slot="en">I bought the book yesterday.</p>
+	<p slot="sv">Jag köpte boken i går.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Past state">
+	<p slot="de">Als ich in Göteborg wohnte …</p>
+	<p slot="en">When I lived in Gothenburg …</p>
+	<p slot="sv">När jag bodde i Göteborg …</p>
+</LanguageComparison>
 
 German often prefers the spoken perfect in contexts where Swedish naturally
 uses the preterite. Choose the Swedish tense from its function, not by matching
@@ -99,13 +135,30 @@ the German surface form.
 ## Common mistakes
 
 <MistakeBox title="Common mistakes">
-	- ❌ <span lang="sv">Jag har köpt boken i går.</span>
-	  ✅ <span lang="sv">Jag köpte boken i går.</span>
-	- ❌ <span lang="sv">Hon köpade en bil.</span>
-	  ✅ <span lang="sv">Hon köpte en bil.</span>
+	- ❌ <Sv>Jag har köpt boken i går.</Sv>
+	  ✅ <Sv>Jag köpte boken i går.</Sv>
+	- ❌ <Sv>Hon köpade en bil.</Sv>
+	  ✅ <Sv>Hon köpte en bil.</Sv>
 	- Do not form irregular verbs by attaching a regular ending. Learn their
 	  preterite and supine together.
 </MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Give the preterite of tala, köpa and bo.',
+			answer: 'talade, köpte, bodde',
+		},
+		{
+			prompt: 'Correct this sentence: Hon köpade en bil.',
+			answer: 'Hon köpte en bil.',
+		},
+		{
+			prompt: 'Preterite or perfect? Jag … filmen i lördags.',
+			answer: 'Preterite: Jag såg filmen i lördags.',
+		},
+	]}
+/>
 
 <RelatedTopics
 	topics={[

@@ -22,10 +22,29 @@ related:
   - /learn/swedish/grammar/pronouns-function-words/interrogatives/
 ---
 
+import { getEntry } from 'astro:content';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+
+export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => {
+	throw new Error('Missing adjective entry: sv-snabb');
+})();
+
+<KeyTakeaway>
+- The adverb is the adjective's <Sv>-t</Sv> form, the same one you use with an
+  ett-word: <Sv>{snabb.morphology.ett}</Sv>.
+- Two sets are not derivable and have to be memorized:
+  <Sv>gärna — hellre — helst</Sv> and the direction/position pairs such as
+  <Sv>hem / hemma</Sv>.
+- Sentence adverbs take the <Sv>inte</Sv> slot: after the finite verb in a main
+  clause, before it in a subordinate clause.
+</KeyTakeaway>
 
 Most Swedish adverbs are simply the ett-form of an adjective. That makes the
 formation easy — the harder parts are a handful of irregular adverbs, the
@@ -35,16 +54,16 @@ direction.
 ## Adverbs from adjectives
 
 <RuleBox title="Rule">
-	The adverb is the adjective's <span lang="sv">-t</span> form: the same form
+	The adverb is the adjective's <Sv>-t</Sv> form: the same form
 	you already use with an ett-word.
 </RuleBox>
 
 | Adjective | Adverb | Example |
 | --- | --- | --- |
-| <span lang="sv">snabb</span> | <span lang="sv">snabbt</span> | <span lang="sv">Han springer snabbt.</span> |
-| <span lang="sv">tydlig</span> | <span lang="sv">tydligt</span> | <span lang="sv">Hon talar tydligt.</span> |
-| <span lang="sv">vacker</span> | <span lang="sv">vackert</span> | <span lang="sv">Hon sjunger vackert.</span> |
-| <span lang="sv">försiktig</span> | <span lang="sv">försiktigt</span> | <span lang="sv">Kör försiktigt!</span> |
+| <Sv>{snabb.morphology.en}</Sv> | <Sv>{snabb.morphology.ett}</Sv> | <Sv>Han springer snabbt.</Sv> |
+| <Sv>tydlig</Sv> | <Sv>tydligt</Sv> | <Sv>Hon talar tydligt.</Sv> |
+| <Sv>vacker</Sv> | <Sv>vackert</Sv> | <Sv>Hon sjunger vackert.</Sv> |
+| <Sv>försiktig</Sv> | <Sv>försiktigt</Sv> | <Sv>Kör försiktigt!</Sv> |
 
 Because the adverb reuses the ett-form, the spelling patterns are the same
 ones. See
@@ -54,6 +73,12 @@ English marks the difference with *-ly* and German not at all, so the Swedish
 system sits between the two: there is an ending, but it is one you already
 know.
 
+<LanguageComparison title="Adverb from an adjective">
+	<p slot="de">Er läuft schnell.</p>
+	<p slot="en">He runs quickly.</p>
+	<p slot="sv">Han springer snabbt.</p>
+</LanguageComparison>
+
 ## Irregular and independent adverbs
 
 Some adverbs are not built from an adjective, or differ from the expected
@@ -61,40 +86,40 @@ form:
 
 | Adverb | Meaning | Note |
 | --- | --- | --- |
-| <span lang="sv">bra</span> | well | also the adjective *good*; <span lang="sv">Han sjunger bra.</span> |
-| <span lang="sv">väl</span> | well | narrower than <span lang="sv">bra</span>: <span lang="sv">väl gjort</span> |
-| <span lang="sv">illa</span> | badly | <span lang="sv">Han mår illa.</span> |
-| <span lang="sv">gärna</span> | gladly, willingly | no adjective behind it |
-| <span lang="sv">mycket</span> | very, much | with adjectives: <span lang="sv">mycket bra</span> |
+| <Sv>bra</Sv> | well | also the adjective *good*; <Sv>Han sjunger bra.</Sv> |
+| <Sv>väl</Sv> | well | narrower than <Sv>bra</Sv>: <Sv>väl gjort</Sv> |
+| <Sv>illa</Sv> | badly | <Sv>Han mår illa.</Sv> |
+| <Sv>gärna</Sv> | gladly, willingly | no adjective behind it |
+| <Sv>mycket</Sv> | very, much | with adjectives: <Sv>mycket bra</Sv> |
 
-<span lang="sv">Gärna</span> is worth learning as a full set, because its
+<Sv>Gärna</Sv> is worth learning as a full set, because its
 comparison is irregular and extremely frequent in polite speech:
 
 <p lang="sv">gärna → hellre → helst</p>
 
-- <span lang="sv">Jag vill gärna komma.</span> — *I would like to come.*
-- <span lang="sv">Jag vill hellre stanna hemma.</span> — *I would rather stay
+- <Sv>Jag vill gärna komma.</Sv> — *I would like to come.*
+- <Sv>Jag vill hellre stanna hemma.</Sv> — *I would rather stay
   home.*
-- <span lang="sv">Jag vill helst åka på fredag.</span> — *I would most prefer
+- <Sv>Jag vill helst åka på fredag.</Sv> — *I would most prefer
   to go on Friday.*
 
 ## Comparison
 
 Adverbs compare like adjectives:
 
-<p lang="sv">snabbt → snabbare → snabbast</p>
+<p lang="sv">{snabb.morphology.ett} → {snabb.comparison?.comparative} → {snabb.comparison?.superlative}</p>
 
 The irregular ones follow their own chains:
 
 | Adverb | Comparative | Superlative |
 | --- | --- | --- |
-| <span lang="sv">bra / väl</span> | <span lang="sv">bättre</span> | <span lang="sv">bäst</span> |
-| <span lang="sv">gärna</span> | <span lang="sv">hellre</span> | <span lang="sv">helst</span> |
-| <span lang="sv">illa</span> | <span lang="sv">värre</span> | <span lang="sv">värst</span> |
+| <Sv>bra / väl</Sv> | <Sv>bättre</Sv> | <Sv>bäst</Sv> |
+| <Sv>gärna</Sv> | <Sv>hellre</Sv> | <Sv>helst</Sv> |
+| <Sv>illa</Sv> | <Sv>värre</Sv> | <Sv>värst</Sv> |
 
-<span lang="sv">Sämre</span> and <span lang="sv">värre</span> both translate as
-*worse*, with <span lang="sv">sämre</span> tending towards lower quality and
-<span lang="sv">värre</span> towards greater severity. The boundary is not
+<Sv>Sämre</Sv> and <Sv>värre</Sv> both translate as
+*worse*, with <Sv>sämre</Sv> tending towards lower quality and
+<Sv>värre</Sv> towards greater severity. The boundary is not
 sharp, so learn them in phrases. See
 [adjective comparison](../adjective-comparison/).
 
@@ -105,70 +130,91 @@ nothing this systematic, so the pairs need to be learned as pairs:
 
 | Direction | Position | Example |
 | --- | --- | --- |
-| <span lang="sv">hem</span> | <span lang="sv">hemma</span> | <span lang="sv">Jag går hem.</span> · <span lang="sv">Jag är hemma.</span> |
-| <span lang="sv">ut</span> | <span lang="sv">ute</span> | <span lang="sv">Vi går ut.</span> · <span lang="sv">Vi är ute.</span> |
-| <span lang="sv">in</span> | <span lang="sv">inne</span> | <span lang="sv">Kom in!</span> · <span lang="sv">Hon är inne.</span> |
-| <span lang="sv">upp</span> | <span lang="sv">uppe</span> | <span lang="sv">Han går upp.</span> · <span lang="sv">Han är uppe.</span> |
-| <span lang="sv">ner</span> | <span lang="sv">nere</span> | <span lang="sv">Gå ner!</span> · <span lang="sv">Hon är nere.</span> |
-| <span lang="sv">bort</span> | <span lang="sv">borta</span> | <span lang="sv">Han reste bort.</span> · <span lang="sv">Han är borta.</span> |
-| <span lang="sv">dit</span> | <span lang="sv">där</span> | <span lang="sv">Vi åker dit.</span> · <span lang="sv">Vi är där.</span> |
+| <Sv>hem</Sv> | <Sv>hemma</Sv> | <Sv>Jag går hem.</Sv> · <Sv>Jag är hemma.</Sv> |
+| <Sv>ut</Sv> | <Sv>ute</Sv> | <Sv>Vi går ut.</Sv> · <Sv>Vi är ute.</Sv> |
+| <Sv>in</Sv> | <Sv>inne</Sv> | <Sv>Kom in!</Sv> · <Sv>Hon är inne.</Sv> |
+| <Sv>upp</Sv> | <Sv>uppe</Sv> | <Sv>Han går upp.</Sv> · <Sv>Han är uppe.</Sv> |
+| <Sv>ner</Sv> | <Sv>nere</Sv> | <Sv>Gå ner!</Sv> · <Sv>Hon är nere.</Sv> |
+| <Sv>bort</Sv> | <Sv>borta</Sv> | <Sv>Han reste bort.</Sv> · <Sv>Han är borta.</Sv> |
+| <Sv>dit</Sv> | <Sv>där</Sv> | <Sv>Vi åker dit.</Sv> · <Sv>Vi är där.</Sv> |
 
 The same split runs through the question words
-<span lang="sv">vart</span> and <span lang="sv">var</span>. See
+<Sv>vart</Sv> and <Sv>var</Sv>. See
 [question words](../../pronouns-function-words/interrogatives/).
 
 ## Where sentence adverbs go
 
-Adverbs such as <span lang="sv">inte</span>,
-<span lang="sv">alltid</span>, <span lang="sv">aldrig</span>,
-<span lang="sv">ofta</span>, <span lang="sv">kanske</span>, and
-<span lang="sv">redan</span> take the same slot as
-<span lang="sv">inte</span>: after the finite verb in a main clause, before it
+Adverbs such as <Sv>inte</Sv>,
+<Sv>alltid</Sv>, <Sv>aldrig</Sv>,
+<Sv>ofta</Sv>, <Sv>kanske</Sv>, and
+<Sv>redan</Sv> take the same slot as
+<Sv>inte</Sv>: after the finite verb in a main clause, before it
 in a subordinate clause.
 
-- <span lang="sv">Hon kommer alltid sent.</span>
-- <span lang="sv">…eftersom hon alltid kommer sent.</span>
+- <Sv>Hon kommer alltid sent.</Sv>
+- <Sv>…eftersom hon alltid kommer sent.</Sv>
 
 See [Placement of *inte*](../../sentence-structure/inte-placement/).
 
 ## The small attitude words
 
-<span lang="sv">Ju</span>, <span lang="sv">nog</span>,
-<span lang="sv">väl</span>, and <span lang="sv">visst</span> add attitude
+<Sv>Ju</Sv>, <Sv>nog</Sv>,
+<Sv>väl</Sv>, and <Sv>visst</Sv> add attitude
 rather than information, much like German
 <span lang="de">ja</span>, <span lang="de">wohl</span>, and
 <span lang="de">doch</span>:
 
-- <span lang="sv">Det är ju sant.</span> — *as we both know*
-- <span lang="sv">Han kommer nog.</span> — *I expect he will*
-- <span lang="sv">Du har väl gjort det?</span> — seeking agreement
+- <Sv>Det är ju sant.</Sv> — *as we both know*
+- <Sv>Han kommer nog.</Sv> — *I expect he will*
+- <Sv>Du har väl gjort det?</Sv> — seeking agreement
 
 They resist clean translation and are best picked up from context. German
 speakers have an advantage here, because the mechanism is familiar.
 
 <MemoryTip>
 Start from the ett-form: if you can say
-<span lang="sv"><strong>ett snabbt tåg</strong></span>, you can say
-<span lang="sv"><strong>han springer snabbt</strong></span>. Then add the two
+<Sv><strong>ett snabbt tåg</strong></Sv>, you can say
+<Sv><strong>han springer snabbt</strong></Sv>. Then add the two
 sets that are not derivable:
-<span lang="sv"><strong>gärna — hellre — helst</strong></span> and
-<span lang="sv"><strong>hem / hemma</strong></span>.
+<Sv><strong>gärna — hellre — helst</strong></Sv> and
+<Sv><strong>hem / hemma</strong></Sv>.
 </MemoryTip>
 
 ## Common mistakes
 
 <MistakeBox title="Common mistakes">
-	- ❌ <span lang="sv">Han springer snabb.</span>
-	  ✅ <span lang="sv">Han springer snabbt.</span>
-	- ❌ <span lang="sv">Jag är hem.</span>
-	  ✅ <span lang="sv">Jag är hemma.</span>
-	- ❌ <span lang="sv">Jag går hemma.</span>
-	  ✅ <span lang="sv">Jag går hem.</span>
-	- ❌ <span lang="sv">Jag vill mer gärna stanna.</span>
-	  ✅ <span lang="sv">Jag vill hellre stanna.</span>
-	- ❌ <span lang="sv">…eftersom hon kommer alltid sent.</span>
-	  ✅ <span lang="sv">…eftersom hon alltid kommer sent.</span>
+	- ❌ <Sv>Han springer snabb.</Sv>
+	  ✅ <Sv>Han springer snabbt.</Sv>
+	- ❌ <Sv>Jag är hem.</Sv>
+	  ✅ <Sv>Jag är hemma.</Sv>
+	- ❌ <Sv>Jag går hemma.</Sv>
+	  ✅ <Sv>Jag går hem.</Sv>
+	- ❌ <Sv>Jag vill mer gärna stanna.</Sv>
+	  ✅ <Sv>Jag vill hellre stanna.</Sv>
+	- ❌ <Sv>…eftersom hon kommer alltid sent.</Sv>
+	  ✅ <Sv>…eftersom hon alltid kommer sent.</Sv>
 </MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Turn tydlig into an adverb and use it: “She speaks clearly.”',
+			answer: 'Hon talar tydligt.',
+		},
+		{
+			prompt: 'hem or hemma? Jag är ___. · Jag går ___.',
+			answer: 'Jag är hemma. · Jag går hem.',
+		},
+		{
+			prompt: 'Complete the set: gärna → ___ → ___.',
+			answer: 'hellre, helst',
+		},
+		{
+			prompt: 'Correct this clause: …eftersom hon kommer alltid sent.',
+			answer: '…eftersom hon alltid kommer sent.',
+		},
+	]}
+/>
 
 <RelatedTopics
 	topics={[

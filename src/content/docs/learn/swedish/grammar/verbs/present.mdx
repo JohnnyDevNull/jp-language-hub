@@ -21,8 +21,35 @@ related:
   - /learn/swedish/grammar/verbs/perfect/
 ---
 
+import { getCollection } from 'astro:content';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import VerbTable from '~/components/VerbTable.astro';
+
+export const verbs = await getCollection('verbs');
+export const representative = (id) => {
+	const entry = verbs.find((candidate) => candidate.id === id);
+	if (!entry) {
+		throw new Error(`Missing required verb entry: ${id}`);
+	}
+	return entry.data;
+};
+export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-skriva'].map(
+	representative,
+);
+
+<KeyTakeaway>
+- The present form is the same for every subject: <Sv>jag arbetar</Sv>,
+  <Sv>hon arbetar</Sv>, <Sv>de arbetar</Sv>.
+- The ending follows the verb group: <Sv>-ar</Sv>, <Sv>-er</Sv> or plain
+  <Sv>-r</Sv>.
+- Swedish has no progressive form; the ordinary present also covers
+  <span lang="en">I am working</span> and, in a clear context, a planned future.
+</KeyTakeaway>
 
 The Swedish present tense describes what happens now, what happens regularly,
 and—in a clear context—what is planned or expected to happen later.
@@ -33,63 +60,77 @@ The present form is identical for every subject:
 
 | Subject | Example |
 | --- | --- |
-| <span lang="sv">jag</span> | <span lang="sv">Jag arbetar.</span> |
-| <span lang="sv">du</span> | <span lang="sv">Du arbetar.</span> |
-| <span lang="sv">hon / han / hen</span> | <span lang="sv">Hon arbetar.</span> |
-| <span lang="sv">vi / ni / de</span> | <span lang="sv">De arbetar.</span> |
+| <Sv>jag</Sv> | <Sv>Jag arbetar.</Sv> |
+| <Sv>du</Sv> | <Sv>Du arbetar.</Sv> |
+| <Sv>hon / han / hen</Sv> | <Sv>Hon arbetar.</Sv> |
+| <Sv>vi / ni / de</Sv> | <Sv>De arbetar.</Sv> |
 
-The ending depends on the verb group. Common patterns include
-<span lang="sv">-ar</span>, <span lang="sv">-er</span>, and
-<span lang="sv">-r</span>:
+The ending depends on the verb group. One representative verb per group:
 
-- <span lang="sv">tala → talar</span>
-- <span lang="sv">köpa → köper</span>
-- <span lang="sv">bo → bor</span>
+<VerbTable
+	caption="Present forms, one verb per group"
+	forms={groupExamples.map((verb) => ({
+		label: `Group ${verb.group}: ${verb.lemma}`,
+		value: verb.morphology.present,
+	}))}
+/>
 
-Some frequent verbs are irregular, for example
-<span lang="sv">vara → är</span> and <span lang="sv">göra → gör</span>.
+Some frequent verbs are irregular, for example <Sv>vara → är</Sv> and
+<Sv>göra → gör</Sv>. See [verb groups](../verb-groups/) for the full patterns.
 
 ## Main uses
 
 ### Happening now
 
-<span lang="sv">Jag läser just nu.</span> — I am reading right now.
+<Sv>Jag läser just nu.</Sv> — I am reading right now.
 
 Swedish normally uses the ordinary present here. It does not require an English-style
 <span lang="en">am/is/are + -ing</span> form.
 
 ### Habits and repeated events
 
-<span lang="sv">Vi tränar varje torsdag.</span> — We train every Thursday.
+<Sv>Vi tränar varje torsdag.</Sv> — We train every Thursday.
 
 ### General facts and states
 
-<span lang="sv">Stockholm ligger i Sverige.</span> — Stockholm is in Sweden.
+<Sv>Stockholm ligger i Sverige.</Sv> — Stockholm is in Sweden.
 
 ### Future meaning from context
 
-<span lang="sv">Jag åker till Malmö i morgon.</span> — I am going to Malmö tomorrow.
+<Sv>Jag åker till Malmö i morgon.</Sv> — I am going to Malmö tomorrow.
 
 The time expression makes the future meaning clear. Other future constructions
 are used when the context requires them.
 
 ## Direct comparison
 
-| Function | Deutsch | English | Svenska |
-| --- | --- | --- | --- |
-| Now | <span lang="de">Ich arbeite gerade.</span> | <span lang="en">I am working right now.</span> | <span lang="sv">Jag arbetar just nu.</span> |
-| Habit | <span lang="de">Ich arbeite montags.</span> | <span lang="en">I work on Mondays.</span> | <span lang="sv">Jag arbetar på måndagar.</span> |
-| Planned future | <span lang="de">Ich fahre morgen.</span> | <span lang="en">I am leaving tomorrow.</span> | <span lang="sv">Jag åker i morgon.</span> |
+<LanguageComparison title="Now">
+	<p slot="de">Ich arbeite gerade.</p>
+	<p slot="en">I am working right now.</p>
+	<p slot="sv">Jag arbetar just nu.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Habit">
+	<p slot="de">Ich arbeite montags.</p>
+	<p slot="en">I work on Mondays.</p>
+	<p slot="sv">Jag arbetar på måndagar.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Planned future">
+	<p slot="de">Ich fahre morgen.</p>
+	<p slot="en">I am leaving tomorrow.</p>
+	<p slot="sv">Jag åker i morgon.</p>
+</LanguageComparison>
 
 ## Negation and word order
 
-In a main clause, <span lang="sv">inte</span> normally follows the finite verb:
+In a main clause, <Sv>inte</Sv> normally follows the finite verb:
 
-<span lang="sv">Jag arbetar inte idag.</span>
+<Sv>Jag arbetar inte idag.</Sv>
 
 In a subordinate clause, the order normally changes:
 
-<span lang="sv">… eftersom jag inte arbetar idag.</span>
+<Sv>… eftersom jag inte arbetar idag.</Sv>
 
 This is a word-order rule, not a different present-tense form. See the pages on
 [V2](../../sentence-structure/v2/) and
@@ -99,11 +140,32 @@ This is a word-order rule, not a different present-tense form. See the pages on
 
 <MistakeBox title="Common mistakes">
 	- Do not add a person ending modeled on English or German: Swedish uses
-	  <span lang="sv">jag kommer</span> and <span lang="sv">hon kommer</span>.
+	  <Sv>jag kommer</Sv> and <Sv>hon kommer</Sv>.
 	- Do not translate the English progressive word for word. Usually
-	  <span lang="en">I am working</span> becomes <span lang="sv">jag arbetar</span>.
+	  <span lang="en">I am working</span> becomes <Sv>jag arbetar</Sv>.
 	- Learn irregular present forms individually.
 </MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Give the present form of köpa, bo and tala.',
+			answer: 'köper, bor, talar',
+		},
+		{
+			prompt: 'Correct this sentence: Hon arbetars på måndagar.',
+			answer: 'Hon arbetar på måndagar.',
+		},
+		{
+			prompt: 'Translate: I am going to Malmö tomorrow.',
+			answer: 'Jag åker till Malmö i morgon.',
+		},
+		{
+			prompt: 'Where does inte go in “Jag arbetar idag”?',
+			answer: 'Jag arbetar inte idag.',
+		},
+	]}
+/>
 
 <RelatedTopics
 	topics={[

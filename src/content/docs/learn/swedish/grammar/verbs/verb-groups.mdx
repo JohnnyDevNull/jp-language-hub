@@ -17,9 +17,35 @@ related:
   - /learn/swedish/cheat-sheets/verb-forms/
 ---
 
+import { getCollection } from 'astro:content';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import VerbTable from '~/components/VerbTable.astro';
+
+export const verbs = await getCollection('verbs');
+export const representative = (id) => {
+	const entry = verbs.find((candidate) => candidate.id === id);
+	if (!entry) {
+		throw new Error(`Missing required verb entry: ${id}`);
+	}
+	return entry.data;
+};
+export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-skriva'].map(
+	representative,
+);
+
+<KeyTakeaway>
+- A verb group predicts the present, preterite and supine endings from the
+  infinitive.
+- The four patterns are <Sv>-ar/-ade/-at</Sv>, <Sv>-er/-de or -te/-t</Sv>,
+  <Sv>-r/-dde/-tt</Sv> and the stem-vowel change of group 4.
+- An infinitive in <Sv>-a</Sv> is not automatically group 1: compare
+  <Sv>tala</Sv> with <Sv>köpa</Sv>.
+</KeyTakeaway>
 
 Swedish verb groups describe recurring patterns for the present, preterite,
 and supine. They help predict forms, but the forms of common irregular verbs
@@ -27,13 +53,13 @@ still need to be learned individually.
 
 ## Overview
 
-| Group | Infinitive | Present | Preterite | Supine |
-| --- | --- | --- | --- | --- |
-| 1 | <span lang="sv">tala</span> | <span lang="sv">talar</span> | <span lang="sv">talade</span> | <span lang="sv">talat</span> |
-| 2a | <span lang="sv">stänga</span> | <span lang="sv">stänger</span> | <span lang="sv">stängde</span> | <span lang="sv">stängt</span> |
-| 2b | <span lang="sv">köpa</span> | <span lang="sv">köper</span> | <span lang="sv">köpte</span> | <span lang="sv">köpt</span> |
-| 3 | <span lang="sv">bo</span> | <span lang="sv">bor</span> | <span lang="sv">bodde</span> | <span lang="sv">bott</span> |
-| 4 / irregular | <span lang="sv">skriva</span> | <span lang="sv">skriver</span> | <span lang="sv">skrev</span> | <span lang="sv">skrivit</span> |
+<VerbTable
+	caption="Form chain of one representative verb per group"
+	forms={groupExamples.map((verb) => ({
+		label: `Group ${verb.group}`,
+		value: `${verb.lemma} — ${verb.morphology.present} — ${verb.morphology.preterite} — ${verb.morphology.supine}`,
+	}))}
+/>
 
 The labels and subgroup boundaries can vary slightly between learning
 materials. The form chain is more important than the number assigned to it.
@@ -41,52 +67,52 @@ materials. The form chain is more important than the number assigned to it.
 ## Group 1: -ar, -ade, -at
 
 Group 1 verbs normally have an infinitive ending in unstressed
-<span lang="sv">-a</span>. The full infinitive remains before the endings:
+<Sv>-a</Sv>. The full infinitive remains before the endings:
 
-- <span lang="sv">tala → talar → talade → talat</span>
-- <span lang="sv">arbeta → arbetar → arbetade → arbetat</span>
+- <Sv>arbeta → arbetar → arbetade → arbetat</Sv>
+- <Sv>prata → pratar → pratade → pratat</Sv>
 
 This is the largest and most productive regular group.
 
 ## Group 2: -er, -de/-te, -t
 
 For many group 2 verbs, remove the infinitive's final
-<span lang="sv">-a</span> to find the stem:
+<Sv>-a</Sv> to find the stem:
 
-- <span lang="sv">stäng-a → stänger → stängde → stängt</span>
-- <span lang="sv">köp-a → köper → köpte → köpt</span>
+- <Sv>stäng-a → stänger → stängde → stängt</Sv>
+- <Sv>ring-a → ringer → ringde → ringt</Sv>
 
-The preterite ending is usually <span lang="sv">-de</span> after a voiced
-stem ending and <span lang="sv">-te</span> after certain voiceless consonants.
+The preterite ending is usually <Sv>-de</Sv> after a voiced
+stem ending and <Sv>-te</Sv> after certain voiceless consonants.
 For a beginner, it is safer to learn the preterite and supine with each verb
 than to rely only on spelling rules.
 
 Some group 2 verbs show spelling adjustments, for example
-<span lang="sv">läsa → läste → läst</span>.
+<Sv>läsa → läste → läst</Sv>.
 
 ## Group 3: short infinitives
 
 Group 3 typically contains short infinitives ending in a stressed vowel other
-than <span lang="sv">-a</span>:
+than <Sv>-a</Sv>:
 
-- <span lang="sv">bo → bor → bodde → bott</span>
-- <span lang="sv">nå → når → nådde → nått</span>
+- <Sv>tro → tror → trodde → trott</Sv>
+- <Sv>nå → når → nådde → nått</Sv>
 
-The common pattern is present <span lang="sv">-r</span>, preterite
-<span lang="sv">-dde</span>, and supine <span lang="sv">-tt</span>.
+The common pattern is present <Sv>-r</Sv>, preterite
+<Sv>-dde</Sv>, and supine <Sv>-tt</Sv>.
 
 ## Group 4 and irregular verbs
 
 These verbs do not follow the regular weak-verb endings. Many change their stem
 vowel:
 
-- <span lang="sv">skriva → skriver → skrev → skrivit</span>
-- <span lang="sv">komma → kommer → kom → kommit</span>
+- <Sv>komma → kommer → kom → kommit</Sv>
+- <Sv>gå → går → gick → gått</Sv>
 
 Other frequent verbs are irregular in different ways:
 
-- <span lang="sv">vara → är → var → varit</span>
-- <span lang="sv">göra → gör → gjorde → gjort</span>
+- <Sv>vara → är → var → varit</Sv>
+- <Sv>göra → gör → gjorde → gjort</Sv>
 
 Do not try to manufacture these forms from one universal rule.
 
@@ -98,20 +124,37 @@ Do not try to manufacture these forms from one universal rule.
 4. Revisit the form in a complete sentence.
 
 <MemoryTip>
-Say the chain aloud: <span lang="sv">köpa — köper — köpte — köpt</span>.
+Say the chain aloud: <Sv>köpa — köper — köpte — köpt</Sv>.
 The rhythm makes the relationship between the forms easier to retrieve.
 </MemoryTip>
 
 ## Common mistakes
 
 <MistakeBox title="Common mistakes">
-	- ❌ <span lang="sv">köpa → köpade</span>
-	  ✅ <span lang="sv">köpa → köpte</span>
-	- ❌ <span lang="sv">skriva → skrivade</span>
-	  ✅ <span lang="sv">skriva → skrev</span>
-	- A verb ending in <span lang="sv">-a</span> is not automatically group 1.
-	  Compare <span lang="sv">tala</span> with <span lang="sv">köpa</span>.
+	- ❌ <Sv>köpa → köpade</Sv>
+	  ✅ <Sv>köpa → köpte</Sv>
+	- ❌ <Sv>skriva → skrivade</Sv>
+	  ✅ <Sv>skriva → skrev</Sv>
+	- A verb ending in <Sv>-a</Sv> is not automatically group 1.
+	  Compare <Sv>tala</Sv> with <Sv>köpa</Sv>.
 </MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Which group is köpa in, and what is its preterite?',
+			answer: 'Group 2b: köpte',
+		},
+		{
+			prompt: 'Give the full chain of bo: present, preterite, supine.',
+			answer: 'bor — bodde — bott',
+		},
+		{
+			prompt: 'Correct this chain: skriva → skrivade → skrivat.',
+			answer: 'skriva → skrev → skrivit',
+		},
+	]}
+/>
 
 <RelatedTopics
 	topics={[

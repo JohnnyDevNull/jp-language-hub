@@ -21,14 +21,27 @@ related:
   - /learn/swedish/common-mistakes/from-german/
 ---
 
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+
+<KeyTakeaway>
+- The s-passive adds <Sv>-s</Sv> to every verb form and is the default for
+  routines, rules and notices.
+- The bli-passive, <Sv>bli</Sv> + participle, describes a single event, and the
+  participle agrees with the subject.
+- An <Sv>-s</Sv> form is not always a passive: <Sv>hoppas</Sv> and
+  <Sv>Vi ses!</Sv> are not.
+</KeyTakeaway>
 
 Swedish has two passive constructions. The **s-passive** adds
-<span lang="sv">-s</span> to the verb and has no German equivalent. The
-**bli-passive** uses <span lang="sv">bli</span> plus a participle and works
+<Sv>-s</Sv> to the verb and has no German equivalent. The
+**bli-passive** uses <Sv>bli</Sv> plus a participle and works
 like German <span lang="de">werden</span> plus participle.
 
 German speakers tend to overuse the second one, because it is the familiar
@@ -36,128 +49,166 @@ shape. In Swedish the s-passive is the more common of the two.
 
 ## The s-passive
 
-The <span lang="sv">-s</span> attaches to every form of the verb. In the
+The <Sv>-s</Sv> attaches to every form of the verb. In the
 present tense it replaces the active ending:
 
 | Form | Active | Passive |
 | --- | --- | --- |
-| Infinitive | <span lang="sv">öppna</span> | <span lang="sv">öppnas</span> |
-| Present | <span lang="sv">öppnar</span> | <span lang="sv">öppnas</span> |
-| Preterite | <span lang="sv">öppnade</span> | <span lang="sv">öppnades</span> |
-| Supine | <span lang="sv">öppnat</span> | <span lang="sv">öppnats</span> |
+| Infinitive | <Sv>öppna</Sv> | <Sv>öppnas</Sv> |
+| Present | <Sv>öppnar</Sv> | <Sv>öppnas</Sv> |
+| Preterite | <Sv>öppnade</Sv> | <Sv>öppnades</Sv> |
+| Supine | <Sv>öppnat</Sv> | <Sv>öppnats</Sv> |
 
 The same works for other verb groups:
 
 | Verb | Present | Preterite | Supine |
 | --- | --- | --- | --- |
-| <span lang="sv">köpa</span> | <span lang="sv">köps</span> | <span lang="sv">köptes</span> | <span lang="sv">köpts</span> |
-| <span lang="sv">skriva</span> | <span lang="sv">skrivs</span> | <span lang="sv">skrevs</span> | <span lang="sv">skrivits</span> |
+| <Sv>köpa</Sv> | <Sv>köps</Sv> | <Sv>köptes</Sv> | <Sv>köpts</Sv> |
+| <Sv>skriva</Sv> | <Sv>skrivs</Sv> | <Sv>skrevs</Sv> | <Sv>skrivits</Sv> |
 
 Examples in use:
 
-- <span lang="sv">Rummet städas varje dag.</span> — *The room is cleaned every
+- <Sv>Rummet städas varje dag.</Sv> — *The room is cleaned every
   day.*
-- <span lang="sv">Cykeln stals i går.</span> — *The bicycle was stolen
+- <Sv>Cykeln stals i går.</Sv> — *The bicycle was stolen
   yesterday.*
-- <span lang="sv">Boken skrevs av Astrid Lindgren.</span> — *The book was
+- <Sv>Boken skrevs av Astrid Lindgren.</Sv> — *The book was
   written by Astrid Lindgren.*
 
 The agent, when mentioned at all, is introduced by
-<span lang="sv">av</span>.
+<Sv>av</Sv>.
 
 <RuleBox title="Where the s-passive belongs">
 	Use it for general statements, routines, rules, instructions, and signs —
 	anything where the action matters more than who performs it:
-	<span lang="sv">Dörrarna stängs automatiskt.</span>
+	<Sv>Dörrarna stängs automatiskt.</Sv>
 </RuleBox>
 
 ## The bli-passive
 
-<span lang="sv">Bli</span> plus the past participle describes a single event
+<Sv>Bli</Sv> plus the past participle describes a single event
 and the change of state it causes:
 
-- <span lang="sv">Dörren blev öppnad.</span> — *The door was opened.*
-- <span lang="sv">Han blev vald till ordförande.</span> — *He was elected
+- <Sv>Dörren blev öppnad.</Sv> — *The door was opened.*
+- <Sv>Han blev vald till ordförande.</Sv> — *He was elected
   chairman.*
 
 The participle behaves like an adjective and agrees with the subject:
 
 | Subject | Example |
 | --- | --- |
-| en-word | <span lang="sv">Bilen blev såld.</span> |
-| ett-word | <span lang="sv">Huset blev sålt.</span> |
-| plural | <span lang="sv">Böckerna blev sålda.</span> |
+| en-word | <Sv>Bilen blev såld.</Sv> |
+| ett-word | <Sv>Huset blev sålt.</Sv> |
+| plural | <Sv>Böckerna blev sålda.</Sv> |
 
 See [adjective agreement](../../adjectives-adverbs/agreement/)
 for the endings.
 
-With <span lang="sv">vara</span> instead of <span lang="sv">bli</span>, the
+With <Sv>vara</Sv> instead of <Sv>bli</Sv>, the
 same participle describes a resulting state rather than the event:
-<span lang="sv">Huset är sålt.</span>
+<Sv>Huset är sålt.</Sv>
 
 ## Choosing between them
 
 | Situation | Preferred | Example |
 | --- | --- | --- |
-| routine, rule, general truth | s-passive | <span lang="sv">Maten lagas i köket.</span> |
-| written instructions and notices | s-passive | <span lang="sv">Biljetter köps i appen.</span> |
-| one specific event, spoken language | bli-passive | <span lang="sv">Han blev bjuden på fest.</span> |
-| emphasis on the resulting state | <span lang="sv">vara</span> + participle | <span lang="sv">Dörren är stängd.</span> |
+| routine, rule, general truth | s-passive | <Sv>Maten lagas i köket.</Sv> |
+| written instructions and notices | s-passive | <Sv>Biljetter köps i appen.</Sv> |
+| one specific event, spoken language | bli-passive | <Sv>Han blev bjuden på fest.</Sv> |
+| emphasis on the resulting state | <Sv>vara</Sv> + participle | <Sv>Dörren är stängd.</Sv> |
+
+## Direct comparison
+
+<LanguageComparison title="Routine, no agent">
+	<p slot="de">Das Zimmer wird jeden Tag geputzt.</p>
+	<p slot="en">The room is cleaned every day.</p>
+	<p slot="sv">Rummet städas varje dag.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Single event">
+	<p slot="de">Die Tür wurde geöffnet.</p>
+	<p slot="en">The door was opened.</p>
+	<p slot="sv">Dörren blev öppnad.</p>
+</LanguageComparison>
+
+German uses <span lang="de">werden</span> plus participle in both cases;
+Swedish splits them between the s-passive and the bli-passive.
 
 Both passives are often avoidable. Swedish frequently prefers an active
-sentence with <span lang="sv">man</span>:
-<span lang="sv">Man säger att…</span> — *It is said that…*
+sentence with <Sv>man</Sv>:
+<Sv>Man säger att…</Sv> — *It is said that…*
 
 ## s-verbs that are not passive
 
-Some verbs simply end in <span lang="sv">-s</span> and have no active form.
+Some verbs simply end in <Sv>-s</Sv> and have no active form.
 They are not passives, and translating them as one leads nowhere:
 
 | Verb | Meaning |
 | --- | --- |
-| <span lang="sv">finns</span> | there is, exists |
-| <span lang="sv">hoppas</span> | to hope |
-| <span lang="sv">trivs</span> | to feel at home, to enjoy being somewhere |
-| <span lang="sv">minns</span> | to remember |
-| <span lang="sv">lyckas</span> | to succeed |
-| <span lang="sv">andas</span> | to breathe |
+| <Sv>finns</Sv> | there is, exists |
+| <Sv>hoppas</Sv> | to hope |
+| <Sv>trivs</Sv> | to feel at home, to enjoy being somewhere |
+| <Sv>minns</Sv> | to remember |
+| <Sv>lyckas</Sv> | to succeed |
+| <Sv>andas</Sv> | to breathe |
 
-- <span lang="sv">Jag hoppas att du mår bra.</span>
-- <span lang="sv">Jag trivs i Malmö.</span>
+- <Sv>Jag hoppas att du mår bra.</Sv>
+- <Sv>Jag trivs i Malmö.</Sv>
 
 ## The reciprocal -s
 
-An <span lang="sv">-s</span> form can also mean that two or more people do
+An <Sv>-s</Sv> form can also mean that two or more people do
 something *to each other*:
 
-- <span lang="sv">Vi ses!</span> — *See you!*
-- <span lang="sv">De träffas varje vecka.</span> — *They meet every week.*
-- <span lang="sv">De kramades.</span> — *They hugged.*
+- <Sv>Vi ses!</Sv> — *See you!*
+- <Sv>De träffas varje vecka.</Sv> — *They meet every week.*
+- <Sv>De kramades.</Sv> — *They hugged.*
 
 <MemoryTip>
 Three short sentences cover the whole system:
-<span lang="sv"><strong>Rummet städas varje dag</strong></span> — routine.
-<span lang="sv"><strong>Dörren blev öppnad</strong></span> — single event.
-<span lang="sv"><strong>Vi ses!</strong></span> — each other, not passive at
+<Sv><strong>Rummet städas varje dag</strong></Sv> — routine.
+<Sv><strong>Dörren blev öppnad</strong></Sv> — single event.
+<Sv><strong>Vi ses!</strong></Sv> — each other, not passive at
 all.
 </MemoryTip>
 
 ## Common mistakes
 
 <MistakeBox title="Common mistakes">
-	- ❌ <span lang="sv">Rummet blir städat varje dag</span> as a default
-	  ✅ <span lang="sv">Rummet städas varje dag.</span>
-	- ❌ <span lang="sv">Huset blev sålld</span>
-	  ✅ <span lang="sv">Huset blev sålt.</span> — the participle agrees with the
+	- ❌ <Sv>Rummet blir städat varje dag</Sv> as a default
+	  ✅ <Sv>Rummet städas varje dag.</Sv>
+	- ❌ <Sv>Huset blev sålld</Sv>
+	  ✅ <Sv>Huset blev sålt.</Sv> — the participle agrees with the
 	  subject
-	- ❌ <span lang="sv">Jag hoppar att du mår bra</span>
-	  ✅ <span lang="sv">Jag hoppas att du mår bra.</span> —
-	  <span lang="sv">hoppas</span> has no active form
-	- ❌ <span lang="sv">Boken skrevs från Astrid Lindgren</span>
-	  ✅ <span lang="sv">Boken skrevs av Astrid Lindgren.</span>
-	- Do not reach for <span lang="sv">bli</span> just because German uses
+	- ❌ <Sv>Jag hoppar att du mår bra</Sv>
+	  ✅ <Sv>Jag hoppas att du mår bra.</Sv> —
+	  <Sv>hoppas</Sv> has no active form
+	- ❌ <Sv>Boken skrevs från Astrid Lindgren</Sv>
+	  ✅ <Sv>Boken skrevs av Astrid Lindgren.</Sv>
+	- Do not reach for <Sv>bli</Sv> just because German uses
 	  <span lang="de">werden</span>.
 </MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Put in the s-passive, present: Man städar rummet varje dag.',
+			answer: 'Rummet städas varje dag.',
+		},
+		{
+			prompt: 'Complete with the right participle form: Huset blev … .',
+			answer: 'Huset blev sålt.',
+		},
+		{
+			prompt: 'Give the s-passive preterite of skriva.',
+			answer: 'skrevs',
+		},
+		{
+			prompt: 'Correct this sentence: Jag hoppar att du mår bra.',
+			answer: 'Jag hoppas att du mår bra.',
+		},
+	]}
+/>
 
 <RelatedTopics
 	topics={[

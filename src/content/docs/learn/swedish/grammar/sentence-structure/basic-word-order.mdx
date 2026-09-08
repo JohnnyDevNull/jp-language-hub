@@ -22,9 +22,22 @@ related:
   - /learn/swedish/grammar/sentence-structure/inte-placement/
 ---
 
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+
+<KeyTakeaway>
+- The neutral main clause runs subject, finite verb, sentence adverb, remaining
+  verb parts, object, adverbial.
+- A sentence position holds one **constituent**, which may be several words.
+- Swedish verbs do not change according to person, so the position of the verb
+  carries the grammar instead.
+</KeyTakeaway>
 
 Swedish word order carries grammatical meaning. The most useful starting point is
 the neutral main-clause pattern, but that pattern changes when another sentence
@@ -36,32 +49,54 @@ In a neutral declarative main clause, Swedish usually follows this order:
 
 > **subject + finite verb + sentence adverb + remaining verb parts + object + adverbial**
 
-<p lang="sv">Jag köper inte bilen idag.</p>
+Read the clause as a row of fields. This is the neutral schema that
+[V2](../v2/), [inversion](../inversion/) and [BIFF](../biff/) vary:
 
-- <span lang="sv">Jag</span> — subject
-- <span lang="sv">köper</span> — finite verb
-- <span lang="sv">inte</span> — sentence adverb
-- <span lang="sv">bilen</span> — object
-- <span lang="sv">idag</span> — time adverbial
+<SentenceSchema
+	caption="The neutral main-clause schema"
+	rowHeader="Variant"
+	columns={[
+		'1 Fundament',
+		'2 Finite verb',
+		'3 Subject',
+		'Satsadverbial',
+		'Non-finite verb',
+		'Rest',
+	]}
+	rows={[
+		{ label: 'Neutral', cells: ['Jag', 'köper', '', '', '', 'bilen idag.'] },
+		{
+			label: 'With inte',
+			cells: ['Jag', 'köper', '', 'inte', '', 'bilen idag.'],
+		},
+		{
+			label: 'Two verbs',
+			cells: ['Jag', 'har', '', 'inte', 'köpt', 'bilen idag.'],
+		},
+		{
+			label: 'Deutsch (same pattern)',
+			lang: 'de',
+			cells: ['Ich', 'kaufe', '', '', '', 'das Auto heute.'],
+		},
+	]}
+/>
+
+In a neutral clause the subject fills position one itself, so position three
+stays empty. The German row fills the same opening fields, which is why the
+neutral pattern feels familiar; German differs later in the clause, where it
+sends non-finite verb forms to the very end.
+
+- <Sv>Jag</Sv> — subject
+- <Sv>köper</Sv> — finite verb
+- <Sv>inte</Sv> — sentence adverb
+- <Sv>bilen</Sv> — object
+- <Sv>idag</Sv> — time adverbial
 
 The finite verb carries tense and anchors the clause structure. Swedish verbs
 do not change according to person:
 
-- <span lang="sv">Jag arbetar.</span> — I work.
-- <span lang="sv">Vi arbetar.</span> — We work.
-
-## Direct comparison
-
-| Language | Neutral statement |
-| --- | --- |
-| <span lang="de">🇩🇪 Deutsch</span> | <span lang="de">Ich kaufe heute ein Auto.</span> |
-| <span lang="en">🇬🇧 English</span> | <span lang="en">I am buying a car today.</span> |
-| <span lang="sv">🇸🇪 Svenska</span> | <span lang="sv">Jag köper en bil idag.</span> |
-
-The three languages can look similar in a neutral sentence. The important
-difference appears when the first constituent changes: Swedish and German use
-[V2 word order](../v2/), whereas English normally keeps the subject
-before the verb.
+- <Sv>Jag arbetar.</Sv> — I work.
+- <Sv>Vi arbetar.</Sv> — We work.
 
 ## A constituent can contain several words
 
@@ -69,9 +104,8 @@ A sentence position is occupied by a **constituent**, not necessarily one word.
 
 <p lang="sv">På måndag morgon börjar jag mitt nya jobb.</p>
 
-The entire phrase <span lang="sv">på måndag morgon</span> occupies the first
-position. The finite verb <span lang="sv">börjar</span> is therefore second and
-the subject follows it.
+The entire phrase <Sv>på måndag morgon</Sv> occupies the first position. The
+finite verb <Sv>börjar</Sv> is therefore second and the subject follows it.
 
 ## Questions
 
@@ -84,20 +118,55 @@ followed by the finite verb:
 
 <p lang="sv">När köper du bilen?</p>
 
-The question phrase <span lang="sv">när</span> occupies the first position, so
-the finite verb remains second.
+The question phrase <Sv>när</Sv> occupies the first position, so the finite verb
+remains second.
 
 ## Main and subordinate clauses
 
-Compare the placement of <span lang="sv">inte</span>:
+The same fields also show what changes in a subordinate clause. Position two
+stays empty there: the finite verb leaves it and follows the sentence adverb.
 
-| Clause | Swedish example | Pattern |
-| --- | --- | --- |
-| Main clause | <span lang="sv">Jag kommer inte idag.</span> | subject + finite verb + <span lang="sv">inte</span> |
-| Subordinate clause | <span lang="sv">… eftersom jag inte kommer idag.</span> | conjunction + subject + <span lang="sv">inte</span> + finite verb |
+<SentenceSchema
+	caption="Main clause against subordinate clause"
+	rowHeader="Clause"
+	columns={[
+		'1 Fundament',
+		'2 Finite verb',
+		'3 Subject',
+		'Satsadverbial',
+		'Verb group',
+		'Rest',
+	]}
+	rows={[
+		{ label: 'Main clause', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] },
+		{
+			label: 'Subordinate clause',
+			cells: ['eftersom', '', 'jag', 'inte', 'kommer', 'idag.'],
+		},
+	]}
+/>
 
-The [BIFF rule](../biff/) is a useful way to remember this subordinate-
-clause pattern.
+The [BIFF rule](../biff/) is a useful way to remember this subordinate-clause
+pattern.
+
+## Direct comparison
+
+<LanguageComparison title="Neutral statement">
+	<p slot="de">Ich kaufe heute ein Auto.</p>
+	<p slot="en">I am buying a car today.</p>
+	<p slot="sv">Jag köper en bil idag.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Time expression first">
+	<p slot="de">Heute kaufe ich ein Auto.</p>
+	<p slot="en">Today I am buying a car.</p>
+	<p slot="sv">Idag köper jag en bil.</p>
+</LanguageComparison>
+
+The three languages can look similar in a neutral sentence. The important
+difference appears when the first constituent changes: Swedish and German use
+[V2 word order](../v2/), whereas English normally keeps the subject before the
+verb.
 
 <MistakeBox
 	incorrect="Idag jag köper en bil."
@@ -112,6 +181,23 @@ Start with **who + does what**, then add the rest. If something else moves to
 the front of a main clause, keep the finite verb in position two and move the
 subject behind it.
 </MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Put the words into a neutral main clause: idag / bilen / jag / köper / inte',
+			answer: 'Jag köper inte bilen idag.',
+		},
+		{
+			prompt: 'Turn “Du köper bilen idag.” into a yes/no question.',
+			answer: 'Köper du bilen idag?',
+		},
+		{
+			prompt: 'Which position does “på måndag morgon” occupy in “På måndag morgon börjar jag mitt nya jobb”?',
+			answer: 'Position one, as a single constituent.',
+		},
+	]}
+/>
 
 <RelatedTopics
 	topics={[

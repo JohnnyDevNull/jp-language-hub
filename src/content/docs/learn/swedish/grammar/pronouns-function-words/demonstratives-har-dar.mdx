@@ -20,12 +20,25 @@ related:
   - /learn/swedish/grammar/adjectives-adverbs/agreement/
 ---
 
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
 
-Swedish often uses <span lang="sv">här</span> and <span lang="sv">där</span>
+<KeyTakeaway>
+- Choose <Sv>den</Sv> for an en-word and <Sv>det</Sv> for an ett-word, then add
+  <Sv>här</Sv> for near and <Sv>där</Sv> for far.
+- The noun after <Sv>den här</Sv> and <Sv>den där</Sv> takes its definite form:
+  <Sv>den här nyckeln</Sv>.
+- Formal <Sv>denna</Sv>, <Sv>detta</Sv>, and <Sv>dessa</Sv> leave the noun
+  indefinite: <Sv>denna bok</Sv>.
+</KeyTakeaway>
+
+Swedish often uses <Sv>här</Sv> and <Sv>där</Sv>
 with demonstratives to distinguish “this here” from “that there”. The form
 before the noun follows the noun's gender.
 
@@ -33,45 +46,52 @@ before the noun follows the noun's gender.
 
 | Distance | en-word | ett-word |
 | --- | --- | --- |
-| near the speaker | <span lang="sv">den här jackan</span> | <span lang="sv">det här paraplyet</span> |
-| farther away | <span lang="sv">den där cykeln</span> | <span lang="sv">det där biblioteket</span> |
+| near the speaker | <Sv>den här jackan</Sv> | <Sv>det här paraplyet</Sv> |
+| farther away | <Sv>den där cykeln</Sv> | <Sv>det där biblioteket</Sv> |
 
-Use <span lang="sv">den</span> with en-words and <span lang="sv">det</span>
+Use <Sv>den</Sv> with en-words and <Sv>det</Sv>
 with ett-words:
 
-- <span lang="sv">den här nyckeln</span> — this key here
-- <span lang="sv">det här mejlet</span> — this email here
-- <span lang="sv">den där cykeln</span> — that bike there
-- <span lang="sv">det där biblioteket</span> — that library there
+- <Sv>den här nyckeln</Sv> — this key here
+- <Sv>det här mejlet</Sv> — this email here
+- <Sv>den där cykeln</Sv> — that bike there
+- <Sv>det där biblioteket</Sv> — that library there
 
 ## The noun is definite
 
-After <span lang="sv">den här</span>, <span lang="sv">det här</span>,
-<span lang="sv">den där</span>, and <span lang="sv">det där</span>, the noun
+After <Sv>den här</Sv>, <Sv>det här</Sv>,
+<Sv>den där</Sv>, and <Sv>det där</Sv>, the noun
 normally uses the definite form:
 
 | Indefinite | Demonstrative phrase |
 | --- | --- |
-| <span lang="sv">en nyckel</span> | <span lang="sv">den här nyckeln</span> |
-| <span lang="sv">ett paraply</span> | <span lang="sv">det här paraplyet</span> |
-| <span lang="sv">en cykel</span> | <span lang="sv">den där cykeln</span> |
-| <span lang="sv">ett bibliotek</span> | <span lang="sv">det där biblioteket</span> |
+| <Sv>en nyckel</Sv> | <Sv>den här nyckeln</Sv> |
+| <Sv>ett paraply</Sv> | <Sv>det här paraplyet</Sv> |
+| <Sv>en cykel</Sv> | <Sv>den där cykeln</Sv> |
+| <Sv>ett bibliotek</Sv> | <Sv>det där biblioteket</Sv> |
 
 This is one reason the four noun forms are useful to learn early.
 
 ## Standing alone
 
 When the noun is not spoken directly after the demonstrative, Swedish normally
-uses <span lang="sv">det här</span> or <span lang="sv">det där</span> as a
+uses <Sv>det här</Sv> or <Sv>det där</Sv> as a
 general “this” or “that”:
 
-| Svenska | Deutsch | English |
-| --- | --- | --- |
-| <span lang="sv">Det här är min plats.</span> | <span lang="de">Das hier ist mein Platz.</span> | <span lang="en">This is my seat.</span> |
-| <span lang="sv">Det där är vår buss.</span> | <span lang="de">Das dort ist unser Bus.</span> | <span lang="en">That is our bus.</span> |
+<LanguageComparison title="This here">
+	<p slot="de">Das hier ist mein Platz.</p>
+	<p slot="en">This is my seat.</p>
+	<p slot="sv">Det här är min plats.</p>
+</LanguageComparison>
 
-In <span lang="sv">Det här är min plats</span>, the demonstrative is not
-attached to the noun phrase <span lang="sv">min plats</span>. It points to the
+<LanguageComparison title="That there">
+	<p slot="de">Das dort ist unser Bus.</p>
+	<p slot="en">That is our bus.</p>
+	<p slot="sv">Det där är vår buss.</p>
+</LanguageComparison>
+
+In <Sv>Det här är min plats</Sv>, the demonstrative is not
+attached to the noun phrase <Sv>min plats</Sv>. It points to the
 situation as “this”.
 
 ## With adjectives
@@ -81,16 +101,16 @@ definite adjective form and the noun still remains definite:
 
 | Phrase | Pattern |
 | --- | --- |
-| <span lang="sv">den här varma jackan</span> | <span lang="sv">den här</span> + definite adjective + definite noun |
-| <span lang="sv">det där nya biblioteket</span> | <span lang="sv">det där</span> + definite adjective + definite noun |
+| <Sv>den här varma jackan</Sv> | <Sv>den här</Sv> + definite adjective + definite noun |
+| <Sv>det där nya biblioteket</Sv> | <Sv>det där</Sv> + definite adjective + definite noun |
 
 This is closely related to [double definiteness](../../adjectives-adverbs/agreement/#definite-noun-phrases-and-double-definiteness).
 
 ## The formal alternative: denna, detta, dessa
 
-<span lang="sv">Denna</span>, <span lang="sv">detta</span>, and
-<span lang="sv">dessa</span> mean the same as <span lang="sv">den här</span>,
-<span lang="sv">det här</span>, and <span lang="sv">de här</span>, but they
+<Sv>Denna</Sv>, <Sv>detta</Sv>, and
+<Sv>dessa</Sv> mean the same as <Sv>den här</Sv>,
+<Sv>det här</Sv>, and <Sv>de här</Sv>, but they
 belong to written and formal Swedish: reports, notices, contracts, academic
 prose.
 
@@ -99,48 +119,69 @@ They behave differently in one important way — the noun after them stays
 
 | Everyday | Formal |
 | --- | --- |
-| <span lang="sv">den här boken</span> | <span lang="sv">denna bok</span> |
-| <span lang="sv">det här huset</span> | <span lang="sv">detta hus</span> |
-| <span lang="sv">de här böckerna</span> | <span lang="sv">dessa böcker</span> |
+| <Sv>den här boken</Sv> | <Sv>denna bok</Sv> |
+| <Sv>det här huset</Sv> | <Sv>detta hus</Sv> |
+| <Sv>de här böckerna</Sv> | <Sv>dessa böcker</Sv> |
 
-- <span lang="sv">Denna fråga är viktig.</span> — *This question is
+- <Sv>Denna fråga är viktig.</Sv> — *This question is
   important.*
-- <span lang="sv">Detta beslut gäller från januari.</span>
+- <Sv>Detta beslut gäller från januari.</Sv>
 
-An adjective in between takes the definite <span lang="sv">-a</span> form, as
-always: <span lang="sv">denna viktiga fråga</span>.
+An adjective in between takes the definite <Sv>-a</Sv> form, as
+always: <Sv>denna viktiga fråga</Sv>.
 
 Referring to a male person, formal Swedish also has
-<span lang="sv">denne</span>: <span lang="sv">denne författare</span>. Like the
-masculine <span lang="sv">-e</span> on adjectives, this is worth recognizing
+<Sv>denne</Sv>: <Sv>denne författare</Sv>. Like the
+masculine <Sv>-e</Sv> on adjectives, this is worth recognizing
 rather than using.
 
 <RuleBox title="Which one to use">
-	In speech and everyday writing, use <span lang="sv">den här</span> with a
-	definite noun. Reach for <span lang="sv">denna</span> only in formal writing
+	In speech and everyday writing, use <Sv>den här</Sv> with a
+	definite noun. Reach for <Sv>denna</Sv> only in formal writing
 	— and then remember to leave the noun indefinite.
 </RuleBox>
 
 <MistakeBox title="Common mistakes">
-	- ❌ <span lang="sv">den här nyckel</span>
-	  ✅ <span lang="sv">den här nyckeln</span>
-	- ❌ <span lang="sv">det här jackan</span>
-	  ✅ <span lang="sv">den här jackan</span>
-	- ❌ <span lang="sv">den här varm jackan</span>
-	  ✅ <span lang="sv">den här varma jackan</span>
-	- ❌ <span lang="sv">denna boken</span>
-	  ✅ <span lang="sv">denna bok</span> — the noun stays indefinite after
-	  <span lang="sv">denna</span>
-	- ❌ <span lang="sv">detta bok</span>
-	  ✅ <span lang="sv">denna bok</span> — <span lang="sv">bok</span> is an
+	- ❌ <Sv>den här nyckel</Sv>
+	  ✅ <Sv>den här nyckeln</Sv>
+	- ❌ <Sv>det här jackan</Sv>
+	  ✅ <Sv>den här jackan</Sv>
+	- ❌ <Sv>den här varm jackan</Sv>
+	  ✅ <Sv>den här varma jackan</Sv>
+	- ❌ <Sv>denna boken</Sv>
+	  ✅ <Sv>denna bok</Sv> — the noun stays indefinite after
+	  <Sv>denna</Sv>
+	- ❌ <Sv>detta bok</Sv>
+	  ✅ <Sv>denna bok</Sv> — <Sv>bok</Sv> is an
 	  en-word
 </MistakeBox>
 
 <MemoryTip>
-First choose <span lang="sv">den</span> or <span lang="sv">det</span> from the
+First choose <Sv>den</Sv> or <Sv>det</Sv> from the
 noun's gender. Then use the noun's definite form:
-<span lang="sv"><strong>en nyckel → den här nyckeln</strong></span>.
+<Sv><strong>en nyckel → den här nyckeln</strong></Sv>.
 </MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Point at a key close to you: en nyckel → ?',
+			answer: 'den här nyckeln',
+		},
+		{
+			prompt: 'Point at a library across the street: ett bibliotek → ?',
+			answer: 'det där biblioteket',
+		},
+		{
+			prompt: 'Correct this: denna boken',
+			answer: 'denna bok',
+		},
+		{
+			prompt: 'Add varm to den här jackan.',
+			answer: 'den här varma jackan',
+		},
+	]}
+/>
 
 <RelatedTopics
 	topics={[

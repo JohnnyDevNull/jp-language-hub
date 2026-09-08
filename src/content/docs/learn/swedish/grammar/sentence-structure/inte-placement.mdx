@@ -20,43 +20,105 @@ related:
   - /learn/swedish/grammar/sentence-structure/basic-word-order/
 ---
 
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
 
-The position of Swedish <span lang="sv">inte</span> depends on the type of
-clause. The central contrast is simple: it normally follows the finite verb in a
-main clause but precedes the finite verb in a subordinate clause.
+<KeyTakeaway>
+- <Sv>inte</Sv> follows the finite verb in a main clause and precedes it in a
+  subordinate clause.
+- If a subject follows the finite verb, <Sv>inte</Sv> comes after that subject.
+- With two verbs, <Sv>inte</Sv> sits between the finite verb and the non-finite
+  verb.
+</KeyTakeaway>
+
+The position of Swedish <Sv>inte</Sv> depends on the type of clause. The central
+contrast is simple: it normally follows the finite verb in a main clause but
+precedes the finite verb in a subordinate clause.
+
+## Core rule
+
+One set of fields covers both clause types. <Sv>inte</Sv> always sits in the
+same sentence-adverb field; what moves is the finite verb. In the main clause it
+holds position two, in the subordinate clause position two is empty and the verb
+follows <Sv>inte</Sv>:
+
+<SentenceSchema
+	caption="inte in the main clause and in the subordinate clause"
+	rowHeader="Clause"
+	columns={[
+		'1 Fundament',
+		'2 Finite verb',
+		'3 Subject',
+		'Satsadverbial',
+		'Verb group',
+		'Rest',
+	]}
+	rows={[
+		{ label: 'Main clause', cells: ['Hon', 'arbetar', '', 'inte', '', 'idag.'] },
+		{
+			label: 'Main clause, fronted',
+			cells: ['Idag', 'arbetar', 'hon', 'inte.', '', ''],
+		},
+		{
+			label: 'Main clause, two verbs',
+			cells: ['Hon', 'vill', '', 'inte', 'gå', 'hem.'],
+		},
+		{
+			label: 'Subordinate clause',
+			cells: ['eftersom', '', 'hon', 'inte', 'arbetar', 'idag.'],
+		},
+		{
+			label: 'Deutsch, Hauptsatz',
+			lang: 'de',
+			cells: ['Sie', 'arbeitet', '', 'heute', '', 'nicht.'],
+		},
+		{
+			label: 'Deutsch, Nebensatz',
+			lang: 'de',
+			cells: ['weil', '', 'sie', 'heute nicht', 'arbeitet.', ''],
+		},
+	]}
+/>
+
+The two German rows show both sides of the parallel. German splits main and
+subordinate clauses just as Swedish does, but it moves the finite verb all the
+way to the end of the subordinate clause, while Swedish moves it only past the
+sentence adverb.
 
 ## Main clauses
 
-In a main clause, <span lang="sv">inte</span> normally comes after the finite
-verb and after a subject that follows that verb:
+In a main clause, <Sv>inte</Sv> normally comes after the finite verb and after a
+subject that follows that verb:
 
-- <span lang="sv">Jag <strong>kommer inte</strong> idag.</span>
-- <span lang="sv">Idag <strong>kommer jag inte</strong>.</span>
-- <span lang="sv">Jag <strong>har inte</strong> köpt bilen.</span>
+- <Sv>Jag <strong>kommer inte</strong> idag.</Sv>
+- <Sv>Idag <strong>kommer jag inte</strong>.</Sv>
+- <Sv>Jag <strong>har inte</strong> köpt bilen.</Sv>
 
-With a compound verb phrase, <span lang="sv">inte</span> follows the finite
-auxiliary and precedes the non-finite verb:
+With a compound verb phrase, <Sv>inte</Sv> follows the finite auxiliary and
+precedes the non-finite verb:
 
 <p lang="sv">Hon <strong>vill inte gå</strong> hem.</p>
 
 ## Subordinate clauses
 
-In a subordinate clause, <span lang="sv">inte</span> normally comes before the
-finite verb:
+In a subordinate clause, <Sv>inte</Sv> normally comes before the finite verb:
 
-- <span lang="sv">… eftersom jag <strong>inte kommer</strong> idag.</span>
-- <span lang="sv">… att hon <strong>inte har</strong> köpt bilen.</span>
-- <span lang="sv">… om vi <strong>inte kan</strong> träffas.</span>
+- <Sv>… eftersom jag <strong>inte kommer</strong> idag.</Sv>
+- <Sv>… att hon <strong>inte har</strong> köpt bilen.</Sv>
+- <Sv>… om vi <strong>inte kan</strong> träffas.</Sv>
 
 This contrast is summarized by [BIFF](../biff/).
 
 ## Questions
 
 In a yes/no question, the finite verb comes first, followed by the subject and
-then <span lang="sv">inte</span>:
+then <Sv>inte</Sv>:
 
 <p lang="sv">Kommer du inte imorgon?</p>
 
@@ -69,37 +131,63 @@ if the speaker expected a positive answer.
 
 ## Imperatives and infinitives
 
-With a negative imperative, place <span lang="sv">inte</span> after the verb:
+With a negative imperative, place <Sv>inte</Sv> after the verb:
 
 <p lang="sv">Glöm inte nycklarna!</p>
 
-When an infinitive itself is negated, <span lang="sv">inte</span> normally comes
-before it:
+When an infinitive itself is negated, <Sv>inte</Sv> normally comes before it:
 
 <p lang="sv">Det är svårt att inte tänka på det.</p>
 
 ## Direct comparison
 
-| Language | Main clause | Because-clause |
-| --- | --- | --- |
-| <span lang="de">🇩🇪 Deutsch</span> | <span lang="de">Sie arbeitet heute nicht.</span> | <span lang="de">… weil sie heute nicht arbeitet.</span> |
-| <span lang="en">🇬🇧 English</span> | <span lang="en">She is not working today.</span> | <span lang="en">… because she is not working today.</span> |
-| <span lang="sv">🇸🇪 Svenska</span> | <span lang="sv">Hon arbetar inte idag.</span> | <span lang="sv">… eftersom hon inte arbetar idag.</span> |
+<LanguageComparison title="Main clause">
+	<p slot="de">Sie arbeitet heute nicht.</p>
+	<p slot="en">She is not working today.</p>
+	<p slot="sv">Hon arbetar inte idag.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Because-clause">
+	<p slot="de">… weil sie heute nicht arbeitet.</p>
+	<p slot="en">… because she is not working today.</p>
+	<p slot="sv">… eftersom hon inte arbetar idag.</p>
+</LanguageComparison>
 
 <MistakeBox
 	incorrect="Jag vet att hon arbetar inte idag."
 	correct="Jag vet att hon inte arbetar idag."
 	lang="sv"
 >
-Do not place <span lang="sv">inte</span> after the finite verb merely because the
-clause contains an explicit subject. First decide whether it is a main clause or
-a subordinate clause.
+Do not place <Sv>inte</Sv> after the finite verb merely because the clause
+contains an explicit subject. First decide whether it is a main clause or a
+subordinate clause.
 </MistakeBox>
 
 <MemoryTip>
-**Main clause:** finite first, then <span lang="sv">inte</span>.  
-**Subordinate clause:** <span lang="sv">inte</span> first, then finite.
+**Main clause:** finite first, then <Sv>inte</Sv>.  
+**Subordinate clause:** <Sv>inte</Sv> first, then finite.
 </MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Negate with inte: Hon arbetar idag.',
+			answer: 'Hon arbetar inte idag.',
+		},
+		{
+			prompt: 'Negate the same clause after eftersom: … eftersom hon arbetar idag.',
+			answer: '… eftersom hon inte arbetar idag.',
+		},
+		{
+			prompt: 'Negate the compound verb phrase: Hon vill gå hem.',
+			answer: 'Hon vill inte gå hem.',
+		},
+		{
+			prompt: 'Negate the yes/no question: Kommer du imorgon?',
+			answer: 'Kommer du inte imorgon?',
+		},
+	]}
+/>
 
 <RelatedTopics
 	topics={[

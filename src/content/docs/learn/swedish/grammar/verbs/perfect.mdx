@@ -22,57 +22,86 @@ related:
   - /learn/swedish/grammar/sentence-structure/biff/
 ---
 
+import { getCollection } from 'astro:content';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import VerbTable from '~/components/VerbTable.astro';
+
+export const verbs = await getCollection('verbs');
+export const representative = (id) => {
+	const entry = verbs.find((candidate) => candidate.id === id);
+	if (!entry) {
+		throw new Error(`Missing required verb entry: ${id}`);
+	}
+	return entry.data;
+};
+export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-skriva'].map(
+	representative,
+);
+
+<KeyTakeaway>
+- The perfect is <Sv>har</Sv> + supine, and <Sv>har</Sv> is the same for every
+  subject.
+- Use it when the present result, the experience or an unfinished time period
+  matters.
+- The supine is a form of its own: <Sv>har köpt</Sv>, never
+  <Sv>har köpa</Sv> or <Sv>har köpte</Sv>.
+</KeyTakeaway>
 
 The Swedish perfect connects a past event or state to the present. It is formed
-with present-tense <span lang="sv">har</span> plus the verb's supine.
+with present-tense <Sv>har</Sv> plus the verb's supine.
 
 ## Core rule
 
-**Pattern:** <span lang="sv">har</span> + supine
+**Pattern:** <Sv>har</Sv> + supine
 
-- <span lang="sv">Jag har köpt en bok.</span>
-- <span lang="sv">Hon har skrivit ett mejl.</span>
-- <span lang="sv">Vi har bott här länge.</span>
+- <Sv>Jag har köpt en bok.</Sv>
+- <Sv>Hon har skrivit ett mejl.</Sv>
+- <Sv>Vi har bott här länge.</Sv>
 
-The auxiliary <span lang="sv">har</span> is identical for every subject. The
+The auxiliary <Sv>har</Sv> is identical for every subject. The
 supine is a dedicated verb form:
 
-| Infinitive | Preterite | Supine | Perfect |
-| --- | --- | --- | --- |
-| <span lang="sv">köpa</span> | <span lang="sv">köpte</span> | <span lang="sv">köpt</span> | <span lang="sv">har köpt</span> |
-| <span lang="sv">skriva</span> | <span lang="sv">skrev</span> | <span lang="sv">skrivit</span> | <span lang="sv">har skrivit</span> |
-| <span lang="sv">bo</span> | <span lang="sv">bodde</span> | <span lang="sv">bott</span> | <span lang="sv">har bott</span> |
+<VerbTable
+	caption="Perfect forms, one verb per group"
+	forms={groupExamples.map((verb) => ({
+		label: `Group ${verb.group}: ${verb.lemma}`,
+		value: `har ${verb.morphology.supine}`,
+	}))}
+/>
 
 <MistakeBox title="Supine, not infinitive">
-After <span lang="sv">har</span>, use <span lang="sv">köpt</span>, not
-<span lang="sv">köpa</span> or <span lang="sv">köpte</span>.
+After <Sv>har</Sv>, use <Sv>köpt</Sv>, not
+<Sv>köpa</Sv> or <Sv>köpte</Sv>.
 </MistakeBox>
 
 ## Main uses
 
 ### Present result
 
-<span lang="sv">Jag har tappat nyckeln.</span>
+<Sv>Jag har tappat nyckeln.</Sv>
 
 The key is missing now; the current result matters.
 
 ### Experience up to now
 
-<span lang="sv">Har du varit i Kiruna?</span>
+<Sv>Har du varit i Kiruna?</Sv>
 
 The question concerns the person's experience, not one specified past visit.
 
 ### A situation continuing until now
 
-<span lang="sv">Vi har bott här i tre år.</span>
+<Sv>Vi har bott här i tre år.</Sv>
 
 Without further context, this normally means that we still live here.
 
 ### An unfinished time period
 
-<span lang="sv">Jag har läst två kapitel idag.</span>
+<Sv>Jag har läst två kapitel idag.</Sv>
 
 Today is treated as still current. If the speaker instead narrates a completed
 past occasion, the preterite may be the appropriate perspective.
@@ -81,37 +110,69 @@ past occasion, the preterite may be the appropriate perspective.
 
 | Focus | Swedish example |
 | --- | --- |
-| Present relevance or experience | <span lang="sv">Jag har sett filmen.</span> |
-| Completed past time | <span lang="sv">Jag såg filmen i lördags.</span> |
+| Present relevance or experience | <Sv>Jag har sett filmen.</Sv> |
+| Completed past time | <Sv>Jag såg filmen i lördags.</Sv> |
+
+## Direct comparison
+
+<LanguageComparison title="Present relevance">
+	<p slot="de">Ich habe den Film gesehen.</p>
+	<p slot="en">I have seen the film.</p>
+	<p slot="sv">Jag har sett filmen.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Completed past time">
+	<p slot="de">Ich habe den Film am Samstag gesehen.</p>
+	<p slot="en">I saw the film on Saturday.</p>
+	<p slot="sv">Jag såg filmen i lördags.</p>
+</LanguageComparison>
 
 English provides a useful structural bridge—<span lang="en">have + past
 participle</span>—but English and Swedish tense choices do not align in every
 context. German also forms a perfect with an auxiliary and a participle, yet
-spoken German uses it more broadly for ordinary past narration.
+spoken German uses it more broadly for ordinary past narration: the second
+block above keeps the German perfect where Swedish takes the preterite.
 
 ## Negation and word order
 
-In a main clause, <span lang="sv">inte</span> follows the finite auxiliary:
+In a main clause, <Sv>inte</Sv> follows the finite auxiliary:
 
-<span lang="sv">Jag har inte läst boken.</span>
+<Sv>Jag har inte läst boken.</Sv>
 
 In a subordinate clause, it normally precedes the finite auxiliary:
 
-<span lang="sv">… eftersom jag inte har läst boken.</span>
+<Sv>… eftersom jag inte har läst boken.</Sv>
 
-Only <span lang="sv">har</span> is finite; <span lang="sv">läst</span> is the
+Only <Sv>har</Sv> is finite; <Sv>läst</Sv> is the
 supine. This distinction helps when applying V2 and BIFF.
 
 ## Common mistakes
 
 <MistakeBox title="Common mistakes">
-	- ❌ <span lang="sv">Jag har köpa boken.</span>
-	  ✅ <span lang="sv">Jag har köpt boken.</span>
-	- ❌ <span lang="sv">Jag har köpte boken.</span>
-	  ✅ <span lang="sv">Jag har köpt boken.</span>
+	- ❌ <Sv>Jag har köpa boken.</Sv>
+	  ✅ <Sv>Jag har köpt boken.</Sv>
+	- ❌ <Sv>Jag har köpte boken.</Sv>
+	  ✅ <Sv>Jag har köpt boken.</Sv>
 	- Avoid mechanically copying the German perfect whenever Swedish places the
 	  event in a finished past time frame.
 </MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Build the perfect of skriva with jag and ett mejl.',
+			answer: 'Jag har skrivit ett mejl.',
+		},
+		{
+			prompt: 'Correct this sentence: Jag har köpte boken.',
+			answer: 'Jag har köpt boken.',
+		},
+		{
+			prompt: 'Where does inte go in “Jag har läst boken”?',
+			answer: 'Jag har inte läst boken.',
+		},
+	]}
+/>
 
 <RelatedTopics
 	topics={[

@@ -21,26 +21,73 @@ related:
   - /learn/swedish/grammar/sentence-structure/basic-word-order/
 ---
 
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+
+<KeyTakeaway>
+- In a subordinate clause, <Sv>inte</Sv> comes **before** the finite verb; in a
+  main clause it comes after it.
+- The subordinate clause leaves position two empty: the finite verb moves behind
+  the sentence adverb.
+- The same position is used by other sentence adverbs, not only <Sv>inte</Sv>.
+</KeyTakeaway>
 
 **BIFF** is a Swedish memory rule for the placement of sentence adverbs in
 subordinate clauses:
 
 > **B**isats: **I**nte **F**öre **F**init  
-> In a subordinate clause, <span lang="sv">inte</span> comes before the finite verb.
+> In a subordinate clause, <Sv>inte</Sv> comes before the finite verb.
 
-## Core contrast
-
-| Clause | Swedish | Position of *inte* |
-| --- | --- | --- |
-| Main clause | <span lang="sv">Jag <strong>kommer inte</strong> idag.</span> | after the finite verb |
-| Subordinate clause | <span lang="sv">… eftersom jag <strong>inte kommer</strong> idag.</span> | before the finite verb |
-
-A practical subordinate-clause pattern is:
+## Core rule
 
 > **subordinator + subject + sentence adverb + finite verb + rest**
+
+The same fields make the shift visible. In the main clause the finite verb sits
+in position two and <Sv>inte</Sv> follows it. In the subordinate clause position
+two is empty: the finite verb has moved into the verb group behind
+<Sv>inte</Sv>.
+
+<SentenceSchema
+	caption="Position of inte in the main clause and in the bisats"
+	rowHeader="Clause"
+	columns={[
+		'1 Fundament',
+		'2 Finite verb',
+		'3 Subject',
+		'Satsadverbial',
+		'Verb group',
+		'Rest',
+	]}
+	rows={[
+		{ label: 'Main clause', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] },
+		{
+			label: 'Subordinate clause',
+			cells: ['eftersom', '', 'jag', 'inte', 'kommer', 'idag.'],
+		},
+		{
+			label: 'Deutsch, Hauptsatz',
+			lang: 'de',
+			cells: ['Ich', 'komme', '', 'heute nicht.', '', ''],
+		},
+		{
+			label: 'Deutsch, Nebensatz',
+			lang: 'de',
+			cells: ['weil', '', 'ich', 'heute nicht', 'komme.', ''],
+		},
+	]}
+/>
+
+The German rows are worth reading closely. German makes the same main-clause
+versus subordinate-clause split, and the sentence adverb also ends up before the
+verb — but for a different reason: German sends the whole finite verb to the
+**end** of the subordinate clause. Swedish only moves it behind the sentence
+adverb, and anything else in the clause still follows it.
 
 <p lang="sv">Jag stannar hemma <strong>eftersom jag inte mår bra</strong>.</p>
 
@@ -48,35 +95,40 @@ A practical subordinate-clause pattern is:
 
 BIFF becomes useful after words such as:
 
-- <span lang="sv">att</span> — that
-- <span lang="sv">eftersom</span> — because
-- <span lang="sv">om</span> — if / whether
-- <span lang="sv">när</span> — when
-- <span lang="sv">fast</span> — although / even though
-- <span lang="sv">innan</span> — before
+- <Sv>att</Sv> — that
+- <Sv>eftersom</Sv> — because
+- <Sv>om</Sv> — if / whether
+- <Sv>när</Sv> — when
+- <Sv>fast</Sv> — although / even though
+- <Sv>innan</Sv> — before
 
 Examples:
 
-- <span lang="sv">Jag vet att hon inte arbetar idag.</span>
-- <span lang="sv">Vi går ut om det inte regnar.</span>
-- <span lang="sv">Han ringde när jag inte var hemma.</span>
+- <Sv>Jag vet att hon inte arbetar idag.</Sv>
+- <Sv>Vi går ut om det inte regnar.</Sv>
+- <Sv>Han ringde när jag inte var hemma.</Sv>
 
 ## More than *inte*
 
-The same position is used by many sentence adverbs, for example
-<span lang="sv">alltid</span>, <span lang="sv">aldrig</span>,
-<span lang="sv">kanske</span>, and <span lang="sv">redan</span>, although their
-exact meaning and preferred placement can depend on context.
+The same position is used by many sentence adverbs, for example <Sv>alltid</Sv>,
+<Sv>aldrig</Sv>, <Sv>kanske</Sv>, and <Sv>redan</Sv>, although their exact
+meaning and preferred placement can depend on context.
 
 <p lang="sv">Hon säger att hon <strong>aldrig äter</strong> kött.</p>
 
 ## Direct comparison
 
-| Language | Main clause | Subordinate clause |
-| --- | --- | --- |
-| <span lang="de">🇩🇪 Deutsch</span> | <span lang="de">Ich komme heute nicht.</span> | <span lang="de">… weil ich heute nicht komme.</span> |
-| <span lang="en">🇬🇧 English</span> | <span lang="en">I am not coming today.</span> | <span lang="en">… because I am not coming today.</span> |
-| <span lang="sv">🇸🇪 Svenska</span> | <span lang="sv">Jag kommer inte idag.</span> | <span lang="sv">… eftersom jag inte kommer idag.</span> |
+<LanguageComparison title="Main clause">
+	<p slot="de">Ich komme heute nicht.</p>
+	<p slot="en">I am not coming today.</p>
+	<p slot="sv">Jag kommer inte idag.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Subordinate clause">
+	<p slot="de">… weil ich heute nicht komme.</p>
+	<p slot="en">… because I am not coming today.</p>
+	<p slot="sv">… eftersom jag inte kommer idag.</p>
+</LanguageComparison>
 
 English does not show the Swedish finite-verb contrast clearly. German also
 changes subordinate-clause order, but its finite verb normally moves to the end;
@@ -99,6 +151,23 @@ verb forms, and the rest of the clause.
 <MemoryTip>
 In a **BI**sats, put **I**nte **F**öre the **F**inite verb.
 </MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Join with eftersom: Jag stannar hemma. + Jag mår inte bra.',
+			answer: 'Jag stannar hemma eftersom jag inte mår bra.',
+		},
+		{
+			prompt: 'Correct this sentence: Jag vet att hon arbetar inte idag.',
+			answer: 'Jag vet att hon inte arbetar idag.',
+		},
+		{
+			prompt: 'Place aldrig: Hon säger att hon äter kött.',
+			answer: 'Hon säger att hon aldrig äter kött.',
+		},
+	]}
+/>
 
 <RelatedTopics
 	topics={[
