@@ -105,9 +105,7 @@ export default defineConfig({
 										{
 											slug: 'grammar/pronouns-function-words/swedish/demonstratives-har-dar',
 										},
-										{
-											slug: 'grammar/pronouns-function-words/swedish/prepositions-place-direction',
-										},
+										{ slug: 'grammar/pronouns-function-words/swedish/prepositions' },
 									],
 								},
 							],
