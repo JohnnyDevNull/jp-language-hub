@@ -12,6 +12,7 @@ compact, link back to complete explanations, and remain usable on small screens.
 - [V2 and BIFF](./swedish-v2-biff/)
 - [Swedish noun forms](./swedish-noun-forms/)
 - [Swedish verb forms](./swedish-verb-forms/)
+- [Swedish particle verbs](./swedish-particle-verbs/)
 
 Detailed grammar pages remain the canonical source when a short overview is not
 enough.

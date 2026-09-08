@@ -162,6 +162,7 @@ export default defineConfig({
 						{ slug: 'cheat-sheets/swedish-v2-biff' },
 						{ slug: 'cheat-sheets/swedish-noun-forms' },
 						{ slug: 'cheat-sheets/swedish-verb-forms' },
+						{ slug: 'cheat-sheets/swedish-particle-verbs' },
 					],
 				},
 				{ slug: 'practice' },

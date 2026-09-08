@@ -34,6 +34,22 @@ The form is the same for every person:
 | 3 | <span lang="sv">-r</span> | <span lang="sv">-dde</span> | <span lang="sv">-tt</span> | <span lang="sv">bor — bodde — bott</span> |
 | 4 / irregular | varies | varies | varies | <span lang="sv">skriver — skrev — skrivit</span> |
 
+## Passive
+
+| Passive | Pattern | Example |
+| --- | --- | --- |
+| s-passive, present | present ending → <span lang="sv">-s</span> | <span lang="sv">Rummet städas varje dag.</span> |
+| s-passive, preterite | preterite + <span lang="sv">-s</span> | <span lang="sv">Cykeln stals i går.</span> |
+| s-passive, supine | supine + <span lang="sv">-s</span> | <span lang="sv">Dörren har öppnats.</span> |
+| bli-passive | <span lang="sv">bli</span> + agreeing participle | <span lang="sv">Huset blev sålt.</span> |
+
+Routine or general rule → s-passive. One specific event →
+<span lang="sv">bli</span>. The agent takes <span lang="sv">av</span>:
+<span lang="sv">skrevs av Astrid Lindgren</span>.
+
+<span lang="sv">finns, hoppas, trivs, minns, lyckas, andas</span> end in
+<span lang="sv">-s</span> but are not passives.
+
 :::tip[Fast recall]
 Learn present — preterite — supine as one spoken chain:
 <span lang="sv">köper — köpte — köpt</span>.
@@ -53,3 +69,4 @@ Learn present — preterite — supine as one spoken chain:
 - [Swedish preterite](../../grammar/verbs/swedish/preterite/)
 - [Swedish perfect](../../grammar/verbs/swedish/perfect/)
 - [Swedish verb groups](../../grammar/verbs/swedish/verb-groups/)
+- [Swedish passive](../../grammar/verbs/swedish/passive/)
