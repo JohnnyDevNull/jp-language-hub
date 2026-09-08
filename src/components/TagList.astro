@@ -1,18 +1,48 @@
 ---
+import { importantIndexPath, levelIndexPath } from '~/lib/content-index-paths';
+import { getLearnLanguageFromPathname } from '~/lib/learn-languages';
+
 interface Props {
+	levels?: string[];
 	tags?: string[];
 	label?: string;
 }
 
-const { tags = [], label = 'Tags' } = Astro.props;
+const { levels = [], tags = [], label = 'Level and tags' } = Astro.props;
+
+const { locale } = Astro.locals.starlightRoute;
+const learnLanguage = getLearnLanguageFromPathname(Astro.url.pathname);
+const levelHref = levelIndexPath(locale, learnLanguage);
+const importantHref = importantIndexPath(locale, learnLanguage);
+
+/* A pill becomes a link only where an index page can answer it. The remaining
+   tags classify the page for search and future indexes; presenting them as
+   links would promise navigation that does not exist. */
+const items = [
+	...levels.map((level) => ({ label: level, href: levelHref })),
+	...tags.map((tag) => ({
+		label: tag,
+		href: tag === 'important' ? importantHref : undefined,
+	})),
+];
 ---
 
 {
-	tags.length > 0 && (
+	items.length > 0 && (
 		<aside class="tag-list" aria-label={label}>
 			<p class="tag-list-label" aria-hidden="true">{label}</p>
 			<ul class="tag-list-items">
-				{tags.map((tag) => <li class="tag-list-item">{tag}</li>)}
+				{items.map((item) => (
+					<li class="tag-list-item">
+						{item.href ? (
+							<a class="tag-list-link" href={item.href}>
+								{item.label}
+							</a>
+						) : (
+							item.label
+						)}
+					</li>
+				))}
 			</ul>
 		</aside>
 	)

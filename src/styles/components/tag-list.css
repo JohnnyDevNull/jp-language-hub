@@ -28,3 +28,19 @@
 	font-size: var(--sl-text-xs);
 	font-weight: 600;
 }
+
+.tag-list-item:has(.tag-list-link) {
+	border-color: var(--sl-color-gray-3);
+}
+
+/* A pill that navigates carries the underline permanently: the border tint
+   alone would signal it through colour only. */
+.tag-list-link {
+	color: var(--sl-color-white);
+	text-decoration: underline;
+}
+
+.tag-list-link:hover,
+.tag-list-link:focus-visible {
+	text-decoration-thickness: 0.125rem;
+}

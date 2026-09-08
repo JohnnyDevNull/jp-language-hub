@@ -14,16 +14,22 @@ Use this order and omit what a page does not need. Never add an empty section
 for symmetry.
 
 1. `<KeyTakeaway>` — the first block on the page, before any prose.
-2. Intro prose, one to three sentences.
-3. `## Core rule` — the rule itself, plus a `<SentenceSchema>` where the rule is
+2. `<TagList>` — the page's level and tags, passed straight from the
+   frontmatter as `levels={frontmatter.levels} tags={frontmatter.tags}`.
+3. Intro prose, one to three sentences.
+4. `## Core rule` — the rule itself, plus a `<SentenceSchema>` where the rule is
    about positions in a clause.
-4. Topic sections.
-5. `## Direct comparison` — one `<LanguageComparison>` per compared meaning.
-6. `<MistakeBox>` for the typical transfer error.
-7. `<SpecialRule>` where Swedish deviates from both German and English.
-8. `<MemoryTip>` for the one thing worth memorizing.
-9. `<QuickCheck>` — the self-check, always directly before the related topics.
-10. `<RelatedTopics>` — the last block.
+5. Topic sections.
+6. `## Direct comparison` — one `<LanguageComparison>` per compared meaning.
+7. `<MistakeBox>` for the typical transfer error.
+8. `<SpecialRule>` where Swedish deviates from both German and English.
+9. `<MemoryTip>` for the one thing worth memorizing.
+10. `<QuickCheck>` — the self-check, always directly before the related topics.
+11. `<RelatedTopics>` — the last block.
+
+Index pages — the learning path and the important-rules page — carry no
+`<TagList>`: their own pills would link back to themselves. Cheat sheets are
+plain Markdown and cannot render it at all.
 
 ## KeyTakeaway
 
@@ -33,6 +39,16 @@ learner needs without reading anything else.
 
 Do not restate the page title, do not tease ("read on to learn…"), and do not
 exceed three bullets. If a page needs four, it is really two pages.
+
+## TagList
+
+A pill becomes a link only where an index page can answer it: the CEFR levels
+point at the learning path, and `important` points at the important-rules page,
+which is generated from that tag. Every other tag stays a plain pill, because a
+link that leads nowhere is worse than no link.
+
+That is also the test for a new tag. If no index could ever be built on it, it
+classifies nothing a reader can act on.
 
 ## QuickCheck
 

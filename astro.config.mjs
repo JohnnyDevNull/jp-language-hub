@@ -35,6 +35,7 @@ export default defineConfig({
 
 				// Swedish learning tree.
 				{ slug: 'learn/swedish/learning-path' },
+				{ slug: 'learn/swedish/important' },
 				{
 					label: 'Grammar',
 					items: [

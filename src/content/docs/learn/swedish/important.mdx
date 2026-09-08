@@ -1,0 +1,76 @@
+---
+title: Most important rules
+description: The Swedish rules tagged as most important, grouped by the CEFR level each page declares.
+metaLanguage: en
+grammarLanguage: sv
+tags:
+  - grammar
+related:
+  - /learn/swedish/learning-path/
+  - /learn/swedish/grammar/
+  - /learn/swedish/common-mistakes/
+  - /learn/swedish/cheat-sheets/
+---
+
+import { getCollection } from 'astro:content';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+
+export const TREE_PREFIX = 'learn/swedish/';
+export const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1'];
+export const UNLEVELLED = 'Any level';
+
+export const entries = await getCollection(
+	'docs',
+	({ id, data }) => id.startsWith(TREE_PREFIX) && (data.tags ?? []).includes('important'),
+);
+
+export const rules = entries
+	.map(({ id, data }) => ({
+		/* A relative href keeps the base path and the meta locale without this
+		   page having to know either. */
+		href: `../${id.slice(TREE_PREFIX.length)}/`,
+		title: data.title,
+		description: data.description,
+		level: LEVEL_ORDER.find((level) => (data.levels ?? []).includes(level)) ?? UNLEVELLED,
+	}))
+	.sort((a, b) => a.title.localeCompare(b.title, 'en'));
+
+export const groups = [...LEVEL_ORDER, UNLEVELLED]
+	.map((level) => ({ level, rules: rules.filter((rule) => rule.level === level) }))
+	.filter((group) => group.rules.length > 0);
+
+<KeyTakeaway>
+- These are the rules that change the most sentences. Get them wrong and the
+  mistake shows up everywhere, not just in one construction.
+- The grouping is the level each page already declares; within a level the
+  order does not matter.
+- This page is generated from the `important` tag, so it stays in sync with
+  the reference instead of being a second list to maintain.
+</KeyTakeaway>
+
+If you are working through the reference in order, use the
+[learning path](../learning-path/) instead. This page answers a different
+question: what to revisit when something feels wrong and you do not know which
+rule you broke.
+
+{groups.map((group) => (
+	<section>
+		<h2>{group.level}</h2>
+		<ul>
+			{group.rules.map((rule) => (
+				<li>
+					<a href={rule.href}>{rule.title}</a> — {rule.description}
+				</li>
+			))}
+		</ul>
+	</section>
+))}
+
+<RelatedTopics
+	topics={[
+		{ href: '../learning-path/', label: 'Learning path' },
+		{ href: '../common-mistakes/', label: 'Common mistakes' },
+		{ href: '../cheat-sheets/', label: 'Cheat sheets' },
+	]}
+/>
