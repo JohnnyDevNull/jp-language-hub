@@ -81,6 +81,7 @@ export default defineConfig({
 									label: 'Swedish',
 									items: [
 										{ slug: 'grammar/verbs/swedish/verb-forms' },
+										{ slug: 'grammar/verbs/swedish/tense-perspectives' },
 										{ slug: 'grammar/verbs/swedish/present' },
 										{ slug: 'grammar/verbs/swedish/preterite' },
 										{ slug: 'grammar/verbs/swedish/perfect' },
@@ -100,13 +101,25 @@ export default defineConfig({
 										{
 											slug: 'grammar/pronouns-function-words/swedish/nagon-nagot-ingen-inget',
 										},
+										{
+											slug: 'grammar/pronouns-function-words/swedish/demonstratives-har-dar',
+										},
+										{
+											slug: 'grammar/pronouns-function-words/swedish/prepositions-place-direction',
+										},
 									],
 								},
 							],
 						},
 					],
 				},
-				{ slug: 'vocabulary' },
+				{
+					label: 'Vocabulary',
+					items: [
+						{ label: 'Overview', slug: 'vocabulary' },
+						{ slug: 'vocabulary/swedish/telling-time' },
+					],
+				},
 				{
 					label: 'Language-specific Rules',
 					items: [
@@ -114,6 +127,7 @@ export default defineConfig({
 						{ slug: 'language-specific-rules/swedish/en-ett' },
 						{ slug: 'language-specific-rules/swedish/v2-biff' },
 						{ slug: 'language-specific-rules/swedish/sin-sitt-sina' },
+						{ slug: 'language-specific-rules/swedish/pronunciation-basics' },
 					],
 				},
 				{

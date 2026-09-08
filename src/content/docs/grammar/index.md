@@ -34,6 +34,7 @@ with German and English visible where they help explain a rule.
 ## Verbs
 
 - [Swedish verb forms](./verbs/swedish/verb-forms/)
+- [Swedish tense perspectives](./verbs/swedish/tense-perspectives/)
 - [Present tense](./verbs/swedish/present/)
 - [Preterite](./verbs/swedish/preterite/)
 - [Perfect](./verbs/swedish/perfect/)
@@ -44,3 +45,5 @@ with German and English visible where they help explain a rule.
 - [Swedish possessive pronouns](./pronouns-function-words/swedish/possessive-pronouns/)
 - [Swedish *sin*, *sitt*, and *sina*](./pronouns-function-words/swedish/sin-sitt-sina/)
 - [Swedish *någon*, *något*, *ingen*, and *inget*](./pronouns-function-words/swedish/nagon-nagot-ingen-inget/)
+- [Swedish demonstratives with *här* and *där*](./pronouns-function-words/swedish/demonstratives-har-dar/)
+- [Swedish place and direction prepositions](./pronouns-function-words/swedish/prepositions-place-direction/)

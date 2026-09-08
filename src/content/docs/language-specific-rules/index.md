@@ -3,9 +3,9 @@ title: Language-specific Rules
 description: Quick references for patterns that are specific to one language.
 ---
 
-This section summarizes language-specific behavior and links to the canonical
-grammar explanation. It is a quick-reference layer, not a second source of
-truth.
+This section collects compact references for behavior that is especially tied
+to one language. When a full grammar page exists, these pages link back to that
+canonical explanation instead of duplicating it.
 
 ## German
 
@@ -25,5 +25,6 @@ Swedish is the current learning focus. Start with these compact references:
 - [*en* and *ett*](./swedish/en-ett/)
 - [V2 and BIFF](./swedish/v2-biff/)
 - [*sin*, *sitt*, and *sina*](./swedish/sin-sitt-sina/)
+- [Pronunciation basics](./swedish/pronunciation-basics/)
 
-Each summary links to the complete canonical grammar explanation.
+Grammar summaries link to the complete canonical explanation where one exists.
