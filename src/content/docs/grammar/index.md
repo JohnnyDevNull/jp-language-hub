@@ -30,6 +30,7 @@ with German and English visible where they help explain a rule.
 
 - [Swedish adjective agreement](./adjectives-adverbs/swedish/agreement/)
 - [Swedish adjective comparison](./adjectives-adverbs/swedish/adjective-comparison/)
+- [Swedish adverbs](./adjectives-adverbs/swedish/adverbs/)
 
 ## Numerals
 

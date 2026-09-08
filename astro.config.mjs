@@ -79,6 +79,7 @@ export default defineConfig({
 									items: [
 										{ slug: 'grammar/adjectives-adverbs/swedish/agreement' },
 										{ slug: 'grammar/adjectives-adverbs/swedish/adjective-comparison' },
+										{ slug: 'grammar/adjectives-adverbs/swedish/adverbs' },
 									],
 								},
 							],
