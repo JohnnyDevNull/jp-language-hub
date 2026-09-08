@@ -26,6 +26,31 @@ structured content metadata:
 
 If no compliant solution can be determined, stop and ask an engineer.
 
+## Language layers (mandatory)
+
+The project has three language layers. Each exists for one specific purpose,
+and they must be kept strictly separate. Conflating them is what made the
+navigation incoherent before the 2026-09-08 restructure.
+
+1. **Meta language** — the language an explanation is written in. Owned
+   exclusively by Starlight's locale configuration and its language switcher
+   (`/`, `/de/`, `/sv/`), and recorded per page in `metaLanguage`. It is
+   orthogonal to content and must never become a sidebar axis or a content
+   directory of its own.
+2. **Learning language** — the language being learned. It is the route prefix
+   `src/content/docs/learn/<language>/`, and the only content axis besides the
+   topic. Each learning language has its own navigation tree; content of one
+   learning language must never appear in another's tree.
+3. **Comparison language** — German, English and Swedish shown side by side to
+   explain a rule. This is a dimension *inside* a page, expressed with the
+   `LanguageComparison` component and the `comparisonLanguages` frontmatter
+   field. A comparison language must never receive its own page, directory or
+   sidebar entry.
+
+Before adding content, routes, navigation entries or metadata, decide which
+layer the change belongs to and apply that layer's rule. If a change appears
+to require two layers at once, stop and ask an engineer.
+
 ## Content structure
 
 Learning content lives under `src/content/docs/learn/<language>/`; Swedish is
