@@ -1,38 +1,84 @@
 ---
 title: Vocabulary
-description: Vocabulary organized by real-life domains and usage.
+description: How to record a Swedish word so it stays usable, plus a starter set of everyday nouns.
+metaLanguage: en
+grammarLanguage: sv
+levels:
+  - A1
+tags:
+  - vocabulary
+  - nouns
+related:
+  - /learn/swedish/vocabulary/telling-time/
+  - /learn/swedish/grammar/nouns-articles/en-ett/
+  - /learn/swedish/grammar/nouns-articles/noun-forms/
+  - /learn/swedish/grammar/nouns-articles/plural-overview/
 ---
 
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
 import VocabularyCard from '~/components/VocabularyCard.astro';
-import { getEntry } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 
-export const carEntry = await getEntry('vocabulary', 'sv-bil');
-export const car = carEntry?.data ?? (() => {
-	throw new Error('Missing required vocabulary entry: sv-bil');
-})();
+export const requireEntry = async (id) => {
+	const entry = await getEntry('vocabulary', id);
+	if (!entry) {
+		throw new Error(`Missing required vocabulary entry: ${id}`);
+	}
+	return entry.data;
+};
 
-Vocabulary is organized by situations in which words are used, not as isolated
-translation pairs. Entries include the grammatical and usage information needed
-to use a word correctly.
+export const car = await requireEntry('sv-bil');
+export const apple = await requireEntry('sv-apple');
 
-## Domains
+export const starterIds = [
+	'sv-dag',
+	'sv-tid',
+	'sv-klocka',
+	'sv-van',
+	'sv-stad',
+	'sv-hund',
+	'sv-hus',
+	'sv-barn',
+	'sv-bord',
+];
 
-- Basic vocabulary
-- [Telling time](./telling-time/)
-- Home, food, and shopping
-- Transport and travel
-- People, relationships, and leisure
-- Small talk, feelings, and opinions
-- Society and everyday life in Sweden
-- Work, meetings, and business communication
+export const allNouns = await getCollection('vocabulary');
+export const starters = starterIds.map((id) => {
+	const entry = allNouns.find((candidate) => candidate.id === id);
+	if (!entry) {
+		throw new Error(`Missing required vocabulary entry: ${id}`);
+	}
+	return entry.data;
+});
 
-CEFR levels are metadata where they are meaningful, but they do not determine
-the primary navigation.
+<KeyTakeaway>
+- Record a Swedish noun with its article, never as a bare translation pair:
+  <Sv>en bil</Sv>, not just <Sv>bil</Sv> = "car".
+- The article alone is not enough. Learn the four forms together —
+  indefinite and definite singular, indefinite and definite plural.
+- The plural ending follows from the lemma's shape, so learning it once per
+  word is cheaper than guessing it every time you speak.
+</KeyTakeaway>
 
-## Store enough information to use a word
+Most of the work in Swedish vocabulary is not the meaning of a word, it is its
+gender and its plural. Both are unpredictable from German, so they belong in the
+entry from the start.
 
-A Swedish noun is more useful as a compact set of forms than as a single
-translation:
+## Core rule
+
+> A usable noun entry holds five things: the lemma, the gender
+> (<Sv>en</Sv> or <Sv>ett</Sv>), the definite singular, the indefinite plural
+> and the definite plural.
+
+<Sv>Ett hus</Sv> is neuter in Swedish and neuter in German, but <Sv>ett bord</Sv>
+is an <Sv>ett</Sv>-word while German <span lang="de">der Tisch</span> is
+masculine. Copying the German gender fails often enough that it cannot be a
+strategy.
+
+## What one entry looks like
 
 <VocabularyCard
 	swedish={car.lemma}
@@ -47,6 +93,101 @@ translation:
 	]}
 />
 
-Entries may also include example sentences, collocations, register, common
-mistakes, synonyms, and controlled tags. Prepositions are recorded as part of
-constructions such as `vänta på`, not as context-free translation pairs.
+<VocabularyCard
+	swedish={apple.lemma}
+	gender={apple.morphology.gender}
+	german={apple.translations?.de}
+	english={apple.translations?.en}
+	level={apple.levels?.join('–')}
+	forms={[
+		{ label: 'Definite singular', value: apple.morphology.definiteSingular },
+		{ label: 'Indefinite plural', value: apple.morphology.indefinitePlural },
+		{ label: 'Definite plural', value: apple.morphology.definitePlural },
+	]}
+/>
+
+The two cards show the two halves of the system: an <Sv>en</Sv>-word taking
+<Sv>-ar</Sv> in the plural, and an <Sv>ett</Sv>-word taking <Sv>-n</Sv>.
+
+## Starter words
+
+A small set of everyday nouns, with the forms rather than the translation only.
+Each one comes from the same entries as the cards above.
+
+<table>
+	<thead>
+		<tr>
+			<th>Word</th>
+			<th>German</th>
+			<th>English</th>
+			<th>Definite sg.</th>
+			<th>Plural</th>
+			<th>Definite pl.</th>
+		</tr>
+	</thead>
+	<tbody>
+		{starters.map((noun) => (
+			<tr>
+				<td lang="sv">{noun.morphology.gender} {noun.lemma}</td>
+				<td lang="de">{noun.translations?.de}</td>
+				<td lang="en">{noun.translations?.en}</td>
+				<td lang="sv">{noun.morphology.definiteSingular}</td>
+				<td lang="sv">{noun.morphology.indefinitePlural}</td>
+				<td lang="sv">{noun.morphology.definitePlural}</td>
+			</tr>
+		))}
+	</tbody>
+</table>
+
+Read the plural column downwards and the patterns appear on their own:
+<Sv>-ar</Sv> and <Sv>-or</Sv> and <Sv>-er</Sv> for <Sv>en</Sv>-words, and no
+ending at all for many one-syllable <Sv>ett</Sv>-words such as <Sv>hus</Sv>,
+<Sv>barn</Sv> and <Sv>bord</Sv>.
+
+## Domains
+
+Vocabulary is organized by the situation a word is used in, not by the letter it
+starts with. One domain exists as a page so far; the rest are planned and have
+no content yet.
+
+| Domain | Status |
+| --- | --- |
+| [Telling time](./telling-time/) | Published |
+| Basic vocabulary | Planned |
+| Home, food and shopping | Planned |
+| Transport and travel | Planned |
+| People, relationships and leisure | Planned |
+| Small talk, feelings and opinions | Planned |
+| Society and everyday life in Sweden | Planned |
+| Work, meetings and business communication | Planned |
+
+Until a domain page exists, the grammar pages on
+[gender](../grammar/nouns-articles/en-ett/) and
+[plural formation](../grammar/nouns-articles/plural-overview/) carry the rules
+that a domain list would only illustrate.
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Give the four forms of “house”.',
+			answer: 'ett hus – huset – hus – husen',
+		},
+		{
+			prompt: 'The note “stad = Stadt” is missing three forms. Add them.',
+			answer: 'en stad – staden – städer – städerna',
+		},
+		{
+			prompt: 'Say “the clocks” in Swedish.',
+			answer: 'klockorna',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: './telling-time/', label: 'Telling time' },
+		{ href: '../grammar/nouns-articles/en-ett/', label: 'en or ett' },
+		{ href: '../grammar/nouns-articles/noun-forms/', label: 'Noun forms' },
+		{ href: '../grammar/nouns-articles/plural-overview/', label: 'Plural overview' },
+	]}
+/>

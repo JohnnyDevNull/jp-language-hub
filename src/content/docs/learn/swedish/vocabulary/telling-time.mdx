@@ -17,94 +17,168 @@ related:
   - /learn/swedish/grammar/numerals/numbers/
   - /learn/swedish/grammar/pronouns-function-words/prepositions/
   - /learn/swedish/grammar/sentence-structure/basic-word-order/
+  - /learn/swedish/vocabulary/
 ---
 
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
 
-Swedish clock time uses a small set of recurring words:
-<span lang="sv">klockan</span>, <span lang="sv">över</span>,
-<span lang="sv">i</span>, <span lang="sv">halv</span>, and
-<span lang="sv">kvart</span>.
+<KeyTakeaway>
+- Clock time runs through five words only: <Sv>klockan</Sv>, <Sv>över</Sv>,
+  <Sv>i</Sv>, <Sv>halv</Sv> and <Sv>kvart</Sv>.
+- <Sv>halv</Sv> counts towards the coming hour, exactly like German
+  <span lang="de">halb</span>: <Sv>halv tre</Sv> is 2:30, not 3:30.
+- Minutes are counted from the nearest reference point, which may be the half
+  hour: <Sv>tio i halv nio</Sv> is 8:20.
+</KeyTakeaway>
+
+Swedish clock time is a small closed system. Learn the five words and the two
+directions they point in, and every time of day follows.
+
+## Core rule
+
+> The hour is named with <Sv>klockan</Sv> plus the numeral. Minutes attach to a
+> reference point with <Sv>över</Sv> (after) or <Sv>i</Sv> (before), and the
+> reference point can be a full hour or a half hour.
 
 ## Asking and answering
 
-| Svenska | Deutsch | English |
-| --- | --- | --- |
-| <span lang="sv">Vad är klockan?</span> | <span lang="de">Wie spät ist es?</span> | <span lang="en">What time is it?</span> |
-| <span lang="sv">Klockan är nio.</span> | <span lang="de">Es ist neun Uhr.</span> | <span lang="en">It is nine o'clock.</span> |
+<LanguageComparison title="Asking the time">
+	<p slot="de">Wie spät ist es?</p>
+	<p slot="en">What time is it?</p>
+	<p slot="sv">Vad är klockan?</p>
+</LanguageComparison>
 
-Literally, <span lang="sv">Klockan är nio</span> is “the clock is nine”.
+<LanguageComparison title="Naming a full hour">
+	<p slot="de">Es ist neun Uhr.</p>
+	<p slot="en">It is nine o'clock.</p>
+	<p slot="sv">Klockan är nio.</p>
+</LanguageComparison>
+
+Literally, <Sv>Klockan är nio</Sv> is "the clock is nine". <Sv>Klockan</Sv> is
+the definite form of <Sv>en klocka</Sv>, so no separate word for "o'clock" is
+needed.
 
 ## Minutes after and before
 
-Use <span lang="sv">över</span> for minutes after the hour:
+Use <Sv>över</Sv> for minutes after the hour and <Sv>i</Sv> for minutes before
+the next hour:
 
 <p lang="sv">Klockan är sju över två.</p>
-
-Use <span lang="sv">i</span> for minutes before the next hour:
-
 <p lang="sv">Klockan är fem i sex.</p>
 
-| Svenska | Deutsch | English |
-| --- | --- | --- |
-| <span lang="sv">sju över två</span> | <span lang="de">sieben nach zwei</span> | <span lang="en">seven past two</span> |
-| <span lang="sv">fem i sex</span> | <span lang="de">fünf vor sechs</span> | <span lang="en">five to six</span> |
+| Swedish | Clock |
+| --- | --- |
+| <Sv>sju över två</Sv> | 2:07 |
+| <Sv>fem i sex</Sv> | 5:55 |
+| <Sv>tjugo över tre</Sv> | 3:20 |
 
 ## Half hours
 
-Swedish <span lang="sv">halv</span> works like German
-<span lang="de">halb</span>: it points to the upcoming hour.
+<Sv>halv</Sv> points at the hour it is counting towards, not at the hour just
+passed. Minutes can then be measured from that half-hour point in both
+directions:
 
-| Svenska | Deutsch | English |
-| --- | --- | --- |
-| <span lang="sv">halv nio</span> | <span lang="de">halb neun</span> | <span lang="en">half past eight</span> |
-
-You can also place minutes before or after the half-hour point:
-
-| Svenska | Deutsch | English |
-| --- | --- | --- |
-| <span lang="sv">tio i halv nio</span> | <span lang="de">zehn vor halb neun</span> | <span lang="en">twenty past eight</span> |
-| <span lang="sv">tio över halv nio</span> | <span lang="de">zehn nach halb neun</span> | <span lang="en">twenty to nine</span> |
+| Swedish | Clock |
+| --- | --- |
+| <Sv>halv nio</Sv> | 8:30 |
+| <Sv>tio i halv nio</Sv> | 8:20 |
+| <Sv>tio över halv nio</Sv> | 8:40 |
+| <Sv>halv tre</Sv> | 2:30 |
 
 ## Quarter hours
 
-| Svenska | Deutsch | English |
-| --- | --- | --- |
-| <span lang="sv">kvart över fyra</span> | <span lang="de">Viertel nach vier</span> | <span lang="en">quarter past four</span> |
-| <span lang="sv">kvart i sju</span> | <span lang="de">Viertel vor sieben</span> | <span lang="en">quarter to seven</span> |
+| Swedish | Clock |
+| --- | --- |
+| <Sv>kvart över fyra</Sv> | 4:15 |
+| <Sv>kvart i sju</Sv> | 6:45 |
+
+## Written and spoken time
+
+Timetables, opening hours and appointments are written digitally with a period:
+<Sv>14.30</Sv>. Read aloud that becomes <Sv>fjorton och trettio</Sv>, while the
+spoken everyday form for the same moment is <Sv>halv tre</Sv>.
 
 ## Quick pattern
 
 | Meaning | Swedish pattern |
 | --- | --- |
-| exact hour | <span lang="sv">Klockan är nio.</span> |
-| after the hour | <span lang="sv">X över Y</span> |
-| before the next hour | <span lang="sv">X i Y</span> |
-| half to the next hour | <span lang="sv">halv Y</span> |
-| quarter after | <span lang="sv">kvart över Y</span> |
-| quarter before | <span lang="sv">kvart i Y</span> |
+| exact hour | <Sv>Klockan är nio.</Sv> |
+| after the hour | <Sv>X över Y</Sv> |
+| before the next hour | <Sv>X i Y</Sv> |
+| half to the next hour | <Sv>halv Y</Sv> |
+| quarter after | <Sv>kvart över Y</Sv> |
+| quarter before | <Sv>kvart i Y</Sv> |
 
-<MistakeBox title="Common mistakes">
-	- Do not read <span lang="sv">halv nio</span> as nine-thirty. It means
-	  half way to nine: eight-thirty.
-	- Do not translate English “past” and “to” through a general place rule.
-	  Clock time uses its own small pattern.
+## Direct comparison
+
+The half hour is where the three languages genuinely diverge: German counts
+forward like Swedish, English counts back from the hour just passed.
+
+<LanguageComparison title="8:30">
+	<p slot="de">halb neun</p>
+	<p slot="en">half past eight</p>
+	<p slot="sv">halv nio</p>
+</LanguageComparison>
+
+<LanguageComparison title="8:20">
+	<p slot="de">zehn vor halb neun</p>
+	<p slot="en">twenty past eight</p>
+	<p slot="sv">tio i halv nio</p>
+</LanguageComparison>
+
+<LanguageComparison title="6:45">
+	<p slot="de">Viertel vor sieben</p>
+	<p slot="en">quarter to seven</p>
+	<p slot="sv">kvart i sju</p>
+</LanguageComparison>
+
+<MistakeBox
+	incorrect="halv tre = 3:30"
+	correct="halv tre = 2:30"
+	lang="sv"
+>
+	English "half three" and Swedish <Sv>halv tre</Sv> name different moments.
+	Also do not derive <Sv>över</Sv> and <Sv>i</Sv> from a general preposition
+	rule; clock time uses its own pattern.
 </MistakeBox>
 
 <MemoryTip>
-For German speakers, <span lang="sv">halv nio</span> behaves like
-<span lang="de">halb neun</span>. For English speakers, translate it mentally
-as “half past eight”.
+Take the German route: <Sv>halv</Sv> behaves like
+<span lang="de">halb</span> and the numeral is the hour you are heading for.
+Coming from English, add "past" and subtract one: <Sv>halv nio</Sv> = "half
+past eight".
 </MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Say 7:30 in Swedish.',
+			answer: 'halv åtta',
+		},
+		{
+			prompt: 'What time is “tio över halv sex”?',
+			answer: '5:40',
+		},
+		{
+			prompt: 'Say 4:45 in Swedish.',
+			answer: 'kvart i fem',
+		},
+		{
+			prompt: 'Ask what time it is, then answer with 3:00.',
+			answer: 'Vad är klockan? – Klockan är tre.',
+		},
+	]}
+/>
 
 <RelatedTopics
 	topics={[
-		{
-			href: '../../grammar/numerals/numbers/',
-			label: 'Numbers',
-		},
+		{ href: '../../grammar/numerals/numbers/', label: 'Numbers' },
 		{
 			href: '../../grammar/pronouns-function-words/prepositions/',
 			label: 'Prepositions',
@@ -113,5 +187,6 @@ as “half past eight”.
 			href: '../../grammar/sentence-structure/basic-word-order/',
 			label: 'Basic word order',
 		},
+		{ href: '../', label: 'Vocabulary' },
 	]}
 />
