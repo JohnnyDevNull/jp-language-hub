@@ -2,7 +2,8 @@
 
 `jp-language-hub` is a personal language reference and learning hub for German, English, and Swedish, with a current focus on Swedish.
 
-Before working on the project, read the [project concept and implementation plan](docs/jp-language-hub-plan.md).
+Before working on the project, read the [project documentation index](docs/jp-language-hub-plan.md)
+and the relevant current-state documentation under [`docs/app/`](docs/app/).
 
 `CLAUDE.md` is a symlink to this file, so both names resolve to one file. Edit
 `AGENTS.md`; never write to both paths, and never replace the symlink with a

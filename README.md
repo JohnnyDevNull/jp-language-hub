@@ -174,6 +174,8 @@ Production URL:
 
 ## Project guidance
 
-- Implementation plan: `docs/jp-language-hub-plan.md`
+- Documentation index: `docs/jp-language-hub-plan.md`
+- Current application docs: `docs/app/`
+- Roadmap: `docs/roadmap.md`
 - Engineering rules: `docs/rules/engineering-guidelines.md`
 - Architecture rules: `docs/rules/architecture-guidelines.md`
