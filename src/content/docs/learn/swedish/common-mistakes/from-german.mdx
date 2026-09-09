@@ -24,6 +24,7 @@ related:
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
@@ -58,11 +59,20 @@ patterns slip through unnoticed. Each entry links to the rule that fixes it.
 German inflects an adjective before a noun but not after *sein*. Swedish
 inflects it in both positions:
 
-| German | Swedish |
-| --- | --- |
-| ein großes Haus | <Sv>ett stort hus</Sv> |
-| Das Haus ist groß. | <Sv>Huset är stort.</Sv> |
-| Die Häuser sind groß. | <Sv>Husen är stora.</Sv> |
+<LanguageComparison title="Attributive adjective" languages={['de', 'sv']}>
+	<p slot="de">ein großes Haus</p>
+	<p slot="sv">ett stort hus</p>
+</LanguageComparison>
+
+<LanguageComparison title="Predicative adjective" languages={['de', 'sv']}>
+	<p slot="de">Das Haus ist groß.</p>
+	<p slot="sv">Huset är stort.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Plural predicative adjective" languages={['de', 'sv']}>
+	<p slot="de">Die Häuser sind groß.</p>
+	<p slot="sv">Husen är stora.</p>
+</LanguageComparison>
 
 See [adjective agreement](../../grammar/adjectives-adverbs/agreement/).
 
@@ -96,11 +106,20 @@ See [adjective agreement](../../grammar/adjectives-adverbs/agreement/).
 Swedish nouns have no case. Do not compensate with extra prepositions or
 article forms:
 
-| German | Swedish |
-| --- | --- |
-| Ich gebe dem Mann das Buch. | <Sv>Jag ger mannen boken.</Sv> |
-| das Buch des Mannes | <Sv>mannens bok</Sv> |
-| mit dem Auto | <Sv>med bilen</Sv> |
+<LanguageComparison title="Indirect object without case marking" languages={['de', 'sv']}>
+	<p slot="de">Ich gebe dem Mann das Buch.</p>
+	<p slot="sv">Jag ger mannen boken.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Possession" languages={['de', 'sv']}>
+	<p slot="de">das Buch des Mannes</p>
+	<p slot="sv">mannens bok</p>
+</LanguageComparison>
+
+<LanguageComparison title="Preposition plus definite noun" languages={['de', 'sv']}>
+	<p slot="de">mit dem Auto</p>
+	<p slot="sv">med bilen</p>
+</LanguageComparison>
 
 Only pronouns still inflect: <Sv>med mig</Sv>, <Sv>till honom</Sv>, never
 *med jag*.
@@ -110,10 +129,15 @@ Only pronouns still inflect: <Sv>med mig</Sv>, <Sv>till honom</Sv>, never
 German separable prefixes travel to the end of the clause. A Swedish loose
 particle stays right behind the verb, and only <Sv>inte</Sv> gets in between:
 
-| German | Swedish |
-| --- | --- |
-| Ich stehe um sieben auf. | <Sv>Jag går upp klockan sju.</Sv> |
-| Ich mag Fisch nicht. | <Sv>Jag tycker inte om fisk.</Sv> |
+<LanguageComparison title="Loose particle" languages={['de', 'sv']}>
+	<p slot="de">Ich stehe um sieben auf.</p>
+	<p slot="sv">Jag går upp klockan sju.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Negated particle verb" languages={['de', 'sv']}>
+	<p slot="de">Ich mag Fisch nicht.</p>
+	<p slot="sv">Jag tycker inte om fisk.</p>
+</LanguageComparison>
 
 See [particle verbs](../../grammar/verbs/particle-verbs/).
 

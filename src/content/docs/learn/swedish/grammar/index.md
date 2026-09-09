@@ -2,6 +2,7 @@
 title: Grammar
 description: Canonical grammar explanations for Swedish.
 metaLanguage: en
+grammarLanguage: sv
 tags:
   - grammar
 ---

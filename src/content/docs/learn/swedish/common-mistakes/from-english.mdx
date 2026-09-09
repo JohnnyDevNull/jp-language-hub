@@ -24,6 +24,7 @@ related:
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
@@ -55,12 +56,25 @@ These are the patterns it exports by mistake.
 
 ## Reaching for do-support
 
-| English | Swedish |
-| --- | --- |
-| Do you speak Swedish? | <Sv>Talar du svenska?</Sv> |
-| I don't know. | <Sv>Jag vet inte.</Sv> |
-| Where does she live? | <Sv>Var bor hon?</Sv> |
-| Didn't you see it? | <Sv>Såg du det inte?</Sv> |
+<LanguageComparison title="Question without do" languages={['en', 'sv']}>
+	<p slot="en">Do you speak Swedish?</p>
+	<p slot="sv">Talar du svenska?</p>
+</LanguageComparison>
+
+<LanguageComparison title="Negation without do" languages={['en', 'sv']}>
+	<p slot="en">I don't know.</p>
+	<p slot="sv">Jag vet inte.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Question word plus inversion" languages={['en', 'sv']}>
+	<p slot="en">Where does she live?</p>
+	<p slot="sv">Var bor hon?</p>
+</LanguageComparison>
+
+<LanguageComparison title="Negative question" languages={['en', 'sv']}>
+	<p slot="en">Didn't you see it?</p>
+	<p slot="sv">Såg du det inte?</p>
+</LanguageComparison>
 
 Questions are formed by inversion alone, and negation by adding
 <Sv>inte</Sv>. See
@@ -89,11 +103,20 @@ See [adjective agreement](../../grammar/adjectives-adverbs/agreement/).
 
 ## for and since
 
-| English | Swedish |
-| --- | --- |
-| I have lived here for three years. | <Sv>Jag har bott här i tre år.</Sv> |
-| I have lived here since 2020. | <Sv>Jag har bott här sedan 2020.</Sv> |
-| I haven't seen him for three years. | <Sv>Jag har inte sett honom på tre år.</Sv> |
+<LanguageComparison title="Duration" languages={['en', 'sv']}>
+	<p slot="en">I have lived here for three years.</p>
+	<p slot="sv">Jag har bott här i tre år.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Starting point" languages={['en', 'sv']}>
+	<p slot="en">I have lived here since 2020.</p>
+	<p slot="sv">Jag har bott här sedan 2020.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Negated stretch of time" languages={['en', 'sv']}>
+	<p slot="en">I haven't seen him for three years.</p>
+	<p slot="sv">Jag har inte sett honom på tre år.</p>
+</LanguageComparison>
 
 A stretch of time is <Sv>i</Sv>, a starting point is <Sv>sedan</Sv>, and a
 negated stretch takes <Sv>på</Sv>.

@@ -1,34 +1,41 @@
 ---
 interface Props {
 	title?: string;
+	languages?: LanguageCode[];
 }
 
-const { title } = Astro.props;
+type LanguageCode = 'de' | 'en' | 'sv';
+
+const LANGUAGE_LABELS: Record<LanguageCode, { flag: string; label: string; lang: string }> = {
+	de: { flag: '🇩🇪', label: 'Deutsch', lang: 'de' },
+	en: { flag: '🇬🇧', label: 'English', lang: 'en' },
+	sv: { flag: '🇸🇪', label: 'Svenska', lang: 'sv' },
+};
+
+const { title, languages = ['de', 'en', 'sv'] } = Astro.props;
 ---
 
 <figure class="language-comparison">
 	{title && <figcaption class="language-comparison-title">{title}</figcaption>}
-	<div class="language-comparison-columns">
-		<section class="language-comparison-language language-comparison-language-de" lang="de">
-			<p class="language-comparison-language-name">
-				<span aria-hidden="true">🇩🇪</span>
-				Deutsch
-			</p>
-			<div class="language-comparison-content"><slot name="de" /></div>
-		</section>
-		<section class="language-comparison-language language-comparison-language-en" lang="en">
-			<p class="language-comparison-language-name">
-				<span aria-hidden="true">🇬🇧</span>
-				English
-			</p>
-			<div class="language-comparison-content"><slot name="en" /></div>
-		</section>
-		<section class="language-comparison-language language-comparison-language-sv" lang="sv">
-			<p class="language-comparison-language-name">
-				<span aria-hidden="true">🇸🇪</span>
-				Svenska
-			</p>
-			<div class="language-comparison-content"><slot name="sv" /></div>
-		</section>
+	<div
+		class="language-comparison-columns"
+		style={`--language-comparison-column-count: ${languages.length}`}
+	>
+		{languages.map((language) => {
+			const { flag, label, lang } = LANGUAGE_LABELS[language];
+
+			return (
+				<section
+					class={`language-comparison-language language-comparison-language-${language}`}
+					lang={lang}
+				>
+					<p class="language-comparison-language-name">
+						<span aria-hidden="true">{flag}</span>
+						{label}
+					</p>
+					<div class="language-comparison-content"><slot name={language} /></div>
+				</section>
+			);
+		})}
 	</div>
 </figure>

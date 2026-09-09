@@ -12,8 +12,9 @@
     "lint:eslint": "eslint \"src/**/*.{astro,js,mjs,ts}\" \"scripts/**/*.mjs\" \"*.mjs\" --max-warnings 0",
     "lint:css": "stylelint \"src/**/*.css\" --allow-empty-input --max-warnings 0",
     "check": "astro check",
-    "quality": "npm run lint && npm run check && npm run validate:links",
+    "quality": "npm run lint && npm run check && npm run validate:links && npm run validate:language-layers",
     "validate:links": "node scripts/validate-doc-links.mjs",
+    "validate:language-layers": "node scripts/validate-language-layers.mjs",
     "report:length": "node scripts/report-content-length.mjs"
   },
   "dependencies": {
