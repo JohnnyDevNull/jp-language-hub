@@ -111,13 +111,25 @@ need.
 Goal: add German as a learning language after Swedish and English have proven
 the shared architecture.
 
-Recommended first topics:
+Status: planned.
+
+Detailed plan:
+[Phase 4: Build German Grammar Learning](./roadmap-phase-4-build-german-grammar-learning.md)
+
+Recommended scope:
 
 - cases as sentence roles
+- prepositions and case
 - articles and gender
+- pronouns and reference
 - verb position in main and subordinate clauses
-- separable verbs
-- adjective endings
+- negation and scope
+- particle verbs and verb brackets
+- modal verbs, infinitives, and imperatives
+- present, past, and future time-form choices
+- active and passive voice
+- adjective endings, comparison, and adverbs
+- Konjunktiv, politeness, and reported speech
 - common English-to-German and Swedish-to-German mistakes
 
 German can use Swedish and English as comparison languages, but it should not
