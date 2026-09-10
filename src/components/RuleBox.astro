@@ -1,12 +1,16 @@
 ---
+import { uiLabel } from '~/lib/ui-labels';
+
 interface Props {
 	title?: string;
 }
 
-const { title = 'Rule' } = Astro.props;
+const { title } = Astro.props;
+const { locale } = Astro.locals.starlightRoute;
+const label = title ?? uiLabel('Rule', locale);
 ---
 
-<aside class="rule-box" aria-label={title}>
-	<p class="rule-box-title" aria-hidden="true">{title}</p>
+<aside class="rule-box" aria-label={label}>
+	<p class="rule-box-title" aria-hidden="true">{label}</p>
 	<div class="rule-box-content"><slot /></div>
 </aside>

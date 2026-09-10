@@ -9,6 +9,7 @@ import { join, relative } from 'node:path';
 
 const DOCS_DIR = 'src/content/docs';
 const RESOLUTION_ORIGIN = 'https://docs.invalid';
+const LOCALIZED_ROUTE_LOCALES = ['de', 'sv'];
 
 function listDocFiles(dir) {
 	return readdirSync(dir).flatMap((entry) => {
@@ -23,6 +24,21 @@ function toRoute(filePath) {
 		.replace(/\.mdx?$/, '')
 		.replace(/(^|\/)index$/, '');
 	return slug ? `/${slug}/` : '/';
+}
+
+function getRouteInfo(route) {
+	const segments = route.split('/').filter(Boolean);
+	const locale = LOCALIZED_ROUTE_LOCALES.includes(segments[0]) ? segments[0] : undefined;
+	const canonicalSegments = locale ? segments.slice(1) : segments;
+
+	return {
+		locale,
+		canonicalRoute: canonicalSegments.length ? `/${canonicalSegments.join('/')}/` : '/',
+	};
+}
+
+function toLocalizedRoute(canonicalRoute, locale) {
+	return canonicalRoute === '/' ? `/${locale}/` : `/${locale}${canonicalRoute}`;
 }
 
 function extractFrontmatter(source) {
@@ -52,7 +68,8 @@ function extractFrontmatterLinks(frontmatter) {
 function extractBodyLinks(body) {
 	const markdownLinks = [...body.matchAll(/\]\(([^)\s]+)\)/g)];
 	const hrefProps = [...body.matchAll(/href:\s*'([^']+)'/g)];
-	return [...markdownLinks, ...hrefProps].map((match) => match[1]);
+	const hrefAttrs = [...body.matchAll(/\bhref=(["'])(.*?)\1/g)];
+	return [...markdownLinks, ...hrefProps, ...hrefAttrs].map((match) => match.at(-1));
 }
 
 /** Mirrors how a browser resolves the link against the rendered page URL. */
@@ -79,7 +96,17 @@ function isInternal(link) {
 }
 
 const files = listDocFiles(DOCS_DIR).sort();
-const knownRoutes = new Set(files.map(toRoute));
+const canonicalRoutes = new Set(
+	files.map(toRoute).filter((route) => getRouteInfo(route).locale === undefined),
+);
+const knownRenderedRoutes = new Set(canonicalRoutes);
+
+for (const canonicalRoute of canonicalRoutes) {
+	for (const locale of LOCALIZED_ROUTE_LOCALES) {
+		knownRenderedRoutes.add(toLocalizedRoute(canonicalRoute, locale));
+	}
+}
+
 const problems = [];
 
 for (const file of files) {
@@ -87,6 +114,7 @@ for (const file of files) {
 	const frontmatter = extractFrontmatter(source);
 	const body = source.slice(frontmatter.length);
 	const pageRoute = toRoute(file);
+	const pageRouteInfo = getRouteInfo(pageRoute);
 
 	const candidates = [
 		...extractRelatedRoutes(frontmatter).map((link) => ({ link, field: 'related' })),
@@ -99,6 +127,37 @@ for (const file of files) {
 	];
 
 	for (const { link, field } of candidates) {
+		const target = resolveTarget(link, pageRoute);
+
+		if (field === 'related') {
+			if (!isAbsoluteSitePath(link)) {
+				problems.push({
+					file,
+					field,
+					link,
+					target: 'a non-canonical route; related frontmatter must use absolute default-locale routes',
+				});
+				continue;
+			}
+
+			const targetInfo = target ? getRouteInfo(target) : undefined;
+			if (targetInfo?.locale) {
+				problems.push({
+					file,
+					field,
+					link,
+					target: `a localized /${targetInfo.locale}/ route; related frontmatter must use canonical default-locale routes`,
+				});
+				continue;
+			}
+
+			if (target && !canonicalRoutes.has(target)) {
+				problems.push({ file, field, link, target });
+			}
+
+			continue;
+		}
+
 		if (field !== 'related' && isAbsoluteSitePath(link)) {
 			problems.push({
 				file,
@@ -109,8 +168,18 @@ for (const file of files) {
 			continue;
 		}
 
-		const target = resolveTarget(link, pageRoute);
-		if (target && !knownRoutes.has(target)) {
+		const targetInfo = target ? getRouteInfo(target) : undefined;
+		if (targetInfo && targetInfo.locale !== pageRouteInfo.locale) {
+			problems.push({
+				file,
+				field,
+				link,
+				target: `a ${targetInfo.locale ? `/${targetInfo.locale}/` : 'default-locale'} route; relative links must preserve the current meta-language route`,
+			});
+			continue;
+		}
+
+		if (target && !knownRenderedRoutes.has(target)) {
 			problems.push({ file, field, link, target });
 		}
 	}

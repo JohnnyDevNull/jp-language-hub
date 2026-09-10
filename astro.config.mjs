@@ -34,8 +34,8 @@ export default defineConfig({
 				{ label: 'Home', link: '/' },
 
 				// Swedish learning tree.
-				{ slug: 'learn/swedish/learning-path' },
-				{ slug: 'learn/swedish/important' },
+				{ label: 'Learning path', slug: 'learn/swedish/learning-path' },
+				{ label: 'Important', slug: 'learn/swedish/important' },
 				{
 					label: 'Grammar',
 					items: [
@@ -134,7 +134,7 @@ export default defineConfig({
 						{ slug: 'learn/swedish/sentence-patterns/keeping-a-conversation-going' },
 					],
 				},
-				{ slug: 'learn/swedish/pronunciation-basics' },
+				{ label: 'Pronunciation basics', slug: 'learn/swedish/pronunciation-basics' },
 				{
 					label: 'Common Mistakes',
 					items: [

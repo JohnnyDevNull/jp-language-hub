@@ -68,6 +68,38 @@ use `span lang="sv"` when language markup is needed.
 German and English examples should also carry language markup where they are
 not rendered by a component that already supplies it.
 
+## Translation Workflow
+
+English root-locale pages are the canonical source for translated
+meta-language pages. A translated page exists only when its canonical source is
+stable enough that maintaining the translation is worth the churn.
+
+Create translated files by mirroring the canonical path under the locale
+folder:
+
+```text
+src/content/docs/learn/swedish/learning-path.mdx
+src/content/docs/de/learn/swedish/learning-path.mdx
+src/content/docs/sv/learn/swedish/learning-path.mdx
+```
+
+Translated pages change explanation text, headings, page titles,
+descriptions, hero text, related-topic labels, and check prompts. They keep the
+same learning-language route, topic scope, component structure, and structural
+metadata.
+
+`related` frontmatter remains an absolute canonical route without the locale
+prefix. Page-body links and component `href` props remain relative, so a reader
+stays inside the current meta locale.
+
+Review translations for didactic equivalence: the translated page should teach
+the same lookup answer, examples, warnings, and self-check, even when the prose
+is not word-for-word identical.
+
+Swedish meta-language pages may explain Swedish learning content in Swedish,
+but they must not add extra Swedish-learning topics that are absent from the
+canonical learning tree.
+
 ## Structured Data
 
 Structured Swedish data lives in JSON collections under `src/data/`:

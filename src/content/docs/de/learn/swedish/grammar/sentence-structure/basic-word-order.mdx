@@ -1,0 +1,215 @@
+---
+title: Grundwortstellung
+description: Baue klare schwedische Hauptsätze, Fragen und Nebensätze aus einem verlässlichen Grundmuster.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/swedish/grammar/sentence-structure/v2/
+  - /learn/swedish/grammar/sentence-structure/inversion/
+  - /learn/swedish/grammar/sentence-structure/biff/
+  - /learn/swedish/grammar/sentence-structure/inte-placement/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Der neutrale Hauptsatz läuft Subjekt, finites Verb, Satzadverb, weitere
+  Verbteile, Objekt, Adverbial.
+- Eine Satzposition enthält eine **Konstituente**, die aus mehreren Wörtern
+  bestehen kann.
+- Schwedische Verben ändern sich nicht nach Person; deshalb trägt die Position
+  des Verbs die Grammatik.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Schwedische Wortstellung trägt grammatische Bedeutung. Der nützlichste
+Startpunkt ist das neutrale Hauptsatzmuster; dieses Muster verändert sich aber,
+wenn ein anderes Satzglied zuerst steht oder wenn der Satz ein Nebensatz ist.
+
+## Kernregel
+
+In einem neutralen aussagenden Hauptsatz folgt Schwedisch meist dieser Ordnung:
+
+> **Subjekt + finites Verb + Satzadverb + weitere Verbteile + Objekt + Adverbial**
+
+Lies den Satz als Reihe von Feldern. Das ist das neutrale Schema, das
+[V2](../v2/), [Inversion](../inversion/) und [BIFF](../biff/) variieren:
+
+<SentenceSchema
+	caption="Das neutrale Hauptsatzschema"
+	rowHeader="Variante"
+	columns={[
+		'1 Fundament',
+		'2 Finites Verb',
+		'3 Subjekt',
+		'Satzadverb',
+		'Nicht-finites Verb',
+		'Rest',
+	]}
+	rows={[
+		{ label: 'Neutral', cells: ['Jag', 'köper', '', '', '', 'bilen idag.'] },
+		{
+			label: 'Mit inte',
+			cells: ['Jag', 'köper', '', 'inte', '', 'bilen idag.'],
+		},
+		{
+			label: 'Zwei Verben',
+			cells: ['Jag', 'har', '', 'inte', 'köpt', 'bilen idag.'],
+		},
+		{
+			label: 'Deutsch (gleiches Muster)',
+			lang: 'de',
+			cells: ['Ich', 'kaufe', '', '', '', 'das Auto heute.'],
+		},
+	]}
+/>
+
+In einem neutralen Satz füllt das Subjekt selbst Position eins, deshalb bleibt
+Position drei leer. Die deutsche Zeile füllt dieselben Anfangsfelder; darum
+fühlt sich das neutrale Muster vertraut an. Deutsch unterscheidet sich später
+im Satz, wo es nicht-finite Verbformen ganz ans Ende schickt.
+
+- <Sv>Jag</Sv> - Subjekt
+- <Sv>köper</Sv> - finites Verb
+- <Sv>inte</Sv> - Satzadverb
+- <Sv>bilen</Sv> - Objekt
+- <Sv>idag</Sv> - Zeitadverbial
+
+Das finite Verb trägt die Zeit und verankert die Satzstruktur. Schwedische
+Verben ändern sich nicht nach Person:
+
+- <Sv>Jag arbetar.</Sv> - Ich arbeite.
+- <Sv>Vi arbetar.</Sv> - Wir arbeiten.
+
+## Eine Konstituente kann mehrere Wörter enthalten
+
+Eine Satzposition wird von einer **Konstituente** besetzt, nicht unbedingt von
+einem einzelnen Wort.
+
+<p lang="sv">På måndag morgon börjar jag mitt nya jobb.</p>
+
+Die ganze Phrase <Sv>på måndag morgon</Sv> besetzt die erste Position. Das
+finite Verb <Sv>börjar</Sv> steht deshalb an zweiter Stelle, und das Subjekt
+folgt ihm.
+
+## Fragen
+
+Eine Ja/Nein-Frage beginnt normalerweise mit dem finiten Verb:
+
+<p lang="sv">Köper du bilen idag?</p>
+
+Eine Fragewortfrage beginnt normalerweise mit dem Fragewort oder der
+Fragephrase, gefolgt vom finiten Verb:
+
+<p lang="sv">När köper du bilen?</p>
+
+Die Fragephrase <Sv>när</Sv> besetzt die erste Position, also bleibt das finite
+Verb an zweiter Stelle.
+
+## Haupt- und Nebensätze
+
+Dieselben Felder zeigen auch, was sich in einem Nebensatz verändert. Position
+zwei bleibt dort leer: Das finite Verb verlässt sie und folgt dem Satzadverb.
+
+<SentenceSchema
+	caption="Hauptsatz gegen Nebensatz"
+	rowHeader="Satztyp"
+	columns={[
+		'1 Fundament',
+		'2 Finites Verb',
+		'3 Subjekt',
+		'Satzadverb',
+		'Verbgruppe',
+		'Rest',
+	]}
+	rows={[
+		{ label: 'Hauptsatz', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] },
+		{
+			label: 'Nebensatz',
+			cells: ['eftersom', '', 'jag', 'inte', 'kommer', 'idag.'],
+		},
+	]}
+/>
+
+Die [BIFF-Regel](../biff/) ist eine nützliche Eselsbrücke für dieses
+Nebensatzmuster.
+
+## Direkter Vergleich
+
+<LanguageComparison title="Neutrale Aussage">
+	<p slot="de">Ich kaufe heute ein Auto.</p>
+	<p slot="en">I am buying a car today.</p>
+	<p slot="sv">Jag köper en bil idag.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Zeitausdruck zuerst">
+	<p slot="de">Heute kaufe ich ein Auto.</p>
+	<p slot="en">Today I am buying a car.</p>
+	<p slot="sv">Idag köper jag en bil.</p>
+</LanguageComparison>
+
+Die drei Sprachen können in einem neutralen Satz ähnlich aussehen. Der wichtige
+Unterschied erscheint, wenn die erste Konstituente wechselt: Schwedisch und
+Deutsch nutzen [V2-Wortstellung](../v2/), während Englisch normalerweise das
+Subjekt vor dem Verb behält.
+
+<MistakeBox
+	incorrect="Idag jag köper en bil."
+	correct="Idag köper jag en bil."
+	lang="sv"
+>
+Kopiere nach einem vorangestellten schwedischen Adverbial nicht die englische
+Subjekt-Verb-Reihenfolge.
+</MistakeBox>
+
+<MemoryTip>
+Beginne mit **wer + tut was** und füge dann den Rest hinzu. Wenn etwas anderes
+an den Anfang eines Hauptsatzes rückt, halte das finite Verb auf Position zwei
+und verschiebe das Subjekt dahinter.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Bring die Wörter in einen neutralen Hauptsatz: idag / bilen / jag / köper / inte',
+			answer: 'Jag köper inte bilen idag.',
+		},
+		{
+			prompt: 'Mache aus "Du köper bilen idag." eine Ja/Nein-Frage.',
+			answer: 'Köper du bilen idag?',
+		},
+		{
+			prompt: 'Welche Position besetzt "på måndag morgon" in "På måndag morgon börjar jag mitt nya jobb"?',
+			answer: 'Position eins, als eine einzige Konstituente.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../v2/', label: 'V2-Regel' },
+		{ href: '../inversion/', label: 'Inversion' },
+		{ href: '../biff/', label: 'BIFF' },
+		{ href: '../inte-placement/', label: 'Verneinungsposition' },
+	]}
+/>

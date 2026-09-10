@@ -1,12 +1,16 @@
 ---
+import { uiLabel } from '~/lib/ui-labels';
+
 interface Props {
 	title?: string;
 }
 
-const { title = 'In short' } = Astro.props;
+const { title } = Astro.props;
+const { locale } = Astro.locals.starlightRoute;
+const label = title ?? uiLabel('In short', locale);
 ---
 
-<aside class="key-takeaway" aria-label={title}>
-	<p class="key-takeaway-title" aria-hidden="true">{title}</p>
+<aside class="key-takeaway" aria-label={label}>
+	<p class="key-takeaway-title" aria-hidden="true">{label}</p>
 	<div class="key-takeaway-content"><slot /></div>
 </aside>

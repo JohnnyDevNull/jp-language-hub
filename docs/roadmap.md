@@ -41,7 +41,12 @@ Still useful future candidates:
 Goal: make `/de/` and `/sv/` ready to carry translated explanation text
 without confusing them with learning-language trees.
 
-Recommended work:
+Status: completed on 2026-09-10.
+
+Detailed plan:
+[Phase 2: Prepare Real Meta-Language Localization](./roadmap-phase-2-prepare-real-meta-language-localization.md)
+
+Completed work:
 
 - define how translated pages mirror English source pages
 - localize sidebar labels and learning-language selector labels
@@ -51,8 +56,9 @@ Recommended work:
 - keep Swedish meta-language work scoped to explanations and UI, not new
   Swedish-learning content
 
-Do this after the Swedish learning content feels stable, because translation
-will otherwise multiply churn.
+Remaining translation work should happen in small batches after the canonical
+English source pages feel stable, because translation otherwise multiplies
+churn.
 
 ## Phase 3: Build English Grammar Learning
 

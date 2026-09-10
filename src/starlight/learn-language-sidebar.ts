@@ -1,5 +1,6 @@
 import { defineRouteMiddleware, type StarlightRouteData } from '@astrojs/starlight/route-data';
 import { belongsToOtherLearnLanguage, getLearnLanguageFromPathname } from '~/lib/learn-languages';
+import { localizeUiLabel } from '~/lib/ui-labels';
 
 type SidebarEntry = StarlightRouteData['sidebar'][number];
 type SidebarLink = Extract<SidebarEntry, { type: 'link' }>;
@@ -18,6 +19,16 @@ function scopeToLearnLanguage(entries: SidebarEntry[], languageId: string): Side
 
 		const scopedEntries = scopeToLearnLanguage(entry.entries, languageId);
 		return scopedEntries.length > 0 ? [{ ...entry, entries: scopedEntries }] : [];
+	});
+}
+
+function localizeSidebarLabels(entries: SidebarEntry[], locale: string | undefined): SidebarEntry[] {
+	return entries.map((entry) => {
+		const label = localizeUiLabel(entry.label, locale);
+
+		return entry.type === 'link'
+			? { ...entry, label }
+			: { ...entry, label, entries: localizeSidebarLabels(entry.entries, locale) };
 	});
 }
 
@@ -57,9 +68,13 @@ function scopePagination(
 
 export const onRequest = defineRouteMiddleware((context) => {
 	const { starlightRoute } = context.locals;
+	const { locale } = starlightRoute;
 	const languageId = getLearnLanguageFromPathname(context.url.pathname);
 
-	starlightRoute.sidebar = scopeToLearnLanguage(starlightRoute.sidebar, languageId);
+	starlightRoute.sidebar = localizeSidebarLabels(
+		scopeToLearnLanguage(starlightRoute.sidebar, languageId),
+		locale,
+	);
 	starlightRoute.pagination = scopePagination(
 		starlightRoute.pagination,
 		starlightRoute.sidebar,

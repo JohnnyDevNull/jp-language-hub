@@ -10,6 +10,7 @@ import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
 const BUILD_DIR = 'dist';
+const DOCS_DIR = 'src/content/docs';
 const WORD_BUDGET = 1000;
 const LOCALE_PREFIXES = ['de', 'sv'];
 const CONTENT_PATTERN = /<div class="sl-markdown-content">([\s\S]*?)<\/div>\s*(?:<footer|<\/div>)/;
@@ -22,12 +23,27 @@ function listBuiltPages(dir) {
 	});
 }
 
-function toRoute(filePath) {
+function toBuiltRoute(filePath) {
 	const route = relative(BUILD_DIR, filePath).replace(/index\.html$/, '');
 	return `/${route}`;
 }
 
-function isTranslatedRoute(route) {
+function listDocFiles(dir) {
+	return readdirSync(dir).flatMap((entry) => {
+		const path = join(dir, entry);
+		if (statSync(path).isDirectory()) return listDocFiles(path);
+		return /\.mdx?$/.test(path) ? [path] : [];
+	});
+}
+
+function toDocRoute(filePath) {
+	const slug = relative(DOCS_DIR, filePath)
+		.replace(/\.mdx?$/, '')
+		.replace(/(^|\/)index$/, '');
+	return slug ? `/${slug}/` : '/';
+}
+
+function isLocalizedRoute(route) {
 	return LOCALE_PREFIXES.some((prefix) => route.startsWith(`/${prefix}/`));
 }
 
@@ -44,10 +60,11 @@ function countRenderedWords(html) {
 
 let missingContent = 0;
 const pages = [];
+const authoredRoutes = new Set(listDocFiles(DOCS_DIR).map(toDocRoute));
 
 for (const path of listBuiltPages(BUILD_DIR)) {
-	const route = toRoute(path);
-	if (isTranslatedRoute(route)) continue;
+	const route = toBuiltRoute(path);
+	if (isLocalizedRoute(route) && !authoredRoutes.has(route)) continue;
 
 	const words = countRenderedWords(readFileSync(path, 'utf8'));
 	if (words === undefined) {

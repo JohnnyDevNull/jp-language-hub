@@ -102,6 +102,22 @@ components are unavailable, so `<span lang="sv">` stays correct there.
 Mark German and English examples with `lang="de"` and `lang="en"` directly; the
 comparison and schema components do this for their own content.
 
+## Translating Reference Pages
+
+Translate for didactic equivalence, not literal sentence-by-sentence matching.
+The translated page should preserve the same answer, route through the topic,
+examples, warnings, self-checks, and related-topic intent as the canonical
+English source.
+
+Translate page titles, descriptions, headings, prose, visible helper labels,
+card text, related-topic labels, and quick-check prompts. Keep Swedish example
+sentences and forms in Swedish, still marked with `<Sv>` in MDX.
+
+Do not use a Swedish meta-language translation to add extra Swedish-learning
+content that does not exist in the canonical learning tree. New learning
+topics belong in the root-locale source first, then translations can mirror
+them.
+
 ## Length budget
 
 A reference page targets at most **1000 rendered words**.
@@ -113,9 +129,9 @@ imports and component markup do not count. Measure it with
 npm run build && npm run report:length
 ```
 
-which reads the rendered article body of every built page, marks the ones over
-budget, and ignores the `de` and `sv` locale routes because they render the same
-English source.
+which reads the rendered article body, marks pages over budget, measures
+authored localized pages, and ignores only Starlight fallback locale routes
+that render the same English source.
 
 Over budget, split the page only when it holds two concepts that a learner
 would look up independently — then each part gets its own route, title and
@@ -131,7 +147,7 @@ or a callout at least every few paragraphs.
 
 | Page | Rendered words | Why it stays in one file |
 | --- | --- | --- |
-| `grammar/verbs/particle-verbs` | 1508 | Loose and bound particles are the same rule seen from two sides, the frequency glossary is the page's lookup value, and the practical entry path keeps the long page usable. A learner who consults one needs the other on the same page. |
+| `grammar/verbs/particle-verbs` | 1513 | Loose and bound particles are the same rule seen from two sides, the frequency glossary is the page's lookup value, and the practical entry path keeps the long page usable. A learner who consults one needs the other on the same page. |
 | `grammar/adjectives-adverbs/agreement` | 1306 | Agreement and double definiteness form one paradigm. `en-ett` deep-links into its definite section, and the practical decision path prevents the exception list from becoming the entry point. |
 | `grammar/pronouns-function-words/prepositions` | 1271 | A survey page whose value is the collected contrast with German and the practical decision path for place, direction, time, and fixed phrases; splitting it by preposition would produce stubs. |
 | `grammar/nouns-articles/en-ett` | 1204 | Gender, ending signals and the compound rule are one lookup, and the fast decision path makes the longer page usable for real noun choices. Nobody needs the endings without the rule they serve. |

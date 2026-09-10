@@ -2,21 +2,22 @@
 import Select from '@astrojs/starlight/components/Select.astro';
 import { LEARN_LANGUAGES, getLearnLanguageFromPathname } from '~/lib/learn-languages';
 import { localizedLearnPath } from '~/lib/learn-language-paths';
+import { learnLanguageLabel, uiLabel } from '~/lib/ui-labels';
 
 const { locale } = Astro.locals.starlightRoute;
 const activeLanguageId = getLearnLanguageFromPathname(Astro.url.pathname);
 ---
 
 <div class="learn-language-select">
-	<p class="learn-language-select-title" aria-hidden="true">Learning</p>
+	<p class="learn-language-select-title" aria-hidden="true">{uiLabel('Learning language', locale)}</p>
 	<learn-language-select>
 		<Select
 			icon="open-book"
-			label="Select the language you are learning"
-			options={LEARN_LANGUAGES.map(({ id, label }) => ({
+			label={uiLabel('Select the language you are learning', locale)}
+			options={LEARN_LANGUAGES.map(({ id }) => ({
 				value: localizedLearnPath(locale, id),
 				selected: id === activeLanguageId,
-				label,
+				label: learnLanguageLabel(id, locale),
 			}))}
 			width="7em"
 		/>

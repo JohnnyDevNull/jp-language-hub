@@ -1,14 +1,12 @@
 /** Route segment under `/learn/` that scopes content to one learning language. */
 export interface LearnLanguage {
 	id: string;
-	/** Shown in the learning-language select, written in that language. */
-	label: string;
 }
 
 export const LEARN_LANGUAGES: LearnLanguage[] = [
-	{ id: 'swedish', label: 'Svenska' },
-	{ id: 'german', label: 'Deutsch' },
-	{ id: 'english', label: 'English' },
+	{ id: 'swedish' },
+	{ id: 'german' },
+	{ id: 'english' },
 ];
 
 /**

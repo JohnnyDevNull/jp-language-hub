@@ -1,13 +1,17 @@
 ---
+import { uiLabel } from '~/lib/ui-labels';
+
 interface Props {
 	title?: string;
 	language?: 'German' | 'English' | 'Swedish';
 }
 
-const { language, title = language ? `${language}-specific rule` : 'Language-specific rule' } = Astro.props;
+const { language, title } = Astro.props;
+const { locale } = Astro.locals.starlightRoute;
+const label = title ?? (language ? `${language}-specific rule` : uiLabel('Language-specific rule', locale));
 ---
 
-<aside class="special-rule" aria-label={title}>
-	<p class="special-rule-title" aria-hidden="true">{title}</p>
+<aside class="special-rule" aria-label={label}>
+	<p class="special-rule-title" aria-hidden="true">{label}</p>
 	<div class="special-rule-content"><slot /></div>
 </aside>

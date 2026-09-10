@@ -16,6 +16,7 @@ const LEARNING_LANGUAGES = {
 	swedish: 'sv',
 };
 const LANGUAGE_CODES = new Set(['de', 'en', 'sv']);
+const LOCALIZED_ROUTE_LOCALES = new Set(['de', 'sv']);
 
 function listDocFiles(dir) {
 	return readdirSync(dir).flatMap((entry) => {
@@ -30,6 +31,17 @@ function toRoute(filePath) {
 		.replace(/\.mdx?$/, '')
 		.replace(/(^|\/)index$/, '');
 	return slug ? `/${slug}/` : '/';
+}
+
+function getRouteInfo(route) {
+	const segments = route.split('/').filter(Boolean);
+	const locale = LOCALIZED_ROUTE_LOCALES.has(segments[0]) ? segments[0] : undefined;
+	const canonicalSegments = locale ? segments.slice(1) : segments;
+
+	return {
+		locale,
+		canonicalRoute: canonicalSegments.length ? `/${canonicalSegments.join('/')}/` : '/',
+	};
 }
 
 function extractFrontmatter(source) {
@@ -53,6 +65,17 @@ function extractList(frontmatter, field) {
 		values.push(item[1]);
 	}
 	return values;
+}
+
+function extractMetadata(frontmatter) {
+	return {
+		metaLanguage: extractScalar(frontmatter, 'metaLanguage'),
+		grammarLanguage: extractScalar(frontmatter, 'grammarLanguage'),
+		comparisonLanguages: extractList(frontmatter, 'comparisonLanguages'),
+		levels: extractList(frontmatter, 'levels'),
+		tags: extractList(frontmatter, 'tags'),
+		related: extractList(frontmatter, 'related'),
+	};
 }
 
 function getLearningLanguageFromRoute(route) {
@@ -81,19 +104,76 @@ function addProblem(problems, file, message) {
 }
 
 const problems = [];
+const files = listDocFiles(DOCS_DIR).sort();
+const canonicalRoutes = new Set(
+	files.map(toRoute).filter((route) => getRouteInfo(route).locale === undefined),
+);
+const canonicalMetadataByRoute = new Map(
+	files
+		.map((file) => {
+			const route = toRoute(file);
+			if (getRouteInfo(route).locale) return undefined;
+			const source = readFileSync(file, 'utf8');
+			return [route, extractMetadata(extractFrontmatter(source))];
+		})
+		.filter(Boolean),
+);
 
-for (const file of listDocFiles(DOCS_DIR).sort()) {
+function sameValue(left, right) {
+	return JSON.stringify(left) === JSON.stringify(right);
+}
+
+function addMirroringProblems(problems, file, metadata, canonicalMetadata) {
+	const mirroredFields = ['grammarLanguage', 'comparisonLanguages', 'levels', 'tags', 'related'];
+
+	for (const field of mirroredFields) {
+		if (!sameValue(metadata[field], canonicalMetadata[field])) {
+			addProblem(
+				problems,
+				file,
+				`translated pages must mirror canonical ${field} metadata exactly.`,
+			);
+		}
+	}
+}
+
+for (const file of files) {
 	const source = readFileSync(file, 'utf8');
 	const frontmatter = extractFrontmatter(source);
 	const route = toRoute(file);
-	const metaLanguage = extractScalar(frontmatter, 'metaLanguage');
-	const grammarLanguage = extractScalar(frontmatter, 'grammarLanguage');
-	const comparisonLanguages = extractList(frontmatter, 'comparisonLanguages');
+	const routeInfo = getRouteInfo(route);
+	const metadata = extractMetadata(frontmatter);
+	const { metaLanguage, grammarLanguage, comparisonLanguages } = metadata;
 	const comparisonLanguageSet = new Set(comparisonLanguages);
-	const learningLanguage = getLearningLanguageFromRoute(route);
+	const learningLanguage = getLearningLanguageFromRoute(routeInfo.canonicalRoute);
 
 	if (metaLanguage && !LANGUAGE_CODES.has(metaLanguage)) {
 		addProblem(problems, file, `metaLanguage must be de, en, or sv; found ${metaLanguage}.`);
+	}
+
+	if (routeInfo.locale) {
+		if (metaLanguage !== routeInfo.locale) {
+			addProblem(
+				problems,
+				file,
+				`translated /${routeInfo.locale}/ pages must set metaLanguage: ${routeInfo.locale}.`,
+			);
+		}
+
+		if (!canonicalRoutes.has(routeInfo.canonicalRoute)) {
+			addProblem(
+				problems,
+				file,
+				`translated pages must mirror an existing default-locale route; missing ${routeInfo.canonicalRoute}.`,
+			);
+		} else {
+			addMirroringProblems(
+				problems,
+				file,
+				metadata,
+				canonicalMetadataByRoute.get(routeInfo.canonicalRoute),
+			);
+		}
 	}
 
 	if (learningLanguage) {
@@ -183,4 +263,4 @@ if (problems.length > 0) {
 	process.exit(1);
 }
 
-console.log(`Validated language layers across ${listDocFiles(DOCS_DIR).length} docs pages.`);
+console.log(`Validated language layers across ${files.length} docs pages.`);

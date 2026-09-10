@@ -15,6 +15,29 @@ Docs frontmatter may use the following optional, validated fields:
   `/learn/swedish/grammar/verbs/present/`. Only the shape is validated by the
   schema; `npm run validate:links` checks that the target exists.
 
+## Translated Page Metadata
+
+Translated pages live under `src/content/docs/de/` or `src/content/docs/sv/`
+and must mirror an existing root-locale source page at the same path without
+the locale segment.
+
+Only `metaLanguage` changes because it records the explanation language:
+
+- files under `src/content/docs/de/` must set `metaLanguage: de`
+- files under `src/content/docs/sv/` must set `metaLanguage: sv`
+
+These fields must mirror the canonical root-locale page exactly:
+
+- `grammarLanguage`
+- `comparisonLanguages`
+- `levels`
+- `tags`
+- `related`
+
+`related` stays absolute and canonical, for example
+`/learn/swedish/grammar/verbs/present/`, never `/de/learn/...` or
+`/sv/learn/...`.
+
 ## Controlled Tag Vocabulary
 
 Use only tags that help classify or retrieve content:

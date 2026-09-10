@@ -1,6 +1,7 @@
 ---
 import { importantIndexPath, levelIndexPath } from '~/lib/content-index-paths';
 import { getLearnLanguageFromPathname } from '~/lib/learn-languages';
+import { uiLabel } from '~/lib/ui-labels';
 
 interface Props {
 	levels?: string[];
@@ -8,9 +9,10 @@ interface Props {
 	label?: string;
 }
 
-const { levels = [], tags = [], label = 'Level and tags' } = Astro.props;
+const { levels = [], tags = [], label } = Astro.props;
 
 const { locale } = Astro.locals.starlightRoute;
+const listLabel = label ?? uiLabel('Level and tags', locale);
 const learnLanguage = getLearnLanguageFromPathname(Astro.url.pathname);
 const levelHref = levelIndexPath(locale, learnLanguage);
 const importantHref = importantIndexPath(locale, learnLanguage);
@@ -29,8 +31,8 @@ const items = [
 
 {
 	items.length > 0 && (
-		<aside class="tag-list" aria-label={label}>
-			<p class="tag-list-label" aria-hidden="true">{label}</p>
+		<aside class="tag-list" aria-label={listLabel}>
+			<p class="tag-list-label" aria-hidden="true">{listLabel}</p>
 			<ul class="tag-list-items">
 				{items.map((item) => (
 					<li class="tag-list-item">

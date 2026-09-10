@@ -1,0 +1,84 @@
+---
+title: Startsida
+description: En personlig språkreferens för tyska, engelska och svenska.
+template: splash
+metaLanguage: sv
+hero:
+  title: JP Language Hub
+  tagline: Deutsch · English · Svenska
+  actions:
+    - text: Starta den svenska lärvägen
+      link: ./learn/swedish/learning-path/
+      icon: right-arrow
+    - text: Bläddra i svensk grammatik
+      link: ./learn/swedish/grammar/
+      icon: open-book
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+
+En personlig språkreferens för att jämföra tyska, engelska och svenska, med
+svenska som aktuellt lärfokus.
+
+<LanguageComparison title="En betydelse, tre språk">
+	<p slot="de">Ich habe ein Auto.</p>
+	<p slot="en">I have a car.</p>
+	<p slot="sv">Jag har en bil.</p>
+</LanguageComparison>
+
+## Var du börjar
+
+Referensen är tillräckligt stor för att "läs allt" inte ska vara ett svar. Den
+[svenska lärvägen](./learn/swedish/learning-path/) ordnar alla befintliga sidor
+efter CEFR-nivån de redan anger, och säger i en rad varför varje steg ligger där.
+
+## Snabbstart för svenska
+
+- [Lär dig när du använder *en* och *ett*](./learn/swedish/grammar/nouns-articles/en-ett/)
+- [Förstå V2-ordföljd](./learn/swedish/grammar/sentence-structure/v2/)
+- [Placera *inte* med BIFF](./learn/swedish/grammar/sentence-structure/biff/)
+- [Bygg svenska substantivformer](./learn/swedish/grammar/nouns-articles/noun-forms/)
+- [Matcha adjektivändelser](./learn/swedish/grammar/adjectives-adverbs/agreement/)
+- [Känn igen de centrala verbformerna](./learn/swedish/grammar/verbs/verb-forms/)
+- [Säg vad du tycker med återanvändbara mönster](./learn/swedish/sentence-patterns/opinions-and-uncertainty/)
+
+## Utforska referensen
+
+<CardGrid stagger>
+	<Card title="Svensk lärväg" icon="rocket">
+		En ordnad väg genom alla befintliga svenska sidor, grupperad efter CEFR-nivå.
+		[Öppna lärvägen](./learn/swedish/learning-path/)
+	</Card>
+	<Card title="Grammatik" icon="open-book">
+		Satsstruktur, verb, substantiv, adjektiv och funktionsord.
+		[Öppna grammatiken](./learn/swedish/grammar/)
+	</Card>
+	<Card title="Ordförråd" icon="document">
+		Ordförråd ordnat efter verkliga situationer i stället för isolerade listor.
+		[Öppna ordförråd](./learn/swedish/vocabulary/)
+	</Card>
+	<Card title="Svenska satsmönster" icon="comment">
+		Återanvändbara konstruktioner för åsikter, instämmande, skäl, villkor och
+		samtal.
+		[Öppna satsmönster](./learn/swedish/sentence-patterns/)
+	</Card>
+	<Card title="Uttal" icon="puzzle">
+		Vokallängd, hårda och mjuka vokaler, ordaccent och talspråkliga reduktioner.
+		[Öppna uttal](./learn/swedish/pronunciation-basics/)
+	</Card>
+	<Card title="Vanliga misstag" icon="warning">
+		Typiska överföringsfel, falska vänner och missvisande direktöversättningar.
+		[Öppna vanliga misstag](./learn/swedish/common-mistakes/)
+	</Card>
+	<Card title="Snabbreferenser" icon="list-format">
+		Kompakta referenser för former, ordföljd och återkommande mönster.
+		[Öppna snabbreferenser](./learn/swedish/cheat-sheets/)
+	</Card>
+	<Card title="Övning" icon="pencil">
+		Varje referenssida slutar med en snabb kontroll. Den här sidan förklarar vad
+		det täcker idag och vad ett övningsområde skulle lägga till.
+		[Öppna övning](./practice/)
+	</Card>
+</CardGrid>

@@ -1,0 +1,89 @@
+---
+title: Startseite
+description: Eine persönliche Sprachreferenz für Deutsch, Englisch und Schwedisch.
+template: splash
+metaLanguage: de
+hero:
+  title: JP Language Hub
+  tagline: Deutsch · English · Svenska
+  actions:
+    - text: Schwedischen Lernpfad starten
+      link: ./learn/swedish/learning-path/
+      icon: right-arrow
+    - text: Schwedische Grammatik öffnen
+      link: ./learn/swedish/grammar/
+      icon: open-book
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+
+Eine persönliche Sprachreferenz zum Vergleichen von Deutsch, Englisch und
+Schwedisch, mit Schwedisch als aktuellem Lernfokus.
+
+<LanguageComparison title="Eine Bedeutung, drei Sprachen">
+	<p slot="de">Ich habe ein Auto.</p>
+	<p slot="en">I have a car.</p>
+	<p slot="sv">Jag har en bil.</p>
+</LanguageComparison>
+
+## Wo anfangen?
+
+Die Referenz ist groß genug, dass "lies einfach alles" keine hilfreiche
+Antwort ist. Der [schwedische Lernpfad](./learn/swedish/learning-path/) ordnet
+alle vorhandenen Seiten nach den CEFR-Stufen, die sie ohnehin in der
+Frontmatter tragen, und erklärt jeweils in einer Zeile, warum der Schritt dort
+steht.
+
+## Schwedisch-Schnellstart
+
+- [Genus bei Substantiven verstehen](./learn/swedish/grammar/nouns-articles/en-ett/)
+- [V2-Wortstellung verstehen](./learn/swedish/grammar/sentence-structure/v2/)
+- [Verneinung mit BIFF platzieren](./learn/swedish/grammar/sentence-structure/biff/)
+- [Schwedische Substantivformen bilden](./learn/swedish/grammar/nouns-articles/noun-forms/)
+- [Adjektivendungen angleichen](./learn/swedish/grammar/adjectives-adverbs/agreement/)
+- [Die wichtigsten Verbformen erkennen](./learn/swedish/grammar/verbs/verb-forms/)
+- [Mit wiederverwendbaren Mustern sagen, was du denkst](./learn/swedish/sentence-patterns/opinions-and-uncertainty/)
+
+## Referenz erkunden
+
+<CardGrid stagger>
+	<Card title="Schwedischer Lernpfad" icon="rocket">
+		Eine geordnete Route durch alle vorhandenen schwedischen Seiten, nach
+		CEFR-Stufe gruppiert.
+		[Zum Lernpfad](./learn/swedish/learning-path/)
+	</Card>
+	<Card title="Grammatik" icon="open-book">
+		Satzstruktur, Verben, Substantive, Adjektive und Funktionswörter.
+		[Grammatik öffnen](./learn/swedish/grammar/)
+	</Card>
+	<Card title="Wortschatz" icon="document">
+		Wortschatz nach realen Alltagssituationen statt isolierten Listen.
+		[Wortschatz öffnen](./learn/swedish/vocabulary/)
+	</Card>
+	<Card title="Schwedische Satzmuster" icon="comment">
+		Wiederverwendbare Konstruktionen für Meinungen, Zustimmung, Gründe,
+		Bedingungen und Gesprächsführung.
+		[Satzmuster öffnen](./learn/swedish/sentence-patterns/)
+	</Card>
+	<Card title="Aussprache" icon="puzzle">
+		Vokallänge, harte und weiche Vokale, Wortakzent und gesprochene
+		Reduktionen.
+		[Aussprache öffnen](./learn/swedish/pronunciation-basics/)
+	</Card>
+	<Card title="Typische Fehler" icon="warning">
+		Typische Transferfehler, falsche Freunde und irreführende direkte
+		Übersetzungen.
+		[Typische Fehler öffnen](./learn/swedish/common-mistakes/)
+	</Card>
+	<Card title="Spickzettel" icon="list-format">
+		Kompakte Referenzen für Formen, Wortstellung und wiederkehrende Muster.
+		[Spickzettel öffnen](./learn/swedish/cheat-sheets/)
+	</Card>
+	<Card title="Üben" icon="pencil">
+		Jede Referenzseite endet mit einem kurzen Check. Diese Seite erklärt, was
+		das heute abdeckt und was ein späterer Übungsbereich ergänzen würde.
+		[Üben öffnen](./practice/)
+	</Card>
+</CardGrid>

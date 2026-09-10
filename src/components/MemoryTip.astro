@@ -1,12 +1,16 @@
 ---
+import { uiLabel } from '~/lib/ui-labels';
+
 interface Props {
 	title?: string;
 }
 
-const { title = 'Memory tip' } = Astro.props;
+const { title } = Astro.props;
+const { locale } = Astro.locals.starlightRoute;
+const label = title ?? uiLabel('Memory tip', locale);
 ---
 
-<aside class="memory-tip" aria-label={title}>
-	<p class="memory-tip-title" aria-hidden="true">{title}</p>
+<aside class="memory-tip" aria-label={label}>
+	<p class="memory-tip-title" aria-hidden="true">{label}</p>
 	<div class="memory-tip-content"><slot /></div>
 </aside>

@@ -74,12 +74,23 @@ page-body links.
 routes, `grammarLanguage`, `comparisonLanguages`, and `LanguageComparison`
 slots.
 
+It also checks translated-page safety: files under `src/content/docs/de/` and
+`src/content/docs/sv/` must mirror an existing root-locale route, set
+`metaLanguage` to the route locale, and keep structural metadata such as
+`grammarLanguage`, `comparisonLanguages`, `levels`, `tags`, and `related`
+aligned with the canonical source page.
+
 `report:length` measures rendered article text from the built output. The
 default target is at most 1000 rendered words per reference page, with
 documented exceptions in `docs/rules/content-didactics.md`.
 
+The report skips Starlight fallback duplicates for untranslated locale routes
+but measures real translated pages that have source files under the locale
+folder.
+
 ## Current Deployment Shape
 
 The project builds static HTML for the root English meta-language route and
-the German and Swedish locale routes. German and Swedish meta-language pages
-currently fall back to English source content until translations are added.
+the German and Swedish locale routes. German and Swedish routes fall back to
+English source content unless a matching translated content file exists under
+`src/content/docs/de/` or `src/content/docs/sv/`.

@@ -1,4 +1,6 @@
 ---
+import { uiLabel } from '~/lib/ui-labels';
+
 interface RelatedTopic {
 	href: string;
 	label: string;
@@ -10,13 +12,15 @@ interface Props {
 	title?: string;
 }
 
-const { topics = [], title = 'Related topics' } = Astro.props;
+const { topics = [], title } = Astro.props;
+const { locale } = Astro.locals.starlightRoute;
+const label = title ?? uiLabel('Related topics', locale);
 ---
 
 {
 	topics.length > 0 && (
-		<nav class="related-topics" aria-label={title}>
-			<p class="related-topics-title" aria-hidden="true">{title}</p>
+		<nav class="related-topics" aria-label={label}>
+			<p class="related-topics-title" aria-hidden="true">{label}</p>
 			<ul class="related-topics-items">
 				{topics.map((topic) => (
 					<li class="related-topics-item">

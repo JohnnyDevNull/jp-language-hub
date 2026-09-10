@@ -1,4 +1,6 @@
 ---
+import { uiLabel } from '~/lib/ui-labels';
+
 interface Props {
 	title?: string;
 	incorrect?: string;
@@ -6,19 +8,21 @@ interface Props {
 	lang?: 'de' | 'en' | 'sv';
 }
 
-const { title = 'Common mistake', incorrect, correct, lang } = Astro.props;
+const { title, incorrect, correct, lang } = Astro.props;
+const { locale } = Astro.locals.starlightRoute;
+const label = title ?? uiLabel('Common mistake', locale);
 ---
 
-<aside class="mistake-box" aria-label={title}>
-	<p class="mistake-box-title" aria-hidden="true">{title}</p>
+<aside class="mistake-box" aria-label={label}>
+	<p class="mistake-box-title" aria-hidden="true">{label}</p>
 	{incorrect && (
 		<p class="mistake-box-example mistake-box-example-incorrect" lang={lang}>
-			<span>Incorrect:</span> {incorrect}
+			<span>{uiLabel('Incorrect', locale)}:</span> {incorrect}
 		</p>
 	)}
 	{correct && (
 		<p class="mistake-box-example mistake-box-example-correct" lang={lang}>
-			<span>Correct:</span> {correct}
+			<span>{uiLabel('Correct', locale)}:</span> {correct}
 		</p>
 	)}
 	<div class="mistake-box-content"><slot /></div>

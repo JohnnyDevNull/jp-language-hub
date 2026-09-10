@@ -1,4 +1,6 @@
 ---
+import { uiLabel } from '~/lib/ui-labels';
+
 interface QuickCheckItem {
 	prompt: string;
 	answer: string;
@@ -11,17 +13,19 @@ interface Props {
 	answerLang?: 'de' | 'en' | 'sv';
 }
 
-const { items, title = 'Quick check', answerLang = 'sv' } = Astro.props;
+const { items, title, answerLang = 'sv' } = Astro.props;
+const { locale } = Astro.locals.starlightRoute;
+const checkTitle = title ?? uiLabel('Quick check', locale);
 ---
 
-<section class="quick-check" aria-label={title}>
-	<p class="quick-check-title" aria-hidden="true">{title}</p>
+<section class="quick-check" aria-label={checkTitle}>
+	<p class="quick-check-title" aria-hidden="true">{checkTitle}</p>
 	<ol class="quick-check-items">
 		{items.map((item) => (
 			<li class="quick-check-item">
 				<p class="quick-check-prompt">{item.prompt}</p>
 				<details class="quick-check-answer">
-					<summary class="quick-check-answer-toggle">Show answer</summary>
+					<summary class="quick-check-answer-toggle">{uiLabel('Show answer', locale)}</summary>
 					<p class="quick-check-answer-text" lang={answerLang}>{item.answer}</p>
 				</details>
 			</li>

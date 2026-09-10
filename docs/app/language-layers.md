@@ -69,6 +69,25 @@ Pages that are not owned by one learning language stay outside `/learn/`:
 These shared pages currently render with the default Swedish learning sidebar
 because a static build cannot vary their sidebar per visitor.
 
+German and Swedish meta-language routes now have a small translated pilot:
+
+```text
+/de/
+/de/learn/swedish/learning-path/
+/de/learn/swedish/grammar/sentence-structure/basic-word-order/
+/de/learn/swedish/sentence-patterns/
+/de/learn/swedish/sentence-patterns/introducing-yourself/
+
+/sv/
+/sv/learn/swedish/learning-path/
+/sv/learn/swedish/grammar/sentence-structure/basic-word-order/
+/sv/learn/swedish/sentence-patterns/
+/sv/learn/swedish/sentence-patterns/introducing-yourself/
+```
+
+All other German and Swedish meta-language routes are Starlight fallback routes
+that render the canonical English source content under the localized URL.
+
 ## Navigation Rules
 
 The sidebar is configured once in `astro.config.mjs` and scoped at request time
@@ -79,11 +98,14 @@ The learning-language selector lives above the sidebar and chooses the active
 learning tree. This must remain separate from Starlight's locale selector,
 which chooses the meta language.
 
-## Future Meta-Language Work
+Sidebar group labels and learning-language selector labels are localized from
+one label table. The sidebar structure itself remains single-source in
+`astro.config.mjs`.
 
-When German and Swedish meta-language content is added, `/de/` and `/sv/` must
-mean "the same reference explained in German or Swedish." They must not mean
-"learn German" or "learn Swedish."
+## Meta-Language Routes
+
+`/de/` and `/sv/` mean "the same reference explained in German or Swedish."
+They must not mean "learn German" or "learn Swedish."
 
 Example:
 
@@ -101,3 +123,12 @@ Topic: V2
 
 That distinction is intentional. It lets a learner later read Swedish grammar
 explanations in Swedish without changing the learning-language tree.
+
+Translated content files mirror the canonical root-locale file path under the
+locale folder:
+
+```text
+src/content/docs/learn/swedish/grammar/sentence-structure/basic-word-order.mdx
+src/content/docs/de/learn/swedish/grammar/sentence-structure/basic-word-order.mdx
+src/content/docs/sv/learn/swedish/grammar/sentence-structure/basic-word-order.mdx
+```
