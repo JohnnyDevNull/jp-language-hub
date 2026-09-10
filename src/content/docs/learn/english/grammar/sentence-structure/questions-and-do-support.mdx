@@ -1,0 +1,202 @@
+---
+title: Questions and do-support
+description: Form English questions by moving an auxiliary before the subject, and use do-support when the present or past simple has no auxiliary.
+metaLanguage: en
+grammarLanguage: en
+comparisonLanguages:
+  - de
+  - en
+levels:
+  - A1
+  - A2
+  - B1
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/english/
+  - /learn/english/common-mistakes/from-german/
+  - /learn/english/grammar/verbs/simple-present/
+  - /learn/english/grammar/verbs/simple-past/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- English questions move an auxiliary before the subject: *Are you ready?*,
+  *Can she come?*, *Have they arrived?*
+- Present and past simple questions usually add *do*: *Do you work here?*,
+  *Did he call?*
+- *Be* and modal verbs do not take do-support: *Is she here?*, *Can you help?*
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+German can ask by moving the main verb to the front. English is stricter: most
+questions need a helper verb in front of the subject.
+
+## Use this now
+
+Ask one question before thinking about the full rule:
+
+| If the statement or question has... | Make the question with... | Example |
+| --- | --- | --- |
+| *be* | *be* before the subject | *Are you tired?* |
+| a modal verb | modal before the subject | *Can she drive?* |
+| another auxiliary | auxiliary before the subject | *Have they left?* |
+| present simple, no auxiliary | *do / does* before the subject | *Do you like it?* |
+| past simple, no auxiliary | *did* before the subject | *Did he call?* |
+| the question word is the subject | no do-support | *Who lives here?* |
+
+## Core rule
+
+English question order is:
+
+<SentenceSchema
+	caption="English question order with auxiliaries"
+	rowHeader="Question type"
+	lang="en"
+	columns={['Question word', 'Auxiliary', 'Subject', 'Main verb', 'Rest']}
+	rows={[
+		{
+			label: 'Yes/no',
+			cells: ['', 'Do', 'you', 'speak', 'English?'],
+		},
+		{
+			label: 'Question word',
+			cells: ['Where', 'does', 'she', 'live?', ''],
+		},
+		{
+			label: 'Be',
+			cells: ['', 'Is', 'he', '', 'ready?'],
+		},
+		{
+			label: 'Modal',
+			cells: ['When', 'can', 'we', 'start?', ''],
+		},
+		{
+			label: 'Subject question',
+			cells: ['Who', '', '', 'lives', 'here?'],
+		},
+	]}
+/>
+
+The auxiliary carries tense and agreement. The main verb stays in its base
+form after *do / does / did*: *Does she work here?*, not *Does she works here?*
+
+## When do-support appears
+
+Use do-support when the statement is present simple or past simple and has no
+other auxiliary:
+
+| Statement | Question |
+| --- | --- |
+| *You work here.* | *Do you work here?* |
+| *She likes tea.* | *Does she like tea?* |
+| *He called yesterday.* | *Did he call yesterday?* |
+| *They know the answer.* | *Do they know the answer?* |
+
+The form of *do* changes, so the main verb does not:
+
+- *does + like*, not *does + likes*
+- *did + call*, not *did + called*
+
+See [simple present](../../verbs/simple-present/) and
+[simple past](../../verbs/simple-past/) for the time forms behind this pattern.
+
+## No do-support with be, modals, or auxiliaries
+
+If there is already a helper verb, move that helper. Do not add *do*.
+
+| Statement | Question |
+| --- | --- |
+| *She is ready.* | *Is she ready?* |
+| *You can help.* | *Can you help?* |
+| *They have finished.* | *Have they finished?* |
+| *He will call.* | *Will he call?* |
+
+The same applies to negative questions: *Isn't she ready?*, *Can't you help?*,
+*Haven't they finished?*
+
+## Subject questions
+
+When the question word itself is the subject, keep normal statement order after
+it. Do not add *do* just because the sentence is a question.
+
+| Meaning | Question |
+| --- | --- |
+| Someone lives here. Who? | *Who lives here?* |
+| Something happened. What? | *What happened?* |
+| Someone called you. Who? | *Who called you?* |
+
+Use do-support when the question word asks about the object or another part of
+the sentence: *Who did you call?*
+
+## Direct comparison
+
+<LanguageComparison title="Yes/no question" languages={['de', 'en']}>
+	<p slot="de">Wohnst du hier?</p>
+	<p slot="en">Do you live here?</p>
+</LanguageComparison>
+
+<LanguageComparison title="Question word" languages={['de', 'en']}>
+	<p slot="de">Wo wohnst du?</p>
+	<p slot="en">Where do you live?</p>
+</LanguageComparison>
+
+German moves the main verb. English moves an auxiliary; if there is no
+auxiliary, English creates one with *do*.
+
+<MistakeBox incorrect="Where live you?" correct="Where do you live?" lang="en">
+	This is German verb-fronting copied into English. Keep the English subject
+	after the auxiliary, not after the main verb.
+</MistakeBox>
+
+<MistakeBox incorrect="Does she likes coffee?" correct="Does she like coffee?" lang="en">
+	*Does* already marks third person singular, so the main verb stays in the
+	base form.
+</MistakeBox>
+
+<MemoryTip>
+Do not move the main verb in English unless the main verb is *be*. Move the
+helper; create *do* only when there is no helper.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Ask a yes/no question: You work here.',
+			answer: 'Do you work here?',
+		},
+		{
+			prompt: 'Ask with where: She lives in Berlin.',
+			answer: 'Where does she live?',
+		},
+		{
+			prompt: 'Correct: Did he called yesterday?',
+			answer: 'Did he call yesterday?',
+		},
+		{
+			prompt: 'Ask for the subject: Someone lives here.',
+			answer: 'Who lives here?',
+		},
+	]}
+	answerLang="en"
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../../', label: 'English overview' },
+		{ href: '../../../common-mistakes/from-german/', label: 'German to English mistakes' },
+		{ href: '../../verbs/simple-present/', label: 'Simple present' },
+		{ href: '../../verbs/simple-past/', label: 'Simple past' },
+	]}
+/>

@@ -164,7 +164,55 @@ export default defineConfig({
 
 				// English learning tree.
 				{ label: 'Overview', slug: 'learn/english' },
-				{ slug: 'learn/english/common-mistakes/from-german' },
+				{
+					label: 'Grammar',
+					items: [
+						{ label: 'Overview', slug: 'learn/english/grammar' },
+						{
+							label: 'Sentence Structure',
+							items: [
+								{ label: 'Overview', slug: 'learn/english/grammar/sentence-structure' },
+								{ slug: 'learn/english/grammar/sentence-structure/sentence-order' },
+								{ slug: 'learn/english/grammar/sentence-structure/questions-and-do-support' },
+								{ slug: 'learn/english/grammar/sentence-structure/adverb-placement' },
+							],
+						},
+						{
+							label: 'Verbs & Time Forms',
+							items: [
+								{ label: 'Overview', slug: 'learn/english/grammar/verbs' },
+								{ slug: 'learn/english/grammar/verbs/choosing-time-form' },
+								{ slug: 'learn/english/grammar/verbs/simple-present' },
+								{ slug: 'learn/english/grammar/verbs/present-progressive' },
+								{ slug: 'learn/english/grammar/verbs/simple-present-vs-present-progressive' },
+								{ slug: 'learn/english/grammar/verbs/simple-past' },
+								{ slug: 'learn/english/grammar/verbs/present-perfect' },
+								{ slug: 'learn/english/grammar/verbs/simple-past-vs-present-perfect' },
+								{ slug: 'learn/english/grammar/verbs/will-future' },
+								{ slug: 'learn/english/grammar/verbs/going-to-future' },
+								{ slug: 'learn/english/grammar/verbs/future-progressive' },
+								{ slug: 'learn/english/grammar/verbs/future-perfect' },
+							],
+						},
+						{
+							label: 'Nouns & Articles',
+							items: [
+								{ label: 'Overview', slug: 'learn/english/grammar/nouns-articles' },
+								{ slug: 'learn/english/grammar/nouns-articles/articles' },
+								{
+									slug: 'learn/english/grammar/nouns-articles/countable-and-uncountable-nouns',
+								},
+							],
+						},
+					],
+				},
+				{
+					label: 'Common Mistakes',
+					items: [
+						{ label: 'Overview', slug: 'learn/english/common-mistakes' },
+						{ slug: 'learn/english/common-mistakes/from-german' },
+					],
+				},
 
 				// Shared by every learning language.
 				{ slug: 'false-friends' },

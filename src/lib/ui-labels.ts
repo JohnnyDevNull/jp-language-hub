@@ -30,6 +30,7 @@ type UiLabelKey =
 	| 'Sentence Structure'
 	| 'Show answer'
 	| 'Verbs'
+	| 'Verbs & Time Forms'
 	| 'Vocabulary';
 
 const UI_LABELS: Record<UiLabelKey, Record<MetaLocale, string>> = {
@@ -177,6 +178,11 @@ const UI_LABELS: Record<UiLabelKey, Record<MetaLocale, string>> = {
 		en: 'Verbs',
 		de: 'Verben',
 		sv: 'Verb',
+	},
+	'Verbs & Time Forms': {
+		en: 'Verbs & Time Forms',
+		de: 'Verben & Zeitformen',
+		sv: 'Verb och tidsformer',
 	},
 	Vocabulary: {
 		en: 'Vocabulary',

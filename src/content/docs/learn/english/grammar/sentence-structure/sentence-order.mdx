@@ -1,0 +1,150 @@
+---
+title: Sentence order
+description: Learn the default English sentence order and avoid German-style inversion after fronted time or place expressions.
+metaLanguage: en
+grammarLanguage: en
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/english/grammar/sentence-structure/questions-and-do-support/
+  - /learn/english/grammar/sentence-structure/adverb-placement/
+  - /learn/english/common-mistakes/from-german/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- A neutral English statement normally follows **subject + verb + object + place
+  + time**.
+- English main clauses are stricter than German: a fronted time or place phrase
+  does not normally move the verb before the subject.
+- Save inversion for questions, negatives with special opening words, and a few
+  formal patterns.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+English sounds natural when the main sentence frame stays stable. German lets
+you move a time or place phrase to the front and then put the verb second;
+English normally keeps the subject before the verb.
+
+## Use this now
+
+1. Start with the person or thing the sentence is about.
+2. Add the finite verb.
+3. Add the object or complement.
+4. Put place before time when both are simple adverbials.
+5. If time or place goes first, keep **subject + verb** after it.
+
+Use [questions and do-support](../questions-and-do-support/) when the sentence
+is a question. Use [adverb placement](../adverb-placement/) when the problem is
+a word like *often*, *always*, *still*, or *already*.
+
+## Core rule
+
+The default English statement pattern is:
+
+> **subject + finite verb + object/complement + place + time**
+
+<SentenceSchema
+	caption="Default English statement order"
+	rowHeader="Variant"
+	lang="en"
+	columns={['Opening', 'Subject', 'Finite verb', 'Object / complement', 'Place', 'Time']}
+	rows={[
+		{ label: 'Neutral', cells: ['', 'I', 'met', 'Sarah', 'at the station', 'yesterday.'] },
+		{ label: 'Time first', cells: ['Yesterday,', 'I', 'met', 'Sarah', 'at the station', ''] },
+		{ label: 'Place first', cells: ['At the station,', 'I', 'met', 'Sarah', '', 'yesterday.'] },
+	]}
+/>
+
+The opening position is optional. When it is filled, it adds emphasis or
+orientation, but it normally does not change the order of subject and verb.
+
+## What changes from German
+
+German main clauses use V2: the finite verb stays in the second constituent
+position. English statements do not follow that rule.
+
+<LanguageComparison title="Time expression first">
+	<p slot="de">Gestern habe ich Sarah am Bahnhof getroffen.</p>
+	<p slot="en">Yesterday, I met Sarah at the station.</p>
+	<p slot="sv">Igår träffade jag Sarah på stationen.</p>
+</LanguageComparison>
+
+German and Swedish put the finite verb after the fronted time phrase. English
+keeps **I met**, not *met I*. This is one of the first word-order habits German
+speakers need to switch off in English.
+
+## Place before time
+
+When both place and time come after the verb phrase, English usually prefers
+place before time:
+
+- <span lang="en">We had dinner <strong>at a small restaurant</strong> <strong>last night</strong>.</span>
+- <span lang="en">She works <strong>from home</strong> <strong>on Fridays</strong>.</span>
+- <span lang="en">They arrived <strong>in London</strong> <strong>at six</strong>.</span>
+
+This is a useful default, not a law. Put a time phrase earlier when it is the
+main contrast:
+
+<p lang="en">On Fridays, she works from home.</p>
+
+The important point is that the fronted phrase still does not trigger German
+V2 order.
+
+<MistakeBox
+	incorrect="Yesterday met I Sarah at the station."
+	correct="Yesterday, I met Sarah at the station."
+	lang="en"
+>
+	Do not copy German main-clause inversion after a fronted time or place
+	expression. In an English statement, keep the subject before the verb.
+</MistakeBox>
+
+<MemoryTip>
+After a fronted time or place phrase, ask: **Who did it?** Put that subject
+next, then the verb.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Correct: Tomorrow go we to London.',
+			answer: 'Tomorrow, we are going to London.',
+		},
+		{
+			prompt: 'Put place and time in the default order: I met him / yesterday / at the office.',
+			answer: 'I met him at the office yesterday.',
+		},
+		{
+			prompt: 'Front the time phrase without inversion: I called her on Monday.',
+			answer: 'On Monday, I called her.',
+		},
+	]}
+	answerLang="en"
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../questions-and-do-support/', label: 'Questions and do-support' },
+		{ href: '../adverb-placement/', label: 'Adverb placement' },
+		{ href: '../../../common-mistakes/from-german/', label: 'German to English mistakes' },
+	]}
+/>

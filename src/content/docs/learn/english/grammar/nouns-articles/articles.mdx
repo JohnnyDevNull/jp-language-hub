@@ -1,0 +1,164 @@
+---
+title: Articles
+description: Choose a, an, the, or no article in English by checking countability and specific meaning first.
+metaLanguage: en
+grammarLanguage: en
+comparisonLanguages:
+  - de
+  - en
+levels:
+  - A1
+  - A2
+  - B1
+tags:
+  - grammar
+  - nouns
+  - common-mistakes
+  - comparison
+related:
+  - /learn/english/grammar/nouns-articles/countable-and-uncountable-nouns/
+  - /learn/english/common-mistakes/from-german/
+  - /learn/english/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Use **a/an** for one non-specific countable thing: *a question*, *an idea*.
+- Use **the** when the listener can identify the thing you mean: *the question
+  from yesterday*.
+- Use no article for many general plural and uncountable meanings: *Dogs need
+  exercise*, *Information helps*.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+English articles are small, but they carry two decisions at once: what kind of
+noun you have, and whether the listener can identify it. German articles are
+not a safe shortcut, especially for generic plurals and uncountable nouns.
+
+## Use this now
+
+Ask these questions in order:
+
+| Question | Choose | Example |
+| --- | --- | --- |
+| Is it one non-specific countable thing? | **a/an** | <span lang="en">I bought a book.</span> |
+| Can the listener identify it? | **the** | <span lang="en">The book is on my desk.</span> |
+| Is it a general plural? | no article | <span lang="en">Books are useful.</span> |
+| Is it a general uncountable noun? | no article | <span lang="en">Information is useful.</span> |
+| Is it a specific uncountable meaning? | **the** | <span lang="en">The information in this email is useful.</span> |
+
+If you are unsure whether the noun is countable, start with
+[countable and uncountable nouns](../countable-and-uncountable-nouns/).
+
+## Core rule
+
+English singular count nouns normally need a determiner. **A/an**, **the**,
+possessives, demonstratives, and quantifiers can all fill that slot.
+
+| Meaning | Natural English |
+| --- | --- |
+| one thing, not identified yet | <span lang="en">I need a chair.</span> |
+| the listener knows which one | <span lang="en">I need the chair by the window.</span> |
+| ownership identifies it | <span lang="en">I need my chair.</span> |
+| pointing identifies it | <span lang="en">I need that chair.</span> |
+
+Use **a** before a consonant sound and **an** before a vowel sound:
+<span lang="en">a university</span>, <span lang="en">an hour</span>,
+<span lang="en">an old idea</span>.
+
+## General and specific meaning
+
+English often uses no article for a whole class, especially with plural nouns
+and uncountable nouns.
+
+| Meaning | Example |
+| --- | --- |
+| dogs in general | <span lang="en">Dogs need exercise.</span> |
+| specific dogs | <span lang="en">The dogs next door bark at night.</span> |
+| coffee in general | <span lang="en">Coffee helps me focus.</span> |
+| specific coffee | <span lang="en">The coffee in this cup is cold.</span> |
+
+Do not translate German **der**, **die**, **das** mechanically as **the**.
+First decide whether the English meaning is general or specific.
+
+## Countability changes the article
+
+Countability decides whether **a/an** is possible at all.
+
+| Noun type | General | One unit | Specific |
+| --- | --- | --- | --- |
+| countable | <span lang="en">Books are useful.</span> | <span lang="en">a book</span> | <span lang="en">the book on my desk</span> |
+| uncountable | <span lang="en">Information is useful.</span> | <span lang="en">a piece of information</span> | <span lang="en">the information in the email</span> |
+
+For the noun-type decision, use
+[countable and uncountable nouns](../countable-and-uncountable-nouns/).
+
+## Direct comparison
+
+<LanguageComparison title="Generic plural" languages={['de', 'en']}>
+	<p slot="de">Die Hunde brauchen Bewegung.</p>
+	<p slot="en">Dogs need exercise.</p>
+</LanguageComparison>
+
+German often uses a definite article for a generic plural. English normally
+uses no article there, because the sentence talks about the class, not about a
+specific group of dogs.
+
+<MistakeBox incorrect="I am teacher." correct="I am a teacher." lang="en">
+	After <span lang="en">be</span>, an English singular count noun still needs
+	an article or another determiner: <span lang="en">a teacher</span>,
+	<span lang="en">the teacher</span>, <span lang="en">my teacher</span>.
+</MistakeBox>
+
+<MistakeBox incorrect="The dogs need exercise." correct="Dogs need exercise." lang="en">
+	Use no article when you mean dogs in general. Use
+	<span lang="en">the dogs</span> only when the listener can identify the
+	specific dogs.
+</MistakeBox>
+
+<MemoryTip>
+First ask: "Can the listener identify which one?" If not, use
+<span lang="en">a/an</span> for one countable thing, or no article for a
+general plural or uncountable idea.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Complete: I bought ___ book, and ___ book is on the table.',
+			answer: 'I bought a book, and the book is on the table.',
+		},
+		{
+			prompt: 'Correct for general meaning: The cats like warm places.',
+			answer: 'Cats like warm places.',
+		},
+		{
+			prompt: 'Complete: ___ information in this email is useful.',
+			answer: 'The information in this email is useful.',
+		},
+		{
+			prompt: 'Correct: She is engineer.',
+			answer: 'She is an engineer.',
+		},
+	]}
+	answerLang="en"
+/>
+
+<RelatedTopics
+	topics={[
+		{
+			href: '../countable-and-uncountable-nouns/',
+			label: 'Countable and uncountable nouns',
+		},
+		{ href: '../../../common-mistakes/from-german/', label: 'German to English mistakes' },
+		{ href: '../../../', label: 'English overview' },
+	]}
+/>

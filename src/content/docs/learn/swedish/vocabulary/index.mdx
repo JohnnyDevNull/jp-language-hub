@@ -24,7 +24,6 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import Sv from '~/components/Sv.astro';
-import TagList from '~/components/TagList.astro';
 import VocabularyCard from '~/components/VocabularyCard.astro';
 import { getCollection, getEntry } from 'astro:content';
 
@@ -67,15 +66,12 @@ export const starters = starterIds.map((id) => {
   indefinite and definite singular, indefinite and definite plural.
 - The plural ending follows from the lemma's shape, so learning it once per
   word is cheaper than guessing it every time you speak.
-- Domain pages group words by situation, so you can learn the nouns and phrase
-  frames you need together.
 </KeyTakeaway>
-
-<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Most of the work in Swedish vocabulary is not the meaning of a word, it is its
 gender and its plural. Both are unpredictable from German, so they belong in the
-entry from the start.
+entry from the start. Domain pages group words by situation, so you can learn
+the nouns and phrase frames you need together.
 
 ## Core rule
 

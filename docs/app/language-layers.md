@@ -51,10 +51,16 @@ The current main tree is:
   learning-path
 ```
 
-English and German learning trees exist as placeholders:
+The English learning tree now has a first grammar-focused pass, while the
+German learning tree still exists as a placeholder:
 
 ```text
 /learn/english/
+  grammar/
+    sentence-structure/
+    verbs/
+    nouns-articles/
+  common-mistakes/
 /learn/german/
 ```
 

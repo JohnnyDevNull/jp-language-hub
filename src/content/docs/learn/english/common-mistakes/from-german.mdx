@@ -1,12 +1,11 @@
 ---
 title: German to English mistakes
-description: Common English mistakes caused by transferring German tense, vocabulary, and word-order patterns.
+description: Common English mistakes caused by transferring German tense, vocabulary, word-order, noun, and article patterns.
 metaLanguage: en
 grammarLanguage: en
 comparisonLanguages:
   - de
   - en
-  - sv
 levels:
   - A2
   - B1
@@ -17,6 +16,12 @@ tags:
   - grammar
 related:
   - /learn/english/
+  - /learn/english/grammar/sentence-structure/sentence-order/
+  - /learn/english/grammar/sentence-structure/questions-and-do-support/
+  - /learn/english/grammar/sentence-structure/adverb-placement/
+  - /learn/english/grammar/verbs/simple-past-vs-present-perfect/
+  - /learn/english/grammar/nouns-articles/countable-and-uncountable-nouns/
+  - /learn/english/grammar/nouns-articles/articles/
   - /false-friends/
   - /direct-translation-errors/
 ---
@@ -42,12 +47,22 @@ import TagList from '~/components/TagList.astro';
 German and English share enough structure that the differences hide well.
 These are the ones that persist into fluent speech.
 
+## Start with the pattern
+
+| If your sentence sounds German because of... | Open |
+| --- | --- |
+| time or place at the front | [Sentence order](../../grammar/sentence-structure/sentence-order/) |
+| question word order | [Questions and do-support](../../grammar/sentence-structure/questions-and-do-support/) |
+| *always*, *often*, *never* position | [Adverb placement](../../grammar/sentence-structure/adverb-placement/) |
+| German *Perfekt* with a finished time | [Simple past vs present perfect](../../grammar/verbs/simple-past-vs-present-perfect/) |
+| <span lang="en">a/an</span>, <span lang="en">the</span>, or no article | [Articles](../../grammar/nouns-articles/articles/) |
+| plural nouns like <span lang="en">informations</span> | [Countable and uncountable nouns](../../grammar/nouns-articles/countable-and-uncountable-nouns/) |
+
 ## since and for
 
-<LanguageComparison title="Duration up to now">
+<LanguageComparison title="Duration up to now" languages={['de', 'en']}>
 	<p slot="de">Ich wohne seit drei Jahren hier.</p>
 	<p slot="en">I have lived here for three years.</p>
-	<p slot="sv">Jag har bott här i tre år.</p>
 </LanguageComparison>
 
 German uses the present tense with *seit* for both a duration and a starting
@@ -83,6 +98,18 @@ opposite of what a German speaker usually intends.
 	with a phrase: *two pieces of information*, *a piece of advice*.
 </MistakeBox>
 
+If you are unsure whether a noun can be pluralized, quantified, or used with
+*a/an*, continue with
+[countable and uncountable nouns](../../grammar/nouns-articles/countable-and-uncountable-nouns/).
+
+## Articles: diagnose before you guess
+
+<MistakeBox incorrect="I have car." correct="I have a car." lang="en">
+	A singular count noun normally needs an article or another determiner. For
+	missing *a/an*, overused *the*, and generic meanings like *Dogs need
+	exercise*, use [Articles](../../grammar/nouns-articles/articles/).
+</MistakeBox>
+
 ## make and do
 
 | German | Not English | English |
@@ -115,10 +142,9 @@ opposite of what a German speaker usually intends.
 
 ## Present perfect for a finished past
 
-<LanguageComparison title="Finished action, finished time">
+<LanguageComparison title="Finished action, finished time" languages={['de', 'en']}>
 	<p slot="de">Ich habe ihn gestern gesehen.</p>
 	<p slot="en">I saw him yesterday.</p>
-	<p slot="sv">Jag såg honom igår.</p>
 </LanguageComparison>
 
 German uses the *Perfekt* for the spoken past regardless of the time
@@ -149,6 +175,21 @@ expression. English blocks the present perfect as soon as the time is over:
 
 <RelatedTopics
 	topics={[
+		{ href: '../../grammar/sentence-structure/sentence-order/', label: 'Sentence order' },
+		{
+			href: '../../grammar/sentence-structure/questions-and-do-support/',
+			label: 'Questions and do-support',
+		},
+		{ href: '../../grammar/sentence-structure/adverb-placement/', label: 'Adverb placement' },
+		{
+			href: '../../grammar/verbs/simple-past-vs-present-perfect/',
+			label: 'Simple past vs present perfect',
+		},
+		{
+			href: '../../grammar/nouns-articles/countable-and-uncountable-nouns/',
+			label: 'Countable and uncountable nouns',
+		},
+		{ href: '../../grammar/nouns-articles/articles/', label: 'Articles' },
 		{ href: '../../../../false-friends/', label: 'False friends' },
 		{ href: '../../../../direct-translation-errors/', label: 'Direct translation errors' },
 		{ href: '../../', label: 'English overview' },

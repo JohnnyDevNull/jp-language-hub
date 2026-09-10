@@ -65,15 +65,42 @@ churn.
 Goal: add English as a learning language, using German as the primary learner
 reference and Swedish only where it genuinely helps.
 
+Status: completed on 2026-09-10.
+
+Detailed plan:
+[Phase 3: Build English Grammar Learning](./roadmap-phase-3-build-english-grammar-learning.md)
+
 Recommended first topics:
 
 - English sentence order
 - questions and do-support
+- choosing time form
+- simple present
+- present progressive
 - simple present vs present progressive
+- simple past
+- present perfect
 - simple past vs present perfect
+- will future (simple future)
+- going to future
+- future progressive
+- future perfect
 - countable and uncountable nouns
 - articles
 - common German-to-English mistakes
+
+Completed work:
+
+- added a real English grammar tree with overview, sidebar groups, and index
+  pages
+- added sentence-order, questions/do-support, and adverb-placement pages
+- added a central choosing-time-form page
+- added individual present, past, present perfect, and future time-form pages
+- added targeted contrast pages for simple present vs present progressive and
+  simple past vs present perfect
+- added articles and countability pages
+- expanded German-to-English mistakes into a diagnostic hub linked to the new
+  grammar pages
 
 Do not copy the Swedish tree one to one. Use the same page grammar and
 metadata conventions, but let English have the structure its own problems

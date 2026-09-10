@@ -1,9 +1,11 @@
 # Current Application Overview
 
 JP Language Hub is a static language reference and learning support site for
-German, English, and Swedish. The current product focus is learning Swedish
-through short explanations, direct language comparison, compact reference
-tables, common transfer mistakes, cheat sheets, and lightweight self-checks.
+German, English, and Swedish. The broadest product focus is still learning
+Swedish through short explanations, direct language comparison, compact
+reference tables, common transfer mistakes, cheat sheets, and lightweight
+self-checks; English now has a first focused grammar tree for German-speaking
+learners.
 
 The site is a reference-first learning hub. It is not a traditional course, a
 gamified app, or a Duolingo-style exercise system. A page should answer a
@@ -11,7 +13,7 @@ lookup quickly and still be useful when read end to end.
 
 ## Current Focus
 
-The Swedish learning tree is the only substantial learning tree today. It
+The Swedish learning tree remains the most substantial learning tree. It
 contains:
 
 - grammar references for sentence structure, nouns, adjectives, verbs,
@@ -20,12 +22,15 @@ contains:
 - common-mistake pages for German-to-Swedish and English-to-Swedish transfer
 - cheat sheets for quick form lookup
 - a learning path with short entry routes and a complete ordered map
-- a small vocabulary area, currently led by time expressions
+- a small vocabulary area with practical domains such as time, food, shopping,
+  transport, home, and daily routines
 - pronunciation basics without audio or IPA
 
-The English and German learning trees are intentionally light placeholders
-until the Swedish reference is rounded off. They should not be expanded into
-parallel courses yet.
+The English learning tree now has a first grammar-focused pass for German
+speakers: sentence structure, time-form choices, articles, countability, and
+German-transfer mistakes. The German learning tree remains a light placeholder.
+Neither tree should become a broad parallel course before the reference shape
+has proven useful.
 
 ## Product Shape
 

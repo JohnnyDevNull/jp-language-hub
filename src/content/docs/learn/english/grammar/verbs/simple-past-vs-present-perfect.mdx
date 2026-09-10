@@ -1,0 +1,146 @@
+---
+title: Simple past vs present perfect
+description: Choose simple past for finished past time and present perfect for past actions connected to now.
+metaLanguage: en
+grammarLanguage: en
+comparisonLanguages:
+  - de
+  - en
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+  - common-mistakes
+  - comparison
+related:
+  - /learn/english/
+  - /learn/english/common-mistakes/from-german/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Use the simple past when the action belongs to a finished past time: *I saw her yesterday.*
+- Use the present perfect when you want to foreground the link to now:
+  *I have lost my key.*
+- German *Perfekt* often becomes English simple past when the time is finished.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+German often uses *Perfekt* for normal spoken past. English asks a different
+question first: is the past time finished, or is there a connection to now?
+
+## Use this now
+
+| If the sentence means... | Choose | Example |
+| --- | --- | --- |
+| a finished time: *yesterday*, *last week*, *in 2020*, *when I was a child* | simple past | <span lang="en">I met him yesterday.</span> |
+| experience before now, no finished time | present perfect | <span lang="en">I have met him before.</span> |
+| a result you want to connect to now | present perfect | <span lang="en">I have lost my passport.</span> |
+| an unfinished time period: *today*, *this week*, *so far* | present perfect | <span lang="en">I have sent three emails today.</span> |
+| duration up to now with *for* or *since* | present perfect | <span lang="en">I have lived here since 2021.</span> |
+
+## Core rule
+
+The simple past places an event in the past and closes it there. The present
+perfect links a past event or state to the present.
+
+- <span lang="en">I lived in Berlin in 2020.</span> The year is finished, so
+  use the simple past.
+- <span lang="en">I have lived in Berlin since 2020.</span> The situation
+  started in the past and continues now, so use the present perfect.
+
+## Finished past time
+
+Use the simple past when the time expression is over. The English sentence can
+still be relevant now, but the grammar follows the finished time marker.
+
+- <span lang="en">I watched the film last night.</span>
+- <span lang="en">She called me two minutes ago.</span>
+- <span lang="en">We visited London in 2019.</span>
+
+This is the main German transfer trap: *Ich habe den Film gestern gesehen*
+looks like a perfect form, but English needs *I saw the film yesterday*.
+
+## Connected to now
+
+Use the present perfect when the past is still connected to the present, or
+when you want to make that connection explicit. American English often allows
+the simple past for recent results where British English strongly prefers the
+present perfect.
+
+| Function | Example | Why present perfect? |
+| --- | --- | --- |
+| experience | <span lang="en">I have been to Scotland.</span> | The life experience matters, not the finished date. |
+| result now | <span lang="en">She has broken her arm.</span> | The result is visible or important now. |
+| unfinished time | <span lang="en">We have had three meetings this week.</span> | *This week* is still open. |
+| duration up to now | <span lang="en">He has worked here for five years.</span> | The state reaches the present. |
+
+With duration, German uses present tense with *seit*: <span lang="de">Ich wohne
+seit 2021 hier.</span> English uses present perfect: <span lang="en">I have
+lived here since 2021.</span>
+
+## Direct comparison
+
+<LanguageComparison title="Finished time blocks present perfect" languages={['de', 'en']}>
+	<p slot="de">Ich habe sie gestern gesehen.</p>
+	<p slot="en">I saw her yesterday.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Duration up to now needs present perfect" languages={['de', 'en']}>
+	<p slot="de">Ich wohne seit drei Jahren hier.</p>
+	<p slot="en">I have lived here for three years.</p>
+</LanguageComparison>
+
+<MistakeBox
+	incorrect="I have seen her yesterday."
+	correct="I saw her yesterday."
+	lang="en"
+>
+	German *Perfekt* does not map one-to-one to English present perfect. When
+	the sentence names a finished time, English uses the simple past.
+</MistakeBox>
+
+<MemoryTip>
+Ask for the time anchor first: closed past time means simple past; open time
+means present perfect. For a present result, present perfect highlights the
+link to now, but the simple past may also be possible in American English.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Say it in English: Ich habe ihn gestern angerufen.',
+			answer: 'I called him yesterday.',
+		},
+		{
+			prompt: 'Choose the form: I ___ here since 2021. (work)',
+			answer: 'I have worked here since 2021.',
+		},
+		{
+			prompt: 'Correct: She has lost her phone last night.',
+			answer: 'She lost her phone last night.',
+		},
+		{
+			prompt: 'Choose the form: We ___ three emails today. (send)',
+			answer: 'We have sent three emails today.',
+		},
+	]}
+	answerLang="en"
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../../', label: 'English overview' },
+		{ href: '../../../common-mistakes/from-german/', label: 'German to English mistakes' },
+	]}
+/>

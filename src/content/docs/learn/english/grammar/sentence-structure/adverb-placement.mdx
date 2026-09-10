@@ -1,0 +1,215 @@
+---
+title: Adverb placement
+description: Where English frequency adverbs and common time-focus adverbs go with main verbs, be, and auxiliaries.
+metaLanguage: en
+grammarLanguage: en
+comparisonLanguages:
+  - de
+  - en
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - sentence-structure
+  - common-mistakes
+related:
+  - /learn/english/common-mistakes/from-german/
+  - /learn/english/grammar/verbs/simple-present/
+  - /learn/english/grammar/verbs/present-perfect/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Frequency adverbs usually go before the main verb:
+  <span lang="en">I often work from home.</span>
+- With <span lang="en">be</span>, put the adverb after
+  <span lang="en">am</span>, <span lang="en">is</span>, or
+  <span lang="en">are</span>: <span lang="en">She is often late.</span>
+- With an auxiliary, put the adverb after the first auxiliary:
+  <span lang="en">I have often wondered.</span>
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+English frequency adverbs have a small but strict position rule. For
+German-speaking learners, the main trap is copying the German middle field and
+placing the adverb after the main verb.
+
+## Use this now
+
+Ask what kind of first verb the sentence has:
+
+| Sentence type | Put the frequency adverb | Example |
+| --- | --- | --- |
+| One main verb | before the main verb | <span lang="en">I usually drink tea.</span> |
+| <span lang="en">be</span> as the verb | after <span lang="en">be</span> | <span lang="en">She is usually calm.</span> |
+| Auxiliary + main verb | after the first auxiliary | <span lang="en">They have usually finished by five.</span> |
+
+This page is mostly about frequency adverbs such as *always*, *usually*,
+*often*, *sometimes*, *rarely*, *hardly ever*, and *never*. It also covers the
+common lookup words *already*, *still*, and *yet*.
+
+## Core rule
+
+Frequency adverbs sit near the verb phrase, but their exact position depends on
+what comes first in that verb phrase.
+
+<SentenceSchema
+	caption="Position of frequency adverbs in English"
+	lang="en"
+	rowHeader="Pattern"
+	columns={['Subject', 'Auxiliary / be', 'Frequency adverb', 'Main verb', 'Rest']}
+	rows={[
+		{
+			label: 'Main verb',
+			cells: ['I', '', 'often', 'work', 'from home.'],
+		},
+		{
+			label: 'be',
+			cells: ['She', 'is', 'often', 'late', ''],
+		},
+		{
+			label: 'Perfect',
+			cells: ['I', 'have', 'often', 'wondered', 'about that.'],
+		},
+		{
+			label: 'Modal',
+			cells: ['You', 'can', 'usually', 'park', 'here.'],
+		},
+	]}
+/>
+
+The first auxiliary carries the grammar of the sentence. The adverb comes after
+that first auxiliary, before the main meaning verb.
+
+## Main verb: before the verb
+
+If the sentence has only one main verb, put the frequency adverb before it:
+
+- <span lang="en">I often go to the cinema.</span>
+- <span lang="en">She usually starts at nine.</span>
+- <span lang="en">We never eat lunch at our desks.</span>
+
+This is the pattern you will use most often in the
+[simple present](../../verbs/simple-present/), because routines and habits often
+need frequency words.
+
+## be: after the verb
+
+When <span lang="en">be</span> is the verb, put the frequency adverb after it:
+
+- <span lang="en">He is always friendly.</span>
+- <span lang="en">They are often tired after work.</span>
+- <span lang="en">I am usually at home on Sundays.</span>
+
+Do not move the adverb in front of <span lang="en">be</span> unless you are
+using a marked style that this page does not need.
+
+## Auxiliary: after the first auxiliary
+
+When the verb phrase starts with an auxiliary, put the frequency adverb after
+the first auxiliary:
+
+- <span lang="en">I have often thought about it.</span>
+- <span lang="en">She has never visited London.</span>
+- <span lang="en">You can usually find a seat here.</span>
+- <span lang="en">They will probably call tomorrow.</span>
+
+In the [present perfect](../../verbs/present-perfect/), this means the adverb
+comes between <span lang="en">have</span> or <span lang="en">has</span> and
+the past participle.
+
+## already, still, and yet
+
+These words are not frequency adverbs, but they cause the same German-transfer
+problem because German can place the equivalent word later in the clause.
+
+| Word | Usual position | Example |
+| --- | --- | --- |
+| *already* | before the main verb or at the end | <span lang="en">I have already sent it.</span> |
+| *still* | before the main verb, after *be* | <span lang="en">She still works here.</span> |
+| *yet* | usually at the end in questions and negatives | <span lang="en">Have you sent it yet?</span> |
+
+With the present perfect, *already* usually comes between the auxiliary and the
+participle:
+
+<p lang="en">I have already finished.</p>
+
+In negative sentences, *yet* normally goes at the end:
+
+<p lang="en">I have not finished yet.</p>
+
+## Direct comparison
+
+<LanguageComparison title="Habit with one main verb" languages={['de', 'en']}>
+	<p slot="de">Ich gehe oft ins Kino.</p>
+	<p slot="en">I often go to the cinema.</p>
+</LanguageComparison>
+
+German can put <span lang="de">oft</span> after the finite verb. English
+usually puts <span lang="en">often</span> before the main verb.
+
+<LanguageComparison title="With be" languages={['de', 'en']}>
+	<p slot="de">Sie ist oft zu spät.</p>
+	<p slot="en">She is often late.</p>
+</LanguageComparison>
+
+Here German and English look more similar because English
+<span lang="en">be</span> keeps the adverb after the verb.
+
+## Common mistake
+
+<MistakeBox
+	incorrect="I go often to the cinema."
+	correct="I often go to the cinema."
+	lang="en"
+>
+	German word order makes this position feel natural, but English usually
+	puts a frequency adverb before the main verb. Only move it after the verb
+	when that verb is <span lang="en">be</span> or when it follows the first
+	auxiliary.
+</MistakeBox>
+
+<MemoryTip>
+Find the first verb. If it is <span lang="en">be</span> or an auxiliary, put
+the adverb after it. If it is the main verb, put the adverb before it.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Correct: I drink often tea in the evening.',
+			answer: 'I often drink tea in the evening.',
+		},
+		{
+			prompt: 'Place usually: She is late on Mondays.',
+			answer: 'She is usually late on Mondays.',
+		},
+		{
+			prompt: 'Place never: I have tried this before.',
+			answer: 'I have never tried this before.',
+		},
+		{
+			prompt: 'Place yet: I have not finished.',
+			answer: 'I have not finished yet.',
+		},
+	]}
+	answerLang="en"
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../../common-mistakes/from-german/', label: 'German to English mistakes' },
+		{ href: '../../verbs/simple-present/', label: 'Simple present' },
+		{ href: '../../verbs/present-perfect/', label: 'Present perfect' },
+	]}
+/>
