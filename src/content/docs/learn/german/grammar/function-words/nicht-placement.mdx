@@ -1,0 +1,72 @@
+---
+title: "Nicht placement"
+description: "Place nicht near the word or phrase it negates, or late for whole-clause negation."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+related:
+  - /learn/german/grammar/function-words/negation/
+  - /learn/german/grammar/sentence-structure/verb-bracket/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- <span lang="de">Nicht</span> placement follows scope.
+- Put nicht before what it specifically negates; for whole-clause negation it often comes late but before final verb parts.
+- The detail page connects the form to a practical sentence choice.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Place nicht near the word or phrase it negates, or late for whole-clause negation.
+
+## Use this now
+
+Put <span lang="de">nicht</span> before what it specifically negates; for whole-clause negation it often comes late but before final verb parts.
+
+## Core rule
+
+In a verb bracket, <span lang="de">nicht</span> usually stands before the right bracket: <span lang="de">Ich kann heute nicht kommen</span>.
+
+
+
+<MistakeBox
+	incorrect="Ich kann heute kommen nicht."
+	correct="Ich kann heute nicht kommen."
+	lang="de"
+>
+	The infinitive forms the right bracket, and <span lang="de">nicht</span> stands before it.
+</MistakeBox>
+
+<MemoryTip>
+Nicht usually stands just before the thing it cancels.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'not today', answer: 'nicht heute' },
+		{ prompt: 'I am not coming.', answer: 'Ich komme nicht.' },
+		{ prompt: 'I cannot come.', answer: 'Ich kann nicht kommen.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../negation/', label: 'Negation' },
+		{ href: '../../sentence-structure/verb-bracket/', label: 'Verb Bracket' },
+	]}
+/>

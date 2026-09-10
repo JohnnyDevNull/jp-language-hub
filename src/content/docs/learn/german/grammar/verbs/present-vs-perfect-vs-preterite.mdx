@@ -1,0 +1,76 @@
+---
+title: "Present vs perfect vs preterite"
+description: "Choose among German present, perfect, and preterite for real communication."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/german/grammar/verbs/particle-verbs/
+  - /learn/german/grammar/verbs/modal-verbs/
+  - /learn/german/grammar/verbs/choosing-time-form/
+  - /learn/german/grammar/verbs/active-vs-passive/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Time form depends on time, register, and text type.
+- Use present for now/future plans, perfect for everyday spoken past, and preterite for narratives or common verbs.
+- German verb forms become easier when you place them inside the verb bracket.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Choose among German present, perfect, and preterite for real communication.
+
+## Use this now
+
+Use present for now/future plans, perfect for everyday spoken past, and preterite for narratives or common verbs.
+
+## Core rule
+
+Do not copy English present perfect choices into German automatically.
+
+
+
+<MistakeBox
+	incorrect="Ich habe hier seit 2020 gewohnt."
+	correct="Ich wohne hier seit 2020."
+	lang="de"
+>
+	German uses present for situations that began in the past and continue now.
+</MistakeBox>
+
+<MemoryTip>
+Ask: still true, spoken past, or narrative past?
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'since 2020 until now', answer: 'Ich wohne seit 2020 hier.' },
+		{ prompt: 'yesterday in conversation', answer: 'Ich habe ihn gestern gesehen.' },
+		{ prompt: 'once upon a time', answer: 'Es war einmal.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../particle-verbs/', label: 'Particle Verbs' },
+		{ href: '../modal-verbs/', label: 'Modal Verbs' },
+		{ href: '../choosing-time-form/', label: 'Choosing Time Form' },
+		{ href: '../active-vs-passive/', label: 'Active vs Passive' },
+	]}
+/>

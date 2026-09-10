@@ -1,0 +1,81 @@
+---
+title: "Verb bracket"
+description: "Use the German verb bracket to place infinitives, participles, particles, and negation."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/german/grammar/sentence-structure/main-clause-verb-second/
+  - /learn/german/grammar/sentence-structure/subordinate-clauses/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- German clause shape depends on the finite verb position.
+- Main clauses, questions, and subordinate clauses each have a reliable pattern.
+- The verb bracket explains why important verb parts often appear late.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Use the German verb bracket to place infinitives, participles, particles, and negation.
+
+## Use this now
+
+Find the finite verb first. Then identify whether the clause is a statement, a question, or a subordinate clause.
+
+## Core rule
+
+German word order is field-based: the finite verb anchors the clause, and other sentence parts arrange around it.
+
+<SentenceSchema
+	caption="Verb bracket"
+	rowHeader="Pattern"
+	lang="de"
+	columns={["Left bracket","Middle","Right bracket"]}
+	rows={[{"label":"Modal","cells":["Ich muss","heute","arbeiten."]},{"label":"Perfect","cells":["Ich habe","das Buch","gelesen."]},{"label":"Separable","cells":["Ich rufe","dich später","an."]}]}
+/>
+
+
+
+<MistakeBox
+	incorrect="Ich muss arbeiten heute."
+	correct="Ich muss heute arbeiten."
+	lang="de"
+>
+	The finite verb position is the structural signal.
+</MistakeBox>
+
+<MemoryTip>
+Track the finite verb before you move anything else.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Correct the model mistake.', answer: 'Ich muss heute arbeiten.' },
+		{ prompt: 'What do subordinate clauses do with the finite verb?', answer: 'They place it at the end.' },
+		{ prompt: 'What owns position two in a main clause?', answer: 'the finite verb' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../main-clause-verb-second/', label: 'Main Clause Verb Second' },
+		{ href: '../subordinate-clauses/', label: 'Subordinate Clauses' },
+	]}
+/>

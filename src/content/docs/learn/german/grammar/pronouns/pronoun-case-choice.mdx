@@ -1,0 +1,72 @@
+---
+title: "Pronoun case choice"
+description: "Choose German pronoun case from the same role logic as nouns."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - pronouns
+related:
+  - /learn/german/grammar/cases/cases-as-roles/
+  - /learn/german/grammar/pronouns/personal-pronouns/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Pronouns reveal case very clearly.
+- Use the verb, preposition, or sentence role to choose nominative, accusative, or dative.
+- The detail page connects the form to a practical sentence choice.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Choose German pronoun case from the same role logic as nouns.
+
+## Use this now
+
+Use the verb, preposition, or sentence role to choose nominative, accusative, or dative.
+
+## Core rule
+
+The case question is the same for nouns and pronouns: subject, direct object, recipient, fixed preposition, or location/direction.
+
+
+
+<MistakeBox
+	incorrect="Ich gebe er das Buch."
+	correct="Ich gebe ihm das Buch."
+	lang="de"
+>
+	The receiver is dative, so <span lang="de">er</span> becomes <span lang="de">ihm</span>.
+</MistakeBox>
+
+<MemoryTip>
+Replace the noun phrase only after you know its case.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'I help her.', answer: 'Ich helfe ihr.' },
+		{ prompt: 'I see them.', answer: 'Ich sehe sie.' },
+		{ prompt: 'with him', answer: 'mit ihm' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../cases/cases-as-roles/', label: 'Cases As Roles' },
+		{ href: '../personal-pronouns/', label: 'Personal Pronouns' },
+	]}
+/>

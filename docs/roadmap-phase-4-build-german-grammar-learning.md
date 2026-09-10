@@ -4,7 +4,7 @@ This plan expands the fourth roadmap bucket into a broad German grammar
 reference build. The goal is to make German useful as its own learning tree and
 avoid leaving core grammar areas in an undefined "later" bucket.
 
-Status: planned.
+Status: implemented.
 
 ## Desired Outcome
 

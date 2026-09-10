@@ -1,0 +1,74 @@
+---
+title: "Accusative"
+description: "Use accusative for direct objects and direction into a target."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - nouns
+related:
+  - /learn/german/grammar/cases/cases-as-roles/
+  - /learn/german/grammar/prepositions/accusative-prepositions/
+  - /learn/german/grammar/prepositions/two-way-prepositions/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- The accusative marks the directly affected object.
+- Masculine singular shows the clearest article change: der becomes den.
+- Two-way prepositions use accusative for motion toward a target.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+The accusative is the case learners notice first because masculine articles visibly change.
+
+## Use this now
+
+Use accusative when something is seen, bought, read, opened, or moved into a target: <span lang="de">Ich kaufe den Kaffee</span>, <span lang="de">Ich gehe in den Park</span>.
+
+## Core rule
+
+Accusative answers “who or what is directly affected?” With two-way prepositions it answers “where to?”
+
+
+
+<MistakeBox
+	incorrect="Ich sehe der Film."
+	correct="Ich sehe den Film."
+	lang="de"
+>
+	A direct object takes accusative; masculine singular changes to <span lang="de">den</span>.
+</MistakeBox>
+
+<MemoryTip>
+Accusative is the target case: affected object or movement into a target.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Fill: Ich lese ___ Brief.', answer: 'den Brief' },
+		{ prompt: 'Direction: Wir gehen in ___ Stadt.', answer: 'die Stadt' },
+		{ prompt: 'Case after durch?', answer: 'accusative' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../cases-as-roles/', label: 'Cases As Roles' },
+		{ href: '../../prepositions/accusative-prepositions/', label: 'Accusative Prepositions' },
+		{ href: '../../prepositions/two-way-prepositions/', label: 'Two Way Prepositions' },
+	]}
+/>

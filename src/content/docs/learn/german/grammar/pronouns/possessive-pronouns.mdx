@@ -1,0 +1,72 @@
+---
+title: "Possessive pronouns"
+description: "Use German possessives as ein-words with gender, number, and case endings."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - pronouns
+related:
+  - /learn/german/grammar/nouns-articles/ein-words/
+  - /learn/german/grammar/pronouns/personal-pronouns/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Possessives behave like ein-words.
+- Choose the possessor first, then match the possessed noun phrase for gender, number, and case.
+- The detail page connects the form to a practical sentence choice.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Use German possessives as ein-words with gender, number, and case endings.
+
+## Use this now
+
+Choose the possessor first, then match the possessed noun phrase for gender, number, and case.
+
+## Core rule
+
+<span lang="de">mein</span>, <span lang="de">dein</span>, <span lang="de">sein</span>, <span lang="de">ihr</span>, <span lang="de">unser</span>, <span lang="de">euer</span>, and <span lang="de">Ihr</span> take endings like ein-words.
+
+
+
+<MistakeBox
+	incorrect="Ich sehe mein Freund."
+	correct="Ich sehe meinen Freund."
+	lang="de"
+>
+	The possessed noun phrase is masculine accusative, so <span lang="de">mein</span> becomes <span lang="de">meinen</span>.
+</MistakeBox>
+
+<MemoryTip>
+Possessor chooses the stem; case/gender/number choose the ending.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'my book', answer: 'mein Buch' },
+		{ prompt: 'our friend, accusative', answer: 'unseren Freund' },
+		{ prompt: 'with your sister', answer: 'mit deiner Schwester' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../nouns-articles/ein-words/', label: 'Ein Words' },
+		{ href: '../personal-pronouns/', label: 'Personal Pronouns' },
+	]}
+/>

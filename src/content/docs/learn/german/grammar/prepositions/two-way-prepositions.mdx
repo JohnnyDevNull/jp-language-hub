@@ -1,0 +1,75 @@
+---
+title: "Two-way prepositions"
+description: "Choose accusative for direction and dative for location after German two-way prepositions."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/german/grammar/prepositions/prepositions-and-case/
+  - /learn/german/grammar/cases/accusative/
+  - /learn/german/grammar/cases/dative/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Two-way prepositions choose accusative for “where to?”
+- They choose dative for “where?”
+- The verb often helps: stellen/legen/setzen are direction; stehen/liegen/sitzen are location.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Two-way prepositions are the bridge between case and movement: the same preposition can take two cases.
+
+## Use this now
+
+Ask one question: <span lang="de">wohin?</span> gives accusative; <span lang="de">wo?</span> gives dative. <span lang="de">Ich lege das Buch auf den Tisch</span>; <span lang="de">Das Buch liegt auf dem Tisch</span>.
+
+## Core rule
+
+The two-way set is <span lang="de">an, auf, hinter, in, neben, über, unter, vor, zwischen</span>. Direction into a target takes accusative; static position takes dative.
+
+
+
+<MistakeBox
+	incorrect="Das Buch liegt auf den Tisch."
+	correct="Das Buch liegt auf dem Tisch."
+	lang="de"
+>
+	Static location answers <span lang="de">wo?</span>, so the two-way preposition takes dative.
+</MistakeBox>
+
+<MemoryTip>
+Movement to a target: accusative. Resting at a place: dative.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Wohin: Ich stelle die Tasse auf ___ Tisch.', answer: 'den Tisch' },
+		{ prompt: 'Wo: Die Tasse steht auf ___ Tisch.', answer: 'dem Tisch' },
+		{ prompt: 'Name three two-way prepositions.', answer: 'in, auf, unter' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../prepositions-and-case/', label: 'Prepositions And Case' },
+		{ href: '../../cases/accusative/', label: 'Accusative' },
+		{ href: '../../cases/dative/', label: 'Dative' },
+	]}
+/>

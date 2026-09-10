@@ -1,0 +1,84 @@
+---
+title: "Prepositions and case"
+description: "Use German prepositions as reliable case triggers."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - nouns
+  - important
+related:
+  - /learn/german/grammar/cases/cases-as-roles/
+  - /learn/german/grammar/prepositions/accusative-prepositions/
+  - /learn/german/grammar/prepositions/dative-prepositions/
+  - /learn/german/grammar/prepositions/two-way-prepositions/
+  - /learn/german/grammar/prepositions/prepositional-adverbs/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Some prepositions always take accusative, some always take dative, and some choose by meaning.
+- Two-way prepositions use accusative for direction and dative for location.
+- Learn frequent preposition phrases as chunks, not word-for-word translations.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Prepositions are where case becomes practical. The small word often decides the case of the whole phrase.
+
+## Use this now
+
+| Preposition type | Case | Example |
+| --- | --- | --- |
+| fixed accusative | accusative | <span lang="de">durch den Park</span> |
+| fixed dative | dative | <span lang="de">mit dem Bus</span> |
+| two-way direction | accusative | <span lang="de">in den Park gehen</span> |
+| two-way location | dative | <span lang="de">im Park sein</span> |
+
+## Core rule
+
+When a preposition belongs to a phrase, choose the case from the preposition pattern before you think about the noun phrase in isolation.
+
+
+
+<MistakeBox
+	incorrect="Ich gehe mit den Bus."
+	correct="Ich gehe mit dem Bus."
+	lang="de"
+>
+	Do not translate English “with the” mechanically; <span lang="de">mit</span> requires dative.
+</MistakeBox>
+
+<MemoryTip>
+Treat the preposition as a case switch attached to the phrase.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Case after für?', answer: 'accusative' },
+		{ prompt: 'Case after bei?', answer: 'dative' },
+		{ prompt: 'Where to: in den Park or im Park?', answer: 'in den Park' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../cases/cases-as-roles/', label: 'Cases As Roles' },
+		{ href: '../accusative-prepositions/', label: 'Accusative Prepositions' },
+		{ href: '../dative-prepositions/', label: 'Dative Prepositions' },
+		{ href: '../two-way-prepositions/', label: 'Two Way Prepositions' },
+		{ href: '../prepositional-adverbs/', label: 'Prepositional Adverbs' },
+	]}
+/>

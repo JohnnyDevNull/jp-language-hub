@@ -111,7 +111,7 @@ need.
 Goal: add German as a learning language after Swedish and English have proven
 the shared architecture.
 
-Status: planned.
+Status: implemented on 2026-09-10.
 
 Detailed plan:
 [Phase 4: Build German Grammar Learning](./roadmap-phase-4-build-german-grammar-learning.md)
@@ -135,7 +135,80 @@ Recommended scope:
 German can use Swedish and English as comparison languages, but it should not
 be forced into the Swedish content shape.
 
-## Phase 5: Practice and Audio
+## Phase 5: Translate English and German Learning Trees
+
+Goal: make the English-learning and German-learning trees available in the
+useful meta languages, not only through fallback routes that still show
+English explanations.
+
+Status: planned.
+
+Recommended scope:
+
+- translate `/learn/english/...` into German meta language under
+  `/de/learn/english/...`
+- translate `/learn/german/...` into German meta language under
+  `/de/learn/german/...`
+- keep the root-locale English source pages canonical
+- preserve the same learning-language routes, page structure, metadata,
+  examples, related links, and didactic intent
+- change only `metaLanguage` in translated frontmatter; keep
+  `grammarLanguage`, `comparisonLanguages`, `levels`, `tags`, and `related`
+  aligned with the canonical source page
+- translate for didactic equivalence instead of literal sentence-by-sentence
+  matching
+- work in stable batches so translation churn does not hide content errors
+
+Recommended package order:
+
+1. English-learning overview, grammar overview, and sentence-structure pages
+2. English-learning verb time-form pages
+3. English-learning nouns/articles and common-mistakes pages
+4. German-learning overview, grammar overview, cases, prepositions, and
+   nouns/articles
+5. German-learning pronouns, sentence structure, function words, and particle
+   verbs
+6. German-learning time forms, future forms, active/passive, mood,
+   adjectives, and common mistakes
+
+Do not create a separate German course structure. These pages are the same
+learning trees explained in German meta language.
+
+## Phase 6: Review Learning Languages Across Meta Languages
+
+Goal: perform a full didactic, metadata, navigation, and language-layer review
+of every learning-language tree in every meaningful meta-language package.
+
+Status: planned.
+
+Review packages should be small enough that findings can be fixed without
+turning the review into a vague audit:
+
+- Swedish learning tree in English meta language
+- Swedish learning tree in German meta language where translated pages exist
+- Swedish learning tree in Swedish meta language where translated pages exist
+- English learning tree in English and German meta languages
+- German learning tree in English and German meta languages
+- shared pages that appear across learning-language sidebars
+
+Review focus:
+
+- content accuracy and learner-facing clarity
+- page length, scanability, and "lookup in seconds" usefulness
+- correct separation of meta language, learning language, and comparison
+  language
+- translated pages preserve the canonical page's didactic intent and metadata
+- no sidebar or route accidentally turns a comparison language into a content
+  axis
+- `LanguageComparison`, `SentenceSchema`, `MistakeBox`, `MemoryTip`,
+  `QuickCheck`, and `RelatedTopics` are used where they add real learning value
+- page-body links stay relative and `related` frontmatter stays absolute
+- index pages and common-mistakes hubs send learners to the right repair pages
+- every package passes `npm run quality`, base-path build, and length report
+
+This phase should produce concrete fix batches, not just a list of concerns.
+
+## Phase 7: Practice and Audio
 
 Goal: add lightweight practice only where it strengthens the reference.
 

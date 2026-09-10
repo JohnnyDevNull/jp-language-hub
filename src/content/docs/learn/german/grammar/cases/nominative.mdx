@@ -1,0 +1,73 @@
+---
+title: "Nominative"
+description: "Use nominative for the subject and predicate noun after sein, werden, and bleiben."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+tags:
+  - grammar
+  - nouns
+related:
+  - /learn/german/grammar/cases/cases-as-roles/
+  - /learn/german/grammar/cases/accusative/
+  - /learn/german/grammar/nouns-articles/der-die-das/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- The nominative names the subject of the clause.
+- After sein, werden, and bleiben, a second noun phrase also stays nominative.
+- The nominative is the dictionary-like case for article tables.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Use the nominative when a noun phrase does the action or is identified as something.
+
+## Use this now
+
+Choose nominative for <span lang="de">der Mann</span> in <span lang="de">Der Mann liest</span> and for <span lang="de">ein Arzt</span> in <span lang="de">Er ist ein Arzt</span>.
+
+## Core rule
+
+The nominative answers “who or what is this sentence about?” It does not become accusative just because it appears after <span lang="de">sein</span>.
+
+
+
+<MistakeBox
+	incorrect="Er ist einen Lehrer."
+	correct="Er ist ein Lehrer."
+	lang="de"
+>
+	Identification after <span lang="de">sein</span> uses nominative, not accusative.
+</MistakeBox>
+
+<MemoryTip>
+Nominative names; it does not receive or suffer the action.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Correct: Sie ist eine gute Freundin / einen guten Freund?', answer: 'Sie ist eine gute Freundin.' },
+		{ prompt: 'Case of “Die Kinder spielen”?', answer: 'nominative' },
+		{ prompt: 'Article: ___ Tisch ist neu.', answer: 'Der Tisch ist neu.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../cases-as-roles/', label: 'Cases As Roles' },
+		{ href: '../accusative/', label: 'Accusative' },
+		{ href: '../../nouns-articles/der-die-das/', label: 'Der Die Das' },
+	]}
+/>

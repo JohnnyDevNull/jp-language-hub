@@ -1,16 +1,18 @@
 ---
-title: German
-description: Entry point for the German learning tree, which is still being built.
+title: "German"
+description: "A German grammar reference tree for cases, articles, verb position, time forms, voice, mood, and transfer mistakes."
 metaLanguage: en
 grammarLanguage: de
 ---
 
-This learning tree is still being built. There are no German reference pages
-yet.
+German is built around a few reusable decisions: sentence role, noun-phrase signal, verb position, scope, time, voice, and mood. Start with the grammar overview, then jump into the section that matches the problem in front of you.
 
-German is already present throughout the site as the primary comparison
-language: the Swedish references contrast every rule with its German
-equivalent. Dedicated German explanations will be added here once the Swedish
-reference is complete.
+## Start here
 
-Until then, switch the learning language to **Svenska** in the sidebar.
+- [Grammar overview](./grammar/)
+- [Cases as sentence roles](./grammar/cases/cases-as-roles/)
+- [Prepositions and case](./grammar/prepositions/prepositions-and-case/)
+- [Articles and gender](./grammar/nouns-articles/articles-and-gender/)
+- [Main clause verb second](./grammar/sentence-structure/main-clause-verb-second/)
+- [Choosing time form](./grammar/verbs/choosing-time-form/)
+- [Common mistakes](./common-mistakes/)

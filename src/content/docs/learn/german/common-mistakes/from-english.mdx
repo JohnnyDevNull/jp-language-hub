@@ -1,0 +1,103 @@
+---
+title: "English to German mistakes"
+description: "Fix common German mistakes caused by English tense, word order, article, and preposition habits."
+metaLanguage: en
+grammarLanguage: de
+comparisonLanguages:
+  - en
+  - de
+levels:
+  - A1
+  - A2
+  - B1
+tags:
+  - common-mistakes
+  - comparison
+  - grammar
+related:
+  - /learn/german/grammar/verbs/present-tense/
+  - /learn/german/grammar/sentence-structure/main-clause-verb-second/
+  - /learn/german/grammar/prepositions/prepositions-and-case/
+  - /learn/german/grammar/nouns-articles/articles-and-gender/
+  - /learn/german/grammar/verbs/konjunktiv-ii/
+  - /learn/german/grammar/verbs/active-vs-passive/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- German does not build an English-style progressive for ordinary present actions.
+- English word order after fronting often breaks German V2.
+- English articles and prepositions rarely map one-to-one to German case patterns.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Fix common German mistakes caused by English tense, word order, article, and preposition habits.
+
+## Use this now
+
+Check for these English exports first: progressive forms, no case on articles, fixed subject-verb order, and one-to-one preposition translation.
+
+## Core rule
+
+English hides many grammatical roles that German marks overtly. When German sounds wrong, ask whether English made you ignore case, verb position, or article signals.
+
+## Diagnostic map
+
+| English habit | German repair | Go to |
+| --- | --- | --- |
+| progressive for ordinary present | use German present tense unless you need another construction | [Present tense](../../grammar/verbs/present-tense/) |
+| subject-verb order after a fronted phrase | keep the finite verb in position two | [Main clause verb second](../../grammar/sentence-structure/main-clause-verb-second/) |
+| no visible case on articles | choose the sentence role, then the article signal | [Cases as roles](../../grammar/cases/cases-as-roles/) |
+| prepositions translated word for word | learn the German preposition plus its case | [Prepositions and case](../../grammar/prepositions/prepositions-and-case/) |
+| "would" for every conditional or polite form | choose between <span lang="de">würde</span> and one-word Konjunktiv forms | [Konjunktiv II](../../grammar/verbs/konjunktiv-ii/) |
+| passive copied mechanically | choose active, passive, or <span lang="de">man</span> by focus | [Active vs passive](../../grammar/verbs/active-vs-passive/) |
+
+
+## Direct comparison
+
+<LanguageComparison title="Transfer pressure" languages={["en","de"]}>
+	<p slot="en">I am working now.</p>
+	<p slot="de">Ich arbeite jetzt.</p>
+</LanguageComparison>
+
+
+<MistakeBox
+	incorrect="Ich bin arbeiten jetzt."
+	correct="Ich arbeite jetzt."
+	lang="de"
+>
+	This is a transfer mistake: the source-language pattern is useful to notice, but German chooses a different structure.
+</MistakeBox>
+
+<MemoryTip>
+English is helpful for vocabulary, dangerous for German sentence mechanics.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'I am waiting now.', answer: 'Ich warte jetzt.' },
+		{ prompt: 'Today I buy bread.', answer: 'Heute kaufe ich Brot.' },
+		{ prompt: 'for my friend', answer: 'für meinen Freund' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../grammar/verbs/present-tense/', label: 'Present Tense' },
+		{ href: '../../grammar/sentence-structure/main-clause-verb-second/', label: 'Main Clause Verb Second' },
+		{ href: '../../grammar/prepositions/prepositions-and-case/', label: 'Prepositions And Case' },
+		{ href: '../../grammar/nouns-articles/articles-and-gender/', label: 'Articles And Gender' },
+		{ href: '../../grammar/verbs/konjunktiv-ii/', label: 'Konjunktiv II' },
+		{ href: '../../grammar/verbs/active-vs-passive/', label: 'Active vs Passive' },
+	]}
+/>

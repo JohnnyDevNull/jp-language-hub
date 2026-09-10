@@ -1,0 +1,84 @@
+---
+title: "Cases as sentence roles"
+description: "Choose German cases from sentence role before memorizing endings."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - nouns
+  - important
+related:
+  - /learn/german/grammar/cases/nominative/
+  - /learn/german/grammar/cases/accusative/
+  - /learn/german/grammar/cases/dative/
+  - /learn/german/grammar/cases/genitive/
+  - /learn/german/grammar/nouns-articles/articles-and-gender/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Nominative names the subject: who or what does the action.
+- Accusative marks the directly affected object or direction with two-way prepositions.
+- Dative often marks the recipient, beneficiary, location, or fixed preposition pattern.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+German cases are not decorative endings. They show what job a noun phrase is doing in the sentence.
+
+## Use this now
+
+| Ask | Choose | Example |
+| --- | --- | --- |
+| Who does it? | nominative | <span lang="de">Der Hund schläft.</span> |
+| Who or what is affected? | accusative | <span lang="de">Ich sehe den Hund.</span> |
+| To whom or for whom? | dative | <span lang="de">Ich gebe dem Hund Wasser.</span> |
+| Whose? | genitive | <span lang="de">Das ist das Haus des Mannes.</span> |
+
+## Core rule
+
+First decide the role, then choose the article or pronoun form that signals that role. Case is the sentence job; endings are the visible clue.
+
+
+
+<MistakeBox
+	incorrect="Ich helfe den Mann."
+	correct="Ich helfe dem Mann."
+	lang="de"
+>
+	Some verbs, including <span lang="de">helfen</span>, require dative even when English uses a direct object.
+</MistakeBox>
+
+<MemoryTip>
+Ask the role question first: doer, affected thing, receiver/location, or owner.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Which case marks the subject in “Der Mann kommt”?', answer: 'nominative' },
+		{ prompt: 'Choose the case after helfen: Ich helfe ___ Kind.', answer: 'dem Kind' },
+		{ prompt: 'Which case in “Ich sehe den Film”?', answer: 'accusative' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../nominative/', label: 'Nominative' },
+		{ href: '../accusative/', label: 'Accusative' },
+		{ href: '../dative/', label: 'Dative' },
+		{ href: '../genitive/', label: 'Genitive' },
+		{ href: '../../nouns-articles/articles-and-gender/', label: 'Articles And Gender' },
+	]}
+/>

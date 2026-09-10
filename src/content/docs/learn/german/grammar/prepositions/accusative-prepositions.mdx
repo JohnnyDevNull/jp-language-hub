@@ -1,0 +1,74 @@
+---
+title: "Accusative prepositions"
+description: "Use accusative after common fixed accusative prepositions."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - nouns
+related:
+  - /learn/german/grammar/prepositions/prepositions-and-case/
+  - /learn/german/grammar/cases/accusative/
+  - /learn/german/grammar/prepositions/two-way-prepositions/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Durch, für, gegen, ohne, and um normally take accusative.
+- Bis often appears without an article or with another preposition.
+- The preposition, not English meaning, decides the case.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Fixed accusative prepositions make case choice easier: once you see the preposition, the following noun phrase is accusative.
+
+## Use this now
+
+Memorize the core set as a phrase: <span lang="de">durch, für, gegen, ohne, um</span>. Example: <span lang="de">für den Freund</span>.
+
+## Core rule
+
+A fixed accusative preposition assigns accusative to its object even if English does not feel like a direct object.
+
+
+
+<MistakeBox
+	incorrect="für der Freund"
+	correct="für den Freund"
+	lang="de"
+>
+	After <span lang="de">für</span>, masculine singular <span lang="de">der</span> becomes <span lang="de">den</span>.
+</MistakeBox>
+
+<MemoryTip>
+Accusative prepositions push the phrase toward <span lang="de">den</span> for masculine singular.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Fill: ohne ___ Kaffee', answer: 'ohne den Kaffee' },
+		{ prompt: 'Case after gegen?', answer: 'accusative' },
+		{ prompt: 'List three fixed accusative prepositions.', answer: 'durch, für, gegen' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../prepositions-and-case/', label: 'Prepositions And Case' },
+		{ href: '../../cases/accusative/', label: 'Accusative' },
+		{ href: '../two-way-prepositions/', label: 'Two Way Prepositions' },
+	]}
+/>

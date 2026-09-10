@@ -1,0 +1,77 @@
+---
+title: "Articles and gender"
+description: "Choose German articles from gender, number, definiteness, and case."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - nouns
+  - important
+related:
+  - /learn/german/grammar/nouns-articles/der-die-das/
+  - /learn/german/grammar/nouns-articles/ein-words/
+  - /learn/german/grammar/nouns-articles/plural-nouns/
+  - /learn/german/grammar/cases/cases-as-roles/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Learn every noun with its gender: der, die, or das.
+- Article endings show gender, number, and case.
+- Choose meaning first: definite or indefinite, singular or plural, then case.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+German articles are small, but they carry much of the grammar of the noun phrase.
+
+## Use this now
+
+Choose in this order: noun gender, singular or plural, definite or indefinite meaning, case from the sentence, then the visible article form.
+
+## Core rule
+
+The noun owns gender; the sentence assigns case; the article displays both. That is why <span lang="de">der Mann</span> can become <span lang="de">den Mann</span> or <span lang="de">dem Mann</span>.
+
+
+
+<MistakeBox
+	incorrect="Ich sehe der Mann."
+	correct="Ich sehe den Mann."
+	lang="de"
+>
+	The noun is masculine, but the sentence role is accusative, so the article changes.
+</MistakeBox>
+
+<MemoryTip>
+Gender lives in the noun; case lives in the sentence; the article shows both.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'What should you learn with a noun?', answer: 'its article/gender' },
+		{ prompt: 'Definite masculine accusative?', answer: 'den' },
+		{ prompt: 'Dative masculine/neuter definite?', answer: 'dem' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../der-die-das/', label: 'Der Die Das' },
+		{ href: '../ein-words/', label: 'Ein Words' },
+		{ href: '../plural-nouns/', label: 'Plural Nouns' },
+		{ href: '../../cases/cases-as-roles/', label: 'Cases As Roles' },
+	]}
+/>

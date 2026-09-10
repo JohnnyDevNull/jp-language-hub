@@ -1,0 +1,74 @@
+---
+title: "Ein-words"
+description: "Use ein, kein, and possessive words with the German article signal system."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - nouns
+related:
+  - /learn/german/grammar/nouns-articles/articles-and-gender/
+  - /learn/german/grammar/function-words/nicht-vs-kein/
+  - /learn/german/grammar/pronouns/possessive-pronouns/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Ein-words include ein, kein, mein, dein, sein, ihr, unser, euer, and Ihr.
+- They behave like indefinite articles with shared endings.
+- Nominative masculine and nominative/accusative neuter have no visible ending on ein.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Ein-words are not only “a/an”. They include negation and possessives too.
+
+## Use this now
+
+Use the same pattern for <span lang="de">ein Hund</span>, <span lang="de">kein Hund</span>, and <span lang="de">mein Hund</span>.
+
+## Core rule
+
+Ein-words carry article-like endings when the noun phrase needs a visible signal. Where <span lang="de">ein</span> has no ending, the adjective often carries more of the signal.
+
+
+
+<MistakeBox
+	incorrect="Ich habe ein guten Freund."
+	correct="Ich habe einen guten Freund."
+	lang="de"
+>
+	Masculine accusative needs <span lang="de">einen</span>.
+</MistakeBox>
+
+<MemoryTip>
+If <span lang="de">ein</span> works, <span lang="de">kein</span> and <span lang="de">mein</span> usually follow the same slot.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'my book', answer: 'mein Buch' },
+		{ prompt: 'no coffee, accusative masculine', answer: 'keinen Kaffee' },
+		{ prompt: 'a friend, accusative masculine', answer: 'einen Freund' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../articles-and-gender/', label: 'Articles And Gender' },
+		{ href: '../../function-words/nicht-vs-kein/', label: 'Nicht vs Kein' },
+		{ href: '../../pronouns/possessive-pronouns/', label: 'Possessive Pronouns' },
+	]}
+/>

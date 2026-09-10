@@ -1,0 +1,76 @@
+---
+title: "Der, die, das"
+description: "Use definite articles as the strongest German gender and case signals."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - nouns
+related:
+  - /learn/german/grammar/nouns-articles/articles-and-gender/
+  - /learn/german/grammar/cases/nominative/
+  - /learn/german/grammar/cases/accusative/
+  - /learn/german/grammar/cases/dative/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Der, die, das mean “the”, but they also mark gender and case.
+- Plural definite nominative and accusative use die.
+- Masculine singular changes most visibly across cases: der, den, dem, des.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+The definite article is the clearest signal system in German noun phrases.
+
+## Use this now
+
+Start with nominative: <span lang="de">der Tisch</span>, <span lang="de">die Lampe</span>, <span lang="de">das Buch</span>, <span lang="de">die Bücher</span>. Then adjust for case.
+
+## Core rule
+
+Definite articles identify a known noun and display its gender, number, and case. They are the model for many adjective endings.
+
+
+
+<MistakeBox
+	incorrect="Ich gebe der Mann das Buch."
+	correct="Ich gebe dem Mann das Buch."
+	lang="de"
+>
+	A recipient is dative, so masculine <span lang="de">der</span> becomes <span lang="de">dem</span>.
+</MistakeBox>
+
+<MemoryTip>
+Use definite articles as your case compass: der, den, dem, des.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'the book', answer: 'das Buch' },
+		{ prompt: 'the woman in dative', answer: 'der Frau' },
+		{ prompt: 'the man in accusative', answer: 'den Mann' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../articles-and-gender/', label: 'Articles And Gender' },
+		{ href: '../../cases/nominative/', label: 'Nominative' },
+		{ href: '../../cases/accusative/', label: 'Accusative' },
+		{ href: '../../cases/dative/', label: 'Dative' },
+	]}
+/>

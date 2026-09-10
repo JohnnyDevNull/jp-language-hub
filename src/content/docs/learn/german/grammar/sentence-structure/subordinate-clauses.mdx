@@ -1,0 +1,81 @@
+---
+title: "Subordinate clauses"
+description: "Move the finite verb to the end in German subordinate clauses."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/german/grammar/sentence-structure/main-clause-verb-second/
+  - /learn/german/grammar/sentence-structure/verb-bracket/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- German clause shape depends on the finite verb position.
+- Main clauses, questions, and subordinate clauses each have a reliable pattern.
+- The verb bracket explains why important verb parts often appear late.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Move the finite verb to the end in German subordinate clauses.
+
+## Use this now
+
+Find the finite verb first. Then identify whether the clause is a statement, a question, or a subordinate clause.
+
+## Core rule
+
+German word order is field-based: the finite verb anchors the clause, and other sentence parts arrange around it.
+
+<SentenceSchema
+	caption="Subordinate clauses"
+	rowHeader="Pattern"
+	lang="de"
+	columns={["Connector","Middle field","Final finite verb"]}
+	rows={[{"label":"weil","cells":["weil","ich heute keine Zeit","habe"]},{"label":"dass","cells":["dass","sie morgen","kommt"]},{"label":"wenn","cells":["wenn","du fertig","bist"]}]}
+/>
+
+
+
+<MistakeBox
+	incorrect="weil ich habe keine Zeit"
+	correct="weil ich keine Zeit habe"
+	lang="de"
+>
+	The finite verb position is the structural signal.
+</MistakeBox>
+
+<MemoryTip>
+Track the finite verb before you move anything else.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Correct the model mistake.', answer: 'weil ich keine Zeit habe' },
+		{ prompt: 'What do subordinate clauses do with the finite verb?', answer: 'They place it at the end.' },
+		{ prompt: 'What owns position two in a main clause?', answer: 'the finite verb' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../main-clause-verb-second/', label: 'Main Clause Verb Second' },
+		{ href: '../verb-bracket/', label: 'Verb Bracket' },
+	]}
+/>

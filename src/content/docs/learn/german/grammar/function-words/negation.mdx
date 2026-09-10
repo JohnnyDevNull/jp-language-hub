@@ -1,0 +1,72 @@
+---
+title: "Negation"
+description: "Choose German negation from what you are negating: noun phrase, verb, phrase, or clause."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+related:
+  - /learn/german/grammar/function-words/nicht-vs-kein/
+  - /learn/german/grammar/function-words/nicht-placement/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- German uses <span lang="de">nicht</span> and <span lang="de">kein</span> differently.
+- Use kein for a negated indefinite noun phrase and nicht for most other negation.
+- The detail page connects the form to a practical sentence choice.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Choose German negation from what you are negating: noun phrase, verb, phrase, or clause.
+
+## Use this now
+
+Use <span lang="de">kein</span> for a negated indefinite noun phrase and <span lang="de">nicht</span> for most other negation.
+
+## Core rule
+
+Negation is about scope: decide exactly what is denied, then choose and place the negative word.
+
+
+
+<MistakeBox
+	incorrect="Ich habe nicht Auto."
+	correct="Ich habe kein Auto."
+	lang="de"
+>
+	A negated indefinite noun phrase takes <span lang="de">kein</span>.
+</MistakeBox>
+
+<MemoryTip>
+Negation asks two questions: what is denied, and where does that denial attach?
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'I do not know.', answer: 'Ich weiß nicht.' },
+		{ prompt: 'no car', answer: 'kein Auto' },
+		{ prompt: 'not today', answer: 'nicht heute' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../nicht-vs-kein/', label: 'Nicht vs Kein' },
+		{ href: '../nicht-placement/', label: 'Nicht Placement' },
+	]}
+/>

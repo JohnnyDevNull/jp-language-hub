@@ -1,0 +1,77 @@
+---
+title: "Dative"
+description: "Use dative for recipients, beneficiaries, locations, and many fixed German patterns."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - nouns
+  - important
+related:
+  - /learn/german/grammar/cases/cases-as-roles/
+  - /learn/german/grammar/prepositions/dative-prepositions/
+  - /learn/german/grammar/prepositions/two-way-prepositions/
+  - /learn/german/grammar/pronouns/pronoun-case-choice/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- The dative often marks the receiver or beneficiary.
+- Many common prepositions always take dative: mit, nach, bei, seit, von, zu, aus.
+- Two-way prepositions use dative for location.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Dative is the case of “to/for someone” and of many everyday prepositional phrases.
+
+## Use this now
+
+Check for a receiver, a fixed dative preposition, or a static location: <span lang="de">dem Kind</span>, <span lang="de">mit dem Zug</span>, <span lang="de">auf dem Tisch</span>.
+
+## Core rule
+
+Dative answers “to whom?”, “for whom?”, and often “where?” after a two-way preposition.
+
+
+
+<MistakeBox
+	incorrect="Ich fahre mit den Zug."
+	correct="Ich fahre mit dem Zug."
+	lang="de"
+>
+	The preposition <span lang="de">mit</span> always takes dative.
+</MistakeBox>
+
+<MemoryTip>
+Dative is the giving-and-location case.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Fill: Ich gebe ___ Frau das Buch.', answer: 'der Frau' },
+		{ prompt: 'Case after mit?', answer: 'dative' },
+		{ prompt: 'Location: Das Buch liegt auf ___ Tisch.', answer: 'dem Tisch' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../cases-as-roles/', label: 'Cases As Roles' },
+		{ href: '../../prepositions/dative-prepositions/', label: 'Dative Prepositions' },
+		{ href: '../../prepositions/two-way-prepositions/', label: 'Two Way Prepositions' },
+		{ href: '../../pronouns/pronoun-case-choice/', label: 'Pronoun Case Choice' },
+	]}
+/>

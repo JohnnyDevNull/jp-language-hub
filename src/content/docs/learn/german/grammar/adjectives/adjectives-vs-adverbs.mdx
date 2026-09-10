@@ -1,0 +1,74 @@
+---
+title: "Adjectives vs adverbs"
+description: "Decide whether a German describing word needs an ending."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - adjectives
+related:
+  - /learn/german/grammar/adjectives/adjective-endings/
+  - /learn/german/grammar/adjectives/adjective-comparison/
+  - /learn/german/grammar/adjectives/adverbs/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Attributive adjectives before nouns need endings; adverbs and predicate adjectives do not.
+- Use endings before nouns: ein gutes Buch. No ending after sein or with verbs: Das Buch ist gut, Sie liest schnell.
+- The page connects the form to the sentence slot.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Decide whether a German describing word needs an ending.
+
+## Use this now
+
+Use endings before nouns: <span lang="de">ein gutes Buch</span>. No ending after <span lang="de">sein</span> or with verbs: <span lang="de">Das Buch ist gut</span>, <span lang="de">Sie liest schnell</span>.
+
+## Core rule
+
+The position and function decide the ending, not the English translation.
+
+
+
+<MistakeBox
+	incorrect="Das ist ein gut Buch."
+	correct="Das ist ein gutes Buch."
+	lang="de"
+>
+	Before a noun, the adjective needs an ending.
+</MistakeBox>
+
+<MemoryTip>
+Before noun: ending. After sein or modifying a verb: no agreement ending.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'a fast car', answer: 'ein schnelles Auto' },
+		{ prompt: 'The car is fast.', answer: 'Das Auto ist schnell.' },
+		{ prompt: 'She drives fast.', answer: 'Sie fährt schnell.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../adjective-endings/', label: 'Adjective Endings' },
+		{ href: '../adjective-comparison/', label: 'Adjective Comparison' },
+		{ href: '../adverbs/', label: 'Adverbs' },
+	]}
+/>

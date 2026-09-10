@@ -1,0 +1,98 @@
+---
+title: "Particle verbs"
+description: "Recognize German particle verbs and decide whether the particle separates."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+  - important
+related:
+  - /learn/german/grammar/verbs/modal-verbs/
+  - /learn/german/grammar/verbs/choosing-time-form/
+  - /learn/german/grammar/verbs/active-vs-passive/
+  - /learn/german/grammar/sentence-structure/verb-bracket/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Separable particles move to the right bracket in main clauses.
+- Learn particle verbs as complete meaning units such as anfangen, aufstehen, and mitkommen.
+- German verb forms become easier when you place them inside the verb bracket.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Recognize German particle verbs and decide whether the particle separates.
+
+## Use this now
+
+Ask three questions:
+
+1. Is the prefix separable, inseparable, or dependent on meaning?
+2. Does the clause have a right bracket position?
+3. Is the whole verb meaning different enough that you should learn it as one vocabulary item?
+
+## Core rule
+
+A stressed, meaning-bearing prefix is often separable; an unstressed prefix is usually inseparable.
+
+<SentenceSchema
+	caption="Separable verbs across clause shapes"
+	columns={["Clause start", "Finite verb", "Middle", "Right bracket"]}
+	rows={[
+		{ label: "Main clause", lang: "de", cells: ["Ich", "rufe", "dich", "an"] },
+		{ label: "Question", lang: "de", cells: ["", "Rufst", "du mich", "an?"] },
+		{ label: "Perfect", lang: "de", cells: ["Ich", "habe", "dich", "angerufen"] },
+		{ label: "Subordinate", lang: "de", cells: ["..., weil ich", "", "dich", "anrufe"] },
+	]}
+/>
+
+The particle may move, but the meaning stays with the verb. <span lang="de">rufen</span> means "call/shout"; <span lang="de">anrufen</span> means "call by phone". Treat <span lang="de">anrufen</span>, <span lang="de">aufstehen</span>, <span lang="de">mitkommen</span>, and <span lang="de">anfangen</span> as whole entries.
+
+## Not just English phrasal verbs
+
+English often uses verb plus particle: "pick up", "come along", "turn off". German may use a separable verb, an inseparable prefix verb, or a different verb entirely. Compare functions, not particles word for word.
+
+
+
+<MistakeBox
+	incorrect="Ich aufstehe um sieben."
+	correct="Ich stehe um sieben auf."
+	lang="de"
+>
+	The separable particle moves to the right bracket in a main clause.
+</MistakeBox>
+
+<MemoryTip>
+The particle belongs to the verb meaning, even when it stands at the end.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'I call you.', answer: 'Ich rufe dich an.' },
+		{ prompt: 'We start.', answer: 'Wir fangen an.' },
+		{ prompt: 'I have called.', answer: 'Ich habe angerufen.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../modal-verbs/', label: 'Modal Verbs' },
+		{ href: '../choosing-time-form/', label: 'Choosing Time Form' },
+		{ href: '../active-vs-passive/', label: 'Active vs Passive' },
+		{ href: '../../sentence-structure/verb-bracket/', label: 'Verb Bracket' },
+	]}
+/>

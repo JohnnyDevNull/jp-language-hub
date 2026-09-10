@@ -1,0 +1,74 @@
+---
+title: "Plural nouns"
+description: "Choose German plural forms and plural article behavior."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - nouns
+related:
+  - /learn/german/grammar/nouns-articles/articles-and-gender/
+  - /learn/german/grammar/nouns-articles/der-die-das/
+  - /learn/german/grammar/adjectives/adjective-endings/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- German plurals must be learned with the noun; there is no single default ending.
+- Definite plural uses die in nominative and accusative.
+- Dative plural often adds -n to the noun if possible.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Plural is part of the noun entry in German, just like gender.
+
+## Use this now
+
+Store nouns as a mini-pair: <span lang="de">der Tisch, die Tische</span>; <span lang="de">das Kind, die Kinder</span>.
+
+## Core rule
+
+Plural changes the article system and often the noun ending. In dative plural, the noun often gains -n: <span lang="de">mit den Kindern</span>.
+
+
+
+<MistakeBox
+	incorrect="mit den Kinder"
+	correct="mit den Kindern"
+	lang="de"
+>
+	Dative plural usually adds -n unless the plural already ends in -n or -s.
+</MistakeBox>
+
+<MemoryTip>
+Learn three things together: article, singular noun, plural noun.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Plural of das Kind in dative with den?', answer: 'den Kindern' },
+		{ prompt: 'Definite plural nominative article?', answer: 'die' },
+		{ prompt: 'What must you learn with a noun besides gender?', answer: 'its plural' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../articles-and-gender/', label: 'Articles And Gender' },
+		{ href: '../der-die-das/', label: 'Der Die Das' },
+		{ href: '../../adjectives/adjective-endings/', label: 'Adjective Endings' },
+	]}
+/>

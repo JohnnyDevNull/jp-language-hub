@@ -1,0 +1,72 @@
+---
+title: "Negative pronouns and adverbs"
+description: "Use niemand, nichts, nie, nirgends, and kein-words without piling up double negatives."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - pronouns
+related:
+  - /learn/german/grammar/function-words/negation/
+  - /learn/german/grammar/pronouns/indefinite-pronouns/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- German normally uses one clear negative word.
+- Choose the negative word that matches the missing thing: person, thing, time, place, or noun phrase.
+- The detail page connects the form to a practical sentence choice.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Use niemand, nichts, nie, nirgends, and kein-words without piling up double negatives.
+
+## Use this now
+
+Choose the negative word that matches the missing thing: person, thing, time, place, or noun phrase.
+
+## Core rule
+
+Unlike some languages, standard German does not usually stack multiple negatives to make one negation.
+
+
+
+<MistakeBox
+	incorrect="Ich habe niemanden nicht gesehen."
+	correct="Ich habe niemanden gesehen."
+	lang="de"
+>
+	One negative pronoun already carries the negation.
+</MistakeBox>
+
+<MemoryTip>
+Pick the negative word that names the missing slot.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'no one', answer: 'niemand' },
+		{ prompt: 'nothing', answer: 'nichts' },
+		{ prompt: 'never', answer: 'nie' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../negation/', label: 'Negation' },
+		{ href: '../../pronouns/indefinite-pronouns/', label: 'Indefinite Pronouns' },
+	]}
+/>

@@ -1,0 +1,76 @@
+---
+title: "Particle verbs vs plain verbs"
+description: "Tell apart a verb plus particle from a plain verb plus prepositional phrase."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/german/grammar/verbs/particle-verbs/
+  - /learn/german/grammar/verbs/modal-verbs/
+  - /learn/german/grammar/verbs/choosing-time-form/
+  - /learn/german/grammar/verbs/active-vs-passive/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Stress and meaning decide whether the small word belongs to the verb.
+- If the particle creates a new lexical meaning, learn the pair as a verb. If the small word introduces a normal object, treat it as a preposition.
+- German verb forms become easier when you place them inside the verb bracket.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Tell apart a verb plus particle from a plain verb plus prepositional phrase.
+
+## Use this now
+
+If the particle creates a new lexical meaning, learn the pair as a verb. If the small word introduces a normal object, treat it as a preposition.
+
+## Core rule
+
+<span lang="de">anfangen</span> is one verb meaning “begin”; <span lang="de">warten auf</span> is a verb plus prepositional object.
+
+
+
+<MistakeBox
+	incorrect="Ich warte den Bus auf."
+	correct="Ich warte auf den Bus."
+	lang="de"
+>
+	<span lang="de">auf</span> belongs to the object phrase here, not as a separable particle.
+</MistakeBox>
+
+<MemoryTip>
+Particle verbs store meaning; prepositions introduce objects.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'I start.', answer: 'Ich fange an.' },
+		{ prompt: 'I wait for the bus.', answer: 'Ich warte auf den Bus.' },
+		{ prompt: 'I turn the light on.', answer: 'Ich mache das Licht an.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../particle-verbs/', label: 'Particle Verbs' },
+		{ href: '../modal-verbs/', label: 'Modal Verbs' },
+		{ href: '../choosing-time-form/', label: 'Choosing Time Form' },
+		{ href: '../active-vs-passive/', label: 'Active vs Passive' },
+	]}
+/>

@@ -1,0 +1,76 @@
+---
+title: "Reported speech"
+description: "Use reported speech to mark that information comes from someone else."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/german/grammar/verbs/particle-verbs/
+  - /learn/german/grammar/verbs/modal-verbs/
+  - /learn/german/grammar/verbs/choosing-time-form/
+  - /learn/german/grammar/verbs/active-vs-passive/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Reported speech separates your voice from another source.
+- In careful writing, German often uses Konjunktiv I for reported statements. In everyday speech, indicative or Konjunktiv II may appear.
+- German verb forms become easier when you place them inside the verb bracket.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Use reported speech to mark that information comes from someone else.
+
+## Use this now
+
+In careful writing, German often uses Konjunktiv I for reported statements. In everyday speech, indicative or Konjunktiv II may appear.
+
+## Core rule
+
+The main task is source marking: <span lang="de">Er sagt, er habe keine Zeit</span>.
+
+
+
+<MistakeBox
+	incorrect="Er sagt, er hat keine Zeit."
+	correct="Er sagt, er habe keine Zeit."
+	lang="de"
+>
+	In formal reported speech, Konjunktiv I marks the statement as reported.
+</MistakeBox>
+
+<MemoryTip>
+Reported speech answers “whose claim is this?”
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'He says he is sick.', answer: 'Er sagt, er sei krank.' },
+		{ prompt: 'She says she has time.', answer: 'Sie sagt, sie habe Zeit.' },
+		{ prompt: 'They say they are coming.', answer: 'Sie sagen, sie kämen.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../particle-verbs/', label: 'Particle Verbs' },
+		{ href: '../modal-verbs/', label: 'Modal Verbs' },
+		{ href: '../choosing-time-form/', label: 'Choosing Time Form' },
+		{ href: '../active-vs-passive/', label: 'Active vs Passive' },
+	]}
+/>

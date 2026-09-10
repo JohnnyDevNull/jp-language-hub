@@ -1,0 +1,95 @@
+---
+title: "Adjective endings"
+description: "Choose German adjective endings from article signal, gender, number, and case."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - adjectives
+related:
+  - /learn/german/grammar/nouns-articles/articles-and-gender/
+  - /learn/german/grammar/cases/cases-as-roles/
+  - /learn/german/grammar/adjectives/adjective-comparison/
+  - /learn/german/grammar/adjectives/adverbs/
+  - /learn/german/grammar/adjectives/adjectives-vs-adverbs/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Adjective endings repeat or complete the article signal.
+- First choose the noun phrase case and article type, then add the adjective ending.
+- The page connects the form to the sentence slot.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Choose German adjective endings from article signal, gender, number, and case.
+
+## Use this now
+
+Use this four-step check before you look at a table:
+
+1. Is the adjective before the noun?
+2. Which case does the noun phrase have?
+3. Does the article already show gender, number, and case clearly?
+4. Add the adjective ending that completes the missing signal.
+
+## Core rule
+
+After a strong article signal, adjectives usually use weak endings; without a strong signal, the adjective carries more information.
+
+| Noun phrase type | Signal logic | Example |
+| --- | --- | --- |
+| Definite article | Article carries the strong signal; adjective usually uses `-e` or `-en`. | <span lang="de">der gute Kaffee</span>, <span lang="de">den guten Kaffee</span> |
+| Indefinite article | The article sometimes lacks the signal; adjective fills the gap. | <span lang="de">ein guter Kaffee</span>, <span lang="de">ein gutes Buch</span> |
+| No article | The adjective carries most of the signal. | <span lang="de">guter Kaffee</span>, <span lang="de">frisches Wasser</span> |
+
+Predicate adjectives do not take these endings: <span lang="de">Der Kaffee ist gut</span>, not <span lang="de">*Der Kaffee ist guter</span>. The ending belongs to the adjective inside the noun phrase.
+
+## Signal sharing
+
+The useful mental model is not "three tables first"; it is signal sharing. German wants the noun phrase to show case, gender, and number somewhere. If the article already shows the signal, the adjective can be lighter. If the article is missing or ambiguous, the adjective must do more work.
+
+
+
+<MistakeBox
+	incorrect="Ich sehe den gut Mann."
+	correct="Ich sehe den guten Mann."
+	lang="de"
+>
+	After definite masculine accusative <span lang="de">den</span>, the adjective takes weak <span lang="de">-en</span>.
+</MistakeBox>
+
+<MemoryTip>
+Article signal first, adjective ending second.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'the good man, accusative', answer: 'den guten Mann' },
+		{ prompt: 'a good book', answer: 'ein gutes Buch' },
+		{ prompt: 'good books', answer: 'gute Bücher' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../nouns-articles/articles-and-gender/', label: 'Articles and Gender' },
+		{ href: '../../cases/cases-as-roles/', label: 'Cases as Roles' },
+		{ href: '../adjective-comparison/', label: 'Adjective Comparison' },
+		{ href: '../adverbs/', label: 'Adverbs' },
+		{ href: '../adjectives-vs-adverbs/', label: 'Adjectives vs Adverbs' },
+	]}
+/>

@@ -1,0 +1,74 @@
+---
+title: "Adverbs"
+description: "Use German adverbs to modify verbs, adjectives, whole clauses, time, manner, place, and frequency."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - adjectives
+related:
+  - /learn/german/grammar/adjectives/adjective-endings/
+  - /learn/german/grammar/adjectives/adjective-comparison/
+  - /learn/german/grammar/adjectives/adjectives-vs-adverbs/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- German adverbs do not take adjective agreement endings when they modify verbs or clauses.
+- Use the same base form in many adverbial uses: Sie singt schön.
+- The page connects the form to the sentence slot.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Use German adverbs to modify verbs, adjectives, whole clauses, time, manner, place, and frequency.
+
+## Use this now
+
+Use the same base form in many adverbial uses: <span lang="de">Sie singt schön</span>.
+
+## Core rule
+
+Adverb placement depends on sentence structure and emphasis, but the finite verb position remains stable.
+
+
+
+<MistakeBox
+	incorrect="Sie singt schöne."
+	correct="Sie singt schön."
+	lang="de"
+>
+	An adverb modifying a verb does not take adjective endings.
+</MistakeBox>
+
+<MemoryTip>
+Adverbs describe how, when, where, or how often; they do not agree.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'She speaks slowly.', answer: 'Sie spricht langsam.' },
+		{ prompt: 'very good', answer: 'sehr gut' },
+		{ prompt: 'often at home', answer: 'oft zu Hause' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../adjective-endings/', label: 'Adjective Endings' },
+		{ href: '../adjective-comparison/', label: 'Adjective Comparison' },
+		{ href: '../adjectives-vs-adverbs/', label: 'Adjectives vs Adverbs' },
+	]}
+/>

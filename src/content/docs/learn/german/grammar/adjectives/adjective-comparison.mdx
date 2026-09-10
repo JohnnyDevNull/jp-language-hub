@@ -1,0 +1,74 @@
+---
+title: "Adjective comparison"
+description: "Form German comparative and superlative adjectives and adverbs."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - adjectives
+related:
+  - /learn/german/grammar/adjectives/adjective-endings/
+  - /learn/german/grammar/adjectives/adverbs/
+  - /learn/german/grammar/adjectives/adjectives-vs-adverbs/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Comparative usually adds -er; superlative uses am ... -sten or article plus -ste/-sten.
+- Use größer, am größten, der größte. Some common adjectives change vowel or irregularly.
+- The page connects the form to the sentence slot.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Form German comparative and superlative adjectives and adverbs.
+
+## Use this now
+
+Use <span lang="de">größer</span>, <span lang="de">am größten</span>, <span lang="de">der größte</span>. Some common adjectives change vowel or irregularly.
+
+## Core rule
+
+Comparison works for adjectives and many adverbs.
+
+
+
+<MistakeBox
+	incorrect="mehr gut"
+	correct="besser"
+	lang="de"
+>
+	<span lang="de">Gut</span> is irregular: <span lang="de">gut, besser, am besten</span>.
+</MistakeBox>
+
+<MemoryTip>
+Most comparisons add endings; a few high-frequency words are irregular.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'bigger', answer: 'größer' },
+		{ prompt: 'the best', answer: 'am besten' },
+		{ prompt: 'more interesting', answer: 'interessanter' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../adjective-endings/', label: 'Adjective Endings' },
+		{ href: '../adverbs/', label: 'Adverbs' },
+		{ href: '../adjectives-vs-adverbs/', label: 'Adjectives vs Adverbs' },
+	]}
+/>

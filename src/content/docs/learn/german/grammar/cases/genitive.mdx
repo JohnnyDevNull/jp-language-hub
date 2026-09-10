@@ -1,0 +1,74 @@
+---
+title: "Genitive"
+description: "Recognize genitive possession, formal style, and fixed genitive prepositions."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - nouns
+related:
+  - /learn/german/grammar/cases/cases-as-roles/
+  - /learn/german/grammar/prepositions/genitive-prepositions/
+  - /learn/german/grammar/nouns-articles/der-die-das/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- The genitive often means “of” or possession.
+- It is common in formal writing and fixed phrases, less central in everyday speech.
+- Some prepositions require genitive in standard written German.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Genitive is less frequent than the other cases in conversation, but a grammar reference needs it for reading and formal style.
+
+## Use this now
+
+Recognize <span lang="de">des Mannes</span>, <span lang="de">der Frau</span>, <span lang="de">wegen des Wetters</span>, and similar formal patterns.
+
+## Core rule
+
+Genitive links a noun phrase to another noun phrase as owner, source, or relation. Masculine and neuter singular often add -(e)s to the noun.
+
+
+
+<MistakeBox
+	incorrect="wegen dem Wetter"
+	correct="wegen des Wetters"
+	lang="de"
+>
+	In careful standard German, <span lang="de">wegen</span> takes genitive, though dative is common informally.
+</MistakeBox>
+
+<MemoryTip>
+Genitive is the “of the” case: formal, compact, and very visible in writing.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Translate the idea “the man’s car” formally.', answer: 'das Auto des Mannes' },
+		{ prompt: 'Case after trotz in standard writing?', answer: 'genitive' },
+		{ prompt: 'Genitive of das Kind?', answer: 'des Kindes' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../cases-as-roles/', label: 'Cases As Roles' },
+		{ href: '../../prepositions/genitive-prepositions/', label: 'Genitive Prepositions' },
+		{ href: '../../nouns-articles/der-die-das/', label: 'Der Die Das' },
+	]}
+/>

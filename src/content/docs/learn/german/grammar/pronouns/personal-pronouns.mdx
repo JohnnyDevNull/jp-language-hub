@@ -1,0 +1,72 @@
+---
+title: "Personal pronouns"
+description: "Use German personal pronouns in nominative, accusative, and dative forms."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - pronouns
+related:
+  - /learn/german/grammar/pronouns/pronoun-case-choice/
+  - /learn/german/grammar/cases/cases-as-roles/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Pronouns change by person, number, gender, and case.
+- Use nominative for subjects, accusative for direct objects, and dative for recipients or dative prepositions.
+- The detail page connects the form to a practical sentence choice.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Use German personal pronouns in nominative, accusative, and dative forms.
+
+## Use this now
+
+Use nominative for subjects, accusative for direct objects, and dative for recipients or dative prepositions.
+
+## Core rule
+
+Personal pronouns replace noun phrases and keep the role of the phrase they replace.
+
+
+
+<MistakeBox
+	incorrect="Ich sehe er."
+	correct="Ich sehe ihn."
+	lang="de"
+>
+	A direct-object masculine pronoun is accusative <span lang="de">ihn</span>.
+</MistakeBox>
+
+<MemoryTip>
+Subject forms answer who does it; object forms answer who receives or is affected.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'I see him.', answer: 'Ich sehe ihn.' },
+		{ prompt: 'with her', answer: 'mit ihr' },
+		{ prompt: 'to us', answer: 'uns' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../pronoun-case-choice/', label: 'Pronoun Case Choice' },
+		{ href: '../../cases/cases-as-roles/', label: 'Cases As Roles' },
+	]}
+/>

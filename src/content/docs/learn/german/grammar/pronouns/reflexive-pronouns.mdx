@@ -1,0 +1,72 @@
+---
+title: "Reflexive pronouns"
+description: "Use German reflexive pronouns when the subject acts on itself."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - pronouns
+related:
+  - /learn/german/grammar/pronouns/personal-pronouns/
+  - /learn/german/grammar/cases/dative/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Reflexive pronouns point back to the subject.
+- Most forms match normal object pronouns; third person uses sich.
+- The detail page connects the form to a practical sentence choice.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Use German reflexive pronouns when the subject acts on itself.
+
+## Use this now
+
+Most forms match normal object pronouns; third person uses <span lang="de">sich</span>.
+
+## Core rule
+
+German uses reflexive pronouns in true self-action and in many lexical verbs such as <span lang="de">sich erinnern</span>.
+
+
+
+<MistakeBox
+	incorrect="Ich wasche mich die Hände."
+	correct="Ich wasche mir die Hände."
+	lang="de"
+>
+	With body parts, German often uses dative reflexive for the person and accusative for the body part.
+</MistakeBox>
+
+<MemoryTip>
+If the action returns to the subject, check whether German wants <span lang="de">mich/mir/dich/dir/sich</span>.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'I remember.', answer: 'Ich erinnere mich.' },
+		{ prompt: 'I wash my hands.', answer: 'Ich wasche mir die Hände.' },
+		{ prompt: 'He is interested.', answer: 'Er interessiert sich.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../personal-pronouns/', label: 'Personal Pronouns' },
+		{ href: '../../cases/dative/', label: 'Dative' },
+	]}
+/>
