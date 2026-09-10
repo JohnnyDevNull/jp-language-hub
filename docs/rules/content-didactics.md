@@ -17,19 +17,25 @@ for symmetry.
 2. `<TagList>` — the page's level and tags, passed straight from the
    frontmatter as `levels={frontmatter.levels} tags={frontmatter.tags}`.
 3. Intro prose, one to three sentences.
-4. `## Core rule` — the rule itself, plus a `<SentenceSchema>` where the rule is
+4. `## Use this now` or another fast decision path, where a practical lookup
+   page benefits from an immediate action layer.
+5. `## Core rule` — the rule itself, plus a `<SentenceSchema>` where the rule is
    about positions in a clause.
-5. Topic sections.
-6. `## Direct comparison` — one `<LanguageComparison>` per compared meaning.
-7. `<MistakeBox>` for the typical transfer error.
-8. `<SpecialRule>` where Swedish deviates from both German and English.
-9. `<MemoryTip>` for the one thing worth memorizing.
-10. `<QuickCheck>` — the self-check, always directly before the related topics.
-11. `<RelatedTopics>` — the last block.
+6. Topic sections.
+7. `## Direct comparison` — one `<LanguageComparison>` per compared meaning.
+8. `<MistakeBox>` for the typical transfer error.
+9. `<SpecialRule>` where Swedish deviates from both German and English.
+10. `<MemoryTip>` for the one thing worth memorizing.
+11. `<QuickCheck>` — the self-check, always directly before the related topics.
+12. `<RelatedTopics>` — the last block.
 
 Index pages — the learning path and the important-rules page — carry no
 `<TagList>`: their own pills would link back to themselves. Cheat sheets are
 plain Markdown and cannot render it at all.
+
+Use the fast decision path for pages where the learner needs to choose a form,
+phrase, or pattern quickly before reading the full explanation. Keep it short
+and practical; do not use it to duplicate the full rule.
 
 ## KeyTakeaway
 
@@ -125,10 +131,11 @@ or a callout at least every few paragraphs.
 
 | Page | Rendered words | Why it stays in one file |
 | --- | --- | --- |
-| `grammar/verbs/particle-verbs` | 1325 | Loose and bound particles are the same rule seen from two sides, and the frequency glossary is the page's lookup value. A learner who consults one needs the other on the same page. |
-| `grammar/adjectives-adverbs/agreement` | 1125 | Agreement and double definiteness form one paradigm. `en-ett` deep-links into its definite section, which only works while both live together. |
-| `grammar/pronouns-function-words/prepositions` | 1087 | A survey page whose value is the collected contrast with German; splitting it by preposition would produce stubs. |
-| `grammar/nouns-articles/en-ett` | 1044 | Gender, ending signals and the compound rule are one lookup: nobody needs the endings without the rule they serve. |
+| `grammar/verbs/particle-verbs` | 1508 | Loose and bound particles are the same rule seen from two sides, the frequency glossary is the page's lookup value, and the practical entry path keeps the long page usable. A learner who consults one needs the other on the same page. |
+| `grammar/adjectives-adverbs/agreement` | 1306 | Agreement and double definiteness form one paradigm. `en-ett` deep-links into its definite section, and the practical decision path prevents the exception list from becoming the entry point. |
+| `grammar/pronouns-function-words/prepositions` | 1271 | A survey page whose value is the collected contrast with German and the practical decision path for place, direction, time, and fixed phrases; splitting it by preposition would produce stubs. |
+| `grammar/nouns-articles/en-ett` | 1204 | Gender, ending signals and the compound rule are one lookup, and the fast decision path makes the longer page usable for real noun choices. Nobody needs the endings without the rule they serve. |
+| `learning-path` | 1084 | This is an index route, not a single reference page. The ordered map now includes practical situation and vocabulary routes so learners can choose between grammar-first and situation-first paths without leaving the page. |
 
 Add a row when a page crosses the budget for a real reason. Do not add one to
 avoid editing.

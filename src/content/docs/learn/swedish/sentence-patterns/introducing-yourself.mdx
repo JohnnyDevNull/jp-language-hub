@@ -1,0 +1,126 @@
+---
+title: Introducing yourself
+description: Practical Swedish patterns for saying who you are, where you are from, where you live, and what you do.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - sentence-patterns
+  - vocabulary
+related:
+  - /learn/swedish/sentence-patterns/small-talk/
+  - /learn/swedish/grammar/verbs/present/
+  - /learn/swedish/grammar/pronouns-function-words/prepositions/
+  - /learn/swedish/grammar/pronouns-function-words/interrogatives/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Use <Sv>Jag heter ...</Sv> as the normal first sentence; it means "I am
+  called", not literally "I name".
+- Use <Sv>kommer från</Sv> for origin and <Sv>bor i</Sv> for where you live now.
+- Ask back with the same frame: <Sv>Vad heter du?</Sv>,
+  <Sv>Var kommer du ifrån?</Sv>, <Sv>Vad gör du?</Sv>
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+This is the smallest useful self-introduction: name, origin, place, one reason
+you are here, and one question back.
+
+## Basic introduction moves
+
+| Pattern | Use it for | Example |
+| --- | --- | --- |
+| <Sv>Hej, jag heter ...</Sv> | opening with your name | <Sv>Hej, jag heter Philipp.</Sv> |
+| <Sv>Jag kommer från ...</Sv> | country, city, background | <Sv>Jag kommer från Tyskland.</Sv> |
+| <Sv>Jag bor i ...</Sv> | where you live now | <Sv>Jag bor i Stockholm.</Sv> |
+| <Sv>Jag jobbar som ...</Sv> | job role | <Sv>Jag jobbar som utvecklare.</Sv> |
+| <Sv>Jag pluggar ...</Sv> | subject you study | <Sv>Jag pluggar svenska.</Sv> |
+| <Sv>Jag lär mig svenska.</Sv> | why you are speaking slowly | <Sv>Jag lär mig svenska.</Sv> |
+| <Sv>Trevligt att träffas.</Sv> | nice to meet you | <Sv>Trevligt att träffas!</Sv> |
+
+## Asking back
+
+| Question | What it asks | Natural answer |
+| --- | --- | --- |
+| <Sv>Vad heter du?</Sv> | name | <Sv>Jag heter Anna.</Sv> |
+| <Sv>Var kommer du ifrån?</Sv> | origin | <Sv>Jag kommer från Malmö.</Sv> |
+| <Sv>Var bor du?</Sv> | current home | <Sv>Jag bor i Uppsala.</Sv> |
+| <Sv>Vad gör du?</Sv> | work or studies, in context | <Sv>Jag pluggar.</Sv> |
+| <Sv>Hur länge har du bott här?</Sv> | time living here | <Sv>I två år.</Sv> |
+
+With cities and countries, <Sv>i</Sv> is the safe early pattern:
+<Sv>i Sverige</Sv>, <Sv>i Stockholm</Sv>, <Sv>i Tyskland</Sv>. Street names and
+some institutions often use <Sv>på</Sv>, but save that for the preposition page.
+
+## Tiny sequence
+
+| Speaker | Swedish |
+| --- | --- |
+| A | <Sv>Hej, jag heter Anna. Vad heter du?</Sv> |
+| B | <Sv>Jag heter Philipp. Trevligt att träffas.</Sv> |
+| A | <Sv>Trevligt! Var kommer du ifrån?</Sv> |
+| B | <Sv>Jag kommer från Tyskland, men jag bor i Stockholm.</Sv> |
+| A | <Sv>Vad gör du?</Sv> |
+| B | <Sv>Jag jobbar som utvecklare och jag lär mig svenska.</Sv> |
+
+## Direct comparison
+
+<LanguageComparison title="Name">
+	<p slot="de">Ich heiße Philipp.</p>
+	<p slot="en">My name is Philipp.</p>
+	<p slot="sv">Jag heter Philipp.</p>
+</LanguageComparison>
+
+German is the better bridge here: <span lang="de">heißen</span> and
+<Sv>heta</Sv> both behave like "be called". English tempts you toward a noun
+phrase, but the everyday Swedish sentence is the verb frame.
+
+<LanguageComparison title="Origin and current home">
+	<p slot="de">Ich komme aus Deutschland, aber ich wohne in Stockholm.</p>
+	<p slot="en">I am from Germany, but I live in Stockholm.</p>
+	<p slot="sv">Jag kommer från Tyskland, men jag bor i Stockholm.</p>
+</LanguageComparison>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Introduce yourself with your name.',
+			answer: 'Hej, jag heter ...',
+		},
+		{
+			prompt: 'Say that you are from Germany but live in Stockholm.',
+			answer: 'Jag kommer från Tyskland, men jag bor i Stockholm.',
+		},
+		{
+			prompt: 'Ask where someone is from.',
+			answer: 'Var kommer du ifrån?',
+		},
+		{
+			prompt: 'Say that you are learning Swedish.',
+			answer: 'Jag lär mig svenska.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../small-talk/', label: 'Small talk' },
+		{ href: '../../grammar/verbs/present/', label: 'Present tense' },
+		{ href: '../../grammar/pronouns-function-words/prepositions/', label: 'Prepositions' },
+		{ href: '../../grammar/pronouns-function-words/interrogatives/', label: 'Question words' },
+	]}
+/>

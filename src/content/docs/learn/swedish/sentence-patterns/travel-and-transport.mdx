@@ -1,0 +1,127 @@
+---
+title: Travel and transport
+description: Swedish patterns for buying tickets, finding platforms, asking about departures, and checking delays.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - sentence-patterns
+  - vocabulary
+related:
+  - /learn/swedish/vocabulary/transport-and-travel/
+  - /learn/swedish/vocabulary/telling-time/
+  - /learn/swedish/grammar/pronouns-function-words/interrogatives/
+  - /learn/swedish/sentence-patterns/asking-for-directions/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Use <Sv>Jag vill åka till …</Sv> for destination and
+  <Sv>Vilken buss går till …?</Sv> to find the right line.
+- Use <Sv>När går …?</Sv> for scheduled departures and
+  <Sv>Är tåget försenat?</Sv> for delays.
+- Travel Swedish uses <Sv>till</Sv> for destination but often <Sv>på</Sv> for
+  being on a bus, train, or platform.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+The useful travel phrases are short because the situation is noisy. Build the
+sentence around the destination, the departure time, and whether something has
+changed.
+
+## Finding the right connection
+
+| Pattern | Use it when | Register |
+| --- | --- | --- |
+| <Sv>Jag vill åka till …</Sv> | saying where you want to go | neutral |
+| <Sv>Vilken buss går till …?</Sv> | asking which bus goes there | neutral |
+| <Sv>Går den här bussen till …?</Sv> | checking this bus | neutral |
+| <Sv>Varifrån går tåget?</Sv> | asking where the train leaves from | neutral |
+| <Sv>Vilken perrong?</Sv> | asking which platform | spoken |
+| <Sv>Måste jag byta?</Sv> | asking whether you need to change | neutral |
+
+<Sv>åka</Sv> is the general travel-by-vehicle verb. Use <Sv>gå</Sv> for a
+scheduled service: <Sv>När går tåget?</Sv>
+
+## Tickets and departures
+
+| Pattern | Use it when | Register |
+| --- | --- | --- |
+| <Sv>En biljett till …, tack.</Sv> | buying one ticket | neutral |
+| <Sv>En enkelbiljett, tack.</Sv> | one single ticket | neutral |
+| <Sv>En tur och retur, tack.</Sv> | a return ticket | neutral |
+| <Sv>När går nästa tåg?</Sv> | asking for the next train | neutral |
+| <Sv>När kommer bussen?</Sv> | asking when the bus arrives | neutral |
+| <Sv>Är tåget försenat?</Sv> | asking whether the train is delayed | neutral |
+
+## Tiny station sequence
+
+<p lang="sv">
+	A: Hej, en biljett till Uppsala, tack.
+	<br />
+	B: Enkel eller tur och retur?
+	<br />
+	A: Enkel, tack. När går nästa tåg?
+	<br />
+	B: Det går klockan halv tre från perrong fyra.
+</p>
+
+## Direct comparison
+
+<LanguageComparison title="Wanting to travel somewhere">
+	<p slot="de">Ich möchte nach Uppsala fahren.</p>
+	<p slot="en">I want to go to Uppsala.</p>
+	<p slot="sv">Jag vill åka till Uppsala.</p>
+</LanguageComparison>
+
+Swedish does not use one verb for every kind of "go". <Sv>åka</Sv> means going
+by vehicle; <Sv>gå</Sv> can mean walking or a scheduled departure.
+
+<LanguageComparison title="Scheduled departure">
+	<p slot="de">Wann fährt der nächste Zug?</p>
+	<p slot="en">When does the next train leave?</p>
+	<p slot="sv">När går nästa tåg?</p>
+</LanguageComparison>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Ask which bus goes to the center.',
+			answer: 'Vilken buss går till centrum?',
+		},
+		{
+			prompt: 'Buy one ticket to Uppsala.',
+			answer: 'En biljett till Uppsala, tack.',
+		},
+		{
+			prompt: 'Ask when the next train leaves.',
+			answer: 'När går nästa tåg?',
+		},
+		{
+			prompt: 'Ask whether you have to change.',
+			answer: 'Måste jag byta?',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../vocabulary/transport-and-travel/', label: 'Transport and travel vocabulary' },
+		{ href: '../../vocabulary/telling-time/', label: 'Telling time' },
+		{ href: '../../grammar/pronouns-function-words/interrogatives/', label: 'Question words' },
+		{ href: '../asking-for-directions/', label: 'Asking for directions' },
+	]}
+/>

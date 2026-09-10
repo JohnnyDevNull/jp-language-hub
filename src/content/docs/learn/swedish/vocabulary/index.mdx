@@ -1,6 +1,6 @@
 ---
 title: Vocabulary
-description: How to record a Swedish word so it stays usable, plus a starter set of everyday nouns.
+description: How to record a Swedish word so it stays usable, plus focused everyday vocabulary domains.
 metaLanguage: en
 grammarLanguage: sv
 levels:
@@ -10,6 +10,11 @@ tags:
   - nouns
 related:
   - /learn/swedish/vocabulary/telling-time/
+  - /learn/swedish/vocabulary/food-and-drinks/
+  - /learn/swedish/vocabulary/shopping-and-money/
+  - /learn/swedish/vocabulary/transport-and-travel/
+  - /learn/swedish/vocabulary/home-and-everyday-objects/
+  - /learn/swedish/vocabulary/daily-routines/
   - /learn/swedish/grammar/nouns-articles/en-ett/
   - /learn/swedish/grammar/nouns-articles/noun-forms/
   - /learn/swedish/grammar/nouns-articles/plural-overview/
@@ -62,6 +67,8 @@ export const starters = starterIds.map((id) => {
   indefinite and definite singular, indefinite and definite plural.
 - The plural ending follows from the lemma's shape, so learning it once per
   word is cheaper than guessing it every time you speak.
+- Domain pages group words by situation, so you can learn the nouns and phrase
+  frames you need together.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -150,19 +157,20 @@ ending at all for many one-syllable <Sv>ett</Sv>-words such as <Sv>hus</Sv>,
 ## Domains
 
 Vocabulary is organized by the situation a word is used in, not by the letter it
-starts with. One domain exists as a page so far; the rest are planned and have
-no content yet.
+starts with. Each domain page stays small enough to use as a working list rather
+than a dictionary.
 
 | Domain | Status |
 | --- | --- |
 | [Telling time](./telling-time/) | Published |
-| Basic vocabulary | Planned |
-| Home, food and shopping | Planned |
-| Transport and travel | Planned |
-| People, relationships and leisure | Planned |
-| Small talk, feelings and opinions | Planned |
-| Society and everyday life in Sweden | Planned |
-| Work, meetings and business communication | Planned |
+| [Food and drinks](./food-and-drinks/) | Published |
+| [Shopping and money](./shopping-and-money/) | Published |
+| [Transport and travel](./transport-and-travel/) | Published |
+| [Home and everyday objects](./home-and-everyday-objects/) | Published |
+| [Daily routines](./daily-routines/) | Published |
+| People, relationships and leisure | Later |
+| Society and everyday life in Sweden | Later |
+| Work, meetings and business communication | Later |
 
 Until a domain page exists, the grammar pages on
 [gender](../grammar/nouns-articles/en-ett/) and
@@ -189,8 +197,14 @@ that a domain list would only illustrate.
 <RelatedTopics
 	topics={[
 		{ href: './telling-time/', label: 'Telling time' },
+		{ href: './food-and-drinks/', label: 'Food and drinks' },
+		{ href: './shopping-and-money/', label: 'Shopping and money' },
+		{ href: './transport-and-travel/', label: 'Transport and travel' },
+		{
+			href: './home-and-everyday-objects/',
+			label: 'Home and everyday objects',
+		},
+		{ href: './daily-routines/', label: 'Daily routines' },
 		{ href: '../grammar/nouns-articles/en-ett/', label: 'en or ett' },
-		{ href: '../grammar/nouns-articles/noun-forms/', label: 'Noun forms' },
-		{ href: '../grammar/nouns-articles/plural-overview/', label: 'Plural overview' },
 	]}
 />

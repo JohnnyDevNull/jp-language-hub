@@ -8,23 +8,33 @@ pleasant, and resilient before expanding other learning languages.
 
 Goal: make Swedish feel complete enough to use as the primary reference.
 
-Recommended work:
+Status: completed on 2026-09-10.
 
-- improve the heaviest reference pages with clearer "use this now" openings
-- add more small sentence-pattern pages for everyday situations
-- add a few focused vocabulary domains, starting with common daily contexts
-- convert any remaining language-comparison tables to `LanguageComparison`
-  where the content is a real cross-language comparison
-- keep every new page under the reference-page length budget unless there is a
-  documented reason
+Detailed plan:
+[Phase 1: Finish the Swedish Reference Experience](./roadmap-phase-1-finish-swedish-reference-experience.md)
 
-Good candidate content:
+Completed work:
+
+- improved the heaviest reference pages with clearer "use this now" openings
+- added small sentence-pattern pages for everyday situations
+- added focused vocabulary domains for common daily contexts
+- checked remaining language-comparison tables and kept only non-comparison
+  data tables in Markdown
+- documented over-budget pages where content quality is more important than
+  strict length
+
+Implemented candidate content:
 
 - everyday introductions and small talk
 - food, shopping, transport, travel, and home vocabulary
+- questions, polite requests, directions, travel, and at-home patterns
+
+Still useful future candidates:
+
 - modal verbs and common auxiliary patterns
-- questions and polite requests
 - common Swedish connectors in short practical patterns
+- any remaining real cross-language comparisons should use `LanguageComparison`
+  where the content is a real cross-language comparison
 
 ## Phase 2: Prepare Real Meta-Language Localization
 

@@ -1,6 +1,6 @@
 ---
 title: Sentence Patterns
-description: Reusable Swedish constructions for expressing opinions, agreement, reasons, conditions, and conversational moves.
+description: Reusable Swedish constructions for everyday situations, opinions, agreement, reasons, conditions, and conversational moves.
 metaLanguage: en
 grammarLanguage: sv
 comparisonLanguages:
@@ -13,6 +13,9 @@ levels:
 tags:
   - sentence-patterns
 related:
+  - /learn/swedish/sentence-patterns/introducing-yourself/
+  - /learn/swedish/sentence-patterns/ordering-food/
+  - /learn/swedish/sentence-patterns/asking-for-directions/
   - /learn/swedish/sentence-patterns/opinions-and-uncertainty/
   - /learn/swedish/sentence-patterns/agreeing-and-disagreeing/
   - /learn/swedish/sentence-patterns/reasons-and-examples/
@@ -30,17 +33,32 @@ import TagList from '~/components/TagList.astro';
   <Sv>Jag tror att …</Sv> as one unit, including the <Sv>att</Sv>.
 - A frame decides the grammar of what follows it — an <Sv>att</Sv>-clause, a
   fronted clause forcing inversion, or a bare noun after a preposition.
-- Five pages cover the recurring communicative functions; pick the function,
-  not the word.
+- Situation pages answer "what can I say here?"; function pages answer "which
+  construction do I need?"
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Grammar pages explain why a Swedish sentence is shaped the way it is. These
 pages give you the openings that carry a real conversation while you are still
-assembling the rest of the sentence.
+assembling the rest of the sentence. Start with a situation if you need words
+for right now; start with a function if you already know the move you want to
+make.
 
-## The five areas
+## Everyday situations
+
+| Page | Covers |
+| --- | --- |
+| [Introducing yourself](./introducing-yourself/) | Name, origin, where you live, what you do, and a simple return question. |
+| [Small talk](./small-talk/) | Greetings, light follow-up questions, weather, plans, and closing politely. |
+| [Polite requests](./polite-requests/) | Asking for help, asking for one thing, softening a question, and thanking. |
+| [Ordering food](./ordering-food/) | Ordering, adjusting an order, asking what exists, and paying. |
+| [Shopping and paying](./shopping-and-paying/) | Finding items, asking prices, paying, and handling checkout questions. |
+| [Asking for directions](./asking-for-directions/) | Asking where something is and understanding street directions. |
+| [Travel and transport](./travel-and-transport/) | Tickets, platforms, departures, route signs, and delays. |
+| [At home](./at-home/) | Where things are, household needs, daily routines, and guest phrases. |
+
+## Communicative functions
 
 | Page | Covers |
 | --- | --- |
@@ -64,10 +82,10 @@ constituent, and [BIFF](../grammar/sentence-structure/biff/) for the position of
 
 <RelatedTopics
 	topics={[
+		{ href: './introducing-yourself/', label: 'Introducing yourself' },
+		{ href: './ordering-food/', label: 'Ordering food' },
+		{ href: './asking-for-directions/', label: 'Asking for directions' },
+		{ href: './travel-and-transport/', label: 'Travel and transport' },
 		{ href: './opinions-and-uncertainty/', label: 'Opinions and uncertainty' },
-		{ href: './agreeing-and-disagreeing/', label: 'Agreeing and disagreeing' },
-		{ href: './reasons-and-examples/', label: 'Reasons and examples' },
-		{ href: './conditions-and-consequences/', label: 'Conditions and consequences' },
-		{ href: './keeping-a-conversation-going/', label: 'Keeping a conversation going' },
 	]}
 />
