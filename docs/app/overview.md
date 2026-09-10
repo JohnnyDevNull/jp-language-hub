@@ -13,8 +13,8 @@ lookup quickly and still be useful when read end to end.
 
 ## Current Focus
 
-The Swedish learning tree remains the most substantial learning tree. It
-contains:
+The Swedish learning tree remains the broadest product focus and the most
+varied learning tree. It contains:
 
 - grammar references for sentence structure, nouns, adjectives, verbs,
   pronouns, function words, numerals, and prepositions
@@ -26,11 +26,13 @@ contains:
   transport, home, and daily routines
 - pronunciation basics without audio or IPA
 
-The English learning tree now has a first grammar-focused pass for German
-speakers: sentence structure, time-form choices, articles, countability, and
-German-transfer mistakes. The German learning tree remains a light placeholder.
-Neither tree should become a broad parallel course before the reference shape
-has proven useful.
+The English learning tree has a focused grammar pass for German-speaking
+learners: sentence structure, time-form choices, articles, countability, and
+German-transfer mistakes. The German learning tree now has broad grammar
+coverage, including cases, prepositions, sentence structure, verbs, mood, and
+transfer diagnostics. The three trees are at different depths, so Phase 5
+aligns their reference paths without pretending that their page counts or
+linguistic detail should be identical.
 
 ## Product Shape
 
@@ -54,7 +56,8 @@ The project should avoid:
 
 - long course chapters
 - broad theory pages without immediate examples
-- duplicate learning trees for each language before Swedish is mature
+- broad course duplication across languages before the shared reference shape
+  is stable
 - account systems, scoring, persistence, or gamified progression
 - large placeholder navigation areas
 

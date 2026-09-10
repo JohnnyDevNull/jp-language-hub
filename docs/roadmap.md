@@ -135,7 +135,50 @@ Recommended scope:
 German can use Swedish and English as comparison languages, but it should not
 be forced into the Swedish content shape.
 
-## Phase 5: Translate English and German Learning Trees
+## Phase 5: Align Grammar IA Across Learning Languages
+
+Goal: establish a practical everyday A1-B2 grammar reference model and exact
+navigation before meta-language translation multiplies the cost of
+restructuring.
+
+Status: planned.
+
+Detailed plan:
+[Phase 5: Align Grammar IA Across Learning Languages](./roadmap-phase-5-align-grammar-ia.md)
+
+Supporting artifacts:
+
+- [Phase 5 Navigation Blueprint](./roadmap-phase-5-navigation-blueprint.md)
+- [Phase 5 Topic Inventory](./roadmap-phase-5-topic-inventory.md)
+
+The current trees grew in phases, so their navigation reflects implementation
+history more than one shared reference model. Review Swedish, English, and
+German as one system, but keep the visible navigation compact per language
+where that is clearer. The detailed plan defines three non-overlapping
+artifacts: the main plan owns process and gates, the Navigation Blueprint owns
+the exact approved sidebar/routes, and the Topic Inventory owns one row per
+existing or planned page plus the A1-B2 can-do coverage checklist.
+
+Route moves and renames are allowed when they produce the cleaner reference
+structure. Old routes do not need redirects or preservation; every affected
+page-body link, canonical `related` route, sidebar entry, and localized mirror
+must change atomically.
+
+Work-package order:
+
+1. correct the current-state record for all three trees
+2. define A1-B2 can-do coverage
+3. build the exhaustive page inventory
+4. approve the exact Navigation Blueprint
+5. record route migration mappings in the inventory
+6. align overviews, routes, and sidebars in batches
+7. implement missing core content
+8. run the whole-tree review and only then begin Phase 6 translation
+
+Do not start Phase 6 translations until this phase has stabilized the grammar
+information architecture.
+
+## Phase 6: Translate English and German Learning Trees
 
 Goal: make the English-learning and German-learning trees available in the
 useful meta languages, not only through fallback routes that still show
@@ -174,7 +217,7 @@ Recommended package order:
 Do not create a separate German course structure. These pages are the same
 learning trees explained in German meta language.
 
-## Phase 6: Review Learning Languages Across Meta Languages
+## Phase 7: Review Learning Languages Across Meta Languages
 
 Goal: perform a full didactic, metadata, navigation, and language-layer review
 of every learning-language tree in every meaningful meta-language package.
@@ -208,7 +251,7 @@ Review focus:
 
 This phase should produce concrete fix batches, not just a list of concerns.
 
-## Phase 7: Practice and Audio
+## Phase 8: Practice and Audio
 
 Goal: add lightweight practice only where it strengthens the reference.
 
