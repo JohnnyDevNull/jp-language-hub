@@ -2,7 +2,10 @@
 
 This is the implementation inventory for the approved Phase 5 navigation
 blueprint. It covers practical everyday production and lookup from A1 through
-B2. It is deliberately a route-level inventory, not an academic grammar list.
+B2. Its page scope is every current or planned Grammar and Common Mistakes page
+owned by Phase 5, plus the approved Swedish Numbers move from Grammar to
+Vocabulary. It is deliberately a route-level inventory, not an academic
+grammar list or a complete inventory of every learning-language page.
 
 ## Can-do coverage
 
@@ -21,7 +24,7 @@ B2. It is deliberately a route-level inventory, not an academic grammar list.
 | Talk about present, past, plans, and future | planned | covered | covered |
 | Express ability, obligation, wishes, and requests | planned | planned | covered |
 | Describe and compare people or things | covered | planned | covered |
-| Use everyday place, time, and dependent prepositions | planned | planned | covered |
+| Use everyday place, time, and dependent prepositions | planned | planned | planned |
 | Connect reasons, conditions, and subordinate information | planned | planned | covered |
 | Express opinions, certainty, possibility, and hypothetical meaning | planned | planned | covered |
 | Recognize or produce passive and reported information | planned | planned | covered |
@@ -31,17 +34,35 @@ B2. It is deliberately a route-level inventory, not an academic grammar list.
 
 Actions are `keep` (retain route and role), `move` (same page, new shelf),
 `create` (new page or overview), `move, rename` (move and give the page a
-clearer canonical name), and `move, reference` (move while keeping the page
-outside the core path).
+clearer canonical name), `move, reference` (move while keeping the page
+outside the recommended core sequence), and `merge` (fold one existing page
+into another canonical target and remove the redundant source route).
 
 Priorities are `P0` (required for the everyday core), `P1` (needed for a
 complete practical B1-B2 reference), and `REF` (useful recognition or lookup,
-but not a core navigation driver).
+but not a core navigation driver). These values are implementation priorities,
+not CEFR classifications. A section overview has the highest implementation
+priority of any page it contains so a completed page never depends on a later
+overview.
 
-Every existing grammar, grammar-section, grammar-root, and common-mistakes
-file is represented exactly once below by its current route. Planned rows have
-an empty current route and represent target pages from the navigation
-blueprint.
+Every existing Phase-5-owned file is represented exactly once below by its
+current route. Planned rows have an empty current route and represent target
+pages from the navigation blueprint. Target routes are unique except for an
+explicit `merge`: the source row being merged and the surviving canonical row
+intentionally share one target route.
+
+## Inventory totals
+
+The inventory contains 132 existing routes and 70 planned creation rows. The
+German merge means its 82 inventory rows resolve to 81 target routes, for 201
+unique target routes across Phase 5.
+
+| Language | Rows | Unique targets | `keep` | `create` | `move` | `move, rename` | `move, reference` | `merge` |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Swedish | 55 | 55 | 15 | 22 | 17 | 1 | 0 | 0 |
+| English | 65 | 65 | 9 | 43 | 11 | 0 | 2 | 0 |
+| German | 82 | 81 | 31 | 5 | 42 | 1 | 2 | 1 |
+| **Total** | **202** | **201** | **55** | **70** | **70** | **2** | **4** | **1** |
 
 ## Swedish
 
@@ -52,7 +73,7 @@ blueprint.
 | Swedish | Basic word order | `/learn/swedish/grammar/sentence-structure/basic-word-order/` | `/learn/swedish/grammar/sentence-structure/basic-word-order/` | keep | P0 |
 | Swedish | V2 rule | `/learn/swedish/grammar/sentence-structure/v2/` | `/learn/swedish/grammar/sentence-structure/v2/` | keep | P0 |
 | Swedish | Inversion | `/learn/swedish/grammar/sentence-structure/inversion/` | `/learn/swedish/grammar/sentence-structure/inversion/` | keep | P0 |
-| Swedish | BIFF and subordinate clauses | `/learn/swedish/grammar/sentence-structure/biff/` | `/learn/swedish/grammar/sentence-structure/biff/` | keep | P0 |
+| Swedish | BIFF: sentence-adverb placement in subordinate clauses | `/learn/swedish/grammar/sentence-structure/biff/` | `/learn/swedish/grammar/sentence-structure/biff/` | keep | P0 |
 | Swedish | Subordinate clauses |  | `/learn/swedish/grammar/sentence-structure/subordinate-clauses/` | create | P0 |
 | Swedish | Placement of inte | `/learn/swedish/grammar/sentence-structure/inte-placement/` | `/learn/swedish/grammar/sentence-structure/inte-placement/` | keep | P0 |
 | Swedish | Questions and negation overview |  | `/learn/swedish/grammar/questions-negation/` | create | P0 |
@@ -88,7 +109,7 @@ blueprint.
 | Swedish | Prepositions | `/learn/swedish/grammar/pronouns-function-words/prepositions/` | `/learn/swedish/grammar/prepositions-function-words/prepositions/` | move | P0 |
 | Swedish | där- and här-adverbs | `/learn/swedish/grammar/pronouns-function-words/dar-har-adverbs/` | `/learn/swedish/grammar/prepositions-function-words/dar-har-adverbs/` | move | P1 |
 | Swedish | Connectors |  | `/learn/swedish/grammar/prepositions-function-words/connectors/` | create | P0 |
-| Swedish | Verb patterns and voice overview |  | `/learn/swedish/grammar/verb-patterns-voice/` | create | P1 |
+| Swedish | Verb patterns and voice overview |  | `/learn/swedish/grammar/verb-patterns-voice/` | create | P0 |
 | Swedish | Verb groups | `/learn/swedish/grammar/verbs/verb-groups/` | `/learn/swedish/grammar/verb-patterns-voice/verb-groups/` | move | P1 |
 | Swedish | Particle verbs | `/learn/swedish/grammar/verbs/particle-verbs/` | `/learn/swedish/grammar/verb-patterns-voice/particle-verbs/` | move | P1 |
 | Swedish | Passive | `/learn/swedish/grammar/verbs/passive/` | `/learn/swedish/grammar/verb-patterns-voice/passive/` | move | P1 |
@@ -98,7 +119,7 @@ blueprint.
 | Swedish | Mood, politeness, and reports overview |  | `/learn/swedish/grammar/mood-politeness-reports/` | create | P1 |
 | Swedish | Conditionals |  | `/learn/swedish/grammar/mood-politeness-reports/conditionals/` | create | P1 |
 | Swedish | Reported speech |  | `/learn/swedish/grammar/mood-politeness-reports/reported-speech/` | create | P1 |
-| Swedish | Numbers (outside grammar) | `/learn/swedish/grammar/numerals/numbers/` | `/learn/swedish/vocabulary/numbers/` | move, rename | P0 |
+| Swedish | Numbers (outside grammar) | `/learn/swedish/grammar/numerals/numbers/` | `/learn/swedish/vocabulary/numbers/` | move | P0 |
 | Swedish | Common mistakes overview | `/learn/swedish/common-mistakes/` | `/learn/swedish/common-mistakes/` | keep | P0 |
 | Swedish | English to Swedish mistakes | `/learn/swedish/common-mistakes/from-english/` | `/learn/swedish/common-mistakes/from-english/` | keep | P1 |
 | Swedish | German to Swedish mistakes | `/learn/swedish/common-mistakes/from-german/` | `/learn/swedish/common-mistakes/from-german/` | keep | P1 |
@@ -144,29 +165,29 @@ blueprint.
 | English | Going-to future | `/learn/english/grammar/verbs/going-to-future/` | `/learn/english/grammar/verbs-time-forms/going-to-future/` | move | P0 |
 | English | Future progressive | `/learn/english/grammar/verbs/future-progressive/` | `/learn/english/grammar/verbs-time-forms/future-progressive/` | move, reference | REF |
 | English | Future perfect | `/learn/english/grammar/verbs/future-perfect/` | `/learn/english/grammar/verbs-time-forms/future-perfect/` | move, reference | REF |
-| English | Adjectives and adverbs overview |  | `/learn/english/grammar/adjectives-adverbs/` | create | P1 |
+| English | Adjectives and adverbs overview |  | `/learn/english/grammar/adjectives-adverbs/` | create | P0 |
 | English | Adjectives |  | `/learn/english/grammar/adjectives-adverbs/adjectives/` | create | P0 |
 | English | Adjective order |  | `/learn/english/grammar/adjectives-adverbs/adjective-order/` | create | P1 |
 | English | Adjective comparison |  | `/learn/english/grammar/adjectives-adverbs/adjective-comparison/` | create | P1 |
 | English | Adverbs |  | `/learn/english/grammar/adjectives-adverbs/adverbs/` | create | P1 |
 | English | Adjectives versus adverbs |  | `/learn/english/grammar/adjectives-adverbs/adjectives-vs-adverbs/` | create | P1 |
-| English | Prepositions and function words overview |  | `/learn/english/grammar/prepositions-function-words/` | create | P1 |
+| English | Prepositions and function words overview |  | `/learn/english/grammar/prepositions-function-words/` | create | P0 |
 | English | Place and direction |  | `/learn/english/grammar/prepositions-function-words/place-and-direction/` | create | P0 |
 | English | Time prepositions |  | `/learn/english/grammar/prepositions-function-words/time-prepositions/` | create | P0 |
 | English | Dependent prepositions |  | `/learn/english/grammar/prepositions-function-words/dependent-prepositions/` | create | P1 |
 | English | Connectors |  | `/learn/english/grammar/prepositions-function-words/connectors/` | create | P0 |
-| English | Verb patterns and voice overview |  | `/learn/english/grammar/verb-patterns-voice/` | create | P1 |
+| English | Verb patterns and voice overview |  | `/learn/english/grammar/verb-patterns-voice/` | create | P0 |
 | English | Auxiliary verbs |  | `/learn/english/grammar/verb-patterns-voice/auxiliary-verbs/` | create | P0 |
 | English | Modal verbs |  | `/learn/english/grammar/verb-patterns-voice/modal-verbs/` | create | P0 |
 | English | Imperative |  | `/learn/english/grammar/verb-patterns-voice/imperative/` | create | P0 |
 | English | Passive |  | `/learn/english/grammar/verb-patterns-voice/passive/` | create | P1 |
 | English | Active versus passive |  | `/learn/english/grammar/verb-patterns-voice/active-vs-passive/` | create | P1 |
 | English | Gerunds and infinitives |  | `/learn/english/grammar/verb-patterns-voice/gerunds-and-infinitives/` | create | P1 |
-| English | Mood, politeness, and reports overview |  | `/learn/english/grammar/mood-politeness-reports/` | create | P1 |
+| English | Mood, politeness, and reports overview |  | `/learn/english/grammar/mood-politeness-reports/` | create | P0 |
 | English | Polite requests |  | `/learn/english/grammar/mood-politeness-reports/polite-requests/` | create | P0 |
 | English | Conditionals |  | `/learn/english/grammar/mood-politeness-reports/conditionals/` | create | P1 |
 | English | Reported speech |  | `/learn/english/grammar/mood-politeness-reports/reported-speech/` | create | P1 |
-| English | Word formation and particles overview |  | `/learn/english/grammar/word-formation-particles/` | create | P1 |
+| English | Word formation and particles overview |  | `/learn/english/grammar/word-formation-particles/` | create | P0 |
 | English | Phrasal verbs |  | `/learn/english/grammar/word-formation-particles/phrasal-verbs/` | create | P0 |
 | English | Word families |  | `/learn/english/grammar/word-formation-particles/word-families/` | create | P1 |
 | English | Common mistakes overview | `/learn/english/common-mistakes/` | `/learn/english/common-mistakes/` | keep | P0 |
@@ -216,13 +237,13 @@ blueprint.
 | German | Present tense for future | `/learn/german/grammar/verbs/present-tense-for-future/` | `/learn/german/grammar/verbs-time-forms/present-tense-for-future/` | move | P0 |
 | German | Choosing future forms | `/learn/german/grammar/verbs/choosing-future-forms/` | `/learn/german/grammar/verbs-time-forms/choosing-future-forms/` | move | P1 |
 | German | Future perfect | `/learn/german/grammar/verbs/future-perfect/` | `/learn/german/grammar/verbs-time-forms/future-perfect/` | move, reference | REF |
-| German | Verb patterns and voice overview |  | `/learn/german/grammar/verb-patterns-voice/` | create | P1 |
+| German | Verb patterns and voice overview |  | `/learn/german/grammar/verb-patterns-voice/` | create | P0 |
 | German | Modal verbs | `/learn/german/grammar/verbs/modal-verbs/` | `/learn/german/grammar/verb-patterns-voice/modal-verbs/` | move | P0 |
 | German | Modal verb meanings | `/learn/german/grammar/verbs/modal-verbs-meaning/` | `/learn/german/grammar/verb-patterns-voice/modal-verbs-meaning/` | move | P0 |
 | German | Infinitive with zu | `/learn/german/grammar/verbs/infinitive-with-zu/` | `/learn/german/grammar/verb-patterns-voice/infinitive-with-zu/` | move | P1 |
 | German | Infinitive without zu | `/learn/german/grammar/verbs/infinitive-without-zu/` | `/learn/german/grammar/verb-patterns-voice/infinitive-without-zu/` | move | P1 |
 | German | Imperative | `/learn/german/grammar/verbs/imperative/` | `/learn/german/grammar/verb-patterns-voice/imperative/` | move | P0 |
-| German | Active | `/learn/german/grammar/verbs/active/` | `/learn/german/grammar/verb-patterns-voice/active/` | move | P1 |
+| German | Active (merged content) | `/learn/german/grammar/verbs/active/` | `/learn/german/grammar/verb-patterns-voice/active-vs-passive/` | merge | P1 |
 | German | Passive | `/learn/german/grammar/verbs/passive/` | `/learn/german/grammar/verb-patterns-voice/passive/` | move | P1 |
 | German | Active versus passive | `/learn/german/grammar/verbs/active-vs-passive/` | `/learn/german/grammar/verb-patterns-voice/active-vs-passive/` | move | P1 |
 | German | Adjectives and adverbs overview | `/learn/german/grammar/adjectives/` | `/learn/german/grammar/adjectives-adverbs/` | move | P0 |
@@ -243,7 +264,7 @@ blueprint.
 | German | Nicht versus kein | `/learn/german/grammar/function-words/nicht-vs-kein/` | `/learn/german/grammar/function-words-negation/nicht-vs-kein/` | move | P0 |
 | German | Nicht placement | `/learn/german/grammar/function-words/nicht-placement/` | `/learn/german/grammar/function-words-negation/nicht-placement/` | move | P0 |
 | German | Negative pronouns and adverbs | `/learn/german/grammar/function-words/negative-pronouns-and-adverbs/` | `/learn/german/grammar/function-words-negation/negative-pronouns-and-adverbs/` | move | P1 |
-| German | Mood, politeness, and reports overview |  | `/learn/german/grammar/mood-politeness-reports/` | create | P1 |
+| German | Mood, politeness, and reports overview |  | `/learn/german/grammar/mood-politeness-reports/` | create | P0 |
 | German | Konjunktiv II | `/learn/german/grammar/verbs/konjunktiv-ii/` | `/learn/german/grammar/mood-politeness-reports/konjunktiv-ii/` | move | P1 |
 | German | Würde forms | `/learn/german/grammar/verbs/wuerde-forms/` | `/learn/german/grammar/mood-politeness-reports/wuerde-forms/` | move | P1 |
 | German | Hätte, wäre, könnte | `/learn/german/grammar/verbs/haette-waere-koennte/` | `/learn/german/grammar/mood-politeness-reports/haette-waere-koennte/` | move | P1 |

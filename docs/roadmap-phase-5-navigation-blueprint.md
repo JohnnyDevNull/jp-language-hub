@@ -19,8 +19,16 @@ Status markers:
 - `[move]` existing page moves to the target route
 - `[create]` new page required for the target reference
 - `[move, rename]` existing page moves and receives a clearer target slug
-- `[move, reference]` existing page moves but remains outside the core path
-- `[reference]` retained as lookup material, outside the core path
+- `[move, reference]` existing page moves and remains visible as reference
+  material outside the recommended core sequence
+- `[merge]` existing content is consolidated into another canonical page and
+  the redundant source route is removed
+
+`REF` in the Topic Inventory describes learning priority, not visibility.
+Retained reference pages still use `[keep]`; moved reference pages use
+`[move, reference]`. Every reference page remains visible at the end of its
+shelf and available through navigation and search, but outside the recommended
+core learning sequence.
 
 Every shelf has an overview page. In the trees below, a directory/group line
 names the target shelf; its action is given only by the explicit `overview`
@@ -63,8 +71,11 @@ update the complete canonical and translated surface in one change:
 2. update `astro.config.mjs` and the section overview page;
 3. update every page-body link and `related` route;
 4. update mirrored `/de/` and `/sv/` files, metadata, and links together;
-5. search the whole repository for the old route;
-6. run `npm run quality`, `npm run build -- --base /jp-language-hub`,
+5. apply the
+   [affected-localized-mirror rule](./roadmap-phase-5-align-grammar-ia.md#affected-localized-mirrors-and-phase-7-boundary)
+   to every authored mirror affected by the change;
+6. search the whole repository for the old route;
+7. run `npm run quality`, `npm run build -- --base /jp-language-hub`,
    `npm run report:length`, and `git diff --check`.
 
 No redirects are required. A route move is incomplete while an old canonical
@@ -88,13 +99,26 @@ when their language tree has enough pages. `Word Formation & Particles` is a
 visible extra for German and English; Swedish keeps it inside verb patterns
 until more independent word-formation pages exist.
 
+## Unchanged outer navigation
+
+The Blueprint owns the Phase-5 navigation slice, not unrelated outer or shared
+routes. Preserve this surrounding order while replacing the approved Grammar,
+Common Mistakes, and Swedish Numbers entries:
+
+- global `Home` remains first
+- Swedish keeps Learning Path, Important, Grammar, Vocabulary, Sentence
+  Patterns, Pronunciation Basics, Common Mistakes, and Cheat Sheets
+- English and German keep Overview, Grammar, and Common Mistakes
+- every learning-language sidebar keeps the shared tail: False Friends, Direct
+  Translation Errors, and Practice
+
 ## Learn Swedish
 
-Top-level learning order remains: Learning Path, Important, Grammar, Vocabulary,
-Sentence Patterns, Pronunciation Basics, Common Mistakes, Cheat Sheets.
+`/learn/swedish/` remains the language landing page; `Learning Path` is the
+first visible sidebar entry because it is the primary guided starting point.
 
 ```text
-/learn/swedish/vocabulary/numbers       [move, rename]
+/learn/swedish/vocabulary/numbers       [move]
 ```
 
 Visible Grammar order:
@@ -122,7 +146,7 @@ Visible Grammar order:
     plural-overview                   [keep]
     possession                        [create]
   pronouns-roles/
-    overview                          [move]
+    overview                          [create]
     personal-pronouns                 [create]
     possessive-pronouns               [move]
     sin-sitt-sina                     [move]
@@ -166,8 +190,11 @@ Visible Grammar order:
 Swedish `polite-requests` and `conditions-and-consequences` remain under
 `sentence-patterns`; the grammar overview links them as production examples.
 Swedish numbers move to `/learn/swedish/vocabulary/numbers` and are no longer
-part of the Grammar navigation. Cases and Word Formation remain grammar-root
-links rather than visible shelves until they have independent page depth.
+part of the Grammar navigation. Phase 5 creates neither a Swedish Cases route
+nor a Word Formation route or shelf. Case information is reached through
+Pronouns & Roles and Possession. Particle verbs remain under Verb Patterns &
+Voice, while the existing noun pages retain the compound rules relevant to
+their topics.
 
 Common Mistakes remains outside Grammar:
 
@@ -259,8 +286,8 @@ Visible Grammar order:
 ```
 
 The English tree needs the largest creation batch. Future progressive and
-future perfect remain `[reference]` pages after the core time-form sequence;
-they do not determine the A1-B2 sidebar order.
+future perfect remain visible at the end of the Time Forms shelf, but their
+`REF` priority keeps them outside the recommended A1-B2 core sequence.
 
 Common Mistakes remains outside Grammar:
 
@@ -302,7 +329,7 @@ German has enough depth to expose additional shelves. Its visible order is:
     dative                            [keep]
     genitive                          [keep]
   pronouns-roles/
-    overview                          [create]
+    overview                          [move]
     personal-pronouns                 [move]
     possessive-pronouns               [move]
     reflexive-pronouns                [move]
@@ -328,7 +355,6 @@ German has enough depth to expose additional shelves. Its visible order is:
     infinitive-with-zu                [move]
     infinitive-without-zu             [move]
     imperative                        [move]
-    active                            [move]
     passive                           [move]
     active-vs-passive                [move]
   adjectives-adverbs/
@@ -343,9 +369,9 @@ German has enough depth to expose additional shelves. Its visible order is:
     accusative-prepositions           [keep]
     dative-prepositions               [keep]
     two-way-prepositions              [keep]
-    genitive-prepositions             [keep]
     prepositional-adverbs             [keep]
     dependent-prepositions            [create]
+    genitive-prepositions             [keep]
   function-words-negation/
     overview                          [move]
     negation                          [move]
@@ -371,6 +397,25 @@ German has enough depth to expose additional shelves. Its visible order is:
 
 `compound-noun-gender` is renamed to `compound-nouns` and
 has one canonical home under Word Formation; Nouns & Articles links to it.
+The current `active` page is merged into `active-vs-passive` rather than moved
+to a separate target route. `active-vs-passive` remains the canonical decision
+page, while `passive` remains the form-focused page. Konjunktiv I remains
+visible at the end of Mood, Politeness & Reports as reference material, outside
+the recommended core sequence. Genitive Prepositions likewise remains visible
+at the end of Prepositions because its Inventory priority is `REF`.
+
+German deliberately overrides two parts of the shared visible backbone.
+Questions remain under Sentence Structure because their construction belongs
+to verb position and clause shape. Negation remains under Function Words &
+Negation because form choice and placement are already a substantial coherent
+shelf. The German grammar overview must connect both shelves under the shared
+learner question "How do I ask and negate?" rather than duplicating routes.
+
+Swedish and English place `Connectors` under Prepositions & Function Words
+because each language has one compact page whose main lookup value is choosing
+a joining word. German keeps coordinating and subordinating conjunctions under
+Sentence Structure because their central lookup value is their effect on
+clause order.
 
 Common Mistakes remains outside Grammar:
 
@@ -385,7 +430,8 @@ Common Mistakes remains outside Grammar:
 
 Every grammar root overview shows the shared learner questions in order, then
 the language-specific deep areas, then links to practical entry paths. Every
-section overview contains `Choose by`, `Learn in this order`, and `Watch for`,
-with no duplicate canonical page links. The root overview is the only place
-where a thin bridge topic such as Swedish sentence roles is surfaced as a
-first-class concept without creating a misleading sidebar shelf.
+section overview contains `Choose by` and `Learn in this order`, with no
+duplicate canonical page links. Add `Watch for` only where a distinct
+diagnostic warning helps the learner; do not create the section merely for
+symmetry. Thin topics without their own route or shelf are surfaced
+contextually from the grammar overview and the nearest canonical pages.

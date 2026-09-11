@@ -141,7 +141,8 @@ Goal: establish a practical everyday A1-B2 grammar reference model and exact
 navigation before meta-language translation multiplies the cost of
 restructuring.
 
-Status: planned.
+Status: planning groundwork completed; language implementation and final
+quality check planned.
 
 Detailed plan:
 [Phase 5: Align Grammar IA Across Learning Languages](./roadmap-phase-5-align-grammar-ia.md)
@@ -151,32 +152,52 @@ Supporting artifacts:
 - [Phase 5 Navigation Blueprint](./roadmap-phase-5-navigation-blueprint.md)
 - [Phase 5 Topic Inventory](./roadmap-phase-5-topic-inventory.md)
 
+Execution plans:
+
+- [Phase 5: Finalize Swedish](./roadmap-phase-5-finalize-swedish.md)
+- [Phase 5: Finalize English](./roadmap-phase-5-finalize-english.md)
+- [Phase 5: Finalize German](./roadmap-phase-5-finalize-german.md)
+- [Phase 5: Quality Check](./roadmap-phase-5-quality-check.md)
+
 The current trees grew in phases, so their navigation reflects implementation
 history more than one shared reference model. Review Swedish, English, and
 German as one system, but keep the visible navigation compact per language
-where that is clearer. The detailed plan defines three non-overlapping
+where that is clearer. The approved baseline keeps three non-overlapping
 artifacts: the main plan owns process and gates, the Navigation Blueprint owns
-the exact approved sidebar/routes, and the Topic Inventory owns one row per
-existing or planned page plus the A1-B2 can-do coverage checklist.
+the exact approved Phase-5 navigation slice and target route structure, and the
+Topic Inventory owns one row per existing or planned Phase-5 source, its
+current-to-target mapping, and the A1-B2 can-do coverage checklist.
 
 Route moves and renames are allowed when they produce the cleaner reference
 structure. Old routes do not need redirects or preservation; every affected
 page-body link, canonical `related` route, sidebar entry, and localized mirror
 must change atomically.
 
-Work-package order:
+The planning groundwork is complete: the current-state record, A1-B2 coverage
+decisions, exhaustive page inventory, exact Navigation Blueprint, and migration
+mappings form the approved baseline. Implementation now proceeds in this
+order:
 
-1. correct the current-state record for all three trees
-2. define A1-B2 can-do coverage
-3. build the exhaustive page inventory
-4. approve the exact Navigation Blueprint
-5. record route migration mappings in the inventory
-6. align overviews, routes, and sidebars in batches
-7. implement missing core content
-8. run the whole-tree review and only then begin Phase 6 translation
+1. finalize the Swedish learning tree and audit all retained, moved, and new
+   pages
+2. finalize the English learning tree and audit all retained, moved, and new
+   pages
+3. finalize the German learning tree and audit all retained, moved, merged, and
+   new pages
+4. run the cross-language Phase 5 Quality Check
+
+The language plans own batches, content boundaries, migration checklists, and
+local acceptance criteria. They reference rather than duplicate the route
+tables: the Navigation Blueprint remains authoritative for navigation and the
+Topic Inventory remains authoritative for page scope, actions, priorities, and
+coverage.
 
 Do not start Phase 6 translations until this phase has stabilized the grammar
-information architecture.
+information architecture and the Phase 5 Quality Check has passed. That check
+reviews canonical root-locale content and restores structural and didactic
+equivalence for every existing localized mirror affected by Phase 5. Phase 7
+later reviews the complete translated packages, including pages untouched by
+Phase 5.
 
 ## Phase 6: Translate English and German Learning Trees
 
@@ -223,6 +244,11 @@ Goal: perform a full didactic, metadata, navigation, and language-layer review
 of every learning-language tree in every meaningful meta-language package.
 
 Status: planned.
+
+This phase begins after Phase 6. Phase 5 already preserves didactic equivalence
+for authored translations affected by its own restructuring. Phase 7 extends
+that review to the complete translated packages and evaluates their
+learner-facing quality across meta languages.
 
 Review packages should be small enough that findings can be fixed without
 turning the review into a vague audit:
