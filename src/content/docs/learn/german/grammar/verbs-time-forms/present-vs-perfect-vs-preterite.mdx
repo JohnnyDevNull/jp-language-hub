@@ -1,0 +1,82 @@
+---
+title: "Present vs perfect vs preterite"
+description: "Choose among German present, perfect, and preterite for real communication."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/german/grammar/word-formation-particles/particle-verbs/
+  - /learn/german/grammar/verb-patterns-voice/modal-verbs/
+  - /learn/german/grammar/verbs-time-forms/choosing-time-form/
+  - /learn/german/grammar/verb-patterns-voice/active-vs-passive/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Time form depends on time, register, and text type.
+- Use present for now/future plans, perfect for everyday spoken past, and preterite for narratives or common verbs.
+- Choose among the three forms by current relevance, spoken past, or narrative/register.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Choose among German present, perfect, and preterite for real communication.
+
+## Use this now
+
+Use present for now/future plans, perfect for everyday spoken past, and preterite for narratives or common verbs.
+
+## Core rule
+
+Do not copy English present-perfect choices into German automatically. Ask
+whether the situation is still true, whether the past is conversational, or
+whether the text is a narrative:
+
+| Context | German default | Example |
+| --- | --- | --- |
+| began before now and continues | present | <span lang="de">Ich wohne seit 2020 hier.</span> |
+| completed event in conversation | perfect | <span lang="de">Ich habe ihn gestern gesehen.</span> |
+| written/story past or common auxiliary/modal | preterite | <span lang="de">Es war einmal.</span> |
+
+
+
+<MistakeBox
+	incorrect="Ich habe hier seit 2020 gewohnt."
+	correct="Ich wohne hier seit 2020."
+	lang="de"
+>
+	German uses present for situations that began in the past and continue now.
+</MistakeBox>
+
+<MemoryTip>
+Ask: still true, spoken past, or narrative past?
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Still true since 2020: I live here.', answer: 'Ich wohne seit 2020 hier.' },
+		{ prompt: 'Spoken past: I saw him yesterday.', answer: 'Ich habe ihn gestern gesehen.' },
+		{ prompt: 'Narrative opening: Once upon a time.', answer: 'Es war einmal.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../choosing-time-form/', label: 'Choosing Time Form' },
+		{ href: '../present-tense/', label: 'Present Tense' },
+		{ href: '../perfect-tense/', label: 'Perfect Tense' },
+		{ href: '../preterite/', label: 'Preterite' },
+	]}
+/>

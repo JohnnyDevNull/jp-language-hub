@@ -10,7 +10,7 @@ related:
   - /learn/german/grammar/prepositions/
   - /learn/german/grammar/nouns-articles/
   - /learn/german/grammar/sentence-structure/
-  - /learn/german/grammar/verbs/
+  - /learn/german/grammar/verbs-time-forms/
 ---
 
 German grammar is easiest when the pages answer a decision, not when they
@@ -29,9 +29,9 @@ mood.
 | place the finite verb or build a subordinate clause | [Sentence structure](./sentence-structure/) |
 | ask a question or negate something | [Questions](./sentence-structure/questions/) and [Negation](./function-words-negation/negation/) |
 | negate a noun phrase, verb, quality, or whole clause | [Function words and negation](./function-words-negation/) |
-| choose time form, passive, modal, particle verb, or mood | [Verbs](./verbs/) |
+| choose present, past, or future form | [Verbs and time forms](./verbs-time-forms/) |
 | add endings, compare qualities, or use adverbs | [Adjectives and adverbs](./adjectives-adverbs/) |
-| express a condition or hypothetical situation | [Subordinating conjunctions](./sentence-structure/subordinating-conjunctions/) and [Konjunktiv II](./verbs/konjunktiv-ii/) |
+| express a condition or hypothetical situation | [Subordinating conjunctions](./sentence-structure/subordinating-conjunctions/) and [Konjunktiv II](./mood-politeness-reports/konjunktiv-ii/) |
 
 ## Decision chain
 
@@ -45,8 +45,14 @@ mood.
 5. To ask or negate, use [Questions](./sentence-structure/questions/) for
    clause shape, then [Function words and negation](./function-words-negation/) for
    scope and form.
-6. [Verbs](./verbs/) handles time, voice, mood, modals, and particle verbs.
-7. [Adjectives](./adjectives-adverbs/) completes noun-phrase description and
+6. [Verbs and time forms](./verbs-time-forms/) handles present, past, and future choices.
+7. [Verb Patterns & Voice](./verb-patterns-voice/) handles modals, infinitives,
+   commands, and passive focus.
+8. [Mood, Politeness & Reports](./mood-politeness-reports/) handles hypothetical,
+   polite, and reported meanings.
+9. [Word Formation & Particles](./word-formation-particles/) handles particle
+   and prefix verbs.
+10. [Adjectives](./adjectives-adverbs/) completes noun-phrase description and
    comparison.
 
 ## Ask, negate, and express conditions
@@ -58,7 +64,7 @@ then choose `nicht` or `kein` and place it precisely.
 
 For a condition, [Subordinating conjunctions](./sentence-structure/subordinating-conjunctions/)
 shows the clause-order choice. For an unreal or hypothetical meaning, continue
-to [Konjunktiv II](./verbs/konjunktiv-ii/); these are decision routes, not a
+to [Konjunktiv II](./mood-politeness-reports/konjunktiv-ii/); these are decision routes, not a
 separate German conditionals topic.
 
 ## Repair routes

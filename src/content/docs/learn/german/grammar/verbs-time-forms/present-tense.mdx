@@ -1,0 +1,84 @@
+---
+title: "Present tense"
+description: "Use German present for current actions, habits, facts, and many future plans."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/german/grammar/word-formation-particles/particle-verbs/
+  - /learn/german/grammar/verb-patterns-voice/modal-verbs/
+  - /learn/german/grammar/verbs-time-forms/choosing-time-form/
+  - /learn/german/grammar/verb-patterns-voice/active-vs-passive/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- German present covers both simple and progressive English present.
+- Use present for ich arbeite meaning both “I work” and “I am working”. Add context when ongoing meaning matters.
+- German present covers current actions, habits, facts, and many future plans without an English-style progressive.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Use German present for current actions, habits, facts, and many future plans.
+
+## Use this now
+
+Use present for <span lang="de">ich arbeite</span> meaning both “I work” and “I am working”. Add context when ongoing meaning matters.
+
+## Core rule
+
+The present stem takes person endings; unlike English, the same form covers
+simple and progressive meanings:
+
+| Person | <span lang="de">arbeiten</span> |
+| --- | --- |
+| <span lang="de">ich</span> | <span lang="de">arbeite</span> |
+| <span lang="de">du</span> | <span lang="de">arbeitest</span> |
+| <span lang="de">er/sie/es</span> | <span lang="de">arbeitet</span> |
+| <span lang="de">wir/sie/Sie</span> | <span lang="de">arbeiten</span> |
+
+A future time expression can make present-tense German future:
+<span lang="de">Morgen fahre ich nach Berlin</span>.
+
+
+
+<MistakeBox
+	incorrect="Ich bin arbeitend."
+	correct="Ich arbeite."
+	lang="de"
+>
+	German normally does not build an English-style progressive with <span lang="de">sein</span> plus participle.
+</MistakeBox>
+
+<MemoryTip>
+Present plus context is often enough.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Use present: I am learning German.', answer: 'Ich lerne Deutsch.' },
+		{ prompt: 'Use present for a planned future: Tomorrow I travel.', answer: 'Morgen reise ich.' },
+		{ prompt: 'Use present for a fact: She lives here.', answer: 'Sie wohnt hier.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../choosing-time-form/', label: 'Choosing Time Form' },
+		{ href: '../present-tense-for-future/', label: 'Present Tense For Future' },
+		{ href: '../present-vs-perfect-vs-preterite/', label: 'Present vs Perfect vs Preterite' },
+	]}
+/>

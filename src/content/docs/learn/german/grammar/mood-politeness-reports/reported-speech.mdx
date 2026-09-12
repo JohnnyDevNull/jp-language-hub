@@ -1,0 +1,78 @@
+---
+title: "Reported speech"
+description: "Use reported speech to mark that information comes from someone else."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/german/grammar/mood-politeness-reports/konjunktiv-i/
+  - /learn/german/grammar/mood-politeness-reports/konjunktiv-ii/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Reported speech separates your voice from another source.
+- In careful writing, German often uses Konjunktiv I for reported statements. In everyday speech, indicative or Konjunktiv II may appear.
+- In everyday conversation, indicative is normal; use Konjunktiv I when formal source distance matters.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Use reported speech to mark that information comes from someone else.
+
+## Use this now
+
+Start by making the source clear. In everyday speech, indicative is normal; in
+careful reporting, Konjunktiv I can make the distance explicit.
+
+## Core rule
+
+The main task is source marking, not automatic tense backshifting.
+
+| Context | Natural report |
+| --- | --- |
+| everyday conversation | <span lang="de">Er sagt, er hat keine Zeit.</span> |
+| formal report | <span lang="de">Er sagt, er habe keine Zeit.</span> |
+| distance from a source when Konjunktiv I is unclear | <span lang="de">Sie sagte, sie käme später.</span> |
+
+
+
+<MistakeBox
+		incorrect="Er sagt, ich habe keine Zeit."
+		correct="Er sagt, er hat keine Zeit."
+	lang="de"
+>
+		Change the pronoun when you report another person's statement. The indicative is natural in ordinary speech; formal writing may use <span lang="de">er habe</span> instead.
+</MistakeBox>
+
+<MemoryTip>
+Reported speech answers “whose claim is this?”
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Everyday: He says he is sick.', answer: 'Er sagt, er ist krank.' },
+		{ prompt: 'Formal: She says she has time.', answer: 'Sie sagt, sie habe Zeit.' },
+		{ prompt: 'They say they are coming.', answer: 'Sie sagen, sie kommen.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../konjunktiv-i/', label: 'Konjunktiv I' },
+		{ href: '../konjunktiv-ii/', label: 'Konjunktiv II' },
+		{ href: '../', label: 'Mood, Politeness, and Reports' },
+	]}
+/>

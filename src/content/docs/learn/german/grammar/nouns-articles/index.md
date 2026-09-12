@@ -26,7 +26,7 @@ article and case before adding any adjective ending.
 | whether to use *der*, *die*, or *das* | [Der, die, das](./der-die-das/) |
 | how *ein*, *kein*, and possessive-like words behave | [Ein-words](./ein-words/) |
 | how plural nouns affect articles and endings | [Plural nouns](./plural-nouns/) |
-| which gender a compound noun takes | [Compound noun gender](./compound-noun-gender/) |
+| which gender a compound noun takes | [Compound nouns](../word-formation-particles/compound-nouns/) |
 
 ## The decision order
 

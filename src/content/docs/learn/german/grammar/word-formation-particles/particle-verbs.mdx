@@ -1,0 +1,110 @@
+---
+title: "Particle verbs"
+description: "Recognize German particle verbs and decide whether the particle separates."
+metaLanguage: en
+grammarLanguage: de
+comparisonLanguages:
+  - de
+  - en
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+  - important
+related:
+  - /learn/german/grammar/word-formation-particles/separable-verbs/
+  - /learn/german/grammar/word-formation-particles/inseparable-prefix-verbs/
+  - /learn/german/grammar/word-formation-particles/particle-verbs-vs-plain-verbs/
+  - /learn/german/grammar/sentence-structure/verb-bracket/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- A particle can create a new verb meaning, so learn <span lang="de">anrufen</span> or <span lang="de">aufstehen</span> as a unit.
+- Separable particles move to the right bracket in finite main clauses; inseparable prefixes stay attached.
+- Use the detail pages for the form pattern and the contrast page for particle versus preposition meaning.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Recognize German particle verbs and decide whether the particle separates.
+
+## Use this now
+
+Ask three questions:
+
+1. Is the prefix separable, inseparable, or dependent on meaning?
+2. Does the clause have a right bracket position?
+3. Is the whole verb meaning different enough that you should learn it as one vocabulary item?
+
+## Core rule
+
+A meaning-bearing, stressed particle is often separable; an unstressed prefix is
+usually inseparable. This is a useful first signal, not a substitute for
+learning a verb with its meaning and principal forms.
+
+<SentenceSchema
+	caption="Separable verbs across clause shapes"
+	columns={["Clause start", "Finite verb", "Middle", "Right bracket"]}
+	rows={[
+		{ label: "Main clause", lang: "de", cells: ["Ich", "rufe", "dich", "an"] },
+		{ label: "Question", lang: "de", cells: ["", "Rufst", "du mich", "an?"] },
+		{ label: "Perfect", lang: "de", cells: ["Ich", "habe", "dich", "angerufen"] },
+		{ label: "Subordinate", lang: "de", cells: ["..., weil ich", "", "dich", "anrufe"] },
+	]}
+/>
+
+The particle may move, but the meaning stays with the verb. <span lang="de">rufen</span> means "call/shout"; <span lang="de">anrufen</span> means "call by phone". Treat <span lang="de">anrufen</span>, <span lang="de">aufstehen</span>, <span lang="de">mitkommen</span>, and <span lang="de">anfangen</span> as whole entries.
+
+## Direct comparison
+
+<LanguageComparison title="A particle does not map word for word" languages={["de", "en"]}>
+	<p slot="de"><span lang="de">Ich rufe dich an.</span> uses one separable verb: <span lang="de">anrufen</span>.</p>
+	<p slot="en">I call you. English needs no matching particle for this meaning.</p>
+</LanguageComparison>
+
+Compare the meaning and clause pattern, not a German particle with an English
+particle word for word. German may use a separable verb, an inseparable prefix
+verb, or a different lexical verb.
+
+
+
+<MistakeBox
+	incorrect="Ich aufstehe um sieben."
+	correct="Ich stehe um sieben auf."
+	lang="de"
+>
+	The separable particle moves to the right bracket in a main clause.
+</MistakeBox>
+
+<MemoryTip>
+The particle belongs to the verb meaning, even when it stands at the end.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'I call you.', answer: 'Ich rufe dich an.' },
+		{ prompt: 'We start.', answer: 'Wir fangen an.' },
+		{ prompt: 'I have called.', answer: 'Ich habe angerufen.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../separable-verbs/', label: 'Separable Verbs' },
+		{ href: '../inseparable-prefix-verbs/', label: 'Inseparable Prefix Verbs' },
+		{ href: '../particle-verbs-vs-plain-verbs/', label: 'Particle Verbs vs Plain Verbs' },
+		{ href: '../../sentence-structure/verb-bracket/', label: 'Verb Bracket' },
+	]}
+/>

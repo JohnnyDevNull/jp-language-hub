@@ -1,0 +1,83 @@
+---
+title: "Choosing time form"
+description: "Choose German present, perfect, preterite, future, or future perfect from meaning and register."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+  - important
+related:
+  - /learn/german/grammar/word-formation-particles/particle-verbs/
+  - /learn/german/grammar/verb-patterns-voice/modal-verbs/
+  - /learn/german/grammar/verb-patterns-voice/active-vs-passive/
+  - /learn/german/grammar/sentence-structure/verb-bracket/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- German has fewer everyday tense contrasts than English.
+- Use present for now, habits, and scheduled future; perfect for most spoken past; preterite for narratives and common verbs; werden-future for prediction or emphasis; future perfect for completion before a future point.
+- Choose time form from time perspective first, then speech or writing register.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Choose German present, perfect, preterite, future, or future perfect from meaning and register.
+
+## Use this now
+
+Use present for now, habits, and scheduled future; perfect for most spoken past; preterite for narratives and common verbs; werden-future for prediction or emphasis; future perfect for completion before a future point.
+
+## Core rule
+
+Choose the speaker task first, then use the smallest form that answers it:
+
+| Task | Default form | Example |
+| --- | --- | --- |
+| now, habit, or scheduled future | present | <span lang="de">Ich arbeite heute. Morgen fahre ich.</span> |
+| completed event in conversation | perfect | <span lang="de">Ich habe den Film gesehen.</span> |
+| written narrative or <span lang="de">sein</span>/<span lang="de">haben</span>/modal | preterite | <span lang="de">Er war müde und ging nach Hause.</span> |
+| prediction or explicit future stance | <span lang="de">werden</span> + infinitive | <span lang="de">Es wird regnen.</span> |
+| completed before a future point | future perfect | <span lang="de">Bis Freitag werde ich es erledigt haben.</span> |
+
+
+
+<MistakeBox
+	incorrect="Ich werde morgen gehe."
+	correct="Ich gehe morgen."
+	lang="de"
+>
+	A time word plus present tense is the normal way to express many future plans.
+</MistakeBox>
+
+<MemoryTip>
+German present covers a lot; add future forms only when they add meaning.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Choose a form for a concrete plan: I am going tomorrow.', answer: 'Ich gehe morgen.' },
+		{ prompt: 'Choose the usual spoken past: I bought it.', answer: 'Ich habe es gekauft.' },
+		{ prompt: 'Choose future perfect: By Friday I will have finished it.', answer: 'Bis Freitag werde ich es erledigt haben.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../choosing-future-forms/', label: 'Choosing Future Forms' },
+		{ href: '../present-vs-perfect-vs-preterite/', label: 'Present vs Perfect vs Preterite' },
+		{ href: '../present-tense/', label: 'Present Tense' },
+		{ href: '../perfect-tense/', label: 'Perfect Tense' },
+	]}
+/>

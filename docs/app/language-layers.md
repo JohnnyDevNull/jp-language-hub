@@ -65,16 +65,23 @@ one tree into the others:
   common-mistakes/
 /learn/german/
   grammar/
-    cases/
-    prepositions/
-    nouns-articles/
-    pronouns-roles/
     sentence-structure/
-    function-words-negation/
-    verbs/
+    nouns-articles/
+    cases/
+    pronouns-roles/
+    verbs-time-forms/
+    verb-patterns-voice/
+    word-formation-particles/
     adjectives-adverbs/
+    prepositions/
+    function-words-negation/
+    mood-politeness-reports/
   common-mistakes/
 ```
+
+German compound nouns have one canonical route under
+`grammar/word-formation-particles/compound-nouns/`; Nouns & Articles links to
+that lookup without duplicating its final-element rule.
 
 Pages that are not owned by one learning language stay outside `/learn/`:
 

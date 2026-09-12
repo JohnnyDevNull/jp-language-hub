@@ -1,0 +1,88 @@
+---
+title: "Past perfect"
+description: "Use German past perfect for an event completed before another past reference point."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - B1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/german/grammar/verbs-time-forms/perfect-tense/
+  - /learn/german/grammar/verbs-time-forms/preterite/
+  - /learn/german/grammar/verbs-time-forms/choosing-time-form/
+  - /learn/german/grammar/sentence-structure/verb-bracket/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Use past perfect when one past event happened before another past reference point.
+- Form it with <span lang="de">hatte</span> or <span lang="de">war</span> plus the past participle.
+- The earlier event is past perfect; the later narrative event is usually perfect or preterite.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+German past perfect adds a clear “already happened” layer inside a past story.
+
+## Use this now
+
+Choose past perfect when two past events need an order:
+<span lang="de">Nachdem ich gegessen hatte, ging ich spazieren.</span>
+Eating happened first; going for a walk is the later reference event.
+
+## Core rule
+
+Form past perfect with the past tense of the auxiliary plus the past
+participle:
+
+| Verb type | Form | Example |
+| --- | --- | --- |
+| most verbs | <span lang="de">hatte</span> + participle | <span lang="de">Ich hatte gearbeitet.</span> |
+| movement or change-of-state verbs | <span lang="de">war</span> + participle | <span lang="de">Sie war gegangen.</span> |
+
+In a main clause, the finite auxiliary stays in position two and the
+participial bracket closes at the end:
+<span lang="de">Ich hatte den Bericht schon gelesen.</span> In a subordinate
+clause, the auxiliary moves to the end:
+<span lang="de">..., weil ich den Bericht schon gelesen hatte.</span>
+
+<MistakeBox
+	incorrect="Nachdem ich gegessen habe, ging ich spazieren."
+	correct="Nachdem ich gegessen hatte, ging ich spazieren."
+	lang="de"
+>
+	When the sentence explicitly orders two past events, use past perfect for
+	the earlier one. Simple past or perfect can still be enough when the order is
+	already clear from the context.
+</MistakeBox>
+
+<MemoryTip>
+Past perfect is the past before the past: <span lang="de">hatte/war</span> plus
+the participle.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Complete: Nachdem ich ___ (kommen) war, begann der Film.', answer: 'gekommen' },
+		{ prompt: 'Complete: Sie ___ den Brief geschrieben.', answer: 'hatte' },
+		{ prompt: 'Where does the auxiliary go in a subordinate clause?', answer: 'ans Ende des Nebensatzes' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../perfect-tense/', label: 'Perfect Tense' },
+		{ href: '../preterite/', label: 'Preterite' },
+		{ href: '../choosing-time-form/', label: 'Choosing Time Form' },
+		{ href: '../../sentence-structure/verb-bracket/', label: 'Verb Bracket' },
+	]}
+/>

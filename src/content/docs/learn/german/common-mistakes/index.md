@@ -36,5 +36,5 @@ open the German rule that fixes that exact pattern.
 - [Articles and gender](../grammar/nouns-articles/articles-and-gender/)
 - [Main clause verb second](../grammar/sentence-structure/main-clause-verb-second/)
 - [Verb bracket](../grammar/sentence-structure/verb-bracket/)
-- [Choosing time form](../grammar/verbs/choosing-time-form/)
-- [Active vs passive](../grammar/verbs/active-vs-passive/)
+- [Choosing time form](../grammar/verbs-time-forms/choosing-time-form/)
+- [Active vs passive](../grammar/verb-patterns-voice/active-vs-passive/)

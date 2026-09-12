@@ -1,0 +1,80 @@
+---
+title: "Imperative"
+description: "Give German commands with du, ihr, Sie, and wir forms."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/german/grammar/word-formation-particles/particle-verbs/
+  - /learn/german/grammar/verb-patterns-voice/modal-verbs/
+  - /learn/german/grammar/verbs-time-forms/choosing-time-form/
+  - /learn/german/grammar/verb-patterns-voice/active-vs-passive/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Imperatives depend on who you address.
+- Use the verb stem for many du commands, the normal ihr form for plural informal commands, and verb-first with Sie for polite commands.
+- Choose the imperative form from the addressee: <span lang="de">du</span>, <span lang="de">ihr</span>, <span lang="de">Sie</span>, or <span lang="de">wir</span>.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Give German commands with du, ihr, Sie, and wir forms.
+
+## Use this now
+
+Use the verb stem for many <span lang="de">du</span> commands, the normal <span lang="de">ihr</span> form for plural informal commands, and verb-first with <span lang="de">Sie</span> for polite commands.
+
+## Core rule
+
+Command forms often drop the subject except for <span lang="de">Sie</span> and
+<span lang="de">wir</span>:
+
+| Addressee | Pattern | Example |
+| --- | --- | --- |
+| <span lang="de">du</span> | stem, often without ending | <span lang="de">Komm her!</span> |
+| <span lang="de">ihr</span> | present <span lang="de">ihr</span> form | <span lang="de">Kommt her!</span> |
+| <span lang="de">Sie</span> | infinitive + <span lang="de">Sie</span> | <span lang="de">Kommen Sie her!</span> |
+| <span lang="de">wir</span> | infinitive + <span lang="de">wir</span> | <span lang="de">Gehen wir!</span> |
+
+
+
+<MistakeBox
+	incorrect="Du komm hier."
+	correct="Komm hier."
+	lang="de"
+>
+	A normal <span lang="de">du</span> imperative drops the subject.
+</MistakeBox>
+
+<MemoryTip>
+Commands are verb-first and audience-sensitive.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Informal singular: Come here!', answer: 'Komm her!' },
+		{ prompt: 'Polite: Wait, please.', answer: 'Warten Sie bitte.' },
+		{ prompt: 'Suggestion with wir: Let us go.', answer: 'Gehen wir.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../modal-verbs/', label: 'Modal Verbs' },
+		{ href: '../../sentence-structure/verb-bracket/', label: 'Verb Bracket' },
+	]}
+/>

@@ -11,7 +11,7 @@ related:
   - /learn/german/grammar/sentence-structure/main-clause-verb-second/
   - /learn/german/grammar/sentence-structure/subordinate-clauses/
   - /learn/german/grammar/sentence-structure/verb-bracket/
-  - /learn/german/grammar/verbs/particle-verbs/
+  - /learn/german/grammar/word-formation-particles/particle-verbs/
 ---
 
 German word order is easiest when you track the finite verb and the clause

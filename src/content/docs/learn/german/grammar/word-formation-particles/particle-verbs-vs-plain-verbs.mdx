@@ -1,0 +1,77 @@
+---
+title: "Particle verbs vs plain verbs"
+description: "Tell apart a verb plus particle from a plain verb plus prepositional phrase."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/german/grammar/word-formation-particles/particle-verbs/
+  - /learn/german/grammar/word-formation-particles/separable-verbs/
+  - /learn/german/grammar/prepositions/dependent-prepositions/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- First ask whether the small word changes the verb's lexical meaning or introduces an object phrase.
+- Learn <span lang="de">anfangen</span> as one verb; learn <span lang="de">warten auf</span> as a verb together with its required preposition.
+- Use stress as a clue, then verify the whole phrase and its sentence pattern.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Tell apart a verb plus particle from a plain verb plus prepositional phrase.
+
+## Use this now
+
+If the particle creates a new lexical meaning, learn the pair as a verb. If the small word introduces a normal object, treat it as a preposition.
+
+## Core rule
+
+<span lang="de">anfangen</span> is one verb meaning “begin”; <span lang="de">warten auf</span> is a verb plus prepositional object.
+
+| What you see | Treat it as | Check |
+| --- | --- | --- |
+| <span lang="de">Ich fange an.</span> | a separable verb | the particle moves in a finite main clause |
+| <span lang="de">Ich warte auf den Bus.</span> | a prepositional object | the preposition introduces its object |
+
+
+
+<MistakeBox
+	incorrect="Ich warte den Bus auf."
+	correct="Ich warte auf den Bus."
+	lang="de"
+>
+	<span lang="de">auf</span> belongs to the object phrase here, not as a separable particle.
+</MistakeBox>
+
+<MemoryTip>
+Particle verbs store meaning; prepositions introduce objects.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'I start.', answer: 'Ich fange an.' },
+		{ prompt: 'I wait for the bus.', answer: 'Ich warte auf den Bus.' },
+		{ prompt: 'I turn the light on.', answer: 'Ich mache das Licht an.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../particle-verbs/', label: 'Particle Verbs' },
+		{ href: '../separable-verbs/', label: 'Separable Verbs' },
+		{ href: '../../prepositions/dependent-prepositions/', label: 'Dependent Prepositions' },
+	]}
+/>

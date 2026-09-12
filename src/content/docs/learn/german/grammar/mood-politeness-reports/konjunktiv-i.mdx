@@ -1,0 +1,80 @@
+---
+title: "Konjunktiv I"
+description: "Recognize Konjunktiv I in formal reported speech."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/german/grammar/mood-politeness-reports/reported-speech/
+  - /learn/german/grammar/mood-politeness-reports/konjunktiv-ii/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Konjunktiv I is mainly a reading and formal-writing tool.
+- Look for forms such as sei, habe, gehe, and plural forms that may switch to Konjunktiv II when ambiguous.
+- In everyday conversation, prefer the reported-speech page; this page is for formal recognition and deliberate distancing.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Recognize Konjunktiv I in formal reported speech.
+
+## Use this now
+
+Look for forms such as <span lang="de">sei</span>, <span lang="de">habe</span>, <span lang="de">gehe</span>, and plural forms that may switch to Konjunktiv II when ambiguous.
+
+## Core rule
+
+You do not need it constantly in conversation, but you need to recognize it in
+news and formal texts. Formal reporting can keep the source at a distance:
+
+| Direct statement | Formal report |
+| --- | --- |
+| <span lang="de">Er ist zufrieden.</span> | <span lang="de">Er sei zufrieden.</span> |
+| <span lang="de">Sie hat Zeit.</span> | <span lang="de">Sie habe Zeit.</span> |
+
+If a Konjunktiv I form looks identical to the indicative, formal German may use
+Konjunktiv II instead to make the distance visible.
+
+
+
+<MistakeBox
+	incorrect="Der Minister sagt, er ist zufrieden."
+	correct="Der Minister sagt, er sei zufrieden."
+	lang="de"
+>
+	Formal reported speech often uses Konjunktiv I.
+</MistakeBox>
+
+<MemoryTip>
+Konjunktiv I puts quotation marks into the grammar.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'he reportedly is', answer: 'er sei' },
+		{ prompt: 'she reportedly has', answer: 'sie habe' },
+		{ prompt: 'he reportedly goes', answer: 'er gehe' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../reported-speech/', label: 'Reported Speech' },
+		{ href: '../konjunktiv-ii/', label: 'Konjunktiv II' },
+		{ href: '../', label: 'Mood, Politeness, and Reports' },
+	]}
+/>

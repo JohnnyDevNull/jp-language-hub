@@ -9,16 +9,14 @@ architecture.
 
 **Last updated:** 2026-09-12
 
-**Overall status:** G1 and G2 complete. G3 is next but remains pending until
-the user gives further Go. G4 and G5 remain pending. Swedish and English are
-complete; the separate Phase 5 whole-tree Quality Check follows German.
+**Overall status:** G1 through G4 complete. G5 is next but remains pending
+until explicit user Go. Swedish and English are complete; the separate Phase 5
+whole-tree Quality Check follows German.
 
-**Repository baseline:** `40dff9a` (`feat(content): finalize English phase 5
-batches 5 and 6`) on `main`. The worktree already contains three unrelated,
-status-only planning edits in `docs/roadmap-phase-5-align-grammar-ia.md`,
-`docs/roadmap-phase-5-finalize-english.md`, and `docs/roadmap.md`. They belong
-to the user and must be preserved. G1 and G2 implementation is now complete;
-newer repository evidence is authoritative.
+**Repository baseline:** `46ad547` (`feat(german): finalize grammar batches
+G1 and G2`) on `main`. This commit records the verified G1/G2 implementation,
+the German report, and the intentional Phase-5 coordination/roadmap status
+edits. Newer repository evidence is authoritative.
 
 ## Sources of Truth
 
@@ -74,9 +72,9 @@ Status values: `pending`, `in progress`, `review`, `complete`, or `blocked`.
 | ---: | --- | --- | --- | --- | --- |
 | 1 | German G1 — Retained foundations and missing preposition coverage | **complete** | 28 retained G1 targets, including the unchanged Sentence Structure overview; 27 retained files changed plus `src/content/docs/learn/german/grammar/prepositions/dependent-prepositions.mdx`; this report | 29 logical targets reconciled; independent semantic and compliance reviews PASS; all required gates PASS | None; G1 is closed |
 | 2 | German G2 — Pronouns, adjectives, and function words | **complete** | 17 approved move targets: 7 `pronouns/` → `pronouns-roles/`, 5 `adjectives/` → `adjectives-adverbs/`, and 5 `function-words/` → `function-words-negation/`; overview sources upgraded from `.md` to `.mdx` without route changes | Independent semantic review PASS; independent compliance review PASS; final post-fix gates PASS; no authored mirrors | None; G2 is closed. Stop and wait for user Go before G3 |
-| 3 | German G3 — Atomic verb-tree fan-out | **pending / next** | — | Blocked by explicit user Go boundary, not by an implementation defect | Wait for user Go; then perform the complete coordinated verb migration and Active merge |
-| 4 | German G4 — Word formation finalization | pending | — | — | Wait for G3 closure; move and rename compound nouns atomically |
-| 5 | German G5 — Common mistakes and German completion review | pending | — | — | Reconcile all German Inventory rows, diagnostics, retired routes, and final reviews |
+| 3 | German G3 — Atomic verb-tree fan-out | **complete** | 32 Inventory rows resolving to 31 target routes: 27 moves, 4 creates, and 1 approved `Active` merge; exact target shelf counts 11/8/7/5 | Independent semantic review PASS; independent compliance/reconciliation review PASS; final gates PASS; no G4 work included | None; G3 is closed |
+| 4 | German G4 — Word formation finalization | **complete** | Exactly one approved `move, rename`: `nouns-articles/compound-noun-gender` → `word-formation-particles/compound-nouns` | Independent semantic review PASS; independent compliance review PASS; combined G3/G4 gates PASS; no G5 work included | None; G4 is closed |
+| 5 | German G5 — Common mistakes and German completion review | **pending / next** | — | Explicitly not started; await user Go | Reconcile all German Inventory rows, diagnostics, retired routes, and final reviews after user Go |
 
 ## Authored Localized Mirrors
 
@@ -169,23 +167,92 @@ seven existing documented Swedish exceptions. `git diff --check` passed. The
 retired current-route scan found 0 matches, and the generated base-less
 internal `href` scan found 0 matches.
 
+## G3 Evidence
+
+**Status:** Complete. G3 reconciles exactly 32 German Inventory rows to
+31 target routes: 27 approved moves and 4 creates. The four creates are the
+three new shelf overviews (`Verbs & Time Forms`, `Verb Patterns & Voice`, and
+`Mood, Politeness & Reports`) plus `Past perfect`.
+
+The atomic migration also moves the approved time-form, verb-pattern, voice,
+mood, politeness, reporting, and particle-verb pages to their target shelves.
+`Active` is merged into `Active vs passive`; the old standalone Active route
+was deleted, with its independent teaching points retained in the surviving
+page. The final shelf counts are 11 `Verbs & Time Forms`, 8 `Verb Patterns &
+Voice`, 7 `Mood, Politeness & Reports`, and 5 `Word Formation & Particles`.
+The G4 compound-noun move was not included.
+
+**Consumers and documentation:** The German sidebar now matches the complete
+Blueprint shelf nesting and order. German Grammar, landing, Sentence
+Structure, Common Mistakes, current-state documentation, page-body links, and
+`related` metadata were updated to the canonical G3 routes. No authored
+`de/learn/german/**` or `sv/learn/german/**` mirror exists; canonical fallback
+remains the disposition.
+
+**Independent review findings and verified remediation:** The compliance and
+semantic reviews initially identified the sidebar nesting/order defect, deep
+stub-quality risks, incomplete `RelatedTopics` coverage, weak or inconsistent
+examples, and metadata/consumer evidence gaps. These were corrected and
+rechecked: all G3 shelves are nested under German Grammar in Blueprint order;
+deep pages have adequate lookup content; `RelatedTopics` coverage, examples,
+metadata, current consumers, and route ownership are aligned. Independent
+semantic review: **PASS**. Independent compliance/reconciliation review:
+**PASS**. No unresolved G3 finding remains.
+
+**Final gate evidence:** `npm run quality` passed across 252 documentation
+pages with 0 errors, warnings, or hints. `npm run build -- --base
+/jp-language-hub` passed with 727 generated pages. `npm run report:length`
+passed across 252 pages with seven existing documented Swedish exceptions.
+`git diff --check` passed. Retired German verbs and standalone Active scans
+found 0 current-source matches, and the generated base-less internal `href`
+scan found 0 matches.
+
+## G4 Evidence
+
+**Status:** Complete. G4 owns exactly one approved `move, rename` row:
+`/learn/german/grammar/nouns-articles/compound-noun-gender/` moves to
+`/learn/german/grammar/word-formation-particles/compound-nouns/`.
+
+The move leaves one canonical compound-noun page, removes the old source and
+route, updates the Nouns & Articles consumer and all other current references,
+and preserves the Word Formation boundary. No additional G4 topic, route, or
+G5 common-mistakes work was introduced.
+
+**Independent review findings and verified fixes:** The semantic review
+verified the compound-noun ownership boundary, productive final-element rule,
+examples, lookup structure, and the Nouns & Articles hand-off. The compliance
+review verified the exact one-row move/rename, old-route removal, sidebar
+placement, current consumer and documentation updates, zero authored mirrors,
+and G5 exclusion. Independent semantic review: **PASS**. Independent
+compliance review: **PASS**. No unresolved G4 finding remains.
+
+**Final combined G3/G4 gate evidence:** `npm run quality` passed across 252
+documentation pages with 0 errors, warnings, or hints. The base-path build
+passed with 727 pages. `npm run report:length` passed across 252 pages with
+seven existing documented Swedish exceptions. `git diff --check` passed. The
+post-G4 shelf counts are 11 `Verbs & Time Forms`, 8 `Verb Patterns & Voice`,
+7 `Mood, Politeness & Reports`, and 6 `Word Formation & Particles`. Current
+source scans found 0 old German verbs, standalone Active, or
+`compound-noun-gender` references; authored mirrors and generated base-less
+internal `href` matches are both 0.
+
 ## Validation Ledger
 
 Use ISO dates and retain failed attempts as evidence.
 
 | Gate | Status | Date | Evidence or findings |
 | --- | --- | --- | --- |
-| `npm run quality` | **Pass for G1/G2** | 2026-09-12 | 249 documentation pages; 0 errors, warnings, or hints |
-| `npm run build -- --base /jp-language-hub` | **Pass for G1/G2** | 2026-09-12 | 718 static pages built; German fallback output includes G1 and G2 routes |
-| `npm run report:length` | **Pass for G1/G2** | 2026-09-12 | 249 pages measured; 7 existing documented Swedish exceptions |
-| `git diff --check` | **Pass for G1/G2** | 2026-09-12 | No whitespace errors |
-| Inventory totals and unique targets | **Pass for G1** | 2026-09-12 | 29 logical G1 targets reconciled: 28 retained and 1 create; no route moves |
-| Blueprint/sidebar order | **Pass for G1** | 2026-09-12 | G1 retained scope and new preposition target comply with approved boundaries; full German order remains a finalization check |
-| Retired-route repository/build search | **Pass for G1** | 2026-09-12 | No G1 route moves, renames, or retired routes introduced |
-| Affected localized mirrors | **Pass for G1/G2** | 2026-09-12 | 0 authored `de/learn/german/**` or `sv/learn/german/**` mirrors; canonical fallback recorded |
-| Generated base-path links | **Pass for G1/G2** | 2026-09-12 | 0 base-less internal `href` matches; source absolute body-link scan also returned 0 |
-| German Architecture review | **Pass for G1/G2** | 2026-09-12 | Scope, ownership boundaries, metadata, links, and route behavior verified |
-| German Linguistic/Didactic review | **Pass for G1/G2** | 2026-09-12 | No unresolved findings; G1 decision paths and G2 moved-shelf boundaries verified |
+| `npm run quality` | **Pass for G1-G4** | 2026-09-12 | 252 documentation pages; 0 errors, warnings, or hints |
+| `npm run build -- --base /jp-language-hub` | **Pass for G1-G4** | 2026-09-12 | 727 static pages built; German fallback output includes G1-G4 routes |
+| `npm run report:length` | **Pass for G1-G4** | 2026-09-12 | 252 pages measured; 7 existing documented Swedish exceptions |
+| `git diff --check` | **Pass for G1-G4** | 2026-09-12 | No whitespace errors |
+| Inventory totals and unique targets | **Pass for G1-G4** | 2026-09-12 | G1 29 targets, G3 32 rows/31 targets, and G4 1 move/rename reconcile |
+| Blueprint/sidebar order | **Pass for G1-G4** | 2026-09-12 | German Grammar shelves are nested and ordered per Blueprint; post-G4 counts are 11/8/7/6 |
+| Retired-route repository/build search | **Pass for G1-G4** | 2026-09-12 | Old verbs, Active, and compound-noun-gender current-source scans return 0 matches; G5 untouched |
+| Affected localized mirrors | **Pass for G1-G4** | 2026-09-12 | 0 authored `de/learn/german/**` or `sv/learn/german/**` mirrors; canonical fallback recorded |
+| Generated base-path links | **Pass for G1-G4** | 2026-09-12 | 0 base-less internal `href` matches; source absolute body-link scan also returned 0 |
+| German Architecture review | **Pass for G1-G4** | 2026-09-12 | Scope, ownership boundaries, metadata, links, route behavior, and G4 placement verified |
+| German Linguistic/Didactic review | **Pass for G1-G4** | 2026-09-12 | G3 findings and G4 compound-noun findings were remediated and independently rechecked PASS |
 
 ## Risks and Open Items
 
@@ -207,14 +274,14 @@ Use ISO dates and retain failed attempts as evidence.
    `git log -1 --oneline`; preserve the three pre-existing planning edits.
 2. Read the G1 section of the German plan, the relevant Blueprint shelves and
    German Inventory rows, and the applicable `docs/rules/` files.
-3. G1 and G2 are complete. Stop here and wait for explicit user Go before
-   starting G3; do not begin verb-tree work in this session.
+3. G1 through G4 are complete. Stop here and wait for explicit user Go before
+   starting G5; do not begin common-mistakes reconciliation in this session.
 4. Recheck canonical and localized consumers, relative body links, absolute
    `related` routes, metadata, sidebar order, and generated fallback routes.
 5. For the next authorized batch, assign independent architecture and
    linguistic/didactic review, resolve every finding, rerun the gates, and
    update this report before marking that batch complete.
-6. Resume G3 only after the user provides the requested Go.
+6. Resume G5 only after the user provides the requested Go.
 
 ## Baseline Contradictions and Additional Decisions
 

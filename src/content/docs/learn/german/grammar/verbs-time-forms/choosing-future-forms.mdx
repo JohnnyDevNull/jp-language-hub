@@ -1,0 +1,83 @@
+---
+title: "Choosing future forms"
+description: "Choose between present-for-future, werden-future, and future perfect."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/german/grammar/word-formation-particles/particle-verbs/
+  - /learn/german/grammar/verb-patterns-voice/modal-verbs/
+  - /learn/german/grammar/verbs-time-forms/choosing-time-form/
+  - /learn/german/grammar/verb-patterns-voice/active-vs-passive/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- German future choice is about certainty, stance, and sequence.
+- Use present for concrete plans, werden-future for prediction or emphasis, and future perfect for completion before another future point.
+- Future choices balance schedule, prediction, and completion before a future point.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Choose between present-for-future, werden-future, and future perfect.
+
+## Use this now
+
+Use present for concrete plans, werden-future for prediction or emphasis, and future perfect for completion before another future point.
+
+## Core rule
+
+If a future time word already makes the time clear, present tense is usually
+enough. Add <span lang="de">werden</span> for prediction, promise, or explicit
+future framing; use future perfect only when completion before a reference
+point matters.
+
+| Intended meaning | Form | Example |
+| --- | --- | --- |
+| fixed plan or schedule | present + time phrase | <span lang="de">Der Zug fährt morgen ab.</span> |
+| prediction or promise | <span lang="de">werden</span> + infinitive | <span lang="de">Ich werde dir helfen.</span> |
+| completed by a future point | <span lang="de">werden</span> + participle + auxiliary | <span lang="de">Bis acht Uhr werde ich angekommen sein.</span> |
+
+
+
+<MistakeBox
+	incorrect="Ich werde morgen ins Kino gehe."
+	correct="Ich gehe morgen ins Kino."
+	lang="de"
+>
+	The simple planned future normally uses present tense, not a malformed werden form.
+</MistakeBox>
+
+<MemoryTip>
+Future form choice asks what extra meaning you need beyond the date.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Make a concrete plan: I am coming tomorrow.', answer: 'Ich komme morgen.' },
+		{ prompt: 'Make a prediction: It will rain.', answer: 'Es wird regnen.' },
+		{ prompt: 'Show completion by Monday: I will have finished the task.', answer: 'Bis Montag werde ich die Aufgabe erledigt haben.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../choosing-time-form/', label: 'Choosing Time Form' },
+		{ href: '../present-tense-for-future/', label: 'Present Tense For Future' },
+		{ href: '../werden-future/', label: 'Werden Future' },
+		{ href: '../future-perfect/', label: 'Future Perfect' },
+	]}
+/>

@@ -1,0 +1,86 @@
+---
+title: "Separable verbs"
+description: "Place separable prefixes at the right bracket in main clauses."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/german/grammar/word-formation-particles/particle-verbs/
+  - /learn/german/grammar/word-formation-particles/inseparable-prefix-verbs/
+  - /learn/german/grammar/sentence-structure/verb-bracket/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Separable prefixes split in finite main clauses.
+- Use the finite verb in the left bracket and the particle in the right bracket: <span lang="de">Ich rufe dich an.</span>
+- Keep the prefix attached in infinitives, participles, and subordinate clauses.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Place separable prefixes at the right bracket in main clauses.
+
+## Use this now
+
+Use the finite verb in the left bracket and the particle in the right bracket: <span lang="de">Ich rufe dich an</span>.
+
+## Core rule
+
+The finite main clause separates; infinitives, participles, and subordinate
+clauses keep the verb together.
+
+<SentenceSchema
+	caption="One separable verb in four clause forms"
+	columns={["Clause start", "Finite verb", "Middle", "Right bracket"]}
+	rows={[
+		{ label: "Main clause", lang: "de", cells: ["Ich", "rufe", "dich", "an"] },
+		{ label: "Yes/no question", lang: "de", cells: ["", "Rufst", "du mich", "an?"] },
+		{ label: "Perfect", lang: "de", cells: ["Ich", "habe", "dich", "angerufen"] },
+		{ label: "Subordinate", lang: "de", cells: ["..., weil ich", "", "dich", "anrufe"] },
+	]}
+/>
+
+
+
+<MistakeBox
+	incorrect="Ich anrufe dich."
+	correct="Ich rufe dich an."
+	lang="de"
+>
+	The finite verb goes second; the particle goes to the right bracket.
+</MistakeBox>
+
+<MemoryTip>
+Separable means “two positions in main clauses,” not two meanings.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'I get up.', answer: 'Ich stehe auf.' },
+		{ prompt: 'because I get up', answer: 'weil ich aufstehe' },
+		{ prompt: 'I got up.', answer: 'Ich bin aufgestanden.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../particle-verbs/', label: 'Particle Verbs' },
+		{ href: '../inseparable-prefix-verbs/', label: 'Inseparable Prefix Verbs' },
+		{ href: '../particle-verbs-vs-plain-verbs/', label: 'Particle Verbs vs Plain Verbs' },
+		{ href: '../../sentence-structure/verb-bracket/', label: 'Verb Bracket' },
+	]}
+/>

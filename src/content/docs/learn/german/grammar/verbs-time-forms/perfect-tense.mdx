@@ -1,0 +1,77 @@
+---
+title: "Perfect tense"
+description: "Use haben or sein plus participle for the normal spoken German past."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/german/grammar/word-formation-particles/particle-verbs/
+  - /learn/german/grammar/verb-patterns-voice/modal-verbs/
+  - /learn/german/grammar/verbs-time-forms/choosing-time-form/
+  - /learn/german/grammar/verb-patterns-voice/active-vs-passive/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- The perfect is the everyday past in conversation.
+- Most verbs use haben; many movement and change-of-state verbs use sein.
+- Build the spoken past with the right auxiliary plus a past participle; the participle closes the bracket.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Use haben or sein plus participle for the normal spoken German past.
+
+## Use this now
+
+Most verbs use <span lang="de">haben</span>; many movement and change-of-state verbs use <span lang="de">sein</span>.
+
+## Core rule
+
+Form the perfect with present-tense <span lang="de">haben</span> or
+<span lang="de">sein</span> plus a past participle. Use
+<span lang="de">sein</span> mainly with movement/change of state and
+<span lang="de">haben</span> for most other verbs. The participle closes the
+verb bracket: <span lang="de">Ich habe das Buch gelesen</span>.
+
+
+
+<MistakeBox
+	incorrect="Ich habe nach Berlin gegangen."
+	correct="Ich bin nach Berlin gegangen."
+	lang="de"
+>
+	Directional movement with <span lang="de">gehen</span> uses <span lang="de">sein</span>.
+</MistakeBox>
+
+<MemoryTip>
+Spoken past is usually auxiliary plus participle.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'Choose haben: I ate.', answer: 'Ich habe gegessen.' },
+		{ prompt: 'Choose sein: I went.', answer: 'Ich bin gegangen.' },
+		{ prompt: 'Choose haben: We bought it.', answer: 'Wir haben es gekauft.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../choosing-time-form/', label: 'Choosing Time Form' },
+		{ href: '../present-vs-perfect-vs-preterite/', label: 'Present vs Perfect vs Preterite' },
+		{ href: '../past-perfect/', label: 'Past Perfect' },
+	]}
+/>

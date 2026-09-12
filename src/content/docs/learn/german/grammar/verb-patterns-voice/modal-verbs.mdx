@@ -1,0 +1,86 @@
+---
+title: "Modal verbs"
+description: "Use German modal verbs with an infinitive at the right bracket."
+metaLanguage: en
+grammarLanguage: de
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/german/grammar/word-formation-particles/particle-verbs/
+  - /learn/german/grammar/verbs-time-forms/choosing-time-form/
+  - /learn/german/grammar/verb-patterns-voice/active-vs-passive/
+  - /learn/german/grammar/sentence-structure/verb-bracket/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Modal verbs change the sentence meaning and send the lexical verb to the end.
+- Use können, müssen, wollen, sollen, dürfen, mögen with a bare infinitive.
+- The modal is finite in the left bracket; the lexical infinitive closes the right bracket.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Use German modal verbs with an infinitive at the right bracket.
+
+## Use this now
+
+Use <span lang="de">können, müssen, wollen, sollen, dürfen, mögen</span> with a bare infinitive.
+
+## Core rule
+
+The modal is finite in the left bracket; the lexical infinitive waits at the end.
+
+<SentenceSchema
+	caption="Modal verb bracket"
+	rowHeader="Pattern"
+	lang="de"
+	columns={["First field", "Finite modal", "Middle field", "Right bracket"]}
+	rows={[
+		{ label: "Ability", cells: ["Ich", "kann", "heute", "schwimmen"] },
+		{ label: "Necessity", cells: ["Wir", "müssen", "morgen", "arbeiten"] },
+		{ label: "Question", cells: ["", "Darf", "ich hier", "parken"] },
+	]}
+/>
+
+
+
+<MistakeBox
+	incorrect="Ich muss gehen nach Hause."
+	correct="Ich muss nach Hause gehen."
+	lang="de"
+>
+	The infinitive belongs in the right bracket.
+</MistakeBox>
+
+<MemoryTip>
+Modal verb left, main verb right.
+</MemoryTip>
+
+<QuickCheck
+	answerLang="de"
+	items={[
+		{ prompt: 'I can swim.', answer: 'Ich kann schwimmen.' },
+		{ prompt: 'We must work.', answer: 'Wir müssen arbeiten.' },
+		{ prompt: 'May I come in?', answer: 'Darf ich reinkommen?' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../modal-verbs-meaning/', label: 'Modal Verb Meanings' },
+		{ href: '../infinitive-without-zu/', label: 'Infinitive Without Zu' },
+		{ href: '../../sentence-structure/verb-bracket/', label: 'Verb Bracket' },
+	]}
+/>
