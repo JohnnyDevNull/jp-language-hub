@@ -6,6 +6,9 @@
 independent Swedish completion review passed. This is the first language
 implementation plan in Phase 5.
 
+Execution evidence and Swedish-specific decisions are recorded in the
+[Swedish implementation report](./roadmap-phase-5-finalize-swedish-implementation-report.md).
+
 This plan executes the Swedish decisions owned by:
 
 - [Phase 5: Align Grammar IA](./roadmap-phase-5-align-grammar-ia.md) for phase

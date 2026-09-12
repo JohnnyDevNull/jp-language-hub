@@ -1,20 +1,25 @@
-# Phase 5 Implementation Report
+# Phase 5: Finalize Swedish — Implementation Report
 
-This file is the durable execution state for Phase 5. Update it after every
-implementation or review hand-off so work can resume safely after context loss.
-It records execution evidence and decisions; it does not redefine the frozen
-information architecture.
+This file is the durable execution record for the Swedish part of Phase 5. It
+records implementation evidence and Swedish-specific decisions; it does not
+redefine the frozen information architecture. English execution is tracked in
+[`roadmap-phase-5-finalize-english-implementation-report.md`](./roadmap-phase-5-finalize-english-implementation-report.md).
 
 ## Current State
 
 **Last updated:** 2026-09-12
 
-**Overall status:** Paused after Swedish — Swedish Batches 1 through 6 are
-complete. Phase 5 as a whole is not complete because English, German, and the
-cross-language Quality Check remain pending.
+**Overall status:** Complete — Swedish Batches 1 through 6 and the independent
+Swedish completion review passed. Phase 5 continues with English.
 
-**Starting point:** Commit `c96aa42` (`docs: split phase 5 grammar execution
-plans`) on `main`, plus uncommitted status-only changes in these eight files:
+**Completion commits:** `4dc1aab` (`feat(content): finalize Swedish phase 5
+reference tree`) and `358516b` (`docs: record Swedish phase 5 completion`).
+
+## Historical Execution Baseline
+
+**Implementation starting point:** Commit `c96aa42` (`docs: split phase 5
+grammar execution plans`) on `main`, plus uncommitted status-only changes in
+these eight files:
 
 - `docs/roadmap-phase-5-align-grammar-ia.md`
 - `docs/roadmap-phase-5-finalize-english.md`
@@ -25,20 +30,18 @@ plans`) on `main`, plus uncommitted status-only changes in these eight files:
 - `docs/roadmap-phase-5-topic-inventory.md`
 - `docs/roadmap.md`
 
-Those pending edits originally marked the planning baseline, Blueprint, and
-Inventory as frozen; Swedish as ready; and English, German, and Quality Check
-as agent-ready but dependency-blocked. Current status is recorded above:
-Swedish is complete, execution is paused by the user, and English is next but
-not started. Immediately before implementation began,
+Those pending edits originally marked the planning baseline and inventory as
+frozen and Swedish as ready. Immediately before implementation began,
 `npm run quality` and `git diff --check` were reported as passing for those
 status-only edits.
 
-**S1 closure worktree snapshot:** 40 `git status --short` entries represent 43
-actual paths: the eight status-only planning files above, this report, and 34
-Swedish S1 implementation paths. Git collapses the four new files under
-`questions-negation/` into one untracked-directory entry. No Phase 5 change is
-committed after `c96aa42` yet. The subsequent S2 hand-off is recorded below;
-later hand-offs, including S3, are recorded in the timeline below.
+**S1 closure worktree snapshot (historical):** 40 `git status --short` entries
+represent 43 actual paths: the eight status-only planning files above, this
+report, and 34 Swedish S1 implementation paths. Git collapses the four new files under
+`questions-negation/` into one untracked-directory entry. At that snapshot, no
+Phase 5 implementation change had been committed after `c96aa42`. The
+subsequent S2 hand-off is recorded below; later hand-offs, including S3, are
+recorded in the timeline below.
 
 ## Frozen Sources of Truth
 
@@ -75,30 +78,18 @@ Apply these documents by responsibility:
 - A batch closes only after implementation, independent review, required
   validation, and explicit follow-up resolution are recorded below.
 
-## Approved Decision Log
+## Swedish Decision Log
 
-This log initially contains only decisions already approved in the frozen
-plans. Append implementation decisions with date, reason, affected files, and
-validation evidence.
+The frozen coordination plan, Blueprint, Topic Inventory, and Swedish
+finalization plan own the shared Phase 5 decisions. This log records only
+Swedish implementation decisions that changed execution scheduling without
+changing the approved IA.
 
 | ID | Approved decision | Execution consequence |
 | --- | --- | --- |
-| D01 | Phase 5 targets practical everyday A1-B2, not academic completeness. | Reject unapproved C-level, rare, or encyclopedic expansion. |
-| D02 | Align by learner question, not identical page counts or linguistic depth. | Preserve language-specific depth and approved visible deviations. |
-| D03 | One canonical page owns each independently teachable rule; broader questions may use an overview decision path. | Cross-link adjacent topics instead of duplicating explanations. |
-| D04 | The final IA takes priority over old route stability; no redirects are required. | Complete every approved move, rename, reference move, and merge atomically and remove the old canonical route. |
-| D05 | Retained and moved pages require the same linguistic and didactic audit as new pages. | A successful relocation or build alone cannot close a row. |
-| D06 | Meta language, learning language, and comparison language remain separate. | Preserve route, metadata, sidebar, and component boundaries from `AGENTS.md` and `docs/app/language-layers.md`. |
-| D07 | Phase 5 owns every authored localized mirror affected by its route or teaching changes. | Record `still equivalent`, `update`, `retranslate`, or `remove-to-fallback`; Phase 7 does not repair Phase 5 regressions. |
-| D08 | Page-body and component links are relative; `related` metadata is absolute and canonical. | Validate both source links and generated base-path output in every migration batch. |
-| D09 | Overview pages provide `Choose by` and `Learn in this order`; detail pages follow the didactic rules for their page type. | Do not add empty symmetry; use `SentenceSchema`, `LanguageComparison`, `QuickCheck`, and `RelatedTopics` where required. |
-| D10 | Swedish Numbers moves from Grammar to Vocabulary; practical entry paths remain outside Grammar. | Remove the obsolete Numerals structure without duplicating canonical grammar. |
-| D11 | Reference pages remain visible at the end of their shelves but outside the recommended core sequence. | Preserve English Future Progressive/Future Perfect and German Future Perfect/Konjunktiv I/Genitive Prepositions as visible reference material. |
-| D12 | German keeps Questions under Sentence Structure and Negation under Function Words & Negation; its standalone Active page merges into Active vs Passive. | Preserve the documented German deviation and perform the Active merge during the atomic verb-tree fan-out. |
-| D13 | Execution order is Swedish, English, German, then the independent whole-tree Quality Check. | Do not start a dependent plan before its predecessor is complete. |
-| D14 | To preserve an atomic, coherently labelled sidebar when S2 removes pronouns from `pronouns-function-words`, S2 also advances the already-approved Prepositions & Function Words overview and the approved moves of `prepositions` and `dar-har-adverbs` from S4. This changes scheduling only, not IA, routes, or scope. | Avoid a temporary mislabelled shelf, the old mixed taxonomy, a target shelf without an overview, and later repair of an intentionally incomplete migration. `Connectors` and the content-finalization audit remain in S4. |
+| S-D01 | To preserve an atomic, coherently labelled sidebar when S2 removes pronouns from `pronouns-function-words`, S2 also advances the already-approved Prepositions & Function Words overview and the approved moves of `prepositions` and `dar-har-adverbs` from S4. This changes scheduling only, not IA, routes, or scope. | Avoid a temporary mislabelled shelf, the old mixed taxonomy, a target shelf without an overview, and later repair of an intentionally incomplete migration. `Connectors` and the content-finalization audit remain in S4. |
 
-## Ordered Execution and Batch Ledger
+## Swedish Batch Ledger
 
 Status values: `in progress`, `dependency-blocked`, `review`, `complete`, or
 `blocked`. Replace placeholders with exact changed paths and evidence before a
@@ -109,31 +100,11 @@ batch can be marked complete.
 | 1 | Swedish S1 — Sentence Structure, Questions, and Negation | **complete** | 34 implementation paths; see S1 snapshot below | All 11 routes implemented; four blocker groups and one P2 mirror-prose finding fixed; independent re-review PASS; gates pass | None |
 | 2 | Swedish S2 — Nouns, Articles, Pronouns, and Roles | **complete** | Six new pages, eight moved source pages, retained-page fixes, and all route consumers | All 17 targets implemented; review chain resolved; independent final PASS; gates pass | None |
 | 3 | Swedish S3 — Time Forms, Verb Patterns, Voice, and Mood | **complete** | Eight moved pages, nine new pages, and all route consumers across three shelves | All 17 targets implemented atomically; independent GPT-5.5 medium re-review PASS; gates pass | None |
-| 4 | Swedish S4 — Adjectives, Prepositions, Connectors, and Numbers | **complete** | Post-D14 S4 scope, Numbers move, route consumers, and length records | Independent review PASS; seven findings resolved; final S4 gates pass | None |
+| 4 | Swedish S4 — Adjectives, Prepositions, Connectors, and Numbers | **complete** | Post-S-D01 S4 scope, Numbers move, route consumers, and length records | Independent review PASS; seven findings resolved; final S4 gates pass | None |
 | 5 | Swedish S5 — Cross-Tree Integration and Common Mistakes | **complete** | Entry paths, practical content, shared consumers, mirrors, and documentation; see S5 completion review | Independent review and targeted correction recheck PASS; seven findings resolved; gates pass | None |
 | 6 | Swedish S6 — Swedish Completion Review | **complete** | Final report and length-exception correction only | All 55 targets reconciled; Architecture PASS and Linguistic/Didactic PASS recorded; final gates pass | None |
-| 7 | English E1 — Sentence Structure, Questions, and Negation | ready; paused by user | None | Prepared read-only only; implementation not started | Start only after explicit continuation |
-| 8 | English E2 — Nouns, Articles, Quantifiers, Pronouns, and Roles | dependency-blocked by E1 | None | Not started | Start only after E1 is complete |
-| 9 | English E3 — Verbs and Time Forms | dependency-blocked by E2 | None | Not started | Start only after E2 is complete |
-| 10 | English E4 — Verb Patterns, Voice, Mood, and Reported Speech | dependency-blocked by E3 | None | Not started | Start only after E3 is complete |
-| 11 | English E5 — Adjectives, Prepositions, Connectors, and Word Formation | dependency-blocked by E4 | None | Not started | Start only after E4 is complete |
-| 12 | English E6 — Common Mistakes and English Completion Review | dependency-blocked by E5 | None | Not started | Independent full English review and defect closure |
-| 13 | German G1 — Retained Foundations and Missing Preposition Coverage | dependency-blocked by English | None | Not started | Start only after English E6 is complete |
-| 14 | German G2 — Pronouns, Adjectives, and Function Words | dependency-blocked by G1 | None | Not started | Start only after G1 is complete |
-| 15 | German G3 — Atomic Verb-Tree Fan-Out | dependency-blocked by G2 | None | Not started | Start only after G2 is complete; execute the complete fan-out and Active merge atomically |
-| 16 | German G4 — Word Formation Finalization | dependency-blocked by G3 | None | Not started | Start only after G3 is complete |
-| 17 | German G5 — Common Mistakes and German Finalization | dependency-blocked by G4 | None | Not started | Independent full German review and defect closure |
-| 18 | Quality Q1 — Inventory and Route Reconciliation | dependency-blocked by all languages | None | Not started | Recalculate inventory and reconcile routes after all language plans close |
-| 19 | Quality Q2 — Navigation and Architecture | dependency-blocked by Q1 | None | Not started | Compare actual sidebar with Blueprint line by line |
-| 20 | Quality Q3 — Whole-Tree Linguistic Review | dependency-blocked by Q2 | None | Not started | Review every canonical target and all adjacent-topic boundaries |
-| 21 | Quality Q4 — Whole-Tree Didactic Review | dependency-blocked by Q3 | None | Not started | Review lookup speed, page structure, teaching components, and length dispositions |
-| 22 | Quality Q5 — Metadata, Links, and Mirrors | dependency-blocked by Q4 | None | Not started | Verify metadata, relative/absolute link rules, retired paths, and affected-mirror dispositions |
-| 23 | Quality Q6 — Final System Gate | dependency-blocked by Q5 | None | Not started | Run final validation and open Phase 6 only with no unresolved blocker |
-
-Stop condition for the current Swedish execution wave has been reached: stop
-after Swedish S6 completion. Do not begin English implementation in this wave.
-English E1 has only been prepared read-only and remains blocked until the user
-explicitly continues.
+The Swedish execution wave closed after S6. Continue Phase 5 through the
+separate English implementation report.
 
 ## Swedish S1 Review Snapshot
 
@@ -221,7 +192,7 @@ Tempus` and `markerar tempus`.
 ## Swedish S2 Review Snapshot
 
 The executor implemented all 17 targets: five Nouns & Articles routes, nine
-Pronouns & Roles routes, and D14's three approved Prepositions & Function Words
+Pronouns & Roles routes, and S-D01's three approved Prepositions & Function Words
 targets. The file actions comprise six new pages, eight moved source pages,
 and three retained pages. The old `pronouns-function-words` source and built
 route are absent.
@@ -234,7 +205,7 @@ exceptionless; reconciles Noun Forms and all moved-topic links; and corrects
 From German so it distinguishes the absence of a German-style productive case
 system from Swedish s-genitive and personal-pronoun role forms.
 
-D14 is complete as a route migration only: the Prepositions & Function Words
+S-D01 is complete as a route migration only: the Prepositions & Function Words
 overview exists and Prepositions plus Där-/Här-Adverbs have moved. Their full
 content-finalization audit and the new Connectors page remain owned by S4.
 
@@ -350,7 +321,7 @@ S3 is complete. S4 may proceed.
 
 ## Swedish S4 Review and Closure
 
-After D14, S4's implementation scope was precise:
+After S-D01, S4's implementation scope was precise:
 
 - create and audit the Adjectives & Adverbs overview while auditing Agreement,
   Adjective Comparison, and Adverbs;
@@ -379,7 +350,7 @@ Preparatory defects resolved or verified during implementation:
 - Agreement needs its links reconciled while preserving its frozen documented
   length exception.
 
-D14 verification included the overview and both moved routes, every
+S-D01 verification included the overview and both moved routes, every
 consumer, and the documented length-exception route for Prepositions, updated
 from `grammar/pronouns-function-words/prepositions` to
 `grammar/prepositions-function-words/prepositions`.
@@ -390,7 +361,7 @@ Time. The canonical Numbers target has no authored localized mirror. The
 German- and Swedish-meta Learning Path pages are route-only consumers and
 remain didactically equivalent after their link update.
 
-S4 implementation is complete. It closed the post-D14 scope by finalizing the
+S4 implementation is complete. It closed the post-S-D01 scope by finalizing the
 Adjectives & Adverbs and Prepositions & Function Words surfaces, creating the
 remaining Connectors coverage, moving Numbers from Grammar to Vocabulary, and
 removing the obsolete Numerals grammar home. Numbers is now treated as a
@@ -581,8 +552,7 @@ Targeted automation should:
 
 At S5 closure, S6 began with this review scope. The final review also had to
 record manual narrow-layout evidence for tables or explicitly classify any
-remaining runner limitation. Stop after S6; do not begin English implementation
-in this wave.
+remaining runner limitation.
 
 ## Swedish S6 Completion Review
 
@@ -628,8 +598,7 @@ runner. The accepted limitation is low risk for S6 because no CSS or component
 changes were made during the final gate; generated structure, route output, and
 link behavior were inspected instead.
 
-Swedish has no unresolved blocker. This execution wave stops here. English E1
-remains read-only prepared only, and English implementation has not started.
+Swedish has no unresolved blocker. This execution record is closed.
 
 ## Unresolved Blockers and Risks
 
@@ -651,38 +620,18 @@ remains read-only prepared only, and English implementation has not started.
 - Wide and narrow interactive visual inspection remains unavailable in the
   current runner. This limitation is accepted as low risk because the final S6
   gate changes no CSS or components and generated structure was inspected.
-- English, German, and the final Quality Check are intentionally blocked by the
-  approved execution order, not by an implementation defect.
-- English E1 was prepared read-only only; do not begin English implementation
-  until explicit continuation.
-- The status-label edits, report, and implementation work are uncommitted.
-  Preserve them while implementation proceeds and stage named paths
-  deliberately.
 
-## Resume Instructions
+## Correction Instructions
 
-1. Read this report first, then confirm `git status --short` and `git log -1
-   --oneline` against the recorded state. Treat newer repository evidence as
-   authoritative and update this report before continuing.
-2. Find the first ledger row that is not `complete`. Re-read only that batch's
-   language-plan section, its exact Blueprint shelf, its Topic Inventory rows,
-   and the applicable rules.
-3. Inspect the executor hand-off and actual diff. Record every changed file,
-   route migration, affected localized mirror and disposition, validation
-   result, and unresolved finding in this report.
-4. Assign an independent review for the completed batch. The reviewer checks
-   the full affected pages and consumers, not only the diff. Return defects to
-   the executor and repeat review until no batch blocker remains.
-5. Run the required gates. Mark the batch `complete` only when implementation,
-   review, follow-ups, and evidence agree. Then advance exactly one ledger row.
-6. If a baseline contradiction appears, stop that batch. Record it below and
-   correct the owning frozen artifact explicitly; never improvise a replacement
-   route or content boundary.
+This report is closed historical evidence. If a verified Swedish defect or
+baseline contradiction requires a correction, record the reason, affected
+files, independent review, and validation evidence here without reopening the
+completed batch ledger. Continue normal Phase 5 execution in the report owned
+by the active language.
 
 ## Final Validation Ledger
 
-Use ISO dates and retain failed attempts as evidence. `Pending` means the gate
-has not yet been run for the completed Phase 5 implementation.
+Use ISO dates and retain failed attempts as evidence.
 
 | Gate | Status | Date | Evidence or findings |
 | --- | --- | --- | --- |
@@ -695,11 +644,8 @@ has not yet been run for the completed Phase 5 implementation.
 | Blueprint/sidebar order | Swedish final pass | 2026-09-12 | Sidebar matches Blueprint order; Numbers is in Vocabulary and Common Mistakes is outside Grammar |
 | Swedish Architecture review | PASS | 2026-09-12 | Target source, sidebar, built routes, old routes, generated links, and language-layer boundaries reconciled |
 | Swedish Linguistic/Didactic review | PASS | 2026-09-12 | Boundary pairs, canonical ownership, practical entry paths, affected mirrors, and length exceptions reconciled |
-| Whole-tree linguistic review | Dependency-blocked | — | Required during Q3 after English and German language reviews |
-| Whole-tree didactic review | Dependency-blocked | — | Required during Q4 after English and German language reviews |
 | Affected localized mirrors | Swedish final pass | 2026-09-12 | Learning Path and Sentence Patterns mirrors are didactically equivalent; all three Learning Paths have 58 steps and 67 identical link targets |
 | Generated base-path links | Swedish final pass | 2026-09-12 | No base-less internal `href` found in generated output |
-| Phase 6 release gate | Blocked | — | Opens only after Q6 passes with no unresolved Phase 5 blocker |
 
 ## Baseline Contradictions and Additional Decisions
 

@@ -26,8 +26,11 @@ The planning baseline remains frozen. Language-specific implementation and the
 final whole-tree quality check continue in this order:
 
 1. [Phase 5: Finalize Swedish](./roadmap-phase-5-finalize-swedish.md) —
-   complete
+   complete; see the
+   [Swedish implementation report](./roadmap-phase-5-finalize-swedish-implementation-report.md)
 2. [Phase 5: Finalize English](./roadmap-phase-5-finalize-english.md) — next
+   and tracked in the
+   [English implementation report](./roadmap-phase-5-finalize-english-implementation-report.md)
 3. [Phase 5: Finalize German](./roadmap-phase-5-finalize-german.md)
 4. [Phase 5: Quality Check](./roadmap-phase-5-quality-check.md)
 

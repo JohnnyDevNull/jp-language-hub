@@ -7,6 +7,9 @@ next in the approved Phase 5 sequence but has not started because the current
 execution wave stopped after Swedish. This is the second language
 implementation plan in Phase 5.
 
+Execution progress, review hand-offs, and English-specific decisions belong in
+the [English implementation report](./roadmap-phase-5-finalize-english-implementation-report.md).
+
 This plan executes the English decisions owned by:
 
 - [Phase 5: Align Grammar IA](./roadmap-phase-5-align-grammar-ia.md) for phase
