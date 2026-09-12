@@ -1,0 +1,114 @@
+---
+title: Subordinate clauses
+description: Connect English clauses with because, when, if, and other subordinating conjunctions.
+metaLanguage: en
+grammarLanguage: en
+comparisonLanguages:
+  - de
+  - en
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/english/grammar/sentence-structure/sentence-order/
+  - /learn/english/grammar/sentence-structure/relative-clauses/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- A subordinating conjunction introduces a clause that depends on another clause.
+- English keeps normal subject--verb order after *because*, *when*, *if*, and *although*.
+- Put a comma after a subordinate clause when it comes first.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Use a subordinate clause to give a reason, time, condition, or contrast. The
+connector signals the relationship; it does not send the English verb to the
+end as German does.
+
+## Use this now
+
+- reason: <span lang="en">because</span>
+- time: <span lang="en">when</span>, <span lang="en">before</span>, <span lang="en">after</span>
+- condition: <span lang="en">if</span>, <span lang="en">unless</span>
+- contrast: <span lang="en">although</span>
+
+Choose the connector by meaning before choosing its position in the clause.
+
+## Core rule
+
+<SentenceSchema
+	caption="English subordinate clause order"
+	rowHeader="Position"
+	lang="en"
+	columns={['Connector', 'Subject', 'Verb', 'Rest', 'Main clause']}
+	rows={[
+		{ label: 'Reason', cells: ['because', 'it', 'was', 'raining,', 'we stayed inside.'] },
+		{ label: 'Time', cells: ['When', 'the train', 'arrives,', '', 'we will leave.'] },
+		{ label: 'Condition', cells: ['if', 'you', 'need', 'help,', 'call me.'] },
+	]}
+/>
+
+The subordinate clause still follows **subject + verb**. When it comes first,
+separate it from the main clause with a comma. When it follows the main clause,
+do not normally use a comma: <span lang="en">We stayed inside because it was raining.</span>
+
+## Do not copy German verb-final order
+
+<LanguageComparison title="Reason clause" languages={['de', 'en']}>
+	<p slot="de">Wir bleiben drinnen, weil es regnet.</p>
+	<p slot="en">We are staying inside because it is raining.</p>
+</LanguageComparison>
+
+German puts the finite verb late after <span lang="de">weil</span>. English
+keeps it after the subject: <span lang="en">because it is raining</span>, not
+*because it raining is*.
+
+## Future meaning after time and condition words
+
+After <span lang="en">when</span>, <span lang="en">if</span>, <span lang="en">before</span>,
+and <span lang="en">after</span>, English often uses a present form for future
+meaning: <span lang="en">When she arrives, we will start.</span> The future
+form belongs in the main clause, not in the time or condition clause.
+
+<MistakeBox
+	incorrect="When she will arrive, we will start."
+	correct="When she arrives, we will start."
+	lang="en"
+>
+	For a future event introduced by a time or condition word, use a present form
+	in the subordinate clause and put <span lang="en">will</span> in the main clause.
+</MistakeBox>
+
+<MemoryTip>
+After a connector, write a normal English clause: subject first, then verb.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{ prompt: 'Correct: Because it raining is, we are staying inside.', answer: 'Because it is raining, we are staying inside.' },
+		{ prompt: 'Put the subordinate clause first: We will start when she arrives.', answer: 'When she arrives, we will start.' },
+		{ prompt: 'Correct the future time clause: If it will rain, we will stay home.', answer: 'If it rains, we will stay home.' },
+	]}
+	answerLang="en"
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../sentence-order/', label: 'Sentence order' },
+		{ href: '../relative-clauses/', label: 'Relative clauses' },
+	]}
+/>

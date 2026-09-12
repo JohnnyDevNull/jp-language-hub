@@ -1,0 +1,95 @@
+---
+title: Possession
+description: Choose apostrophe-s or an of-phrase to express ownership and relationships in English.
+metaLanguage: en
+grammarLanguage: en
+comparisonLanguages:
+  - de
+  - en
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - nouns
+related:
+  - /learn/english/grammar/nouns-articles/plural-nouns/
+  - /learn/english/grammar/nouns-articles/articles/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Add <span lang="en">'s</span> to a singular possessor: <span lang="en">the manager's office</span>.
+- Add only an apostrophe after a regular plural ending in <span lang="en">-s</span>: <span lang="en">the customers' questions</span>.
+- Use an <span lang="en">of</span>-phrase naturally for things, measures, and longer possessors.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+English possession can express ownership, relationships, parts, and time. The
+practical choice is between apostrophe-s and an <span lang="en">of</span>-phrase;
+possessive pronouns such as <span lang="en">my</span> and <span lang="en">their</span>
+belong to the Pronouns & Roles shelf.
+
+## Use this now
+
+| Possessor | Form | Example |
+| --- | --- | --- |
+| singular noun | <span lang="en">'s</span> | <span lang="en">the teacher's desk</span> |
+| plural noun ending in <span lang="en">-s</span> | <span lang="en">s'</span> | <span lang="en">the teachers' desks</span> |
+| irregular plural | <span lang="en">'s</span> | <span lang="en">the children's room</span> |
+| thing or longer phrase | often <span lang="en">of</span> | <span lang="en">the door of the building</span> |
+
+## Core rule
+
+Use apostrophe-s readily with people, animals, organizations, and time:
+<span lang="en">Maya's phone</span>, <span lang="en">the company's policy</span>,
+<span lang="en">tomorrow's meeting</span>. Use an <span lang="en">of</span>-phrase
+when it makes a thing relationship clearer: <span lang="en">the end of the
+film</span>, <span lang="en">the name of the street</span>.
+
+Both are sometimes possible. Prefer the shorter, natural phrase rather than
+building a long chain of apostrophes.
+
+## Direct comparison
+
+<LanguageComparison title="A singular possessor" languages={['de', 'en']}>
+	<p slot="de">Das Büro der Managerin ist oben.</p>
+	<p slot="en">The manager's office is upstairs.</p>
+</LanguageComparison>
+
+German often uses a genitive phrase. English can express the same relationship
+compactly with <span lang="en">'s</span>.
+
+<MistakeBox incorrect="The childrens' room is bright." correct="The children's room is bright." lang="en">
+	<span lang="en">Children</span> is already plural but does not end in
+	<span lang="en">-s</span>, so it takes <span lang="en">'s</span>.
+</MistakeBox>
+
+<MemoryTip>
+Plural ending in <span lang="en">-s</span>: apostrophe after it. Other singular
+or plural possessors: add <span lang="en">'s</span>.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{ prompt: 'Write the possessive: the bag of Maya', answer: "Maya's bag" },
+		{ prompt: 'Write the possessive: the ideas of the students', answer: "the students' ideas" },
+		{ prompt: "Correct: the womens' team", answer: "the women's team" },
+	]}
+	answerLang="en"
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../plural-nouns/', label: 'Plural nouns' },
+		{ href: '../articles/', label: 'Articles' },
+	]}
+/>

@@ -1,0 +1,54 @@
+---
+title: Possessive pronouns
+description: Distinguish possessive determiners before a noun from independent possessive pronouns.
+metaLanguage: en
+grammarLanguage: en
+levels: [A1, A2, B1]
+tags: [grammar, pronouns, important]
+related:
+  - /learn/english/grammar/nouns-articles/possession/
+  - /learn/english/grammar/pronouns-roles/personal-pronouns/
+---
+
+import KeyTakeaway from "~/components/KeyTakeaway.astro";
+import MistakeBox from "~/components/MistakeBox.astro";
+import QuickCheck from "~/components/QuickCheck.astro";
+import RelatedTopics from "~/components/RelatedTopics.astro";
+import TagList from "~/components/TagList.astro";
+
+<KeyTakeaway>
+- Put a possessive determiner before a noun: *my book, their plan*.
+- Use an independent possessive form without the noun: *The book is mine; the
+  plan is theirs.*
+- Use [Possession](../../nouns-articles/possession/) for noun owners such as
+  *Maria’s book* and *the roof of the house*.
+</KeyTakeaway>
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+## Use this now
+
+| Before a noun                         | Without the noun                       |
+| ------------------------------------- | -------------------------------------- |
+| _my, your, his, her, its, our, their_ | _mine, yours, his, hers, ours, theirs_ |
+
+## Core rule
+
+The determiner needs a following noun: _our tickets_. The independent form replaces that whole noun phrase: _The tickets are ours._ There is no independent form _its_ in standard modern English.
+
+<MistakeBox incorrect="This book is my." correct="This book is mine." lang="en">
+  Use *my* before a noun and *mine* when the noun is omitted.
+</MistakeBox>
+<QuickCheck
+  items={[
+    { prompt: "Complete: This is ___ coat. (I)", answer: "This is my coat." },
+    { prompt: "Complete: This coat is ___. (I)", answer: "This coat is mine." },
+    { prompt: "Correct: Their car is our.", answer: "Their car is ours." },
+  ]}
+  answerLang="en"
+/>
+<RelatedTopics
+  topics={[
+    { href: "../../nouns-articles/possession/", label: "Possession" },
+    { href: "../personal-pronouns/", label: "Personal pronouns" },
+  ]}
+/>

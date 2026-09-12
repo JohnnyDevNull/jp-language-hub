@@ -1,0 +1,116 @@
+---
+title: Relative clauses
+description: Add identifying or extra information about a noun with who, which, that, and whose.
+metaLanguage: en
+grammarLanguage: en
+comparisonLanguages:
+  - de
+  - en
+levels:
+  - B1
+  - B2
+tags:
+  - grammar
+  - sentence-structure
+related:
+  - /learn/english/grammar/sentence-structure/subordinate-clauses/
+  - /learn/english/grammar/sentence-structure/sentence-order/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Use a relative clause to say which person or thing you mean, or to add extra information.
+- Use <span lang="en">who</span> for people, <span lang="en">which</span> for things, and <span lang="en">whose</span> for possession; <span lang="en">that</span> works in many defining clauses.
+- Use commas for extra information, not for information needed to identify the noun.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+A relative clause follows a noun and gives more information about it. English
+uses normal subject--verb order inside the clause, so it is a focused kind of
+[subordinate clause](../subordinate-clauses/).
+
+## Use this now
+
+| If the noun is ... | Use ... | Example |
+| --- | --- | --- |
+| a person | *who* | <span lang="en">the colleague who called</span> |
+| a thing | *which* or *that* | <span lang="en">the report that arrived</span> |
+| a possessor | *whose* | <span lang="en">the student whose bag is missing</span> |
+| a place | *where* | <span lang="en">the café where we met</span> |
+
+## Core rule
+
+<SentenceSchema
+	caption="English relative clause positions"
+	rowHeader="Use"
+	lang="en"
+	columns={['Noun', 'Relative word', 'Subject', 'Verb', 'Rest']}
+	rows={[
+		{ label: 'Relative word is subject', cells: ['the colleague', 'who', '', 'called', 'me'] },
+		{ label: 'Relative word is object', cells: ['the colleague', 'who', 'I', 'called', 'yesterday'] },
+		{ label: 'Thing', cells: ['the report', 'that', 'we', 'finished', 'today'] },
+	]}
+/>
+
+When the relative word is the subject, no second subject appears:
+<span lang="en">the colleague who called</span>. When it is the object, the
+clause needs its own subject: <span lang="en">the colleague who I called</span>.
+
+## Identifying information or extra information
+
+Use a **defining** clause without commas when it identifies the noun:
+<span lang="en">The files that are on the desk are urgent.</span>
+
+Use a **non-defining** clause with commas when the listener already knows the
+noun and you add extra information: <span lang="en">My laptop, which is five years old, still works well.</span>
+Do not use <span lang="en">that</span> in this comma pair; use
+<span lang="en">who</span> or <span lang="en">which</span> instead.
+
+## Direct comparison
+
+<LanguageComparison title="A person as the relative-clause subject" languages={['de', 'en']}>
+	<p slot="de">Die Kollegin, die mich angerufen hat, arbeitet heute nicht.</p>
+	<p slot="en">The colleague who called me is not working today.</p>
+</LanguageComparison>
+
+German relative pronouns change with gender and case. English usually chooses
+the relative word by meaning and clause role, not by the gender of the noun.
+
+<MistakeBox
+	incorrect="My laptop, that is five years old, still works well."
+	correct="My laptop, which is five years old, still works well."
+	lang="en"
+>
+	Use <span lang="en">which</span>, not <span lang="en">that</span>, for a
+	non-defining relative clause between commas.
+</MistakeBox>
+
+<MemoryTip>
+No commas means “which one?” Commas mean “by the way.”
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{ prompt: 'Join: I know a woman. She works at the hospital.', answer: 'I know a woman who works at the hospital.' },
+		{ prompt: 'Choose the relative word: The book ___ I bought is useful.', answer: 'The book that I bought is useful.' },
+		{ prompt: 'Add commas for extra information: My only brother who lives in Malmö is visiting.', answer: 'My only brother, who lives in Malmö, is visiting.' },
+		{ prompt: 'Correct: The office, that is near the station, opens at nine.', answer: 'The office, which is near the station, opens at nine.' },
+	]}
+	answerLang="en"
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../subordinate-clauses/', label: 'Subordinate clauses' },
+		{ href: '../sentence-order/', label: 'Sentence order' },
+	]}
+/>

@@ -1,6 +1,6 @@
 ---
 title: Questions and do-support
-description: Form English questions by moving an auxiliary before the subject, and use do-support when the present or past simple has no auxiliary.
+description: Form most English questions by moving an auxiliary before the subject, use do-support in the simple present and past, and recognize subject-question exceptions.
 metaLanguage: en
 grammarLanguage: en
 comparisonLanguages:
@@ -15,7 +15,9 @@ tags:
   - sentence-structure
   - important
 related:
-  - /learn/english/
+  - /learn/english/grammar/questions-negation/
+  - /learn/english/grammar/questions-negation/negation/
+  - /learn/english/grammar/sentence-structure/sentence-order/
   - /learn/english/common-mistakes/from-german/
   - /learn/english/grammar/verbs/simple-present/
   - /learn/english/grammar/verbs/simple-past/
@@ -31,11 +33,12 @@ import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- English questions move an auxiliary before the subject: *Are you ready?*,
+- Most English questions move an auxiliary before the subject: *Are you ready?*,
   *Can she come?*, *Have they arrived?*
 - Present and past simple questions usually add *do*: *Do you work here?*,
   *Did he call?*
-- *Be* and modal verbs do not take do-support: *Is she here?*, *Can you help?*
+- When the question word is the subject, keep statement order and do not add
+  *do*: *Who lives here?*
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -126,6 +129,11 @@ If there is already a helper verb, move that helper. Do not add *do*.
 The same applies to negative questions: *Isn't she ready?*, *Can't you help?*,
 *Haven't they finished?*
 
+This page owns **question formation**: which helper moves and when *do* is
+inserted. The later **Auxiliary verbs** reference page will explain the wider
+system behind tense, aspect, voice, negation, and inversion; it does not change
+the question-building decision here.
+
 ## Subject questions
 
 When the question word itself is the subject, keep normal statement order after
@@ -194,9 +202,9 @@ helper; create *do* only when there is no helper.
 
 <RelatedTopics
 	topics={[
-		{ href: '../../../', label: 'English overview' },
+		{ href: '../', label: 'Questions & negation' },
+		{ href: '../negation/', label: 'Negation' },
+		{ href: '../../sentence-structure/sentence-order/', label: 'Sentence order' },
 		{ href: '../../../common-mistakes/from-german/', label: 'German to English mistakes' },
-		{ href: '../../verbs/simple-present/', label: 'Simple present' },
-		{ href: '../../verbs/simple-past/', label: 'Simple past' },
 	]}
 />

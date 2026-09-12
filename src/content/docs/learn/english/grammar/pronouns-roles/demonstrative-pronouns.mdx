@@ -1,0 +1,57 @@
+---
+title: Demonstrative pronouns
+description: Choose this, that, these, or those by distance and number.
+metaLanguage: en
+grammarLanguage: en
+levels: [A1, A2]
+tags: [grammar, pronouns]
+related:
+  - /learn/english/grammar/pronouns-roles/personal-pronouns/
+---
+
+import KeyTakeaway from "~/components/KeyTakeaway.astro";
+import QuickCheck from "~/components/QuickCheck.astro";
+import RelatedTopics from "~/components/RelatedTopics.astro";
+import TagList from "~/components/TagList.astro";
+
+<KeyTakeaway>
+- Use *this/these* for something near in space, time, or attention.
+- Use *that/those* for something more distant or less immediate.
+- *This/that* are singular; *these/those* are plural.
+</KeyTakeaway>
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+## Use this now
+
+|         | Singular                        | Plural                              |
+| ------- | ------------------------------- | ----------------------------------- |
+| near    | _this book_ / _This is useful._ | _these books_ / _These are useful._ |
+| distant | _that book_ / _That is useful._ | _those books_ / _Those are useful._ |
+
+## Core rule
+
+Demonstratives can stand alone (_Those are mine_) or introduce a noun (_those shoes_). “Near” can be physical, temporal, or conversational: _this week_, _that idea_, _those days_.
+
+<QuickCheck
+  items={[
+    {
+      prompt: "Choose: ___ shoes here are new.",
+      answer: "These shoes here are new.",
+    },
+    {
+      prompt: "Choose: ___ building across the river is old.",
+      answer: "That building across the river is old.",
+    },
+    {
+      prompt: "Rewrite without the noun: Those books are expensive.",
+      answer: "Those are expensive.",
+    },
+  ]}
+  answerLang="en"
+/>
+<RelatedTopics
+  topics={[
+    { href: "../personal-pronouns/", label: "Personal pronouns" },
+    { href: "../", label: "Pronouns & roles" },
+  ]}
+/>

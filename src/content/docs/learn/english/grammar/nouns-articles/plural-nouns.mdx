@@ -1,0 +1,96 @@
+---
+title: Plural nouns
+description: Form common English plurals and match them with plural determiners and verbs.
+metaLanguage: en
+grammarLanguage: en
+comparisonLanguages:
+  - de
+  - en
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - nouns
+related:
+  - /learn/english/grammar/nouns-articles/countable-and-uncountable-nouns/
+  - /learn/english/grammar/nouns-articles/articles/
+  - /learn/english/grammar/nouns-articles/possession/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Most countable nouns add <span lang="en">-s</span>; nouns ending in <span lang="en">-s, -sh, -ch, -x</span>, or <span lang="en">-z</span> usually add <span lang="en">-es</span>.
+- A plural noun takes a plural determiner and verb: <span lang="en">these books are</span>.
+- Learn common irregular plurals as whole forms.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Plural nouns name more than one countable thing. First check that English
+treats the noun as countable; words such as <span lang="en">information</span>
+do not simply take a plural <span lang="en">-s</span>.
+
+## Use this now
+
+| Ending or type | Plural | Example |
+| --- | --- | --- |
+| most nouns | <span lang="en">-s</span> | <span lang="en">book → books</span> |
+| <span lang="en">-s, -sh, -ch, -x, -z</span> | <span lang="en">-es</span> | <span lang="en">bus → buses</span> |
+| consonant + <span lang="en">-y</span> | <span lang="en">-ies</span> | <span lang="en">city → cities</span> |
+| vowel + <span lang="en">-y</span> | <span lang="en">-s</span> | <span lang="en">day → days</span> |
+
+## Core rule
+
+Use plural forms with <span lang="en">these</span>, <span lang="en">those</span>,
+<span lang="en">many</span>, and plural verbs: <span lang="en">These new
+reports are useful.</span> A singular count noun needs a determiner; a plural
+noun can be general with no article: <span lang="en">Reports are useful.</span>
+
+Common irregular forms are <span lang="en">man → men</span>, <span lang="en">woman
+→ women</span>, <span lang="en">child → children</span>, <span lang="en">person
+→ people</span>, <span lang="en">foot → feet</span>, and <span lang="en">tooth
+→ teeth</span>. Treat them as vocabulary, not as a rule to extend.
+
+## Direct comparison
+
+<LanguageComparison title="Plural agreement" languages={['de', 'en']}>
+	<p slot="de">Diese Bücher sind neu.</p>
+	<p slot="en">These books are new.</p>
+</LanguageComparison>
+
+Both languages mark the plural, but English also needs the matching plural
+verb <span lang="en">are</span>, not <span lang="en">is</span>.
+
+<MistakeBox incorrect="These book are useful." correct="These books are useful." lang="en">
+	A plural determiner such as <span lang="en">these</span> needs a plural noun
+	and a plural verb.
+</MistakeBox>
+
+<MemoryTip>
+Check three things together: number word or determiner, noun form, and verb.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{ prompt: 'Make plural: city', answer: 'cities' },
+		{ prompt: 'Complete: These ___ are expensive. (watch)', answer: 'These watches are expensive.' },
+		{ prompt: 'Correct: The children is tired.', answer: 'The children are tired.' },
+	]}
+	answerLang="en"
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../countable-and-uncountable-nouns/', label: 'Countable and uncountable nouns' },
+		{ href: '../articles/', label: 'Articles' },
+		{ href: '../possession/', label: 'Possession' },
+	]}
+/>

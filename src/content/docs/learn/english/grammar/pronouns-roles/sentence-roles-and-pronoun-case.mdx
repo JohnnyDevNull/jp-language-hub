@@ -1,0 +1,78 @@
+---
+title: Sentence roles and pronoun case
+description: Choose subject or object pronouns by the job a noun phrase does in an English clause.
+metaLanguage: en
+grammarLanguage: en
+comparisonLanguages: [de, en]
+levels: [A1, A2, B1]
+tags: [grammar, pronouns, important]
+related:
+  - /learn/english/grammar/pronouns-roles/personal-pronouns/
+  - /learn/english/grammar/pronouns-roles/reflexive-pronouns/
+---
+
+import KeyTakeaway from "~/components/KeyTakeaway.astro";
+import LanguageComparison from "~/components/LanguageComparison.astro";
+import MemoryTip from "~/components/MemoryTip.astro";
+import MistakeBox from "~/components/MistakeBox.astro";
+import QuickCheck from "~/components/QuickCheck.astro";
+import RelatedTopics from "~/components/RelatedTopics.astro";
+import TagList from "~/components/TagList.astro";
+
+<KeyTakeaway>
+- Use subject forms for the person or thing that does or is something in the
+  clause: *I called her; they arrived.*
+- Use object forms after a verb or preposition: *She called me; with them.*
+- English nouns do not inflect through a German-style case system, but pronouns
+  retain this practical contrast: *I/me, he/him, she/her, we/us, they/them*.
+</KeyTakeaway>
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+This is the decision page for personal-pronoun form. The other pronoun pages are form-and-use lookups.
+
+## Use this now
+
+| Job                     | Use                      | Example            |
+| ----------------------- | ------------------------ | ------------------ |
+| subject                 | _I, he, she, we, they_   | _They called._     |
+| object of a verb        | _me, him, her, us, them_ | _She called them._ |
+| object of a preposition | _me, him, her, us, them_ | _Come with us._    |
+
+## Core rule
+
+Ask what the noun phrase does, not which German case name it might resemble. English word order normally marks roles, while personal pronouns still show a small form contrast. After _be_, everyday English commonly uses object forms: _It’s me._
+
+<LanguageComparison title="Object pronoun" languages={["de", "en"]}>
+  <p slot="de">Sie ruft mich an.</p>
+  <p slot="en">She calls me.</p>
+</LanguageComparison>
+
+<MistakeBox incorrect="Him called me." correct="He called me." lang="en">
+  The caller is the subject, so use *he*. The receiver is the object, so use
+  *me*.
+</MistakeBox>
+<MemoryTip>
+  Before the verb, ask “Who does it?” After a verb or preposition, ask “Who
+  receives it or is connected to it?”
+</MemoryTip>
+<QuickCheck
+  items={[
+    { prompt: "Choose: ___ called her. (he/him)", answer: "He called her." },
+    { prompt: "Choose: She called ___. (I/me)", answer: "She called me." },
+    {
+      prompt: "Complete: Please sit with ___. (we/us)",
+      answer: "Please sit with us.",
+    },
+    {
+      prompt: "Correct: Me and Anna are ready.",
+      answer: "Anna and I are ready.",
+    },
+  ]}
+  answerLang="en"
+/>
+<RelatedTopics
+  topics={[
+    { href: "../personal-pronouns/", label: "Personal pronouns" },
+    { href: "../reflexive-pronouns/", label: "Reflexive pronouns" },
+  ]}
+/>

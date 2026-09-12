@@ -8,25 +8,50 @@ tags:
 ---
 
 English grammar topics are organized around decisions a learner actually has to
-make: sentence order, question structure, time forms, articles, and
-countability.
+make: sentence order, question structure, noun phrases, pronoun roles, and
+time forms.
 
 ## Start by problem
 
 | If you are trying to... | Open |
 | --- | --- |
 | stop German word order from leaking into English | [Sentence order](./sentence-structure/sentence-order/) |
-| build a question | [Questions and do-support](./sentence-structure/questions-and-do-support/) |
+| build a question | [Questions and do-support](./questions-negation/questions-and-do-support/) |
 | decide which time form fits the situation | [Choosing time form](./verbs/choosing-time-form/) |
 | fix *I have seen him yesterday* | [Simple past vs present perfect](./verbs/simple-past-vs-present-perfect/) |
-| choose *a/an*, *the*, or no article | [Articles](./nouns-articles/articles/) |
-| fix nouns like *informations* | [Countable and uncountable nouns](./nouns-articles/countable-and-uncountable-nouns/) |
+| build a noun phrase with article, number, or ownership | [Nouns and articles](./nouns-articles/) |
+| choose *I/me*, *she/her*, or *they/them* | [Sentence roles and pronoun case](./pronouns-roles/sentence-roles-and-pronoun-case/) |
 
 ## Sentence structure
 
 - [Sentence order](./sentence-structure/sentence-order/)
-- [Questions and do-support](./sentence-structure/questions-and-do-support/)
+- [Subordinate clauses](./sentence-structure/subordinate-clauses/)
+- [Relative clauses](./sentence-structure/relative-clauses/)
 - [Adverb placement](./sentence-structure/adverb-placement/)
+
+## Questions and negation
+
+- [Questions and do-support](./questions-negation/questions-and-do-support/)
+- [Negation](./questions-negation/negation/)
+- [Any vs no](./questions-negation/any-vs-no/)
+
+## Nouns and articles
+
+- [Nouns and articles](./nouns-articles/)
+- [Articles](./nouns-articles/articles/)
+- [Countable and uncountable nouns](./nouns-articles/countable-and-uncountable-nouns/)
+- [Plural nouns](./nouns-articles/plural-nouns/)
+- [Possession](./nouns-articles/possession/)
+
+## Pronouns and roles
+
+- [Pronouns and roles](./pronouns-roles/)
+- [Personal pronouns](./pronouns-roles/personal-pronouns/)
+- [Possessive pronouns](./pronouns-roles/possessive-pronouns/)
+- [Reflexive pronouns](./pronouns-roles/reflexive-pronouns/)
+- [Demonstrative pronouns](./pronouns-roles/demonstrative-pronouns/)
+- [Indefinite pronouns](./pronouns-roles/indefinite-pronouns/)
+- [Sentence roles and pronoun case](./pronouns-roles/sentence-roles-and-pronoun-case/)
 
 ## Verbs and time forms
 
@@ -41,11 +66,6 @@ countability.
 - [Going to future](./verbs/going-to-future/)
 - [Future progressive](./verbs/future-progressive/)
 - [Future perfect](./verbs/future-perfect/)
-
-## Nouns and articles
-
-- [Articles](./nouns-articles/articles/)
-- [Countable and uncountable nouns](./nouns-articles/countable-and-uncountable-nouns/)
 
 ## Common mistakes
 

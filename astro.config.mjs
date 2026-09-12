@@ -338,8 +338,42 @@ export default defineConfig({
 							items: [
 								{ label: 'Overview', slug: 'learn/english/grammar/sentence-structure' },
 								{ slug: 'learn/english/grammar/sentence-structure/sentence-order' },
-								{ slug: 'learn/english/grammar/sentence-structure/questions-and-do-support' },
+								{ slug: 'learn/english/grammar/sentence-structure/subordinate-clauses' },
+								{ slug: 'learn/english/grammar/sentence-structure/relative-clauses' },
 								{ slug: 'learn/english/grammar/sentence-structure/adverb-placement' },
+							],
+						},
+						{
+							label: 'Questions & Negation',
+							items: [
+								{ label: 'Overview', slug: 'learn/english/grammar/questions-negation' },
+								{ slug: 'learn/english/grammar/questions-negation/questions-and-do-support' },
+								{ slug: 'learn/english/grammar/questions-negation/negation' },
+								{ slug: 'learn/english/grammar/questions-negation/any-vs-no' },
+							],
+						},
+						{
+							label: 'Nouns & Articles',
+							items: [
+								{ label: 'Overview', slug: 'learn/english/grammar/nouns-articles' },
+								{ slug: 'learn/english/grammar/nouns-articles/articles' },
+								{
+									slug: 'learn/english/grammar/nouns-articles/countable-and-uncountable-nouns',
+								},
+								{ slug: 'learn/english/grammar/nouns-articles/plural-nouns' },
+								{ slug: 'learn/english/grammar/nouns-articles/possession' },
+							],
+						},
+						{
+							label: 'Pronouns & Roles',
+							items: [
+								{ label: 'Overview', slug: 'learn/english/grammar/pronouns-roles' },
+								{ slug: 'learn/english/grammar/pronouns-roles/personal-pronouns' },
+								{ slug: 'learn/english/grammar/pronouns-roles/possessive-pronouns' },
+								{ slug: 'learn/english/grammar/pronouns-roles/reflexive-pronouns' },
+								{ slug: 'learn/english/grammar/pronouns-roles/demonstrative-pronouns' },
+								{ slug: 'learn/english/grammar/pronouns-roles/indefinite-pronouns' },
+								{ slug: 'learn/english/grammar/pronouns-roles/sentence-roles-and-pronoun-case' },
 							],
 						},
 						{
@@ -357,16 +391,6 @@ export default defineConfig({
 								{ slug: 'learn/english/grammar/verbs/going-to-future' },
 								{ slug: 'learn/english/grammar/verbs/future-progressive' },
 								{ slug: 'learn/english/grammar/verbs/future-perfect' },
-							],
-						},
-						{
-							label: 'Nouns & Articles',
-							items: [
-								{ label: 'Overview', slug: 'learn/english/grammar/nouns-articles' },
-								{ slug: 'learn/english/grammar/nouns-articles/articles' },
-								{
-									slug: 'learn/english/grammar/nouns-articles/countable-and-uncountable-nouns',
-								},
 							],
 						},
 					],

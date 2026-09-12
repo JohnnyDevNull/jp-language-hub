@@ -52,5 +52,5 @@ connected to now, arranged, in progress, or completed before another point.
 
 ## Related
 
-- [Questions and do-support](../sentence-structure/questions-and-do-support/)
+- [Questions and do-support](../questions-negation/questions-and-do-support/)
 - [German to English mistakes](../../common-mistakes/from-german/)

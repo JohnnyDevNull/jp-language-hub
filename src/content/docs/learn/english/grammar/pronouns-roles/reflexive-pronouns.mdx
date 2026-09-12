@@ -1,0 +1,60 @@
+---
+title: Reflexive pronouns
+description: Use myself, yourself, and related forms when an action returns to its subject.
+metaLanguage: en
+grammarLanguage: en
+levels: [A2, B1]
+tags: [grammar, pronouns]
+related:
+  - /learn/english/grammar/pronouns-roles/personal-pronouns/
+  - /learn/english/grammar/pronouns-roles/sentence-roles-and-pronoun-case/
+---
+
+import KeyTakeaway from "~/components/KeyTakeaway.astro";
+import MistakeBox from "~/components/MistakeBox.astro";
+import QuickCheck from "~/components/QuickCheck.astro";
+import RelatedTopics from "~/components/RelatedTopics.astro";
+import TagList from "~/components/TagList.astro";
+
+<KeyTakeaway>
+- Use a reflexive pronoun when subject and object are the same: *She hurt
+  herself.*
+- Use it for emphasis after a noun or pronoun: *I wrote it myself.*
+- Do not use a reflexive form as a general polite replacement for *me* or *I*.
+</KeyTakeaway>
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+## Core rule
+
+The forms are _myself, yourself, himself, herself, itself, ourselves, yourselves,_ and _themselves_. Singular _they_ normally takes _themselves_: _Each person can introduce themselves._ Use a reflexive when the action comes back to its subject, not merely because a pronoun follows a verb.
+
+<MistakeBox
+  incorrect="Please contact myself."
+  correct="Please contact me."
+  lang="en"
+>
+  *Myself* needs the same subject in the clause, as in *I introduced myself.*
+</MistakeBox>
+<QuickCheck
+  items={[
+    {
+      prompt: "Complete: She taught ___ to swim.",
+      answer: "She taught herself to swim.",
+    },
+    {
+      prompt: "Add emphasis: I made the cake.",
+      answer: "I made the cake myself.",
+    },
+    { prompt: "Correct: Please email myself.", answer: "Please email me." },
+  ]}
+  answerLang="en"
+/>
+<RelatedTopics
+  topics={[
+    { href: "../personal-pronouns/", label: "Personal pronouns" },
+    {
+      href: "../sentence-roles-and-pronoun-case/",
+      label: "Sentence roles and pronoun case",
+    },
+  ]}
+/>

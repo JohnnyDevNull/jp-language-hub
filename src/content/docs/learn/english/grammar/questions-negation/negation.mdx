@@ -1,0 +1,133 @@
+---
+title: Negation
+description: Make an ordinary English clause negative with not and the right auxiliary.
+metaLanguage: en
+grammarLanguage: en
+comparisonLanguages:
+  - de
+  - en
+levels:
+  - A1
+  - A2
+  - B1
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/english/grammar/questions-negation/questions-and-do-support/
+  - /learn/english/grammar/questions-negation/any-vs-no/
+  - /learn/english/grammar/sentence-structure/sentence-order/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Put *not* after the first auxiliary: *She is not ready*; *They have not left*.
+- If a present or past simple clause has no auxiliary, add *do / does / did*:
+  *I do not know*; *He did not call*.
+- After *do / does / did*, use the base verb: *does not work*, not *does not
+  works*.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+To say that an ordinary clause is not true, first find its helper verb. English
+places *not* after that helper; simple present and past need *do*-support.
+
+## Use this now
+
+| Clause has… | Make it negative with… | Example |
+| --- | --- | --- |
+| *be* | *be + not* | *She is not ready.* |
+| a modal | modal + *not* | *We cannot stay.* |
+| another auxiliary | auxiliary + *not* | *They have not arrived.* |
+| simple present, no auxiliary | *do / does not* + base verb | *He does not work here.* |
+| simple past, no auxiliary | *did not* + base verb | *She did not call.* |
+
+## Core rule
+
+<SentenceSchema
+	caption="Ordinary English clause negation"
+	rowHeader="Clause type"
+	lang="en"
+	columns={['Subject', 'Auxiliary', 'Not', 'Main verb', 'Rest']}
+	rows={[
+		{ label: 'Be', cells: ['She', 'is', 'not', '', 'ready.'] },
+		{ label: 'Modal', cells: ['We', 'can', 'not', 'stay', 'long.'] },
+		{ label: 'Present simple', cells: ['He', 'does', 'not', 'work', 'here.'] },
+		{ label: 'Past simple', cells: ['They', 'did', 'not', 'call', 'yesterday.'] },
+	]}
+/>
+
+The first auxiliary carries the negative marker. In a simple clause without an
+auxiliary, *do* becomes that first helper. Contractions are normal in speech
+and informal writing: *isn't, don't, doesn't, didn't, can't,* and *haven't*.
+
+### Keep the main verb in the base form
+
+*Does* and *did* already carry agreement or past time. The main verb therefore
+does not repeat it:
+
+- *She does not **like** coffee.* — not *does not likes*
+- *They did not **go** home.* — not *did not went*
+
+This page gives the clause-negation pattern. [Any vs no](../any-vs-no/) owns
+the next choice: whether to say *not … any* or put *no* in the noun phrase.
+
+## Direct comparison
+
+<LanguageComparison title="Simple present negation" languages={['de', 'en']}>
+	<p slot="de">Er arbeitet heute nicht.</p>
+	<p slot="en">He does not work today.</p>
+</LanguageComparison>
+
+German can negate the lexical verb directly. In English simple present and past,
+use *do* before *not* unless *be* or another auxiliary is already available.
+
+<MistakeBox incorrect="She not likes coffee." correct="She does not like coffee." lang="en">
+In an ordinary simple-present clause, *not* needs *do / does*. Do not put it
+directly before the main verb.
+</MistakeBox>
+
+<MemoryTip>
+Find the first helper. Put **not** after it; if there is no helper in simple
+present or past, make one with **do**.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Negate: She works on Fridays.',
+			answer: 'She does not work on Fridays.',
+		},
+		{
+			prompt: 'Negate: They called yesterday.',
+			answer: 'They did not call yesterday.',
+		},
+		{
+			prompt: 'Negate: He is ready.',
+			answer: 'He is not ready.',
+		},
+		{
+			prompt: 'Correct: We did not went home.',
+			answer: 'We did not go home.',
+		},
+	]}
+	answerLang="en"
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../questions-and-do-support/', label: 'Questions and do-support' },
+		{ href: '../any-vs-no/', label: 'Any vs no' },
+		{ href: '../../sentence-structure/sentence-order/', label: 'Sentence order' },
+	]}
+/>
