@@ -2,8 +2,8 @@
 
 ## Status and Dependencies
 
-**Status:** Agent-ready; blocked until Finalize English is complete. This is
-the third language implementation plan in Phase 5.
+**Status:** Complete. German G1-G5 and the cross-language Phase 5 Quality Check
+are complete. This is the third language implementation plan in Phase 5.
 
 This plan owns the German-learning implementation slice of Phase 5. It does
 not redefine target routes or navigation. The
@@ -235,4 +235,4 @@ German finalization is complete only when:
   equivalent or has been deliberately removed to canonical fallback;
 - common-mistakes pages point to current canonical repair pages;
 - all quality gates pass; and
-- the German slice is ready for the cross-language Phase 5 Quality Check.
+- the German slice has passed the cross-language Phase 5 Quality Check.

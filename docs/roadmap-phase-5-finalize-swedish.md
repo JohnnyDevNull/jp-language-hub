@@ -3,8 +3,8 @@
 ## Status and Dependencies
 
 **Status:** Complete. All six Swedish implementation batches and the
-independent Swedish completion review passed. This is the first language
-implementation plan in Phase 5.
+independent Swedish completion review passed. The Phase 5 Whole-Tree Quality
+Check is also complete; Phase 6 is unblocked but has not started.
 
 Execution evidence and Swedish-specific decisions are recorded in the
 [Swedish implementation report](./roadmap-phase-5-finalize-swedish-implementation-report.md).

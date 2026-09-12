@@ -141,9 +141,10 @@ Goal: establish a practical everyday A1-B2 grammar reference model and exact
 navigation before meta-language translation multiplies the cost of
 restructuring.
 
-Status: planning baseline frozen; Swedish, English, and German implementation
-are complete. German finalization is recorded through commit `c298e83`. The
-final Quality Check is next and has not started or completed.
+Status: complete. The planning baseline remains frozen; Swedish, English, and
+German implementation are complete through commit `c298e83`. Q1-Q6 and the
+Whole-Tree Quality Check pass after VIS-01 remediation and independent visual
+retest. Phase 6 is unblocked but has not started.
 
 Detailed plan:
 [Phase 5: Align Grammar IA Across Learning Languages](./roadmap-phase-5-align-grammar-ia.md)
@@ -177,11 +178,12 @@ must change atomically.
 The planning groundwork is complete and remains frozen: the current-state
 record, A1-B2 coverage decisions, exhaustive page inventory, exact Navigation
 Blueprint, and migration mappings form the approved baseline. Swedish, English,
-and German implementation are complete. German finalization is recorded
-through commit `c298e83`. Implementation resumes in this order:
+and German implementation are complete through commit `c298e83`. The Phase 5
+Whole-Tree Quality Check is complete after VIS-01 remediation and independent
+visual retest.
 
-1. run the cross-language Phase 5 Quality Check; it has not started or
-   completed
+The Phase 5 Whole-Tree Quality Check is complete; see its
+[implementation report](./roadmap-phase-5-quality-check-report.md).
 
 The language plans own batches, content boundaries, migration checklists, and
 local acceptance criteria. They reference rather than duplicate the route
@@ -189,12 +191,11 @@ tables: the Navigation Blueprint remains authoritative for navigation and the
 Topic Inventory remains authoritative for page scope, actions, priorities, and
 coverage.
 
-Do not start Phase 6 translations until this phase has stabilized the grammar
-information architecture and the Phase 5 Quality Check has passed. That check
-reviews canonical root-locale content and restores structural and didactic
-equivalence for every existing localized mirror affected by Phase 5. Phase 7
-later reviews the complete translated packages, including pages untouched by
-Phase 5.
+Phase 6 translations are unblocked but have not started. The passing Q1-Q6
+checks reviewed canonical root-locale content and restored structural and
+didactic equivalence for every existing localized mirror affected by Phase 5.
+Phase 7 later reviews the complete translated packages, including pages
+untouched by Phase 5.
 
 ## Phase 6: Translate English and German Learning Trees
 
@@ -202,7 +203,7 @@ Goal: make the English-learning and German-learning trees available in the
 useful meta languages, not only through fallback routes that still show
 English explanations.
 
-Status: planned.
+Status: unblocked; not started.
 
 Recommended scope:
 

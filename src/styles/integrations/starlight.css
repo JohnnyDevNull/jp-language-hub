@@ -20,3 +20,61 @@
 :root {
 	--sl-content-width: min(80rem, 100%);
 }
+
+/* Preserve Starlight menu visuals while the local override owns disclosure
+   semantics. Remove after a verified upstream fix makes this override redundant. */
+@layer starlight.core {
+	starlight-menu-button button {
+		position: fixed;
+		top: calc((var(--sl-nav-height) - var(--sl-menu-button-size)) / 2);
+		inset-inline-end: var(--sl-nav-pad-x);
+		z-index: var(--sl-z-index-navbar);
+		border: 0;
+		border-radius: 50%;
+		width: var(--sl-menu-button-size);
+		height: var(--sl-menu-button-size);
+		padding: 0.5rem;
+		background-color: var(--sl-color-white);
+		color: var(--sl-color-black);
+		box-shadow: var(--sl-shadow-md);
+		cursor: pointer;
+	}
+
+	starlight-menu-button button[aria-expanded='true'] {
+		background-color: var(--sl-color-gray-2);
+		box-shadow: none;
+	}
+
+	starlight-menu-button button[aria-expanded='true'] .open-menu {
+		display: none;
+	}
+
+	starlight-menu-button button:not([aria-expanded='true']) .close-menu {
+		display: none;
+	}
+
+	[data-theme='light'] starlight-menu-button button {
+		background-color: var(--sl-color-black);
+		color: var(--sl-color-white);
+	}
+
+	[data-theme='light'] starlight-menu-button button[aria-expanded='true'] {
+		background-color: var(--sl-color-gray-5);
+	}
+
+	[data-mobile-menu-expanded] {
+		overflow: hidden;
+	}
+
+	/* Starlight's PageFrame owns this fixed ID; it is the only stable sidebar hook. */
+	/* stylelint-disable-next-line selector-id-pattern */
+	body[data-mobile-menu-expanded] #starlight__sidebar {
+		--sl-sidebar-visibility: visible;
+	}
+
+	@media (width >= 50rem) {
+		[data-mobile-menu-expanded] {
+			overflow: auto;
+		}
+	}
+}

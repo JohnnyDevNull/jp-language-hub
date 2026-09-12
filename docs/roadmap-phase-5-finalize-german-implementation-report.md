@@ -9,9 +9,9 @@ architecture.
 
 **Last updated:** 2026-09-12
 
-**Overall status:** German G1 through G5 complete and ready for the separate
-cross-language Phase 5 Whole-Tree Quality Check. That global check has not
-started and is not claimed complete. Swedish and English are complete.
+**Overall status:** German G1 through G5 and the separate cross-language Phase
+5 Whole-Tree Quality Check are complete. Phase 6 is unblocked but has not
+started. Swedish and English are complete.
 
 **Repository baseline:** `5e82b8c` (`feat(german): finalize grammar batches
 G3 and G4`) on `main`. This commit records the verified G3/G4 implementation;
@@ -295,15 +295,11 @@ Use ISO dates and retain failed attempts as evidence.
 - German has the largest Phase 5 migration surface and includes an approved
   merge (`Active` into `Active vs passive`); no intermediate verb-tree state
   may become the new baseline.
-- The German plan's status text still reflects the pre-English dependency
-  state. Execution status is tracked here and in the already modified
-  coordination docs; do not silently redesign the frozen plan.
-- Interactive wide/narrow visual inspection may remain unavailable in the
-  runner, as in the Swedish and English waves; record the residual risk if it
-  persists.
-- The whole-tree Phase 5 Quality Check is intentionally not part of G1-G5 and
-  is ready as the next handoff but has not started; this report does not claim
-  global Phase 5 completion.
+- Historical G1-G5 notes recorded unavailable interactive visual inspection.
+  The later Whole-Tree IAB wide/narrow gate passed, so no current German
+  visual blocker remains.
+- The cross-language Phase 5 Quality Check is complete; no global Phase 5
+  completion blocker remains.
 
 ## Resume Instructions
 
@@ -311,16 +307,16 @@ Use ISO dates and retain failed attempts as evidence.
    `git log -1 --oneline`; preserve the three pre-existing planning edits.
 2. Read the G1 section of the German plan, the relevant Blueprint shelves and
    German Inventory rows, and the applicable `docs/rules/` files.
-3. German G1 through G5 are complete. Do not redo German batches. The next
-   scope is only the separate cross-language Phase 5 Whole-Tree Quality Check,
-   which has not started, or the authorized commit of the current G5 state.
+3. German G1 through G5 and the separate cross-language Phase 5 Whole-Tree
+   Quality Check are complete. Do not redo German batches; Phase 6 is the next
+   unstarted phase.
 4. Recheck canonical and localized consumers, relative body links, absolute
    `related` routes, metadata, sidebar order, and generated fallback routes.
 5. If the current G5 changes are committed, preserve the baseline commit
    `5e82b8c` and stage only the three G5 pages, two incoming description
    consumers, and this report.
-6. Otherwise hand off only to the separate Whole-Tree Quality Check; do not
-   claim it complete until its independent cross-language review and gates pass.
+6. The Whole-Tree Quality Check is complete. Do not claim Phase 6 started until
+   its translation work is explicitly authorized and underway.
 
 ## Baseline Contradictions and Additional Decisions
 

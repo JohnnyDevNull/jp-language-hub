@@ -12,6 +12,7 @@ export default defineConfig({
 			customCss: ['./src/styles/global.css'],
 			components: {
 				Head: './src/components/Head.astro',
+				MobileMenuToggle: './src/components/MobileMenuToggle.astro',
 				Sidebar: './src/components/Sidebar.astro',
 			},
 			routeMiddleware: './src/starlight/learn-language-sidebar.ts',
@@ -297,8 +298,9 @@ export default defineConfig({
 								{ slug: 'learn/german/grammar/prepositions/accusative-prepositions' },
 								{ slug: 'learn/german/grammar/prepositions/dative-prepositions' },
 								{ slug: 'learn/german/grammar/prepositions/two-way-prepositions' },
-								{ slug: 'learn/german/grammar/prepositions/genitive-prepositions' },
 								{ slug: 'learn/german/grammar/prepositions/prepositional-adverbs' },
+								{ slug: 'learn/german/grammar/prepositions/dependent-prepositions' },
+								{ slug: 'learn/german/grammar/prepositions/genitive-prepositions' },
 							],
 						},
 						{

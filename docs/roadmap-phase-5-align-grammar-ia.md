@@ -16,15 +16,16 @@ actually has.
 **Planning baseline:** Frozen.
 
 **Execution status:** Swedish, English, and German implementation are
-complete. German finalization is recorded through commit `c298e83`. The
-separate whole-tree Quality Check is next and has not started or completed.
+complete through German commit `c298e83`. The Phase 5 Whole-Tree Quality Check
+is complete after VIS-01 remediation and independent visual retest. Phase 6 is
+unblocked but has not started.
 
 Phase 5 planning groundwork is complete. The current-state audit, practical
 A1-B2 coverage decisions, target navigation, page inventory, and route
 migration mappings now form the approved implementation baseline.
 
 The planning baseline remains frozen. Language-specific implementation and the
-final whole-tree quality check continue in this order:
+final whole-tree quality check are complete:
 
 1. [Phase 5: Finalize Swedish](./roadmap-phase-5-finalize-swedish.md) —
    complete; see the
@@ -34,11 +35,10 @@ final whole-tree quality check continue in this order:
    [English implementation report](./roadmap-phase-5-finalize-english-implementation-report.md)
 3. [Phase 5: Finalize German](./roadmap-phase-5-finalize-german.md) — complete;
    German G1-G5 is recorded through commit `c298e83`
-4. [Phase 5: Quality Check](./roadmap-phase-5-quality-check.md) — next; not
-   started or complete
+4. [Phase 5: Quality Check](./roadmap-phase-5-quality-check.md) — complete; see
+   the [Whole-Tree Quality Check report](./roadmap-phase-5-quality-check-report.md)
 
-Do not begin Phase 6 translation until the work defined by all four execution
-plans is complete.
+Phase 6 translation is unblocked but has not started.
 
 ## Working Definition of Complete
 
@@ -141,36 +141,34 @@ The following planning work packages are complete:
 These artifacts should now change only to correct a verified inconsistency or
 to record an explicitly approved scope decision.
 
-## Pending Execution
+## Current Execution
 
 ### 1. Finalize Swedish
 
-Implement the Swedish target tree and content boundaries from the approved
-Blueprint and Inventory. Review every retained, moved, renamed, and new page
-for linguistic accuracy, didactic usefulness, metadata, and links. Update
-Swedish practical entry paths outside Grammar where the language plan requires
-them.
+**Complete.** The Swedish target tree, content boundaries, practical entry
+paths, metadata, links, and localized-mirror dispositions are recorded in the
+[Swedish implementation report](./roadmap-phase-5-finalize-swedish-implementation-report.md).
 
 ### 2. Finalize English
 
-Implement the English target tree and missing practical A1-B2 content in
-focused shelf-based batches. Review all existing pages alongside the new work
-so inherited scope gaps, overlaps, or weak decision paths do not survive the
-restructure.
+**Complete.** The English target tree, focused A1-B2 content, route
+migrations, metadata, links, and localized-mirror dispositions are recorded in
+the [English implementation report](./roadmap-phase-5-finalize-english-implementation-report.md).
 
 ### 3. Finalize German
 
-Implement the German target tree, including its larger route-migration surface
-and approved merges. Preserve useful existing depth while reviewing every page
-against its canonical learner question and its boundary with neighboring
-topics.
+**Complete.** The German target tree, approved route migrations and merge,
+retained-page review, metadata, links, and localized-mirror dispositions are
+recorded in the
+[German implementation report](./roadmap-phase-5-finalize-german-implementation-report.md).
 
 ### 4. Run the Phase 5 Quality Check
 
-After all three language plans are complete, audit the implemented repository
-against the approved Blueprint and Inventory. Verify the complete navigation,
-route, content, metadata, link, localized-mirror, and cross-language structure
-before declaring Phase 5 complete.
+**Complete.** The cross-language final gate audited the implemented repository
+against the approved Blueprint and Inventory. Navigation, route, content,
+metadata, link, localized-mirror, cross-language, and visual gates pass after
+VIS-01 remediation and independent retest. Phase 6 is unblocked but has not
+started.
 
 ## Batch Rules
 

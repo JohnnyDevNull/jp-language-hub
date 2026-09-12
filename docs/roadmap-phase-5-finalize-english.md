@@ -3,9 +3,9 @@
 ## Status and Dependencies
 
 **Status:** Complete. English E1 through E6 are implemented, independently
-reviewed, and recorded in the implementation report. Finalize German is next
-in the approved Phase 5 sequence; the separate whole-tree Quality Check follows
-after all three language plans are complete.
+reviewed, and recorded in the implementation report. German finalization and
+the separate Whole-Tree Quality Check are complete; Phase 6 is unblocked but
+has not started.
 
 Execution progress, review hand-offs, and English-specific decisions belong in
 the [English implementation report](./roadmap-phase-5-finalize-english-implementation-report.md).

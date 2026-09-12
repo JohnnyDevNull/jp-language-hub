@@ -2,10 +2,13 @@
 
 ## Status and Dependencies
 
-**Status:** Agent-ready; blocked until completion of:
-
-1. [Phase 5: Finalize English](./roadmap-phase-5-finalize-english.md)
-2. [Phase 5: Finalize German](./roadmap-phase-5-finalize-german.md)
+**Status:** Complete. Swedish, English, and German finalization are complete;
+Q1-Q6 and all automated, semantic, and visual checks pass. Wide 1440x900 and
+narrow 390x844 layout/reflow/navigation checks pass. VIS-01 is resolved by the
+`MobileMenuToggle` override and independent root-IAB retest; the menu drawer
+now synchronizes its visual and accessibility disclosure state. The P3 32x32
+target-size observation is advisory and non-blocking. Phase 6 is unblocked but
+has not started.
 
 This is the final Phase 5 gate before Phase 6 translation work. It verifies the
 finished system; it does not create another navigation design.

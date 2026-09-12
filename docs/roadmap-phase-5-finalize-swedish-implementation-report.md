@@ -10,7 +10,9 @@ redefine the frozen information architecture. English execution is tracked in
 **Last updated:** 2026-09-12
 
 **Overall status:** Complete — Swedish Batches 1 through 6 and the independent
-Swedish completion review passed. Phase 5 continues with English.
+Swedish completion review passed. The completed Phase 5 Whole-Tree Quality
+Check closes the cross-language handoff; Phase 6 is unblocked but has not
+started.
 
 **Completion commits:** `4dc1aab` (`feat(content): finalize Swedish phase 5
 reference tree`) and `358516b` (`docs: record Swedish phase 5 completion`).
@@ -162,10 +164,10 @@ completed Phase 1 plan; both occurrences are intentional history.
   exceptions remain over budget.
 - Post-fix `git diff --check`: pass.
 - Generated-output scan: no base-less internal `href` found.
-- Wide and narrow rendered visual inspection is unavailable because the runner
-  cannot bind a preview server or open the generated local files. The
-  independent reviewer accepted the residual risk as low because S1 changes no
-  CSS or components.
+- At the historical S1 gate, wide and narrow rendered visual inspection was not
+  available in the runner; this retained evidence does not describe the final
+  gate. The final cross-language IAB wide/narrow inspection passed and is
+  recorded in the QC visual ledgers.
 
 ### Independent review and resolved findings
 
@@ -224,8 +226,8 @@ S2 gate evidence:
 - Retired S2 routes remain only in frozen or historical planning records and
   this implementation report.
 - Representative generated structure checks pass. S2 changes no CSS or
-  components, so the unavailable interactive visual pass carries low residual
-  risk.
+  components, so the unavailable interactive visual pass was a historical S2
+  limitation; the final IAB visual gate is recorded in the QC visual ledgers.
 
 The independent review chain is resolved: Personal Pronouns now includes
 `hen`/`hens` and qualifies formal `ni`; Man, Varandra, Var Sin distinguishes
@@ -300,8 +302,10 @@ S3 gate evidence:
 - An intermediate build failed because new `SentenceSchema` calls used invalid
   props. The implementation corrected them to the supported `columns` and
   `caption` API; the final quality and build gates are green.
-- Interactive wide/narrow inspection remains unavailable. Residual risk is low
-  because S3 changes no CSS or components.
+- Historical S3-time evidence: interactive wide/narrow inspection was
+  unavailable in the runner. This limitation was later superseded by the final
+  cross-language IAB wide/narrow gate, which passed and is recorded in the QC
+  visual ledgers.
 
 Independent GPT-5.5 medium re-review returned PASS after confirming these
 five findings were resolved:
@@ -593,10 +597,10 @@ Final S6 gate evidence:
   built outputs, 18 retired old routes, and 0 old built outputs still present.
 - Generated base-path link scan: no base-less internal `href` found.
 
-Wide and narrow interactive visual inspection remains unavailable in the
-runner. The accepted limitation is low risk for S6 because no CSS or component
-changes were made during the final gate; generated structure, route output, and
-link behavior were inspected instead.
+At the historical S6 gate, wide and narrow interactive visual inspection was
+not available in the runner. The final cross-language IAB visual gate later
+passed and is recorded in the QC visual ledgers; this historical limitation is
+not a current status.
 
 Swedish has no unresolved blocker. This execution record is closed.
 
@@ -617,17 +621,17 @@ Swedish has no unresolved blocker. This execution record is closed.
 - Swedish S6 has no unresolved blocker. Its 55-target reconciliation matrix,
   Architecture PASS, Linguistic/Didactic PASS, and final gates are recorded
   above.
-- Wide and narrow interactive visual inspection remains unavailable in the
-  current runner. This limitation is accepted as low risk because the final S6
-  gate changes no CSS or components and generated structure was inspected.
+- The historical S6 visual limitation is superseded by the final
+  cross-language IAB visual gate, which passed and is recorded in the QC visual
+  ledgers.
 
 ## Correction Instructions
 
 This report is closed historical evidence. If a verified Swedish defect or
 baseline contradiction requires a correction, record the reason, affected
 files, independent review, and validation evidence here without reopening the
-completed batch ledger. Continue normal Phase 5 execution in the report owned
-by the active language.
+completed batch ledger. Phase 5 is now closed; continue only with an approved
+Phase 6 task or record a verified correction against this historical evidence.
 
 ## Final Validation Ledger
 
