@@ -72,5 +72,5 @@ separate German conditionals topic.
 - [English to German mistakes](../common-mistakes/from-english/) is the fast
   route when English word order, tense, passive, or articles are leaking in.
 - [Swedish to German mistakes](../common-mistakes/from-swedish/) is the fast
-  route when Swedish V2, definiteness, particles, or adjective habits are
+  route when Swedish V2, spoken-past, definiteness, particles, or adjective habits are
   close but not quite German.

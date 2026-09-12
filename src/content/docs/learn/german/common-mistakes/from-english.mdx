@@ -4,8 +4,8 @@ description: "Fix common German mistakes caused by English tense, word order, ar
 metaLanguage: en
 grammarLanguage: de
 comparisonLanguages:
-  - en
   - de
+  - en
 levels:
   - A1
   - A2
@@ -18,6 +18,7 @@ related:
   - /learn/german/grammar/verbs-time-forms/present-tense/
   - /learn/german/grammar/sentence-structure/main-clause-verb-second/
   - /learn/german/grammar/prepositions/prepositions-and-case/
+  - /learn/german/grammar/prepositions/dependent-prepositions/
   - /learn/german/grammar/nouns-articles/articles-and-gender/
   - /learn/german/grammar/mood-politeness-reports/konjunktiv-ii/
   - /learn/german/grammar/verb-patterns-voice/active-vs-passive/
@@ -29,7 +30,6 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
@@ -57,16 +57,16 @@ English hides many grammatical roles that German marks overtly. When German soun
 | progressive for ordinary present | use German present tense unless you need another construction | [Present tense](../../grammar/verbs-time-forms/present-tense/) |
 | subject-verb order after a fronted phrase | keep the finite verb in position two | [Main clause verb second](../../grammar/sentence-structure/main-clause-verb-second/) |
 | no visible case on articles | choose the sentence role, then the article signal | [Cases as roles](../../grammar/cases/cases-as-roles/) |
-| prepositions translated word for word | learn the German preposition plus its case | [Prepositions and case](../../grammar/prepositions/prepositions-and-case/) |
+| translating <span lang="en">wait for</span> word for word | learn <span lang="de">warten auf</span> as a chunk; then check the case it governs | [Dependent prepositions](../../grammar/prepositions/dependent-prepositions/) |
 | "would" for every conditional or polite form | choose between <span lang="de">würde</span> and one-word Konjunktiv forms | [Konjunktiv II](../../grammar/mood-politeness-reports/konjunktiv-ii/) |
 | passive copied mechanically | choose active, passive, or <span lang="de">man</span> by focus | [Active vs passive](../../grammar/verb-patterns-voice/active-vs-passive/) |
 
 
 ## Direct comparison
 
-<LanguageComparison title="Transfer pressure" languages={["en","de"]}>
+<LanguageComparison title="Ordinary present, not an English progressive" languages={["de", "en"]}>
+	<p slot="de"><span lang="de">Ich arbeite jetzt.</span></p>
 	<p slot="en">I am working now.</p>
-	<p slot="de">Ich arbeite jetzt.</p>
 </LanguageComparison>
 
 
@@ -87,7 +87,7 @@ English is helpful for vocabulary, dangerous for German sentence mechanics.
 	items={[
 		{ prompt: 'I am waiting now.', answer: 'Ich warte jetzt.' },
 		{ prompt: 'Today I buy bread.', answer: 'Heute kaufe ich Brot.' },
-		{ prompt: 'for my friend', answer: 'für meinen Freund' },
+		{ prompt: 'I am waiting for the bus.', answer: 'Ich warte auf den Bus.' },
 	]}
 />
 
@@ -96,6 +96,7 @@ English is helpful for vocabulary, dangerous for German sentence mechanics.
 		{ href: '../../grammar/verbs-time-forms/present-tense/', label: 'Present Tense' },
 		{ href: '../../grammar/sentence-structure/main-clause-verb-second/', label: 'Main Clause Verb Second' },
 		{ href: '../../grammar/prepositions/prepositions-and-case/', label: 'Prepositions And Case' },
+		{ href: '../../grammar/prepositions/dependent-prepositions/', label: 'Dependent Prepositions' },
 		{ href: '../../grammar/nouns-articles/articles-and-gender/', label: 'Articles And Gender' },
 		{ href: '../../grammar/mood-politeness-reports/konjunktiv-ii/', label: 'Konjunktiv II' },
 		{ href: '../../grammar/verb-patterns-voice/active-vs-passive/', label: 'Active vs Passive' },

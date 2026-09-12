@@ -4,8 +4,8 @@ description: "Fix common German mistakes caused by Swedish word order, definiten
 metaLanguage: en
 grammarLanguage: de
 comparisonLanguages:
-  - sv
   - de
+  - sv
 levels:
   - A1
   - A2
@@ -17,10 +17,11 @@ tags:
 related:
   - /learn/german/grammar/sentence-structure/subordinate-clauses/
   - /learn/german/grammar/sentence-structure/main-clause-verb-second/
-  - /learn/german/grammar/word-formation-particles/separable-verbs/
+  - /learn/german/grammar/word-formation-particles/particle-verbs/
   - /learn/german/grammar/nouns-articles/articles-and-gender/
   - /learn/german/grammar/adjectives-adverbs/adjective-endings/
   - /learn/german/grammar/cases/cases-as-roles/
+  - /learn/german/grammar/verbs-time-forms/present-vs-perfect-vs-preterite/
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
@@ -29,13 +30,12 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Swedish V2 helps with German main clauses, but subordinate clauses and particles differ.
 - Swedish noun definiteness does not map to German articles and gender.
-- Swedish tense simplicity can hide German case and auxiliary choices.
+- A Swedish spoken preterite such as <span lang="sv">Jag ringde</span> does not automatically become German spoken preterite: German often prefers <span lang="de">Ich habe angerufen</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -44,7 +44,8 @@ Fix common German mistakes caused by Swedish word order, definiteness, tense, an
 
 ## Use this now
 
-Use Swedish as a V2 bridge, then re-check German case, article gender, separable-prefix placement, and subordinate verb-final order.
+Use Swedish as a V2 bridge, then re-check German case, article gender,
+particle meaning, past-time choice, and subordinate verb-final order.
 
 ## Core rule
 
@@ -57,15 +58,16 @@ Swedish and German share some Germanic structure, but German exposes more morpho
 | trusting V2 everywhere | keep V2 in main clauses, but send finite verbs late in subordinate clauses | [Subordinate clauses](../../grammar/sentence-structure/subordinate-clauses/) |
 | using definiteness endings as the main noun signal | learn German article plus gender with the noun | [Articles and gender](../../grammar/nouns-articles/articles-and-gender/) |
 | treating Swedish common/neuter as enough | choose German masculine, feminine, neuter, or plural signals | [Der, die, das](../../grammar/nouns-articles/der-die-das/) |
-| mapping particles by feel | learn German particle verbs as whole meaning units | [Separable verbs](../../grammar/word-formation-particles/separable-verbs/) |
+| using <span lang="de">Ich rufe dich auf</span> to mean “I phone you” | learn <span lang="de">anrufen</span> as the phone-call verb; separability is a separate form question | [Particle verbs](../../grammar/word-formation-particles/particle-verbs/) |
 | letting Swedish hide object roles | decide nominative, accusative, or dative before choosing forms | [Cases as roles](../../grammar/cases/cases-as-roles/) |
 | skipping adjective agreement after the article | share the signal between article and adjective | [Adjective endings](../../grammar/adjectives-adverbs/adjective-endings/) |
+| copying Swedish spoken preterite straight into German conversation | German often prefers perfect; compare the high-frequency German preterite exceptions | [Present vs perfect vs preterite](../../grammar/verbs-time-forms/present-vs-perfect-vs-preterite/) |
 
 ## Direct comparison
 
-<LanguageComparison title="Transfer pressure" languages={["sv","de"]}>
+<LanguageComparison title="Calling by phone: a familiar particle, a different German verb" languages={["de", "sv"]}>
+	<p slot="de"><span lang="de">Ich rufe dich an.</span></p>
 	<p slot="sv">Jag ringer upp dig.</p>
-	<p slot="de">Ich rufe dich an.</p>
 </LanguageComparison>
 
 
@@ -74,11 +76,11 @@ Swedish and German share some Germanic structure, but German exposes more morpho
 	correct="Ich rufe dich an."
 	lang="de"
 >
-	This is a transfer mistake: the source-language pattern is useful to notice, but German chooses a different structure.
+	For the phone-call meaning, <span lang="de">aufrufen</span> is a different verb; learn <span lang="de">anrufen</span> as the whole unit.
 </MistakeBox>
 
 <MemoryTip>
-Let Swedish remind you of V2, then let German cases decide the forms.
+	Let Swedish remind you of V2, then choose the German particle and past form by their own patterns.
 </MemoryTip>
 
 <QuickCheck
@@ -94,9 +96,10 @@ Let Swedish remind you of V2, then let German cases decide the forms.
 	topics={[
 		{ href: '../../grammar/sentence-structure/main-clause-verb-second/', label: 'Main Clause Verb Second' },
 		{ href: '../../grammar/sentence-structure/subordinate-clauses/', label: 'Subordinate Clauses' },
-		{ href: '../../grammar/word-formation-particles/separable-verbs/', label: 'Separable Verbs' },
+		{ href: '../../grammar/word-formation-particles/particle-verbs/', label: 'Particle Verbs' },
 		{ href: '../../grammar/nouns-articles/articles-and-gender/', label: 'Articles And Gender' },
 		{ href: '../../grammar/adjectives-adverbs/adjective-endings/', label: 'Adjective Endings' },
 		{ href: '../../grammar/cases/cases-as-roles/', label: 'Cases as Roles' },
+		{ href: '../../grammar/verbs-time-forms/present-vs-perfect-vs-preterite/', label: 'Present vs Perfect vs Preterite' },
 	]}
 />

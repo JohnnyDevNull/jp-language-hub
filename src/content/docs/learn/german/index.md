@@ -43,5 +43,5 @@ be foregrounded.
 - [English to German mistakes](./common-mistakes/from-english/) catches tense,
   passive, modal, article, preposition, and word-order habits from English.
 - [Swedish to German mistakes](./common-mistakes/from-swedish/) catches V2,
-  particle, definiteness, gender, case, and adjective-ending habits from
+  spoken-past, particle, definiteness, gender, case, and adjective-ending habits from
   Swedish.
