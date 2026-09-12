@@ -2,7 +2,9 @@
 
 ## Status and Dependencies
 
-**Status:** Planned. This is the first language implementation plan in Phase 5.
+**Status:** Complete. All six Swedish implementation batches and the
+independent Swedish completion review passed. This is the first language
+implementation plan in Phase 5.
 
 This plan executes the Swedish decisions owned by:
 

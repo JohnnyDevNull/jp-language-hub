@@ -13,15 +13,21 @@ actually has.
 
 ## Status
 
+**Planning baseline:** Frozen.
+
+**Execution status:** Swedish complete; execution paused by the user after the
+Swedish completion gate. Finalize English is next and has not started.
+
 Phase 5 planning groundwork is complete. The current-state audit, practical
 A1-B2 coverage decisions, target navigation, page inventory, and route
 migration mappings now form the approved implementation baseline.
 
-Language-specific implementation and the final whole-tree quality check are
-still pending. Execute them in this order:
+The planning baseline remains frozen. Language-specific implementation and the
+final whole-tree quality check continue in this order:
 
-1. [Phase 5: Finalize Swedish](./roadmap-phase-5-finalize-swedish.md)
-2. [Phase 5: Finalize English](./roadmap-phase-5-finalize-english.md)
+1. [Phase 5: Finalize Swedish](./roadmap-phase-5-finalize-swedish.md) —
+   complete
+2. [Phase 5: Finalize English](./roadmap-phase-5-finalize-english.md) — next
 3. [Phase 5: Finalize German](./roadmap-phase-5-finalize-german.md)
 4. [Phase 5: Quality Check](./roadmap-phase-5-quality-check.md)
 

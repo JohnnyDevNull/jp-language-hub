@@ -2,11 +2,10 @@
 
 ## Status and Dependencies
 
-**Status:** Planned. Begin only after completion of:
+**Status:** Agent-ready; blocked until completion of:
 
-1. [Phase 5: Finalize Swedish](./roadmap-phase-5-finalize-swedish.md)
-2. [Phase 5: Finalize English](./roadmap-phase-5-finalize-english.md)
-3. [Phase 5: Finalize German](./roadmap-phase-5-finalize-german.md)
+1. [Phase 5: Finalize English](./roadmap-phase-5-finalize-english.md)
+2. [Phase 5: Finalize German](./roadmap-phase-5-finalize-german.md)
 
 This is the final Phase 5 gate before Phase 6 translation work. It verifies the
 finished system; it does not create another navigation design.

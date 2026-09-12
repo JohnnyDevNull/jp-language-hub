@@ -7,6 +7,8 @@ owned by Phase 5, plus the approved Swedish Numbers move from Grammar to
 Vocabulary. It is deliberately a route-level inventory, not an academic
 grammar list or a complete inventory of every learning-language page.
 
+**Status:** Frozen implementation baseline.
+
 ## Can-do coverage
 
 `covered` means the current tree already has a usable canonical route.

@@ -2,8 +2,10 @@
 
 ## Status and Dependencies
 
-**Status:** Planned. This is the second language implementation plan in Phase
-5 and begins after Finalize Swedish is complete.
+**Status:** Ready for implementation. Finalize Swedish is complete; English is
+next in the approved Phase 5 sequence but has not started because the current
+execution wave stopped after Swedish. This is the second language
+implementation plan in Phase 5.
 
 This plan executes the English decisions owned by:
 

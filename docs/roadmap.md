@@ -141,8 +141,10 @@ Goal: establish a practical everyday A1-B2 grammar reference model and exact
 navigation before meta-language translation multiplies the cost of
 restructuring.
 
-Status: planning groundwork completed; language implementation and final
-quality check planned.
+Status: planning baseline frozen; Swedish implementation complete; execution
+paused by the user after Swedish. English is next and ready for
+implementation; German and the final Quality Check are agent-ready but blocked
+by their documented dependencies.
 
 Detailed plan:
 [Phase 5: Align Grammar IA Across Learning Languages](./roadmap-phase-5-align-grammar-ia.md)
@@ -173,18 +175,16 @@ structure. Old routes do not need redirects or preservation; every affected
 page-body link, canonical `related` route, sidebar entry, and localized mirror
 must change atomically.
 
-The planning groundwork is complete: the current-state record, A1-B2 coverage
-decisions, exhaustive page inventory, exact Navigation Blueprint, and migration
-mappings form the approved baseline. Implementation now proceeds in this
-order:
+The planning groundwork is complete and remains frozen: the current-state
+record, A1-B2 coverage decisions, exhaustive page inventory, exact Navigation
+Blueprint, and migration mappings form the approved baseline. Swedish
+implementation is complete. Implementation resumes in this order:
 
-1. finalize the Swedish learning tree and audit all retained, moved, and new
+1. finalize the English learning tree and audit all retained, moved, and new
    pages
-2. finalize the English learning tree and audit all retained, moved, and new
-   pages
-3. finalize the German learning tree and audit all retained, moved, merged, and
+2. finalize the German learning tree and audit all retained, moved, merged, and
    new pages
-4. run the cross-language Phase 5 Quality Check
+3. run the cross-language Phase 5 Quality Check
 
 The language plans own batches, content boundaries, migration checklists, and
 local acceptance criteria. They reference rather than duplicate the route

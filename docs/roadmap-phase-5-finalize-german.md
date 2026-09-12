@@ -2,8 +2,8 @@
 
 ## Status and Dependencies
 
-**Status:** Planned. This is the third language implementation plan in Phase 5
-and begins after the Swedish and English finalization plans are complete.
+**Status:** Agent-ready; blocked until Finalize English is complete. This is
+the third language implementation plan in Phase 5.
 
 This plan owns the German-learning implementation slice of Phase 5. It does
 not redefine target routes or navigation. The

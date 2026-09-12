@@ -7,6 +7,8 @@ depth.
 
 ## Scope and status
 
+**Status:** Frozen implementation baseline.
+
 The target covers practical production and lookup needs from A1 through B2:
 ordinary statements, questions, negation, requests, plans, past events,
 conditions, explanations, opinions, and everyday written or spoken reports.
