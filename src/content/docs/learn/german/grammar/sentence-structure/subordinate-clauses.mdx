@@ -16,7 +16,6 @@ related:
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
@@ -25,9 +24,9 @@ import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- German clause shape depends on the finite verb position.
-- Main clauses, questions, and subordinate clauses each have a reliable pattern.
-- The verb bracket explains why important verb parts often appear late.
+- A subordinating conjunction sends the finite verb to the end of its clause.
+- The subject and other clause material stay before that final verb.
+- In a sentence with a main clause, the subordinate clause can come first or second.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -36,11 +35,15 @@ Move the finite verb to the end in German subordinate clauses.
 
 ## Use this now
 
-Find the finite verb first. Then identify whether the clause is a statement, a question, or a subordinate clause.
+Find the subordinating conjunction, then move the finite verb to the end of
+that clause. If the subordinate clause comes first, the main clause still
+starts with its finite verb after the comma.
 
 ## Core rule
 
-German word order is field-based: the finite verb anchors the clause, and other sentence parts arrange around it.
+In a subordinate clause introduced by words such as `weil`, `dass`, or `wenn`,
+the finite verb occupies the final position. A following main clause keeps its
+own V2 order.
 
 <SentenceSchema
 	caption="Subordinate clauses"
@@ -57,7 +60,7 @@ German word order is field-based: the finite verb anchors the clause, and other 
 	correct="weil ich keine Zeit habe"
 	lang="de"
 >
-	The finite verb position is the structural signal.
+	The conjunction opens a subordinate clause; the finite verb closes it.
 </MistakeBox>
 
 <MemoryTip>
@@ -68,8 +71,8 @@ Track the finite verb before you move anything else.
 	answerLang="de"
 	items={[
 		{ prompt: 'Correct the model mistake.', answer: 'weil ich keine Zeit habe' },
-		{ prompt: 'What do subordinate clauses do with the finite verb?', answer: 'They place it at the end.' },
-		{ prompt: 'What owns position two in a main clause?', answer: 'the finite verb' },
+		{ prompt: 'Combine with weil: Ich bleibe zu Hause. Ich bin krank.', answer: 'Ich bleibe zu Hause, weil ich krank bin.' },
+		{ prompt: 'Correct: Wenn ich Zeit habe, ich komme.', answer: 'Wenn ich Zeit habe, komme ich.' },
 	]}
 />
 

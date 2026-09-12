@@ -10,24 +10,22 @@ tags:
   - grammar
   - adjectives
 related:
-  - /learn/german/grammar/adjectives/adjective-endings/
-  - /learn/german/grammar/adjectives/adverbs/
-  - /learn/german/grammar/adjectives/adjectives-vs-adverbs/
+  - /learn/german/grammar/adjectives-adverbs/adjective-endings/
+  - /learn/german/grammar/adjectives-adverbs/adverbs/
+  - /learn/german/grammar/adjectives-adverbs/adjectives-vs-adverbs/
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Comparative usually adds -er; superlative uses am ... -sten or article plus -ste/-sten.
 - Use größer, am größten, der größte. Some common adjectives change vowel or irregularly.
-- The page connects the form to the sentence slot.
+- Use the attributive or adverbial superlative that matches the sentence slot.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -40,7 +38,21 @@ Use <span lang="de">größer</span>, <span lang="de">am größten</span>, <span 
 
 ## Core rule
 
-Comparison works for adjectives and many adverbs.
+Comparison works for adjectives and many adverbs. The comparative usually uses
+<span lang="de">-er</span>, while the superlative uses
+<span lang="de">am ...-sten</span> adverbially or an article plus
+<span lang="de">-ste/-sten</span> attributively.
+
+| Function | Example |
+| --- | --- |
+| positive | <span lang="de">schnell</span> |
+| comparative | <span lang="de">schneller als</span> |
+| superlative, adverbial | <span lang="de">am schnellsten</span> |
+| superlative, attributive | <span lang="de">der schnellste Zug</span> |
+
+Common irregular forms include <span lang="de">gut – besser – am besten</span>,
+<span lang="de">viel – mehr – am meisten</span>, and
+<span lang="de">gern – lieber – am liebsten</span>.
 
 
 
@@ -60,7 +72,7 @@ Most comparisons add endings; a few high-frequency words are irregular.
 	answerLang="de"
 	items={[
 		{ prompt: 'bigger', answer: 'größer' },
-		{ prompt: 'the best', answer: 'am besten' },
+		{ prompt: 'the best (attributive, masculine)', answer: 'der beste' },
 		{ prompt: 'more interesting', answer: 'interessanter' },
 	]}
 />

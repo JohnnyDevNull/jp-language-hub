@@ -17,12 +17,10 @@ related:
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
@@ -42,6 +40,17 @@ Start with nominative: <span lang="de">der Tisch</span>, <span lang="de">die Lam
 ## Core rule
 
 Definite articles identify a known noun and display its gender, number, and case. They are the model for many adjective endings.
+
+| Case | Masculine | Feminine | Neuter | Plural |
+| --- | --- | --- | --- | --- |
+| nominative | <span lang="de">der</span> | <span lang="de">die</span> | <span lang="de">das</span> | <span lang="de">die</span> |
+| accusative | <span lang="de">den</span> | <span lang="de">die</span> | <span lang="de">das</span> | <span lang="de">die</span> |
+| dative | <span lang="de">dem</span> | <span lang="de">der</span> | <span lang="de">dem</span> | <span lang="de">den</span> |
+| genitive | <span lang="de">des</span> | <span lang="de">der</span> | <span lang="de">des</span> | <span lang="de">der</span> |
+
+The noun’s gender stays fixed while the article changes with the role. In
+dative plural, the noun often also adds <span lang="de">-n</span>:
+<span lang="de">mit den Kindern</span>.
 
 
 

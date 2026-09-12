@@ -1,6 +1,6 @@
 ---
 title: "Cases"
-description: "German case pages organized by sentence role: subject, affected object, recipient/location, and possession."
+description: "Choose German cases from sentence role before selecting article, adjective, or pronoun forms."
 metaLanguage: en
 grammarLanguage: de
 tags:
@@ -10,12 +10,12 @@ related:
   - /learn/german/grammar/cases/cases-as-roles/
   - /learn/german/grammar/prepositions/prepositions-and-case/
   - /learn/german/grammar/nouns-articles/articles-and-gender/
-  - /learn/german/grammar/pronouns/pronoun-case-choice/
+  - /learn/german/grammar/pronouns-roles/pronoun-case-choice/
 ---
 
-Cases answer the question "what job does this phrase have in the sentence?"
-Learn that job first; article endings and pronoun forms make much more sense
-afterward.
+Cases answer the question “what job does this phrase have in the sentence?”
+Learn that job first; article endings, adjective endings, and pronoun forms
+make much more sense afterward.
 
 ## Choose by role
 
@@ -46,5 +46,9 @@ use the detail pages when you need one case in isolation.
   small words force a case.
 - [Articles and gender](../nouns-articles/articles-and-gender/) shows how case
   becomes visible in *der*, *den*, *dem*, *ein*, and adjective endings.
-- [Pronoun case choice](../pronouns/pronoun-case-choice/) shows the same roles
+- [Pronoun case choice](../pronouns-roles/pronoun-case-choice/) shows the same roles
   on forms like *ich*, *mich*, and *mir*.
+
+The case belongs to the whole noun phrase. In <span lang="de">mit dem kleinen
+Kind</span>, the preposition selects dative and the article and adjective show
+that choice; the noun itself does not need a special dative ending.

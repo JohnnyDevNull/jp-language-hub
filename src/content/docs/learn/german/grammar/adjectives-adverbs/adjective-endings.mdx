@@ -12,24 +12,22 @@ tags:
 related:
   - /learn/german/grammar/nouns-articles/articles-and-gender/
   - /learn/german/grammar/cases/cases-as-roles/
-  - /learn/german/grammar/adjectives/adjective-comparison/
-  - /learn/german/grammar/adjectives/adverbs/
-  - /learn/german/grammar/adjectives/adjectives-vs-adverbs/
+  - /learn/german/grammar/adjectives-adverbs/adjective-comparison/
+  - /learn/german/grammar/adjectives-adverbs/adverbs/
+  - /learn/german/grammar/adjectives-adverbs/adjectives-vs-adverbs/
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Adjective endings repeat or complete the article signal.
-- First choose the noun phrase case and article type, then add the adjective ending.
-- The page connects the form to the sentence slot.
+- Definite articles usually trigger weak adjective endings; ein-words trigger mixed endings; no determiner triggers strong endings.
+- First choose the noun phrase case and article type, then add the adjective ending that supplies any missing signal.
+- Predicate adjectives and adverbs do not use these attributive agreement endings.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -47,19 +45,24 @@ Use this four-step check before you look at a table:
 
 ## Core rule
 
-After a strong article signal, adjectives usually use weak endings; without a strong signal, the adjective carries more information.
+German adjective endings share the noun phrase's gender, number, and case
+signal. The ending pattern depends on whether the determiner already shows
+that information:
 
 | Noun phrase type | Signal logic | Example |
 | --- | --- | --- |
-| Definite article | Article carries the strong signal; adjective usually uses `-e` or `-en`. | <span lang="de">der gute Kaffee</span>, <span lang="de">den guten Kaffee</span> |
-| Indefinite article | The article sometimes lacks the signal; adjective fills the gap. | <span lang="de">ein guter Kaffee</span>, <span lang="de">ein gutes Buch</span> |
-| No article | The adjective carries most of the signal. | <span lang="de">guter Kaffee</span>, <span lang="de">frisches Wasser</span> |
+| Definite article: weak | The article shows the signal, so the adjective usually uses weak endings. | <span lang="de">der gute Kaffee</span>, <span lang="de">den guten Kaffee</span> |
+| Ein-word: mixed | The article shows some forms but not all; the adjective supplies the missing signal. | <span lang="de">ein guter Kaffee</span>, <span lang="de">einem guten Kaffee</span> |
+| No article: strong | The adjective carries the full visible signal. | <span lang="de">guter Kaffee</span>, <span lang="de">frisches Wasser</span> |
 
 Predicate adjectives do not take these endings: <span lang="de">Der Kaffee ist gut</span>, not <span lang="de">*Der Kaffee ist guter</span>. The ending belongs to the adjective inside the noun phrase.
 
 ## Signal sharing
 
-The useful mental model is not "three tables first"; it is signal sharing. German wants the noun phrase to show case, gender, and number somewhere. If the article already shows the signal, the adjective can be lighter. If the article is missing or ambiguous, the adjective must do more work.
+The useful mental model is signal sharing: definite articles trigger weak
+endings, ein-words trigger mixed endings, and no determiner triggers strong
+endings. Learn the pattern through the article signal before consulting a full
+paradigm.
 
 
 

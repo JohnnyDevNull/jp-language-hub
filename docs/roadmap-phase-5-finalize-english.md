@@ -2,10 +2,10 @@
 
 ## Status and Dependencies
 
-**Status:** Ready for implementation. Finalize Swedish is complete; English is
-next in the approved Phase 5 sequence but has not started because the current
-execution wave stopped after Swedish. This is the second language
-implementation plan in Phase 5.
+**Status:** Complete. English E1 through E6 are implemented, independently
+reviewed, and recorded in the implementation report. Finalize German is next
+in the approved Phase 5 sequence; the separate whole-tree Quality Check follows
+after all three language plans are complete.
 
 Execution progress, review hand-offs, and English-specific decisions belong in
 the [English implementation report](./roadmap-phase-5-finalize-english-implementation-report.md).

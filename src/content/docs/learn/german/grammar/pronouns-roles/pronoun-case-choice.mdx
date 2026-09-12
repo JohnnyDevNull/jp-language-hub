@@ -11,22 +11,20 @@ tags:
   - pronouns
 related:
   - /learn/german/grammar/cases/cases-as-roles/
-  - /learn/german/grammar/pronouns/personal-pronouns/
+  - /learn/german/grammar/pronouns-roles/personal-pronouns/
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Pronouns reveal case very clearly.
 - Use the verb, preposition, or sentence role to choose nominative, accusative, or dative.
-- The detail page connects the form to a practical sentence choice.
+- Decide the role before replacing a noun phrase with a pronoun.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -40,6 +38,15 @@ Use the verb, preposition, or sentence role to choose nominative, accusative, or
 ## Core rule
 
 The case question is the same for nouns and pronouns: subject, direct object, recipient, fixed preposition, or location/direction.
+
+| Role | Noun phrase | Pronoun |
+| --- | --- | --- |
+| subject | <span lang="de">Der Mann kommt.</span> | <span lang="de">Er kommt.</span> |
+| direct object | <span lang="de">Ich sehe den Mann.</span> | <span lang="de">Ich sehe ihn.</span> |
+| recipient | <span lang="de">Ich helfe dem Mann.</span> | <span lang="de">Ich helfe ihm.</span> |
+
+Do not choose the pronoun from the noun's gender alone. First identify the
+role, then select the matching form.
 
 
 

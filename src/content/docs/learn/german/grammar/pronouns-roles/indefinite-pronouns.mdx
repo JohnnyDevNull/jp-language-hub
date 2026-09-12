@@ -10,23 +10,21 @@ tags:
   - grammar
   - pronouns
 related:
-  - /learn/german/grammar/function-words/negative-pronouns-and-adverbs/
-  - /learn/german/grammar/pronouns/personal-pronouns/
+  - /learn/german/grammar/function-words-negation/negative-pronouns-and-adverbs/
+  - /learn/german/grammar/pronouns-roles/personal-pronouns/
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Indefinite pronouns keep reference open or general.
 - Some refer to people, some to things, and some to groups.
-- The detail page connects the form to a practical sentence choice.
+- Match the form to the kind of reference: person, thing, group, or general subject.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -41,14 +39,21 @@ Some refer to people, some to things, and some to groups.
 
 Use <span lang="de">man</span> for general people, <span lang="de">jemand/niemand</span> for someone/no one, and <span lang="de">etwas/nichts</span> for something/nothing.
 
+<span lang="de">Man</span> is grammatically singular and takes third-person
+singular verbs. <span lang="de">Jemand</span> and <span lang="de">niemand</span>
+refer to people; <span lang="de">etwas</span> and <span lang="de">nichts</span>
+refer to things or ideas. For a general set, use forms such as
+<span lang="de">alle</span> or <span lang="de">jeder</span> with the relevant
+case ending.
+
 
 
 <MistakeBox
-	incorrect="Man muss seine Hausaufgaben machen."
+	incorrect="Man müssen seine Hausaufgaben machen."
 	correct="Man muss seine Hausaufgaben machen."
 	lang="de"
 >
-	This sentence is already correct: <span lang="de">man</span> is singular in grammar even when meaning people generally.
+	<span lang="de">Man</span> is grammatically singular, even when it refers to people generally.
 </MistakeBox>
 
 <MemoryTip>
@@ -66,7 +71,7 @@ Unspecified does not mean formless; the pronoun still has grammar.
 
 <RelatedTopics
 	topics={[
-		{ href: '../../function-words/negative-pronouns-and-adverbs/', label: 'Negative Pronouns And Adverbs' },
+		{ href: '../../function-words-negation/negative-pronouns-and-adverbs/', label: 'Negative Pronouns And Adverbs' },
 		{ href: '../personal-pronouns/', label: 'Personal Pronouns' },
 	]}
 />

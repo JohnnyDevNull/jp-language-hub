@@ -12,16 +12,14 @@ tags:
 related:
   - /learn/german/grammar/nouns-articles/articles-and-gender/
   - /learn/german/grammar/nouns-articles/der-die-das/
-  - /learn/german/grammar/adjectives/adjective-endings/
+  - /learn/german/grammar/adjectives-adverbs/adjective-endings/
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
@@ -41,6 +39,20 @@ Store nouns as a mini-pair: <span lang="de">der Tisch, die Tische</span>; <span 
 ## Core rule
 
 Plural changes the article system and often the noun ending. In dative plural, the noun often gains -n: <span lang="de">mit den Kindern</span>.
+
+There is no single plural ending. Learn the plural with the noun and watch for
+common patterns:
+
+| Pattern | Example |
+| --- | --- |
+| <span lang="de">-e</span> (often with umlaut) | <span lang="de">der Tisch → die Tische</span> |
+| <span lang="de">-er</span> (often with umlaut) | <span lang="de">das Kind → die Kinder</span> |
+| <span lang="de">-(e)n</span> | <span lang="de">die Frau → die Frauen</span> |
+| <span lang="de">-s</span> | <span lang="de">das Auto → die Autos</span> |
+
+The dative-plural <span lang="de">-n</span> is added only when the plural does
+not already end in <span lang="de">-n</span> or <span lang="de">-s</span>:
+<span lang="de">mit den Frauen</span>, but <span lang="de">mit den Autos</span>.
 
 
 
@@ -69,6 +81,6 @@ Learn three things together: article, singular noun, plural noun.
 	topics={[
 		{ href: '../articles-and-gender/', label: 'Articles And Gender' },
 		{ href: '../der-die-das/', label: 'Der Die Das' },
-		{ href: '../../adjectives/adjective-endings/', label: 'Adjective Endings' },
+		{ href: '../../adjectives-adverbs/adjective-endings/', label: 'Adjective Endings' },
 	]}
 />

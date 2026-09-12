@@ -33,10 +33,10 @@ be foregrounded.
 ## Main route
 
 1. Start with [cases](./grammar/cases/) so sentence roles are clear.
-2. Use [prepositions](./grammar/prepositions/), [nouns and articles](./grammar/nouns-articles/), and [pronouns](./grammar/pronouns/) to make those roles visible.
+2. Use [prepositions](./grammar/prepositions/), [nouns and articles](./grammar/nouns-articles/), and [pronouns](./grammar/pronouns-roles/) to make those roles visible.
 3. Move to [sentence structure](./grammar/sentence-structure/) for V2, subordinate clauses, relative clauses, and verb brackets.
 4. Use [verbs](./grammar/verbs/) for particle verbs, modals, time forms, passive, and mood.
-5. Finish the noun phrase with [adjectives and adverbs](./grammar/adjectives/).
+5. Finish the noun phrase with [adjectives and adverbs](./grammar/adjectives-adverbs/).
 
 ## Transfer checks
 

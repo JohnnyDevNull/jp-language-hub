@@ -16,7 +16,6 @@ related:
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
@@ -25,9 +24,9 @@ import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- German clause shape depends on the finite verb position.
-- Main clauses, questions, and subordinate clauses each have a reliable pattern.
-- The verb bracket explains why important verb parts often appear late.
+- In a German declarative main clause, the finite verb is in position two.
+- The first position can be one element or phrase; the subject does not have to come first.
+- Move the finite verb with the first field, not after the subject.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -36,11 +35,14 @@ Put the finite verb in second position in German declarative main clauses.
 
 ## Use this now
 
-Find the finite verb first. Then identify whether the clause is a statement, a question, or a subordinate clause.
+Find the finite verb and count fields, not individual words. Put exactly one
+constituent before it in a declarative main clause.
 
 ## Core rule
 
-German word order is field-based: the finite verb anchors the clause, and other sentence parts arrange around it.
+German main clauses use verb-second (V2) order. The first field may be the
+subject, a time phrase, or an object; the finite verb follows it, and the
+remaining material comes after the verb.
 
 <SentenceSchema
 	caption="Main clause verb second"
@@ -57,7 +59,7 @@ German word order is field-based: the finite verb anchors the clause, and other 
 	correct="Heute kaufe ich Brot."
 	lang="de"
 >
-	The finite verb position is the structural signal.
+	The first field changes, but the finite verb stays second.
 </MistakeBox>
 
 <MemoryTip>
@@ -68,8 +70,8 @@ Track the finite verb before you move anything else.
 	answerLang="de"
 	items={[
 		{ prompt: 'Correct the model mistake.', answer: 'Heute kaufe ich Brot.' },
-		{ prompt: 'What do subordinate clauses do with the finite verb?', answer: 'They place it at the end.' },
-		{ prompt: 'What owns position two in a main clause?', answer: 'the finite verb' },
+		{ prompt: 'Rewrite with the time phrase first: Ich kaufe heute Brot.', answer: 'Heute kaufe ich Brot.' },
+		{ prompt: 'What occupies position two in a German declarative main clause?', answer: 'the finite verb' },
 	]}
 />
 

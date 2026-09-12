@@ -17,12 +17,10 @@ related:
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
@@ -42,6 +40,12 @@ Ask one question: <span lang="de">wohin?</span> gives accusative; <span lang="de
 ## Core rule
 
 The two-way set is <span lang="de">an, auf, hinter, in, neben, über, unter, vor, zwischen</span>. Direction into a target takes accusative; static position takes dative.
+
+Movement alone is not enough: <span lang="de">Ich laufe im Park</span> stays
+dative because the park is the location, while <span lang="de">Ich laufe in den
+Park</span> is accusative because it names the destination. Let the question
+<span lang="de">wo?</span> or <span lang="de">wohin?</span>, not the verb alone,
+decide.
 
 
 

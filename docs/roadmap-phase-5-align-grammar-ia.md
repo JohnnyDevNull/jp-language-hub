@@ -15,8 +15,9 @@ actually has.
 
 **Planning baseline:** Frozen.
 
-**Execution status:** Swedish complete; execution paused by the user after the
-Swedish completion gate. Finalize English is next and has not started.
+**Execution status:** Swedish and English are complete. Finalize German is
+next; the whole-tree Quality Check follows after all three language plans are
+complete.
 
 Phase 5 planning groundwork is complete. The current-state audit, practical
 A1-B2 coverage decisions, target navigation, page inventory, and route
@@ -28,11 +29,12 @@ final whole-tree quality check continue in this order:
 1. [Phase 5: Finalize Swedish](./roadmap-phase-5-finalize-swedish.md) —
    complete; see the
    [Swedish implementation report](./roadmap-phase-5-finalize-swedish-implementation-report.md)
-2. [Phase 5: Finalize English](./roadmap-phase-5-finalize-english.md) — next
-   and tracked in the
+2. [Phase 5: Finalize English](./roadmap-phase-5-finalize-english.md) —
+   complete; see the
    [English implementation report](./roadmap-phase-5-finalize-english-implementation-report.md)
-3. [Phase 5: Finalize German](./roadmap-phase-5-finalize-german.md)
-4. [Phase 5: Quality Check](./roadmap-phase-5-quality-check.md)
+3. [Phase 5: Finalize German](./roadmap-phase-5-finalize-german.md) — next
+4. [Phase 5: Quality Check](./roadmap-phase-5-quality-check.md) — blocked
+   until all three language plans are complete
 
 Do not begin Phase 6 translation until the work defined by all four execution
 plans is complete.

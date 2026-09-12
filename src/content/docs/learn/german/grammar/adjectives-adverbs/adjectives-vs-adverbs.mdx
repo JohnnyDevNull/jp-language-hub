@@ -10,24 +10,22 @@ tags:
   - grammar
   - adjectives
 related:
-  - /learn/german/grammar/adjectives/adjective-endings/
-  - /learn/german/grammar/adjectives/adjective-comparison/
-  - /learn/german/grammar/adjectives/adverbs/
+  - /learn/german/grammar/adjectives-adverbs/adjective-endings/
+  - /learn/german/grammar/adjectives-adverbs/adjective-comparison/
+  - /learn/german/grammar/adjectives-adverbs/adverbs/
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Attributive adjectives before nouns need endings; adverbs and predicate adjectives do not.
 - Use endings before nouns: ein gutes Buch. No ending after sein or with verbs: Das Buch ist gut, Sie liest schnell.
-- The page connects the form to the sentence slot.
+- First identify whether the word describes a noun, a predicate, or an action.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -41,6 +39,12 @@ Use endings before nouns: <span lang="de">ein gutes Buch</span>. No ending after
 ## Core rule
 
 The position and function decide the ending, not the English translation.
+
+Attributive adjectives agree inside the noun phrase
+(<span lang="de">ein schnelles Auto</span>). Predicate adjectives after
+<span lang="de">sein</span> and adverbs modifying actions stay uninflected:
+<span lang="de">Das Auto ist schnell</span>,
+<span lang="de">Sie fährt schnell</span>.
 
 
 

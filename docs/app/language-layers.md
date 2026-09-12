@@ -68,11 +68,11 @@ one tree into the others:
     cases/
     prepositions/
     nouns-articles/
-    pronouns/
+    pronouns-roles/
     sentence-structure/
-    function-words/
+    function-words-negation/
     verbs/
-    adjectives/
+    adjectives-adverbs/
   common-mistakes/
 ```
 

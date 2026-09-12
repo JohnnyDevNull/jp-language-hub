@@ -1,6 +1,6 @@
 ---
 title: "Prepositions"
-description: "German preposition pages organized by fixed case, two-way direction/location choices, and da-/wo-compounds."
+description: "Choose German prepositions by case, direction or location, and dependent phrase pattern."
 metaLanguage: en
 grammarLanguage: de
 tags:
@@ -10,6 +10,8 @@ related:
   - /learn/german/grammar/cases/cases-as-roles/
   - /learn/german/grammar/prepositions/two-way-prepositions/
   - /learn/german/grammar/prepositions/prepositional-adverbs/
+  - /learn/german/grammar/prepositions/dependent-prepositions/
+  - /learn/german/grammar/prepositions/genitive-prepositions/
 ---
 
 Prepositions are the bridge between abstract case roles and real phrases.
@@ -25,6 +27,7 @@ location.
 | common prepositions with dative | [Dative prepositions](./dative-prepositions/) |
 | whether a two-way preposition means location or motion | [Two-way prepositions](./two-way-prepositions/) |
 | formal written prepositions with genitive | [Genitive prepositions](./genitive-prepositions/) |
+| which verb or adjective needs a particular preposition | [Dependent prepositions](./dependent-prepositions/) |
 | how to say *with it*, *about that*, or *what for* | [Prepositional adverbs](./prepositional-adverbs/) |
 
 ## Fixed case
@@ -49,3 +52,11 @@ to dative.
 forms such as *damit*, *dafür*, and *woran*. These matter because English and
 Swedish often keep the preposition plus pronoun where German prefers a compact
 compound.
+
+## Dependent combinations
+
+[Dependent prepositions](./dependent-prepositions/) is a phrase lookup for
+frequent combinations such as <span lang="de">warten auf</span> and
+<span lang="de">stolz auf</span>. It complements the case pages: the
+combination tells you which preposition to learn with the verb or adjective,
+while the preposition still determines the following case.

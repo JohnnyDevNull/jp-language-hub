@@ -18,12 +18,10 @@ related:
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
@@ -43,6 +41,16 @@ Choose in this order: noun gender, singular or plural, definite or indefinite me
 ## Core rule
 
 The noun owns gender; the sentence assigns case; the article displays both. That is why <span lang="de">der Mann</span> can become <span lang="de">den Mann</span> or <span lang="de">dem Mann</span>.
+
+| | masculine | feminine | neuter | plural |
+| --- | --- | --- | --- | --- |
+| nominative | <span lang="de">der Mann</span> | <span lang="de">die Frau</span> | <span lang="de">das Kind</span> | <span lang="de">die Kinder</span> |
+| accusative | <span lang="de">den Mann</span> | <span lang="de">die Frau</span> | <span lang="de">das Kind</span> | <span lang="de">die Kinder</span> |
+| dative | <span lang="de">dem Mann</span> | <span lang="de">der Frau</span> | <span lang="de">dem Kind</span> | <span lang="de">den Kindern</span> |
+
+The article is not chosen from gender alone: <span lang="de">der</span> can be
+masculine nominative or feminine dative. Ask for the sentence role before
+looking up the form.
 
 
 

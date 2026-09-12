@@ -10,23 +10,21 @@ tags:
   - grammar
   - pronouns
 related:
-  - /learn/german/grammar/pronouns/pronoun-case-choice/
+  - /learn/german/grammar/pronouns-roles/pronoun-case-choice/
   - /learn/german/grammar/cases/cases-as-roles/
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Pronouns change by person, number, gender, and case.
 - Use nominative for subjects, accusative for direct objects, and dative for recipients or dative prepositions.
-- The detail page connects the form to a practical sentence choice.
+- Choose the form by role first, then by person, number, and gender.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -40,6 +38,22 @@ Use nominative for subjects, accusative for direct objects, and dative for recip
 ## Core rule
 
 Personal pronouns replace noun phrases and keep the role of the phrase they replace.
+
+| Person | Nominative | Accusative | Dative |
+| --- | --- | --- | --- |
+| 1st singular | <span lang="de">ich</span> | <span lang="de">mich</span> | <span lang="de">mir</span> |
+| 2nd singular | <span lang="de">du</span> | <span lang="de">dich</span> | <span lang="de">dir</span> |
+| 3rd singular masculine | <span lang="de">er</span> | <span lang="de">ihn</span> | <span lang="de">ihm</span> |
+| 3rd singular feminine | <span lang="de">sie</span> | <span lang="de">sie</span> | <span lang="de">ihr</span> |
+| 3rd singular neuter | <span lang="de">es</span> | <span lang="de">es</span> | <span lang="de">ihm</span> |
+| 1st plural | <span lang="de">wir</span> | <span lang="de">uns</span> | <span lang="de">uns</span> |
+| 2nd plural | <span lang="de">ihr</span> | <span lang="de">euch</span> | <span lang="de">euch</span> |
+| 3rd plural | <span lang="de">sie</span> | <span lang="de">sie</span> | <span lang="de">ihnen</span> |
+| formal singular/plural | <span lang="de">Sie</span> | <span lang="de">Sie</span> | <span lang="de">Ihnen</span> |
+
+The same role logic applies across persons and numbers. A preposition can
+select the form directly: <span lang="de">mit mir</span>,
+<span lang="de">für ihn</span>, <span lang="de">zu uns</span>.
 
 
 
@@ -60,7 +74,7 @@ Subject forms answer who does it; object forms answer who receives or is affecte
 	items={[
 		{ prompt: 'I see him.', answer: 'Ich sehe ihn.' },
 		{ prompt: 'with her', answer: 'mit ihr' },
-		{ prompt: 'to us', answer: 'uns' },
+		{ prompt: 'to us', answer: 'zu uns' },
 	]}
 />
 

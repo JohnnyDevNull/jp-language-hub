@@ -16,7 +16,6 @@ related:
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
@@ -25,9 +24,9 @@ import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- German clause shape depends on the finite verb position.
-- Main clauses, questions, and subordinate clauses each have a reliable pattern.
-- The verb bracket explains why important verb parts often appear late.
+- In a main clause, the finite verb opens the bracket and a non-finite verb part closes it.
+- Participles, infinitives, and separable particles can form the right bracket.
+- The middle field holds objects, time, and other information between the verb parts.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -36,11 +35,13 @@ Use the German verb bracket to place infinitives, participles, particles, and ne
 
 ## Use this now
 
-Find the finite verb first. Then identify whether the clause is a statement, a question, or a subordinate clause.
+Identify the finite verb, then look for its participle, infinitive, or separable
+particle. Put that second verb part at the end of the main clause.
 
 ## Core rule
 
-German word order is field-based: the finite verb anchors the clause, and other sentence parts arrange around it.
+German main clauses often split a multi-part verb: the finite verb comes in
+second position and the non-finite part forms the right bracket.
 
 <SentenceSchema
 	caption="Verb bracket"
@@ -57,7 +58,7 @@ German word order is field-based: the finite verb anchors the clause, and other 
 	correct="Ich muss heute arbeiten."
 	lang="de"
 >
-	The finite verb position is the structural signal.
+	Place the verb parts around the middle field; do not leave the second part beside the finite verb.
 </MistakeBox>
 
 <MemoryTip>
@@ -68,8 +69,8 @@ Track the finite verb before you move anything else.
 	answerLang="de"
 	items={[
 		{ prompt: 'Correct the model mistake.', answer: 'Ich muss heute arbeiten.' },
-		{ prompt: 'What do subordinate clauses do with the finite verb?', answer: 'They place it at the end.' },
-		{ prompt: 'What owns position two in a main clause?', answer: 'the finite verb' },
+		{ prompt: 'Correct: Ich habe gelesen das Buch.', answer: 'Ich habe das Buch gelesen.' },
+		{ prompt: 'Complete the separable verb: Ich rufe dich später ___.', answer: 'Ich rufe dich später an.' },
 	]}
 />
 

@@ -17,7 +17,6 @@ related:
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
@@ -26,9 +25,9 @@ import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- German clause shape depends on the finite verb position.
-- Main clauses, questions, and subordinate clauses each have a reliable pattern.
-- The verb bracket explains why important verb parts often appear late.
+- Many German infinitive clauses use `zu` before the infinitive.
+- The infinitive stays at the end of its clause.
+- Separable verbs place `zu` between the prefix and the verb stem: `aufzustehen`.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -37,17 +36,21 @@ Use zu-infinitive clauses after many German verbs, nouns, and adjectives.
 
 ## Use this now
 
-Find the finite verb first. Then identify whether the clause is a statement, a question, or a subordinate clause.
+Check whether the governing expression licenses a `zu`-infinitive. Put `zu`
+before the infinitive, or inside a separable verb, and place the infinitive
+clause at the end.
 
 ## Core rule
 
-German word order is field-based: the finite verb anchors the clause, and other sentence parts arrange around it.
+The governing clause contains the finite verb; the dependent infinitive clause
+contains `zu` plus an infinitive. The infinitive is final, while a separable
+prefix surrounds `zu`.
 
 <SentenceSchema
 	caption="Infinitive clauses"
 	rowHeader="Pattern"
 	lang="de"
-	columns={["Main clause","Infinitive marker","Infinitive ending"]}
+	columns={["Main clause","Adverbial material","zu + infinitive"]}
 	rows={[{"label":"Plan","cells":["Ich versuche,","pünktlich","zu kommen."]},{"label":"Time","cells":["Ich habe keine Zeit,","lange","zu warten."]},{"label":"Separable","cells":["Ich plane,","früh","aufzustehen."]}]}
 />
 
@@ -58,7 +61,7 @@ German word order is field-based: the finite verb anchors the clause, and other 
 	correct="Ich versuche zu kommen."
 	lang="de"
 >
-	The finite verb position is the structural signal.
+	`zu` belongs to the infinitive, not to the finite verb.
 </MistakeBox>
 
 <MemoryTip>
@@ -69,8 +72,8 @@ Track the finite verb before you move anything else.
 	answerLang="de"
 	items={[
 		{ prompt: 'Correct the model mistake.', answer: 'Ich versuche zu kommen.' },
-		{ prompt: 'What do subordinate clauses do with the finite verb?', answer: 'They place it at the end.' },
-		{ prompt: 'What owns position two in a main clause?', answer: 'the finite verb' },
+		{ prompt: 'Complete: Ich hoffe, bald ___ . (kommen)', answer: 'Ich hoffe, bald zu kommen.' },
+		{ prompt: 'Complete the separable infinitive: früh ___ . (aufstehen)', answer: 'früh aufzustehen' },
 	]}
 />
 

@@ -17,7 +17,6 @@ related:
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
@@ -26,9 +25,9 @@ import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- German clause shape depends on the finite verb position.
-- Main clauses, questions, and subordinate clauses each have a reliable pattern.
-- The verb bracket explains why important verb parts often appear late.
+- A relative clause describes a noun and is separated by commas.
+- Choose the relative pronoun's gender and number from the noun, but its case from its role inside the relative clause.
+- The finite verb goes to the end of the relative clause.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -37,11 +36,14 @@ Use German relative pronouns with case and verb-final order.
 
 ## Use this now
 
-Find the finite verb first. Then identify whether the clause is a statement, a question, or a subordinate clause.
+Start with the noun's gender and number. Then ask what role the relative
+pronoun has in its own clause to choose nominative, accusative, or dative.
 
 ## Core rule
 
-German word order is field-based: the finite verb anchors the clause, and other sentence parts arrange around it.
+Relative clauses are subordinate clauses: the relative pronoun starts the
+clause and the finite verb comes last. The pronoun's case is independent of
+the noun's role in the main clause.
 
 <SentenceSchema
 	caption="Relative clauses"
@@ -58,7 +60,7 @@ German word order is field-based: the finite verb anchors the clause, and other 
 	correct="der Mann, den ich kenne"
 	lang="de"
 >
-	The finite verb position is the structural signal.
+	Gender and number look back to the noun; case comes from the relative clause.
 </MistakeBox>
 
 <MemoryTip>
@@ -69,8 +71,8 @@ Track the finite verb before you move anything else.
 	answerLang="de"
 	items={[
 		{ prompt: 'Correct the model mistake.', answer: 'der Mann, den ich kenne' },
-		{ prompt: 'What do subordinate clauses do with the finite verb?', answer: 'They place it at the end.' },
-		{ prompt: 'What owns position two in a main clause?', answer: 'the finite verb' },
+		{ prompt: 'Choose the pronoun: der Mann, ___ ich kenne.', answer: 'der Mann, den ich kenne' },
+		{ prompt: 'Choose the pronoun: die Frau, ___ ich helfe.', answer: 'die Frau, der ich helfe' },
 	]}
 />
 

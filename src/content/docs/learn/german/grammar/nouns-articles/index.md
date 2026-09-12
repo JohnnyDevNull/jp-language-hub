@@ -1,6 +1,6 @@
 ---
 title: "Nouns and articles"
-description: "German noun and article pages organized by gender, definiteness, number, compound nouns, and visible case signals."
+description: "Choose German noun-phrase signals from gender, number, definiteness, and case."
 metaLanguage: en
 grammarLanguage: de
 tags:
@@ -8,13 +8,15 @@ tags:
   - nouns
 related:
   - /learn/german/grammar/nouns-articles/articles-and-gender/
+  - /learn/german/grammar/nouns-articles/der-die-das/
+  - /learn/german/grammar/nouns-articles/ein-words/
   - /learn/german/grammar/cases/cases-as-roles/
-  - /learn/german/grammar/adjectives/adjective-endings/
+  - /learn/german/grammar/adjectives-adverbs/adjective-endings/
 ---
 
-German noun phrases carry a lot of grammar in small words. Learn the noun with
-its gender, decide singular or plural, decide definite or indefinite meaning,
-then choose the visible article signal from the case.
+German noun phrases carry grammar in small, visible signals. Learn the noun
+with its gender and plural, decide what the phrase means, then choose the
+article and case before adding any adjective ending.
 
 ## Choose by question
 
@@ -28,17 +30,18 @@ then choose the visible article signal from the case.
 
 ## The decision order
 
-1. Store the noun with its gender: *der Tisch*, *die Tür*, *das Buch*.
+1. Store the noun with its gender: <span lang="de">der Tisch</span>,
+   <span lang="de">die Tür</span>, <span lang="de">das Buch</span>.
 2. Decide singular or plural.
 3. Decide definite, indefinite, negative, or possessive meaning.
 4. Decide the case from the sentence role or preposition.
-5. Choose the article signal the listener or reader needs.
+5. Choose the article signal, then make the adjective agree if needed.
 
 ## Where this connects
 
 - [Cases as roles](../cases/cases-as-roles/) explains why the article changes.
-- [Possessive pronouns](../pronouns/possessive-pronouns/) behave like article
+- [Possessive pronouns](../pronouns-roles/possessive-pronouns/) behave like article
   words and reuse this signal system.
-- [Adjective endings](../adjectives/adjective-endings/) shares the same signal
+- [Adjective endings](../adjectives-adverbs/adjective-endings/) shares the same signal
   logic: the article usually carries the strongest clue, and the adjective
   fills what is missing.

@@ -17,7 +17,6 @@ related:
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
@@ -26,9 +25,9 @@ import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- German clause shape depends on the finite verb position.
-- Main clauses, questions, and subordinate clauses each have a reliable pattern.
-- The verb bracket explains why important verb parts often appear late.
+- Yes/no questions begin with the finite verb.
+- Question-word questions put the question word first and the finite verb second.
+- Keep the subject after the finite verb unless the question word is the subject.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -37,11 +36,13 @@ Build German yes/no questions and question-word questions with verb position.
 
 ## Use this now
 
-Find the finite verb first. Then identify whether the clause is a statement, a question, or a subordinate clause.
+First decide whether the expected answer is yes/no or information. Then place
+the finite verb first (yes/no) or after the question word (information).
 
 ## Core rule
 
-German word order is field-based: the finite verb anchors the clause, and other sentence parts arrange around it.
+German yes/no questions use verb-first order. Question-word questions keep the
+question word in the first field and use V2 order for the rest of the clause.
 
 <SentenceSchema
 	caption="Questions"
@@ -58,7 +59,7 @@ German word order is field-based: the finite verb anchors the clause, and other 
 	correct="Kommst du heute?"
 	lang="de"
 >
-	The finite verb position is the structural signal.
+	A question word does not remove the finite verb from position two.
 </MistakeBox>
 
 <MemoryTip>
@@ -69,8 +70,8 @@ Track the finite verb before you move anything else.
 	answerLang="de"
 	items={[
 		{ prompt: 'Correct the model mistake.', answer: 'Kommst du heute?' },
-		{ prompt: 'What do subordinate clauses do with the finite verb?', answer: 'They place it at the end.' },
-		{ prompt: 'What owns position two in a main clause?', answer: 'the finite verb' },
+		{ prompt: 'Turn into a yes/no question: Du kommst heute.', answer: 'Kommst du heute?' },
+		{ prompt: 'Complete the question: Wann ___ du? (kommen)', answer: 'Wann kommst du?' },
 	]}
 />
 

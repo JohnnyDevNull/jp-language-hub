@@ -10,24 +10,22 @@ tags:
   - grammar
   - adjectives
 related:
-  - /learn/german/grammar/adjectives/adjective-endings/
-  - /learn/german/grammar/adjectives/adjective-comparison/
-  - /learn/german/grammar/adjectives/adjectives-vs-adverbs/
+  - /learn/german/grammar/adjectives-adverbs/adjective-endings/
+  - /learn/german/grammar/adjectives-adverbs/adjective-comparison/
+  - /learn/german/grammar/adjectives-adverbs/adjectives-vs-adverbs/
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
-import LanguageComparison from '~/components/LanguageComparison.astro';
 import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - German adverbs do not take adjective agreement endings when they modify verbs or clauses.
 - Use the same base form in many adverbial uses: Sie singt schön.
-- The page connects the form to the sentence slot.
+- Keep the base form when the word modifies a verb, adjective, or whole clause.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -41,6 +39,11 @@ Use the same base form in many adverbial uses: <span lang="de">Sie singt schön<
 ## Core rule
 
 Adverb placement depends on sentence structure and emphasis, but the finite verb position remains stable.
+
+Adverbs can express manner (<span lang="de">schnell</span>), time
+(<span lang="de">heute</span>), place (<span lang="de">dort</span>), or frequency
+(<span lang="de">oft</span>). They do not agree with the subject or object:
+<span lang="de">Die Kinder spielen oft draußen</span>.
 
 
 
