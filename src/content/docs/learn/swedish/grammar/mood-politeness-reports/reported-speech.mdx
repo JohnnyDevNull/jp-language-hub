@@ -1,0 +1,143 @@
+---
+title: Reported speech
+description: Report Swedish statements and questions while adjusting viewpoint, reference words, and tense carefully.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - B2
+tags:
+  - grammar
+  - sentence-structure
+  - verbs
+related:
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+  - /learn/swedish/grammar/questions-negation/question-words/
+  - /learn/swedish/grammar/pronouns-roles/personal-pronouns/
+  - /learn/swedish/grammar/verbs-time-forms/tense-perspectives/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Report a statement with <Sv>att</Sv>, a yes/no question with <Sv>om</Sv>, and
+  a wh-question with its question word.
+- Reported questions use subordinate-clause order, not direct-question
+  inversion.
+- Change pronouns and time or place words when the reporting viewpoint changes;
+  Swedish tense does not require automatic English-style backshift.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Reported speech presents the content of somebody's words without repeating the
+original sentence as a quotation.
+
+## Use this now
+
+| Original message | Reporting link | Report |
+| --- | --- | --- |
+| statement | <Sv>att</Sv> | <Sv>Hon säger att hon kommer.</Sv> |
+| yes/no question | <Sv>om</Sv> | <Sv>Han frågar om jag kommer.</Sv> |
+| wh-question | same question word | <Sv>Hon frågar när tåget går.</Sv> |
+
+## Statements with <Sv>att</Sv>
+
+Use a reporting verb such as <Sv>säga</Sv>, <Sv>berätta</Sv>, or
+<Sv>förklara</Sv> followed by an <Sv>att</Sv> clause:
+
+<Sv>Lisa säger: “Jag är trött.”</Sv> →
+<Sv>Lisa säger att hon är trött.</Sv>
+
+## Reported questions
+
+A yes/no question becomes an <Sv>om</Sv> clause. A wh-question keeps its
+question word. Both use subordinate-clause order:
+
+<SentenceSchema
+	caption="Word order in reported questions"
+	columns={['Link', 'Subject', 'Sentence adverb', 'Finite verb', 'Rest']}
+	rows={[
+		{ label: 'Yes/no report', lang: 'sv', cells: ['om', 'du', 'inte', 'kan', 'komma'] },
+		{ label: 'Wh-report', lang: 'sv', cells: ['varför', 'hon', '', 'gick', 'hem'] },
+	]}
+/>
+
+- <Sv>Han frågar om du inte kan komma.</Sv>
+- <Sv>Jag undrar varför hon gick hem.</Sv>
+
+Do not keep direct-question inversion: <Sv>varför hon gick</Sv>, not
+<Sv>varför gick hon</Sv> inside the report.
+
+## Viewpoint changes
+
+Adjust forms only when the reporting situation requires it:
+
+- person: <Sv>jag</Sv> may become <Sv>hon</Sv> or <Sv>han</Sv>
+- possession: <Sv>min</Sv> may become <Sv>hennes</Sv>, <Sv>hans</Sv>, or a
+  reflexive possessive in the relevant clause
+- time: <Sv>i dag</Sv> may become <Sv>den dagen</Sv>
+- place: <Sv>här</Sv> may become <Sv>där</Sv>
+
+If the original viewpoint is still shared, a change may be unnecessary.
+
+## Tense behavior
+
+Swedish often keeps a tense that is still true or still relevant:
+<Sv>Hon sa att hon bor i Malmö.</Sv> can report a current fact. A past form is
+also natural when the report belongs to a past frame or the situation no longer
+holds: <Sv>Hon sa att hon bodde i Malmö.</Sv>
+
+Do not apply a mechanical English backshift rule. Choose the tense from the
+speaker's current time perspective and the intended meaning.
+
+## Direct comparison
+
+<LanguageComparison title="A reported question">
+	<p slot="de">Sie fragt, wann der Zug fährt.</p>
+	<p slot="en">She asks when the train leaves.</p>
+	<p slot="sv">Hon frågar när tåget går.</p>
+</LanguageComparison>
+
+<MistakeBox title="Common mistakes">
+	- ❌ <Sv>Han frågar att jag kommer.</Sv>
+	  ✅ <Sv>Han frågar om jag kommer.</Sv>
+	- ❌ <Sv>Hon frågar var bor du.</Sv>
+	  ✅ <Sv>Hon frågar var du bor.</Sv>
+	- Do not change every present to a past merely because the reporting verb is
+	  past.
+</MistakeBox>
+
+<MemoryTip>
+Choose the link first: statement <Sv>att</Sv>, yes/no question <Sv>om</Sv>,
+wh-question the original question word. Then switch to subordinate-clause
+order.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{ prompt: 'Report: Hon säger: “Jag är trött.”', answer: 'Hon säger att hon är trött.' },
+		{ prompt: 'Report: Han asks me, “Kommer du?”', answer: 'Han frågar om jag kommer.' },
+		{ prompt: 'Correct: Hon frågar var bor du.', answer: 'Hon frågar var du bor.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../sentence-structure/subordinate-clauses/', label: 'Subordinate clauses' },
+		{ href: '../../questions-negation/question-words/', label: 'Question words' },
+		{ href: '../../pronouns-roles/personal-pronouns/', label: 'Personal pronouns' },
+		{ href: '../../verbs-time-forms/tense-perspectives/', label: 'Tense perspectives' },
+	]}
+/>

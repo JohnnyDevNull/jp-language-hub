@@ -1,6 +1,6 @@
 ---
 title: Conditions and consequences
-description: Swedish patterns for if-clauses, counterfactuals, and stating what follows from something.
+description: Ready-to-use Swedish phrases for conditions, alternatives, warnings, and consequences.
 metaLanguage: en
 grammarLanguage: sv
 comparisonLanguages:
@@ -16,7 +16,7 @@ tags:
 related:
   - /learn/swedish/grammar/sentence-structure/inversion/
   - /learn/swedish/grammar/sentence-structure/biff/
-  - /learn/swedish/grammar/verbs/preterite/
+  - /learn/swedish/grammar/mood-politeness-reports/conditionals/
   - /learn/swedish/sentence-patterns/reasons-and-examples/
 ---
 
@@ -28,17 +28,18 @@ import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- A fronted <Sv>om</Sv>-clause fills position one, so the main clause starts
-  with its finite verb: <Sv>Om det regnar stannar jag hemma.</Sv>
-- Swedish has no separate word for "unless": use <Sv>om … inte</Sv>.
-- A counterfactual uses the preterite in the condition and
-  <Sv>skulle</Sv> + infinitive in the result.
+- Start with <Sv>om</Sv> for an everyday “if,” and use <Sv>om … inte</Sv> for
+  the most direct “if not” or many everyday “unless” messages.
+- Use <Sv>i så fall</Sv> for “in that case” and <Sv>annars</Sv> for “otherwise.”
+- This page gives production frames; Conditionals owns the form-and-meaning
+  system, and the word-order pages own clause position.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Conditions are where word order and pattern meet: the phrase list is short, but
-the clause after it has to be built correctly.
+Use these frames when you need to react, negotiate an alternative, warn about a
+result, or say what follows. For choosing present, hypothetical, or past
+counterfactual forms, use [Conditionals](../../grammar/mood-politeness-reports/conditionals/).
 
 ## Expressing a condition
 
@@ -47,7 +48,7 @@ the clause after it has to be built correctly.
 | <Sv>Om …</Sv> | plain condition | neutral |
 | <Sv>Om … så …</Sv> | marks the main clause explicitly; common in speech | spoken |
 | <Sv>Ifall …</Sv> | in case, if | neutral |
-| <Sv>om … inte …</Sv> | unless | neutral |
+| <Sv>om … inte …</Sv> | if not; often unless | neutral |
 | <Sv>så länge …</Sv> | as long as | neutral |
 | <Sv>Om jag var du skulle jag …</Sv> | if I were you | neutral |
 | <Sv>Tänk om …</Sv> | what if, imagine if | spoken |
@@ -66,9 +67,9 @@ the clause after it has to be built correctly.
 | <Sv>Det leder till att …</Sv> | that leads to | neutral to formal |
 | <Sv>… så att …</Sv> | so that, marking the result | neutral |
 
-<Sv>därför</Sv> and <Sv>annars</Sv> are adverbs in position one, which is why
-the subject lands after the verb: <Sv>annars kommer vi för sent</Sv>, not
-<Sv>annars vi kommer</Sv>.
+When <Sv>därför</Sv> or <Sv>annars</Sv> fills position one, Swedish uses the V2
+pattern: <Sv>annars kommer vi för sent</Sv>. See
+[Inversion](../../grammar/sentence-structure/inversion/) for the position rule.
 
 ## Direct comparison
 
@@ -87,14 +88,19 @@ position — so German is the right model here and English the misleading one.
 	<p slot="sv">Vi går ut om det inte regnar.</p>
 </LanguageComparison>
 
-Note <Sv>om det inte regnar</Sv>: inside a subordinate clause <Sv>inte</Sv>
-comes before the finite verb.
+<Sv>Om det inte regnar</Sv> is the plain everyday choice here. Swedish also has
+more restrictive or formal alternatives such as <Sv>såvida inte</Sv>; there is
+no single replacement that fits every English use of *unless*.
 
 <LanguageComparison title="Counterfactual">
 	<p slot="de">Wenn ich Zeit hätte, würde ich mitkommen.</p>
 	<p slot="en">If I had time, I would come along.</p>
 	<p slot="sv">Om jag hade tid skulle jag följa med.</p>
 </LanguageComparison>
+
+The example is a useful ready-made frame. The grammar behind hypothetical and
+past counterfactual choices belongs on the
+[Conditionals](../../grammar/mood-politeness-reports/conditionals/) page.
 
 <LanguageComparison title="Otherwise">
 	<p slot="de">Beeil dich, sonst kommen wir zu spät.</p>
@@ -128,6 +134,6 @@ comes before the finite verb.
 		{ href: '../reasons-and-examples/', label: 'Reasons and examples' },
 		{ href: '../../grammar/sentence-structure/inversion/', label: 'Inversion' },
 		{ href: '../../grammar/sentence-structure/biff/', label: 'BIFF' },
-		{ href: '../../grammar/verbs/preterite/', label: 'Preterite' },
+		{ href: '../../grammar/mood-politeness-reports/conditionals/', label: 'Conditionals' },
 	]}
 />

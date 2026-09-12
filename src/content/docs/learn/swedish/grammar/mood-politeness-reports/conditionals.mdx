@@ -1,0 +1,139 @@
+---
+title: Conditionals
+description: Build real, hypothetical, and past counterfactual Swedish conditions through B2.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+  - B1
+  - B2
+tags:
+  - grammar
+  - sentence-structure
+  - verbs
+related:
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+  - /learn/swedish/grammar/verbs-time-forms/future-forms/
+  - /learn/swedish/sentence-patterns/conditions-and-consequences/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Use <Sv>om</Sv> + present for a real or open condition; the consequence can
+  use the present, an imperative, or a suitable future expression.
+- Use preterite with <Sv>skulle</Sv> for an imagined present or future.
+- Use pluperfect with <Sv>skulle ha</Sv> + supine for a past situation that did
+  not happen.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+A conditional connects a condition with its consequence. The verb forms show
+whether the speaker treats the condition as open, imagined, or contrary to a
+known past.
+
+## Use this now
+
+| Meaning | Condition | Consequence |
+| --- | --- | --- |
+| real or open | <Sv>om</Sv> + present | present, imperative, or future expression |
+| imagined present/future | <Sv>om</Sv> + preterite | <Sv>skulle</Sv> + infinitive |
+| unreal past | <Sv>om</Sv> + pluperfect | <Sv>skulle ha</Sv> + supine |
+
+## Real and open conditions
+
+Use present after <Sv>om</Sv> when the condition is genuinely possible:
+
+- <Sv>Om det regnar, stannar vi hemma.</Sv>
+- <Sv>Om du har tid, ring mig.</Sv>
+- <Sv>Om tåget är sent, kommer jag att skriva.</Sv>
+
+Do not add a future auxiliary automatically inside the <Sv>om</Sv> clause.
+
+<SentenceSchema
+	caption="Open conditions and their consequences"
+	columns={['Condition', 'Finite verb', 'Rest', 'Main clause']}
+	rows={[
+		{ label: 'Open', lang: 'sv', cells: ['Om det', 'regnar', '', 'stannar vi hemma'] },
+		{ label: 'Open', lang: 'sv', cells: ['Om du', 'har', 'tid', 'ring mig'] },
+	]}
+/>
+
+## Present and future hypothetical
+
+Use a preterite form in the condition and <Sv>skulle</Sv> + infinitive in the
+consequence when you imagine a less real present or future:
+
+<Sv>Om jag hade mer tid, skulle jag läsa mer.</Sv>
+
+The preterite here signals distance from reality, not simply past time.
+
+## Past counterfactual
+
+For a past condition that did not happen, use pluperfect in the condition and
+<Sv>skulle ha</Sv> + supine in the consequence:
+
+<Sv>Om jag hade vetat det, skulle jag ha ringt.</Sv>
+
+This practical B2 pattern is enough for most everyday counterfactuals.
+
+## Alternatives to <Sv>om</Sv>
+
+<Sv>Om inte</Sv> is the clearest general equivalent of *if not* and often of
+*unless*: <Sv>Jag går inte om du inte följer med.</Sv> Swedish also uses
+expressions such as <Sv>såvida inte</Sv> in more formal or restrictive
+contexts. Choose the phrase that matches the intended condition rather than
+assuming English *unless* has only one fixed Swedish form.
+
+## Direct comparison
+
+<LanguageComparison title="Imagined present">
+	<p slot="de">Wenn ich mehr Zeit hätte, würde ich mehr lesen.</p>
+	<p slot="en">If I had more time, I would read more.</p>
+	<p slot="sv">Om jag hade mer tid, skulle jag läsa mer.</p>
+</LanguageComparison>
+
+<MistakeBox title="Common mistakes">
+	- Do not read every preterite in an <Sv>om</Sv> clause as past time; it can
+	  mark hypothetical distance.
+	- <Sv>Om jag hade mer tid, skulle jag läsa mer</Sv> is the neutral default
+	  for an imagined present. <Sv>Om jag skulle ha mer tid …</Sv> is also
+	  grammatical, but presents the condition more tentatively or as a marked
+	  possibility; do not label it as an error.
+	- Keep the normal subordinate-clause order after <Sv>om</Sv>; see
+	  [Subordinate clauses](../../sentence-structure/subordinate-clauses/).
+</MistakeBox>
+
+<MemoryTip>
+Open: present. Imagined now or later: preterite + <Sv>skulle</Sv>. Unreal past:
+pluperfect + <Sv>skulle ha</Sv>.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{ prompt: 'Complete an open condition: Om det regnar, …', answer: 'Om det regnar, stannar vi hemma.' },
+		{ prompt: 'Make it hypothetical: I would travel if I had time.', answer: 'Jag skulle resa om jag hade tid.' },
+		{ prompt: 'Make it past counterfactual: If I had known, I would have called.', answer: 'Om jag hade vetat, skulle jag ha ringt.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../sentence-structure/subordinate-clauses/', label: 'Subordinate clauses' },
+		{ href: '../../verbs-time-forms/future-forms/', label: 'Future forms' },
+		{ href: '../../../sentence-patterns/conditions-and-consequences/', label: 'Conditions and consequences' },
+	]}
+/>

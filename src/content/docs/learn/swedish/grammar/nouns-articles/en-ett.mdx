@@ -17,6 +17,7 @@ tags:
 related:
   - /learn/swedish/grammar/nouns-articles/noun-forms/
   - /learn/swedish/grammar/nouns-articles/plural-overview/
+  - /learn/swedish/grammar/nouns-articles/possession/
   - /learn/swedish/grammar/adjectives-adverbs/agreement/
   - /learn/swedish/grammar/adjectives-adverbs/adjective-comparison/
 ---
@@ -37,7 +38,7 @@ import TagList from '~/components/TagList.astro';
   <Sv>ett hus</Sv>, never as the bare noun.
 - <Sv>en</Sv> is the better guess: en-words are the clear majority, and several
   derivational endings make the guess safer.
-- A compound takes the gender of its **last** element, without exception.
+- Productive compounds normally take the gender of their **last** element.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -55,7 +56,7 @@ When you need to use a new noun, choose the safest path in this order:
 | You are learning a new noun | Store it with its article, not alone. | <Sv>en bil</Sv>, <Sv>ett hus</Sv> |
 | You have no clue | Guess <Sv>en</Sv>, then check later. | <Sv>en dag</Sv>, <Sv>en fråga</Sv> |
 | The noun has a strong ending signal | Let the ending guide you, but still learn the full noun phrase. | <Sv>en tidning</Sv>, <Sv>ett bibliotek</Sv> |
-| The noun is a compound | Use the gender of the final element. | <Sv>ett sommarhus</Sv> from <Sv>ett hus</Sv> |
+| The noun looks like an ordinary productive compound | Start with the final element's gender, then check unknown words. | <Sv>ett sommarhus</Sv> from <Sv>ett hus</Sv> |
 | You add an adjective | Match the adjective to the noun's gender and number. | <Sv>en stor bil</Sv>, <Sv>ett stort hus</Sv> |
 
 For everyday speech, the most useful habit is simple: say the noun aloud with
@@ -72,8 +73,8 @@ definite form, and adjective pattern a sentence will need later.
 There is no completely reliable rule that predicts the gender of every Swedish
 noun. Learn the article together with the noun: not merely
 <Sv>bil</Sv>, but <Sv>en bil</Sv>. Some word
-endings are regular enough to narrow the guess down, and compounds follow a
-rule that always holds.
+endings are regular enough to narrow the guess down, and productive compounds
+normally follow the final element.
 
 <RuleBox>
 	Learn a Swedish noun together with its article. The article is part of the
@@ -138,11 +139,11 @@ Nouns for people and animals are usually en-words —
 <Sv>ett barn</Sv>, <Sv>ett djur</Sv>,
 <Sv>ett lejon</Sv>.
 
-## Compounds follow their last element
+## Productive compounds normally follow their last element
 
-This rule has no exceptions and is the most useful of all, because Swedish
-builds compounds constantly. The gender of a compound is the gender of its
-**final** element; the earlier elements do not matter:
+This is the most useful gender rule because Swedish builds compounds
+constantly. In productive compounds, the final element is the head and
+normally supplies the compound's gender; the earlier elements do not matter:
 
 | Parts | Compound |
 | --- | --- |
@@ -151,13 +152,14 @@ builds compounds constantly. The gender of a compound is the gender of its
 | <Sv>en sommar</Sv> + <Sv>ett hus</Sv> | <Sv>ett sommarhus</Sv> |
 | <Sv>en post</Sv> + <Sv>ett kontor</Sv> | <Sv>ett postkontor</Sv> |
 
-The definite and plural forms follow the last element too:
+For ordinary productive compounds, the definite and plural forms normally follow
+the last element too:
 <Sv>ett cykelhjul → cykelhjulet</Sv>,
 <Sv>en tågstation → tågstationen</Sv>.
 
 <RuleBox title="Reliable shortcut">
-	For any compound noun, look up only the last element. Its gender, definite
-	suffix, and plural carry over to the whole word.
+	For an ordinary productive compound, start with the last element. Its gender,
+	definite suffix, and plural pattern normally carry over to the whole word.
 </RuleBox>
 
 ## Indefinite and definite
@@ -278,6 +280,7 @@ Also keep the adjective consistent:
 	topics={[
 		{ href: '../noun-forms/', label: 'Noun forms' },
 		{ href: '../plural-overview/', label: 'Plural overview' },
+		{ href: '../possession/', label: 'Possession' },
 		{
 			href: '../../adjectives-adverbs/agreement/',
 			label: 'Adjective agreement',

@@ -15,8 +15,8 @@ tags:
   - cheat-sheet
   - verbs
 related:
-  - /learn/swedish/grammar/verbs/verb-forms/
-  - /learn/swedish/grammar/verbs/verb-groups/
+  - /learn/swedish/grammar/verbs-time-forms/verb-forms/
+  - /learn/swedish/grammar/verb-patterns-voice/verb-groups/
 ---
 
 ## Form chain
@@ -59,8 +59,9 @@ The form is the same for every person:
 | s-passive, supine | supine + <span lang="sv">-s</span> | <span lang="sv">Dörren har öppnats.</span> |
 | bli-passive | <span lang="sv">bli</span> + agreeing participle | <span lang="sv">Huset blev sålt.</span> |
 
-Routine or general rule → s-passive. One specific event →
-<span lang="sv">bli</span>. The agent takes <span lang="sv">av</span>:
+Routine or general rule often → s-passive. <span lang="sv">bli</span> +
+participle highlights an event or change, but the s-passive can also describe a
+specific event. The agent takes <span lang="sv">av</span>:
 <span lang="sv">skrevs av Astrid Lindgren</span>.
 
 <span lang="sv">finns, hoppas, trivs, minns, lyckas, andas</span> end in
@@ -80,9 +81,10 @@ Learn present — preterite — supine as one spoken chain:
 
 ## Full references
 
-- [Verb forms](../../grammar/verbs/verb-forms/)
-- [Present tense](../../grammar/verbs/present/)
-- [Preterite](../../grammar/verbs/preterite/)
-- [Perfect](../../grammar/verbs/perfect/)
-- [Verb groups](../../grammar/verbs/verb-groups/)
-- [Passive](../../grammar/verbs/passive/)
+- [Verb forms](../../grammar/verbs-time-forms/verb-forms/)
+- [Present tense](../../grammar/verbs-time-forms/present/)
+- [Preterite](../../grammar/verbs-time-forms/preterite/)
+- [Perfect](../../grammar/verbs-time-forms/perfect/)
+- [Verb groups](../../grammar/verb-patterns-voice/verb-groups/)
+- [Passive](../../grammar/verb-patterns-voice/passive/)
+- [Active vs passive](../../grammar/verb-patterns-voice/active-vs-passive/)

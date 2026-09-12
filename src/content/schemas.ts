@@ -33,7 +33,7 @@ const tagsSchema = z
 
 const relatedRouteSchema = z.string().regex(
 	/^\/(?:[a-z0-9-]+\/)*[a-z0-9-]+\/?$/,
-	'Related entries must be absolute site routes such as /learn/swedish/grammar/verbs/present/.',
+	'Related entries must be absolute site routes such as /learn/swedish/grammar/verbs-time-forms/present/.',
 );
 
 export const docsMetadataSchema = z.object({

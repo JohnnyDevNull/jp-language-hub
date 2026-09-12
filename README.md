@@ -14,8 +14,9 @@ the distinction:
   translated content is added.
 - **Learning language** — the language being learned. It is the route prefix
   `/learn/<language>/`, and each learning language has its own sidebar tree,
-  chosen through a select above the navigation. Swedish is the current focus;
-  German and English hold an entry page only.
+  chosen through a select above the navigation. Swedish remains the current
+  focus; English has a focused grammar and common-mistakes tree; German has a
+  broad grammar and common-mistakes tree.
 - **Comparison languages** — German, English and Swedish shown side by side to
   explain a rule. A dimension inside a page via `LanguageComparison`, never
   separate pages.
@@ -85,11 +86,14 @@ src/content/docs/
 │   ├── swedish/
 │   │   ├── grammar/
 │   │   │   ├── sentence-structure/
+│   │   │   ├── questions-negation/
 │   │   │   ├── nouns-articles/
-│   │   │   ├── numerals/
+│   │   │   ├── pronouns-roles/
 │   │   │   ├── adjectives-adverbs/
-│   │   │   ├── verbs/
-│   │   │   └── pronouns-function-words/
+│   │   │   ├── verbs-time-forms/
+│   │   │   ├── verb-patterns-voice/
+│   │   │   ├── mood-politeness-reports/
+│   │   │   └── prepositions-function-words/
 │   │   ├── vocabulary/
 │   │   ├── common-mistakes/
 │   │   ├── cheat-sheets/

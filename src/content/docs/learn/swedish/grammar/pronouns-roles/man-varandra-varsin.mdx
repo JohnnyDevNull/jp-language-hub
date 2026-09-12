@@ -14,9 +14,9 @@ tags:
   - grammar
   - pronouns
 related:
-  - /learn/swedish/grammar/pronouns-function-words/nagon-nagot-ingen-inget/
-  - /learn/swedish/grammar/pronouns-function-words/sin-sitt-sina/
-  - /learn/swedish/grammar/verbs/passive/
+  - /learn/swedish/grammar/pronouns-roles/nagon-nagot-ingen-inget/
+  - /learn/swedish/grammar/pronouns-roles/sin-sitt-sina/
+  - /learn/swedish/grammar/verb-patterns-voice/passive/
   - /learn/swedish/common-mistakes/from-english/
 ---
 
@@ -31,9 +31,10 @@ import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- <Sv>Man</Sv> is the general subject, with the object form <Sv>en</Sv> and the
-  reflexive possessive <Sv>sin</Sv>.
-- <Sv>Varandra</Sv> means *each other* and only ever appears as an object.
+- <Sv>Man</Sv> is the general subject, with object <Sv>en</Sv>, genitive
+  <Sv>ens</Sv>, and reflexive possessive <Sv>sin / sitt / sina</Sv>.
+- <Sv>Varandra</Sv> means *each other*. It is never a subject, but it can be a
+  verb object or follow a preposition.
 - <Sv>Var sin</Sv> and <Sv>var sitt</Sv> mean one each, and follow the gender of
   the thing possessed.
 </KeyTakeaway>
@@ -45,9 +46,8 @@ and about people in relation to each other.
 
 ## man for general statements
 
-<Sv>Man</Sv> works exactly like German
-<span lang="de">man</span>: it makes a statement about people in general
-without naming anyone.
+<Sv>Man</Sv> works like German <span lang="de">man</span> when both are
+pronouns: it makes a statement about people in general without naming anyone.
 
 - <Sv>Man får inte parkera här.</Sv> — *You may not park here.*
 - <Sv>Så säger man i Sverige.</Sv> — *That is what people say in
@@ -57,17 +57,21 @@ English has no single equivalent, which is why English speakers tend to reach
 for a passive instead. In Swedish, <Sv>man</Sv> is often the more
 natural choice.
 
-<Sv>Man</Sv> has its own object form and possessive:
+<Sv>Man</Sv> has an object form, a genitive form, and a separate reflexive
+possessive:
 
 | Function | Form | Example |
 | --- | --- | --- |
 | subject | <Sv>man</Sv> | <Sv>Man vet aldrig.</Sv> |
 | object | <Sv>en</Sv> | <Sv>Det gör en glad.</Sv> |
-| possessive | <Sv>sin / sitt / sina</Sv> | <Sv>Man måste ta sitt ansvar.</Sv> |
+| genitive / ordinary possessive | <Sv>ens</Sv> | <Sv>Det påverkar ens hälsa.</Sv> |
+| reflexive possessive | <Sv>sin / sitt / sina</Sv> | <Sv>Man måste ta sitt ansvar.</Sv> |
 
-Because <Sv>man</Sv> is a third-person subject, its possessive is
-the reflexive <Sv>sin</Sv>. See
-[sin, sitt, and sina](../sin-sitt-sina/).
+Use <Sv>ens</Sv> for general “one's” possession when the possessor is not the
+subject owning something inside that same clause. When <Sv>man</Sv> is the
+subject and the possession points back to it, use the reflexive
+<Sv>sin / sitt / sina</Sv>: <Sv>Man måste ta sitt ansvar</Sv>. See
+[*sin, sitt, sina*](../sin-sitt-sina/) for the clause-boundary rule.
 
 <RuleBox title="Do not confuse man with a noun">
 	<Sv>Man</Sv> as a pronoun is unstressed and never takes an
@@ -77,10 +81,12 @@ the reflexive <Sv>sin</Sv>. See
 
 ## varandra for "each other"
 
-<Sv>Varandra</Sv> is invariable and appears only as an object,
-never as a subject. Its genitive is <Sv>varandras</Sv>:
+<Sv>Varandra</Sv> is invariable and never acts as a subject. It can be the
+object of a verb or the complement after a preposition. Its genitive is
+<Sv>varandras</Sv>:
 
 - <Sv>De hjälper varandra.</Sv> — *They help each other.*
+- <Sv>De talar med varandra.</Sv> — *They talk to each other.*
 - <Sv>Vi läser varandras texter.</Sv> — *We read each other's
   texts.*
 
@@ -91,8 +97,12 @@ instead:
   varandra varje vecka.</Sv>
 - <Sv>Vi ses!</Sv>
 
-See [passive](../../verbs/passive/) for that
+See [passive](../../verb-patterns-voice/passive/) for that
 <Sv>-s</Sv>.
+
+Because <Sv>varandra</Sv> is an object, it may still be fronted under the V2
+rule: <Sv>Varandra hjälper de</Sv> is marked but grammatical (“Each other is
+who they help”). Front position does not turn it into the subject.
 
 ## var sin: one each
 
@@ -150,6 +160,20 @@ meaning *anyway*.
 German has the same <span lang="de">man</span>; English has to choose between
 *you*, *people*, or a passive.
 
+## Common mistakes
+
+<MistakeBox title="Common mistakes">
+	- ❌ <Sv>Man måste ta hans ansvar.</Sv>
+	  ✅ <Sv>Man måste ta sitt ansvar.</Sv>
+	- ❌ <Sv>Varandra hjälper.</Sv> when you mean “They help each other.”
+	  ✅ <Sv>De hjälper varandra.</Sv> —
+	  <Sv>varandra</Sv> cannot supply the subject
+	- ❌ <Sv>varje dagen</Sv>
+	  ✅ <Sv>varje dag</Sv>
+	- ❌ <Sv>Man är trevlig</Sv> meaning *a man is nice*
+	  ✅ <Sv>En man är trevlig.</Sv>
+	</MistakeBox>
+
 <MemoryTip>
 <Sv><strong>Man</strong></Sv> for people in general,
 <Sv><strong>varandra</strong></Sv> for people to each other, and
@@ -157,20 +181,6 @@ German has the same <span lang="de">man</span>; English has to choose between
 <Sv>som helst</Sv> phrases are built on question words, so they
 come free once those are secure.
 </MemoryTip>
-
-## Common mistakes
-
-<MistakeBox title="Common mistakes">
-	- ❌ <Sv>Man måste ta hans ansvar.</Sv>
-	  ✅ <Sv>Man måste ta sitt ansvar.</Sv>
-	- ❌ <Sv>Varandra hjälper de.</Sv>
-	  ✅ <Sv>De hjälper varandra.</Sv> —
-	  <Sv>varandra</Sv> cannot be the subject
-	- ❌ <Sv>varje dagen</Sv>
-	  ✅ <Sv>varje dag</Sv>
-	- ❌ <Sv>Man är trevlig</Sv> meaning *a man is nice*
-	  ✅ <Sv>Mannen är trevlig.</Sv>
-</MistakeBox>
 
 <QuickCheck
 	items={[
@@ -186,6 +196,10 @@ come free once those are secure.
 			prompt: 'The children each have a room of their own: Barnen har ___ rum.',
 			answer: 'Barnen har var sitt rum.',
 		},
+		{
+			prompt: 'Complete: Det påverkar ___ hälsa. (people in general)',
+			answer: 'Det påverkar ens hälsa.',
+		},
 	]}
 />
 
@@ -196,7 +210,7 @@ come free once those are secure.
 			label: 'någon, något, ingen, and inget',
 		},
 		{ href: '../sin-sitt-sina/', label: 'sin, sitt, and sina' },
-		{ href: '../../verbs/passive/', label: 'Passive' },
+		{ href: '../../verb-patterns-voice/passive/', label: 'Passive' },
 		{
 			href: '../../../common-mistakes/from-english/',
 			label: 'English to Swedish mistakes',

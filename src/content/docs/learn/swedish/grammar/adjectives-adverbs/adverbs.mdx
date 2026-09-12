@@ -18,7 +18,7 @@ related:
   - /learn/swedish/grammar/adjectives-adverbs/agreement/
   - /learn/swedish/grammar/adjectives-adverbs/adjective-comparison/
   - /learn/swedish/grammar/sentence-structure/inte-placement/
-  - /learn/swedish/grammar/pronouns-function-words/interrogatives/
+  - /learn/swedish/grammar/questions-negation/question-words/
 ---
 
 import { getEntry } from 'astro:content';
@@ -37,27 +37,27 @@ export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => 
 })();
 
 <KeyTakeaway>
-- The adverb is the adjective's <Sv>-t</Sv> form, the same one you use with an
-  ett-word: <Sv>{snabb.morphology.ett}</Sv>.
+- Many manner adverbs use the adjective's <Sv>-t</Sv> form, the same one you
+  use with an ett-word: <Sv>{snabb.morphology.ett}</Sv>.
 - Two sets are not derivable and have to be memorized:
   <Sv>gärna — hellre — helst</Sv> and the direction/position pairs such as
   <Sv>hem / hemma</Sv>.
-- Sentence adverbs take the <Sv>inte</Sv> slot: after the finite verb in a main
-  clause, before it in a subordinate clause.
+- Many sentence adverbs follow the <Sv>inte</Sv> placement pattern; use the
+  dedicated word-order page when position is the question.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Most Swedish adverbs are simply the ett-form of an adjective. That makes the
-formation easy — the harder parts are a handful of irregular adverbs, the
-position of sentence adverbs, and the pairs that distinguish place from
+Many Swedish manner adverbs are simply the ett-form of an adjective. That
+makes the common formation easy — the harder parts are independent adverbs,
+the position of sentence adverbs, and the pairs that distinguish place from
 direction.
 
 ## Adverbs from adjectives
 
 <RuleBox title="Rule">
-	The adverb is the adjective's <Sv>-t</Sv> form: the same form
-	you already use with an ett-word.
+	Many manner adverbs use the adjective's <Sv>-t</Sv> form: the
+	same form you already use with an ett-word.
 </RuleBox>
 
 | Adjective | Adverb | Example |
@@ -67,19 +67,13 @@ direction.
 | <Sv>vacker</Sv> | <Sv>vackert</Sv> | <Sv>Hon sjunger vackert.</Sv> |
 | <Sv>försiktig</Sv> | <Sv>försiktigt</Sv> | <Sv>Kör försiktigt!</Sv> |
 
-Because the adverb reuses the ett-form, the spelling patterns are the same
-ones. See
+When an adverb reuses the ett-form, the spelling patterns are the same ones.
+See
 [adjective agreement](../agreement/#spelling-patterns).
 
-English marks the difference with *-ly* and German not at all, so the Swedish
-system sits between the two: there is an ending, but it is one you already
-know.
-
-<LanguageComparison title="Adverb from an adjective">
-	<p slot="de">Er läuft schnell.</p>
-	<p slot="en">He runs quickly.</p>
-	<p slot="sv">Han springer snabbt.</p>
-</LanguageComparison>
+English often marks the difference with *-ly*, while German often uses the same
+visible form for adjective and adverb. Swedish frequently uses an ending, but
+it is one you already know from ett-words.
 
 ## Irregular and independent adverbs
 
@@ -127,8 +121,9 @@ sharp, so learn them in phrases. See
 
 ## Place and direction pairs
 
-Swedish keeps position and direction apart with two separate words. German has
-nothing this systematic, so the pairs need to be learned as pairs:
+Swedish keeps position and direction apart with two separate words. German and
+English do not use this exact Swedish set, so the pairs need to be learned as
+pairs:
 
 | Direction | Position | Example |
 | --- | --- | --- |
@@ -142,16 +137,15 @@ nothing this systematic, so the pairs need to be learned as pairs:
 
 The same split runs through the question words
 <Sv>vart</Sv> and <Sv>var</Sv>. See
-[question words](../../pronouns-function-words/interrogatives/).
+[question words](../../questions-negation/question-words/).
 
 ## Where sentence adverbs go
 
-Adverbs such as <Sv>inte</Sv>,
-<Sv>alltid</Sv>, <Sv>aldrig</Sv>,
-<Sv>ofta</Sv>, <Sv>kanske</Sv>, and
-<Sv>redan</Sv> take the same slot as
-<Sv>inte</Sv>: after the finite verb in a main clause, before it
-in a subordinate clause.
+Many sentence adverbs, including <Sv>alltid</Sv>,
+<Sv>aldrig</Sv>, and <Sv>ofta</Sv>, follow the same placement
+pattern as <Sv>inte</Sv>: after the finite verb in a main clause,
+before it in a subordinate clause. Some adverbs have narrower behavior, so use
+the word-order page when position is the main question.
 
 - <Sv>Hon kommer alltid sent.</Sv>
 - <Sv>…eftersom hon alltid kommer sent.</Sv>
@@ -173,16 +167,13 @@ rather than information, much like German
 They resist clean translation and are best picked up from context. German
 speakers have an advantage here, because the mechanism is familiar.
 
-<MemoryTip>
-Start from the ett-form: if you can say
-<Sv><strong>ett snabbt tåg</strong></Sv>, you can say
-<Sv><strong>han springer snabbt</strong></Sv>. Then add the two
-sets that are not derivable:
-<Sv><strong>gärna — hellre — helst</strong></Sv> and
-<Sv><strong>hem / hemma</strong></Sv>.
-</MemoryTip>
+## Direct comparison
 
-## Common mistakes
+<LanguageComparison title="Adverb from an adjective">
+	<p slot="de">Er läuft schnell.</p>
+	<p slot="en">He runs quickly.</p>
+	<p slot="sv">Han springer snabbt.</p>
+</LanguageComparison>
 
 <MistakeBox title="Common mistakes">
 	- ❌ <Sv>Han springer snabb.</Sv>
@@ -196,6 +187,15 @@ sets that are not derivable:
 	- ❌ <Sv>…eftersom hon kommer alltid sent.</Sv>
 	  ✅ <Sv>…eftersom hon alltid kommer sent.</Sv>
 </MistakeBox>
+
+<MemoryTip>
+Start from the ett-form for ordinary manner adverbs: if you can say
+<Sv><strong>ett snabbt tåg</strong></Sv>, you can say
+<Sv><strong>han springer snabbt</strong></Sv>. Then add the two
+sets that are not derivable:
+<Sv><strong>gärna — hellre — helst</strong></Sv> and
+<Sv><strong>hem / hemma</strong></Sv>.
+</MemoryTip>
 
 <QuickCheck
 	items={[
@@ -227,7 +227,7 @@ sets that are not derivable:
 			label: 'Placement of inte',
 		},
 		{
-			href: '../../pronouns-function-words/interrogatives/',
+			href: '../../questions-negation/question-words/',
 			label: 'Question words',
 		},
 	]}

@@ -15,8 +15,8 @@ tags:
   - verbs
   - important
 related:
-  - /learn/swedish/grammar/verbs/verb-forms/
-  - /learn/swedish/grammar/pronouns-function-words/prepositions/
+  - /learn/swedish/grammar/verbs-time-forms/verb-forms/
+  - /learn/swedish/grammar/prepositions-function-words/prepositions/
   - /learn/swedish/grammar/sentence-structure/inte-placement/
   - /learn/swedish/common-mistakes/from-german/
 ---
@@ -34,8 +34,8 @@ import TagList from '~/components/TagList.astro';
 <KeyTakeaway>
 - A particle is stressed and changes the meaning of the verb; an unstressed
   small word after the verb is a preposition.
-- The particle stays next to the verb and before the object, also before a
-  pronoun: <Sv>Han slog på den.</Sv>
+- The particle stays inside the verb phrase and before the object, also before
+  a pronoun: <Sv>Han slog på den.</Sv>
 - <Sv>Inte</Sv> comes between the finite verb and the particle:
   <Sv>Jag tycker inte om henne.</Sv>
 </KeyTakeaway>
@@ -90,10 +90,10 @@ verb, it is a particle. If it is unstressed and simply introduces the object,
 it is a preposition.
 </RuleBox>
 
-## Word order: the particle stays with the verb
+## Word order: the particle stays in the verb phrase
 
-The particle follows the verb directly and comes **before** the object, no
-matter whether the object is a noun or a pronoun:
+The particle comes **before** the object, whether the object is a noun or a
+pronoun. Without an intervening sentence adverb it follows the verb directly:
 
 - <Sv>Han slog på radion.</Sv> — *He switched on the radio.*
 - <Sv>Han slog på den.</Sv> — *He switched it on.*
@@ -125,8 +125,8 @@ the general pattern.
 </LanguageComparison>
 
 German moves the separable prefix to the end of the clause, English may split
-the particle from the verb with a pronoun, and Swedish keeps the particle
-directly after the verb and before the object.
+the particle from the verb with a pronoun, and Swedish keeps the particle in
+the verb phrase before the object.
 
 <LanguageComparison title="Negated particle verb">
 	<p slot="de">Ich mag sie nicht.</p>
@@ -154,7 +154,7 @@ the sentence. The particle simply stays where the verb is.
 | <Sv>stänga av</Sv> | to switch off | <span lang="de">ausschalten</span> |
 | <Sv>tala om</Sv> | to tell, to inform | <span lang="de">erzählen, mitteilen</span> |
 | <Sv>hålla på</Sv> | to be busy doing something | <span lang="de">gerade dabei sein</span> |
-| <Sv>passa på</Sv> | to take the opportunity, to watch out | <span lang="de">aufpassen, die Gelegenheit nutzen</span> |
+| <Sv>passa på</Sv> | to take the opportunity | <span lang="de">die Gelegenheit nutzen</span> |
 | <Sv>hitta på</Sv> | to make up, to come up with | <span lang="de">sich ausdenken</span> |
 
 Store each entry with its particle, exactly as you would store a noun with its
@@ -182,7 +182,10 @@ with a verb such as <Sv>ramla</Sv> or
 | Construction | Meaning | Example |
 | --- | --- | --- |
 | <Sv>passa på att</Sv> + infinitive | to seize the opportunity | <Sv>Passa på att köpa biljetter nu!</Sv> — *Take the chance to buy tickets now!* |
-| on its own, often imperative | to pay attention, to watch out | <Sv>Passa på när du går över gatan.</Sv> — *Pay attention when you cross the street.* |
+
+Do not use <Sv>passa på</Sv> for the general meaning “pay attention” or “watch
+out.” Depending on the situation, use expressions such as <Sv>var
+uppmärksam</Sv> or <Sv>akta dig</Sv> instead.
 
 Without the particle, <Sv>passa</Sv> is a different verb
 altogether: <Sv>Byxorna passar.</Sv> — *The trousers fit.*
@@ -217,7 +220,6 @@ different:
 
 | Separated | Prefixed |
 | --- | --- |
-| <Sv>tala om</Sv> — to tell | <Sv>tilltala</Sv> — to address someone, to appeal to |
 | <Sv>gå av</Sv> — to get off, to break | <Sv>avgå</Sv> — to resign, to depart |
 | <Sv>gå ut</Sv> — to go out | <Sv>utgå</Sv> — to be omitted, to proceed from |
 
@@ -228,12 +230,6 @@ When a particle verb becomes an adjective or a noun, the parts are written
 together: <Sv>radion är påslagen</Sv>,
 <Sv>tågets avgång</Sv>.
 
-<MemoryTip>
-Say the verb aloud and listen for the beat. <Sv>tycka **OM**</Sv>
-has its weight on the particle; <Sv>**TIT**ta på</Sv> has it on
-the verb. The stress tells you which of the two you are dealing with.
-</MemoryTip>
-
 ## Common mistakes
 
 <MistakeBox title="Common mistakes">
@@ -241,14 +237,17 @@ the verb. The stress tells you which of the two you are dealing with.
 	  ✅ <Sv>Jag tycker inte om henne.</Sv>
 	- ❌ <Sv>Han slog den på.</Sv> — English word order
 	  ✅ <Sv>Han slog på den.</Sv>
-	- ❌ <Sv>Jag tilltalar dig att jag kommer.</Sv>
-	  ✅ <Sv>Jag talar om att jag kommer.</Sv>
 	- Do not translate a German separable verb by moving the particle to the end
 	  of the clause. Swedish keeps it next to the verb.
-	- Do not learn a single translation for
-	  <Sv>hålla på</Sv> or <Sv>passa på</Sv>. Learn
-	  the construction that follows the particle.
-</MistakeBox>
+	- Do not learn a single translation for <Sv>hålla på</Sv>. Learn the
+	  construction that follows the particle.
+	</MistakeBox>
+
+<MemoryTip>
+Say the verb aloud and listen for the beat. <Sv>tycka **OM**</Sv>
+has its weight on the particle; <Sv>**TIT**ta på</Sv> has it on
+the verb. The stress tells you which of the two you are dealing with.
+</MemoryTip>
 
 <QuickCheck
 	items={[
@@ -274,9 +273,9 @@ the verb. The stress tells you which of the two you are dealing with.
 
 <RelatedTopics
 	topics={[
-		{ href: '../verb-forms/', label: 'Verb forms' },
+		{ href: '../../verbs-time-forms/verb-forms/', label: 'Verb forms' },
 		{
-			href: '../../pronouns-function-words/prepositions/',
+			href: '../../prepositions-function-words/prepositions/',
 			label: 'Prepositions',
 		},
 		{

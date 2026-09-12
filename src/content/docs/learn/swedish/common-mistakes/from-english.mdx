@@ -15,12 +15,14 @@ tags:
   - comparison
   - grammar
 related:
-  - /learn/swedish/grammar/verbs/present/
+  - /learn/swedish/grammar/verbs-time-forms/present/
   - /learn/swedish/grammar/nouns-articles/noun-forms/
   - /learn/swedish/grammar/adjectives-adverbs/agreement/
   - /learn/swedish/grammar/sentence-structure/v2/
-  - /learn/swedish/grammar/pronouns-function-words/prepositions/
-  - /learn/swedish/grammar/pronouns-function-words/interrogatives/
+  - /learn/swedish/grammar/prepositions-function-words/prepositions/
+  - /learn/swedish/grammar/questions-negation/questions/
+  - /learn/swedish/grammar/questions-negation/negation/
+  - /learn/swedish/grammar/sentence-structure/inte-placement/
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
@@ -42,8 +44,8 @@ import TagList from '~/components/TagList.astro';
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-English gives you most of the vocabulary and almost none of the morphology.
-These are the patterns it exports by mistake.
+English gives you many recognizable words, but very little help with Swedish
+morphology. These are the patterns it exports by mistake.
 
 ## Building a progressive
 
@@ -51,7 +53,7 @@ These are the patterns it exports by mistake.
 	One present tense covers both "I work" and "I am working". When the ongoing
 	action really matters, Swedish uses a construction, not a participle:
 	<Sv>Jag håller på att arbeta.</Sv> or <Sv>Jag sitter och arbetar.</Sv> See
-	[present tense](../../grammar/verbs/present/).
+	[present tense](../../grammar/verbs-time-forms/present/).
 </MistakeBox>
 
 ## Reaching for do-support
@@ -76,9 +78,11 @@ These are the patterns it exports by mistake.
 	<p slot="sv">Såg du det inte?</p>
 </LanguageComparison>
 
-Questions are formed by inversion alone, and negation by adding
-<Sv>inte</Sv>. See
-[question words](../../grammar/pronouns-function-words/interrogatives/).
+Direct questions use the existing finite verb instead of English *do*. See
+[Questions](../../grammar/questions-negation/questions/) for the reusable
+frame. Swedish clause negation adds <Sv>inte</Sv>; choose the negative form on
+[Negation](../../grammar/questions-negation/negation/) and place <Sv>inte</Sv>
+with [Placement of *inte*](../../grammar/sentence-structure/inte-placement/).
 
 ## Writing a separate definite article
 
@@ -91,7 +95,8 @@ Questions are formed by inversion alone, and negation by adding
 
 ## Dropping adjective agreement
 
-English adjectives never change. Swedish ones change three ways:
+English usually leaves adjectives uninflected in the patterns beginners rely
+on. Swedish adjectives change by gender, number, and definiteness:
 
 | Form | Example |
 | --- | --- |
@@ -123,7 +128,11 @@ negated stretch takes <Sv>på</Sv>.
 
 ## Translating prepositions one by one
 
-| English | Swedish | Not |
+These are diagnostic traps, not a second preposition reference. When a phrase
+is not listed here, use the focused
+[prepositions](../../grammar/prepositions-function-words/prepositions/) page.
+
+| English pattern | Swedish repair | Do not diagnose it as |
 | --- | --- | --- |
 | wait for | <Sv>vänta på</Sv> | *vänta för* |
 | listen to | <Sv>lyssna på</Sv> | <Sv>lyssna</Sv> with no preposition |
@@ -133,8 +142,10 @@ negated stretch takes <Sv>på</Sv>.
 | on Monday | <Sv>på måndag</Sv> | *i måndag* |
 | in the morning | <Sv>på morgonen</Sv> | *i morgonen* |
 
-The preposition belongs to the construction. See
-[prepositions](../../grammar/pronouns-function-words/prepositions/).
+The preposition belongs to the construction. Use this table to spot an English
+transfer error, then check
+[prepositions](../../grammar/prepositions-function-words/prepositions/) for
+the broader choice.
 
 ## Keeping English order after a fronted element
 
@@ -167,10 +178,13 @@ The preposition belongs to the construction. See
 
 <RelatedTopics
 	topics={[
-		{ href: '../../grammar/verbs/present/', label: 'Present tense' },
+		{ href: '../../grammar/verbs-time-forms/present/', label: 'Present tense' },
 		{ href: '../../grammar/nouns-articles/noun-forms/', label: 'Noun forms' },
 		{ href: '../../grammar/adjectives-adverbs/agreement/', label: 'Adjective agreement' },
 		{ href: '../../grammar/sentence-structure/v2/', label: 'V2 rule' },
+		{ href: '../../grammar/questions-negation/questions/', label: 'Questions' },
+		{ href: '../../grammar/questions-negation/negation/', label: 'Negation' },
+		{ href: '../../grammar/sentence-structure/inte-placement/', label: 'Placement of inte' },
 		{ href: '../../../../false-friends/', label: 'False friends' },
 	]}
 />

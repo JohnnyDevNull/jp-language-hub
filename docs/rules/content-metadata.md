@@ -12,8 +12,8 @@ Docs frontmatter may use the following optional, validated fields:
   field when assigning a level would be artificial.
 - `tags`: unique values from the controlled vocabulary below.
 - `related`: absolute site routes, for example
-  `/learn/swedish/grammar/verbs/present/`. Only the shape is validated by the
-  schema; `npm run validate:links` checks that the target exists.
+  `/learn/swedish/grammar/verbs-time-forms/present/`. Only the shape is validated
+  by the schema; `npm run validate:links` checks that the target exists.
 
 ## Translated Page Metadata
 
@@ -35,7 +35,7 @@ These fields must mirror the canonical root-locale page exactly:
 - `related`
 
 `related` stays absolute and canonical, for example
-`/learn/swedish/grammar/verbs/present/`, never `/de/learn/...` or
+`/learn/swedish/grammar/verbs-time-forms/present/`, never `/de/learn/...` or
 `/sv/learn/...`.
 
 ## Controlled Tag Vocabulary

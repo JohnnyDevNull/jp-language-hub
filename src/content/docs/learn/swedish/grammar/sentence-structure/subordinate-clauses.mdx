@@ -1,0 +1,160 @@
+---
+title: Subordinate clauses
+description: Recognize and build Swedish subordinate clauses with the subject, sentence adverb, and verbs in the right order.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/swedish/grammar/sentence-structure/biff/
+  - /learn/swedish/grammar/sentence-structure/inversion/
+  - /learn/swedish/grammar/questions-negation/question-words/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- A subordinate clause is part of a larger sentence and often begins with a
+  subordinator such as <Sv>att</Sv>, <Sv>eftersom</Sv>, <Sv>om</Sv>, or <Sv>när</Sv>.
+- Its practical core frame is **subordinator + subject + sentence adverb +
+  finite verb + rest**.
+- If the whole subordinate clause comes first, the following main clause uses
+  inversion.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+A subordinate clause adds content such as what someone says, why something
+happens, a condition, or a time. It cannot normally stand alone with that same
+function: <Sv>eftersom jag är trött</Sv> needs a main clause around it.
+
+## Use this now
+
+| Meaning | Start the subordinate clause with… | Example |
+| --- | --- | --- |
+| that / reported content | <Sv>att</Sv> | <Sv>Jag vet att hon kommer.</Sv> |
+| because | <Sv>eftersom</Sv> | <Sv>Jag stannar eftersom jag är trött.</Sv> |
+| if / whether | <Sv>om</Sv> | <Sv>Vi går ut om det inte regnar.</Sv> |
+| when | <Sv>när</Sv> | <Sv>Ring mig när du är klar.</Sv> |
+| before | <Sv>innan</Sv> | <Sv>Ät innan du går.</Sv> |
+
+## Core rule
+
+Use this reliable frame when the subordinate clause contains a sentence adverb
+such as <Sv>inte</Sv>:
+
+<SentenceSchema
+	caption="The Swedish subordinate-clause frame"
+	rowHeader="Meaning"
+	columns={['Subordinator', 'Subject', 'Sentence adverb', 'Finite verb', 'Non-finite verb', 'Rest']}
+	rows={[
+		{ label: 'Reason', cells: ['eftersom', 'jag', 'inte', 'kan', 'komma', 'idag'] },
+		{ label: 'Content', cells: ['att', 'hon', 'redan', 'har', 'köpt', 'biljetten'] },
+		{ label: 'Condition', cells: ['om', 'det', 'inte', 'regnar', '', ''] },
+	]}
+/>
+
+Without a sentence adverb, the subject is followed directly by the finite verb:
+
+- <Sv>Jag vet **att hon kommer**.</Sv>
+- <Sv>Ring mig **när du är klar**.</Sv>
+
+The [BIFF rule](../biff/) owns the narrower question of why <Sv>inte</Sv> and
+other sentence adverbs precede the finite verb here.
+
+## When the subordinate clause comes first
+
+The whole subordinate clause can fill the first field of a following main
+clause. The main clause then places its finite verb before its subject:
+
+<SentenceSchema
+	caption="A subordinate clause before a main clause"
+	rowHeader="Clause"
+	columns={['First field', 'Finite verb', 'Subject', 'Rest']}
+	rows={[
+		{
+			label: 'Subordinate + main',
+			cells: ['När mötet är slut', 'går', 'vi', 'hem.'],
+		},
+	]}
+/>
+
+That main-clause shift belongs to [Inversion](../inversion/), not to the internal
+order of the subordinate clause itself.
+
+## Indirect questions
+
+An indirect question also behaves as a subordinate clause:
+
+- <Sv>Jag vet inte **var hon bor**.</Sv>
+- <Sv>Han frågade **om tåget var sent**.</Sv>
+
+[Question words](../../questions-negation/question-words/) owns the lexical choices
+and the direct-versus-indirect question pattern.
+
+## Direct comparison
+
+<LanguageComparison title="Because-clause">
+	<p slot="de">… weil ich heute nicht kommen kann.</p>
+	<p slot="en">… because I cannot come today.</p>
+	<p slot="sv">… eftersom jag inte kan komma idag.</p>
+</LanguageComparison>
+
+German also marks subordinate clauses with special word order, but sends the
+finite verb to the end. Swedish keeps the finite verb after the sentence
+adverb and before any non-finite verb.
+
+<MistakeBox
+	incorrect="Jag stannar hemma eftersom jag kan inte komma."
+	correct="Jag stannar hemma eftersom jag inte kan komma."
+	lang="sv"
+>
+Do not carry main-clause sentence-adverb placement into a subordinate clause.
+</MistakeBox>
+
+<MemoryTip>
+Build the dependent block from left to right: **link word → subject → sentence
+adverb → finite verb → the rest**.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Join the sentences with eftersom: Jag stannar hemma. Jag är trött.',
+			answer: 'Jag stannar hemma eftersom jag är trött.',
+		},
+		{
+			prompt: 'Place inte correctly: … om / det / regnar / inte.',
+			answer: '… om det inte regnar.',
+		},
+		{
+			prompt: 'Put the subordinate clause first: Vi går hem när mötet är slut.',
+			answer: 'När mötet är slut går vi hem.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../biff/', label: 'BIFF' },
+		{ href: '../inversion/', label: 'Inversion' },
+		{ href: '../../questions-negation/question-words/', label: 'Question words' },
+	]}
+/>

@@ -1,0 +1,160 @@
+---
+title: Negation
+description: Choose between Swedish inte, negative noun phrases, and common negative adverbs without creating double negation.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+  - B1
+tags:
+  - grammar
+  - important
+related:
+  - /learn/swedish/grammar/sentence-structure/inte-placement/
+  - /learn/swedish/grammar/pronouns-roles/nagon-nagot-ingen-inget/
+  - /learn/swedish/grammar/questions-negation/questions/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Use <Sv>inte</Sv> to negate a clause: <Sv>Jag kommer inte.</Sv>
+- Use one negative noun or adverb expression when it carries the negative
+  meaning itself: <Sv>Ingen kom.</Sv>, <Sv>Jag såg ingenting.</Sv>
+- In ordinary standard Swedish, do not add <Sv>inte</Sv> when another negative
+  expression already negates the same clause.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Negation is first a choice of meaning and form. This page helps you choose the
+negative expression; [Placement of *inte*](../../sentence-structure/inte-placement/)
+owns where <Sv>inte</Sv> goes in each clause type.
+
+## Use this now
+
+| Meaning | Use | Example |
+| --- | --- | --- |
+| not | <Sv>inte</Sv> | <Sv>Jag arbetar inte idag.</Sv> |
+| nobody / no one | <Sv>ingen</Sv> | <Sv>Ingen ringde.</Sv> |
+| nothing | <Sv>ingenting</Sv> or <Sv>inget</Sv> + noun | <Sv>Jag hörde ingenting.</Sv> / <Sv>Jag hörde inget ljud.</Sv> |
+| never | <Sv>aldrig</Sv> | <Sv>Hon röker aldrig.</Sv> |
+| nowhere | <Sv>ingenstans</Sv> | <Sv>Jag hittar den ingenstans.</Sv> |
+| not … either | <Sv>inte … heller</Sv> | <Sv>Jag kommer inte heller.</Sv> |
+
+## Core rule
+
+Use <Sv>inte</Sv> when you negate the clause as a whole or reject one part in
+context:
+
+- <Sv>Jag **kommer inte** imorgon.</Sv>
+- <Sv>Hon köpte **inte den röda** bilen.</Sv>
+
+Use a negative expression when the missing person, thing, time, or place itself
+is negative:
+
+- <Sv>**Ingen** väntar utanför.</Sv>
+- <Sv>Jag såg **ingenting**.</Sv>
+- <Sv>Vi går **aldrig** dit.</Sv>
+- <Sv>Nyckeln finns **ingenstans**.</Sv>
+
+## Indefinite under clause negation
+
+When <Sv>inte</Sv> negates the clause, Swedish normally uses a non-negative
+indefinite expression inside its scope:
+
+- <Sv>Jag har **inte någon** bil.</Sv>
+- <Sv>Jag såg **inte något** problem.</Sv>
+- <Sv>Vi har **inte några** frågor.</Sv>
+
+The compact negative noun phrase often gives the same real-world result:
+
+- <Sv>Jag har **ingen** bil.</Sv>
+- <Sv>Jag såg **inget** problem.</Sv>
+- <Sv>Vi har **inga** frågor.</Sv>
+
+The two patterns are not mechanically interchangeable in every context.
+<Sv>Ingen / inget / inga</Sv> packages the absence inside the noun phrase;
+<Sv>inte någon / något / några</Sv> keeps clause negation visible and can carry
+different focus or contrast.
+
+The full agreement and noun-phrase choice belongs to
+[*någon, något, ingen, inget*](../../pronouns-roles/nagon-nagot-ingen-inget/).
+
+## Direct comparison
+
+<LanguageComparison title="No car">
+	<p slot="de">Ich habe kein Auto.</p>
+	<p slot="en">I do not have a car.</p>
+	<p slot="sv">Jag har ingen bil.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Nothing">
+	<p slot="de">Ich habe nichts gesehen.</p>
+	<p slot="en">I did not see anything.</p>
+	<p slot="sv">Jag såg ingenting.</p>
+</LanguageComparison>
+
+English often combines *not* with an indefinite form such as *anything*.
+Swedish can use either <Sv>inte</Sv> + an indefinite expression or one negative
+expression, but the choice can shift focus and scope.
+
+<MistakeBox
+	title="Avoid ordinary double negation"
+	incorrect="Ingen kom inte."
+	correct="Ingen kom."
+	lang="sv"
+>
+In ordinary standard Swedish, one expression normally carries the negative
+force. If <Sv>ingen</Sv> already means “nobody,” a second <Sv>inte</Sv> normally
+changes or obscures the intended meaning instead of strengthening it.
+</MistakeBox>
+
+<MemoryTip>
+Choose **one carrier of the negative meaning** first: clause-wide <Sv>inte</Sv>,
+or a negative person, thing, time, or place expression.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Negate the clause with inte: Jag arbetar idag.',
+			answer: 'Jag arbetar inte idag.',
+		},
+		{
+			prompt: 'Say “Nobody called” with ingen.',
+			answer: 'Ingen ringde.',
+		},
+		{
+			prompt: 'Complete with an indefinite form: Jag har inte ___ frågor.',
+			answer: 'Jag har inte några frågor.',
+		},
+		{
+			prompt: 'Correct the ordinary standard sentence: Ingen kom inte.',
+			answer: 'Ingen kom.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../sentence-structure/inte-placement/', label: 'Placement of inte' },
+		{
+			href: '../../pronouns-roles/nagon-nagot-ingen-inget/',
+			label: 'någon, något, ingen, inget',
+		},
+		{ href: '../questions/', label: 'Questions' },
+	]}
+/>

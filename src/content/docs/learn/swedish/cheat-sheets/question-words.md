@@ -16,7 +16,8 @@ tags:
   - cheat-sheet
   - pronouns
 related:
-  - /learn/swedish/grammar/pronouns-function-words/interrogatives/
+  - /learn/swedish/grammar/questions-negation/question-words/
+  - /learn/swedish/grammar/questions-negation/questions/
 ---
 
 ## The words
@@ -29,12 +30,16 @@ related:
 | <span lang="sv">vilken/vilket/vilka</span> | which | <span lang="sv">hur</span> | how |
 | <span lang="sv">hur mycket / många</span> | how much / many | <span lang="sv">varför</span> | why |
 
-<span lang="sv">Vem</span> has no object form. Only
-<span lang="sv">vilken</span> inflects:
+<span lang="sv">Vem</span> has no object form. Among these core forms, the
+<span lang="sv">vilken</span> series is the one that agrees with gender and number:
 <span lang="sv">vilken bok</span>, <span lang="sv">vilket hus</span>,
 <span lang="sv">vilka böcker</span>.
 
 ## var or vart
+
+The table gives the standard-language distinction: <span lang="sv">var</span>
+for location and <span lang="sv">vart</span> for direction. Informal speech may
+also use <span lang="sv">var</span> for direction.
 
 | Question | Meaning |
 | --- | --- |
@@ -78,6 +83,7 @@ Direct questions need no <span lang="sv">som</span>:
 
 ## Full references
 
-- [Question words](../../grammar/pronouns-function-words/interrogatives/)
-- [Relative pronouns](../../grammar/pronouns-function-words/relative-pronouns/)
+- [Question words](../../grammar/questions-negation/question-words/)
+- [Questions](../../grammar/questions-negation/questions/)
+- [Relative pronouns](../../grammar/pronouns-roles/relative-pronouns/)
 - [V2 rule](../../grammar/sentence-structure/v2/)

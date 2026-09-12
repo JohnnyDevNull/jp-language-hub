@@ -14,7 +14,7 @@ tags:
   - cheat-sheet
   - grammar
 related:
-  - /learn/swedish/grammar/numerals/numbers/
+  - /learn/swedish/vocabulary/numbers/
 ---
 
 ## Cardinals
@@ -31,7 +31,9 @@ related:
 | Rule | Example |
 | --- | --- |
 | Ten first, no <span lang="sv">och</span>, one word | 21 → <span lang="sv">tjugoett</span>, 156 → <span lang="sv">hundrafemtiosex</span> |
-| The 1 agrees with the noun | <span lang="sv">tjugoen kronor</span>, <span lang="sv">tjugoett år</span> |
+| Standalone 1 agrees with the noun | <span lang="sv">en bil</span>, <span lang="sv">ett hus</span> |
+| Final 1 after tens is normally <span lang="sv">-en</span> | <span lang="sv">tjugoen kronor</span>, <span lang="sv">trettioen fartyg</span> |
+| Final <span lang="sv">-ett</span> remains in conventional contexts | <span lang="sv">tjugoett år</span>, <span lang="sv">nummer tjugoett</span>, <span lang="sv">tjugoett öre</span> |
 | Every other number is uninflected | <span lang="sv">två bilar</span>, <span lang="sv">två hus</span> |
 
 ## Ordinals
@@ -40,8 +42,9 @@ related:
 | --- | --- |
 | 1st–10th | <span lang="sv">första, andra, tredje, fjärde, femte, sjätte, sjunde, åttonde, nionde, tionde</span> |
 | 11th–12th | <span lang="sv">elfte, tolfte</span> |
-| From 13th | cardinal + <span lang="sv">-de</span>: <span lang="sv">trettonde, tjugonde</span> |
-| Compound | only the last element: 42nd → <span lang="sv">fyrtioandra</span> |
+| 13th–19th | usually cardinal + <span lang="sv">-de</span>: <span lang="sv">trettonde, fjortonde, nittonde</span> |
+| Full tens | full-ten form: <span lang="sv">tjugo → tjugonde</span>, <span lang="sv">trettio → trettionde</span> |
+| Compound | only the last element: <span lang="sv">tjugoförsta</span>, <span lang="sv">fyrtioandra</span> |
 | As digits | <span lang="sv">1:a, 2:a</span> — but <span lang="sv">3:e, 4:e, 24:e</span> |
 
 Ordinals normally follow <span lang="sv">den</span>:
@@ -68,11 +71,12 @@ ten comes first, exactly as in English.
 
 - ❌ <span lang="sv">tjugo och ett</span> → ✅ <span lang="sv">tjugoett</span>
 - ❌ <span lang="sv">tjugoett kronor</span> → ✅ <span lang="sv">tjugoen kronor</span>
+- ❌ <span lang="sv">trettioett fartyg</span> → ✅ <span lang="sv">trettioen fartyg</span>
 - ❌ <span lang="sv">fyrtiondeandra</span> → ✅ <span lang="sv">fyrtioandra</span>
 - ❌ <span lang="sv">den 3:a maj</span> → ✅ <span lang="sv">den 3:e maj</span>
 
 ## Full references
 
-- [Numbers](../../grammar/numerals/numbers/)
+- [Numbers](../../vocabulary/numbers/)
 - [en and ett](../../grammar/nouns-articles/en-ett/)
 - [Telling time](../../vocabulary/telling-time/)

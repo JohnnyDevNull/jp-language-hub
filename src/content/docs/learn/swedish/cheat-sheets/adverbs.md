@@ -17,12 +17,12 @@ tags:
   - adjectives
 related:
   - /learn/swedish/grammar/adjectives-adverbs/adverbs/
-  - /learn/swedish/grammar/pronouns-function-words/dar-har-adverbs/
+  - /learn/swedish/grammar/prepositions-function-words/dar-har-adverbs/
 ---
 
 ## Formation
 
-The adverb is the adjective's ett-form:
+Many manner adverbs use the adjective's ett-form:
 
 | Adjective | Adverb | Example |
 | --- | --- | --- |
@@ -58,8 +58,9 @@ Same split as the question words <span lang="sv">vart</span> and
 
 ## Sentence adverbs
 
-<span lang="sv">inte, alltid, aldrig, ofta, kanske, redan</span> share the
-<span lang="sv">inte</span> slot:
+Many sentence adverbs, including <span lang="sv">alltid</span>,
+<span lang="sv">aldrig</span>, and <span lang="sv">ofta</span>, share the
+<span lang="sv">inte</span> placement pattern:
 
 | Clause | Example |
 | --- | --- |

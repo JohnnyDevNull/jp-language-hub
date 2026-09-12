@@ -14,6 +14,7 @@ tags:
   - sentence-patterns
   - sentence-structure
 related:
+  - /learn/swedish/grammar/prepositions-function-words/connectors/
   - /learn/swedish/grammar/sentence-structure/biff/
   - /learn/swedish/grammar/sentence-structure/inversion/
   - /learn/swedish/grammar/adjectives-adverbs/adjective-comparison/
@@ -28,8 +29,9 @@ import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- <Sv>eftersom</Sv> and <Sv>därför att</Sv> both mean "because", but only
-  <Sv>eftersom</Sv> can open the sentence.
+- <Sv>Eftersom</Sv> is the neutral way to open a full sentence with "because";
+  <Sv>därför att</Sv> is marked there, but normal after a main clause and as a
+  short answer fragment.
 - <Sv>därför</Sv> is the *consequence* adverb ("therefore") and takes the finite
   verb straight after it: <Sv>Därför stannar jag hemma.</Sv>
 - Reason clauses are subordinate clauses, so <Sv>inte</Sv> goes before the
@@ -40,13 +42,16 @@ import TagList from '~/components/TagList.astro';
 
 The pair <Sv>därför</Sv> and <Sv>därför att</Sv> is the single most useful
 distinction on this page, and the one German speakers get wrong most often.
+For the broader connector system, use
+[Connectors](../../grammar/prepositions-function-words/connectors/); this page
+keeps the ready-to-use reason and example frames.
 
 ## Giving a reason
 
 | Pattern | What it does | Register |
 | --- | --- | --- |
-| <Sv>… eftersom …</Sv> | because; may also stand first in the sentence | neutral |
-| <Sv>… därför att …</Sv> | because; answers *why*, never sentence-initial | neutral |
+| <Sv>… eftersom …</Sv> | because; neutral inside or before the sentence | neutral |
+| <Sv>… därför att …</Sv> | because; answers *why*, common after a main clause and as a fragment | neutral, marked before a full main clause |
 | <Sv>… för …</Sv> | because, joining two main clauses | spoken |
 | <Sv>Det beror på att …</Sv> | that is because | neutral |
 | <Sv>Anledningen är att …</Sv> | the reason is that | neutral to formal |
@@ -89,8 +94,11 @@ distinction on this page, and the one German speakers get wrong most often.
 </LanguageComparison>
 
 The fronted clause is one constituent, so the finite verb <Sv>stannar</Sv>
-follows it directly and the subject comes after the verb. Swapping in
-<Sv>därför att</Sv> here is wrong; it cannot open the sentence.
+follows it directly and the subject comes after the verb. <Sv>Eftersom</Sv> is
+the neutral choice here. <Sv>Därför att det regnar stannar jag hemma</Sv> is
+possible, but it sounds marked before a full main clause; use
+<Sv>därför att</Sv> freely after a main clause or as a short answer:
+<Sv>Varför stannar du hemma? Därför att det regnar.</Sv>
 
 <LanguageComparison title="Consequence: därför">
 	<p slot="de">Es regnet, deshalb bleibe ich zu Hause.</p>
@@ -99,9 +107,9 @@ follows it directly and the subject comes after the verb. Swapping in
 </LanguageComparison>
 
 <LanguageComparison title="Contrasting two languages">
-	<p slot="de">Im Gegensatz zum Deutschen hat Schwedisch keine Kasus.</p>
-	<p slot="en">Unlike German, Swedish has no cases.</p>
-	<p slot="sv">Till skillnad från tyska har svenska inga kasus.</p>
+	<p slot="de">Im Gegensatz zum Deutschen hat Schwedisch hier keine Dativform.</p>
+	<p slot="en">Unlike German, Swedish uses no dative form here.</p>
+	<p slot="sv">Till skillnad från tyska använder svenska ingen dativform här.</p>
 </LanguageComparison>
 
 <QuickCheck
@@ -119,14 +127,15 @@ follows it directly and the subject comes after the verb. Swapping in
 			answer: 'Anledningen är att jag inte har tid.',
 		},
 		{
-			prompt: 'Which of eftersom and därför att cannot start a sentence?',
-			answer: 'därför att',
+			prompt: 'Which is the neutral connector for a fronted full reason clause: eftersom or därför att?',
+			answer: 'eftersom',
 		},
 	]}
 />
 
 <RelatedTopics
 	topics={[
+		{ href: '../../grammar/prepositions-function-words/connectors/', label: 'Connectors' },
 		{ href: '../conditions-and-consequences/', label: 'Conditions and consequences' },
 		{ href: '../opinions-and-uncertainty/', label: 'Opinions and uncertainty' },
 		{ href: '../../grammar/sentence-structure/biff/', label: 'BIFF' },

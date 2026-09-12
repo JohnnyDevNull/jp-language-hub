@@ -16,7 +16,7 @@ tags:
 related:
   - /learn/swedish/grammar/nouns-articles/en-ett/
   - /learn/swedish/grammar/nouns-articles/plural-overview/
-  - /learn/swedish/grammar/pronouns-function-words/sin-sitt-sina/
+  - /learn/swedish/grammar/questions-negation/negation/
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
@@ -31,7 +31,8 @@ import TagList from '~/components/TagList.astro';
 <KeyTakeaway>
 - Before a noun, the form follows the noun: <Sv>någon</Sv> for an <Sv>en</Sv>
   noun, <Sv>något</Sv> for an <Sv>ett</Sv> noun, <Sv>några</Sv> for a plural.
-- Standing alone, <Sv>någon</Sv> is a person and <Sv>något</Sv> is a thing.
+- Standing alone, <Sv>någon</Sv> is a person, <Sv>något</Sv> is a thing, and
+  <Sv>några</Sv> refers to a plural group.
 - <Sv>ingen</Sv>, <Sv>inget</Sv>, and <Sv>inga</Sv> are the negative forms of
   the same three-way choice.
 </KeyTakeaway>
@@ -52,12 +53,6 @@ When one of these words stands before a noun, choose the form from the noun:
 | --- | --- | --- | --- |
 | some / any | <Sv>någon</Sv> | <Sv>något</Sv> | <Sv>några</Sv> |
 | no / not any | <Sv>ingen</Sv> | <Sv>inget</Sv> | <Sv>inga</Sv> |
-
-<MemoryTip title="Noun or no noun?">
-If a noun follows, check whether it is an <Sv>en</Sv> noun, an
-<Sv>ett</Sv> noun, or plural. If no noun follows, ask whether
-you mean a person or a thing.
-</MemoryTip>
 
 ## Before a noun
 
@@ -108,6 +103,12 @@ alone. Then the choice is about person or thing:
 | <Sv>något</Sv> | something / anything | <Sv>Finns det något att äta?</Sv> |
 | <Sv>ingen</Sv> | nobody / no one | <Sv>Ingen behöver köpa ägg.</Sv> |
 | <Sv>inget</Sv> | nothing / not anything | <Sv>Jag förstår inget.</Sv> |
+| <Sv>några</Sv> | some / a few people or things | <Sv>Några kom tidigt.</Sv> |
+| <Sv>inga</Sv> | none / no people or things | <Sv>Inga kom för sent.</Sv> |
+
+The plural forms can also replace an understood plural noun:
+<Sv>Jag köpte några</Sv> (“I bought some”) and
+<Sv>Jag hittade inga</Sv> (“I found none”).
 
 Compare:
 
@@ -158,8 +159,12 @@ informal.
 | --- | --- | --- |
 | A noun follows | <Sv>en</Sv>, <Sv>ett</Sv>, or plural | <Sv>någon</Sv> / <Sv>något</Sv> / <Sv>några</Sv> |
 | A negative noun phrase follows | <Sv>en</Sv>, <Sv>ett</Sv>, or plural | <Sv>ingen</Sv> / <Sv>inget</Sv> / <Sv>inga</Sv> |
-| No noun follows | person or thing | <Sv>någon</Sv> = someone, <Sv>något</Sv> = something |
-| Negative and no noun follows | person or thing | <Sv>ingen</Sv> = nobody, <Sv>inget</Sv> = nothing |
+| No noun follows | person, thing, or plural group | <Sv>någon</Sv> = someone, <Sv>något</Sv> = something, <Sv>några</Sv> = some / a few |
+| Negative and no noun follows | person, thing, or plural group | <Sv>ingen</Sv> = nobody, <Sv>inget</Sv> = nothing, <Sv>inga</Sv> = none |
+
+This page owns the forms and their noun-phrase agreement. For the broader
+choice between clause negation, a negative noun phrase, and a negative adverb,
+use [Negation](../../questions-negation/negation/).
 
 ## Common mistakes
 
@@ -175,6 +180,12 @@ informal.
 	  <Sv>en</Sv>, <Sv>ett</Sv>, or plural.
 </MistakeBox>
 
+<MemoryTip title="Noun or no noun?">
+If a noun follows, check whether it is an <Sv>en</Sv> noun, an
+<Sv>ett</Sv> noun, or plural. If no noun follows, ask whether
+you mean a person, a thing, or a plural group.
+</MemoryTip>
+
 <QuickCheck
 	items={[
 		{
@@ -189,6 +200,10 @@ informal.
 			prompt: 'Correct this: Jag ser något där. (you mean a person)',
 			answer: 'Jag ser någon där.',
 		},
+		{
+			prompt: 'Complete without repeating the noun: Jag köpte ___. (some)',
+			answer: 'Jag köpte några.',
+		},
 	]}
 />
 
@@ -199,9 +214,6 @@ informal.
 			href: '../../nouns-articles/plural-overview/',
 			label: 'Plural overview',
 		},
-		{
-			href: '../sin-sitt-sina/',
-			label: 'sin, sitt, and sina',
-		},
+		{ href: '../../questions-negation/negation/', label: 'Negation' },
 	]}
 />

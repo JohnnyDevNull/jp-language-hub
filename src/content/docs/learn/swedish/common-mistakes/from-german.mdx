@@ -17,10 +17,12 @@ tags:
 related:
   - /learn/swedish/grammar/nouns-articles/en-ett/
   - /learn/swedish/grammar/adjectives-adverbs/agreement/
-  - /learn/swedish/grammar/pronouns-function-words/sin-sitt-sina/
+  - /learn/swedish/grammar/pronouns-roles/sin-sitt-sina/
+  - /learn/swedish/grammar/nouns-articles/possession/
+  - /learn/swedish/grammar/pronouns-roles/personal-pronouns/
   - /learn/swedish/grammar/sentence-structure/biff/
   - /learn/swedish/grammar/sentence-structure/inte-placement/
-  - /learn/swedish/grammar/verbs/particle-verbs/
+  - /learn/swedish/grammar/verb-patterns-voice/particle-verbs/
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
@@ -86,25 +88,28 @@ See [adjective agreement](../../grammar/adjectives-adverbs/agreement/).
 	Use <Sv>sin</Sv>, <Sv>sitt</Sv>, <Sv>sina</Sv> when the owner is the subject
 	of the same clause; <Sv>hans</Sv> and <Sv>hennes</Sv> point at someone else.
 	German *sein* covers both, so the distinction has to be made consciously. See
-	[sin, sitt, sina](../../grammar/pronouns-function-words/sin-sitt-sina/).
+	[sin, sitt, sina](../../grammar/pronouns-roles/sin-sitt-sina/).
 </MistakeBox>
 
 ## German subordinate word order
 
 <MistakeBox
-	incorrect="Jag stannar hemma eftersom jag idag inte arbetar."
-	correct="Jag stannar hemma eftersom jag inte arbetar idag."
+	incorrect="Jag stannar hemma eftersom jag inte tid har."
+	correct="Jag stannar hemma eftersom jag inte har tid."
 	lang="sv"
 >
-	German sends the verb to the end of the subordinate clause. Swedish keeps
-	subject, then <Sv>inte</Sv>, then the verb. See
+	German sends the finite verb to the end of the subordinate clause. Swedish
+	keeps the finite verb after sentence adverbs such as <Sv>inte</Sv>: subject,
+	<Sv>inte</Sv>, finite verb, then the rest. See
 	[BIFF](../../grammar/sentence-structure/biff/).
 </MistakeBox>
 
 ## Looking for the missing case system
 
-Swedish nouns have no case. Do not compensate with extra prepositions or
-article forms:
+Swedish does not have a German-style productive nominative–accusative–dative
+system across nouns, articles, and adjectives. Nouns still have a basic form
+and an s-genitive, so do not replace German case endings mechanically with
+extra prepositions or article forms:
 
 <LanguageComparison title="Indirect object without case marking" languages={['de', 'sv']}>
 	<p slot="de">Ich gebe dem Mann das Buch.</p>
@@ -121,8 +126,11 @@ article forms:
 	<p slot="sv">med bilen</p>
 </LanguageComparison>
 
-Only pronouns still inflect: <Sv>med mig</Sv>, <Sv>till honom</Sv>, never
-*med jag*.
+Personal pronouns still distinguish subject and object roles:
+<Sv>med mig</Sv>, <Sv>till honom</Sv>, never <Sv>med jag</Sv>. See
+[Personal pronouns](../../grammar/pronouns-roles/personal-pronouns/) and
+[Possession](../../grammar/nouns-articles/possession/) for the two focused
+lookups.
 
 ## Assuming German verb particles
 
@@ -139,7 +147,7 @@ particle stays right behind the verb, and only <Sv>inte</Sv> gets in between:
 	<p slot="sv">Jag tycker inte om fisk.</p>
 </LanguageComparison>
 
-See [particle verbs](../../grammar/verbs/particle-verbs/).
+See [particle verbs](../../grammar/verb-patterns-voice/particle-verbs/).
 
 ## Putting inte where nicht goes
 
@@ -175,9 +183,11 @@ See [particle verbs](../../grammar/verbs/particle-verbs/).
 <RelatedTopics
 	topics={[
 		{ href: '../../grammar/nouns-articles/en-ett/', label: 'en and ett' },
+		{ href: '../../grammar/nouns-articles/possession/', label: 'Possession' },
+		{ href: '../../grammar/pronouns-roles/personal-pronouns/', label: 'Personal pronouns' },
 		{ href: '../../grammar/adjectives-adverbs/agreement/', label: 'Adjective agreement' },
 		{ href: '../../grammar/sentence-structure/inte-placement/', label: 'Placement of inte' },
-		{ href: '../../grammar/verbs/particle-verbs/', label: 'Particle verbs' },
+		{ href: '../../grammar/verb-patterns-voice/particle-verbs/', label: 'Particle verbs' },
 		{ href: '../../../../false-friends/', label: 'False friends' },
 	]}
 />

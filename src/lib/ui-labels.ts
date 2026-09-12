@@ -17,11 +17,13 @@ type UiLabelKey =
 	| 'Learning path'
 	| 'Level and tags'
 	| 'Memory tip'
+	| 'Mood, Politeness & Reports'
 	| 'Nouns & Articles'
-	| 'Numerals'
 	| 'Overview'
-	| 'Pronouns & Function Words'
+	| 'Prepositions & Function Words'
+	| 'Pronouns & Roles'
 	| 'Pronunciation basics'
+	| 'Questions & Negation'
 	| 'Quick check'
 	| 'Related topics'
 	| 'Rule'
@@ -31,6 +33,7 @@ type UiLabelKey =
 	| 'Show answer'
 	| 'Verbs'
 	| 'Verbs & Time Forms'
+	| 'Verb Patterns & Voice'
 	| 'Vocabulary';
 
 const UI_LABELS: Record<UiLabelKey, Record<MetaLocale, string>> = {
@@ -114,30 +117,40 @@ const UI_LABELS: Record<UiLabelKey, Record<MetaLocale, string>> = {
 		de: 'Merktipp',
 		sv: 'Minnestips',
 	},
+	'Mood, Politeness & Reports': {
+		en: 'Mood, Politeness & Reports',
+		de: 'Modus, Höflichkeit & Wiedergabe',
+		sv: 'Modus, artighet & återgivning',
+	},
 	'Nouns & Articles': {
 		en: 'Nouns & Articles',
 		de: 'Substantive & Artikel',
 		sv: 'Substantiv & artiklar',
-	},
-	Numerals: {
-		en: 'Numerals',
-		de: 'Zahlwörter',
-		sv: 'Räkneord',
 	},
 	Overview: {
 		en: 'Overview',
 		de: 'Überblick',
 		sv: 'Översikt',
 	},
-	'Pronouns & Function Words': {
-		en: 'Pronouns & Function Words',
-		de: 'Pronomen & Funktionswörter',
-		sv: 'Pronomen & funktionsord',
+	'Prepositions & Function Words': {
+		en: 'Prepositions & Function Words',
+		de: 'Präpositionen & Funktionswörter',
+		sv: 'Prepositioner & funktionsord',
+	},
+	'Pronouns & Roles': {
+		en: 'Pronouns & Roles',
+		de: 'Pronomen & Satzrollen',
+		sv: 'Pronomen & satsroller',
 	},
 	'Pronunciation basics': {
 		en: 'Pronunciation basics',
 		de: 'Aussprache-Grundlagen',
 		sv: 'Uttalsgrunder',
+	},
+	'Questions & Negation': {
+		en: 'Questions & Negation',
+		de: 'Fragen & Verneinung',
+		sv: 'Frågor & negation',
 	},
 	'Quick check': {
 		en: 'Quick check',
@@ -183,6 +196,11 @@ const UI_LABELS: Record<UiLabelKey, Record<MetaLocale, string>> = {
 		en: 'Verbs & Time Forms',
 		de: 'Verben & Zeitformen',
 		sv: 'Verb och tidsformer',
+	},
+	'Verb Patterns & Voice': {
+		en: 'Verb Patterns & Voice',
+		de: 'Verbmuster & Aktiv/Passiv',
+		sv: 'Verbmönster & aktiv/passiv',
 	},
 	Vocabulary: {
 		en: 'Vocabulary',

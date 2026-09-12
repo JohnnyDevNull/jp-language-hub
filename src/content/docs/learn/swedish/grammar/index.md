@@ -11,49 +11,48 @@ Grammar topics are organized by grammatical function. Each reference explains
 the Swedish rule and contrasts it with German and English wherever the
 comparison helps explain why the rule looks the way it does.
 
-## Sentence structure
+## Find the rule you need
 
-- [Basic word order](./sentence-structure/basic-word-order/)
-- [The V2 rule](./sentence-structure/v2/)
-- [Inversion](./sentence-structure/inversion/)
-- [BIFF and subordinate clauses](./sentence-structure/biff/)
-- [Placement of *inte*](./sentence-structure/inte-placement/)
+- Building or checking a Swedish sentence? Start with
+  [Sentence Structure](./sentence-structure/) for main-clause order, V2,
+  inversion, subordinate clauses, and the position of *inte*.
+- Asking a question or making a sentence negative? Use
+  [Questions & Negation](./questions-negation/) before choosing a question
+  word, yes/no question shape, or negation pattern.
+- Choosing noun forms? Go to [Nouns & Articles](./nouns-articles/) for
+  *en*/*ett*, definite forms, plurals, and possession.
+- Choosing who does what to whom? Use
+  [Pronouns & Roles](./pronouns-roles/) for personal, possessive, reflexive,
+  relative, and indefinite pronouns.
+- Placing an event in time? Start with
+  [Verbs & Time Forms](./verbs-time-forms/) for verb forms, tense
+  perspectives, present, preterite, perfect, and future forms.
+- Describing people, things, or actions? Use
+  [Adjectives & Adverbs](./adjectives-adverbs/) for agreement, comparison, and
+  adverb choices.
+- Connecting ideas, places, time, and fixed phrases? Go to
+  [Prepositions & Function Words](./prepositions-function-words/) for
+  prepositions, *där-*/*här-* adverbs, and connectors.
 
-## Nouns and articles
+## Swedish-specific deeper shelves
 
-- [*en* and *ett*](./nouns-articles/en-ett/)
-- [Indefinite and definite noun forms](./nouns-articles/noun-forms/)
-- [Plural overview](./nouns-articles/plural-overview/)
+- Need verb groups, particles, modal verbs, passive, active/passive choices, or
+  commands? Use [Verb Patterns & Voice](./verb-patterns-voice/).
+- Need conditions, polite distance, or reported information? Use
+  [Mood, Politeness & Reports](./mood-politeness-reports/). For production
+  examples, compare [polite requests](../sentence-patterns/polite-requests/)
+  and
+  [conditions and consequences](../sentence-patterns/conditions-and-consequences/).
 
-## Adjectives and adverbs
+## Practical entry paths
 
-- [Adjective agreement](./adjectives-adverbs/agreement/)
-- [Adjective comparison](./adjectives-adverbs/adjective-comparison/)
-- [Adverbs](./adjectives-adverbs/adverbs/)
-
-## Numerals
-
-- [Numbers](./numerals/numbers/)
-
-## Verbs
-
-- [Verb forms](./verbs/verb-forms/)
-- [Tense perspectives](./verbs/tense-perspectives/)
-- [Present tense](./verbs/present/)
-- [Preterite](./verbs/preterite/)
-- [Perfect](./verbs/perfect/)
-- [Verb groups](./verbs/verb-groups/)
-- [Particle verbs](./verbs/particle-verbs/)
-- [Passive](./verbs/passive/)
-
-## Pronouns and function words
-
-- [Possessive pronouns](./pronouns-function-words/possessive-pronouns/)
-- [*sin*, *sitt*, and *sina*](./pronouns-function-words/sin-sitt-sina/)
-- [*någon*, *något*, *ingen*, and *inget*](./pronouns-function-words/nagon-nagot-ingen-inget/)
-- [Demonstratives with *här* and *där*](./pronouns-function-words/demonstratives-har-dar/)
-- [Prepositions](./pronouns-function-words/prepositions/)
-- [Relative pronouns](./pronouns-function-words/relative-pronouns/)
-- [Question words](./pronouns-function-words/interrogatives/)
-- [*man*, *varandra*, and *var sin*](./pronouns-function-words/man-varandra-varsin/)
-- [*där-* and *här-* adverbs](./pronouns-function-words/dar-har-adverbs/)
+- Follow the [Learning Path](../learning-path/) when you want an ordered route
+  through the references.
+- Use [Sentence Patterns](../sentence-patterns/) when you want something you
+  can say before reading the whole rule.
+- Use [Vocabulary](../vocabulary/) when the problem is a word domain rather
+  than a grammar rule.
+- Check [Common Mistakes](../common-mistakes/) when German or English is
+  pulling your Swedish sentence in the wrong direction.
+- Use [Cheat Sheets](../cheat-sheets/) for compact lookup after you already
+  know which rule you need.

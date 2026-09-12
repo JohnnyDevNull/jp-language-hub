@@ -64,8 +64,8 @@ The site is served from a base path — `base: '/jp-language-hub'` in
 name.
 
 Astro does not rewrite links written in a page body. An absolute site path
-such as `/learn/swedish/grammar/verbs/present/` is emitted verbatim, so in
-production it 404s: the real URL is `/jp-language-hub/learn/...`. The same
+such as `/learn/swedish/grammar/verbs-time-forms/present/` is emitted verbatim,
+so in production it 404s: the real URL is `/jp-language-hub/learn/...`. The same
 applies to an `href` prop handed to a component, because `RelatedTopics` and
 `TagList` pass it straight to the anchor.
 
@@ -79,9 +79,9 @@ The rules:
 
 1. **Write page-body links relative to the page.** Markdown links and
    component `href` props must never start with `/`. From
-   `/learn/swedish/learning-path/`, write `../grammar/verbs/present/`. A
-   relative link also keeps the reader inside the current meta locale, so a
-   `/de/` page links to `/de/` pages.
+   `/learn/swedish/learning-path/`, write
+   `../grammar/verbs-time-forms/present/`. A relative link also keeps the reader
+   inside the current meta locale, so a `/de/` page links to `/de/` pages.
 2. **`related` frontmatter is the one exception** and must stay absolute. The
    content schema requires that shape, and its consumers resolve it
    themselves.
@@ -134,6 +134,50 @@ All commit messages must follow the Conventional Commits format:
 ```
 <type>[optional scope]: <description>
 ```
+
+## Main Agent & Sub-Agent models
+
+The following sub-agent model suggestions are just for orientation. Never instruct
+from the Orchestrator level a Sub-Agent with the highest model unless it is absolut
+necessary. Use also appropiate reasoning levels to balance cost, speed and efficency
+without loosing quality. If a sub-agent limit reached wait until they get cleared by
+the harness. Do not continue endlessly with existing Agents because they also have a
+context limit. Decide when it makes sense to instruct new agents or cleanup old ones
+when possible, otherwise wait for the harness cleanup before continue.
+
+### OpenAI / Codex / GPT
+
+5.6 Sol
+  └─ Orchestrator / Lead Agent
+5.6 Terra
+  ├─ implementation-agent
+  ├─ debugging-agent
+  ├─ test-agent
+  └─ reviewer
+5.6 Luna
+  ├─ repo-explorer
+  ├─ grep/search-agent
+  ├─ docs-agent
+  ├─ simple-fix-agent
+  ├─ straight-forward-agent
+  └─ repetitive-task-agent
+
+### Claude
+
+Fable / Opus
+  └─ Orchestrator / Lead Agent
+Sonnet
+  ├─ implementation-agent
+  ├─ debugging-agent
+  ├─ test-agent
+  └─ reviewer
+Haiku
+  ├─ repo-explorer
+  ├─ grep/search-agent
+  ├─ docs-agent
+  ├─ simple-fix-agent
+  ├─ straight-forward-agent
+  └─ repetitive-task-agent
 
 ## Documentation
 

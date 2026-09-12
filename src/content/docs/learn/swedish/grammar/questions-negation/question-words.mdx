@@ -16,9 +16,10 @@ tags:
   - pronouns
   - important
 related:
+  - /learn/swedish/grammar/questions-negation/questions/
   - /learn/swedish/grammar/sentence-structure/v2/
   - /learn/swedish/grammar/sentence-structure/biff/
-  - /learn/swedish/grammar/pronouns-function-words/relative-pronouns/
+  - /learn/swedish/grammar/pronouns-roles/relative-pronouns/
   - /learn/swedish/grammar/nouns-articles/en-ett/
 ---
 
@@ -29,6 +30,7 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
 import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
@@ -37,8 +39,8 @@ import TagList from '~/components/TagList.astro';
   <Sv>Var bor du?</Sv>
 - An indirect question is a subordinate clause, so the subject comes back before
   the verb: <Sv>Jag vet inte var hon bor.</Sv>
-- <Sv>Vem</Sv> and <Sv>vad</Sv> add <Sv>som</Sv> when they are the subject of
-  their own clause.
+- In an indirect question, <Sv>vem</Sv> and <Sv>vad</Sv> add <Sv>som</Sv> when
+  they are the subject of their own clause.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -47,28 +49,56 @@ Swedish question words nearly all begin with <Sv>v-</Sv>, which
 makes them easy to recognize. The harder part is the word order, which differs
 between direct and indirect questions.
 
-## The question words
+## Use this now
 
-| Swedish | English | German |
-| --- | --- | --- |
-| <Sv>vem</Sv> | who | <span lang="de">wer</span> |
-| <Sv>vems</Sv> | whose | <span lang="de">wessen</span> |
-| <Sv>vad</Sv> | what | <span lang="de">was</span> |
-| <Sv>vilken / vilket / vilka</Sv> | which | <span lang="de">welcher / welches / welche</span> |
-| <Sv>var</Sv> | where | <span lang="de">wo</span> |
-| <Sv>vart</Sv> | where to | <span lang="de">wohin</span> |
-| <Sv>när</Sv> | when | <span lang="de">wann</span> |
-| <Sv>hur</Sv> | how | <span lang="de">wie</span> |
-| <Sv>varför</Sv> | why | <span lang="de">warum</span> |
-| <Sv>hur mycket / hur många</Sv> | how much / how many | <span lang="de">wie viel / wie viele</span> |
+| Swedish | Use it to ask about… |
+| --- | --- |
+| <Sv>vem</Sv> | a person |
+| <Sv>vems</Sv> | an owner |
+| <Sv>vad</Sv> | a thing, event, or identity |
+| <Sv>vilken / vilket / vilka</Sv> | a choice from a set |
+| <Sv>var</Sv> | a location |
+| <Sv>vart</Sv> | a direction |
+| <Sv>när</Sv> | a time |
+| <Sv>hur</Sv> | a manner or condition |
+| <Sv>varför</Sv> | a reason |
+| <Sv>hur mycket / hur många</Sv> | an amount or number |
 
 <Sv>Vem</Sv> is invariable — there is no separate object form,
 so <Sv>Vem såg du?</Sv> and <Sv>Vem såg dig?</Sv>
 differ only in word order, not in the pronoun.
 
+## Core rule: direct questions
+
+When the question word is not the subject, it fills the first field and the
+finite verb follows it. Compare that frame with a yes/no question:
+
+<SentenceSchema
+	caption="Direct question frames"
+	rowHeader="Question"
+	columns={['Question phrase', 'Finite verb', 'Subject', 'Rest']}
+	rows={[
+		{ label: 'Question word', cells: ['Var', 'bor', 'du', ''] },
+		{ label: 'Question phrase', cells: ['Vilken bok', 'läser', 'du', ''] },
+		{ label: 'Yes/no', cells: ['', 'Bor', 'du', 'här?'] },
+	]}
+/>
+
+When the question word itself is the subject, it occupies the subject role and
+no separate subject follows: <Sv>Vem ringde?</Sv> and <Sv>Vad hände?</Sv>
+
+<RuleBox title="No do-support">
+	Swedish has nothing like English *do*. <Sv>Bor du här?</Sv> is
+	*Do you live here?*, and <Sv>Vad sa han?</Sv> is *What did he
+	say?* The verb itself moves; no helper is added.
+</RuleBox>
+
+See [Questions](../questions/) for the shared yes/no frame and
+[V2](../../sentence-structure/v2/) for declarative main clauses.
+
 ## var or vart
 
-Swedish separates position from direction, exactly as German does:
+Standard Swedish separates position from direction, as German does:
 
 - <Sv>Var bor du?</Sv> — *Where do you live?*
 - <Sv>Vart går du?</Sv> — *Where are you going?*
@@ -78,8 +108,7 @@ For *where from*, the preposition goes to the end:
 
 ## vilken agrees with the noun
 
-<Sv>Vilken</Sv> is the only question word that inflects, and it
-follows the noun's gender and number:
+The <Sv>vilken</Sv> series agrees with the noun's gender and number:
 
 - <Sv>Vilken bok läser du?</Sv> — an en-word
 - <Sv>Vilket hus är ditt?</Sv> — an ett-word
@@ -92,56 +121,29 @@ For *what kind of*, Swedish uses <Sv>vad för</Sv> or
 See [en / ett](../../nouns-articles/en-ett/) for the gender
 behind the choice.
 
-## Direct questions: verb in second position
-
-With a question word, the question word takes first position and the finite
-verb follows immediately:
-
-<p lang="sv">Var bor du?</p>
-
-Without a question word, the verb comes first:
-
-<p lang="sv">Bor du här?</p>
-
-<RuleBox title="No do-support">
-	Swedish has nothing like English *do*. <Sv>Bor du här?</Sv> is
-	*Do you live here?*, and <Sv>Vad sa han?</Sv> is *What did he
-	say?* The verb itself moves; no helper is added.
-</RuleBox>
-
-See [V2](../../sentence-structure/v2/) for the underlying
-word-order rule.
-
 ## Indirect questions: no inversion
 
-An indirect question is a subordinate clause. The subject comes back in front
-of the verb, and <Sv>inte</Sv> moves before the verb:
+An indirect question is a subordinate clause. The subject therefore comes
+before the finite verb, and a sentence adverb such as <Sv>inte</Sv> comes before
+that verb:
 
-| Direct | Indirect |
-| --- | --- |
-| <Sv>Var bor hon?</Sv> | <Sv>Jag vet inte var hon bor.</Sv> |
-| <Sv>När kommer tåget?</Sv> | <Sv>Han frågade när tåget kommer.</Sv> |
-| <Sv>Varför gör du så?</Sv> | <Sv>Jag förstår inte varför du gör så.</Sv> |
+<SentenceSchema
+	caption="Direct and indirect question-word order"
+	rowHeader="Question"
+	columns={['Question word', 'Finite verb (direct)', 'Subject', 'Sentence adverb', 'Verb (indirect)', 'Rest']}
+	rows={[
+		{ label: 'Direct', cells: ['Var', 'bor', 'hon', '', '', ''] },
+		{ label: 'Indirect', cells: ['var', '', 'hon', '', 'bor', ''] },
+		{ label: 'Indirect, negative', cells: ['varför', '', 'hon', 'inte', 'kommer', ''] },
+	]}
+/>
 
-For an indirect yes/no question, Swedish uses <Sv>om</Sv>:
+- <Sv>Var bor hon?</Sv> → <Sv>Jag vet inte var hon bor.</Sv>
+- <Sv>Varför kommer hon?</Sv> → <Sv>Jag förstår inte varför hon kommer.</Sv>
 
-<p lang="sv">Jag vet inte om hon kommer.</p>
-
-See [BIFF and subordinate clauses](../../sentence-structure/biff/).
-
-## Direct comparison
-
-<LanguageComparison title="Direct question">
-	<p slot="de">Wo wohnst du?</p>
-	<p slot="en">Where do you live?</p>
-	<p slot="sv">Var bor du?</p>
-</LanguageComparison>
-
-<LanguageComparison title="Indirect question">
-	<p slot="de">Ich weiß nicht, wo sie wohnt.</p>
-	<p slot="en">I do not know where she lives.</p>
-	<p slot="sv">Jag vet inte var hon bor.</p>
-</LanguageComparison>
+See [Subordinate clauses](../../sentence-structure/subordinate-clauses/) for the
+general dependent-clause frame. [Questions](../questions/#indirect-yesno-questions-with-om)
+handles indirect yes/no questions with <Sv>om</Sv>.
 
 ## Insert som when the question word is the subject
 
@@ -161,12 +163,19 @@ When they are the object, no <Sv>som</Sv> appears:
 Direct questions do not need it: <Sv>Vem ringde?</Sv>,
 <Sv>Vad hände?</Sv>
 
-<MemoryTip>
-Contrast one pair until it is automatic:
-<Sv><strong>Vem som ringde</strong></Sv> — the caller is the
-subject. <Sv><strong>Vem hon ringde</strong></Sv> — the caller is
-someone else. The extra <Sv>som</Sv> marks the subject.
-</MemoryTip>
+## Direct comparison
+
+<LanguageComparison title="Direct question">
+	<p slot="de">Wo wohnst du?</p>
+	<p slot="en">Where do you live?</p>
+	<p slot="sv">Var bor du?</p>
+</LanguageComparison>
+
+<LanguageComparison title="Indirect question">
+	<p slot="de">Ich weiß nicht, wo sie wohnt.</p>
+	<p slot="en">I do not know where she lives.</p>
+	<p slot="sv">Jag vet inte var hon bor.</p>
+</LanguageComparison>
 
 ## Common mistakes
 
@@ -179,9 +188,14 @@ someone else. The extra <Sv>som</Sv> marks the subject.
 	  ✅ <Sv>Var bor du?</Sv>
 	- ❌ <Sv>Vilken hus är ditt?</Sv>
 	  ✅ <Sv>Vilket hus är ditt?</Sv>
-	- ❌ <Sv>Jag vet inte att hon kommer</Sv> for an open question
-	  ✅ <Sv>Jag vet inte om hon kommer.</Sv>
 </MistakeBox>
+
+<MemoryTip>
+Contrast one pair until it is automatic:
+<Sv><strong>Vem som ringde</strong></Sv> — the caller is the
+subject. <Sv><strong>Vem hon ringde</strong></Sv> — the caller is
+someone else. The extra <Sv>som</Sv> marks the subject.
+</MemoryTip>
 
 <QuickCheck
 	items={[
@@ -206,12 +220,17 @@ someone else. The extra <Sv>som</Sv> marks the subject.
 
 <RelatedTopics
 	topics={[
+		{ href: '../questions/', label: 'Questions' },
 		{ href: '../../sentence-structure/v2/', label: 'V2 rule' },
 		{
 			href: '../../sentence-structure/biff/',
-			label: 'BIFF and subordinate clauses',
+			label: 'BIFF',
 		},
-		{ href: '../relative-pronouns/', label: 'Relative pronouns' },
+		{ href: '../../sentence-structure/subordinate-clauses/', label: 'Subordinate clauses' },
+		{
+			href: '../../pronouns-roles/relative-pronouns/',
+			label: 'Relative pronouns',
+		},
 		{
 			href: '../../nouns-articles/en-ett/',
 			label: 'en / ett',

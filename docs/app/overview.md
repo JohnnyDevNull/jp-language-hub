@@ -17,13 +17,13 @@ The Swedish learning tree remains the broadest product focus and the most
 varied learning tree. It contains:
 
 - grammar references for sentence structure, nouns, adjectives, verbs,
-  pronouns, function words, numerals, and prepositions
+  pronouns, prepositions, function words, and connectors
 - sentence-pattern pages for active communication
 - common-mistake pages for German-to-Swedish and English-to-Swedish transfer
 - cheat sheets for quick form lookup
-- a learning path with short entry routes and a complete ordered map
-- a small vocabulary area with practical domains such as time, food, shopping,
-  transport, home, and daily routines
+- a learning path with short entry routes and a curated ordered map
+- a small vocabulary area with a compact numbers lookup and practical domains
+  such as time, food, shopping, transport, home, and daily routines
 - pronunciation basics without audio or IPA
 
 The English learning tree has a focused grammar pass for German-speaking

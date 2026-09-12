@@ -147,11 +147,13 @@ or a callout at least every few paragraphs.
 
 | Page | Rendered words | Why it stays in one file |
 | --- | --- | --- |
-| `grammar/verbs/particle-verbs` | 1513 | Loose and bound particles are the same rule seen from two sides, the frequency glossary is the page's lookup value, and the practical entry path keeps the long page usable. A learner who consults one needs the other on the same page. |
+| `grammar/verb-patterns-voice/particle-verbs` | 1480 | Loose and bound particles are the same rule seen from two sides, the frequency glossary is the page's lookup value, and the practical entry path keeps the long page usable. A learner who consults one needs the other on the same page. |
 | `grammar/adjectives-adverbs/agreement` | 1306 | Agreement and double definiteness form one paradigm. `en-ett` deep-links into its definite section, and the practical decision path prevents the exception list from becoming the entry point. |
-| `grammar/pronouns-function-words/prepositions` | 1271 | A survey page whose value is the collected contrast with German and the practical decision path for place, direction, time, and fixed phrases; splitting it by preposition would produce stubs. |
-| `grammar/nouns-articles/en-ett` | 1204 | Gender, ending signals and the compound rule are one lookup, and the fast decision path makes the longer page usable for real noun choices. Nobody needs the endings without the rule they serve. |
-| `learning-path` | 1084 | This is an index route, not a single reference page. The ordered map now includes practical situation and vocabulary routes so learners can choose between grammar-first and situation-first paths without leaving the page. |
+| `grammar/prepositions-function-words/prepositions` | 1172 | A survey page whose value is the collected contrast with German and the practical decision path for place, direction, time, and fixed phrases; splitting it by preposition would produce stubs. |
+| `grammar/nouns-articles/en-ett` | 1219 | Gender, ending signals and the compound rule are one lookup, and the fast decision path makes the longer page usable for real noun choices. Nobody needs the endings without the rule they serve. |
+| `learning-path` | 1220 | This is an index route, not a single reference page. The ordered map now includes practical situation, vocabulary, S1-S4 grammar integration, and B2 report/conditional routes so learners can choose between grammar-first and situation-first paths without leaving the page. |
+| `de/learn/swedish/learning-path` | 1117 | Authored meta-language mirror of the canonical Learning Path; it preserves the same route structure, B2 additions, and learner choices rather than falling back to the English source. |
+| `sv/learn/swedish/learning-path` | 1101 | Authored meta-language mirror of the canonical Learning Path; it preserves the same route structure, B2 additions, and learner choices rather than falling back to the English source. |
 
 Add a row when a page crosses the budget for a real reason. Do not add one to
 avoid editing.

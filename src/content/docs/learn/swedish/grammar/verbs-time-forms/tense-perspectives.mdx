@@ -14,10 +14,10 @@ tags:
   - verbs
   - important
 related:
-  - /learn/swedish/grammar/verbs/present/
-  - /learn/swedish/grammar/verbs/preterite/
-  - /learn/swedish/grammar/verbs/perfect/
-  - /learn/swedish/grammar/verbs/verb-forms/
+  - /learn/swedish/grammar/verbs-time-forms/present/
+  - /learn/swedish/grammar/verbs-time-forms/preterite/
+  - /learn/swedish/grammar/verbs-time-forms/perfect/
+  - /learn/swedish/grammar/verbs-time-forms/verb-forms/
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
@@ -32,7 +32,8 @@ import TagList from '~/components/TagList.astro';
 <KeyTakeaway>
 - Choose a tense by asking where the action sits relative to **now** or to a
   **past reference point**, not by translating the German tense name.
-- The now perspective is perfect — present — <Sv>ska</Sv> + infinitive.
+- The now perspective is perfect — present — future time, with several
+  possible future constructions.
 - The past perspective is pluperfect — preterite — <Sv>skulle</Sv> +
   infinitive.
 </KeyTakeaway>
@@ -49,13 +50,13 @@ what is anchored around **now** and what is anchored around a point in the
 | --- | --- | --- | --- |
 | before now | perfect | <Sv>Jag har skrivit mejlet.</Sv> | I have written the email. |
 | now | present | <Sv>Jag läser svaret.</Sv> | I am reading the answer. |
-| after now | future | <Sv>Jag ska ringa Anna.</Sv> | I am going to call Anna. |
+| after now | future time | <Sv>Jag ringer / ska ringa Anna.</Sv> | I am calling / going to call Anna. |
 
 The present is the basic finite form for present-time statements. The perfect
 uses <Sv>har</Sv> + supine to connect an earlier action with the
-present. The future is often built with <Sv>ska</Sv> +
-infinitive, though Swedish can also use the present when the future meaning is
-clear from context.
+present. Future time can use the contextual present, <Sv>ska</Sv>,
+<Sv>tänker</Sv>, or <Sv>kommer att</Sv>; the
+[Future forms](../future-forms/) page owns that choice.
 
 ## The past perspective
 
@@ -83,9 +84,9 @@ after that point.
 	<p slot="sv">Jag läser.</p>
 </LanguageComparison>
 
-<LanguageComparison title="After now">
+<LanguageComparison title="After now: an arranged plan">
 	<p slot="de">Ich werde anrufen.</p>
-	<p slot="en">I will call.</p>
+	<p slot="en">I am going to call.</p>
 	<p slot="sv">Jag ska ringa.</p>
 </LanguageComparison>
 
@@ -146,8 +147,8 @@ This separates tense from translation names.
 				answer: 'Jag hade skrivit mejlet.',
 			},
 		{
-			prompt: 'Rewrite in the now perspective, after now: Jag ringer Anna.',
-			answer: 'Jag ska ringa Anna.',
+			prompt: 'Add a clear future time while keeping the present: Jag ringer Anna.',
+			answer: 'Jag ringer Anna i morgon.',
 		},
 		{
 			prompt: 'Which verb is finite in “Jag hade skrivit mejlet”?',
@@ -161,6 +162,7 @@ This separates tense from translation names.
 		{ href: '../present/', label: 'Present tense' },
 		{ href: '../preterite/', label: 'Preterite' },
 		{ href: '../perfect/', label: 'Perfect' },
+		{ href: '../future-forms/', label: 'Future forms' },
 		{ href: '../verb-forms/', label: 'Verb forms' },
 	]}
 />

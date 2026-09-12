@@ -29,9 +29,10 @@ related:
 | <span lang="sv">-ande, -eri, -um, -ment, -tek, -gram</span> | <span lang="sv">ett</span> | <span lang="sv">ett meddelande</span>, <span lang="sv">ett museum</span> |
 | No clue at all | guess <span lang="sv">en</span> — the majority | |
 
-The compound rule has no exceptions. The endings are strong tendencies: watch
-out for <span lang="sv">ett öga</span>, <span lang="sv">en studerande</span>,
-and the split <span lang="sv">-skap</span>.
+Productive compounds normally take the gender of the last element. The endings
+are strong tendencies: watch out for <span lang="sv">ett öga</span>,
+<span lang="sv">en studerande</span>, and the split
+<span lang="sv">-skap</span>.
 
 ## Indefinite forms
 

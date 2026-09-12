@@ -11,14 +11,15 @@ related:
 ---
 
 There is no separate exercise area yet, and this page no longer promises one.
-What exists instead is a self-check at the end of every reference page.
+What exists instead is a self-check at the end of most productive detail pages.
+Overviews, index pages and cheat sheets follow their own page-type rules.
 
 ## What a quick check is
 
-Each reference page ends with a **Quick check**: two to four prompts with the
-answer hidden behind a disclosure. The prompts ask for production — a form, a
-correction, a rewritten sentence — never recognition, and never anything the
-page above did not teach.
+Most productive detail pages end with a **Quick check**: two to four prompts
+with the answer hidden behind a disclosure. The prompts ask for production — a
+form, a correction, a rewritten sentence — never recognition, and never
+anything the page above did not teach.
 
 Work through the page, then answer its quick check before revealing anything.
 The self-checks live on the pages themselves, because a prompt is only fair

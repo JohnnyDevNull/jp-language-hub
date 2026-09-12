@@ -1,6 +1,6 @@
 ---
 title: Grundläggande ordföljd
-description: Bygg tydliga svenska huvudsatser, frågor och bisatser från ett pålitligt grundmönster.
+description: Bygg en neutral svensk huvudsats från ett pålitligt subjektinitialt mönster.
 metaLanguage: sv
 grammarLanguage: sv
 comparisonLanguages:
@@ -17,8 +17,8 @@ tags:
 related:
   - /learn/swedish/grammar/sentence-structure/v2/
   - /learn/swedish/grammar/sentence-structure/inversion/
-  - /learn/swedish/grammar/sentence-structure/biff/
-  - /learn/swedish/grammar/sentence-structure/inte-placement/
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+  - /learn/swedish/grammar/questions-negation/questions/
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
@@ -32,17 +32,17 @@ import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Den neutrala huvudsatsen går subjekt, finit verb, satsadverbial, återstående
-  verbdelar, objekt, adverbial.
+- I den neutrala huvudsatsen är ordningen subjekt, finit verb, satsadverbial,
+  återstående verbdelar, objekt, adverbial.
 - En satsposition innehåller ett **led**, som kan bestå av flera ord.
-- Svenska verb böjs inte efter person, så verbets position bär mer av grammatiken.
+- Svenska verb böjs inte efter person; ordföljden visar hur satsen är organiserad.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Svensk ordföljd bär grammatisk betydelse. Den mest användbara startpunkten är
-det neutrala huvudsatsmönstret, men det mönstret förändras när ett annat satsled
-placeras först eller när satsen är en bisats.
+den neutrala subjektinitiala huvudsatsen; egna sidor behandlar framförställning,
+frågor och bisatser.
 
 ## Kärnregel
 
@@ -50,8 +50,8 @@ I en neutral påståendesats följer svenska vanligtvis denna ordning:
 
 > **subjekt + finit verb + satsadverbial + återstående verbdelar + objekt + adverbial**
 
-Läs satsen som en rad fält. Det här är det neutrala schemat som
-[V2](../v2/), [inversion](../inversion/) och [BIFF](../biff/) varierar:
+Läs satsen som en rad fält. Det här är det neutrala schemat bakom
+[V2-regeln](../v2/):
 
 <SentenceSchema
 	caption="Det neutrala huvudsatsschemat"
@@ -93,7 +93,7 @@ hamnar allra sist.
 - <Sv>bilen</Sv> — objekt
 - <Sv>idag</Sv> — tidsadverbial
 
-Det finita verbet bär tempus och förankrar satsstrukturen. Svenska verb böjs
+Det finita verbet markerar tempus och förankrar satsstrukturen. Svenska verb böjs
 inte efter person:
 
 - <Sv>Jag arbetar.</Sv> — samma verbform med <Sv>jag</Sv>.
@@ -103,52 +103,21 @@ inte efter person:
 
 En satsposition fylls av ett **led**, inte nödvändigtvis av ett ord.
 
-<p lang="sv">På måndag morgon börjar jag mitt nya jobb.</p>
+<p lang="sv">Min nya kollega börjar idag.</p>
 
-Hela frasen <Sv>på måndag morgon</Sv> fyller första positionen. Det finita
-verbet <Sv>börjar</Sv> är därför tvåa och subjektet följer efter.
+Hela nominalfrasen <Sv>min nya kollega</Sv> är subjekt och fyller första
+positionen. Det finita verbet <Sv>börjar</Sv> är därför tvåa.
 
-## Frågor
+## Välj nästa mönster
 
-En ja/nej-fråga börjar normalt med det finita verbet:
-
-<p lang="sv">Köper du bilen idag?</p>
-
-En frågeordsfråga börjar normalt med frågeordet eller frågefrasen, följt av det
-finita verbet:
-
-<p lang="sv">När köper du bilen?</p>
-
-Frågefrasen <Sv>när</Sv> fyller första positionen, så det finita verbet förblir
-tvåa.
-
-## Huvudsatser och bisatser
-
-Samma fält visar också vad som ändras i en bisats. Position två står tom där:
-det finita verbet lämnar den och följer efter satsadverbialet.
-
-<SentenceSchema
-	caption="Huvudsats mot bisats"
-	rowHeader="Sats"
-	columns={[
-		'1 Fundament',
-		'2 Finit verb',
-		'3 Subjekt',
-		'Satsadverbial',
-		'Verbgrupp',
-		'Rest',
-	]}
-	rows={[
-		{ label: 'Huvudsats', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] },
-		{
-			label: 'Bisats',
-			cells: ['eftersom', '', 'jag', 'inte', 'kommer', 'idag.'],
-		},
-	]}
-/>
-
-[BIFF-regeln](../biff/) är ett användbart sätt att komma ihåg det här
-bisatsmönstret.
+- Om något annat än subjektet står först, använd
+  [inversion](../inversion/).
+- Om satsen frågar efter bekräftelse eller saknad information, använd
+  [frågor](../../questions-negation/questions/).
+- Om satsen är beroende av en annan sats, använd
+  [bisatser](../subordinate-clauses/).
+- Om du särskilt behöver placera <Sv>inte</Sv>, använd
+  [placering av *inte*](../inte-placement/).
 
 ## Direkt jämförelse
 
@@ -158,29 +127,21 @@ bisatsmönstret.
 	<p slot="sv">Jag köper en bil idag.</p>
 </LanguageComparison>
 
-<LanguageComparison title="Tidsuttryck först">
-	<p slot="de">Heute kaufe ich ein Auto.</p>
-	<p slot="en">Today I am buying a car.</p>
-	<p slot="sv">Idag köper jag en bil.</p>
-</LanguageComparison>
-
-De tre språken kan se lika ut i en neutral mening. Den viktiga skillnaden syns
-när första ledet ändras: svenska och tyska använder [V2-ordföljd](../v2/),
-medan engelska normalt behåller subjektet före verbet.
+De tre språken kan se lika ut i en neutral mening. Svenska behåller samma finita
+form för alla personer, medan engelska kan använda ett hjälpverb och tyska kan
+placera senare verbdelar annorlunda.
 
 <MistakeBox
-	incorrect="Idag jag köper en bil."
-	correct="Idag köper jag en bil."
+	incorrect="Jag inte köper bilen idag."
+	correct="Jag köper inte bilen idag."
 	lang="sv"
 >
-Kopiera inte engelsk subjekt-verb-ordföljd efter ett framförställt svenskt
-adverbial.
+Placera det finita verbet före satsadverbialet i en neutral huvudsats.
 </MistakeBox>
 
 <MemoryTip>
-Börja med **vem + gör vad**, och lägg sedan till resten. Om något annat flyttas
-till början av en huvudsats, behåll det finita verbet på position två och flytta
-subjektet bakom det.
+Börja med **vem + finit verb**, och lägg sedan till satsadverbial, återstående
+verbdelar, objekt och annan information.
 </MemoryTip>
 
 <QuickCheck
@@ -190,11 +151,11 @@ subjektet bakom det.
 			answer: 'Jag köper inte bilen idag.',
 		},
 		{
-			prompt: 'Gör "Du köper bilen idag." till en ja/nej-fråga.',
-			answer: 'Köper du bilen idag?',
+			prompt: 'Bygg en neutral sats: hon / vill / inte / gå / hem',
+			answer: 'Hon vill inte gå hem.',
 		},
 		{
-			prompt: 'Vilken position fyller "på måndag morgon" i "På måndag morgon börjar jag mitt nya jobb"?',
+			prompt: 'Vilken position fyller "min nya kollega" i "Min nya kollega börjar idag"?',
 			answer: 'Position ett, som ett enda led.',
 		},
 	]}
@@ -204,7 +165,7 @@ subjektet bakom det.
 	topics={[
 		{ href: '../v2/', label: 'V2-regeln' },
 		{ href: '../inversion/', label: 'Inversion' },
-		{ href: '../biff/', label: 'BIFF' },
-		{ href: '../inte-placement/', label: 'Placering av inte' },
+		{ href: '../subordinate-clauses/', label: 'Bisatser' },
+		{ href: '../../questions-negation/questions/', label: 'Frågor' },
 	]}
 />

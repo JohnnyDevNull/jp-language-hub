@@ -15,7 +15,7 @@ tags:
   - cheat-sheet
   - verbs
 related:
-  - /learn/swedish/grammar/verbs/particle-verbs/
+  - /learn/swedish/grammar/verb-patterns-voice/particle-verbs/
 ---
 
 ## Word order
@@ -53,13 +53,12 @@ prefix does: <span lang="de">Ich rufe ihn an</span> →
 | <span lang="sv">slå på</span> / <span lang="sv">stänga av</span> | to switch on / off |
 | <span lang="sv">tala om</span> | to tell |
 | <span lang="sv">hålla på</span> | to be in the middle of something |
-| <span lang="sv">passa på</span> | to seize the opportunity, to pay attention |
+| <span lang="sv">passa på</span> | to seize the opportunity |
 
 ## Separated or written together
 
 | Separated | Prefixed |
 | --- | --- |
-| <span lang="sv">tala om</span> — to tell | <span lang="sv">tilltala</span> — to address, to appeal to |
 | <span lang="sv">gå av</span> — to get off | <span lang="sv">avgå</span> — to resign, to depart |
 | <span lang="sv">gå ut</span> — to go out | <span lang="sv">utgå</span> — to be omitted |
 
@@ -76,12 +75,14 @@ first, particle second, object last.
 
 - ❌ <span lang="sv">Han slog den på.</span> → ✅ <span lang="sv">Han slog på den.</span>
 - ❌ <span lang="sv">Jag tycker om inte henne.</span> → ✅ <span lang="sv">Jag tycker inte om henne.</span>
-- Do not learn one translation for <span lang="sv">hålla på</span> or
-  <span lang="sv">passa på</span>; the construction after the particle decides
-  the meaning.
+- Do not use <span lang="sv">passa på</span> for “pay attention” or “watch out”;
+  use a context-appropriate expression such as <span lang="sv">var
+  uppmärksam</span> or <span lang="sv">akta dig</span>.
+- Learn the construction following <span lang="sv">hålla på</span>, because it
+  helps distinguish its common meanings.
 
 ## Full references
 
-- [Particle verbs](../../grammar/verbs/particle-verbs/)
-- [Prepositions](../../grammar/pronouns-function-words/prepositions/)
+- [Particle verbs](../../grammar/verb-patterns-voice/particle-verbs/)
+- [Prepositions](../../grammar/prepositions-function-words/prepositions/)
 - [Placement of *inte*](../../grammar/sentence-structure/inte-placement/)

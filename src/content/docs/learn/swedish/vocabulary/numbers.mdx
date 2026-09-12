@@ -1,6 +1,6 @@
 ---
 title: Numbers
-description: Read and build Swedish cardinal and ordinal numbers, choose en or ett for one, and write dates, decimals, and large numbers.
+description: Look up Swedish cardinal and ordinal numbers, choose en or ett for one, and write dates, decimals, and large numbers.
 metaLanguage: en
 grammarLanguage: sv
 comparisonLanguages:
@@ -11,7 +11,6 @@ levels:
   - A1
   - A2
 tags:
-  - grammar
   - vocabulary
   - important
 related:
@@ -31,19 +30,33 @@ import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Numbers are spoken and written ten before unit, as one word and without
-  <Sv>och</Sv>: <Sv>tjugoett</Sv>.
-- Only the number 1 inflects, and it agrees with the noun's gender:
-  <Sv>tjugoen kronor</Sv> beside <Sv>tjugoett år</Sv>.
+- Ordinary two-part numbers put the ten before the unit and normally write the
+  parts as one word without <Sv>och</Sv>: <Sv>tjugoett</Sv>.
+- Standalone <Sv>en</Sv>/<Sv>ett</Sv> agrees with the noun. After tens, the
+  final 1 is normally <Sv>-en</Sv>; <Sv>-ett</Sv> survives in conventional
+  contexts such as <Sv>år</Sv>, <Sv>nummer</Sv>, <Sv>öre</Sv>, and clock
+  readings.
 - In a compound ordinal only the last element becomes an ordinal:
   <Sv>tjugoförsta</Sv>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Swedish numbers are regular and, unlike German, they are built in the order in
-which they are spoken. Once the first twenty are secure, the rest follows a
+Swedish numbers are practical vocabulary for prices, dates, time, addresses,
+and quantities. Once the first twenty are secure, most everyday forms follow a
 predictable pattern.
+
+## Use this now
+
+| If you need to… | Use |
+| --- | --- |
+| count from 0 to 20 | memorize the base list |
+| build 21, 42, or 156 | ten before unit, no <Sv>och</Sv>: <Sv>tjugoett</Sv>, <Sv>fyrtiotvå</Sv>, <Sv>hundrafemtiosex</Sv> |
+| count one noun by itself | choose <Sv>en</Sv> or <Sv>ett</Sv> by noun gender |
+| build 21, 31, 41 before a noun | normally use final <Sv>-en</Sv>: <Sv>trettioen fartyg</Sv> |
+| use conventional t-word number contexts | use <Sv>-ett</Sv>: <Sv>tjugoett år</Sv>, <Sv>nummer tjugoett</Sv>, <Sv>tjugoett öre</Sv> |
+| write dates | use the ordinal after <Sv>den</Sv>: <Sv>den tredje maj</Sv> |
+| write decimals | use a comma: <Sv>3,5</Sv> |
 
 ## Cardinal numbers
 
@@ -74,11 +87,12 @@ Note the spelling <Sv>fyrtio</Sv> for 40, which does not follow
 <Sv>fyra</Sv>. Several number words also contain the sj- and
 tj-sounds: <Sv>sju</Sv>, <Sv>sjutton</Sv>,
 <Sv>sjuttio</Sv>, <Sv>tjugo</Sv>. See
-[pronunciation basics](../../../pronunciation-basics/).
+[pronunciation basics](../../pronunciation-basics/).
 
 ## Building larger numbers
 
-Numbers are assembled from the largest part down and written as one word:
+Everyday compound numbers are assembled from the largest part down. Two-part
+and three-part compounds are normally written as one word:
 
 - 21 — <Sv>tjugoett</Sv>
 - 42 — <Sv>fyrtiotvå</Sv>
@@ -99,21 +113,29 @@ or take <Sv>ett</Sv> for emphasis or clarity:
 
 ## en or ett for "one"
 
-The number 1 agrees with the gender of the noun it counts, exactly like the
-indefinite article:
+By itself, the number 1 agrees with the gender of the noun it counts, exactly
+like the indefinite article:
 
 - <Sv>en bil</Sv> — one car
 - <Sv>ett hus</Sv> — one house
 
-The same applies inside a compound number:
+After a ten, however, the final 1 is normally <Sv>-en</Sv>, even before many
+ett-words:
 
-- <Sv>tjugoen kronor</Sv> — 21 kronor, because
-  <Sv>en krona</Sv> is an en-word
-- <Sv>tjugoett år</Sv> — 21 years, because
-  <Sv>ett år</Sv> is an ett-word
+- <Sv>tjugoen kronor</Sv> — 21 kronor
+- <Sv>trettioen fartyg</Sv> — 31 vessels, even though <Sv>ett fartyg</Sv> is
+  an ett-word
+
+Use <Sv>-ett</Sv> in conventional t-word number contexts, especially
+<Sv>år</Sv>, <Sv>nummer</Sv>, <Sv>öre</Sv>, and clock readings:
+
+- <Sv>tjugoett år</Sv>
+- <Sv>nummer tjugoett</Sv>
+- <Sv>tjugoett öre</Sv>
+- <Sv>klockan tjugoett</Sv>
 
 Every other number is uninflected. See
-[en / ett](../../nouns-articles/en-ett/) for noun gender.
+[en / ett](../../grammar/nouns-articles/en-ett/) for noun gender.
 
 ## Ordinal numbers
 
@@ -130,10 +152,15 @@ Every other number is uninflected. See
 | 9th | <Sv>nionde</Sv> | 19th | <Sv>nittonde</Sv> |
 | 10th | <Sv>tionde</Sv> | 20th | <Sv>tjugonde</Sv> |
 
-The first six are the ones worth memorizing; from 13 upwards the pattern is
-simply <Sv>-de</Sv> on the cardinal number.
+The first twelve are worth memorizing. From 13 to 19, Swedish usually adds
+<Sv>-de</Sv> to the cardinal number:
+<Sv>trettonde</Sv>, <Sv>fjortonde</Sv>,
+<Sv>nittonde</Sv>. Full tens have their own forms, such as
+<Sv>tjugo → tjugonde</Sv> and
+<Sv>trettio → trettionde</Sv>.
 
-In a compound ordinal, **only the last element** becomes an ordinal:
+In a compound ordinal, **only the last element** becomes an ordinal. If the
+final element is 1 or 2, use <Sv>första</Sv> or <Sv>andra</Sv>:
 
 - 21st — <Sv>tjugoförsta</Sv>
 - 42nd — <Sv>fyrtioandra</Sv>
@@ -173,15 +200,6 @@ Like German, Swedish uses a **comma** as the decimal separator and a space to
 group thousands: <Sv>3,5</Sv> is read
 <Sv>tre komma fem</Sv>, and 10 000 is written with a space.
 
-<MemoryTip>
-Drill the numbers you actually need first: prices, house numbers, years, and
-your own phone number. Say them aloud in Swedish rhythm —
-<Sv>tjugoett, tjugotvå, tjugotre</Sv> — so the ten-before-unit
-order becomes automatic instead of translated.
-</MemoryTip>
-
-## Common mistakes
-
 <MistakeBox title="Common mistakes">
 	- ❌ <Sv>ettochtjugo</Sv> — German digit order
 	  ✅ <Sv>tjugoett</Sv>
@@ -189,12 +207,21 @@ order becomes automatic instead of translated.
 	  ✅ <Sv>tjugoett</Sv>
 	- ❌ <Sv>tjugoett kronor</Sv>
 	  ✅ <Sv>tjugoen kronor</Sv>
+	- ❌ <Sv>trettioett fartyg</Sv>
+	  ✅ <Sv>trettioen fartyg</Sv>
 	- ❌ <Sv>den 3:a maj</Sv>
 	  ✅ <Sv>den 3:e maj</Sv>
 	- Do not make both parts of a compound ordinal an ordinal:
 	  <Sv>❌ fyrtiondeandra</Sv>,
 	  <Sv>✅ fyrtioandra</Sv>.
 </MistakeBox>
+
+<MemoryTip>
+Drill the numbers you actually need first: prices, house numbers, years, and
+your own phone number. Say them aloud in Swedish rhythm —
+<Sv>tjugoett, tjugotvå, tjugotre</Sv> — so the ten-before-unit
+order becomes automatic instead of translated.
+</MemoryTip>
 
 <QuickCheck
 	items={[
@@ -203,8 +230,8 @@ order becomes automatic instead of translated.
 			answer: 'fyrtiotvå, hundrafemtiosex',
 		},
 		{
-			prompt: 'One or ett? ___ krona, ___ år, tjugo___ kronor.',
-			answer: 'en krona, ett år, tjugoen kronor',
+			prompt: 'Complete the final 1: trettio___ fartyg · tjugo___ år.',
+			answer: 'trettioen fartyg · tjugoett år',
 		},
 		{
 			prompt: 'Say “on 3 May” in Swedish, with the ordinal written out.',
@@ -220,19 +247,19 @@ order becomes automatic instead of translated.
 <RelatedTopics
 	topics={[
 		{
-			href: '../../nouns-articles/en-ett/',
+			href: '../../grammar/nouns-articles/en-ett/',
 			label: 'en / ett',
 		},
 		{
-			href: '../../../vocabulary/telling-time/',
+			href: '../telling-time/',
 			label: 'Telling time',
 		},
 		{
-			href: '../../../pronunciation-basics/',
+			href: '../../pronunciation-basics/',
 			label: 'Pronunciation basics',
 		},
 		{
-			href: '../../../../../false-friends/',
+			href: '../../../../false-friends/',
 			label: 'False friends',
 		},
 	]}

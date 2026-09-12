@@ -1,6 +1,6 @@
 ---
 title: Basic word order
-description: Build clear Swedish main clauses, questions, and subordinate clauses from a reliable basic pattern.
+description: Build a neutral Swedish main clause from a reliable subject-first pattern.
 metaLanguage: en
 grammarLanguage: sv
 comparisonLanguages:
@@ -17,8 +17,8 @@ tags:
 related:
   - /learn/swedish/grammar/sentence-structure/v2/
   - /learn/swedish/grammar/sentence-structure/inversion/
-  - /learn/swedish/grammar/sentence-structure/biff/
-  - /learn/swedish/grammar/sentence-structure/inte-placement/
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+  - /learn/swedish/grammar/questions-negation/questions/
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
@@ -35,15 +35,15 @@ import TagList from '~/components/TagList.astro';
 - The neutral main clause runs subject, finite verb, sentence adverb, remaining
   verb parts, object, adverbial.
 - A sentence position holds one **constituent**, which may be several words.
-- Swedish verbs do not change according to person, so the position of the verb
-  carries the grammar instead.
+- Swedish verbs do not change according to person; word order shows how the
+  clause is organized.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Swedish word order carries grammatical meaning. The most useful starting point is
-the neutral main-clause pattern, but that pattern changes when another sentence
-element is placed first or when the clause is subordinate.
+Swedish word order carries grammatical meaning. The most useful starting point
+is the neutral subject-first main clause; other pages handle fronting,
+questions, and subordinate clauses.
 
 ## Core rule
 
@@ -51,8 +51,8 @@ In a neutral declarative main clause, Swedish usually follows this order:
 
 > **subject + finite verb + sentence adverb + remaining verb parts + object + adverbial**
 
-Read the clause as a row of fields. This is the neutral schema that
-[V2](../v2/), [inversion](../inversion/) and [BIFF](../biff/) vary:
+Read the clause as a row of fields. This is the neutral schema behind the
+[V2 rule](../v2/):
 
 <SentenceSchema
 	caption="The neutral main-clause schema"
@@ -104,52 +104,21 @@ do not change according to person:
 
 A sentence position is occupied by a **constituent**, not necessarily one word.
 
-<p lang="sv">På måndag morgon börjar jag mitt nya jobb.</p>
+<p lang="sv">Min nya kollega börjar idag.</p>
 
-The entire phrase <Sv>på måndag morgon</Sv> occupies the first position. The
-finite verb <Sv>börjar</Sv> is therefore second and the subject follows it.
+The entire noun phrase <Sv>min nya kollega</Sv> is the subject and occupies the
+first position. The finite verb <Sv>börjar</Sv> is therefore second.
 
-## Questions
+## Choose the next pattern
 
-A yes/no question normally begins with the finite verb:
-
-<p lang="sv">Köper du bilen idag?</p>
-
-A question-word question normally begins with the question word or phrase,
-followed by the finite verb:
-
-<p lang="sv">När köper du bilen?</p>
-
-The question phrase <Sv>när</Sv> occupies the first position, so the finite verb
-remains second.
-
-## Main and subordinate clauses
-
-The same fields also show what changes in a subordinate clause. Position two
-stays empty there: the finite verb leaves it and follows the sentence adverb.
-
-<SentenceSchema
-	caption="Main clause against subordinate clause"
-	rowHeader="Clause"
-	columns={[
-		'1 Fundament',
-		'2 Finite verb',
-		'3 Subject',
-		'Satsadverbial',
-		'Verb group',
-		'Rest',
-	]}
-	rows={[
-		{ label: 'Main clause', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] },
-		{
-			label: 'Subordinate clause',
-			cells: ['eftersom', '', 'jag', 'inte', 'kommer', 'idag.'],
-		},
-	]}
-/>
-
-The [BIFF rule](../biff/) is a useful way to remember this subordinate-clause
-pattern.
+- If something other than the subject comes first, use
+  [Inversion](../inversion/).
+- If the sentence asks for confirmation or missing information, use
+  [Questions](../../questions-negation/questions/).
+- If the clause depends on another clause, use
+  [Subordinate clauses](../subordinate-clauses/).
+- If you specifically need to place <Sv>inte</Sv>, use
+  [Placement of *inte*](../inte-placement/).
 
 ## Direct comparison
 
@@ -159,29 +128,21 @@ pattern.
 	<p slot="sv">Jag köper en bil idag.</p>
 </LanguageComparison>
 
-<LanguageComparison title="Time expression first">
-	<p slot="de">Heute kaufe ich ein Auto.</p>
-	<p slot="en">Today I am buying a car.</p>
-	<p slot="sv">Idag köper jag en bil.</p>
-</LanguageComparison>
-
-The three languages can look similar in a neutral sentence. The important
-difference appears when the first constituent changes: Swedish and German use
-[V2 word order](../v2/), whereas English normally keeps the subject before the
-verb.
+The three languages can look similar in a neutral sentence. Swedish keeps one
+finite form across persons, while English may use an auxiliary and German may
+place later verb parts differently.
 
 <MistakeBox
-	incorrect="Idag jag köper en bil."
-	correct="Idag köper jag en bil."
+	incorrect="Jag inte köper bilen idag."
+	correct="Jag köper inte bilen idag."
 	lang="sv"
 >
-Do not copy English subject–verb order after a fronted Swedish adverbial.
+Keep the finite verb before the sentence adverb in a neutral main clause.
 </MistakeBox>
 
 <MemoryTip>
-Start with **who + does what**, then add the rest. If something else moves to
-the front of a main clause, keep the finite verb in position two and move the
-subject behind it.
+Start with **who + finite verb**, then add the sentence adverb, remaining verb
+parts, object, and other information.
 </MemoryTip>
 
 <QuickCheck
@@ -191,11 +152,11 @@ subject behind it.
 			answer: 'Jag köper inte bilen idag.',
 		},
 		{
-			prompt: 'Turn “Du köper bilen idag.” into a yes/no question.',
-			answer: 'Köper du bilen idag?',
+			prompt: 'Build a neutral clause: hon / vill / inte / gå / hem',
+			answer: 'Hon vill inte gå hem.',
 		},
 		{
-			prompt: 'Which position does “på måndag morgon” occupy in “På måndag morgon börjar jag mitt nya jobb”?',
+			prompt: 'Which position does “min nya kollega” occupy in “Min nya kollega börjar idag”?',
 			answer: 'Position one, as a single constituent.',
 		},
 	]}
@@ -205,7 +166,7 @@ subject behind it.
 	topics={[
 		{ href: '../v2/', label: 'V2 rule' },
 		{ href: '../inversion/', label: 'Inversion' },
-		{ href: '../biff/', label: 'BIFF' },
-		{ href: '../inte-placement/', label: 'Placement of inte' },
+		{ href: '../subordinate-clauses/', label: 'Subordinate clauses' },
+		{ href: '../../questions-negation/questions/', label: 'Questions' },
 	]}
 />

@@ -1,0 +1,176 @@
+---
+title: Questions
+description: Build Swedish yes/no questions and recognize the shared frame behind direct questions.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/swedish/grammar/questions-negation/question-words/
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+  - /learn/swedish/grammar/sentence-structure/v2/
+  - /learn/swedish/grammar/sentence-structure/inte-placement/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- A yes/no question normally starts with the finite verb, followed by the
+  subject: <Sv>Kommer du?</Sv>
+- Swedish moves the existing finite verb; it does not add an equivalent of
+  English *do*.
+- In a direct question with a non-subject question word, that expression comes
+  first and the same verb–subject frame follows it.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Use a yes/no question when the answer can be confirmation or denial. The finite
+verb moves before the subject; intonation supports the question, but word order
+already marks it.
+
+## Use this now
+
+Turn a neutral statement into a yes/no question by moving the finite verb to
+the front:
+
+- <Sv>Du **bor** här.</Sv> → <Sv>**Bor** du här?</Sv>
+- <Sv>Hon **har** köpt biljetten.</Sv> → <Sv>**Har** hon köpt biljetten?</Sv>
+- <Sv>Ni **kan** komma imorgon.</Sv> → <Sv>**Kan** ni komma imorgon?</Sv>
+
+## Core rule
+
+<SentenceSchema
+	caption="Statement and yes/no question"
+	rowHeader="Sentence"
+	columns={['First field', 'Finite verb', 'Subject', 'Sentence adverb', 'Non-finite verb', 'Rest']}
+	rows={[
+		{ label: 'Statement', cells: ['Du', 'kommer', '', '', '', 'imorgon.'] },
+		{ label: 'Yes/no question', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] },
+		{ label: 'Negative question', cells: ['', 'Kommer', 'du', 'inte', '', 'imorgon?'] },
+		{ label: 'Two verbs', cells: ['', 'Har', 'hon', '', 'köpt', 'biljetten?'] },
+	]}
+/>
+
+Only the finite verb moves. A supine or infinitive stays later in the clause.
+For the position and pragmatic tone of <Sv>inte</Sv>, see
+[Placement of *inte*](../../sentence-structure/inte-placement/).
+
+## The shared direct-question frame
+
+A direct question can begin in two ways:
+
+<SentenceSchema
+	caption="Two direct-question openings"
+	rowHeader="Question type"
+	columns={['Question phrase', 'Finite verb', 'Subject', 'Rest']}
+	rows={[
+		{ label: 'Yes/no', cells: ['', 'Bor', 'du', 'här?'] },
+		{ label: 'Question word', cells: ['Var', 'bor', 'du', ''] },
+	]}
+/>
+
+The second row only gives the shared frame. [Question words](../question-words/)
+owns which word to choose, agreement with nouns, subject questions, and the
+different order inside indirect questions.
+
+## Indirect yes/no questions with *om*
+
+When a yes/no question becomes part of a larger sentence, introduce it with
+<Sv>om</Sv> (“whether / if”) and use subordinate-clause order:
+
+<SentenceSchema
+	caption="Direct and indirect yes/no questions"
+	rowHeader="Question"
+	columns={['Opening', 'Finite verb (direct)', 'Subject', 'Sentence adverb', 'Verb (indirect)', 'Rest']}
+	rows={[
+		{ label: 'Direct', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] },
+		{ label: 'Indirect', cells: ['om', '', 'du', '', 'kommer', 'imorgon'] },
+		{ label: 'Indirect, negative', cells: ['om', '', 'du', 'inte', 'kommer', 'imorgon'] },
+	]}
+/>
+
+- <Sv>Kommer du imorgon?</Sv>
+- <Sv>Jag undrar om du kommer imorgon.</Sv>
+- <Sv>Jag vet inte om du kommer imorgon.</Sv>
+
+See [Subordinate clauses](../../sentence-structure/subordinate-clauses/) for the
+complete dependent-clause frame.
+
+## Short answers
+
+Swedish often answers with <Sv>ja</Sv> or <Sv>nej</Sv> plus a compact clause:
+
+- <Sv>Kommer du imorgon? — Ja, det gör jag.</Sv>
+- <Sv>Har hon ringt? — Nej, det har hon inte.</Sv>
+
+In everyday conversation a bare <Sv>ja</Sv> or <Sv>nej</Sv> is also possible
+when the answer is clear.
+
+## Direct comparison
+
+<LanguageComparison title="Present-tense yes/no question">
+	<p slot="de">Wohnst du hier?</p>
+	<p slot="en">Do you live here?</p>
+	<p slot="sv">Bor du här?</p>
+</LanguageComparison>
+
+German and Swedish move the lexical finite verb. English normally adds *do* in
+the simple present and past unless an auxiliary or *be* is already present.
+
+<MistakeBox
+	incorrect="Gör du bor här?"
+	correct="Bor du här?"
+	lang="sv"
+>
+Do not copy English *do*-support into Swedish. Move the finite verb that the
+statement already contains.
+</MistakeBox>
+
+<MemoryTip>
+For a yes/no question, let the finite verb ask first: **finite verb → subject →
+the rest**.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Turn the statement into a question: Du arbetar idag.',
+			answer: 'Arbetar du idag?',
+		},
+		{
+			prompt: 'Turn the statement into a question: Hon har köpt biljetten.',
+			answer: 'Har hon köpt biljetten?',
+		},
+		{
+			prompt: 'Correct the English-style question: Gör ni kommer imorgon?',
+			answer: 'Kommer ni imorgon?',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../question-words/', label: 'Question words' },
+		{ href: '../../sentence-structure/subordinate-clauses/', label: 'Subordinate clauses' },
+		{ href: '../../sentence-structure/v2/', label: 'V2 rule' },
+		{ href: '../../sentence-structure/inte-placement/', label: 'Placement of inte' },
+	]}
+/>

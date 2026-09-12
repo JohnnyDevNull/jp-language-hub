@@ -1,6 +1,6 @@
 ---
 title: Passive
-description: Form the Swedish s-passive and the bli-passive, choose between them, and recognize s-verbs that are not passive at all.
+description: Form and recognize Swedish s-passive and participial passive constructions, including s-verbs that are not passive.
 metaLanguage: en
 grammarLanguage: sv
 comparisonLanguages:
@@ -14,8 +14,9 @@ tags:
   - verbs
   - important
 related:
-  - /learn/swedish/grammar/verbs/verb-forms/
-  - /learn/swedish/grammar/verbs/verb-groups/
+  - /learn/swedish/grammar/verbs-time-forms/verb-forms/
+  - /learn/swedish/grammar/verb-patterns-voice/verb-groups/
+  - /learn/swedish/grammar/verb-patterns-voice/active-vs-passive/
   - /learn/swedish/grammar/adjectives-adverbs/agreement/
   - /learn/swedish/common-mistakes/from-german/
 ---
@@ -31,28 +32,33 @@ import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- The s-passive adds <Sv>-s</Sv> to every verb form and is the default for
-  routines, rules and notices.
-- The bli-passive, <Sv>bli</Sv> + participle, describes a single event, and the
-  participle agrees with the subject.
+- The s-passive uses an <Sv>-s</Sv> form across common infinitive, present,
+  past, and compound patterns; the exact form follows the verb's morphology.
+- <Sv>Bli</Sv> + participle presents an event or change, while <Sv>vara</Sv> +
+  participle presents a state; the participle agrees with the subject.
 - An <Sv>-s</Sv> form is not always a passive: <Sv>hoppas</Sv> and
   <Sv>Vi ses!</Sv> are not.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Swedish has two passive constructions. The **s-passive** adds
-<Sv>-s</Sv> to the verb and has no German equivalent. The
-**bli-passive** uses <Sv>bli</Sv> plus a participle and works
-like German <span lang="de">werden</span> plus participle.
+Swedish has an **s-passive** built into the verb form and participial passive
+constructions with <Sv>bli</Sv> or <Sv>vara</Sv>. German speakers often notice
+the familiar shape of <Sv>bli</Sv> + participle, but the constructions do not
+map one-to-one across the languages.
 
-German speakers tend to overuse the second one, because it is the familiar
-shape. In Swedish the s-passive is the more common of the two.
+This page owns formation and recognition. For information focus, agent
+omission, and the choice between active and passive wording, see
+[Active vs passive](../active-vs-passive/).
 
 ## The s-passive
 
-The <Sv>-s</Sv> attaches to every form of the verb. In the
-present tense it replaces the active ending:
+The <Sv>-s</Sv> pattern appears in the infinitive, present, preterite, and
+supine. The exact present form depends on the verb pattern: group 1 commonly
+has <Sv>-as</Sv>, many other verbs use the stem plus <Sv>-s</Sv>, and stems
+already ending in an s-sound may use <Sv>-es</Sv>, as in <Sv>läsa → läses</Sv>.
+Preterite and supine forms commonly add <Sv>-s</Sv> to the corresponding active
+form. Use the form chain rather than one exceptionless spelling rule:
 
 | Form | Active | Passive |
 | --- | --- | --- |
@@ -61,7 +67,7 @@ present tense it replaces the active ending:
 | Preterite | <Sv>öppnade</Sv> | <Sv>öppnades</Sv> |
 | Supine | <Sv>öppnat</Sv> | <Sv>öppnats</Sv> |
 
-The same works for other verb groups:
+Other verb groups produce forms such as these:
 
 | Verb | Present | Preterite | Supine |
 | --- | --- | --- | --- |
@@ -80,16 +86,16 @@ Examples in use:
 The agent, when mentioned at all, is introduced by
 <Sv>av</Sv>.
 
-<RuleBox title="Where the s-passive belongs">
-	Use it for general statements, routines, rules, instructions, and signs —
-	anything where the action matters more than who performs it:
-	<Sv>Dörrarna stängs automatiskt.</Sv>
+<RuleBox title="Recognizing the s-passive">
+	Identify the underlying verb and check whether the subject is the affected
+	participant: <Sv>Dörrarna stängs automatiskt.</Sv> An <Sv>-s</Sv> ending by
+	itself is not proof of passive meaning.
 </RuleBox>
 
-## The bli-passive
+## Participial passives with <Sv>bli</Sv> and <Sv>vara</Sv>
 
-<Sv>Bli</Sv> plus the past participle describes a single event
-and the change of state it causes:
+<Sv>Bli</Sv> plus the past participle commonly presents an event or change of
+state:
 
 - <Sv>Dörren blev öppnad.</Sv> — *The door was opened.*
 - <Sv>Han blev vald till ordförande.</Sv> — *He was elected
@@ -110,14 +116,14 @@ With <Sv>vara</Sv> instead of <Sv>bli</Sv>, the
 same participle describes a resulting state rather than the event:
 <Sv>Huset är sålt.</Sv>
 
-## Choosing between them
+## Formation map
 
-| Situation | Preferred | Example |
+| Construction | Form | Example |
 | --- | --- | --- |
-| routine, rule, general truth | s-passive | <Sv>Maten lagas i köket.</Sv> |
-| written instructions and notices | s-passive | <Sv>Biljetter köps i appen.</Sv> |
-| one specific event, spoken language | bli-passive | <Sv>Han blev bjuden på fest.</Sv> |
-| emphasis on the resulting state | <Sv>vara</Sv> + participle | <Sv>Dörren är stängd.</Sv> |
+| s-passive, present | present stem/form + <Sv>-s</Sv> | <Sv>Biljetter köps i appen.</Sv> |
+| s-passive, preterite | preterite + <Sv>-s</Sv> | <Sv>Boken skrevs 1950.</Sv> |
+| event/change passive | finite <Sv>bli</Sv> + agreeing participle | <Sv>Han blev bjuden.</Sv> |
+| resulting state | finite <Sv>vara</Sv> + agreeing participle | <Sv>Dörren är stängd.</Sv> |
 
 ## Direct comparison
 
@@ -127,18 +133,16 @@ same participle describes a resulting state rather than the event:
 	<p slot="sv">Rummet städas varje dag.</p>
 </LanguageComparison>
 
-<LanguageComparison title="Single event">
+<LanguageComparison title="Event presented as a change">
 	<p slot="de">Die Tür wurde geöffnet.</p>
 	<p slot="en">The door was opened.</p>
 	<p slot="sv">Dörren blev öppnad.</p>
 </LanguageComparison>
 
-German uses <span lang="de">werden</span> plus participle in both cases;
-Swedish splits them between the s-passive and the bli-passive.
-
-Both passives are often avoidable. Swedish frequently prefers an active
-sentence with <Sv>man</Sv>:
-<Sv>Man säger att…</Sv> — *It is said that…*
+The s-passive can also describe a specific event, as in <Sv>Cykeln stals i
+går</Sv>. <Sv>Bli</Sv> highlights the event or transition more explicitly; it
+does not own every single-event passive. See [Active vs passive](../active-vs-passive/)
+for the communicative choice and the active alternative with <Sv>man</Sv>.
 
 ## s-verbs that are not passive
 
@@ -166,19 +170,11 @@ something *to each other*:
 - <Sv>De träffas varje vecka.</Sv> — *They meet every week.*
 - <Sv>De kramades.</Sv> — *They hugged.*
 
-<MemoryTip>
-Three short sentences cover the whole system:
-<Sv><strong>Rummet städas varje dag</strong></Sv> — routine.
-<Sv><strong>Dörren blev öppnad</strong></Sv> — single event.
-<Sv><strong>Vi ses!</strong></Sv> — each other, not passive at
-all.
-</MemoryTip>
-
 ## Common mistakes
 
 <MistakeBox title="Common mistakes">
-	- ❌ <Sv>Rummet blir städat varje dag</Sv> as a default
-	  ✅ <Sv>Rummet städas varje dag.</Sv>
+	- <Sv>Rummet städas varje dag</Sv> is the compact routine pattern; do not
+	  infer that <Sv>bli</Sv> is reserved for every single event.
 	- ❌ <Sv>Huset blev sålld</Sv>
 	  ✅ <Sv>Huset blev sålt.</Sv> — the participle agrees with the
 	  subject
@@ -189,7 +185,15 @@ all.
 	  ✅ <Sv>Boken skrevs av Astrid Lindgren.</Sv>
 	- Do not reach for <Sv>bli</Sv> just because German uses
 	  <span lang="de">werden</span>.
-</MistakeBox>
+	</MistakeBox>
+
+<MemoryTip>
+Three short sentences separate the central patterns:
+<Sv><strong>Rummet städas varje dag</strong></Sv> — routine.
+<Sv><strong>Dörren blev öppnad</strong></Sv> — event or change.
+<Sv><strong>Vi ses!</strong></Sv> — each other, not passive at
+all.
+</MemoryTip>
 
 <QuickCheck
 	items={[
@@ -214,8 +218,9 @@ all.
 
 <RelatedTopics
 	topics={[
-		{ href: '../verb-forms/', label: 'Verb forms' },
+		{ href: '../../verbs-time-forms/verb-forms/', label: 'Verb forms' },
 		{ href: '../verb-groups/', label: 'Verb groups' },
+		{ href: '../active-vs-passive/', label: 'Active vs passive' },
 		{
 			href: '../../adjectives-adverbs/agreement/',
 			label: 'Adjective agreement',
