@@ -138,12 +138,12 @@ All commit messages must follow the Conventional Commits format:
 ## Main Agent & Sub-Agent models
 
 The following sub-agent model suggestions are just for orientation. Never instruct
-from the Orchestrator level a Sub-Agent with the highest model unless it is absolut
-necessary. Use also appropiate reasoning levels to balance cost, speed and efficency
-without loosing quality. If a sub-agent limit reached wait until they get cleared by
-the harness. Do not continue endlessly with existing Agents because they also have a
-context limit. Decide when it makes sense to instruct new agents or cleanup old ones
-when possible, otherwise wait for the harness cleanup before continue.
+from the Orchestrator level a Sub-Agent with the highest model unless it is absolutely
+necessary. Also use appropriate reasoning levels to balance cost, speed, and efficiency
+without losing quality. If the sub-agent limit is reached, wait until slots are cleared
+by the harness. Do not continue indefinitely with existing Agents because they also have
+a context limit. Decide when it makes sense to instruct new agents or clean up old ones
+when possible; otherwise, wait for the harness cleanup before continuing.
 
 ### OpenAI / Codex / GPT
 
