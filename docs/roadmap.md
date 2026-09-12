@@ -197,44 +197,51 @@ didactic equivalence for every existing localized mirror affected by Phase 5.
 Phase 7 later reviews the complete translated packages, including pages
 untouched by Phase 5.
 
-## Phase 6: Translate English and German Learning Trees
+## Phase 6: Complete Meta-Language Packages
 
-Goal: make the English-learning and German-learning trees available in the
-useful meta languages, not only through fallback routes that still show
-English explanations.
+Goal: replace the intended fallback experiences with complete authored
+meta-language packages while preserving the frozen Phase 5 learning trees.
 
-Status: unblocked; not started.
+Status: planned; unblocked; implementation has not started.
 
-Recommended scope:
+Detailed plan:
+[Phase 6: Complete Meta-Language Packages](./roadmap-phase-6-complete-meta-language-packages.md)
 
-- translate `/learn/english/...` into German meta language under
-  `/de/learn/english/...`
-- translate `/learn/german/...` into German meta language under
-  `/de/learn/german/...`
-- keep the root-locale English source pages canonical
-- preserve the same learning-language routes, page structure, metadata,
-  examples, related links, and didactic intent
-- change only `metaLanguage` in translated frontmatter; keep
-  `grammarLanguage`, `comparisonLanguages`, `levels`, `tags`, and `related`
-  aligned with the canonical source page
-- translate for didactic equivalence instead of literal sentence-by-sentence
-  matching
-- work in stable batches so translation churn does not hide content errors
+Execution plans:
 
-Recommended package order:
+- [Phase 6: Finalize Learn Swedish Meta-Language Translations](./roadmap-phase-6-finalize-swedish-meta-translations.md)
+- [Phase 6: Finalize Learn English Meta-Language Translations](./roadmap-phase-6-finalize-english-meta-translations.md)
+- [Phase 6: Finalize Learn German Meta-Language Translations](./roadmap-phase-6-finalize-german-meta-translations.md)
 
-1. English-learning overview, grammar overview, and sentence-structure pages
-2. English-learning verb time-form pages
-3. English-learning nouns/articles and common-mistakes pages
-4. German-learning overview, grammar overview, cases, prepositions, and
-   nouns/articles
-5. German-learning pronouns, sentence structure, function words, and particle
-   verbs
-6. German-learning time forms, future forms, active/passive, mood,
-   adjectives, and common mistakes
+Phase 6 has three large learning-language buckets and executes them in this
+order:
 
-Do not create a separate German course structure. These pages are the same
-learning trees explained in German meta language.
+1. complete Learn Swedish in German and Swedish meta language;
+2. complete Learn English in German and Swedish meta language; and
+3. complete Learn German in German and Swedish meta language.
+
+Learn Swedish begins with a complete translation inventory. Every canonical
+page/meta-language pair is classified as a verified existing translation, a
+translation that needs revision or retranslation, or a missing translation
+that must be created fresh. The Phase 5 hand-off recorded 90 canonical Learn
+Swedish pages and eight authored mirrors, leaving an expected 172 fresh German
+and Swedish translation targets before the new inventory reconciles current
+state.
+
+The English and German learning trees currently have no authored localized
+mirrors. Their sub-plans split both German- and Swedish-meta translations into
+coherent grammar and diagnostic packages after Learn Swedish establishes the
+accepted translation workflow.
+
+The English root-locale sources remain canonical. Translations preserve route,
+topic scope, component structure, examples, structural metadata, links, and
+didactic intent. Of the language/content metadata, only `metaLanguage` changes;
+translated titles and descriptions remain localized learner-facing text.
+
+Across all three learning-language trees, Phase 6 therefore completes both
+non-canonical meta-language packages. The Phase 5 baseline implies 476 German-
+and Swedish-meta targets, eight existing Learn Swedish mirrors, and an expected
+468 fresh translations before the inventories reconcile current state.
 
 ## Phase 7: Review Learning Languages Across Meta Languages
 
@@ -251,11 +258,9 @@ learner-facing quality across meta languages.
 Review packages should be small enough that findings can be fixed without
 turning the review into a vague audit:
 
-- Swedish learning tree in English meta language
-- Swedish learning tree in German meta language where translated pages exist
-- Swedish learning tree in Swedish meta language where translated pages exist
-- English learning tree in English and German meta languages
-- German learning tree in English and German meta languages
+- Swedish learning tree in English, German, and Swedish meta languages
+- English learning tree in English, German, and Swedish meta languages
+- German learning tree in English, German, and Swedish meta languages
 - shared pages that appear across learning-language sidebars
 
 Review focus:
