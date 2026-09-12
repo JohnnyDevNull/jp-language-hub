@@ -9,15 +9,14 @@ decisions; it does not redefine the frozen information architecture.
 
 **Last updated:** 2026-09-12
 
-**Overall status:** E1 and E2 are complete. Work is paused awaiting the
-user's Go before E3; E3 through E6 remain blocked by the approved batch order.
+**Overall status:** E3 and E4 are complete. Work is paused awaiting the
+user's Go before E5; E5 and E6 remain blocked by the approved batch order.
 
-**Repository baseline:** Commit `d3816a6` (`docs: split phase 5
-implementation reports`) on `main`, confirmed as current HEAD when this state
-was recorded. The execution wave started from a clean worktree at that
-baseline. The current worktree contains the in-progress E2 content edits in
-addition to the completed E1 work; they are not part of the baseline and have
-not been committed.
+**Repository baseline:** Commit `35e79f9` (`feat(content): finalize English
+phase 5 batches 1 and 2`) on `main`, confirmed as the pre-E3 baseline. E1 and
+E2 are committed there; the current worktree contains the completed E3
+migration plus the uncommitted E4 content, integration changes, and this
+report update.
 
 ## Sources of Truth
 
@@ -67,6 +66,17 @@ Apply these documents by responsibility:
   lead into pronoun-role decisions, while countability, polarity, indefinite
   pronouns, and personal-pronoun role stay with their separate canonical E1 or
   E2 pages. No E3+ route or consumer was introduced.
+- **2026-09-12 — Move the complete time-form shelf atomically in E3.** Every
+  E1/E2/Common Mistakes consumer now targets `verbs-time-forms/`; the former
+  `verbs/` routes are absent. Future Progressive and Future Perfect remain at
+  the end of the shelf as the approved reference material. No E4 route or
+  dependency was introduced.
+- **2026-09-12 — Temporarily place E4 after Time Forms.** The frozen Blueprint
+  places the future E5 Adjectives, Prepositions, and Word Formation shelves
+  before E4. Because none exists yet, the implemented English sidebar places
+  Verb Patterns & Voice and Mood, Politeness & Reports immediately after Time
+  Forms. E5 must insert its approved shelves before E4; the Blueprint itself
+  remains unchanged.
 
 ## English Batch Ledger
 
@@ -77,9 +87,9 @@ Status values: `ready`, `in progress`, `dependency-blocked`, `review`,
 | ---: | --- | --- | --- | --- | --- |
 | 1 | English E1 — Sentence Structure, Questions, and Negation | **complete** | Sentence Structure and Questions & Negation pages; English landing/Grammar/Common Mistakes consumers; Verbs overview; `astro.config.mjs`; this report | Executor fixes applied; independent reviewer rechecked all nine targets and consumers: **PASS**; all closure checks and gates passed on 2026-09-12 | None; E1 is closed |
 | 2 | English E2 — Nouns, Articles, Quantifiers, Pronouns, and Roles | **complete** | Nouns & Articles and Pronouns & Roles pages; English landing and Grammar overview; `astro.config.mjs`; this report | Executor fixes applied; independent reviewer rechecked all twelve targets and consumers: **PASS**; all closure checks and gates passed on 2026-09-12 | None; E2 is closed |
-| 3 | English E3 — Verbs and Time Forms | **ready** | None | E2 dependency satisfied; execution paused pending user Go | Await user Go before starting E3 |
-| 4 | English E4 — Verb Patterns, Voice, Mood, and Reported Speech | dependency-blocked by E3 | None | Not started | Start only after E3 is complete |
-| 5 | English E5 — Adjectives, Prepositions, Connectors, and Word Formation | dependency-blocked by E4 | None | Not started | Start only after E4 is complete |
+| 3 | English E3 — Verbs and Time Forms | **complete** | `verbs-time-forms` sources, English landing/Grammar/Common Mistakes consumers, E1 consumers, `astro.config.mjs`, this report | Executor fixes applied; independent reviewer rechecked all 15 targets and migration consumers: **PASS**; all closure checks and gates passed on 2026-09-12 | None; E3 is closed |
+| 4 | English E4 — Verb Patterns, Voice, Mood, and Reported Speech | **complete** | Two E4 shelves, English landing/Grammar, E1 questions/negation, E3 overview, `astro.config.mjs`, this report | Executor fixes applied; independent reviewer rechecked all 11 targets and consumers: **PASS**; all closure checks and gates passed on 2026-09-12 | None; E4 is closed |
+| 5 | English E5 — Adjectives, Prepositions, Connectors, and Word Formation | **ready** | None | E4 dependency satisfied; execution paused pending user Go | Await user Go before starting E5 |
 | 6 | English E6 — Common Mistakes and English Completion Review | dependency-blocked by E5 | None | Not started | Run an independent full English review and close all findings |
 
 ## Batch Evidence Template
@@ -170,6 +180,161 @@ no component or CSS behavior; representative root/de/sv HTML generation was
 verified, but narrow- and wide-layout rendering remains unverified residual
 risk.
 
+## E3 Evidence — Verbs and Time Forms
+
+**Status:** Complete. Implementation, integration, independent review, and
+closure gates all passed on 2026-09-12.
+
+**Authoritative scope:** [English execution plan](./roadmap-phase-5-finalize-english.md#batch-3-verbs-and-time-forms),
+[English Blueprint](./roadmap-phase-5-navigation-blueprint.md#learn-english),
+and [English Topic Inventory](./roadmap-phase-5-topic-inventory.md#english).
+
+**Implemented and reconciled:** All 15 E3 Inventory targets have exactly one
+canonical source in `verbs-time-forms/`: 12 moved existing pages, including
+the overview and both approved reference pages, plus new Past Progressive,
+Past Perfect, and Present Perfect Progressive pages. The former `verbs/`
+source directory is absent. There is one E3 index route, no redirect, and no
+E4 route or consumer.
+
+**Navigation, overview, and consumers:** The shared sidebar uses the exact
+Blueprint order from the overview through Going To Future, then Future
+Progressive and Future Perfect at the reference end. The E3 overview makes
+Choosing Time Form the decision hub, includes all implemented core forms in
+the learning order, and explicitly distinguishes the two reference forms.
+English landing and Grammar overview, Sentence Structure, Questions and
+Do-Support, Adverb Placement, both Common Mistakes consumers, sidebar entries,
+and moved-page metadata and body/component links point to canonical new
+routes. Page-body/component links are relative; `related` values are absolute
+canonical routes.
+
+**Migration corrections:** Integration removed stale old-route references from
+all repository consumers listed above and added the three delivered E3 pages to
+the sidebar and overview. It also replaced the overview's obsolete “planned
+reference pages” statement with the implemented past/perfect sequence. No
+validator exception, route preservation, redirect, or E4 linkage was added.
+
+**Old-route disposition:** The old canonical route has no source,
+configuration, metadata, consumer, or generated-output match. The only
+repository matches are the twelve frozen English Topic Inventory migration
+rows; they are the authoritative current-to-target record and intentional.
+No failed E3 gate attempt occurred.
+
+**Localized mirrors:** No authored `de/learn/english/**` or
+`sv/learn/english/**` source exists. The final base-path build generated the
+representative root, German, and Swedish E3 routes from canonical source. The
+deliberate disposition is **canonical fallback**.
+
+**Review boundary:** The integration audit found no unresolved route, link,
+metadata, language-layer, duplicate-route, length, or E4-scope defect.
+Independent linguistic/didactic and architecture review of all 15 E3 targets
+and their consumers found no remaining defect. E4 is ready.
+
+**Reviewer findings and fixes:** The independent review initially found three
+issues: stale `verbs/` references remained in migration consumers, the
+overview/sidebar did not yet make the core-versus-reference placement fully
+explicit, and closure evidence did not yet prove the old generated routes and
+locale fallback outputs were absent/present as intended. The executor updated
+all affected consumers, corrected the overview and sidebar ordering, and
+completed the source/generated-route and fallback checks. Independent recheck:
+**PASS**, with no remaining E3 findings.
+
+**Closure evidence:** The E3 shelf contains exactly 15 targets: 12 moved
+existing pages and 3 created pages. The old `verbs/` source and generated
+English route are absent; the only old-route repository matches are the 12
+frozen English Topic Inventory migration rows. Sidebar order matches the
+Blueprint, with Future Progressive and Future Perfect at the reference end
+after the core sequence. No E4 English route or consumer was introduced. No
+authored `de/learn/english/**` or `sv/learn/english/**` mirror exists; the
+deliberate disposition is **canonical fallback**, verified by representative
+root, `de/`, and `sv/` generated E3 routes. The generated base-less internal
+`href` scan found **0** matches.
+
+**Visual limitation:** No interactive visual inspection was performed. E3 adds
+content and route changes but no component or CSS behavior; generated output
+was checked, while narrow- and wide-layout rendering remains unverified.
+
+## E4 Evidence — Verb Patterns, Voice, Mood, and Reported Speech
+
+**Status:** Complete. Implementation, integration, independent review, and
+closure gates all passed on 2026-09-12.
+
+**Authoritative scope:** [English execution plan](./roadmap-phase-5-finalize-english.md#batch-4-verb-patterns-voice-mood-and-reported-speech),
+[English Blueprint](./roadmap-phase-5-navigation-blueprint.md#learn-english),
+and [English Topic Inventory](./roadmap-phase-5-topic-inventory.md#english).
+
+**Scope and target count:** E4 contains exactly **11 create targets** across
+two approved shelves: seven under Verb Patterns & Voice and four under Mood,
+Politeness & Reports. This corrects the earlier audit handoff count of 10;
+the Topic Inventory is authoritative. E4 has no planned route moves, redirects,
+or retired canonical sources.
+
+**Implemented and reconciled:** All 11 E4 targets have exactly one canonical
+source: the seven Verb Patterns & Voice pages and the four Mood, Politeness &
+Reports pages. There are two shelf index routes, no duplicate route, no move,
+redirect, or retired source, and no E5 route or source.
+
+**Temporary navigation decision:** The implemented English sidebar places the
+two E4 shelves after Verbs & Time Forms. This is deliberately temporary: when
+E5 creates its approved shelves, it must insert them before E4 to restore the
+frozen Blueprint's final order. No frozen planning artifact was changed.
+
+**Navigation and consumers:** Both E4 shelves and their child pages follow
+the Blueprint's exact internal order. English landing and Grammar overview
+link to the new shelves. Questions and Do-Support and Negation link to
+Auxiliary Verbs as the wider helper system while retaining question formation
+and clause negation as their own decisions. The E3 overview links to Auxiliary
+Verbs; Passive links to Time Forms for tense choice. All page-body/component
+links are relative and `related` values are absolute canonical routes.
+
+**Boundary evidence:** Auxiliary Verbs explains the system, while Questions
+and Do-Support owns question formation. Passive owns passive formation and
+recognition, while Active vs Passive owns information-focus choice. Gerunds and
+Infinitives is a practical pattern page, not a dictionary. Reported Speech
+owns backshift and viewpoint changes. Polite Requests owns relationship-aware
+request choices and links to, rather than duplicates, modal and question
+grammar.
+
+**Retained failed attempt and fix:** The initial E4 `npm run quality` failed
+link validation on four sibling links in Active vs Passive, Passive, and
+Gerunds and Infinitives. Each used `./` from a leaf route; integration changed
+them to `../`. The subsequent quality run passed. No build, schema, or
+language-layer failure occurred.
+
+**Localized mirrors and E5 boundary:** No authored `de/learn/english/**` or
+`sv/learn/english/**` source exists. The base-path build generated
+representative root, German, and Swedish fallback routes. The deliberate
+disposition is **canonical fallback**. Source and generated-output checks
+confirm that the three E5 shelf directories remain absent.
+
+**Review boundary:** The integration audit found no unresolved route, link,
+metadata, language-layer, duplicate-route, length, or E5-scope defect.
+Independent linguistic/didactic and architecture review of the complete E4
+surface found no remaining defect. E5 is ready.
+
+**Initial reviewer findings and fixes:** The independent review initially found
+three issues: the temporary E4 shelf placement was not explicitly reconciled
+with the final Blueprint order, one cross-shelf helper link needed its owning
+boundary clarified, and closure evidence did not yet prove the absence of E5
+source/generated targets and the intended locale fallback outputs. The
+executor documented the temporary order decision, clarified the ownership link,
+and added the source/generated and fallback checks. Independent recheck:
+**PASS**, with no remaining E4 findings.
+
+**Closure evidence:** All 11 E4 targets occur exactly once: seven in Verb
+Patterns & Voice and four in Mood, Politeness & Reports, with exactly two
+index routes. The sidebar child order matches each shelf's Blueprint order;
+the temporary shelf placement after Verbs & Time Forms is documented and will
+be corrected when E5 shelves are added. E4 has no route moves, redirects, or
+retired sources. No E5 source or generated target route exists. No authored
+`de/learn/english/**` or `sv/learn/english/**` mirror exists; the deliberate
+disposition is **canonical fallback**, verified in representative root, `de/`,
+and `sv/` outputs. The generated base-less internal `href` scan found **0**
+matches.
+
+**Visual limitation:** No interactive visual inspection was performed. E4 adds
+content and routes but no component or CSS behavior; generated output was
+checked, while narrow- and wide-layout rendering remains unverified.
+
 ## E2 Evidence — Nouns, Articles, Quantifiers, Pronouns, and Roles
 
 **Status:** Complete. Implementation, integration, independent review, and
@@ -246,10 +411,11 @@ wide-layout rendering remains unverified residual risk.
 
 ## Unresolved Blockers and Risks
 
-- E3 through E5 intentionally remain unimplemented. E3 owns the eventual
-  `verbs/` move; E2 adds no route or link to later-batch targets.
-- E2 adds no component or CSS behavior. No interactive narrow- and wide-layout
-  review was run.
+- E5 and E6 remain unimplemented; E5 is ready after E4 closure.
+- E5 must insert its approved shelves before E4. Until then, the recorded
+  implemented-only temporary order is intentional.
+- E4 adds no component or CSS behavior. Build output and fallback generation
+  were verified, but no interactive narrow- and wide-layout review was run.
 
 ## Resume Instructions
 
@@ -275,15 +441,15 @@ Use ISO dates and retain failed attempts as evidence.
 
 | Gate | Status | Date | Evidence or findings |
 | --- | --- | --- | --- |
-| `npm run quality` | Pass for E1 and E2 | 2026-09-12 | ESLint, Stylelint, Astro Check (0 errors, 0 warnings, 0 hints), link validation (219 docs pages), and language-layer validation (219 docs pages) passed |
-| `npm run build -- --base /jp-language-hub` | Pass for E1 and E2 | 2026-09-12 | Final E2 attempt built 628 static pages; two earlier E2 MDX syntax failures and their fixes are retained in E2 Evidence |
-| `npm run report:length` | Pass for E1 and E2 | 2026-09-12 | 219 pages measured; all 12 E2 targets are 160--801 rendered words; 7 pre-existing documented Swedish exceptions remain over 1000 words |
-| `git diff --check` | Pass for E1 and E2 | 2026-09-12 | No whitespace errors |
-| Inventory totals and unique targets | Pass for E1 and E2 | 2026-09-12 | E1 has 9 and E2 has 12 canonical targets, each exactly once; E2 has 2 unique shelf index routes; complete English reconciliation remains E6 |
-| Retired-route repository search | Pass for E1; N/A E2 | 2026-09-12 | E1 old source and generated route absent; E2 has no planned move or retired route |
-| Blueprint/sidebar order | Pass for E1 and E2 | 2026-09-12 | Every implemented E1/E2 shelf and child page matches Blueprint order; no E3+ English content or route was introduced; complete English tree remains E6 |
-| Affected localized mirrors | Pass for E1 and E2 | 2026-09-12 | No authored `de/` or `sv/` Learn-English source exists; canonical fallback verified by representative root/de/sv E2 routes |
-| Generated base-path links | Pass for E1 and E2 | 2026-09-12 | 0 generated base-less internal `href="/..."` matches |
+| `npm run quality` | Pass for E1 through E4 | 2026-09-12 | Final E4 run: ESLint, Stylelint, Astro Check (0 errors, 0 warnings, 0 hints), link validation (233 docs pages), and language-layer validation (233 docs pages) passed; the earlier 4-link E4 failure is retained in E4 Evidence |
+| `npm run build -- --base /jp-language-hub` | Pass for E1 through E4 | 2026-09-12 | 670 static pages built; representative E4 root/de/sv fallback outputs are present |
+| `npm run report:length` | Pass for E1 through E4 | 2026-09-12 | 233 pages measured; all 11 E4 targets are 121--459 rendered words; 7 pre-existing documented Swedish exceptions remain over 1000 words |
+| `git diff --check` | Pass for E1 through E4 | 2026-09-12 | No whitespace errors |
+| Inventory totals and unique targets | Pass for E1 through E4 | 2026-09-12 | E1 has 9, E2 has 12, E3 has 15, and E4 has 11 canonical targets, each exactly once; E4 has 2 shelf index routes; complete English reconciliation remains E6 |
+| Retired-route repository search | Pass for E1 and E3; N/A E2 and E4 | 2026-09-12 | E3 old source and generated route absent; E4 has no move or retired route |
+| Blueprint/sidebar order | Pass for E1 through E4 | 2026-09-12 | E4 child order matches the Blueprint; temporary implemented-only placement after Time Forms is recorded until E5 inserts its approved shelves before E4 |
+| Affected localized mirrors | Pass for E1 through E4 | 2026-09-12 | No authored `de/` or `sv/` Learn-English source exists; canonical fallback verified by representative root/de/sv E4 routes |
+| Generated base-path links | Pass for E1 through E4 | 2026-09-12 | 0 generated base-less internal `href="/..."` matches |
 | English Architecture review | Pending E6 | — | Required before English completion |
 | English Linguistic/Didactic review | Pending E6 | — | Required before English completion |
 

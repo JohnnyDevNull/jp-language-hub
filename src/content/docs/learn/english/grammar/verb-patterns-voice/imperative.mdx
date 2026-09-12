@@ -1,0 +1,36 @@
+---
+title: Imperative
+description: Give English commands, instructions, warnings, and negative directions.
+metaLanguage: en
+grammarLanguage: en
+levels: [A1, A2]
+tags: [grammar, verbs]
+related:
+  - /learn/english/grammar/mood-politeness-reports/polite-requests/
+  - /learn/english/grammar/verb-patterns-voice/modal-verbs/
+---
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Use the base verb for an imperative: <span lang="en">Open the window.</span>
+- Use <span lang="en">do not / don't + base verb</span> for a negative instruction.
+- Add <span lang="en">please</span> or use a polite request when a direct command is too strong.
+</KeyTakeaway>
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+## Use this now
+Use an imperative for clear instructions: <span lang="en">Turn left.</span>
+Use <span lang="en">Don't touch that.</span> for a warning. For a request between adults, see [polite requests](../../mood-politeness-reports/polite-requests/).
+
+## Core rule
+The subject <span lang="en">you</span> is normally omitted. Use the base verb:
+<span lang="en">Read the instructions.</span> Add <span lang="en">let's</span>
+for a shared suggestion: <span lang="en">Let's start now.</span>
+
+<MistakeBox incorrect="Don't to touch that." correct="Don't touch that." lang="en">After <span lang="en">don't</span>, use the base verb without <span lang="en">to</span>.</MistakeBox>
+<QuickCheck items={[{ prompt: 'Make an instruction: you / close / the door', answer: 'Close the door.' }, { prompt: 'Make negative: touch the wire', answer: "Don't touch the wire." }, { prompt: 'Make a shared suggestion: start now', answer: "Let's start now." }]} answerLang="en" />
+<RelatedTopics topics={[{ href: '../modal-verbs/', label: 'Modal verbs' }, { href: '../../mood-politeness-reports/polite-requests/', label: 'Polite requests' }]} />

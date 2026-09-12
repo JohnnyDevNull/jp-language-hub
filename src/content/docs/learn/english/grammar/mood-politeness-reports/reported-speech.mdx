@@ -1,0 +1,73 @@
+---
+title: Reported speech
+description: Report statements, questions, and requests by changing tense and viewpoint where the new context requires it.
+metaLanguage: en
+grammarLanguage: en
+levels: [B1, B2]
+tags: [grammar, verbs, important]
+related:
+  - /learn/english/grammar/questions-negation/questions-and-do-support/
+  - /learn/english/grammar/verbs-time-forms/simple-past/
+  - /learn/english/grammar/mood-politeness-reports/conditionals/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Reported speech gives a message from your viewpoint: *She said that she was tired.*
+- After a past reporting verb, backshift is common when the original time is past; it is optional when the information remains true or the context does not need distance.
+- Change pronouns and time/place words when the reporter's viewpoint changes: *I → he*, *today → that day*, *here → there*.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Reported speech is not a mechanical tense exercise. First decide what the speaker said, then rebuild it from the new speaker, place, and time.
+
+## Use this now
+
+| Direct words | Reported message |
+| --- | --- |
+| *“I am tired.”* | *She said (that) she was tired.* |
+| *“I have finished.”* | *He said (that) he had finished.* |
+| *“Where do you live?”* | *She asked where I lived.* |
+| *“Please wait.”* | *She asked me to wait.* |
+
+## Core rule
+
+With a past reporting verb, common backshift moves present to past, past to past perfect, and *will* to *would*. Do not backshift when you report a permanent fact or still-current truth: *The guide said that water boils at 100°C.* Direct wording may also be retained when the time relationship is still clear: *She said she is tired* (for a current report).
+
+### Questions and requests
+
+Reported questions use statement order, not question order:
+
+<SentenceSchema
+	caption="Direct and reported question"
+	rowHeader="Form"
+	lang="en"
+	columns={['Reporting verb', 'Question word', 'Auxiliary', 'Subject', 'Verb', 'Rest']}
+	rows={[
+		{ label: 'Direct', cells: ['', 'Where', 'do', 'you', 'live?', ''] },
+		{ label: 'Reported', cells: ['She asked', 'where', '', 'I', 'lived', ''] },
+	]}
+/>
+
+Use *if/whether* for a reported yes/no question: *He asked whether I was ready.* For a request, use *asked/told + object + to + verb*: *She told me to wait.*
+
+## Viewpoint words
+
+Change words only if the new viewpoint requires it: *my → her*, *now → then*, *today → that day*, *tomorrow → the next day*, *here → there*. Keep a word when its reference stays the same.
+
+<MistakeBox incorrect="She asked where do I live." correct="She asked where I lived." lang="en">
+Once the question is inside a reported clause, use statement order. [Questions and do-support](../../questions-negation/questions-and-do-support/) owns direct-question formation.
+</MistakeBox>
+
+<MemoryTip>Move the message to your “here and now”: speaker, listener, time, place, then tense if the context needs backshift.</MemoryTip>
+
+<QuickCheck items={[{prompt:'Report: Anna said, “I am busy.”',answer:'Anna said that she was busy.'},{prompt:'Report: Leo asked, “Where do you work?”',answer:'Leo asked where I worked.'},{prompt:'Report: Mia said, “I will call tomorrow.”',answer:'Mia said that she would call the next day.'},{prompt:'Report the request: “Please close the door,” he said to me.',answer:'He asked me to close the door.'}]} answerLang="en" />
+<RelatedTopics topics={[{href:'../../questions-negation/questions-and-do-support/',label:'Questions and do-support'},{href:'../conditionals/',label:'Conditionals'},{href:'../../verbs-time-forms/simple-past/',label:'Simple past'}]} />

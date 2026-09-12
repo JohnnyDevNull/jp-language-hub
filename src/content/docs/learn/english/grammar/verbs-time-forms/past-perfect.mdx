@@ -1,0 +1,73 @@
+---
+title: Past perfect
+description: Use had plus a past participle for an earlier past event seen from a later past point.
+metaLanguage: en
+grammarLanguage: en
+comparisonLanguages: [de, en]
+levels: [B1, B2]
+tags: [grammar, verbs]
+related:
+  - /learn/english/grammar/verbs-time-forms/simple-past/
+  - /learn/english/grammar/verbs-time-forms/choosing-time-form/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Form the past perfect with *had + past participle*: *She had left; we had seen it.*
+- Use it when you need to show that one past event happened before another past reference point.
+- Do not add it automatically to every sequence of past events; clear order often only needs the simple past.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+The past perfect looks back from a past moment to something already completed before it.
+
+## Use this now
+
+| Situation | Use | Example |
+| --- | --- | --- |
+| earlier event matters at a later past point | *had + participle* | *The film had started when we arrived.* |
+| result already true in the past | past perfect | *She was tired because she had worked late.* |
+| sequence is already clear | often simple past | *I opened the door and sat down.* |
+
+## Core rule
+
+Use **had** with every subject, then the past participle: *had gone, had finished, had written*. In negatives, use *had not/hadn't*; in questions, move *had*: *Had they booked the table?*
+
+The later past point may be stated (*when we arrived*) or understood from context. The past perfect makes the earlier relationship explicit; it is not simply a “more past” alternative to the simple past.
+
+## Direct comparison
+
+<LanguageComparison title="Earlier than a past arrival" languages={['de', 'en']}>
+	<p slot="de">Als wir ankamen, hatte der Film schon begonnen.</p>
+	<p slot="en">When we arrived, the film had already started.</p>
+</LanguageComparison>
+
+German and English can both mark this earlier-past relationship. In English, choose the past perfect when the relationship needs to be clear to the reader or listener.
+
+<MistakeBox incorrect="When we arrived, the film had start." correct="When we arrived, the film had started." lang="en">
+*Had* needs a past participle, not the base form.
+</MistakeBox>
+
+<MemoryTip>Find the past reference point first. What was already complete before that point can take **had + past participle**.</MemoryTip>
+
+<QuickCheck
+	items={[
+		{ prompt: 'Complete: By the time I arrived, they ___. (leave)', answer: 'By the time I arrived, they had left.' },
+		{ prompt: 'Make a question: she / finish / before the meeting / start at noon', answer: 'Had she finished before the meeting started at noon?' },
+		{ prompt: 'Correct: She had went home.', answer: 'She had gone home.' },
+	]}
+	answerLang="en"
+/>
+
+<RelatedTopics topics={[
+	{ href: '../simple-past/', label: 'Simple past' },
+	{ href: '../choosing-time-form/', label: 'Choosing time form' },
+]} />

@@ -1,0 +1,43 @@
+---
+title: Passive
+description: Form and recognize English passive verb phrases with be and a past participle.
+metaLanguage: en
+grammarLanguage: en
+levels: [B1]
+tags: [grammar, verbs]
+related:
+  - /learn/english/grammar/verb-patterns-voice/auxiliary-verbs/
+  - /learn/english/grammar/verb-patterns-voice/active-vs-passive/
+  - /learn/english/grammar/verbs-time-forms/
+---
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Form the passive with <span lang="en">be + past participle</span>.
+- Change tense through <span lang="en">be</span>: <span lang="en">is made</span>, <span lang="en">was made</span>, <span lang="en">will be made</span>.
+- Add <span lang="en">by + agent</span> only when the doer matters.
+</KeyTakeaway>
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+The passive makes the receiver of an action the subject. This page owns the form; [active vs passive](../active-vs-passive/) owns the choice between forms.
+
+## Use this now
+First check whether the active verb has an object that can become the passive
+subject. <span lang="en">They delivered the report</span> becomes
+<span lang="en">The report was delivered.</span> <span lang="en">He arrived</span>
+has no ordinary object, so it has no ordinary passive. Then choose the correct
+form of <span lang="en">be</span> for the time: <span lang="en">The report was sent yesterday.</span>
+
+## Core rule
+<SentenceSchema caption="Passive forms" rowHeader="Time" lang="en" columns={['Subject', 'Be', 'Past participle', 'Agent']} rows={[{ label: 'Present', cells: ['The report', 'is', 'sent', 'by Maya.'] }, { label: 'Past', cells: ['The report', 'was', 'sent', 'by Maya.'] }, { label: 'Future', cells: ['The report', 'will be', 'sent', ''] }]} />
+
+<LanguageComparison title="A completed action" languages={['de', 'en']}><p slot="de">Der Bericht wurde gestern verschickt.</p><p slot="en">The report was sent yesterday.</p></LanguageComparison>
+
+<MistakeBox incorrect="The report was send yesterday." correct="The report was sent yesterday." lang="en">After <span lang="en">be</span>, use the past participle, not the base form.</MistakeBox>
+<QuickCheck items={[{ prompt: 'Make passive: Maya sends the report.', answer: 'The report is sent by Maya.' }, { prompt: 'Make past passive: They repaired the door.', answer: 'The door was repaired.' }, { prompt: 'Complete: The results will ___ published.', answer: 'The results will be published.' }]} answerLang="en" />
+<RelatedTopics topics={[{ href: '../auxiliary-verbs/', label: 'Auxiliary verbs' }, { href: '../active-vs-passive/', label: 'Active vs passive' }, { href: '../../verbs-time-forms/', label: 'Verbs and time forms' }]} />

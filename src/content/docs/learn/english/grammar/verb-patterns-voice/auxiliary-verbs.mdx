@@ -1,0 +1,41 @@
+---
+title: Auxiliary verbs
+description: Use be, have, do, and modal auxiliaries to build English verb phrases.
+metaLanguage: en
+grammarLanguage: en
+levels: [A1, A2, B1]
+tags: [grammar, verbs, important]
+related:
+  - /learn/english/grammar/questions-negation/questions-and-do-support/
+  - /learn/english/grammar/questions-negation/negation/
+  - /learn/english/grammar/verbs-time-forms/
+---
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- <span lang="en">be</span>, <span lang="en">have</span>, and <span lang="en">do</span> help another verb carry grammar.
+- The first auxiliary carries negation and inversion; the main verb supplies the central meaning.
+- Modals such as <span lang="en">can</span> and <span lang="en">must</span> are auxiliaries with their own meanings.
+</KeyTakeaway>
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Auxiliaries are the system behind English tense, aspect, voice, negation, and
+inversion. This page explains their jobs; [questions and do-support](../../questions-negation/questions-and-do-support/) owns question formation.
+
+## Use this now
+Use <span lang="en">be + -ing</span> for progressive forms, <span lang="en">have + participle</span> for perfect forms, and <span lang="en">do + base verb</span> when simple present or past needs a question or negative.
+
+## Core rule
+<SentenceSchema caption="Auxiliaries in an English verb phrase" rowHeader="Function" lang="en" columns={['Subject', 'Auxiliary', 'Main verb', 'Rest']} rows={[{ label: 'Progressive', cells: ['She', 'is', 'working', 'today.'] }, { label: 'Perfect', cells: ['They', 'have', 'finished', 'already.'] }, { label: 'Do-support', cells: ['I', 'do not', 'know', 'yet.'] }]} />
+
+The first auxiliary is the one that moves or takes <span lang="en">not</span>: <span lang="en">Has she arrived?</span>, <span lang="en">She has not arrived.</span>
+
+<MistakeBox incorrect="She not works today." correct="She does not work today." lang="en">With a simple present main verb, use <span lang="en">do/does</span> for ordinary negation.</MistakeBox>
+
+<QuickCheck items={[{ prompt: 'Complete: They ___ working now.', answer: 'They are working now.' }, { prompt: 'Make negative: She knows.', answer: 'She does not know.' }, { prompt: 'Ask: They have finished.', answer: 'Have they finished?' }]} answerLang="en" />
+<RelatedTopics topics={[{ href: '../../questions-negation/questions-and-do-support/', label: 'Questions and do-support' }, { href: '../../questions-negation/negation/', label: 'Negation' }, { href: '../../verbs-time-forms/', label: 'Verbs and time forms' }, { href: '../modal-verbs/', label: 'Modal verbs' }]} />

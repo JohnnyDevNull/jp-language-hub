@@ -1,0 +1,37 @@
+---
+title: Active vs passive
+description: Choose active or passive voice by deciding what information should lead the sentence.
+metaLanguage: en
+grammarLanguage: en
+levels: [B1, B2]
+tags: [grammar, verbs]
+related:
+  - /learn/english/grammar/verb-patterns-voice/passive/
+  - /learn/english/grammar/verb-patterns-voice/auxiliary-verbs/
+---
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Use active voice when the doer is useful information.
+- Use passive voice when the result, receiver, or process matters more than the doer.
+- Omit the agent when it is unknown, obvious, or irrelevant.
+</KeyTakeaway>
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+Both voices can describe the same event. Choose the form that gives the reader the most useful starting point; [passive](../passive/) explains how to build the passive.
+
+## Use this now
+Start with the information the reader needs first. <span lang="en">Maya approved the request</span> names the decision-maker. <span lang="en">The request was approved</span> foregrounds the result.
+
+## Core rule
+Active voice is often clearer for responsibility. Passive voice is natural for results, processes, reports, and cases where the agent is unknown: <span lang="en">My bike was stolen.</span>
+
+<LanguageComparison title="Information focus" languages={['de', 'en']}><p slot="de">Der Antrag wurde genehmigt.</p><p slot="en">The request was approved.</p></LanguageComparison>
+
+<MistakeBox incorrect="The request was approved by someone." correct="The request was approved." lang="en">Do not add a vague agent when it gives the reader no useful information.</MistakeBox>
+<QuickCheck items={[{ prompt: 'Choose the clearer form when Maya is responsible: The budget was approved / Maya approved the budget.', answer: 'Maya approved the budget.' }, { prompt: 'Report an unknown agent: Someone stole my bike.', answer: 'My bike was stolen.' }, { prompt: 'Rewrite with the result first: The team completed the work.', answer: 'The work was completed.' }]} answerLang="en" />
+<RelatedTopics topics={[{ href: '../passive/', label: 'Passive' }, { href: '../auxiliary-verbs/', label: 'Auxiliary verbs' }]} />
