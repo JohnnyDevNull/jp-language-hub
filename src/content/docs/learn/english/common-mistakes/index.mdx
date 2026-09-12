@@ -1,6 +1,6 @@
 ---
 title: Common mistakes
-description: Diagnose English mistakes that come from German sentence patterns, tense choices, vocabulary, articles, and countability.
+description: Diagnose English mistakes that come from German or Swedish transfer patterns.
 metaLanguage: en
 grammarLanguage: en
 tags:
@@ -8,34 +8,44 @@ tags:
   - grammar
 related:
   - /learn/english/common-mistakes/from-german/
+  - /learn/english/common-mistakes/from-swedish/
   - /false-friends/
   - /direct-translation-errors/
 ---
 
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Many English mistakes are German patterns wearing English words.
+- Many English mistakes are familiar German or Swedish patterns wearing English words.
 - Diagnose the pattern first: word order, question form, time form, article, or
   countability.
 - The mistake page points to the grammar page that fixes the pattern.
 </KeyTakeaway>
 
-## By source pattern
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+## Choose by
 
 | Mistake type | Start here |
 | --- | --- |
-| German word order after a fronted time phrase | [Sentence order](../grammar/sentence-structure/sentence-order/) |
-| German question order | [Questions and do-support](../grammar/questions-negation/questions-and-do-support/) |
-| German adverb position | [Adverb placement](../grammar/sentence-structure/adverb-placement/) |
-| German *Perfekt* copied into English | [Simple past vs present perfect](../grammar/verbs-time-forms/simple-past-vs-present-perfect/) |
-| <span lang="en">a/an</span>, <span lang="en">the</span>, or no article | [Articles](../grammar/nouns-articles/articles/) |
-| plural nouns like <span lang="en">informations</span> | [Countable and uncountable nouns](../grammar/nouns-articles/countable-and-uncountable-nouns/) |
+| a German pattern in your English | [German to English mistakes](./from-german/) |
+| a Swedish pattern in your English | [Swedish to English mistakes](./from-swedish/) |
+| a word that only looks similar across languages | [False friends](../../../false-friends/) |
+| a phrase translated word for word | [Direct translation errors](../../../direct-translation-errors/) |
+
+## Find the grammar answer
+
+- fronted time/place or connector order: [Sentence order](../grammar/sentence-structure/sentence-order/)
+- question form: [Questions and do-support](../grammar/questions-negation/questions-and-do-support/)
+- tense and aspect: [Choosing time form](../grammar/verbs-time-forms/choosing-time-form/)
+- article, plural, or countability choice: [Nouns & articles](../grammar/nouns-articles/)
 
 <RelatedTopics
 	topics={[
 		{ href: './from-german/', label: 'German to English mistakes' },
+		{ href: './from-swedish/', label: 'Swedish to English mistakes' },
 		{ href: '../../../false-friends/', label: 'False friends' },
 		{ href: '../../../direct-translation-errors/', label: 'Direct translation errors' },
 	]}

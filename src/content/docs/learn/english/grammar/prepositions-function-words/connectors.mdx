@@ -1,0 +1,38 @@
+---
+title: Connectors
+description: Choose a connector for addition, contrast, cause, result, or condition.
+metaLanguage: en
+grammarLanguage: en
+levels: [A2, B1, B2]
+tags: [grammar, sentence-structure]
+related:
+  - /learn/english/grammar/sentence-structure/sentence-order/
+  - /learn/english/grammar/sentence-structure/subordinate-clauses/
+  - /learn/english/grammar/mood-politeness-reports/conditionals/
+---
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Choose *and/also*, *but/however*, *because/so*, or *if/unless* by the relationship between ideas.
+- *Because, although, if,* and *unless* introduce clauses; *however* and *therefore* connect independent ideas in a more formal style.
+- Connector position does not create German-style verb-final order; use the Sentence Structure pages for the clause frame.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+## Use this now
+| Relationship | Everyday choice | More formal choice |
+| --- | --- | --- |
+| addition | *and, also* | *in addition* |
+| contrast | *but* | *however, although* |
+| cause / result | *because / so* | *therefore, as a result* |
+| condition | *if, unless* | *provided that* |
+## Core rule
+Use *because* for a reason and *so* for its result: *We stayed in because it rained. It rained, so we stayed in.* *Unless* usually means “if not”: *I will go unless it rains.* Use *however* after a full stop or semicolon in careful writing: *It rained. However, we went out.* For the exact clause order and commas, see [Subordinate clauses](../../sentence-structure/subordinate-clauses/) and [Sentence order](../../sentence-structure/sentence-order/).
+<MistakeBox incorrect="Because it was late, went we home." correct="Because it was late, we went home." lang="en">A connector does not invert the English subject and verb.</MistakeBox>
+<QuickCheck items={[{prompt:'Join with because: We stayed home. It was raining.',answer:'We stayed home because it was raining.'},{prompt:'Choose a result connector: It was late, ___ we went home.',answer:'It was late, so we went home.'},{prompt:'Rewrite with unless: If you do not hurry, you will miss the train.',answer:'Unless you hurry, you will miss the train.'}]} answerLang="en" />
+<RelatedTopics topics={[{href:'../../sentence-structure/subordinate-clauses/',label:'Subordinate clauses'},{href:'../../sentence-structure/sentence-order/',label:'Sentence order'},{href:'../../mood-politeness-reports/conditionals/',label:'Conditionals'}]} />

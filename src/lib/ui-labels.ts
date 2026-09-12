@@ -34,7 +34,8 @@ type UiLabelKey =
 	| 'Verbs'
 	| 'Verbs & Time Forms'
 	| 'Verb Patterns & Voice'
-	| 'Vocabulary';
+	| 'Vocabulary'
+	| 'Word Formation & Particles';
 
 const UI_LABELS: Record<UiLabelKey, Record<MetaLocale, string>> = {
 	'Adjectives & Adverbs': {
@@ -201,6 +202,11 @@ const UI_LABELS: Record<UiLabelKey, Record<MetaLocale, string>> = {
 		en: 'Verb Patterns & Voice',
 		de: 'Verbmuster & Aktiv/Passiv',
 		sv: 'Verbmönster & aktiv/passiv',
+	},
+	'Word Formation & Particles': {
+		en: 'Word Formation & Particles',
+		de: 'Wortbildung & Partikeln',
+		sv: 'Ordbildning & partiklar',
 	},
 	Vocabulary: {
 		en: 'Vocabulary',

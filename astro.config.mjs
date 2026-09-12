@@ -397,6 +397,27 @@ export default defineConfig({
 							],
 						},
 						{
+							label: 'Adjectives & Adverbs',
+							items: [
+								{ label: 'Overview', slug: 'learn/english/grammar/adjectives-adverbs' },
+								{ slug: 'learn/english/grammar/adjectives-adverbs/adjectives' },
+								{ slug: 'learn/english/grammar/adjectives-adverbs/adjective-order' },
+								{ slug: 'learn/english/grammar/adjectives-adverbs/adjective-comparison' },
+								{ slug: 'learn/english/grammar/adjectives-adverbs/adverbs' },
+								{ slug: 'learn/english/grammar/adjectives-adverbs/adjectives-vs-adverbs' },
+							],
+						},
+						{
+							label: 'Prepositions & Function Words',
+							items: [
+								{ label: 'Overview', slug: 'learn/english/grammar/prepositions-function-words' },
+								{ slug: 'learn/english/grammar/prepositions-function-words/place-and-direction' },
+								{ slug: 'learn/english/grammar/prepositions-function-words/time-prepositions' },
+								{ slug: 'learn/english/grammar/prepositions-function-words/dependent-prepositions' },
+								{ slug: 'learn/english/grammar/prepositions-function-words/connectors' },
+							],
+						},
+						{
 							label: 'Verb Patterns & Voice',
 							items: [
 								{ label: 'Overview', slug: 'learn/english/grammar/verb-patterns-voice' },
@@ -417,6 +438,14 @@ export default defineConfig({
 								{ slug: 'learn/english/grammar/mood-politeness-reports/reported-speech' },
 							],
 						},
+						{
+							label: 'Word Formation & Particles',
+							items: [
+								{ label: 'Overview', slug: 'learn/english/grammar/word-formation-particles' },
+								{ slug: 'learn/english/grammar/word-formation-particles/phrasal-verbs' },
+								{ slug: 'learn/english/grammar/word-formation-particles/word-families' },
+							],
+						},
 					],
 				},
 				{
@@ -424,6 +453,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Overview', slug: 'learn/english/common-mistakes' },
 						{ slug: 'learn/english/common-mistakes/from-german' },
+						{ slug: 'learn/english/common-mistakes/from-swedish' },
 					],
 				},
 

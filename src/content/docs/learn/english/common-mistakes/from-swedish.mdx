@@ -1,0 +1,46 @@
+---
+title: Swedish to English mistakes
+description: Diagnose common English transfer errors caused by Swedish word order, noun phrases, tense choices, and vocabulary patterns.
+metaLanguage: en
+grammarLanguage: en
+comparisonLanguages: [en, sv]
+levels: [A1, A2, B1, B2]
+tags: [common-mistakes, comparison, grammar]
+related:
+  - /learn/english/grammar/sentence-structure/sentence-order/
+  - /learn/english/grammar/nouns-articles/articles/
+  - /learn/english/grammar/verbs-time-forms/choosing-time-form/
+  - /learn/english/grammar/prepositions-function-words/place-and-direction/
+---
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- English keeps subject before verb after a fronted time or place phrase; Swedish V2 does not transfer.
+- Swedish definiteness and tense choices do not map automatically to English articles and aspect.
+- Diagnose the transfer, then use the linked English grammar page for the full rule.
+</KeyTakeaway>
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+Swedish and English share many short words, which makes transfer errors easy to miss. These examples identify the pattern without reteaching its full grammar.
+## Start with the pattern
+| If Swedish is influencing… | Open |
+| --- | --- |
+| verb position after time/place first | [Sentence order](../../grammar/sentence-structure/sentence-order/) |
+| articles and definite noun phrases | [Articles](../../grammar/nouns-articles/articles/) |
+| a past action versus a present result | [Choosing time form](../../grammar/verbs-time-forms/choosing-time-form/) |
+| location, destination, or movement | [Place and direction](../../grammar/prepositions-function-words/place-and-direction/) |
+## Fronting is not English V2
+<LanguageComparison title="Time first" languages={['en', 'sv']}>
+	<p slot="en">Yesterday, I met her.</p><p slot="sv">Igår träffade jag henne.</p>
+</LanguageComparison>
+<MistakeBox incorrect="Yesterday met I her." correct="Yesterday, I met her." lang="en">Swedish moves the verb after the fronted phrase; English normally keeps **I met** together.</MistakeBox>
+## Noun phrases and time
+Swedish definiteness can be carried by a noun ending, but English needs an article or another determiner: *I bought a book; the book is interesting.* For time, Swedish present forms can cover an ongoing situation; English often needs a present perfect: *I have lived here for three years.*
+## Practical lexical and preposition traps
+Do not assume a similar-looking pattern has the same scope: *in the bus* usually means physically inside a bus as a space, while ordinary travel is *on the bus*. For word-level lookalikes and fixed translation traps, use the shared [False friends](../../../../false-friends/) and [Direct translation errors](../../../../direct-translation-errors/) pages rather than expanding this diagnosis page.
+<QuickCheck items={[{prompt:'Correct: Yesterday met I her.',answer:'Yesterday, I met her.'},{prompt:'Add articles: I bought book. Book is interesting.',answer:'I bought a book. The book is interesting.'},{prompt:'Correct: I live here since three years.',answer:'I have lived here for three years.'},{prompt:'Choose ordinary travel: I was ___ the bus.',answer:'I was on the bus.'}]} answerLang="en" />
+<RelatedTopics topics={[{href:'../../grammar/sentence-structure/sentence-order/',label:'Sentence order'},{href:'../../grammar/nouns-articles/articles/',label:'Articles'},{href:'../../grammar/verbs-time-forms/choosing-time-form/',label:'Choosing time form'},{href:'../../grammar/prepositions-function-words/place-and-direction/',label:'Place and direction'}]} />

@@ -9,14 +9,14 @@ decisions; it does not redefine the frozen information architecture.
 
 **Last updated:** 2026-09-12
 
-**Overall status:** E3 and E4 are complete. Work is paused awaiting the
-user's Go before E5; E5 and E6 remain blocked by the approved batch order.
+**Overall status:** English E1 through E6 are complete. The separate Phase 5
+whole-tree Quality Check is the next handoff and is not yet complete.
 
-**Repository baseline:** Commit `35e79f9` (`feat(content): finalize English
-phase 5 batches 1 and 2`) on `main`, confirmed as the pre-E3 baseline. E1 and
-E2 are committed there; the current worktree contains the completed E3
-migration plus the uncommitted E4 content, integration changes, and this
-report update.
+**Repository baseline:** Commit `1d240de` (`feat(content): finalize English
+phase 5 batches 3 and 4`) on `main`, confirmed as the pre-E5 baseline. E1
+through E4 are committed in that baseline. The current worktree contains the
+E5/E6 implementation and review-correction changes plus this report update;
+those changes are not yet committed.
 
 ## Sources of Truth
 
@@ -89,8 +89,8 @@ Status values: `ready`, `in progress`, `dependency-blocked`, `review`,
 | 2 | English E2 — Nouns, Articles, Quantifiers, Pronouns, and Roles | **complete** | Nouns & Articles and Pronouns & Roles pages; English landing and Grammar overview; `astro.config.mjs`; this report | Executor fixes applied; independent reviewer rechecked all twelve targets and consumers: **PASS**; all closure checks and gates passed on 2026-09-12 | None; E2 is closed |
 | 3 | English E3 — Verbs and Time Forms | **complete** | `verbs-time-forms` sources, English landing/Grammar/Common Mistakes consumers, E1 consumers, `astro.config.mjs`, this report | Executor fixes applied; independent reviewer rechecked all 15 targets and migration consumers: **PASS**; all closure checks and gates passed on 2026-09-12 | None; E3 is closed |
 | 4 | English E4 — Verb Patterns, Voice, Mood, and Reported Speech | **complete** | Two E4 shelves, English landing/Grammar, E1 questions/negation, E3 overview, `astro.config.mjs`, this report | Executor fixes applied; independent reviewer rechecked all 11 targets and consumers: **PASS**; all closure checks and gates passed on 2026-09-12 | None; E4 is closed |
-| 5 | English E5 — Adjectives, Prepositions, Connectors, and Word Formation | **ready** | None | E4 dependency satisfied; execution paused pending user Go | Await user Go before starting E5 |
-| 6 | English E6 — Common Mistakes and English Completion Review | dependency-blocked by E5 | None | Not started | Run an independent full English review and close all findings |
+| 5 | English E5 — Adjectives, Prepositions, Connectors, and Word Formation | **complete** | Three E5 shelves, English landing/Grammar, `astro.config.mjs`, `src/lib/ui-labels.ts`, this report | Executor fixes applied; independent reviewer rechecked all 14 targets and consumers: **PASS**; all closure checks and gates passed on 2026-09-12 | None; E5 is closed |
+| 6 | English E6 — Common Mistakes and English Completion Review | **complete** | Common Mistakes reconciliation, final English reviews, and durable-state report | All 65 rows/65 unique targets reconcile; architecture and linguistic/didactic reviews rechecked **PASS**; final gates pass | None; hand off to the separate Phase 5 whole-tree Quality Check |
 
 ## Batch Evidence Template
 
@@ -309,7 +309,7 @@ confirm that the three E5 shelf directories remain absent.
 **Review boundary:** The integration audit found no unresolved route, link,
 metadata, language-layer, duplicate-route, length, or E5-scope defect.
 Independent linguistic/didactic and architecture review of the complete E4
-surface found no remaining defect. E5 is ready.
+surface found no remaining defect. E5 is now in progress.
 
 **Initial reviewer findings and fixes:** The independent review initially found
 three issues: the temporary E4 shelf placement was not explicitly reconciled
@@ -334,6 +334,163 @@ matches.
 **Visual limitation:** No interactive visual inspection was performed. E4 adds
 content and routes but no component or CSS behavior; generated output was
 checked, while narrow- and wide-layout rendering remains unverified.
+
+## E5 Evidence — Adjectives, Prepositions, Connectors, and Word Formation
+
+**Status:** Complete. Implementation, integration, independent review, and
+closure gates all passed on 2026-09-12.
+
+**Authoritative scope:** [English execution plan](./roadmap-phase-5-finalize-english.md#batch-5-adjectives-prepositions-connectors-and-word-formation),
+[English Blueprint](./roadmap-phase-5-navigation-blueprint.md#learn-english),
+and [English Topic Inventory](./roadmap-phase-5-topic-inventory.md#english).
+
+**Scope and target count:** E5 contains exactly **14 create targets** across
+three approved shelves: six under Adjectives & Adverbs, five under
+Prepositions & Function Words, and three under Word Formation & Particles. E5
+has no planned route moves, redirects, or retired canonical sources.
+
+**Final sidebar consequence:** The exact Blueprint order is Adjectives &
+Adverbs, then Prepositions & Function Words, then the already implemented
+Verb Patterns & Voice and Mood, Politeness & Reports shelves, followed by Word
+Formation & Particles. E5 must insert its first two shelves before the E4
+shelves and place Word Formation & Particles after Mood, Politeness & Reports,
+correcting the temporary E4 placement without changing the frozen Blueprint.
+
+**Disjoint execution slices:** (1) Adjectives & Adverbs; (2) Prepositions &
+Function Words, including Connectors; and (3) Word Formation & Particles,
+including Phrasal Verbs and Word Families. Each slice owns only its pages;
+cross-shelf sidebar, consumer, metadata, link, and temporary-order integration
+is deferred until all three slices are complete.
+
+All new shelf overviews must use the normal `KeyTakeaway` plus `TagList`
+pattern. The omission of `TagList` applies only to learning-path and
+important-rules index pages, not these grammar shelf overviews.
+
+**Integration update:** All 14 targets exist exactly once, with three shelf
+index routes and no moves, redirects, or E6 content. The final sidebar order
+is Time Forms, Adjectives & Adverbs, Prepositions & Function Words, Verb
+Patterns & Voice, Mood/Politeness/Reports, Word Formation & Particles. This
+replaces the earlier temporary E4 placement. Word Formation & Particles now has
+central EN/DE/SV labels. Landing and Grammar link to all three E5 shelves.
+
+**Failed attempts and final evidence:** Two initial E5 integration attempts
+failed: the first build found missing MDX import-to-content separators, and the
+next link validation found Adverbs and Phrasal Verbs leaf links with one too
+few `..` segments. Those fixes passed the subsequent quality run. A later
+mechanical MDX regression in the separator cleanup failed the build in Adverbs
+and Adjective Comparison; the required import/component and component/content
+blank separators were restored without semantic changes. Final quality passed
+across 247 docs pages; the base build produced 712 pages; all E5 pages are
+70--265 rendered words. The generated base-less href scan found 0 matches. No
+authored English-learning locale mirror exists; representative root/de/sv
+fallback routes are present. The E6 `from-swedish` source and output route
+remain absent.
+
+**Review boundary:** Adverbs defers placement to Adverb Placement; Connectors
+defers clause order; preposition pages are functional; Phrasal Verbs remain
+meaning units; Word Families remain practical. Independent review found no
+remaining scope, didactic, route, metadata, or language-layer defect. E6 is
+ready.
+
+**Reviewer findings and fixes:** The independent review initially found three
+substantive issues: shelf overviews and child navigation needed a final order
+and ownership check, Word Formation labels needed centralized EN/DE/SV
+definitions rather than page-local duplication, and the E6 from-Swedish route
+needed explicit absence verification. The executor reconciled the exact final
+sidebar order, centralized the labels in `src/lib/ui-labels.ts`, and verified
+that neither source nor generated output contains `from-swedish`. Independent
+recheck: **PASS**, with no remaining E5 findings.
+
+**Closure evidence:** All 14 E5 targets occur exactly once: six Adjectives &
+Adverbs, five Prepositions & Function Words, and three Word Formation &
+Particles, with exactly three index routes. The final sidebar order is Time
+Forms, Adjectives & Adverbs, Prepositions & Function Words, Verb Patterns &
+Voice, Mood, Politeness & Reports, and Word Formation & Particles. E5 has no
+route moves, redirects, or retired sources. No E6 `from-swedish` source or
+generated route exists. No authored `de/learn/english/**` or
+`sv/learn/english/**` mirror exists; the deliberate disposition is
+**canonical fallback**, verified in representative root, `de/`, and `sv/`
+outputs. The generated base-less internal `href` scan found **0** matches.
+
+**Visual limitation:** No interactive visual inspection was performed. E5 adds
+content, routes, and centralized labels but no component or CSS behavior;
+generated output was checked, while narrow- and wide-layout rendering remains
+unverified.
+
+## E6 Evidence — Common Mistakes and English Completion Review
+
+**Status:** Complete. E6 implementation, reconciliation, independent reviews,
+and final gates all passed on 2026-09-12.
+
+**Authoritative scope:** [English execution plan](./roadmap-phase-5-finalize-english.md#batch-6-common-mistakes-and-english-completion-review),
+[English Blueprint](./roadmap-phase-5-navigation-blueprint.md#learn-english),
+and [English Topic Inventory](./roadmap-phase-5-topic-inventory.md#english).
+
+**Common Mistakes scope:** Exactly three English Common Mistakes targets are
+in scope: two retained pages (the overview and German-to-English mistakes) and
+one created Swedish-to-English mistakes page. The complete English
+reconciliation baseline is 65 Inventory rows resolving to 65 unique targets,
+including the Grammar root and all E1-E5 batch targets; this report does not
+duplicate the route inventory.
+
+**Completed stages:** (1) audited retained Common Mistakes content and created
+the approved Swedish-to-English transfer route; (2) performed repository-wide
+integration and mechanical reconciliation of consumers, metadata, labels,
+links, sidebar order, generated routes, and mirror dispositions; (3) ran two
+independent whole-English reviews, one architecture-focused and one
+linguistic/didactic; (4) applied fixes, rechecked both reviews, reconciled all 65
+rows/targets, and ran the final E6 quality, build, length, route, link, and
+diff gates.
+
+No authored German- or Swedish-meta-language Learn-English mirror exists. The
+verified disposition is **canonical fallback**, confirmed by the completed
+filesystem and generated-output checks.
+
+The separate Phase 5 whole-tree Quality Check is explicitly **not part of
+E6**. It remains the next handoff after English completion and must not be
+silently treated as satisfied by the E6 reviews or gates.
+
+**Integration and mechanical reconciliation:** The Common Mistakes sidebar now
+orders Overview, German-to-English, then Swedish-to-English. Landing, Grammar,
+and the Common Mistakes overview provide diagnostic entry paths without
+duplicating rules. The English tree contains 65 Inventory rows resolving to 65
+unique canonical targets: Grammar root plus 64 batch targets. Inventory action
+counts reconcile to 9 keep, 43 create, 11 move, and 2 move-reference. Frozen
+current-route columns are historical only; no moved old source or generated
+route remains. No extra English grammar/Common Mistakes route was found.
+
+**Gate evidence:** Final quality passed across 248 docs pages (Astro Check
+0/0/0), the base-path build produced 715 pages, length reporting retained only
+the 7 documented Swedish exceptions, and `git diff --check` passed. Generated
+base-less href scan returned 0. Root, German, and Swedish fallback routes exist
+for the new diagnostic page; no authored Learn-English locale source exists.
+The first E6 build found one MDX import-to-content separator in the new page;
+adding the separator fixed it. Implementation, 65-row reconciliation,
+fallback/mirror checks, and integration gates are complete; the initial review
+failures and fixes are retained below.
+
+**Architecture review findings and owners:** The initial architecture review
+returned **NOT PASS** for report consistency (the ledger, evidence, and validation
+ledger did not agree on E6's actual review state) and for final reconciliation
+evidence that must be kept synchronized with the report. The report/state
+owner is assigned to correct the durable-state contradictions; the integration
+owner is assigned to recheck the 65-row/65-target, route, fallback, mirror,
+and gate evidence after correction. Those fixes were applied and the
+architecture recheck returned **PASS**.
+
+**Linguistic/didactic review findings and owners:** The initial
+linguistic/didactic review returned **NOT PASS** on the remaining Common
+Mistakes and whole-English
+didactic findings recorded in its handoff. The Common Mistakes content owner is
+assigned to correct the retained/created diagnostic content and its transfer
+guidance; the review owner is assigned to recheck the complete English tree,
+including canonical ownership, duplication boundaries, learner sequencing,
+and production-focused checks. Those fixes were applied and the linguistic/
+didactic recheck returned **PASS**.
+
+**Review recheck status:** Both independent reviews were re-run after the
+assigned fixes and returned **PASS**. The separate Phase 5 whole-tree Quality
+Check remains a later handoff and is not predeclared complete by this report.
 
 ## E2 Evidence — Nouns, Articles, Quantifiers, Pronouns, and Roles
 
@@ -411,10 +568,9 @@ wide-layout rendering remains unverified residual risk.
 
 ## Unresolved Blockers and Risks
 
-- E5 and E6 remain unimplemented; E5 is ready after E4 closure.
-- E5 must insert its approved shelves before E4. Until then, the recorded
-  implemented-only temporary order is intentional.
-- E4 adds no component or CSS behavior. Build output and fallback generation
+- English E1-E6 has no unresolved blocker. The separate Phase 5 whole-tree
+  Quality Check remains a later handoff and is not complete.
+- E5 adds no component or CSS behavior. Build output and fallback generation
   were verified, but no interactive narrow- and wide-layout review was run.
 
 ## Resume Instructions
@@ -441,17 +597,17 @@ Use ISO dates and retain failed attempts as evidence.
 
 | Gate | Status | Date | Evidence or findings |
 | --- | --- | --- | --- |
-| `npm run quality` | Pass for E1 through E4 | 2026-09-12 | Final E4 run: ESLint, Stylelint, Astro Check (0 errors, 0 warnings, 0 hints), link validation (233 docs pages), and language-layer validation (233 docs pages) passed; the earlier 4-link E4 failure is retained in E4 Evidence |
-| `npm run build -- --base /jp-language-hub` | Pass for E1 through E4 | 2026-09-12 | 670 static pages built; representative E4 root/de/sv fallback outputs are present |
-| `npm run report:length` | Pass for E1 through E4 | 2026-09-12 | 233 pages measured; all 11 E4 targets are 121--459 rendered words; 7 pre-existing documented Swedish exceptions remain over 1000 words |
-| `git diff --check` | Pass for E1 through E4 | 2026-09-12 | No whitespace errors |
-| Inventory totals and unique targets | Pass for E1 through E4 | 2026-09-12 | E1 has 9, E2 has 12, E3 has 15, and E4 has 11 canonical targets, each exactly once; E4 has 2 shelf index routes; complete English reconciliation remains E6 |
-| Retired-route repository search | Pass for E1 and E3; N/A E2 and E4 | 2026-09-12 | E3 old source and generated route absent; E4 has no move or retired route |
-| Blueprint/sidebar order | Pass for E1 through E4 | 2026-09-12 | E4 child order matches the Blueprint; temporary implemented-only placement after Time Forms is recorded until E5 inserts its approved shelves before E4 |
-| Affected localized mirrors | Pass for E1 through E4 | 2026-09-12 | No authored `de/` or `sv/` Learn-English source exists; canonical fallback verified by representative root/de/sv E4 routes |
-| Generated base-path links | Pass for E1 through E4 | 2026-09-12 | 0 generated base-less internal `href="/..."` matches |
-| English Architecture review | Pending E6 | — | Required before English completion |
-| English Linguistic/Didactic review | Pending E6 | — | Required before English completion |
+| `npm run quality` | Pass for E1 through E6 implementation | 2026-09-12 | Final E6 implementation run passed across 248 docs pages; the initial E6 MDX separator failure and fix are retained in E6 Evidence |
+| `npm run build -- --base /jp-language-hub` | Pass for E1 through E6 implementation | 2026-09-12 | 715 static pages built; representative E6 root/de/sv fallback outputs are present |
+| `npm run report:length` | Pass for E1 through E6 implementation | 2026-09-12 | 248 pages measured; 7 pre-existing documented Swedish exceptions remain over 1000 words |
+| `git diff --check` | Pass for E1 through E6 implementation | 2026-09-12 | No whitespace errors |
+| Inventory totals and unique targets | Pass for E1 through E6 | 2026-09-12 | All 65 English Inventory rows reconcile to 65 unique targets, including 3 Common Mistakes targets; independent English architecture and linguistic/didactic reviews passed, with only the separate Phase 5 Whole-Tree Quality Check open |
+| Retired-route repository search | Pass for E1 through E6 | 2026-09-12 | All moved old routes are absent from source/generated output; only frozen Inventory history matches remain; E6 `from-swedish` route is the sole approved create |
+| Blueprint/sidebar order | Pass for E1 through E6 | 2026-09-12 | Common Mistakes order and final English shelf order reconcile; independent English architecture and linguistic/didactic reviews passed, with only the separate Phase 5 Whole-Tree Quality Check open |
+| Affected localized mirrors | Pass for E1 through E6 implementation | 2026-09-12 | No authored `de/` or `sv/` Learn-English source exists; canonical fallback verified by representative root/de/sv E6 routes |
+| Generated base-path links | Pass for E1 through E6 implementation | 2026-09-12 | 0 generated base-less internal `href="/..."` matches |
+| English Architecture review | **Pass** | 2026-09-12 | Initial report-consistency and reconciliation findings fixed; independent recheck PASS |
+| English Linguistic/Didactic review | **Pass** | 2026-09-12 | Initial Common Mistakes and whole-English didactic findings fixed; independent recheck PASS |
 
 ## Baseline Contradictions and Additional Decisions
 
