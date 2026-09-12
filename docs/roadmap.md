@@ -141,9 +141,9 @@ Goal: establish a practical everyday A1-B2 grammar reference model and exact
 navigation before meta-language translation multiplies the cost of
 restructuring.
 
-Status: planning baseline frozen; Swedish and English implementation complete.
-German is next; the final Quality Check remains blocked until all three
-language plans are complete.
+Status: planning baseline frozen; Swedish, English, and German implementation
+are complete. German finalization is recorded through commit `c298e83`. The
+final Quality Check is next and has not started or completed.
 
 Detailed plan:
 [Phase 5: Align Grammar IA Across Learning Languages](./roadmap-phase-5-align-grammar-ia.md)
@@ -176,12 +176,12 @@ must change atomically.
 
 The planning groundwork is complete and remains frozen: the current-state
 record, A1-B2 coverage decisions, exhaustive page inventory, exact Navigation
-Blueprint, and migration mappings form the approved baseline. Swedish and
-English implementation are complete. Implementation resumes in this order:
+Blueprint, and migration mappings form the approved baseline. Swedish, English,
+and German implementation are complete. German finalization is recorded
+through commit `c298e83`. Implementation resumes in this order:
 
-1. finalize the German learning tree and audit all retained, moved, merged, and
-   new pages
-2. run the cross-language Phase 5 Quality Check
+1. run the cross-language Phase 5 Quality Check; it has not started or
+   completed
 
 The language plans own batches, content boundaries, migration checklists, and
 local acceptance criteria. They reference rather than duplicate the route

@@ -15,9 +15,9 @@ actually has.
 
 **Planning baseline:** Frozen.
 
-**Execution status:** Swedish and English are complete. Finalize German is
-next; the whole-tree Quality Check follows after all three language plans are
-complete.
+**Execution status:** Swedish, English, and German implementation are
+complete. German finalization is recorded through commit `c298e83`. The
+separate whole-tree Quality Check is next and has not started or completed.
 
 Phase 5 planning groundwork is complete. The current-state audit, practical
 A1-B2 coverage decisions, target navigation, page inventory, and route
@@ -32,9 +32,10 @@ final whole-tree quality check continue in this order:
 2. [Phase 5: Finalize English](./roadmap-phase-5-finalize-english.md) —
    complete; see the
    [English implementation report](./roadmap-phase-5-finalize-english-implementation-report.md)
-3. [Phase 5: Finalize German](./roadmap-phase-5-finalize-german.md) — next
-4. [Phase 5: Quality Check](./roadmap-phase-5-quality-check.md) — blocked
-   until all three language plans are complete
+3. [Phase 5: Finalize German](./roadmap-phase-5-finalize-german.md) — complete;
+   German G1-G5 is recorded through commit `c298e83`
+4. [Phase 5: Quality Check](./roadmap-phase-5-quality-check.md) — next; not
+   started or complete
 
 Do not begin Phase 6 translation until the work defined by all four execution
 plans is complete.
