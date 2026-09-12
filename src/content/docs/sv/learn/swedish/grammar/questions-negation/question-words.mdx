@@ -1,0 +1,90 @@
+---
+title: Frågeord
+description: Ställ frågor med vem, vad, vilken, var och vart och använd rätt ordföljd i direkta och indirekta frågor.
+metaLanguage: sv
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+  - B1
+tags:
+  - grammar
+  - pronouns
+  - important
+related:
+  - /learn/swedish/grammar/questions-negation/questions/
+  - /learn/swedish/grammar/sentence-structure/v2/
+  - /learn/swedish/grammar/sentence-structure/biff/
+  - /learn/swedish/grammar/pronouns-roles/relative-pronouns/
+  - /learn/swedish/grammar/nouns-articles/en-ett/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RuleBox from '~/components/RuleBox.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- I en direkt fråga kommer frågeordet först och finit verb tvåa: <Sv>Var bor du?</Sv>
+- En indirekt fråga är en bisats: <Sv>Jag vet inte var hon bor.</Sv>
+- I indirekt fråga får <Sv>vem</Sv> och <Sv>vad</Sv> tillägget <Sv>som</Sv> när de är subjekt i sin egen sats.
+</KeyTakeaway>
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Svenska frågeord börjar nästan alla på <Sv>v-</Sv>. Det svåra är ordföljden, som skiljer direkta från indirekta frågor.
+## Använd nu
+| Svenska | Frågar om … |
+| --- | --- |
+| <Sv>vem</Sv> | en person |
+| <Sv>vems</Sv> | en ägare |
+| <Sv>vad</Sv> | sak, händelse eller identitet |
+| <Sv>vilken / vilket / vilka</Sv> | ett val ur en mängd |
+| <Sv>var</Sv> | plats |
+| <Sv>vart</Sv> | riktning |
+| <Sv>när</Sv> | tid |
+| <Sv>hur</Sv> | sätt eller tillstånd |
+| <Sv>varför</Sv> | orsak |
+| <Sv>hur mycket / hur många</Sv> | mängd eller antal |
+
+<Sv>Vem</Sv> böjs inte: <Sv>Vem såg du?</Sv> och <Sv>Vem såg dig?</Sv> skiljs bara av ordföljden.
+## Kärnregel: direkta frågor
+<SentenceSchema caption="Ramar för direkta frågor" rowHeader="Fråga" columns={['Frågefras', 'Finit verb', 'Subjekt', 'Rest']} rows={[{ label: 'Frågeord', cells: ['Var', 'bor', 'du', ''] }, { label: 'Frågefras', cells: ['Vilken bok', 'läser', 'du', ''] }, { label: 'Ja/nej', cells: ['', 'Bor', 'du', 'här?'] }]} />
+
+Är frågeordet självt subjekt följer inget separat subjekt: <Sv>Vem ringde?</Sv>, <Sv>Vad hände?</Sv>
+<RuleBox title="Inget do-stöd">Svenskan har inget som engelskans *do*. <Sv>Bor du här?</Sv> betyder *Do you live here?*; verbet flyttar självt.</RuleBox>
+
+## Var eller vart
+
+Standardsvenskan skiljer läge från riktning: <Sv>Var bor du?</Sv> men <Sv>Vart går du?</Sv>. För utgångspunkt kommer prepositionen sist: <Sv>Var kommer du ifrån?</Sv>
+## Vilken stämmer med substantivet
+
+<Sv>Vilken bok</Sv> är en-ord, <Sv>Vilket hus</Sv> ett-ord och <Sv>Vilka böcker</Sv> plural. För ”vilken sorts” används <Sv>vad för</Sv> eller <Sv>vad för sorts</Sv>.
+## Indirekta frågor: ingen inversion
+<SentenceSchema caption="Direkt och indirekt frågeordföljd" rowHeader="Fråga" columns={['Frågeord', 'Finit verb (direkt)', 'Subjekt', 'Satsadverbial', 'Verb (indirekt)', 'Rest']} rows={[{ label: 'Direkt', cells: ['Var', 'bor', 'hon', '', '', ''] }, { label: 'Indirekt', cells: ['var', '', 'hon', '', 'bor', ''] }, { label: 'Indirekt, nekande', cells: ['varför', '', 'hon', 'inte', 'kommer', ''] }]} />
+
+<Sv>Var bor hon?</Sv> → <Sv>Jag vet inte var hon bor.</Sv> Se [Bisatser](../../sentence-structure/subordinate-clauses/). I indirekt fråga blir det <Sv>vem som ringde</Sv> och <Sv>vad som hände</Sv> när frågeordet är subjekt, men <Sv>vem hon ringde</Sv> när det är objekt.
+## Direkt jämförelse
+<LanguageComparison title="Direkt fråga"><p slot="de">Wo wohnst du?</p><p slot="en">Where do you live?</p><p slot="sv">Var bor du?</p></LanguageComparison>
+<LanguageComparison title="Indirekt fråga"><p slot="de">Ich weiß nicht, wo sie wohnt.</p><p slot="en">I do not know where she lives.</p><p slot="sv">Jag vet inte var hon bor.</p></LanguageComparison>
+## Vanliga misstag
+<MistakeBox title="Vanliga misstag">
+
+- ❌ <Sv>Jag vet inte var bor hon.</Sv> ✅ <Sv>Jag vet inte var hon bor.</Sv>
+- ❌ <Sv>Jag vet inte vem ringde.</Sv> ✅ <Sv>Jag vet inte vem som ringde.</Sv>
+- ❌ <Sv>Vart bor du?</Sv> ✅ <Sv>Var bor du?</Sv>
+- ❌ <Sv>Vilken hus är ditt?</Sv> ✅ <Sv>Vilket hus är ditt?</Sv>
+
+</MistakeBox>
+<MemoryTip>Kontrastera <Sv><strong>Vem som ringde</strong></Sv> (subjekt) och <Sv><strong>Vem hon ringde</strong></Sv> (objekt). <Sv>som</Sv> markerar subjektet.</MemoryTip>
+<QuickCheck items={[{ prompt: 'var eller vart: ___ går du?', answer: 'Vart går du?' }, { prompt: 'Gör indirekt: Var bor hon? Jag vet inte …', answer: 'Jag vet inte var hon bor.' }, { prompt: 'Rätta: Jag vet inte vem ringde.', answer: 'Jag vet inte vem som ringde.' }, { prompt: 'Fråga vilket hus som är ditt.', answer: 'Vilket hus är ditt?' }]} />
+<RelatedTopics topics={[{ href: '../questions/', label: 'Frågor' }, { href: '../../sentence-structure/v2/', label: 'V2-regeln' }, { href: '../../sentence-structure/biff/', label: 'BIFF' }, { href: '../../sentence-structure/subordinate-clauses/', label: 'Bisatser' }, { href: '../../pronouns-roles/relative-pronouns/', label: 'Relativa pronomen' }, { href: '../../nouns-articles/en-ett/', label: 'en / ett' }]} />

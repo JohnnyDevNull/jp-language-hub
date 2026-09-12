@@ -1,0 +1,65 @@
+---
+title: Stellung von inte
+description: Platziere schwedisches inte richtig in Hauptsätzen, Nebensätzen, Fragen, Imperativen und Infinitivgruppen.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+related:
+  - /learn/swedish/grammar/questions-negation/negation/
+  - /learn/swedish/grammar/questions-negation/questions/
+  - /learn/swedish/grammar/sentence-structure/biff/
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- <Sv>Inte</Sv> folgt im Hauptsatz dem finiten Verb und steht im Nebensatz davor.
+- Folgt das Subjekt dem finiten Verb, steht <Sv>inte</Sv> nach dem Subjekt.
+- Bei zwei Verben steht <Sv>inte</Sv> zwischen finitem und nicht-finiten Verb.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Die Stellung von <Sv>inte</Sv> hängt vom Satztyp ab. Wähle zunächst zwischen <Sv>inte</Sv> und einem anderen negativen Ausdruck bei [Negation](../../questions-negation/negation/).
+
+## Kernregel
+
+<SentenceSchema caption="Inte im Haupt- und Nebensatz" rowHeader="Satz" columns={['1 Vorfeld', '2 Finites Verb', '3 Subjekt', 'Satzadverbial', 'Verbgruppe', 'Rest']} rows={[{ label: 'Hauptsatz', cells: ['Hon', 'arbetar', '', 'inte', '', 'idag.'] }, { label: 'Hauptsatz, vorangestellt', cells: ['Idag', 'arbetar', 'hon', 'inte.', '', ''] }, { label: 'Hauptsatz, zwei Verben', cells: ['Hon', 'vill', '', 'inte', 'gå', 'hem.'] }, { label: 'Nebensatz', cells: ['eftersom', '', 'hon', 'inte', 'arbetar', 'idag.'] }, { label: 'Deutsch, Hauptsatz', lang: 'de', cells: ['Sie', 'arbeitet', '', 'heute', '', 'nicht.'] }, { label: 'Deutsch, Nebensatz', lang: 'de', cells: ['weil', '', 'sie', 'heute nicht', 'arbeitet.', ''] }]} />
+
+Im Hauptsatz: <Sv>Jag kommer inte idag.</Sv>, <Sv>Idag kommer jag inte.</Sv>, <Sv>Jag har inte köpt bilen.</Sv> Im Nebensatz: <Sv>… eftersom jag inte kommer idag.</Sv>, <Sv>… att hon inte har köpt bilen.</Sv> Das ist [BIFF](../biff/).
+
+## Fragen, Imperativ und Infinitiv
+
+In einer Ja-/Nein-Frage stehen finites Verb, Subjekt und dann <Sv>inte</Sv>: <Sv>Kommer du inte imorgon?</Sv> Im Imperativ folgt <Sv>inte</Sv> dem Verb: <Sv>Glöm inte nycklarna!</Sv> Wird der Infinitiv negiert, steht es davor: <Sv>Det är svårt att inte tänka på det.</Sv>
+
+## Direkter Vergleich
+
+<LanguageComparison title="Hauptsatz"><p slot="de">Sie arbeitet heute nicht.</p><p slot="en">She is not working today.</p><p slot="sv">Hon arbetar inte idag.</p></LanguageComparison>
+
+<LanguageComparison title="Eftersom-Satz"><p slot="de">… weil sie heute nicht arbeitet.</p><p slot="en">… because she is not working today.</p><p slot="sv">… eftersom hon inte arbetar idag.</p></LanguageComparison>
+
+<MistakeBox incorrect="Jag vet att hon arbetar inte idag." correct="Jag vet att hon inte arbetar idag." lang="sv">Setze <Sv>inte</Sv> nicht einfach nach das finite Verb. Entscheide zuerst, ob der Satz Hauptsatz oder Nebensatz ist.</MistakeBox>
+
+<MemoryTip>**Hauptsatz:** finit, dann <Sv>inte</Sv>. **Nebensatz:** <Sv>inte</Sv>, dann finit.</MemoryTip>
+
+<QuickCheck items={[{ prompt: 'Negiere mit inte: Hon arbetar idag.', answer: 'Hon arbetar inte idag.' }, { prompt: 'Negiere denselben Satz nach eftersom.', answer: '… eftersom hon inte arbetar idag.' }, { prompt: 'Negiere: Hon vill gå hem.', answer: 'Hon vill inte gå hem.' }, { prompt: 'Negiere die Frage: Kommer du imorgon?', answer: 'Kommer du inte imorgon?' }]} />
+
+<RelatedTopics topics={[{ href: '../../questions-negation/negation/', label: 'Negation' }, { href: '../../questions-negation/questions/', label: 'Fragen' }, { href: '../biff/', label: 'BIFF' }, { href: '../subordinate-clauses/', label: 'Nebensätze' }]} />

@@ -1,0 +1,75 @@
+---
+title: Negation
+description: Wähle zwischen schwedischem inte, negativen Nominalphrasen und häufigen negativen Adverbien, ohne eine doppelte Negation zu bilden.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+  - B1
+tags:
+  - grammar
+  - important
+related:
+  - /learn/swedish/grammar/sentence-structure/inte-placement/
+  - /learn/swedish/grammar/pronouns-roles/nagon-nagot-ingen-inget/
+  - /learn/swedish/grammar/questions-negation/questions/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Negiere einen Satz mit <Sv>inte</Sv>: <Sv>Jag kommer inte.</Sv>
+- Trägt eine Nominalphrase oder ein Adverb die Verneinung selbst, nutze nur diesen Ausdruck: <Sv>Ingen kom.</Sv>, <Sv>Jag såg ingenting.</Sv>
+- Im Standardschwedischen steht kein zusätzliches <Sv>inte</Sv>, wenn derselbe Satz schon anders negiert ist.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Bei der Negation wählst du zuerst Bedeutung und Form. [Die Stellung von *inte*](../../sentence-structure/inte-placement/) erklärt, wo <Sv>inte</Sv> in jedem Satztyp steht.
+
+## Jetzt anwenden
+
+| Bedeutung | Verwende | Beispiel |
+| --- | --- | --- |
+| nicht | <Sv>inte</Sv> | <Sv>Jag arbetar inte idag.</Sv> |
+| niemand | <Sv>ingen</Sv> | <Sv>Ingen ringde.</Sv> |
+| nichts | <Sv>ingenting</Sv> oder <Sv>inget</Sv> + Substantiv | <Sv>Jag hörde ingenting.</Sv> |
+| nie | <Sv>aldrig</Sv> | <Sv>Hon röker aldrig.</Sv> |
+| nirgends | <Sv>ingenstans</Sv> | <Sv>Jag hittar den ingenstans.</Sv> |
+| auch nicht | <Sv>inte … heller</Sv> | <Sv>Jag kommer inte heller.</Sv> |
+
+## Kernregel
+
+<Sv>Inte</Sv> negiert den ganzen Satz oder einen Kontrast: <Sv>Jag kommer inte imorgon.</Sv> Verwende einen negativen Ausdruck, wenn Person, Sache, Zeit oder Ort selbst verneint sind: <Sv>Ingen väntar utanför.</Sv>, <Sv>Jag såg ingenting.</Sv>, <Sv>Vi går aldrig dit.</Sv>
+
+## Indefinitformen bei Satznegation
+
+Negiert <Sv>inte</Sv> den Satz, steht innerhalb seines Bereichs meist eine nicht-negative Indefinitform: <Sv>Jag har inte någon bil.</Sv>, <Sv>Jag såg inte något problem.</Sv>, <Sv>Vi har inte några frågor.</Sv> Die kompakte Nominalphrase kann zum gleichen Ergebnis führen: <Sv>Jag har ingen bil.</Sv>, <Sv>Jag såg inget problem.</Sv>
+
+Die Muster sind nicht in jedem Kontext austauschbar: <Sv>ingen / inget / inga</Sv> bündelt das Fehlen in der Nominalphrase; <Sv>inte någon / något / några</Sv> lässt die Satznegation sichtbar und kann den Fokus verschieben. Details stehen bei [någon, något, ingen, inget](../../pronouns-roles/nagon-nagot-ingen-inget/).
+
+## Direkter Vergleich
+
+<LanguageComparison title="Kein Auto"><p slot="de">Ich habe kein Auto.</p><p slot="en">I do not have a car.</p><p slot="sv">Jag har ingen bil.</p></LanguageComparison>
+
+<LanguageComparison title="Nichts"><p slot="de">Ich habe nichts gesehen.</p><p slot="en">I did not see anything.</p><p slot="sv">Jag såg ingenting.</p></LanguageComparison>
+
+<MistakeBox title="Keine gewöhnliche doppelte Negation" incorrect="Ingen kom inte." correct="Ingen kom." lang="sv">Im Standardschwedischen trägt normalerweise ein Ausdruck die Negation. Ein zweites <Sv>inte</Sv> verstärkt sie nicht einfach, sondern verändert oder verdunkelt die Aussage.</MistakeBox>
+
+<MemoryTip>Wähle zuerst **einen Träger der Negation**: satzweites <Sv>inte</Sv> oder einen negativen Personen-, Sach-, Zeit- oder Ortsausdruck.</MemoryTip>
+
+<QuickCheck items={[{ prompt: 'Negiere mit inte: Jag arbetar idag.', answer: 'Jag arbetar inte idag.' }, { prompt: 'Sage mit ingen: „Niemand rief an.“', answer: 'Ingen ringde.' }, { prompt: 'Ergänze: Jag har inte ___ frågor.', answer: 'Jag har inte några frågor.' }, { prompt: 'Korrigiere: Ingen kom inte.', answer: 'Ingen kom.' }]} />
+
+<RelatedTopics topics={[{ href: '../../sentence-structure/inte-placement/', label: 'Stellung von inte' }, { href: '../../pronouns-roles/nagon-nagot-ingen-inget/', label: 'någon, något, ingen, inget' }, { href: '../questions/', label: 'Fragen' }]} />

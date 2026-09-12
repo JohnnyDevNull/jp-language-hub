@@ -1,0 +1,54 @@
+---
+title: Placering av inte
+description: Placera svenska inte rätt i huvudsatser, bisatser, frågor, imperativ och infinitivfraser.
+metaLanguage: sv
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+related:
+  - /learn/swedish/grammar/questions-negation/negation/
+  - /learn/swedish/grammar/questions-negation/questions/
+  - /learn/swedish/grammar/sentence-structure/biff/
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- <Sv>inte</Sv> följer finit verb i huvudsats och står före det i bisats.
+- Om subjektet följer det finita verbet kommer <Sv>inte</Sv> efter subjektet.
+- Med två verb står <Sv>inte</Sv> mellan finit och icke-finit verb.
+</KeyTakeaway>
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Placeringen av <Sv>inte</Sv> beror på satstyp. Välj först mellan <Sv>inte</Sv> och ett annat negativt uttryck på [Negation](../../questions-negation/negation/).
+## Kärnregel
+<SentenceSchema caption="inte i huvud- och bisats" rowHeader="Sats" columns={['1 Fundament', '2 Finit verb', '3 Subjekt', 'Satsadverbial', 'Verbgrupp', 'Rest']} rows={[{ label: 'Huvudsats', cells: ['Hon', 'arbetar', '', 'inte', '', 'idag.'] }, { label: 'Huvudsats, framflyttad', cells: ['Idag', 'arbetar', 'hon', 'inte.', '', ''] }, { label: 'Huvudsats, två verb', cells: ['Hon', 'vill', '', 'inte', 'gå', 'hem.'] }, { label: 'Bisats', cells: ['eftersom', '', 'hon', 'inte', 'arbetar', 'idag.'] }, { label: 'Tyska, huvudsats', lang: 'de', cells: ['Sie', 'arbeitet', '', 'heute', '', 'nicht.'] }, { label: 'Tyska, bisats', lang: 'de', cells: ['weil', '', 'sie', 'heute nicht', 'arbeitet.', ''] }]} />
+
+I huvudsats: <Sv>Jag kommer inte idag.</Sv>, <Sv>Idag kommer jag inte.</Sv>, <Sv>Jag har inte köpt bilen.</Sv>. I bisats: <Sv>… eftersom jag inte kommer idag.</Sv>, <Sv>… att hon inte har köpt bilen.</Sv>. Detta är [BIFF](../biff/).
+## Frågor, imperativ och infinitiv
+
+I ja/nej-fråga kommer finit verb, subjekt och sedan <Sv>inte</Sv>: <Sv>Kommer du inte imorgon?</Sv>. I imperativ kommer <Sv>inte</Sv> efter verbet: <Sv>Glöm inte nycklarna!</Sv>. När infinitiven nekas står det före: <Sv>Det är svårt att inte tänka på det.</Sv>
+## Direkt jämförelse
+<LanguageComparison title="Huvudsats"><p slot="de">Sie arbeitet heute nicht.</p><p slot="en">She is not working today.</p><p slot="sv">Hon arbetar inte idag.</p></LanguageComparison>
+<LanguageComparison title="Eftersom-sats"><p slot="de">… weil sie heute nicht arbeitet.</p><p slot="en">… because she is not working today.</p><p slot="sv">… eftersom hon inte arbetar idag.</p></LanguageComparison>
+<MistakeBox incorrect="Jag vet att hon arbetar inte idag." correct="Jag vet att hon inte arbetar idag." lang="sv">Placera inte <Sv>inte</Sv> efter finit verb bara för att satsen har ett uttalat subjekt. Avgör först om satsen är huvud- eller bisats.</MistakeBox>
+<MemoryTip>**Huvudsats:** finit först, sedan <Sv>inte</Sv>. **Bisats:** <Sv>inte</Sv> först, sedan finit.</MemoryTip>
+<QuickCheck items={[{ prompt: 'Neka med inte: Hon arbetar idag.', answer: 'Hon arbetar inte idag.' }, { prompt: 'Neka samma sats efter eftersom.', answer: '… eftersom hon inte arbetar idag.' }, { prompt: 'Neka: Hon vill gå hem.', answer: 'Hon vill inte gå hem.' }, { prompt: 'Neka frågan: Kommer du imorgon?', answer: 'Kommer du inte imorgon?' }]} />
+<RelatedTopics topics={[{ href: '../../questions-negation/negation/', label: 'Negation' }, { href: '../../questions-negation/questions/', label: 'Frågor' }, { href: '../biff/', label: 'BIFF' }, { href: '../subordinate-clauses/', label: 'Bisatser' }]} />

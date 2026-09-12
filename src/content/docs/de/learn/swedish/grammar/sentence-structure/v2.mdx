@@ -1,0 +1,149 @@
+---
+title: V2-Regel
+description: Verstehe, warum das finite Verb in schwedischen Hauptsätzen normalerweise die zweite Konstituentenposition besetzt.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/swedish/grammar/sentence-structure/basic-word-order/
+  - /learn/swedish/grammar/sentence-structure/inversion/
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+  - /learn/swedish/grammar/sentence-structure/inte-placement/
+---
+
+import ExampleBox from '~/components/ExampleBox.astro';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import SpecialRule from '~/components/SpecialRule.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Das finite Verb steht an zweiter **Konstituentenposition**, nicht beim zweiten Wort.
+- Füllt etwas anderes als das Subjekt Position eins, folgt das Subjekt dem finiten Verb.
+- Nur das finite Verb zählt; nicht-finite Verben bleiben später im Satz.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+**V2** bedeutet: In einem schwedischen aussagenden Hauptsatz steht das finite
+Verb normalerweise an zweiter Stelle. Die Regel ist zentral für natürliche
+Sätze; Deutschsprachige kennen sie bereits.
+
+## Kernregel
+
+> In einem schwedischen aussagenden Hauptsatz steht das **finite Verb**
+> normalerweise an der **zweiten Konstituentenposition**.
+
+Lies den Satz als Felder: Position eins bleibt ein Feld, auch wenn sie mehrere
+Wörter enthält; das finite Verb besitzt Position zwei.
+
+<SentenceSchema
+	caption="V2 im aussagenden Hauptsatz"
+	rowHeader="Variante"
+	columns={['1 Fundament', '2 Finites Verb', '3 Subjekt', 'Rest']}
+	rows={[
+		{ label: 'Neutral', cells: ['Jag', 'köper', '', 'en bil idag.'] },
+		{ label: 'Zeit zuerst', cells: ['Idag', 'köper', 'jag', 'en bil.'] },
+		{ label: 'Objekt zuerst', cells: ['Den boken', 'har', 'jag', 'redan läst.'] },
+		{ label: 'Deutsch', lang: 'de', cells: ['Heute', 'kaufe', 'ich', 'ein Auto.'] },
+	]}
+/>
+
+Im neutralen Satz füllt das Subjekt Position eins, daher bleibt Position drei
+leer. Wird etwas vorangestellt, rückt das Subjekt hinter das Verb.
+
+<ExampleBox title="Zeitangabe in Position eins" lang="sv">
+	<p><strong>Idag</strong> <strong>köper</strong> jag en bil.</p>
+</ExampleBox>
+
+## Position bedeutet nicht Wort
+
+Eine Konstituente kann mehrere Wörter haben:
+
+<p lang="sv"><strong>Efter jobbet</strong> <strong>köper</strong> jag mat.</p>
+
+<Sv>Efter jobbet</Sv> ist eine adverbiale Konstituente. <Sv>köper</Sv> bleibt
+an zweiter Satzposition, obwohl es als drittes Wort geschrieben wird.
+
+## Zusammengesetzte Verbgruppen
+
+V2 gilt für das **finite** Verb, nicht für jedes Verb:
+
+<p lang="sv">Idag <strong>vill</strong> jag köpa en bil.</p>
+<p lang="sv">Idag <strong>har</strong> jag köpt en bil.</p>
+
+Die nicht-finiten Verben <Sv>köpa</Sv> und <Sv>köpt</Sv> bleiben später im Satz.
+
+## Was kann Position eins füllen?
+
+- das Subjekt: <Sv>Jag arbetar hemma idag.</Sv>
+- Zeit: <Sv>Idag arbetar jag hemma.</Sv>
+- Ort: <Sv>Hemma arbetar jag bäst.</Sv>
+- ein Objekt: <Sv>Den boken har jag redan läst.</Sv>
+- ein Nebensatz: <Sv>När jag är klar går jag hem.</Sv>
+
+Die Voranstellung verändert die Betonung, nicht die V2-Pflicht.
+
+## Direkter Vergleich
+
+<LanguageComparison title="Neutrale Reihenfolge">
+	<p slot="de">Ich kaufe heute ein Auto.</p>
+	<p slot="en">I am buying a car today.</p>
+	<p slot="sv">Jag köper en bil idag.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Zeitangabe zuerst">
+	<p slot="de">Heute kaufe ich ein Auto.</p>
+	<p slot="en">Today I am buying a car.</p>
+	<p slot="sv">Idag köper jag en bil.</p>
+</LanguageComparison>
+
+Deutsch ist eine gute Brücke, weil seine Hauptsätze ebenfalls meist V2
+verwenden. Englisch invertiert nach einer vorangestellten Zeitangabe
+normalerweise nicht.
+
+<MistakeBox incorrect="På måndag morgon jag börjar mitt nya jobb." correct="På måndag morgon börjar jag mitt nya jobb." lang="sv">
+Zähle nicht einzelne Wörter. Nach der Voranstellung einer anderen Konstituente
+bleibt das Subjekt nicht vor dem Verb.
+</MistakeBox>
+
+<SpecialRule language="Swedish" title="Geltungsbereich von V2">
+	V2 beschreibt aussagende **Hauptsätze**. Ein Nebensatz hat ein anderes
+	inneres Muster: Satzadverbien wie <Sv>inte</Sv> stehen dort normalerweise vor
+	dem finiten Verb. Siehe [Nebensätze](../subordinate-clauses/) für das ganze
+	Muster und [BIFF](../biff/) für Satzadverbien.
+</SpecialRule>
+
+<MemoryTip>
+Denke in Blöcken: **erster Block → finites Verb → Subjekt (wenn es nicht zuerst
+stand) → Rest**.
+</MemoryTip>
+
+<QuickCheck items={[
+	{ prompt: 'Stelle die Zeitangabe voran: Jag åker till Malmö i morgon.', answer: 'I morgon åker jag till Malmö.' },
+	{ prompt: 'Warum steht köper in „Efter jobbet köper jag mat“ noch an Position zwei?', answer: 'Efter jobbet hat zwei Wörter, ist aber eine Konstituente und füllt Position eins.' },
+	{ prompt: 'Korrigiere: Den boken jag har redan läst.', answer: 'Den boken har jag redan läst.' },
+]}/>
+
+<RelatedTopics topics={[
+	{ href: '../basic-word-order/', label: 'Grundwortstellung' },
+	{ href: '../inversion/', label: 'Inversion' },
+	{ href: '../subordinate-clauses/', label: 'Nebensätze' },
+	{ href: '../inte-placement/', label: 'Position von inte' },
+]}/>

@@ -1,0 +1,62 @@
+---
+title: Bisatser
+description: Känn igen och bygg svenska bisatser med subjekt, satsadverbial och verb i rätt ordning.
+metaLanguage: sv
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/swedish/grammar/sentence-structure/biff/
+  - /learn/swedish/grammar/sentence-structure/inversion/
+  - /learn/swedish/grammar/questions-negation/question-words/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- En bisats är del av en större mening och börjar ofta med <Sv>att</Sv>, <Sv>eftersom</Sv>, <Sv>om</Sv> eller <Sv>när</Sv>.
+- Den praktiska grundramen är **subjunktion + subjekt + satsadverbial + finit verb + resten**.
+- Om hela bisatsen kommer först använder följande huvudsats inversion.
+</KeyTakeaway>
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+En bisats lägger till innehåll: vad någon säger, orsak, villkor eller tid. <Sv>eftersom jag är trött</Sv> behöver normalt en huvudsats omkring sig.
+## Använd nu
+| Betydelse | Inled med … | Exempel |
+| --- | --- | --- |
+| att / återgivet innehåll | <Sv>att</Sv> | <Sv>Jag vet att hon kommer.</Sv> |
+| därför att | <Sv>eftersom</Sv> | <Sv>Jag stannar eftersom jag är trött.</Sv> |
+| om / huruvida | <Sv>om</Sv> | <Sv>Vi går ut om det inte regnar.</Sv> |
+| när | <Sv>när</Sv> | <Sv>Ring mig när du är klar.</Sv> |
+| före | <Sv>innan</Sv> | <Sv>Ät innan du går.</Sv> |
+## Kärnregel
+<SentenceSchema caption="Den svenska bisatsramen" rowHeader="Betydelse" columns={['Subjunktion', 'Subjekt', 'Satsadverbial', 'Finit verb', 'Icke-finit verb', 'Rest']} rows={[{ label: 'Orsak', cells: ['eftersom', 'jag', 'inte', 'kan', 'komma', 'idag'] }, { label: 'Innehåll', cells: ['att', 'hon', 'redan', 'har', 'köpt', 'biljetten'] }, { label: 'Villkor', cells: ['om', 'det', 'inte', 'regnar', '', ''] }]} />
+
+Utan satsadverbial följer subjektet direkt av finit verb: <Sv>Jag vet att hon kommer.</Sv> [BIFF](../biff/) förklarar varför <Sv>inte</Sv> står före verbet. Står bisatsen först blir följande huvudsats inverterad: <Sv>När mötet är slut går vi hem.</Sv>
+## Indirekta frågor
+
+Även en indirekt fråga är en bisats: <Sv>Jag vet inte var hon bor.</Sv> och <Sv>Han frågade om tåget var sent.</Sv> Se [Frågeord](../../questions-negation/question-words/) för ordval och direkt/indirekt mönster.
+## Direkt jämförelse
+<LanguageComparison title="Eftersom-sats"><p slot="de">… weil ich heute nicht kommen kann.</p><p slot="en">… because I cannot come today.</p><p slot="sv">… eftersom jag inte kan komma idag.</p></LanguageComparison>
+Tyskan skickar det finita verbet till slutet; i svenskan kommer det efter satsadverbialet och före ett icke-finit verb.
+<MistakeBox incorrect="Jag stannar hemma eftersom jag kan inte komma." correct="Jag stannar hemma eftersom jag inte kan komma." lang="sv">För inte huvudsatsens satsadverbialplacering in i bisatsen.</MistakeBox>
+<MemoryTip>Bygg det beroende blocket från vänster: **bindeord → subjekt → satsadverbial → finit verb → resten**.</MemoryTip>
+<QuickCheck items={[{ prompt: 'Foga ihop med eftersom: Jag stannar hemma. Jag är trött.', answer: 'Jag stannar hemma eftersom jag är trött.' }, { prompt: 'Placera inte: … om / det / regnar / inte.', answer: '… om det inte regnar.' }, { prompt: 'Sätt bisatsen först: Vi går hem när mötet är slut.', answer: 'När mötet är slut går vi hem.' }]} />
+<RelatedTopics topics={[{ href: '../biff/', label: 'BIFF' }, { href: '../inversion/', label: 'Inversion' }, { href: '../../questions-negation/question-words/', label: 'Frågeord' }]} />

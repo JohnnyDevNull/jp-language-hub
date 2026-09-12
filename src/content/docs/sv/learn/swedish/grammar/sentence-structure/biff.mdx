@@ -1,0 +1,64 @@
+---
+title: BIFF
+description: Använd minnesregeln BIFF för att placera inte och andra satsadverbial i svenska bisatser.
+metaLanguage: sv
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/swedish/grammar/sentence-structure/inte-placement/
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+  - /learn/swedish/grammar/sentence-structure/v2/
+  - /learn/swedish/grammar/sentence-structure/inversion/
+  - /learn/swedish/grammar/sentence-structure/basic-word-order/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- I neutral standardsvenska kommer <Sv>inte</Sv> **före** finit verb i bisats, men efter det i huvudsats.
+- Bisatsen lämnar andra platsen tom; det finita verbet flyttar bakom satsadverbialet.
+- Samma plats används av andra satsadverbial, inte bara <Sv>inte</Sv>.
+</KeyTakeaway>
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+**BIFF** är en svensk minnesregel för satsadverbial i bisatser:
+> **B**isats: **I**nte **F**öre **F**init.
+
+## Kärnregel
+
+> **subjunktion + subjekt + satsadverbial + finit verb + resten**
+
+<SentenceSchema caption="Inte i huvudsats och bisats" rowHeader="Sats" columns={['1 Fundament', '2 Finit verb', '3 Subjekt', 'Satsadverbial', 'Verbgrupp', 'Rest']} rows={[{ label: 'Huvudsats', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] }, { label: 'Bisats', cells: ['eftersom', '', 'jag', 'inte', 'kommer', 'idag.'] }, { label: 'Tyska, huvudsats', lang: 'de', cells: ['Ich', 'komme', '', 'heute nicht.', '', ''] }, { label: 'Tyska, bisats', lang: 'de', cells: ['weil', '', 'ich', 'heute nicht', 'komme.', ''] }]} />
+
+Tyskan har också en skillnad mellan huvud- och bisats, men skickar hela finita verbet till slutet. Svenskan flyttar det bara bakom satsadverbialet: <Sv>Jag stannar hemma eftersom jag inte mår bra.</Sv>
+
+## Vanliga subjunktioner
+
+BIFF är användbart efter <Sv>att</Sv>, <Sv>eftersom</Sv>, <Sv>om</Sv>, <Sv>när</Sv>, <Sv>fast</Sv> och <Sv>innan</Sv>. Andra satsadverbial som <Sv>alltid</Sv>, <Sv>aldrig</Sv>, <Sv>kanske</Sv> och <Sv>redan</Sv> har samma plats: <Sv>Hon säger att hon aldrig äter kött.</Sv>
+## Direkt jämförelse
+<LanguageComparison title="Huvudsats"><p slot="de">Ich komme heute nicht.</p><p slot="en">I am not coming today.</p><p slot="sv">Jag kommer inte idag.</p></LanguageComparison>
+<LanguageComparison title="Bisats"><p slot="de">… weil ich heute nicht komme.</p><p slot="en">… because I am not coming today.</p><p slot="sv">… eftersom jag inte kommer idag.</p></LanguageComparison>
+<MistakeBox incorrect="Jag stannar hemma eftersom jag mår inte bra." correct="Jag stannar hemma eftersom jag inte mår bra." lang="sv">Behåll inte huvudsatsens placering i en bisats.</MistakeBox>
+:::note[BIFF är en inlärningsregel]
+BIFF hjälper dig att hitta satsadverbialet, men är inte en fullständig bisatsgrammatik. Det säkra standardmönstret gäller till B2; talspråk och hävdade bisatser kan ibland ha huvudsatslik ordföljd.
+:::
+<MemoryTip>I en **BI**sats kommer **I**nte **F**öre det **F**inita verbet.</MemoryTip>
+<QuickCheck items={[{ prompt: 'Foga ihop med eftersom: Jag stannar hemma. + Jag mår inte bra.', answer: 'Jag stannar hemma eftersom jag inte mår bra.' }, { prompt: 'Rätta: Jag vet att hon arbetar inte idag.', answer: 'Jag vet att hon inte arbetar idag.' }, { prompt: 'Placera aldrig: Hon säger att hon äter kött.', answer: 'Hon säger att hon aldrig äter kött.' }]} />
+<RelatedTopics topics={[{ href: '../subordinate-clauses/', label: 'Bisatser' }, { href: '../inte-placement/', label: 'Placering av inte' }, { href: '../v2/', label: 'V2-regeln' }, { href: '../inversion/', label: 'Inversion' }, { href: '../basic-word-order/', label: 'Grundläggande ordföljd' }]} />

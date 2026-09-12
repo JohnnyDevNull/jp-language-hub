@@ -1,0 +1,70 @@
+---
+title: BIFF
+description: Nutze die Merkhilfe BIFF, um inte und andere Satzadverbiale in schwedischen Nebensätzen zu platzieren.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/swedish/grammar/sentence-structure/inte-placement/
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+  - /learn/swedish/grammar/sentence-structure/v2/
+  - /learn/swedish/grammar/sentence-structure/inversion/
+  - /learn/swedish/grammar/sentence-structure/basic-word-order/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Im neutralen Standardschwedisch steht <Sv>inte</Sv> im Nebensatz **vor** dem finiten Verb, im Hauptsatz danach.
+- Im Nebensatz bleibt die zweite Position leer; das finite Verb steht hinter dem Satzadverbial.
+- Das gilt auch für andere Satzadverbiale, nicht nur für <Sv>inte</Sv>.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+**BIFF** ist die schwedische Merkhilfe für Satzadverbiale im Nebensatz: **B**isats: **I**nte **F**öre **F**init.
+
+## Kernregel
+
+<SentenceSchema caption="Inte im Haupt- und Nebensatz" rowHeader="Satz" columns={['1 Vorfeld', '2 Finites Verb', '3 Subjekt', 'Satzadverbial', 'Verbgruppe', 'Rest']} rows={[{ label: 'Hauptsatz', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] }, { label: 'Nebensatz', cells: ['eftersom', '', 'jag', 'inte', 'kommer', 'idag.'] }, { label: 'Deutsch, Hauptsatz', lang: 'de', cells: ['Ich', 'komme', '', 'heute nicht.', '', ''] }, { label: 'Deutsch, Nebensatz', lang: 'de', cells: ['weil', '', 'ich', 'heute nicht', 'komme.', ''] }]} />
+
+Deutsch unterscheidet ebenfalls Haupt- und Nebensatz, schiebt das finite Verb aber ans Ende. Schwedisch stellt es nur hinter das Satzadverbial: <Sv>Jag stannar hemma eftersom jag inte mår bra.</Sv>
+
+## Häufige Subjunktionen
+
+BIFF hilft nach <Sv>att</Sv>, <Sv>eftersom</Sv>, <Sv>om</Sv>, <Sv>när</Sv>, <Sv>fast</Sv> und <Sv>innan</Sv>. Andere Satzadverbiale wie <Sv>alltid</Sv>, <Sv>aldrig</Sv>, <Sv>kanske</Sv> und <Sv>redan</Sv> stehen ebenso: <Sv>Hon säger att hon aldrig äter kött.</Sv>
+
+## Direkter Vergleich
+
+<LanguageComparison title="Hauptsatz"><p slot="de">Ich komme heute nicht.</p><p slot="en">I am not coming today.</p><p slot="sv">Jag kommer inte idag.</p></LanguageComparison>
+
+<LanguageComparison title="Nebensatz"><p slot="de">… weil ich heute nicht komme.</p><p slot="en">… because I am not coming today.</p><p slot="sv">… eftersom jag inte kommer idag.</p></LanguageComparison>
+
+<MistakeBox incorrect="Jag stannar hemma eftersom jag mår inte bra." correct="Jag stannar hemma eftersom jag inte mår bra." lang="sv">Übernimm nicht die Hauptsatzstellung in einen Nebensatz.</MistakeBox>
+
+:::note[BIFF ist eine Lernregel]
+BIFF hilft beim Finden des Satzadverbials, ist aber keine vollständige Nebensatzgrammatik. Das sichere Standardmuster gilt bis B2; gesprochene Sprache und selbstständige Nebensätze können manchmal hauptähnliche Wortstellung haben.
+:::
+
+<MemoryTip>Im **BI**satz steht **I**nte **F**ür das **F**inite Verb.</MemoryTip>
+
+<QuickCheck items={[{ prompt: 'Verbinde mit eftersom: Jag stannar hemma. + Jag mår inte bra.', answer: 'Jag stannar hemma eftersom jag inte mår bra.' }, { prompt: 'Korrigiere: Jag vet att hon arbetar inte idag.', answer: 'Jag vet att hon inte arbetar idag.' }, { prompt: 'Setze aldrig: Hon säger att hon äter kött.', answer: 'Hon säger att hon aldrig äter kött.' }]} />
+
+<RelatedTopics topics={[{ href: '../subordinate-clauses/', label: 'Nebensätze' }, { href: '../inte-placement/', label: 'Stellung von inte' }, { href: '../v2/', label: 'V2-Regel' }, { href: '../inversion/', label: 'Inversion' }, { href: '../basic-word-order/', label: 'Grundlegende Wortstellung' }]} />

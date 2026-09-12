@@ -1,0 +1,70 @@
+---
+title: Fragen
+description: Bilde schwedische Ja-/Nein-Fragen und erkenne das gemeinsame Muster direkter Fragen.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/swedish/grammar/questions-negation/question-words/
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+  - /learn/swedish/grammar/sentence-structure/v2/
+  - /learn/swedish/grammar/sentence-structure/inte-placement/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Eine Ja-/Nein-Frage beginnt meist mit dem finiten Verb, dann folgt das Subjekt: <Sv>Kommer du?</Sv>
+- Schwedisch verschiebt das vorhandene finite Verb; es gibt kein Gegenstück zu englischem *do*.
+- Beginnt eine direkte Frage mit einem Nicht-Subjekt-Fragewort, folgt dasselbe Verb-Subjekt-Muster.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Bei einer Ja-/Nein-Frage kann die Antwort zustimmen oder verneinen. Stelle das finite Verb vor das Subjekt: <Sv>Du bor här.</Sv> → <Sv>Bor du här?</Sv>; <Sv>Hon har köpt biljetten.</Sv> → <Sv>Har hon köpt biljetten?</Sv>
+
+## Kernregel
+
+<SentenceSchema caption="Aussage und Ja-/Nein-Frage" rowHeader="Satz" columns={['Erstes Feld', 'Finites Verb', 'Subjekt', 'Satzadverbial', 'Nicht-finites Verb', 'Rest']} rows={[{ label: 'Aussage', cells: ['Du', 'kommer', '', '', '', 'imorgon.'] }, { label: 'Ja/Nein-Frage', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] }, { label: 'Verneinte Frage', cells: ['', 'Kommer', 'du', 'inte', '', 'imorgon?'] }, { label: 'Zwei Verben', cells: ['', 'Har', 'hon', '', 'köpt', 'biljetten?'] }]} />
+
+Nur das finite Verb verschiebt sich. [Die Stellung von *inte*](../../sentence-structure/inte-placement/) behandelt <Sv>inte</Sv>.
+
+## Das gemeinsame Muster direkter Fragen
+
+<SentenceSchema caption="Zwei direkte Frageanfänge" rowHeader="Fragetyp" columns={['Fragephrase', 'Finites Verb', 'Subjekt', 'Rest']} rows={[{ label: 'Ja/Nein', cells: ['', 'Bor', 'du', 'här?'] }, { label: 'Fragewort', cells: ['Var', 'bor', 'du', ''] }]} />
+
+[Fragewörter](../question-words/) behandelt Wortwahl, Kongruenz, Subjektfragen und indirekte Fragen. Eine indirekte Ja-/Nein-Frage nutzt <Sv>om</Sv> und Nebensatzwortstellung:
+
+<SentenceSchema caption="Direkte und indirekte Ja-/Nein-Fragen" rowHeader="Frage" columns={['Einleitung', 'Finites Verb (direkt)', 'Subjekt', 'Satzadverbial', 'Verb (indirekt)', 'Rest']} rows={[{ label: 'Direkt', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] }, { label: 'Indirekt', cells: ['om', '', 'du', '', 'kommer', 'imorgon'] }, { label: 'Indirekt, verneint', cells: ['om', '', 'du', 'inte', 'kommer', 'imorgon'] }]} />
+
+<Sv>Kommer du imorgon?</Sv> → <Sv>Jag undrar om du kommer imorgon.</Sv> Kurze Antworten sind oft <Sv>Ja, det gör jag.</Sv> oder <Sv>Nej, det har hon inte.</Sv>
+
+## Direkter Vergleich
+
+<LanguageComparison title="Ja-/Nein-Frage im Präsens"><p slot="de">Wohnst du hier?</p><p slot="en">Do you live here?</p><p slot="sv">Bor du här?</p></LanguageComparison>
+
+<MistakeBox incorrect="Gör du bor här?" correct="Bor du här?" lang="sv">Übernimm nicht englisches *do*-support. Verschiebe das finite Verb, das schon in der Aussage steht.</MistakeBox>
+
+<MemoryTip>Lass das finite Verb zuerst fragen: **finites Verb → Subjekt → Rest**.</MemoryTip>
+
+<QuickCheck items={[{ prompt: 'Bilde eine Frage: Du arbetar idag.', answer: 'Arbetar du idag?' }, { prompt: 'Bilde eine Frage: Hon har köpt biljetten.', answer: 'Har hon köpt biljetten?' }, { prompt: 'Korrigiere: Gör ni kommer imorgon?', answer: 'Kommer ni imorgon?' }]} />
+
+<RelatedTopics topics={[{ href: '../question-words/', label: 'Fragewörter' }, { href: '../../sentence-structure/subordinate-clauses/', label: 'Nebensätze' }, { href: '../../sentence-structure/v2/', label: 'V2-Regel' }, { href: '../../sentence-structure/inte-placement/', label: 'Stellung von inte' }]} />

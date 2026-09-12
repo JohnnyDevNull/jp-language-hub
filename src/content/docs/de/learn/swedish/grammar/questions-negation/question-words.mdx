@@ -1,0 +1,105 @@
+---
+title: Fragewörter
+description: Stelle Fragen mit vem, vad, vilken, var und vart und verwende die richtige Wortstellung in direkten und indirekten Fragen.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+  - B1
+tags:
+  - grammar
+  - pronouns
+  - important
+related:
+  - /learn/swedish/grammar/questions-negation/questions/
+  - /learn/swedish/grammar/sentence-structure/v2/
+  - /learn/swedish/grammar/sentence-structure/biff/
+  - /learn/swedish/grammar/pronouns-roles/relative-pronouns/
+  - /learn/swedish/grammar/nouns-articles/en-ett/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RuleBox from '~/components/RuleBox.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- In einer direkten Frage steht das Fragewort zuerst und das finite Verb an zweiter Stelle: <Sv>Var bor du?</Sv>
+- Eine indirekte Frage ist ein Nebensatz: <Sv>Jag vet inte var hon bor.</Sv>
+- In indirekten Fragen erhalten <Sv>vem</Sv> und <Sv>vad</Sv> als eigenes Subjekt <Sv>som</Sv>.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Fast alle schwedischen Fragewörter beginnen mit <Sv>v-</Sv>. Schwieriger ist die Wortstellung, die direkte und indirekte Fragen unterscheidet.
+
+## Jetzt anwenden
+
+| Schwedisch | Frage nach … |
+| --- | --- |
+| <Sv>vem</Sv> | einer Person |
+| <Sv>vems</Sv> | einem Besitzer |
+| <Sv>vad</Sv> | einer Sache, einem Ereignis oder einer Identität |
+| <Sv>vilken / vilket / vilka</Sv> | einer Auswahl |
+| <Sv>var</Sv> | einem Ort |
+| <Sv>vart</Sv> | einer Richtung |
+| <Sv>när</Sv> | einer Zeit |
+| <Sv>hur</Sv> | Art und Weise oder Zustand |
+| <Sv>varför</Sv> | einem Grund |
+| <Sv>hur mycket / hur många</Sv> | Menge oder Anzahl |
+
+<Sv>Vem</Sv> wird nicht flektiert: <Sv>Vem såg du?</Sv> und <Sv>Vem såg dig?</Sv> unterscheiden sich nur durch die Wortstellung.
+
+## Kernregel: direkte Fragen
+
+<SentenceSchema caption="Muster direkter Fragen" rowHeader="Frage" columns={['Fragephrase', 'Finites Verb', 'Subjekt', 'Rest']} rows={[{ label: 'Fragewort', cells: ['Var', 'bor', 'du', ''] }, { label: 'Fragephrase', cells: ['Vilken bok', 'läser', 'du', ''] }, { label: 'Ja/Nein', cells: ['', 'Bor', 'du', 'här?'] }]} />
+
+Ist das Fragewort selbst das Subjekt, folgt kein separates Subjekt: <Sv>Vem ringde?</Sv>, <Sv>Vad hände?</Sv>
+
+<RuleBox title="Kein do-support">Schwedisch hat nichts wie englisches *do*. <Sv>Bor du här?</Sv> bedeutet *Do you live here?*; das Verb verschiebt sich selbst.</RuleBox>
+
+## Var oder vart
+
+Das Standardschwedische trennt Ort und Richtung: <Sv>Var bor du?</Sv>, aber <Sv>Vart går du?</Sv> Für „woher“ steht die Präposition am Ende: <Sv>Var kommer du ifrån?</Sv>
+
+## Vilken richtet sich nach dem Substantiv
+
+<Sv>Vilken bok</Sv> ist ein en-Wort, <Sv>Vilket hus</Sv> ein ett-Wort und <Sv>Vilka böcker</Sv> Plural. Für „was für eine Art“ verwendet Schwedisch <Sv>vad för</Sv> oder <Sv>vad för sorts</Sv>.
+
+## Indirekte Fragen: keine Inversion
+
+<SentenceSchema caption="Direkte und indirekte Fragewortstellung" rowHeader="Frage" columns={['Fragewort', 'Finites Verb (direkt)', 'Subjekt', 'Satzadverbial', 'Verb (indirekt)', 'Rest']} rows={[{ label: 'Direkt', cells: ['Var', 'bor', 'hon', '', '', ''] }, { label: 'Indirekt', cells: ['var', '', 'hon', '', 'bor', ''] }, { label: 'Indirekt, verneint', cells: ['varför', '', 'hon', 'inte', 'kommer', ''] }]} />
+
+<Sv>Var bor hon?</Sv> → <Sv>Jag vet inte var hon bor.</Sv> Siehe [Nebensätze](../../sentence-structure/subordinate-clauses/). Als Subjekt heißt es in indirekten Fragen <Sv>vem som ringde</Sv> und <Sv>vad som hände</Sv>, als Objekt dagegen <Sv>vem hon ringde</Sv>.
+
+## Direkter Vergleich
+
+<LanguageComparison title="Direkte Frage"><p slot="de">Wo wohnst du?</p><p slot="en">Where do you live?</p><p slot="sv">Var bor du?</p></LanguageComparison>
+
+<LanguageComparison title="Indirekte Frage"><p slot="de">Ich weiß nicht, wo sie wohnt.</p><p slot="en">I do not know where she lives.</p><p slot="sv">Jag vet inte var hon bor.</p></LanguageComparison>
+
+<MistakeBox title="Häufige Fehler">
+
+- ❌ <Sv>Jag vet inte var bor hon.</Sv> ✅ <Sv>Jag vet inte var hon bor.</Sv>
+- ❌ <Sv>Jag vet inte vem ringde.</Sv> ✅ <Sv>Jag vet inte vem som ringde.</Sv>
+- ❌ <Sv>Vart bor du?</Sv> ✅ <Sv>Var bor du?</Sv>
+- ❌ <Sv>Vilken hus är ditt?</Sv> ✅ <Sv>Vilket hus är ditt?</Sv>
+
+</MistakeBox>
+
+<MemoryTip>Kontrastiere <Sv><strong>Vem som ringde</strong></Sv> (Subjekt) und <Sv><strong>Vem hon ringde</strong></Sv> (Objekt). <Sv>som</Sv> markiert das Subjekt.</MemoryTip>
+
+<QuickCheck items={[{ prompt: 'var oder vart: ___ går du?', answer: 'Vart går du?' }, { prompt: 'Bilde indirekt: Var bor hon? Jag vet inte …', answer: 'Jag vet inte var hon bor.' }, { prompt: 'Korrigiere: Jag vet inte vem ringde.', answer: 'Jag vet inte vem som ringde.' }, { prompt: 'Frage, welches Haus deins ist.', answer: 'Vilket hus är ditt?' }]} />
+
+<RelatedTopics topics={[{ href: '../questions/', label: 'Fragen' }, { href: '../../sentence-structure/v2/', label: 'V2-Regel' }, { href: '../../sentence-structure/biff/', label: 'BIFF' }, { href: '../../sentence-structure/subordinate-clauses/', label: 'Nebensätze' }, { href: '../../pronouns-roles/relative-pronouns/', label: 'Relativpronomen' }, { href: '../../nouns-articles/en-ett/', label: 'en / ett' }]} />

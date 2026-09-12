@@ -1,0 +1,44 @@
+---
+title: Viktigaste reglerna
+description: De svenska regler som har märkts som viktigast, grupperade efter den första CEFR-nivån på varje sida.
+metaLanguage: sv
+grammarLanguage: sv
+tags:
+  - grammar
+related:
+  - /learn/swedish/learning-path/
+  - /learn/swedish/grammar/
+  - /learn/swedish/common-mistakes/
+  - /learn/swedish/cheat-sheets/
+---
+
+import { getCollection } from 'astro:content';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+
+export const TREE_PREFIX = 'learn/swedish/';
+export const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1'];
+export const UNLEVELLED = 'Alla nivåer';
+export const entries = await getCollection('docs', ({ id, data }) => id.startsWith(TREE_PREFIX) && (data.tags ?? []).includes('important'));
+export const rules = entries.map(({ id, data }) => ({
+	/* A relative href keeps the base path and the meta locale without this page having to know either. */
+	href: `../${id.slice(TREE_PREFIX.length)}/`, title: data.title, description: data.description,
+	level: LEVEL_ORDER.find((level) => (data.levels ?? []).includes(level)) ?? UNLEVELLED,
+})).sort((a, b) => a.title.localeCompare(b.title, 'sv'));
+export const groups = [...LEVEL_ORDER, UNLEVELLED].map((level) => ({ level, rules: rules.filter((rule) => rule.level === level) })).filter((group) => group.rules.length > 0);
+
+<KeyTakeaway>
+- Det här är reglerna som påverkar flest satser. Ett fel syns överallt, inte bara i en enda konstruktion.
+- Grupperingen använder den första CEFR-nivån på sidan; inom en nivå är listan alfabetisk, inte en studieordning.
+- Sidan skapas från taggen `important` och följer därför referensen i stället för att vara en andra lista att underhålla.
+</KeyTakeaway>
+
+Följer du referensen i ordning använder du [studieplanen](../learning-path/) i stället. Här får du svaret på vad du ska återvända till när något känns fel men du inte vet vilken regel du brutit mot.
+
+{groups.map((group) => (<section><h2>{group.level}</h2><ul>{group.rules.map((rule) => (<li><a href={rule.href}>{rule.title}</a> — {rule.description}</li>))}</ul></section>))}
+
+<RelatedTopics topics={[
+	{ href: '../learning-path/', label: 'Studieplan' },
+	{ href: '../common-mistakes/', label: 'Vanliga misstag' },
+	{ href: '../cheat-sheets/', label: 'Fusklappar' },
+]} />

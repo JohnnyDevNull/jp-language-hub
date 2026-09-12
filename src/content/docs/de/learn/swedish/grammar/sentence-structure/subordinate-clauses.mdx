@@ -1,0 +1,75 @@
+---
+title: Nebensätze
+description: Erkenne und bilde schwedische Nebensätze mit Subjekt, Satzadverbial und Verben in der richtigen Reihenfolge.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/swedish/grammar/sentence-structure/biff/
+  - /learn/swedish/grammar/sentence-structure/inversion/
+  - /learn/swedish/grammar/questions-negation/question-words/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Ein Nebensatz ist Teil eines größeren Satzes und beginnt oft mit <Sv>att</Sv>, <Sv>eftersom</Sv>, <Sv>om</Sv> oder <Sv>när</Sv>.
+- Sein praktisches Grundmuster lautet **Subjunktion + Subjekt + Satzadverbial + finites Verb + Rest**.
+- Steht der ganze Nebensatz zuerst, verwendet der folgende Hauptsatz Inversion.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Ein Nebensatz ergänzt Inhalt: was jemand sagt, einen Grund, eine Bedingung oder eine Zeit. <Sv>eftersom jag är trött</Sv> braucht normalerweise einen Hauptsatz darum.
+
+## Jetzt anwenden
+
+| Bedeutung | Beginne mit … | Beispiel |
+| --- | --- | --- |
+| dass / berichteter Inhalt | <Sv>att</Sv> | <Sv>Jag vet att hon kommer.</Sv> |
+| weil | <Sv>eftersom</Sv> | <Sv>Jag stannar eftersom jag är trött.</Sv> |
+| ob / falls | <Sv>om</Sv> | <Sv>Vi går ut om det inte regnar.</Sv> |
+| wenn / als | <Sv>när</Sv> | <Sv>Ring mig när du är klar.</Sv> |
+| bevor | <Sv>innan</Sv> | <Sv>Ät innan du går.</Sv> |
+
+## Kernregel
+
+<SentenceSchema caption="Das schwedische Nebensatzmuster" rowHeader="Bedeutung" columns={['Subjunktion', 'Subjekt', 'Satzadverbial', 'Finites Verb', 'Nicht-finites Verb', 'Rest']} rows={[{ label: 'Grund', cells: ['eftersom', 'jag', 'inte', 'kan', 'komma', 'idag'] }, { label: 'Inhalt', cells: ['att', 'hon', 'redan', 'har', 'köpt', 'biljetten'] }, { label: 'Bedingung', cells: ['om', 'det', 'inte', 'regnar', '', ''] }]} />
+
+Ohne Satzadverbial folgt das finite Verb direkt auf das Subjekt: <Sv>Jag vet att hon kommer.</Sv> [BIFF](../biff/) erklärt, warum <Sv>inte</Sv> vor dem Verb steht. Steht der Nebensatz zuerst, wird der folgende Hauptsatz invertiert: <Sv>När mötet är slut går vi hem.</Sv>
+
+## Indirekte Fragen
+
+Auch eine indirekte Frage ist ein Nebensatz: <Sv>Jag vet inte var hon bor.</Sv> und <Sv>Han frågade om tåget var sent.</Sv> Siehe [Fragewörter](../../questions-negation/question-words/) für Wortwahl und das direkte/indirekte Muster.
+
+## Direkter Vergleich
+
+<LanguageComparison title="Eftersom-Satz"><p slot="de">… weil ich heute nicht kommen kann.</p><p slot="en">… because I cannot come today.</p><p slot="sv">… eftersom jag inte kan komma idag.</p></LanguageComparison>
+
+Deutsch schiebt das finite Verb ans Ende; im Schwedischen steht es nach dem Satzadverbial und vor einem nicht-finiten Verb.
+
+<MistakeBox incorrect="Jag stannar hemma eftersom jag kan inte komma." correct="Jag stannar hemma eftersom jag inte kan komma." lang="sv">Übernimm nicht die Hauptsatzstellung des Satzadverbials in einen Nebensatz.</MistakeBox>
+
+<MemoryTip>Baue den abhängigen Block von links: **Verbindungswort → Subjekt → Satzadverbial → finites Verb → Rest**.</MemoryTip>
+
+<QuickCheck items={[{ prompt: 'Verbinde mit eftersom: Jag stannar hemma. Jag är trött.', answer: 'Jag stannar hemma eftersom jag är trött.' }, { prompt: 'Setze inte: … om / det / regnar / inte.', answer: '… om det inte regnar.' }, { prompt: 'Stelle den Nebensatz voran: Vi går hem när mötet är slut.', answer: 'När mötet är slut går vi hem.' }]} />
+
+<RelatedTopics topics={[{ href: '../biff/', label: 'BIFF' }, { href: '../inversion/', label: 'Inversion' }, { href: '../../questions-negation/question-words/', label: 'Fragewörter' }]} />

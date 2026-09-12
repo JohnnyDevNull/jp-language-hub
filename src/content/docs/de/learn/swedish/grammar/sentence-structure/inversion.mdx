@@ -1,0 +1,68 @@
+---
+title: Inversion
+description: Platziere das Subjekt richtig, wenn ein schwedischer Hauptsatz mit Zeit, Ort, Objekt oder einem anderen Satzglied beginnt.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/swedish/grammar/sentence-structure/v2/
+  - /learn/swedish/grammar/sentence-structure/basic-word-order/
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+  - /learn/swedish/grammar/questions-negation/questions/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Beginnt ein Hauptsatz nicht mit dem Subjekt, rückt das Subjekt hinter das finite Verb.
+- Nur das finite Verb verschiebt sich; Infinitiv und Supinum stehen später.
+- Deutsch nutzt in vergleichbaren Hauptsätzen ebenfalls das Verb-Subjekt-Muster, Englisch meist nicht.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Inversion entsteht, wenn ein schwedischer Aussagesatz mit etwas anderem als dem Subjekt beginnt. Das finite Verb bleibt an zweiter Stelle, das Subjekt folgt ihm.
+
+## Kernregel
+
+> **vorangestelltes Satzglied + finites Verb + Subjekt + Satzrest**
+
+<SentenceSchema caption="Vorangestellte Satzglieder gegenüber neutraler Wortstellung" rowHeader="Erste Position" columns={['1 Vorfeld', '2 Finites Verb', '3 Subjekt', 'Satzadverbial', 'Nicht-finites Verb', 'Rest']} rows={[{ label: 'Subjekt (neutral)', cells: ['Jag', 'jobbar', '', '', '', 'hemma idag.'] }, { label: 'Zeit', cells: ['Idag', 'jobbar', 'jag', '', '', 'hemma.'] }, { label: 'Ort', cells: ['Hemma', 'jobbar', 'jag', '', '', 'idag.'] }, { label: 'Objekt', cells: ['Den boken', 'har', 'jag', 'redan', 'läst', ''] }, { label: 'Nebensatz', cells: ['När mötet är slut', 'går', 'vi', '', '', 'hem.'] }, { label: 'Deutsch (gleiche Verschiebung)', lang: 'de', cells: ['Heute', 'arbeite', 'ich', '', '', 'zu Hause.'] }]} />
+
+Das ist die sichtbare Folge der [V2-Regel](../v2/). Auch mehrere Wörter können ein einziges erstes Satzglied bilden. Nur das finite Verb steht vor dem Subjekt: <Sv>Imorgon ska vi träffa Anna.</Sv>
+
+## Inversion und Fragen
+
+Auch Ja-/Nein-Fragen haben ein finites Verb vor dem Subjekt: <Sv>Kommer du imorgon?</Sv> In einer Aussage steht das Verb aber nach einem vorangestellten Satzglied an zweiter Stelle; die Ja-/Nein-Frage beginnt meist mit dem Verb. Siehe [Fragen](../../questions-negation/questions/).
+
+## Direkter Vergleich
+
+<LanguageComparison title="Zeit zuerst"><p slot="de">Heute arbeite ich zu Hause.</p><p slot="en">Today I am working at home.</p><p slot="sv">Idag jobbar jag hemma.</p></LanguageComparison>
+
+<LanguageComparison title="Nebensatz zuerst"><p slot="de">Wenn das Meeting vorbei ist, gehen wir nach Hause.</p><p slot="en">When the meeting is over, we go home.</p><p slot="sv">När mötet är slut går vi hem.</p></LanguageComparison>
+
+<MistakeBox incorrect="Efter jobbet jag ska handla." correct="Efter jobbet ska jag handla." lang="sv">Ein vorangestellter Ausdruck schafft keinen zusätzlichen Platz; er verändert die Hauptsatzwortstellung.</MistakeBox>
+
+<MemoryTip>Steht das Subjekt nicht zuerst, höre direkt nach dem Anfangsblock auf **Verb + Subjekt**: <Sv>Idag <strong>kommer jag</strong> …</Sv></MemoryTip>
+
+<QuickCheck items={[{ prompt: 'Stelle den Ortsausdruck voran: Jag jobbar hemma idag.', answer: 'Hemma jobbar jag idag.' }, { prompt: 'Korrigiere: Imorgon vi ska träffa Anna.', answer: 'Imorgon ska vi träffa Anna.' }, { prompt: 'Ergänze „vi går hem“ nach „När mötet är slut“.', answer: 'När mötet är slut går vi hem.' }]} />
+
+<RelatedTopics topics={[{ href: '../v2/', label: 'V2-Regel' }, { href: '../basic-word-order/', label: 'Grundlegende Wortstellung' }, { href: '../subordinate-clauses/', label: 'Nebensätze' }, { href: '../../questions-negation/questions/', label: 'Fragen' }]} />
