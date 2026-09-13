@@ -31,18 +31,23 @@ import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Ein Nebensatz ist Teil eines größeren Satzes und beginnt oft mit <Sv>att</Sv>, <Sv>eftersom</Sv>, <Sv>om</Sv> oder <Sv>när</Sv>.
-- Sein praktisches Grundmuster lautet **Subjunktion + Subjekt + Satzadverbial + finites Verb + Rest**.
+- Ein Nebensatz ist Teil eines größeren Satzes und beginnt oft mit einer
+  Subjunktion wie <Sv>att</Sv>, <Sv>eftersom</Sv>, <Sv>om</Sv> oder <Sv>när</Sv>.
+- Sein praktisches Grundmuster lautet **Subjunktion + Subjekt + Satzadverbial +
+  finites Verb + Rest**.
 - Steht der ganze Nebensatz zuerst, verwendet der folgende Hauptsatz Inversion.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Ein Nebensatz ergänzt Inhalt: was jemand sagt, einen Grund, eine Bedingung oder eine Zeit. <Sv>eftersom jag är trött</Sv> braucht normalerweise einen Hauptsatz darum.
+Ein Nebensatz ergänzt Inhalt wie das, was jemand sagt, warum etwas passiert,
+eine Bedingung oder eine Zeitangabe. Er kann normalerweise nicht allein mit
+dieser Funktion stehen: <Sv>eftersom jag är trött</Sv> braucht einen Hauptsatz
+drumherum.
 
 ## Jetzt anwenden
 
-| Bedeutung | Beginne mit … | Beispiel |
+| Bedeutung | Beginne den Nebensatz mit … | Beispiel |
 | --- | --- | --- |
 | dass / berichteter Inhalt | <Sv>att</Sv> | <Sv>Jag vet att hon kommer.</Sv> |
 | weil | <Sv>eftersom</Sv> | <Sv>Jag stannar eftersom jag är trött.</Sv> |
@@ -52,24 +57,104 @@ Ein Nebensatz ergänzt Inhalt: was jemand sagt, einen Grund, eine Bedingung oder
 
 ## Kernregel
 
-<SentenceSchema caption="Das schwedische Nebensatzmuster" rowHeader="Bedeutung" columns={['Subjunktion', 'Subjekt', 'Satzadverbial', 'Finites Verb', 'Nicht-finites Verb', 'Rest']} rows={[{ label: 'Grund', cells: ['eftersom', 'jag', 'inte', 'kan', 'komma', 'idag'] }, { label: 'Inhalt', cells: ['att', 'hon', 'redan', 'har', 'köpt', 'biljetten'] }, { label: 'Bedingung', cells: ['om', 'det', 'inte', 'regnar', '', ''] }]} />
+Verwende dieses zuverlässige Muster, wenn der Nebensatz ein Satzadverbial wie
+<Sv>inte</Sv> enthält:
 
-Ohne Satzadverbial folgt das finite Verb direkt auf das Subjekt: <Sv>Jag vet att hon kommer.</Sv> [BIFF](../biff/) erklärt, warum <Sv>inte</Sv> vor dem Verb steht. Steht der Nebensatz zuerst, wird der folgende Hauptsatz invertiert: <Sv>När mötet är slut går vi hem.</Sv>
+<SentenceSchema
+	caption="Das schwedische Nebensatzmuster"
+	rowHeader="Bedeutung"
+	columns={['Subjunktion', 'Subjekt', 'Satzadverbial', 'Finites Verb', 'Nicht-finites Verb', 'Rest']}
+	rows={[
+		{ label: 'Grund', cells: ['eftersom', 'jag', 'inte', 'kan', 'komma', 'idag'] },
+		{ label: 'Inhalt', cells: ['att', 'hon', 'redan', 'har', 'köpt', 'biljetten'] },
+		{ label: 'Bedingung', cells: ['om', 'det', 'inte', 'regnar', '', ''] },
+	]}
+/>
+
+Ohne Satzadverbial folgt das finite Verb direkt auf das Subjekt:
+
+- <Sv>Jag vet **att hon kommer**.</Sv>
+- <Sv>Ring mig **när du är klar**.</Sv>
+
+Die [BIFF-Regel](../biff/) behandelt die engere Frage, warum <Sv>inte</Sv> und
+andere Satzadverbiale hier vor dem finiten Verb stehen.
+
+## Wenn der Nebensatz zuerst kommt
+
+Der ganze Nebensatz kann das erste Feld eines folgenden Hauptsatzes besetzen.
+Der Hauptsatz stellt sein finites Verb dann vor sein Subjekt:
+
+<SentenceSchema
+	caption="Ein Nebensatz vor einem Hauptsatz"
+	rowHeader="Satz"
+	columns={['Erstes Feld', 'Finites Verb', 'Subjekt', 'Rest']}
+	rows={[
+		{
+			label: 'Nebensatz + Hauptsatz',
+			cells: ['När mötet är slut', 'går', 'vi', 'hem.'],
+		},
+	]}
+/>
+
+Diese Verschiebung im Hauptsatz gehört zur [Inversion](../inversion/), nicht
+zur inneren Wortstellung des Nebensatzes selbst.
 
 ## Indirekte Fragen
 
-Auch eine indirekte Frage ist ein Nebensatz: <Sv>Jag vet inte var hon bor.</Sv> und <Sv>Han frågade om tåget var sent.</Sv> Siehe [Fragewörter](../../questions-negation/question-words/) für Wortwahl und das direkte/indirekte Muster.
+Auch eine indirekte Frage verhält sich wie ein Nebensatz:
+
+- <Sv>Jag vet inte **var hon bor**.</Sv>
+- <Sv>Han frågade **om tåget var sent**.</Sv>
+
+[Fragewörter](../../questions-negation/question-words/) behandelt die
+Wortwahl und das Muster direkter gegenüber indirekter Fragen.
 
 ## Direkter Vergleich
 
-<LanguageComparison title="Eftersom-Satz"><p slot="de">… weil ich heute nicht kommen kann.</p><p slot="en">… because I cannot come today.</p><p slot="sv">… eftersom jag inte kan komma idag.</p></LanguageComparison>
+<LanguageComparison title="Eftersom-Satz">
+	<p slot="de">… weil ich heute nicht kommen kann.</p>
+	<p slot="en">… because I cannot come today.</p>
+	<p slot="sv">… eftersom jag inte kan komma idag.</p>
+</LanguageComparison>
 
-Deutsch schiebt das finite Verb ans Ende; im Schwedischen steht es nach dem Satzadverbial und vor einem nicht-finiten Verb.
+Auch das Deutsche markiert Nebensätze mit besonderer Wortstellung, schickt das
+finite Verb dabei aber ans Ende. Das Schwedische hält das finite Verb nach dem
+Satzadverbial und vor einem eventuellen nicht-finiten Verb.
 
-<MistakeBox incorrect="Jag stannar hemma eftersom jag kan inte komma." correct="Jag stannar hemma eftersom jag inte kan komma." lang="sv">Übernimm nicht die Hauptsatzstellung des Satzadverbials in einen Nebensatz.</MistakeBox>
+<MistakeBox
+	incorrect="Jag stannar hemma eftersom jag kan inte komma."
+	correct="Jag stannar hemma eftersom jag inte kan komma."
+	lang="sv"
+>
+Übernimm nicht die Satzadverbial-Stellung des Hauptsatzes in einen Nebensatz.
+</MistakeBox>
 
-<MemoryTip>Baue den abhängigen Block von links: **Verbindungswort → Subjekt → Satzadverbial → finites Verb → Rest**.</MemoryTip>
+<MemoryTip>
+Baue den abhängigen Block von links nach rechts: **Verbindungswort → Subjekt →
+Satzadverbial → finites Verb → Rest**.
+</MemoryTip>
 
-<QuickCheck items={[{ prompt: 'Verbinde mit eftersom: Jag stannar hemma. Jag är trött.', answer: 'Jag stannar hemma eftersom jag är trött.' }, { prompt: 'Setze inte: … om / det / regnar / inte.', answer: '… om det inte regnar.' }, { prompt: 'Stelle den Nebensatz voran: Vi går hem när mötet är slut.', answer: 'När mötet är slut går vi hem.' }]} />
+<QuickCheck
+	items={[
+		{
+			prompt: 'Verbinde mit eftersom: Jag stannar hemma. Jag är trött.',
+			answer: 'Jag stannar hemma eftersom jag är trött.',
+		},
+		{
+			prompt: 'Setze inte richtig ein: … om / det / regnar / inte.',
+			answer: '… om det inte regnar.',
+		},
+		{
+			prompt: 'Stelle den Nebensatz voran: Vi går hem när mötet är slut.',
+			answer: 'När mötet är slut går vi hem.',
+		},
+	]}
+/>
 
-<RelatedTopics topics={[{ href: '../biff/', label: 'BIFF' }, { href: '../inversion/', label: 'Inversion' }, { href: '../../questions-negation/question-words/', label: 'Fragewörter' }]} />
+<RelatedTopics
+	topics={[
+		{ href: '../biff/', label: 'BIFF' },
+		{ href: '../inversion/', label: 'Inversion' },
+		{ href: '../../questions-negation/question-words/', label: 'Fragewörter' },
+	]}
+/>

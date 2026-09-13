@@ -17,14 +17,14 @@ Svenska är referensträdets huvudspår. Följ studieplanen för en ordnad väg,
 
 | När du behöver … | Öppna |
 | --- | --- |
-| en ordnad väg genom trädet | [Studieplan](./learning-path/) |
+| en ordnad väg genom trädet | [Lärvägen](./learning-path/) |
 | grammatikreferensen | [Grammatiköversikt](./grammar/) |
-| praktiska meningsramar för vardagen | [Meningsmönster](./sentence-patterns/) |
+| praktiska meningsramar för vardagen | [Satsmönster](./sentence-patterns/) |
 | ämnesindelat ordförråd | [Ordförråd](./vocabulary/) |
 | diagnos av överföringsmisstag | [Vanliga misstag](./common-mistakes/) |
 
 ## Snabba vägar
 
-- [Grunder i uttal](./pronunciation-basics/) förklarar ljudsystemet och gör svenska ord lättare att lagra.
+- [Uttalsgrunder](./pronunciation-basics/) förklarar ljudsystemet och gör svenska ord lättare att lagra.
 - [Viktigast](./important/) samlar särskilt användbara referenssidor.
 - [Fusklappar](./cheat-sheets/) ger korta uppslag för ändelser, ordföljd, verbformer och vanliga funktionsord.

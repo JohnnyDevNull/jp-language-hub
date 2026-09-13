@@ -1,0 +1,190 @@
+---
+title: Perfekt
+description: Hur svenskan bildar och använder perfekt med har och supinum.
+metaLanguage: sv
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/swedish/grammar/verbs-time-forms/tense-perspectives/
+  - /learn/swedish/grammar/verbs-time-forms/verb-forms/
+  - /learn/swedish/grammar/verbs-time-forms/preterite/
+  - /learn/swedish/grammar/verb-patterns-voice/verb-groups/
+  - /learn/swedish/grammar/sentence-structure/v2/
+  - /learn/swedish/grammar/sentence-structure/biff/
+---
+
+import { getCollection } from 'astro:content';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+import VerbTable from '~/components/VerbTable.astro';
+
+export const verbs = await getCollection('verbs');
+export const representative = (id) => {
+	const entry = verbs.find((candidate) => candidate.id === id);
+	if (!entry) {
+		throw new Error(`Missing required verb entry: ${id}`);
+	}
+	return entry.data;
+};
+export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-skriva'].map(
+	representative,
+);
+
+<KeyTakeaway>
+- Perfekt är <Sv>har</Sv> + supinum, och <Sv>har</Sv> är samma för alla
+  subjekt.
+- Använd det när det aktuella resultatet, erfarenheten eller en oavslutad
+  tidsperiod är det viktiga.
+- Supinum är en egen form: <Sv>har köpt</Sv>, aldrig
+  <Sv>har köpa</Sv> eller <Sv>har köpte</Sv>.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Det svenska perfektet knyter en förfluten händelse eller ett förflutet
+tillstånd till nuet. Det bildas med presens av <Sv>har</Sv> plus verbets
+supinum.
+
+## Kärnregel
+
+**Mönster:** <Sv>har</Sv> + supinum
+
+- <Sv>Jag har köpt en bok.</Sv>
+- <Sv>Hon har skrivit ett mejl.</Sv>
+- <Sv>Vi har bott här länge.</Sv>
+
+Hjälpverbet <Sv>har</Sv> är identiskt för alla subjekt. Supinum är en egen
+verbform:
+
+<VerbTable
+	caption="Perfektformer, ett verb per grupp"
+	forms={groupExamples.map((verb) => ({
+		label: `Grupp ${verb.group}: ${verb.lemma}`,
+		value: `har ${verb.morphology.supine}`,
+	}))}
+/>
+
+<MistakeBox title="Supinum, inte infinitiv">
+Efter <Sv>har</Sv> används <Sv>köpt</Sv>, inte
+<Sv>köpa</Sv> eller <Sv>köpte</Sv>.
+</MistakeBox>
+
+## Huvudsakliga användningar
+
+### Aktuellt resultat
+
+<Sv>Jag har tappat nyckeln.</Sv>
+
+Nyckeln saknas nu; det aktuella resultatet är det som räknas.
+
+### Erfarenhet fram till nu
+
+<Sv>Har du varit i Kiruna?</Sv>
+
+Frågan gäller personens erfarenhet, inte ett specifikt tidigare besök.
+
+### En situation som fortsätter fram till nu
+
+<Sv>Vi har bott här i tre år.</Sv>
+
+Utan vidare sammanhang betyder det här normalt att vi fortfarande bor här.
+
+### En oavslutad tidsperiod
+
+<Sv>Jag har läst två kapitel idag.</Sv>
+
+Idag räknas som fortfarande pågående. Berättar talaren i stället om ett
+avslutat tillfälle i det förflutna, är preteritum det lämpliga perspektivet.
+
+## Perfekt eller preteritum?
+
+| Fokus | Svenskt exempel |
+| --- | --- |
+| Relevans för nuet eller erfarenhet | <Sv>Jag har sett filmen.</Sv> |
+| Avslutad tid i det förflutna | <Sv>Jag såg filmen i lördags.</Sv> |
+
+## Direkt jämförelse
+
+<LanguageComparison title="Relevans för nuet">
+	<p slot="de">Ich habe den Film gesehen.</p>
+	<p slot="en">I have seen the film.</p>
+	<p slot="sv">Jag har sett filmen.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Avslutad tid i det förflutna">
+	<p slot="de">Ich habe den Film am Samstag gesehen.</p>
+	<p slot="en">I saw the film on Saturday.</p>
+	<p slot="sv">Jag såg filmen i lördags.</p>
+</LanguageComparison>
+
+Engelskan ger en användbar strukturell bro med
+<span lang="en">have + past participle</span>, men tempusvalen i engelska och
+svenska stämmer inte överens i varje sammanhang. Även tyskan bildar ett
+perfekt med hjälpverb och particip, men talad tyska använder det mycket
+bredare för vanlig dåtidsberättelse: det andra blocket ovan behåller det
+tyska perfektet där svenskan i stället använder preteritum.
+
+## Negation och ordföljd
+
+I en huvudsats står <Sv>inte</Sv> efter det finita hjälpverbet:
+
+<Sv>Jag har inte läst boken.</Sv>
+
+I en bisats står det normalt före det finita hjälpverbet:
+
+<Sv>… eftersom jag inte har läst boken.</Sv>
+
+Bara <Sv>har</Sv> är finit; <Sv>läst</Sv> är supinum. Den här skillnaden är
+till hjälp när man tillämpar V2 och BIFF.
+
+## Vanliga misstag
+
+<MistakeBox title="Vanliga misstag">
+	- ❌ <Sv>Jag har köpa boken.</Sv>
+	  ✅ <Sv>Jag har köpt boken.</Sv>
+	- ❌ <Sv>Jag har köpte boken.</Sv>
+	  ✅ <Sv>Jag har köpt boken.</Sv>
+	- Undvik att mekaniskt kopiera det tyska perfektet när svenskan placerar
+	  händelsen i en avslutad tidsram i det förflutna.
+</MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Bilda perfekt av skriva med jag och ett mejl.',
+			answer: 'Jag har skrivit ett mejl.',
+		},
+		{
+			prompt: 'Rätta den här meningen: Jag har köpte boken.',
+			answer: 'Jag har köpt boken.',
+		},
+		{
+			prompt: 'Var står inte i ”Jag har läst boken”?',
+			answer: 'Jag har inte läst boken.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../tense-perspectives/', label: 'Tidsperspektiv' },
+		{ href: '../verb-forms/', label: 'Verbformer' },
+		{ href: '../preterite/', label: 'Preteritum' },
+		{ href: '../../verb-patterns-voice/verb-groups/', label: 'Verbgrupper' },
+		{ href: '../../sentence-structure/v2/', label: 'V2-regeln' },
+		{ href: '../../sentence-structure/biff/', label: 'BIFF' },
+	]}
+/>

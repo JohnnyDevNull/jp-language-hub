@@ -35,36 +35,144 @@ import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Det finita verbet är den andra **satsdelen**, inte det andra ordet.
-- Om något annat än subjektet fyller första platsen följer subjektet efter det finita verbet.
-- Bara det finita verbet räknas; infinita verb står senare i satsen.
+- Om något annat än subjektet fyller den första platsen följer subjektet efter
+  det finita verbet.
+- Bara det finita verbet räknas. Infinita verb står senare i satsen.
 </KeyTakeaway>
+
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-**V2** betyder att det finita verbet normalt intar andra platsen i en svensk påståendesats. Regeln är avgörande för naturlig svenska och är bekant för tysktalande.
+**V2** betyder att det finita verbet normalt intar den andra platsen i en
+svensk påståendesats. Det är en av de viktigaste reglerna för att bilda
+naturliga svenska meningar, och tysktalande känner redan igen den.
 
 ## Kärnregel
 
-> I en svensk påståendesats kommer det **finita verbet** normalt på den **andra satsdelsplatsen**.
+> I en svensk påståendesats kommer det **finita verbet** normalt på den
+> **andra satsdelsplatsen**.
 
-<SentenceSchema caption="V2 i en påståendesats" rowHeader="Variant" columns={['1 Fundament', '2 Finit verb', '3 Subjekt', 'Rest']} rows={[{ label: 'Neutral', cells: ['Jag', 'köper', '', 'en bil idag.'] }, { label: 'Tid först', cells: ['Idag', 'köper', 'jag', 'en bil.'] }, { label: 'Objekt först', cells: ['Den boken', 'har', 'jag', 'redan läst.'] }, { label: 'Tyska', lang: 'de', cells: ['Heute', 'kaufe', 'ich', 'ein Auto.'] }]} />
+Läs satsen som en rad fält. Den första platsen är ett enda fält oavsett hur
+många ord den innehåller, och det finita verbet äger den andra platsen:
 
-I en neutral sats fyller subjektet första platsen. Flyttas en annan satsdel fram kommer subjektet efter verbet:
-<ExampleBox title="Tidsuttryck på första plats" lang="sv"><p><strong>Idag</strong> <strong>köper</strong> jag en bil.</p></ExampleBox>
+<SentenceSchema
+	caption="V2 i en påståendesats"
+	rowHeader="Variant"
+	columns={['1 Fundament', '2 Finit verb', '3 Subjekt', 'Rest']}
+	rows={[
+		{ label: 'Neutral', cells: ['Jag', 'köper', '', 'en bil idag.'] },
+		{ label: 'Tid först', cells: ['Idag', 'köper', 'jag', 'en bil.'] },
+		{ label: 'Objekt först', cells: ['Den boken', 'har', 'jag', 'redan läst.'] },
+		{
+			label: 'Tyska',
+			lang: 'de',
+			cells: ['Heute', 'kaufe', 'ich', 'ein Auto.'],
+		},
+	]}
+/>
+
+I en neutral sats fyller subjektet självt den första platsen, så den tredje
+platsen förblir tom. Så snart något annat flyttas fram hamnar subjektet bakom
+verbet:
+
+<ExampleBox title="Tidsuttryck på första platsen" lang="sv">
+	<p><strong>Idag</strong> <strong>köper</strong> jag en bil.</p>
+</ExampleBox>
 
 ## Position betyder inte ord
 
+En satsdel kan innehålla flera ord:
+
 <p lang="sv"><strong>Efter jobbet</strong> <strong>köper</strong> jag mat.</p>
 
-<Sv>Efter jobbet</Sv> är en adverbiell satsdel. <Sv>köper</Sv> står därför fortfarande på andra plats, även om det är det tredje skrivna ordet. V2 gäller bara det finita verbet: <Sv>Idag vill jag köpa en bil.</Sv> och <Sv>Idag har jag köpt en bil.</Sv>
+<Sv>Efter jobbet</Sv> är en adverbiell satsdel. Verbet <Sv>köper</Sv> står
+fortfarande på den andra satspositionen, även om det är det tredje skrivna
+ordet.
+
+## Sammansatta verbfraser
+
+V2 gäller det **finita** verbet, inte varje verb i satsen:
+
+<p lang="sv">Idag <strong>vill</strong> jag köpa en bil.</p>
+<p lang="sv">Idag <strong>har</strong> jag köpt en bil.</p>
+
+De infinita verben <Sv>köpa</Sv> och <Sv>köpt</Sv> står senare i satsen.
+
+## Vad kan fylla den första platsen?
+
+Vanliga val är:
+
+- subjektet: <Sv>Jag arbetar hemma idag.</Sv>
+- tid: <Sv>Idag arbetar jag hemma.</Sv>
+- plats: <Sv>Hemma arbetar jag bäst.</Sv>
+- ett objekt: <Sv>Den boken har jag redan läst.</Sv>
+- en bisats: <Sv>När jag är klar går jag hem.</Sv>
+
+Att byta ut vad som står på den första platsen ändrar betoningen, inte
+V2-kravet.
 
 ## Direkt jämförelse
 
-<LanguageComparison title="Neutral ordföljd"><p slot="de">Ich kaufe heute ein Auto.</p><p slot="en">I am buying a car today.</p><p slot="sv">Jag köper en bil idag.</p></LanguageComparison>
-<LanguageComparison title="Tidsuttryck först"><p slot="de">Heute kaufe ich ein Auto.</p><p slot="en">Today I am buying a car.</p><p slot="sv">Idag köper jag en bil.</p></LanguageComparison>
+<LanguageComparison title="Neutral ordföljd">
+	<p slot="de">Ich kaufe heute ein Auto.</p>
+	<p slot="en">I am buying a car today.</p>
+	<p slot="sv">Jag köper en bil idag.</p>
+</LanguageComparison>
 
-Tyska är en användbar brygga eftersom dess huvudsatser också följer V2. Engelskan inverterar normalt inte subjekt och verb efter ett inledande tidsuttryck.
-<MistakeBox incorrect="På måndag morgon jag börjar mitt nya jobb." correct="På måndag morgon börjar jag mitt nya jobb." lang="sv">Räkna inte ord och lämna inte subjektet före verbet när en annan satsdel står först.</MistakeBox>
-<SpecialRule language="Swedish" title="V2:s räckvidd">V2 beskriver påståenden i **huvudsatser**. Bisatser har ett annat internt mönster: satsadverbial som <Sv>inte</Sv> kommer normalt före finit verb. Se [Bisatser](../subordinate-clauses/) och [BIFF](../biff/).</SpecialRule>
-<MemoryTip>Tänk i block: **första blocket → finit verb → subjekt (om det inte stod först) → resten**.</MemoryTip>
-<QuickCheck items={[{ prompt: 'Sätt tidsuttrycket först: Jag åker till Malmö i morgon.', answer: 'I morgon åker jag till Malmö.' }, { prompt: 'Varför står köper på plats två i ”Efter jobbet köper jag mat”?', answer: 'Efter jobbet är en satsdel och fyller första platsen.' }, { prompt: 'Rätta: Den boken jag har redan läst.', answer: 'Den boken har jag redan läst.' }]} />
-<RelatedTopics topics={[{ href: '../basic-word-order/', label: 'Grundläggande ordföljd' }, { href: '../inversion/', label: 'Inversion' }, { href: '../subordinate-clauses/', label: 'Bisatser' }, { href: '../inte-placement/', label: 'Placering av inte' }]} />
+<LanguageComparison title="Tidsuttryck först">
+	<p slot="de">Heute kaufe ich ein Auto.</p>
+	<p slot="en">Today I am buying a car.</p>
+	<p slot="sv">Idag köper jag en bil.</p>
+</LanguageComparison>
+
+Tyska är en bra brygga, eftersom även dess huvudsatser normalt följer V2.
+Engelskan vänder i regel inte på subjekt och verb efter ett inledande
+tidsuttryck.
+
+<MistakeBox
+	incorrect="På måndag morgon jag börjar mitt nya jobb."
+	correct="På måndag morgon börjar jag mitt nya jobb."
+	lang="sv"
+>
+Räkna inte enskilda ord, och lämna inte subjektet före verbet när en annan
+satsdel har flyttats fram.
+</MistakeBox>
+
+<SpecialRule language="Swedish" title="V2:s räckvidd">
+	V2 beskriver påståendesatser i **huvudsatser**. En bisats har ett annat
+	inre mönster; satsadverbial som <Sv>inte</Sv> kommer till exempel normalt
+	före det finita verbet. Se [Bisatser](../subordinate-clauses/) för hela
+	mönstret och [BIFF](../biff/) för placeringen av satsadverbial.
+</SpecialRule>
+
+<MemoryTip>
+Tänk i block: **första blocket → finit verb → subjekt (om det inte stod
+först) → resten**.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Flytta fram tidsuttrycket: Jag åker till Malmö i morgon.',
+			answer: 'I morgon åker jag till Malmö.',
+		},
+		{
+			prompt:
+				'Varför står köper fortfarande på den andra platsen i "Efter jobbet köper jag mat"?',
+			answer:
+				'Efter jobbet är två ord men en enda satsdel, så det fyller den första platsen.',
+		},
+		{
+			prompt: 'Rätta meningen: Den boken jag har redan läst.',
+			answer: 'Den boken har jag redan läst.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../basic-word-order/', label: 'Grundläggande ordföljd' },
+		{ href: '../inversion/', label: 'Inversion' },
+		{ href: '../subordinate-clauses/', label: 'Bisatser' },
+		{ href: '../inte-placement/', label: 'Placering av inte' },
+	]}
+/>

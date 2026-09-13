@@ -1,0 +1,223 @@
+---
+title: Verbformen
+description: Ein Überblick über die zentralen schwedischen Verbformen und ihr Zusammenspiel.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - verbs
+  - important
+related:
+  - /learn/swedish/grammar/verbs-time-forms/tense-perspectives/
+  - /learn/swedish/grammar/verbs-time-forms/present/
+  - /learn/swedish/grammar/verbs-time-forms/preterite/
+  - /learn/swedish/grammar/verbs-time-forms/perfect/
+  - /learn/swedish/grammar/verb-patterns-voice/verb-groups/
+  - /learn/swedish/cheat-sheets/verb-forms/
+---
+
+import { getCollection } from 'astro:content';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+import VerbTable from '~/components/VerbTable.astro';
+
+export const verbs = (await getCollection('verbs')).sort((left, right) =>
+	left.data.group.localeCompare(right.data.group),
+);
+export const buy = verbs.find(({ id }) => id === 'sv-kopa')?.data ?? (() => {
+	throw new Error('Missing required verb entry: sv-kopa');
+})();
+
+<KeyTakeaway>
+- Ein schwedisches Verb hat pro Zeitform eine einzige finite Form: dieselbe
+  Form für <Sv>jag</Sv>, <Sv>du</Sv>, <Sv>hon</Sv> und <Sv>de</Sv>.
+- Fünf Kernformen bilden die aktive Formenkette: Infinitiv, Imperativ,
+  Präsens, Präteritum und Supinum. Partizipien und Passivformen ergänzen
+  weitere Muster bei Bedarf.
+- Das Supinum ist die Form nach <Sv>har</Sv> oder <Sv>hade</Sv>; es ist nie
+  der Infinitiv und nie das Präteritum.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Schwedische Verben verändern sich nicht nach Person oder Numerus. Die
+zentrale Lernaufgabe besteht daher darin, die Form zu erkennen und die
+richtige Zeitform zu wählen.
+
+## Kernregel
+
+Lerne jedes neue Verb mit der Kernkette **Infinitiv — Imperativ — Präsens —
+Präteritum — Supinum**. Das ist ein praktischer Lernrahmen, keine Behauptung,
+dass dies die einzigen Formen sind, die schwedische Verben haben können. Als
+Beispiel <Sv>köpa</Sv> („kaufen“):
+
+<VerbTable
+	caption="köpa — Kernformen"
+	forms={[
+		{ label: 'Infinitiv', value: `att ${buy.lemma}` },
+		{ label: 'Imperativ', value: `${buy.morphology.imperative}!` },
+		{ label: 'Präsens', value: buy.morphology.present },
+		{ label: 'Präteritum', value: buy.morphology.preterite },
+		{ label: 'Supinum', value: buy.morphology.supine },
+		{ label: 'Perfekt', value: `har ${buy.morphology.supine}` },
+	]}
+/>
+
+Jede Form hat eine Aufgabe:
+
+- Infinitiv nach einem Modalverb: <Sv>Jag vill köpa boken.</Sv>
+- Imperativ für einen Befehl: <Sv>Köp boken!</Sv>
+- Präsens für jetzt, allgemein oder wiederholt: <Sv>Jag köper en bok.</Sv>
+- Präteritum für ein abgeschlossenes vergangenes Ereignis: <Sv>Jag köpte en bok.</Sv>
+- Supinum nach <Sv>har</Sv> oder <Sv>hade</Sv>: <Sv>Jag har köpt en bok.</Sv>
+
+:::note[Eine Form für jede Person]
+<Sv>Jag köper</Sv>, <Sv>du köper</Sv> und <Sv>de köper</Sv> verwenden alle
+dieselbe Präsensform.
+:::
+
+## Die Formenkette
+
+Ein Verb als kurze Formenkette zu lernen ist nützlicher, als nur seinen
+Infinitiv zu lernen:
+
+<table>
+	<thead>
+		<tr>
+			<th scope="col">Gruppe</th>
+			<th scope="col">Infinitiv</th>
+			<th scope="col">Imperativ</th>
+			<th scope="col">Präsens</th>
+			<th scope="col">Präteritum</th>
+			<th scope="col">Supinum</th>
+		</tr>
+	</thead>
+	<tbody>
+		{verbs.map(({ data }) => (
+			<tr>
+				<td>{data.group}</td>
+				<td lang="sv">att {data.lemma}</td>
+				<td lang="sv">{data.morphology.imperative}!</td>
+				<td lang="sv">{data.morphology.present}</td>
+				<td lang="sv">{data.morphology.preterite}</td>
+				<td lang="sv">{data.morphology.supine}</td>
+			</tr>
+		))}
+	</tbody>
+</table>
+
+Diese Beispiele stehen für unterschiedliche
+[Verbgruppen](../../verb-patterns-voice/verb-groups/).
+Die Gruppe ist als Muster hilfreich, aber unregelmäßige Formen müssen
+trotzdem gelernt werden.
+
+Für die Wahl zwischen Präsens, Präteritum, Perfekt, Plusquamperfekt und
+Zukunftskonstruktionen siehe [Zeitperspektiven](../tense-perspectives/).
+
+## Zusammengesetzte Zeiten bilden
+
+Das Supinum verbindet sich mit einer finiten Form von <Sv>ha</Sv>:
+
+- Perfekt: <Sv>Jag har köpt en bok.</Sv> — Ich habe ein Buch gekauft.
+- Plusquamperfekt: <Sv>Jag hade köpt boken.</Sv> — Ich hatte das Buch gekauft.
+
+Das Supinum ist nicht dasselbe wie der Infinitiv oder das Präteritum:
+
+- <Sv>Jag vill köpa boken.</Sv> — Infinitiv nach einem Modalverb
+- <Sv>Jag köpte boken i går.</Sv> — Präteritum
+- <Sv>Jag har köpt boken.</Sv> — Supinum nach <Sv>har</Sv>
+
+## Direkter Vergleich
+
+<LanguageComparison title="Präsens">
+	<p slot="de">Ich kaufe ein Auto.</p>
+	<p slot="en">I am buying a car.</p>
+	<p slot="sv">Jag köper en bil.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Präteritum">
+	<p slot="de">Ich kaufte ein Auto.</p>
+	<p slot="en">I bought a car.</p>
+	<p slot="sv">Jag köpte en bil.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Perfekt">
+	<p slot="de">Ich habe ein Auto gekauft.</p>
+	<p slot="en">I have bought a car.</p>
+	<p slot="sv">Jag har köpt en bil.</p>
+</LanguageComparison>
+
+Das Englische verwendet manchmal eine Verlaufsform, wo das Schwedische das
+gewöhnliche Präsens nutzt. Die ähnlich aussehenden Perfektkonstruktionen sind
+nützliche Brücken, aber ihre Verwendung stimmt nicht in jedem Kontext genau
+überein.
+
+## Häufige Fehler
+
+<MistakeBox
+	incorrect={`Jag har ${buy.lemma} en bok.`}
+	correct={`Jag har ${buy.morphology.supine} en bok.`}
+	lang="sv"
+>
+	Verwende das Supinum nach <Sv>har</Sv> oder <Sv>hade</Sv>.
+</MistakeBox>
+
+<MistakeBox
+	incorrect={`Hon ${buy.morphology.present} och jag ${buy.morphology.present}er.`}
+	correct={`Hon ${buy.morphology.present} och jag ${buy.morphology.present}.`}
+	lang="sv"
+>
+	Schwedische Verbformen ändern sich nicht nach Person oder Numerus. Leite
+	das Präteritum oder Supinum bei einem unregelmäßigen Verb nicht allein aus
+	dem Infinitiv ab; lerne die Formenkette.
+</MistakeBox>
+
+<MemoryTip>
+Speichere jedes Verb als mindestens drei Formen: Präsens — Präteritum —
+Supinum. Ergänze den Infinitiv, wenn er nicht ohnehin klar ist.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Gib die Formenkette von köpa an: Präsens, Präteritum, Supinum.',
+			answer: 'köper — köpte — köpt',
+		},
+		{
+			prompt: 'Korrigiere diesen Satz: Jag har köpa en bok.',
+			answer: 'Jag har köpt en bok.',
+			},
+			{
+				prompt: 'Welche Form folgt auf hade in „Jag hade … boken“?',
+				answer: 'Jag hade köpt boken.',
+			},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../tense-perspectives/', label: 'Zeitperspektiven' },
+		{ href: '../present/', label: 'Präsens' },
+		{ href: '../preterite/', label: 'Präteritum' },
+		{ href: '../perfect/', label: 'Perfekt' },
+		{ href: '../../verb-patterns-voice/verb-groups/', label: 'Verbgruppen' },
+		{ href: '../../verb-patterns-voice/imperative/', label: 'Imperativ' },
+		{
+			href: '../../../cheat-sheets/verb-forms/',
+			label: 'Verbformen-Spickzettel',
+		},
+	]}
+/>

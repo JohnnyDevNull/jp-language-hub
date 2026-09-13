@@ -1,0 +1,119 @@
+---
+title: Futurformen
+description: Wähle zwischen dem schwedischen Präsens, ska, tänker und kommer att für die Zukunft.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+  - important
+related:
+  - /learn/swedish/grammar/verbs-time-forms/present/
+  - /learn/swedish/grammar/verbs-time-forms/tense-perspectives/
+  - /learn/swedish/grammar/verb-patterns-voice/modal-verbs/
+  - /learn/swedish/sentence-patterns/conditions-and-consequences/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Verwende das Präsens, wenn eine Zeitangabe oder die Situation die Zukunft
+  bereits eindeutig macht.
+- Verwende <Sv>ska</Sv> für Entscheidungen, Versprechen, Vereinbarungen oder
+  erwartete Ereignisse; verwende <Sv>tänker</Sv> für eine persönliche Absicht.
+- Verwende <Sv>kommer att</Sv> vor allem für eine Vorhersage oder Entwicklung,
+  die nicht als jemandes Plan dargestellt wird.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Das Schwedische drückt die Zukunft mit mehreren gewöhnlichen Konstruktionen
+aus. Wähle nach Bedeutung, statt das englische *will* oder das deutsche
+*werden* mechanisch zu übersetzen.
+
+## Jetzt anwenden
+
+| Bedeutung | Sinnvolle Wahl | Beispiel |
+| --- | --- | --- |
+| geplant oder aus dem Kontext klar | Präsens | <Sv>Tåget går klockan åtta.</Sv> |
+| Entscheidung, Versprechen, Vereinbarung, Erwartung | <Sv>ska</Sv> + Infinitiv | <Sv>Jag ska ringa i kväll.</Sv> |
+| persönliche Absicht | <Sv>tänker</Sv> + Infinitiv | <Sv>Jag tänker söka jobbet.</Sv> |
+| Vorhersage oder Entwicklung | <Sv>kommer att</Sv> + Infinitiv | <Sv>Det kommer att regna.</Sv> |
+
+Das sind Tendenzen, keine vier wasserdichten Kategorien. Kontext und die
+Perspektive der sprechenden Person können mehr als eine Wahl natürlich
+erscheinen lassen.
+
+## Kernregel
+
+Das kontextuelle Präsens braucht einen klaren Zukunftsanker wie
+<Sv>i morgon</Sv>, <Sv>nästa vecka</Sv> oder ein geplantes Ereignis.
+<Sv>Ska</Sv> und die Absicht <Sv>tänker</Sv> stehen mit dem bloßen Infinitiv,
+während <Sv>kommer att</Sv> den Infinitivmarker <Sv>att</Sv> enthält:
+
+- <Sv>Jag ska resa.</Sv>
+- <Sv>Jag tänker resa.</Sv>
+- <Sv>Det kommer att regna.</Sv>
+
+Das <Sv>att</Sv> in <Sv>kommer att</Sv> gehört zu dieser Konstruktion; es ist
+nicht Teil des bloßen Infinitivmusters, das nach <Sv>ska</Sv> und der Absicht
+<Sv>tänker</Sv> verwendet wird.
+
+## Direkter Vergleich
+
+<LanguageComparison title="Ein persönlicher Plan">
+	<p slot="de">Ich werde morgen anrufen.</p>
+	<p slot="en">I am going to call tomorrow.</p>
+	<p slot="sv">Jag ska ringa i morgon.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Eine Vorhersage">
+	<p slot="de">Es wird später regnen.</p>
+	<p slot="en">It will rain later.</p>
+	<p slot="sv">Det kommer att regna senare.</p>
+</LanguageComparison>
+
+<MistakeBox title="Häufige Fehler">
+	- Übersetze nicht jedes englische <em>will</em> oder deutsche
+	  <span lang="de">werden</span> mit <Sv>ska</Sv>.
+	- ❌ <Sv>Jag ska att ringa.</Sv>
+	  ✅ <Sv>Jag ska ringa.</Sv>
+	- Eine Präsensform kann sich auf die Zukunft beziehen, wenn die Zeit schon
+	  klar ist: <Sv>Vi ses i morgon.</Sv>
+</MistakeBox>
+
+<MemoryTip>
+Frage dich, was das Ereignis zur Zukunft macht: der Kontext, ein Plan, eine
+Absicht oder eine Vorhersage. Wähle danach die Konstruktion.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{ prompt: 'Verwende das Präsens für einen Fahrplan: Der Zug fährt um acht ab.', answer: 'Tåget går klockan åtta.' },
+		{ prompt: 'Drücke eine persönliche Absicht mit tänker aus: Ich habe vor, heute Abend zu lernen.', answer: 'Jag tänker studera i kväll.' },
+		{ prompt: 'Korrigiere: Jag ska att ringa i morgon.', answer: 'Jag ska ringa i morgon.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../present/', label: 'Präsens' },
+		{ href: '../tense-perspectives/', label: 'Zeitperspektiven' },
+		{ href: '../../verb-patterns-voice/modal-verbs/', label: 'Modalverben' },
+		{ href: '../../../sentence-patterns/conditions-and-consequences/', label: 'Bedingungen und Folgen' },
+	]}
+/>

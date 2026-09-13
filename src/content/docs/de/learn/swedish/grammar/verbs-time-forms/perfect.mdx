@@ -1,0 +1,194 @@
+---
+title: Perfekt
+description: Wie das Schwedische das Perfekt mit har und dem Supinum bildet und verwendet.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/swedish/grammar/verbs-time-forms/tense-perspectives/
+  - /learn/swedish/grammar/verbs-time-forms/verb-forms/
+  - /learn/swedish/grammar/verbs-time-forms/preterite/
+  - /learn/swedish/grammar/verb-patterns-voice/verb-groups/
+  - /learn/swedish/grammar/sentence-structure/v2/
+  - /learn/swedish/grammar/sentence-structure/biff/
+---
+
+import { getCollection } from 'astro:content';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+import VerbTable from '~/components/VerbTable.astro';
+
+export const verbs = await getCollection('verbs');
+export const representative = (id) => {
+	const entry = verbs.find((candidate) => candidate.id === id);
+	if (!entry) {
+		throw new Error(`Missing required verb entry: ${id}`);
+	}
+	return entry.data;
+};
+export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-skriva'].map(
+	representative,
+);
+
+<KeyTakeaway>
+- Das Perfekt ist <Sv>har</Sv> + Supinum, und <Sv>har</Sv> ist für jedes
+  Subjekt gleich.
+- Verwende es, wenn das gegenwärtige Ergebnis, die Erfahrung oder ein noch
+  nicht abgeschlossener Zeitraum wichtig ist.
+- Das Supinum ist eine eigene Form: <Sv>har köpt</Sv>, niemals
+  <Sv>har köpa</Sv> oder <Sv>har köpte</Sv>.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Das schwedische Perfekt verbindet ein vergangenes Ereignis oder einen
+vergangenen Zustand mit der Gegenwart. Es wird mit dem Präsens von
+<Sv>har</Sv> plus dem Supinum des Verbs gebildet.
+
+## Kernregel
+
+**Muster:** <Sv>har</Sv> + Supinum
+
+- <Sv>Jag har köpt en bok.</Sv>
+- <Sv>Hon har skrivit ett mejl.</Sv>
+- <Sv>Vi har bott här länge.</Sv>
+
+Das Hilfsverb <Sv>har</Sv> ist für jedes Subjekt identisch. Das Supinum ist
+eine eigene Verbform:
+
+<VerbTable
+	caption="Perfektformen, ein Verb pro Gruppe"
+	forms={groupExamples.map((verb) => ({
+		label: `Gruppe ${verb.group}: ${verb.lemma}`,
+		value: `har ${verb.morphology.supine}`,
+	}))}
+/>
+
+<MistakeBox title="Supinum, nicht Infinitiv">
+Nach <Sv>har</Sv> wird <Sv>köpt</Sv> verwendet, nicht
+<Sv>köpa</Sv> oder <Sv>köpte</Sv>.
+</MistakeBox>
+
+## Hauptverwendungen
+
+### Gegenwärtiges Ergebnis
+
+<Sv>Jag har tappat nyckeln.</Sv>
+
+Der Schlüssel fehlt jetzt; das aktuelle Ergebnis ist entscheidend.
+
+### Erfahrung bis jetzt
+
+<Sv>Har du varit i Kiruna?</Sv>
+
+Die Frage betrifft die Erfahrung der Person, nicht einen bestimmten
+vergangenen Besuch.
+
+### Eine bis jetzt andauernde Situation
+
+<Sv>Vi har bott här i tre år.</Sv>
+
+Ohne weiteren Kontext bedeutet das normalerweise, dass wir immer noch hier
+wohnen.
+
+### Ein noch nicht abgeschlossener Zeitraum
+
+<Sv>Jag har läst två kapitel idag.</Sv>
+
+Heute gilt als noch nicht abgeschlossen. Erzählt die sprechende Person
+dagegen von einem abgeschlossenen vergangenen Anlass, ist das Präteritum die
+passende Perspektive.
+
+## Perfekt oder Präteritum?
+
+| Fokus | Schwedisches Beispiel |
+| --- | --- |
+| Gegenwartsbezug oder Erfahrung | <Sv>Jag har sett filmen.</Sv> |
+| Abgeschlossene Vergangenheit | <Sv>Jag såg filmen i lördags.</Sv> |
+
+## Direkter Vergleich
+
+<LanguageComparison title="Gegenwartsbezug">
+	<p slot="de">Ich habe den Film gesehen.</p>
+	<p slot="en">I have seen the film.</p>
+	<p slot="sv">Jag har sett filmen.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Abgeschlossene Vergangenheit">
+	<p slot="de">Ich habe den Film am Samstag gesehen.</p>
+	<p slot="en">I saw the film on Saturday.</p>
+	<p slot="sv">Jag såg filmen i lördags.</p>
+</LanguageComparison>
+
+Das Englische bietet mit <span lang="en">have + past participle</span> eine
+nützliche strukturelle Brücke, aber die Tempuswahl im Englischen und im
+Schwedischen stimmt nicht in jedem Kontext überein. Auch das Deutsche bildet
+ein Perfekt mit Hilfsverb und Partizip, doch das gesprochene Deutsch
+verwendet es viel breiter für die gewöhnliche Erzählung der Vergangenheit:
+Der zweite Block oben behält das deutsche Perfekt bei, während das
+Schwedische das Präteritum verwendet.
+
+## Verneinung und Wortstellung
+
+Im Hauptsatz steht <Sv>inte</Sv> nach dem finiten Hilfsverb:
+
+<Sv>Jag har inte läst boken.</Sv>
+
+Im Nebensatz steht es normalerweise vor dem finiten Hilfsverb:
+
+<Sv>… eftersom jag inte har läst boken.</Sv>
+
+Nur <Sv>har</Sv> ist finit; <Sv>läst</Sv> ist das Supinum. Diese
+Unterscheidung hilft bei der Anwendung von V2 und BIFF.
+
+## Häufige Fehler
+
+<MistakeBox title="Häufige Fehler">
+	- ❌ <Sv>Jag har köpa boken.</Sv>
+	  ✅ <Sv>Jag har köpt boken.</Sv>
+	- ❌ <Sv>Jag har köpte boken.</Sv>
+	  ✅ <Sv>Jag har köpt boken.</Sv>
+	- Übertrage das deutsche Perfekt nicht mechanisch, wenn das Schwedische das
+	  Ereignis in einen abgeschlossenen Vergangenheitsrahmen setzt.
+</MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Bilde das Perfekt von skriva mit jag und ett mejl.',
+			answer: 'Jag har skrivit ett mejl.',
+		},
+		{
+			prompt: 'Korrigiere diesen Satz: Jag har köpte boken.',
+			answer: 'Jag har köpt boken.',
+		},
+		{
+			prompt: 'Wo steht inte in „Jag har läst boken“?',
+			answer: 'Jag har inte läst boken.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../tense-perspectives/', label: 'Zeitperspektiven' },
+		{ href: '../verb-forms/', label: 'Verbformen' },
+		{ href: '../preterite/', label: 'Präteritum' },
+		{ href: '../../verb-patterns-voice/verb-groups/', label: 'Verbgruppen' },
+		{ href: '../../sentence-structure/v2/', label: 'V2-Regel' },
+		{ href: '../../sentence-structure/biff/', label: 'BIFF' },
+	]}
+/>

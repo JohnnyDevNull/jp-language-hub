@@ -36,9 +36,9 @@ Vergleich verständlich macht, warum die Regel so aussieht.
 ## Schwedisch-spezifische Vertiefungen
 
 - Verbgruppen, Partikeln, Modalverben, Passiv, Aktiv/Passiv-Wahl oder Befehle?
-  Nutze [Verbmuster & Diathese](./verb-patterns-voice/).
+  Nutze [Verbmuster & Aktiv/Passiv](./verb-patterns-voice/).
 - Bedingungen, höfliche Distanz oder berichtete Information? Nutze
-  [Modus, Höflichkeit & Berichte](./mood-politeness-reports/). Für
+  [Modus, Höflichkeit & Redewiedergabe](./mood-politeness-reports/). Für
   Produktionsbeispiele vergleiche [höfliche Bitten](../sentence-patterns/polite-requests/)
   und [Bedingungen und Folgen](../sentence-patterns/conditions-and-consequences/).
 

@@ -32,28 +32,145 @@ import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- En ja/nej-fråga börjar normalt med finit verb följt av subjekt: <Sv>Kommer du?</Sv>
-- Svenskan flyttar det befintliga finita verbet; den har ingen motsvarighet till engelskans *do*.
-- I en direkt fråga med ett frågeord som inte är subjekt kommer uttrycket först och samma verb–subjekt-ram följer.
+- En ja/nej-fråga börjar normalt med finit verb, följt av subjekt: <Sv>Kommer du?</Sv>
+- Svenskan flyttar det befintliga finita verbet; den har ingen motsvarighet
+  till engelskans *do*.
+- I en direkt fråga med ett frågeord som inte är subjekt kommer det uttrycket
+  först, och samma verb–subjekt-ram följer efteråt.
 </KeyTakeaway>
+
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Använd en ja/nej-fråga när svaret kan vara bekräftelse eller nekande. Flytta finit verb före subjekt: <Sv>Du bor här.</Sv> → <Sv>Bor du här?</Sv>; <Sv>Hon har köpt biljetten.</Sv> → <Sv>Har hon köpt biljetten?</Sv>.
+Använd en ja/nej-fråga när svaret kan vara en bekräftelse eller ett nekande.
+Finit verb flyttas fram före subjektet; tonfallet stödjer frågan, men
+ordföljden markerar den redan.
+
+## Använd detta nu
+
+Gör om ett neutralt påstående till en ja/nej-fråga genom att flytta finit
+verb till första plats:
+
+- <Sv>Du **bor** här.</Sv> → <Sv>**Bor** du här?</Sv>
+- <Sv>Hon **har** köpt biljetten.</Sv> → <Sv>**Har** hon köpt biljetten?</Sv>
+- <Sv>Ni **kan** komma imorgon.</Sv> → <Sv>**Kan** ni komma imorgon?</Sv>
+
 ## Kärnregel
-<SentenceSchema caption="Påstående och ja/nej-fråga" rowHeader="Mening" columns={['Första fält', 'Finit verb', 'Subjekt', 'Satsadverbial', 'Icke-finit verb', 'Rest']} rows={[{ label: 'Påstående', cells: ['Du', 'kommer', '', '', '', 'imorgon.'] }, { label: 'Ja/nej-fråga', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] }, { label: 'Nekande fråga', cells: ['', 'Kommer', 'du', 'inte', '', 'imorgon?'] }, { label: 'Två verb', cells: ['', 'Har', 'hon', '', 'köpt', 'biljetten?'] }]} />
 
-Endast finit verb flyttar. [Placering av *inte*](../../sentence-structure/inte-placement/) tar upp *inte*.
+<SentenceSchema
+	caption="Påstående och ja/nej-fråga"
+	rowHeader="Mening"
+	columns={['Första fält', 'Finit verb', 'Subjekt', 'Satsadverbial', 'Icke-finit verb', 'Rest']}
+	rows={[
+		{ label: 'Påstående', cells: ['Du', 'kommer', '', '', '', 'imorgon.'] },
+		{ label: 'Ja/nej-fråga', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] },
+		{ label: 'Nekande fråga', cells: ['', 'Kommer', 'du', 'inte', '', 'imorgon?'] },
+		{ label: 'Två verb', cells: ['', 'Har', 'hon', '', 'köpt', 'biljetten?'] },
+	]}
+/>
+
+Bara finit verb flyttas. Ett supinum eller en infinitiv stannar kvar längre
+bak i satsen. Om placeringen och den pragmatiska tonen hos <Sv>inte</Sv>, se
+[Placering av *inte*](../../sentence-structure/inte-placement/).
+
 ## Den gemensamma direkta frågeramen
-<SentenceSchema caption="Två direkta frågeöppningar" rowHeader="Frågetyp" columns={['Frågefras', 'Finit verb', 'Subjekt', 'Rest']} rows={[{ label: 'Ja/nej', cells: ['', 'Bor', 'du', 'här?'] }, { label: 'Frågeord', cells: ['Var', 'bor', 'du', ''] }]} />
 
-[Frågeord](../question-words/) äger ordval, kongruens, subjektsfrågor och indirekta frågor. En indirekt ja/nej-fråga använder <Sv>om</Sv> och bisatsordföljd:
-<SentenceSchema caption="Direkta och indirekta ja/nej-frågor" rowHeader="Fråga" columns={['Inledning', 'Finit verb (direkt)', 'Subjekt', 'Satsadverbial', 'Verb (indirekt)', 'Rest']} rows={[{ label: 'Direkt', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] }, { label: 'Indirekt', cells: ['om', '', 'du', '', 'kommer', 'imorgon'] }, { label: 'Indirekt, nekande', cells: ['om', '', 'du', 'inte', 'kommer', 'imorgon'] }]} />
+En direkt fråga kan inledas på två sätt:
 
-<Sv>Kommer du imorgon?</Sv> → <Sv>Jag undrar om du kommer imorgon.</Sv> Korta svar är ofta <Sv>Ja, det gör jag.</Sv> eller <Sv>Nej, det har hon inte.</Sv>.
+<SentenceSchema
+	caption="Två direkta frågeöppningar"
+	rowHeader="Frågetyp"
+	columns={['Frågefras', 'Finit verb', 'Subjekt', 'Rest']}
+	rows={[
+		{ label: 'Ja/nej', cells: ['', 'Bor', 'du', 'här?'] },
+		{ label: 'Frågeord', cells: ['Var', 'bor', 'du', ''] },
+	]}
+/>
+
+Andra raden visar bara den gemensamma ramen. [Frågeord](../question-words/)
+äger vilket ord som väljs, kongruens med substantiv, subjektsfrågor och den
+avvikande ordföljden i indirekta frågor.
+
+## Indirekta ja/nej-frågor med *om*
+
+När en ja/nej-fråga blir en del av en större mening inleder du den med
+<Sv>om</Sv> (ungefär "ifall") och använder bisatsordföljd:
+
+<SentenceSchema
+	caption="Direkta och indirekta ja/nej-frågor"
+	rowHeader="Fråga"
+	columns={['Inledning', 'Finit verb (direkt)', 'Subjekt', 'Satsadverbial', 'Verb (indirekt)', 'Rest']}
+	rows={[
+		{ label: 'Direkt', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] },
+		{ label: 'Indirekt', cells: ['om', '', 'du', '', 'kommer', 'imorgon'] },
+		{ label: 'Indirekt, nekande', cells: ['om', '', 'du', 'inte', 'kommer', 'imorgon'] },
+	]}
+/>
+
+- <Sv>Kommer du imorgon?</Sv>
+- <Sv>Jag undrar om du kommer imorgon.</Sv>
+- <Sv>Jag vet inte om du kommer imorgon.</Sv>
+
+Se [Bisatser](../../sentence-structure/subordinate-clauses/) för den
+fullständiga bisatsramen.
+
+## Korta svar
+
+Svenskan svarar ofta med <Sv>ja</Sv> eller <Sv>nej</Sv> plus en kort bisats:
+
+- <Sv>Kommer du imorgon? — Ja, det gör jag.</Sv>
+- <Sv>Har hon ringt? — Nej, det har hon inte.</Sv>
+
+I vardagligt tal går det också bra med ett bart <Sv>ja</Sv> eller <Sv>nej</Sv>
+när svaret är uppenbart.
+
 ## Direkt jämförelse
-<LanguageComparison title="Ja/nej-fråga i presens"><p slot="de">Wohnst du hier?</p><p slot="en">Do you live here?</p><p slot="sv">Bor du här?</p></LanguageComparison>
-Tyska och svenska flyttar det lexikala finita verbet. Engelskan lägger vanligen till *do* i enkelt presens och preteritum.
-<MistakeBox incorrect="Gör du bor här?" correct="Bor du här?" lang="sv">Kopiera inte engelskans *do*-stöd. Flytta det finita verb som redan finns i påståendet.</MistakeBox>
-<MemoryTip>Låt finit verb fråga först: **finit verb → subjekt → resten**.</MemoryTip>
-<QuickCheck items={[{ prompt: 'Gör fråga: Du arbetar idag.', answer: 'Arbetar du idag?' }, { prompt: 'Gör fråga: Hon har köpt biljetten.', answer: 'Har hon köpt biljetten?' }, { prompt: 'Rätta: Gör ni kommer imorgon?', answer: 'Kommer ni imorgon?' }]} />
-<RelatedTopics topics={[{ href: '../question-words/', label: 'Frågeord' }, { href: '../../sentence-structure/subordinate-clauses/', label: 'Bisatser' }, { href: '../../sentence-structure/v2/', label: 'V2-regeln' }, { href: '../../sentence-structure/inte-placement/', label: 'Placering av inte' }]} />
+
+<LanguageComparison title="Ja/nej-fråga i presens">
+	<p slot="de">Wohnst du hier?</p>
+	<p slot="en">Do you live here?</p>
+	<p slot="sv">Bor du här?</p>
+</LanguageComparison>
+
+Tyskan och svenskan flyttar det lexikala finita verbet. Engelskan lägger
+vanligen till *do* i enkel presens och preteritum om inget hjälpverb eller
+*be* redan finns där.
+
+<MistakeBox
+	incorrect="Gör du bor här?"
+	correct="Bor du här?"
+	lang="sv"
+>
+Kopiera inte engelskans *do*-stöd till svenskan. Flytta det finita verb som
+påståendet redan innehåller.
+</MistakeBox>
+
+<MemoryTip>
+Låt finit verb fråga först vid en ja/nej-fråga: **finit verb → subjekt →
+resten**.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Gör om påståendet till en fråga: Du arbetar idag.',
+			answer: 'Arbetar du idag?',
+		},
+		{
+			prompt: 'Gör om påståendet till en fråga: Hon har köpt biljetten.',
+			answer: 'Har hon köpt biljetten?',
+		},
+		{
+			prompt: 'Rätta den engelskpåverkade frågan: Gör ni kommer imorgon?',
+			answer: 'Kommer ni imorgon?',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../question-words/', label: 'Frågeord' },
+		{ href: '../../sentence-structure/subordinate-clauses/', label: 'Bisatser' },
+		{ href: '../../sentence-structure/v2/', label: 'V2-regeln' },
+		{ href: '../../sentence-structure/inte-placement/', label: 'Placering av inte' },
+	]}
+/>

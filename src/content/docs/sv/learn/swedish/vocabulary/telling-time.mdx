@@ -1,0 +1,196 @@
+---
+title: Klockan
+description: Praktiskt svenskt ordförråd och mönster för klockslag med över, i, halv och kvart.
+metaLanguage: sv
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+tags:
+  - vocabulary
+  - important
+related:
+  - /learn/swedish/vocabulary/numbers/
+  - /learn/swedish/grammar/prepositions-function-words/prepositions/
+  - /learn/swedish/grammar/sentence-structure/basic-word-order/
+  - /learn/swedish/vocabulary/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Klockslag klaras med bara fem ord: <Sv>klockan</Sv>, <Sv>över</Sv>,
+  <Sv>i</Sv>, <Sv>halv</Sv> och <Sv>kvart</Sv>.
+- <Sv>halv</Sv> räknar mot den kommande timmen, precis som tyskans
+  <span lang="de">halb</span>: <Sv>halv tre</Sv> är 2:30, inte 3:30.
+- Minuterna räknas från den närmaste referenspunkten, som kan vara
+  halvtimmen: <Sv>tio i halv nio</Sv> är 8:20.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Svenskans klockslag är ett litet slutet system. Lär dig de fem orden
+och de två riktningarna de pekar i, så följer varje tid på dygnet av
+sig själv.
+
+## Grundregel
+
+> Timmen namnges med <Sv>klockan</Sv> plus talet. Minuterna knyts till
+> en referenspunkt med <Sv>över</Sv> (efter) eller <Sv>i</Sv> (före),
+> och referenspunkten kan vara en hel eller en halv timme.
+
+## Fråga och svara
+
+<LanguageComparison title="Fråga vad klockan är">
+	<p slot="de">Wie spät ist es?</p>
+	<p slot="en">What time is it?</p>
+	<p slot="sv">Vad är klockan?</p>
+</LanguageComparison>
+
+<LanguageComparison title="Ange en hel timme">
+	<p slot="de">Es ist neun Uhr.</p>
+	<p slot="en">It is nine o'clock.</p>
+	<p slot="sv">Klockan är nio.</p>
+</LanguageComparison>
+
+<Sv>Klockan</Sv> är den bestämda formen av <Sv>en klocka</Sv> och
+fungerar som subjekt i <Sv>Klockan är nio</Sv>; därför behövs inget
+eget ord som motsvarar engelskans „o'clock“.
+
+## Minuter efter och före
+
+Använd <Sv>över</Sv> för minuter efter timmen och <Sv>i</Sv> för
+minuter före nästa timme:
+
+<p lang="sv">Klockan är sju över två.</p>
+<p lang="sv">Klockan är fem i sex.</p>
+
+| Svenska | Klockslag |
+| --- | --- |
+| <Sv>sju över två</Sv> | 2:07 |
+| <Sv>fem i sex</Sv> | 5:55 |
+| <Sv>tjugo över tre</Sv> | 3:20 |
+
+## Halva timmar
+
+<Sv>halv</Sv> pekar mot den timme den räknar mot, inte mot timmen som
+just passerat. Minuterna kan sedan mätas från den halvtimmespunkten i
+båda riktningarna:
+
+| Svenska | Klockslag |
+| --- | --- |
+| <Sv>halv nio</Sv> | 8:30 |
+| <Sv>tio i halv nio</Sv> | 8:20 |
+| <Sv>tio över halv nio</Sv> | 8:40 |
+| <Sv>halv tre</Sv> | 2:30 |
+
+## Kvart i och kvart över
+
+| Svenska | Klockslag |
+| --- | --- |
+| <Sv>kvart över fyra</Sv> | 4:15 |
+| <Sv>kvart i sju</Sv> | 6:45 |
+
+## Skriven och talad tid
+
+Tidtabeller, öppettider och möten skrivs digitalt med punkt:
+<Sv>14.30</Sv>. Uppläst blir det <Sv>fjorton och trettio</Sv>, medan
+den talade vardagsformen för samma tidpunkt är <Sv>halv tre</Sv>.
+
+## Snabbmönster
+
+| Betydelse | Svenskt mönster |
+| --- | --- |
+| exakt timme | <Sv>Klockan är nio.</Sv> |
+| efter timmen | <Sv>X över Y</Sv> |
+| före nästa timme | <Sv>X i Y</Sv> |
+| halv till nästa timme | <Sv>halv Y</Sv> |
+| kvart över | <Sv>kvart över Y</Sv> |
+| kvart i | <Sv>kvart i Y</Sv> |
+
+## Direkt jämförelse
+
+Halvtimmen är där de tre språken verkligen skiljer sig åt: tyskan
+räknar framåt som svenskan, engelskan räknar bakåt från timmen som
+just passerat.
+
+<LanguageComparison title="8:30">
+	<p slot="de">halb neun</p>
+	<p slot="en">half past eight</p>
+	<p slot="sv">halv nio</p>
+</LanguageComparison>
+
+<LanguageComparison title="8:20">
+	<p slot="de">zehn vor halb neun</p>
+	<p slot="en">twenty past eight</p>
+	<p slot="sv">tio i halv nio</p>
+</LanguageComparison>
+
+<LanguageComparison title="6:45">
+	<p slot="de">Viertel vor sieben</p>
+	<p slot="en">quarter to seven</p>
+	<p slot="sv">kvart i sju</p>
+</LanguageComparison>
+
+<MistakeBox
+	incorrect="halv tre = 3:30"
+	correct="halv tre = 2:30"
+	lang="sv"
+>
+	Engelskans „half three“ och svenskans <Sv>halv tre</Sv> avser olika
+	tidpunkter. Härled inte heller <Sv>över</Sv> och <Sv>i</Sv> från en
+	allmän prepositionsregel; klockslag följer sitt eget mönster.
+</MistakeBox>
+
+<MemoryTip>
+Ta den tyska vägen: <Sv>halv</Sv> beter sig som tyskans
+<span lang="de">halb</span>, och talet är timmen du är på väg mot.
+Kommer du från engelskan, lägg till „past“ och dra bort ett:
+<Sv>halv nio</Sv> = „half past eight“.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Välj rätt form för 7.30: "halv åtta" eller "halv sju"?',
+			answer: 'halv åtta',
+		},
+		{
+			prompt: 'Vilken tid är "tio över halv sex"?',
+			answer: '5:40',
+		},
+		{
+			prompt: 'Välj rätt form för 4.45: "kvart i fem" eller "kvart över fyra"?',
+			answer: 'kvart i fem',
+		},
+		{
+			prompt: 'Fyll i: "___ är klockan? – Klockan är ___."',
+			answer: 'Vad är klockan? – Klockan är tre.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../numbers/', label: 'Räkneord' },
+		{
+			href: '../../grammar/prepositions-function-words/prepositions/',
+			label: 'Prepositioner',
+		},
+		{
+			href: '../../grammar/sentence-structure/basic-word-order/',
+			label: 'Grundläggande ordföljd',
+		},
+		{ href: '../', label: 'Ordförråd' },
+	]}
+/>

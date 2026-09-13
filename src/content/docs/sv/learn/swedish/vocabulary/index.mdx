@@ -1,0 +1,219 @@
+---
+title: Ordförråd
+description: Hur man antecknar ett svenskt ord så att det förblir användbart, plus fokuserade vardagsnära ordförrådsområden.
+metaLanguage: sv
+grammarLanguage: sv
+levels:
+  - A1
+tags:
+  - vocabulary
+  - nouns
+related:
+  - /learn/swedish/vocabulary/numbers/
+  - /learn/swedish/vocabulary/telling-time/
+  - /learn/swedish/vocabulary/food-and-drinks/
+  - /learn/swedish/vocabulary/shopping-and-money/
+  - /learn/swedish/vocabulary/transport-and-travel/
+  - /learn/swedish/vocabulary/home-and-everyday-objects/
+  - /learn/swedish/vocabulary/daily-routines/
+  - /learn/swedish/grammar/nouns-articles/en-ett/
+  - /learn/swedish/grammar/nouns-articles/noun-forms/
+  - /learn/swedish/grammar/nouns-articles/plural-overview/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import VocabularyCard from '~/components/VocabularyCard.astro';
+import { getCollection, getEntry } from 'astro:content';
+
+export const requireEntry = async (id) => {
+	const entry = await getEntry('vocabulary', id);
+	if (!entry) {
+		throw new Error(`Missing required vocabulary entry: ${id}`);
+	}
+	return entry.data;
+};
+
+export const car = await requireEntry('sv-bil');
+export const apple = await requireEntry('sv-apple');
+
+export const starterIds = [
+	'sv-dag',
+	'sv-tid',
+	'sv-klocka',
+	'sv-van',
+	'sv-stad',
+	'sv-hund',
+	'sv-hus',
+	'sv-barn',
+	'sv-bord',
+];
+
+export const allNouns = await getCollection('vocabulary');
+export const starters = starterIds.map((id) => {
+	const entry = allNouns.find((candidate) => candidate.id === id);
+	if (!entry) {
+		throw new Error(`Missing required vocabulary entry: ${id}`);
+	}
+	return entry.data;
+});
+
+<KeyTakeaway>
+- Anteckna alltid ett svenskt substantiv med dess artikel, aldrig bara som ett
+  ordpar: <Sv>en bil</Sv>, inte bara <Sv>bil</Sv> tillsammans med en enda
+  översättning.
+- Artikeln ensam räcker inte. Lär dig de fyra formerna tillsammans — obestämd
+  och bestämd singular, obestämd och bestämd plural.
+- Lemmats form ger ofta en ledtråd till pluralen, men det räcker inte. Att
+  lära sig pluralen en gång per ord är billigare än att gissa den varje gång
+  du talar.
+</KeyTakeaway>
+
+Det mesta av arbetet med svenskt ordförråd handlar inte om ett ords betydelse,
+utan om dess genus och dess plural. Båda är oförutsägbara utifrån tyskan,
+därför hör de hemma i anteckningen från början. Ämnessidor grupperar ord efter
+situation, så att du kan lära dig substantiven och frasmönstren du behöver
+tillsammans.
+
+## Grundregel
+
+> Ett användbart substantivuppslag innehåller fem saker: lemmat, genuset
+> (<Sv>en</Sv> eller <Sv>ett</Sv>), den bestämda singularen, den obestämda
+> pluralen och den bestämda pluralen.
+
+<Sv>Ett hus</Sv> är neutrum på svenska och neutrum på tyska, men
+<Sv>ett bord</Sv> är ett <Sv>ett</Sv>-ord medan tyskans
+<span lang="de">der Tisch</span> är maskulinum. Att bara kopiera det tyska
+genuset slår fel tillräckligt ofta för att det inte ska duga som strategi.
+
+## Så här ser ett uppslag ut
+
+<VocabularyCard
+	swedish={car.lemma}
+	gender={car.morphology.gender}
+	german={car.translations?.de}
+	english={car.translations?.en}
+	level={car.levels?.join('–')}
+	forms={[
+		{ label: 'Bestämd singular', value: car.morphology.definiteSingular },
+		{ label: 'Obestämd plural', value: car.morphology.indefinitePlural },
+		{ label: 'Bestämd plural', value: car.morphology.definitePlural },
+	]}
+/>
+
+<VocabularyCard
+	swedish={apple.lemma}
+	gender={apple.morphology.gender}
+	german={apple.translations?.de}
+	english={apple.translations?.en}
+	level={apple.levels?.join('–')}
+	forms={[
+		{ label: 'Bestämd singular', value: apple.morphology.definiteSingular },
+		{ label: 'Obestämd plural', value: apple.morphology.indefinitePlural },
+		{ label: 'Bestämd plural', value: apple.morphology.definitePlural },
+	]}
+/>
+
+De två korten visar systemets två halvor: ett <Sv>en</Sv>-ord som tar
+<Sv>-ar</Sv> i pluralis, och ett <Sv>ett</Sv>-ord som tar <Sv>-n</Sv>.
+
+## Grundläggande ord
+
+En liten samling vardagliga substantiv, med formerna snarare än bara
+översättningen. Vart och ett kommer från samma uppslag som korten ovan.
+
+<table>
+	<thead>
+		<tr>
+			<th>Ord</th>
+			<th>Tyska</th>
+			<th>Engelska</th>
+			<th>Best. sg.</th>
+			<th>Plural</th>
+			<th>Best. pl.</th>
+		</tr>
+	</thead>
+	<tbody>
+		{starters.map((noun) => (
+			<tr>
+				<td lang="sv">{noun.morphology.gender} {noun.lemma}</td>
+				<td lang="de">{noun.translations?.de}</td>
+				<td lang="en">{noun.translations?.en}</td>
+				<td lang="sv">{noun.morphology.definiteSingular}</td>
+				<td lang="sv">{noun.morphology.indefinitePlural}</td>
+				<td lang="sv">{noun.morphology.definitePlural}</td>
+			</tr>
+		))}
+	</tbody>
+</table>
+
+Läser man pluralkolumnen nedåt börjar användbara mönster synas: <Sv>-ar</Sv>
+och <Sv>-or</Sv> och <Sv>-er</Sv> för <Sv>en</Sv>-ord, och ingen ändelse alls
+för många enstaviga <Sv>ett</Sv>-ord som <Sv>hus</Sv>, <Sv>barn</Sv> och
+<Sv>bord</Sv>.
+
+## Uppslagssidor
+
+Vissa ordförrådssidor är kompakta uppslag snarare än situationslistor:
+
+| Uppslag | Använd den för |
+| --- | --- |
+| [Räkneord](./numbers/) | grundtal, ordningstal, datum, decimaltal och fallgropar med stora tal |
+
+## Områden
+
+Ordförrådet är organiserat efter den situation ett ord används i, inte efter
+bokstaven det börjar på. Varje områdessida hålls tillräckligt liten för att
+fungera som en arbetslista snarare än en ordbok.
+
+| Område | Status |
+| --- | --- |
+| [Klockan](./telling-time/) | Publicerad |
+| [Mat och dryck](./food-and-drinks/) | Publicerad |
+| [Handla och pengar](./shopping-and-money/) | Publicerad |
+| [Transport och resor](./transport-and-travel/) | Publicerad |
+| [Hemmet och vardagsföremål](./home-and-everyday-objects/) | Publicerad |
+| [Dagliga rutiner](./daily-routines/) | Publicerad |
+| Personer, relationer och fritid | Senare |
+| Samhälle och vardagsliv i Sverige | Senare |
+| Arbete, möten och affärskommunikation | Senare |
+
+Så länge en områdessida saknas står grammatiksidorna om
+[genus](../grammar/nouns-articles/en-ett/) och
+[pluralbildning](../grammar/nouns-articles/plural-overview/) för reglerna som
+en områdeslista bara skulle illustrera.
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Vilka är de fyra formerna för ”hus”?',
+			answer: 'ett hus – huset – hus – husen',
+		},
+		{
+			prompt: 'Anteckningen om ”stad” saknar tre former. Fyll i dem.',
+			answer: 'en stad – staden – städer – städerna',
+		},
+		{
+			prompt: 'Vad heter bestämd pluralform av ”klocka”?',
+			answer: 'klockorna',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: './numbers/', label: 'Räkneord' },
+		{ href: './telling-time/', label: 'Klockan' },
+		{ href: './food-and-drinks/', label: 'Mat och dryck' },
+		{ href: './shopping-and-money/', label: 'Handla och pengar' },
+		{ href: './transport-and-travel/', label: 'Transport och resor' },
+		{
+			href: './home-and-everyday-objects/',
+			label: 'Hemmet och vardagsföremål',
+		},
+		{ href: './daily-routines/', label: 'Dagliga rutiner' },
+		{ href: '../grammar/nouns-articles/en-ett/', label: 'en eller ett' },
+	]}
+/>

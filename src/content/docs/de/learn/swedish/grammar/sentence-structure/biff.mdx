@@ -32,39 +32,156 @@ import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Im neutralen Standardschwedisch steht <Sv>inte</Sv> im Nebensatz **vor** dem finiten Verb, im Hauptsatz danach.
-- Im Nebensatz bleibt die zweite Position leer; das finite Verb steht hinter dem Satzadverbial.
-- Das gilt auch für andere Satzadverbiale, nicht nur für <Sv>inte</Sv>.
+- Im neutralen Standardschwedisch steht <Sv>inte</Sv> im Nebensatz **vor** dem
+  finiten Verb; im Hauptsatz steht es danach.
+- Der Nebensatz lässt Position zwei leer: Das finite Verb rückt hinter das
+  Satzadverbial.
+- Dieselbe Position nutzen auch andere Satzadverbiale, nicht nur <Sv>inte</Sv>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-**BIFF** ist die schwedische Merkhilfe für Satzadverbiale im Nebensatz: **B**isats: **I**nte **F**öre **F**init.
+**BIFF** ist eine schwedische Merkhilfe für die neutrale Standardstellung von
+Satzadverbialen in Nebensätzen:
+
+> **B**isats: **I**nte **F**öre **F**init  
+> Im Nebensatz steht <Sv>inte</Sv> vor dem finiten Verb.
 
 ## Kernregel
 
-<SentenceSchema caption="Inte im Haupt- und Nebensatz" rowHeader="Satz" columns={['1 Vorfeld', '2 Finites Verb', '3 Subjekt', 'Satzadverbial', 'Verbgruppe', 'Rest']} rows={[{ label: 'Hauptsatz', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] }, { label: 'Nebensatz', cells: ['eftersom', '', 'jag', 'inte', 'kommer', 'idag.'] }, { label: 'Deutsch, Hauptsatz', lang: 'de', cells: ['Ich', 'komme', '', 'heute nicht.', '', ''] }, { label: 'Deutsch, Nebensatz', lang: 'de', cells: ['weil', '', 'ich', 'heute nicht', 'komme.', ''] }]} />
+> **Subjunktion + Subjekt + Satzadverbial + finites Verb + Rest**
 
-Deutsch unterscheidet ebenfalls Haupt- und Nebensatz, schiebt das finite Verb aber ans Ende. Schwedisch stellt es nur hinter das Satzadverbial: <Sv>Jag stannar hemma eftersom jag inte mår bra.</Sv>
+Dieselben Felder machen die Verschiebung sichtbar. Im Hauptsatz steht das
+finite Verb in Position zwei, und <Sv>inte</Sv> folgt ihm. Im Nebensatz bleibt
+Position zwei leer: Das finite Verb ist in die Verbgruppe hinter <Sv>inte</Sv>
+gerückt.
+
+<SentenceSchema
+	caption="Position von inte im Hauptsatz und im Nebensatz"
+	rowHeader="Satz"
+	columns={[
+		'1 Vorfeld',
+		'2 Finites Verb',
+		'3 Subjekt',
+		'Satzadverbial',
+		'Verbgruppe',
+		'Rest',
+	]}
+	rows={[
+		{ label: 'Hauptsatz', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] },
+		{
+			label: 'Nebensatz',
+			cells: ['eftersom', '', 'jag', 'inte', 'kommer', 'idag.'],
+		},
+		{
+			label: 'Deutsch, Hauptsatz',
+			lang: 'de',
+			cells: ['Ich', 'komme', '', 'heute nicht.', '', ''],
+		},
+		{
+			label: 'Deutsch, Nebensatz',
+			lang: 'de',
+			cells: ['weil', '', 'ich', 'heute nicht', 'komme.', ''],
+		},
+	]}
+/>
+
+Die deutschen Zeilen lohnen einen genauen Blick. Deutsch trifft dieselbe
+Unterscheidung zwischen Haupt- und Nebensatz, und auch dort landet das
+Satzadverbial vor dem Verb — allerdings aus einem anderen Grund: Deutsch
+schickt das gesamte finite Verb ans **Ende** des Nebensatzes. Schwedisch
+verschiebt es nur hinter das Satzadverbial, alles andere im Satz folgt
+weiterhin danach.
+
+<p lang="sv">Jag stannar hemma <strong>eftersom jag inte mår bra</strong>.</p>
 
 ## Häufige Subjunktionen
 
-BIFF hilft nach <Sv>att</Sv>, <Sv>eftersom</Sv>, <Sv>om</Sv>, <Sv>när</Sv>, <Sv>fast</Sv> und <Sv>innan</Sv>. Andere Satzadverbiale wie <Sv>alltid</Sv>, <Sv>aldrig</Sv>, <Sv>kanske</Sv> und <Sv>redan</Sv> stehen ebenso: <Sv>Hon säger att hon aldrig äter kött.</Sv>
+BIFF wird nach Wörtern wie diesen nützlich:
+
+- <Sv>att</Sv> — dass
+- <Sv>eftersom</Sv> — weil
+- <Sv>om</Sv> — ob / falls
+- <Sv>när</Sv> — wenn / als
+- <Sv>fast</Sv> — obwohl / auch wenn
+- <Sv>innan</Sv> — bevor
+
+Beispiele:
+
+- <Sv>Jag vet att hon inte arbetar idag.</Sv>
+- <Sv>Vi går ut om det inte regnar.</Sv>
+- <Sv>Han ringde när jag inte var hemma.</Sv>
+
+## Mehr als *inte*
+
+Dieselbe Position nutzen viele Satzadverbiale, zum Beispiel <Sv>alltid</Sv>,
+<Sv>aldrig</Sv>, <Sv>kanske</Sv> und <Sv>redan</Sv>, auch wenn ihre genaue
+Bedeutung und bevorzugte Stellung vom Kontext abhängen können.
+
+<p lang="sv">Hon säger att hon <strong>aldrig äter</strong> kött.</p>
 
 ## Direkter Vergleich
 
-<LanguageComparison title="Hauptsatz"><p slot="de">Ich komme heute nicht.</p><p slot="en">I am not coming today.</p><p slot="sv">Jag kommer inte idag.</p></LanguageComparison>
+<LanguageComparison title="Hauptsatz">
+	<p slot="de">Ich komme heute nicht.</p>
+	<p slot="en">I am not coming today.</p>
+	<p slot="sv">Jag kommer inte idag.</p>
+</LanguageComparison>
 
-<LanguageComparison title="Nebensatz"><p slot="de">… weil ich heute nicht komme.</p><p slot="en">… because I am not coming today.</p><p slot="sv">… eftersom jag inte kommer idag.</p></LanguageComparison>
+<LanguageComparison title="Nebensatz">
+	<p slot="de">… weil ich heute nicht komme.</p>
+	<p slot="en">… because I am not coming today.</p>
+	<p slot="sv">… eftersom jag inte kommer idag.</p>
+</LanguageComparison>
 
-<MistakeBox incorrect="Jag stannar hemma eftersom jag mår inte bra." correct="Jag stannar hemma eftersom jag inte mår bra." lang="sv">Übernimm nicht die Hauptsatzstellung in einen Nebensatz.</MistakeBox>
+Englisch zeigt den schwedischen Kontrast beim finiten Verb nicht deutlich.
+Deutsch verändert die Nebensatzstellung ebenfalls, schickt das finite Verb
+aber normalerweise ans Ende; das ist nicht die schwedische Regel.
+
+<MistakeBox
+	incorrect="Jag stannar hemma eftersom jag mår inte bra."
+	correct="Jag stannar hemma eftersom jag inte mår bra."
+	lang="sv"
+>
+Übernimm nicht die Hauptsatzstellung in einen Nebensatz.
+</MistakeBox>
 
 :::note[BIFF ist eine Lernregel]
-BIFF hilft beim Finden des Satzadverbials, ist aber keine vollständige Nebensatzgrammatik. Das sichere Standardmuster gilt bis B2; gesprochene Sprache und selbstständige Nebensätze können manchmal hauptähnliche Wortstellung haben.
+BIFF hilft dabei, Satzadverbiale zu finden; es ist keine vollständige Grammatik
+der schwedischen Nebensätze. Du brauchst weiterhin die Subjunktion, ein
+Subjekt, die passenden Verbformen und den Rest des Satzes. Hauptsatzähnliche
+Stellung kommt auch in manchen eingebetteten Sätzen vor, besonders in der
+gesprochenen Sprache und wenn der Inhalt als behauptet dargestellt wird; nutze
+BIFF bis B2 als verlässlichen Standard.
 :::
 
-<MemoryTip>Im **BI**satz steht **I**nte **F**ür das **F**inite Verb.</MemoryTip>
+<MemoryTip>
+Im **BI**satz steht **I**nte **F**ür das **F**inite Verb.
+</MemoryTip>
 
-<QuickCheck items={[{ prompt: 'Verbinde mit eftersom: Jag stannar hemma. + Jag mår inte bra.', answer: 'Jag stannar hemma eftersom jag inte mår bra.' }, { prompt: 'Korrigiere: Jag vet att hon arbetar inte idag.', answer: 'Jag vet att hon inte arbetar idag.' }, { prompt: 'Setze aldrig: Hon säger att hon äter kött.', answer: 'Hon säger att hon aldrig äter kött.' }]} />
+<QuickCheck
+	items={[
+		{
+			prompt: 'Verbinde mit eftersom: Jag stannar hemma. + Jag mår inte bra.',
+			answer: 'Jag stannar hemma eftersom jag inte mår bra.',
+		},
+		{
+			prompt: 'Korrigiere diesen Satz: Jag vet att hon arbetar inte idag.',
+			answer: 'Jag vet att hon inte arbetar idag.',
+		},
+		{
+			prompt: 'Setze aldrig ein: Hon säger att hon äter kött.',
+			answer: 'Hon säger att hon aldrig äter kött.',
+		},
+	]}
+/>
 
-<RelatedTopics topics={[{ href: '../subordinate-clauses/', label: 'Nebensätze' }, { href: '../inte-placement/', label: 'Stellung von inte' }, { href: '../v2/', label: 'V2-Regel' }, { href: '../inversion/', label: 'Inversion' }, { href: '../basic-word-order/', label: 'Grundlegende Wortstellung' }]} />
+<RelatedTopics
+	topics={[
+		{ href: '../subordinate-clauses/', label: 'Nebensätze' },
+		{ href: '../inte-placement/', label: 'Stellung von inte' },
+		{ href: '../v2/', label: 'V2-Regel' },
+		{ href: '../inversion/', label: 'Inversion' },
+		{ href: '../basic-word-order/', label: 'Grundwortstellung' },
+	]}
+/>

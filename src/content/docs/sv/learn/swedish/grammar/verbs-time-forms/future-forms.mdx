@@ -1,0 +1,118 @@
+---
+title: Futurumformer
+description: Välj mellan svenskans presens, ska, tänker och kommer att för framtid.
+metaLanguage: sv
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - verbs
+  - important
+related:
+  - /learn/swedish/grammar/verbs-time-forms/present/
+  - /learn/swedish/grammar/verbs-time-forms/tense-perspectives/
+  - /learn/swedish/grammar/verb-patterns-voice/modal-verbs/
+  - /learn/swedish/sentence-patterns/conditions-and-consequences/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Använd presens när ett tidsuttryck eller situationen redan gör framtiden
+  tydlig.
+- Använd <Sv>ska</Sv> för beslut, löften, överenskommelser eller förväntade
+  händelser; använd <Sv>tänker</Sv> för en personlig avsikt.
+- Använd <Sv>kommer att</Sv> framför allt för en förutsägelse eller
+  utveckling som inte presenteras som någons plan.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Svenskan uttrycker framtid med flera vanliga konstruktioner. Välj efter
+betydelse i stället för att mekaniskt översätta engelskans *will* eller
+tyskans *werden*.
+
+## Använd nu
+
+| Betydelse | Lämpligt val | Exempel |
+| --- | --- | --- |
+| planerat eller tydligt av sammanhanget | presens | <Sv>Tåget går klockan åtta.</Sv> |
+| beslut, löfte, överenskommelse, förväntning | <Sv>ska</Sv> + infinitiv | <Sv>Jag ska ringa i kväll.</Sv> |
+| personlig avsikt | <Sv>tänker</Sv> + infinitiv | <Sv>Jag tänker söka jobbet.</Sv> |
+| förutsägelse eller utveckling | <Sv>kommer att</Sv> + infinitiv | <Sv>Det kommer att regna.</Sv> |
+
+Det här är tendenser, inte fyra vattentäta fack. Sammanhang och talarens
+perspektiv kan göra mer än ett val naturligt.
+
+## Kärnregel
+
+Det kontextuella presens behöver ett tydligt framtidsankare som
+<Sv>i morgon</Sv>, <Sv>nästa vecka</Sv> eller en planerad händelse.
+<Sv>Ska</Sv> och avsikts-<Sv>tänker</Sv> tar en ren infinitiv, medan
+<Sv>kommer att</Sv> innehåller infinitivmarkören <Sv>att</Sv>:
+
+- <Sv>Jag ska resa.</Sv>
+- <Sv>Jag tänker resa.</Sv>
+- <Sv>Det kommer att regna.</Sv>
+
+<Sv>Att</Sv> i <Sv>kommer att</Sv> hör till just den konstruktionen; det är
+inte en del av mönstret med ren infinitiv som används efter <Sv>ska</Sv> och
+avsikts-<Sv>tänker</Sv>.
+
+## Direkt jämförelse
+
+<LanguageComparison title="En personlig plan">
+	<p slot="de">Ich werde morgen anrufen.</p>
+	<p slot="en">I am going to call tomorrow.</p>
+	<p slot="sv">Jag ska ringa i morgon.</p>
+</LanguageComparison>
+
+<LanguageComparison title="En förutsägelse">
+	<p slot="de">Es wird später regnen.</p>
+	<p slot="en">It will rain later.</p>
+	<p slot="sv">Det kommer att regna senare.</p>
+</LanguageComparison>
+
+<MistakeBox title="Vanliga misstag">
+	- Översätt inte varje engelskt <em>will</em> eller tyskt
+	  <span lang="de">werden</span> med <Sv>ska</Sv>.
+	- ❌ <Sv>Jag ska att ringa.</Sv>
+	  ✅ <Sv>Jag ska ringa.</Sv>
+	- En presensform kan syfta på framtiden när tiden redan är tydlig:
+	  <Sv>Vi ses i morgon.</Sv>
+</MistakeBox>
+
+<MemoryTip>
+Fråga vad som gör händelsen till framtid: sammanhanget, en plan, en avsikt
+eller en förutsägelse. Välj sedan konstruktionen.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{ prompt: 'Använd presens för en tidtabell: Tåget går klockan åtta.', answer: 'Tåget går klockan åtta.' },
+		{ prompt: 'Uttryck en personlig avsikt med tänker: Jag tänker studera i kväll.', answer: 'Jag tänker studera i kväll.' },
+		{ prompt: 'Rätta: Jag ska att ringa i morgon.', answer: 'Jag ska ringa i morgon.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../present/', label: 'Presens' },
+		{ href: '../tense-perspectives/', label: 'Tidsperspektiv' },
+		{ href: '../../verb-patterns-voice/modal-verbs/', label: 'Modala verb' },
+		{ href: '../../../sentence-patterns/conditions-and-consequences/', label: 'Villkor och konsekvenser' },
+	]}
+/>

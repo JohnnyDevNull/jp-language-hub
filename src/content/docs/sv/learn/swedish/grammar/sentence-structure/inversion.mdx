@@ -32,26 +32,146 @@ import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Så snart något annat än subjektet inleder en huvudsats flyttas subjektet efter det finita verbet.
-- Bara det finita verbet flyttar; infinitiv och supinum står senare.
-- Tyskan använder samma verb–subjekt-mönster i jämförbara huvudsatser, engelskan normalt inte.
+- Så snart något annat än subjektet inleder en huvudsats flyttas subjektet
+  efter det finita verbet.
+- Bara det finita verbet flyttar; infinitiv och supinum står kvar senare i
+  satsen.
+- Tyskan använder samma verb-före-subjekt-mönster i jämförbara huvudsatser,
+  engelskan gör det normalt inte.
 </KeyTakeaway>
+
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Inversion uppstår när en svensk påståendesats börjar med något annat än subjektet. Det finita verbet står kvar på andra plats, och subjektet följer det.
-## Kärnregel
-> **framflyttad satsdel + finit verb + subjekt + resten av satsen**
-<SentenceSchema caption="Framflyttade satsdelar jämfört med neutral ordföljd" rowHeader="Första plats" columns={['1 Fundament', '2 Finit verb', '3 Subjekt', 'Satsadverbial', 'Icke-finit verb', 'Rest']} rows={[{ label: 'Subjekt (neutralt)', cells: ['Jag', 'jobbar', '', '', '', 'hemma idag.'] }, { label: 'Tid', cells: ['Idag', 'jobbar', 'jag', '', '', 'hemma.'] }, { label: 'Plats', cells: ['Hemma', 'jobbar', 'jag', '', '', 'idag.'] }, { label: 'Objekt', cells: ['Den boken', 'har', 'jag', 'redan', 'läst', ''] }, { label: 'Bisats', cells: ['När mötet är slut', 'går', 'vi', '', '', 'hem.'] }, { label: 'Tyska (samma förskjutning)', lang: 'de', cells: ['Heute', 'arbeite', 'ich', '', '', 'zu Hause.'] }]} />
+Inversion uppstår när en svensk påståendesats börjar med något annat än
+subjektet. Det finita verbet står kvar på andra plats, och subjektet följer
+det.
 
-Detta är det synliga resultatet av [V2-regeln](../v2/). Även flera ord kan bilda en enda inledande satsdel. Bara det finita verbet hamnar före subjektet: <Sv>Imorgon ska vi träffa Anna.</Sv>
+## Kärnregel
+
+> **framflyttad satsdel + finit verb + subjekt + resten av satsen**
+
+Den neutrala ordföljden och dess framflyttade varianter skiljer sig bara åt i
+vad som fyller den första positionen. Subjektet hamnar då på tredje plats:
+
+<SentenceSchema
+	caption="Framflyttade satsdelar jämfört med neutral ordföljd"
+	rowHeader="Första plats"
+	columns={[
+		'1 Fundament',
+		'2 Finit verb',
+		'3 Subjekt',
+		'Satsadverbial',
+		'Icke-finit verb',
+		'Rest',
+	]}
+	rows={[
+		{
+			label: 'Subjekt (neutralt)',
+			cells: ['Jag', 'jobbar', '', '', '', 'hemma idag.'],
+		},
+		{ label: 'Tid', cells: ['Idag', 'jobbar', 'jag', '', '', 'hemma.'] },
+		{ label: 'Plats', cells: ['Hemma', 'jobbar', 'jag', '', '', 'idag.'] },
+		{ label: 'Objekt', cells: ['Den boken', 'har', 'jag', 'redan', 'läst', ''] },
+		{
+			label: 'Bisats',
+			cells: ['När mötet är slut', 'går', 'vi', '', '', 'hem.'],
+		},
+		{
+			label: 'Tyska (samma förskjutning)',
+			lang: 'de',
+			cells: ['Heute', 'arbeite', 'ich', '', '', 'zu Hause.'],
+		},
+	]}
+/>
+
+Detta är den synliga följden av [V2-regeln](../v2/): oavsett vad det
+inledande fältet innehåller är det en enda satsdel, och det finita verbet tar
+nästa plats.
+
+## Med fler än ett verb
+
+Bara det finita verbet flyttar före subjektet:
+
+- <Sv>Imorgon <strong>ska</strong> vi träffa Anna.</Sv>
+- <Sv>I går <strong>hade</strong> jag inte ätit frukost.</Sv>
+
+Infinitiven <Sv>träffa</Sv> och supinum <Sv>ätit</Sv> står kvar längre bak i
+satsen.
+
+## Efter en inledande bisats
+
+En hel bisats kan också inta den första positionen. Huvudsatsen som följer
+använder då inversion:
+
+<p lang="sv"><strong>När mötet är slut</strong> <strong>går</strong> vi hem.</p>
 
 ## Inversion och frågor
 
-Ja/nej-frågor har också finit verb före subjekt: <Sv>Kommer du imorgon?</Sv> Men i ett påstående står verbet tvåa efter en framflyttad satsdel; en ja/nej-fråga börjar normalt med verbet. Se [Frågor](../../questions-negation/questions/).
+Även ja/nej-frågor har det finita verbet före subjektet:
+
+<p lang="sv">Kommer du imorgon?</p>
+
+Ändå är det värt att skilja på de två mönstren:
+
+- ett påstående behåller verbet på andra plats efter en framflyttad satsdel;
+- en ja/nej-fråga börjar normalt med det finita verbet, så att den första
+  positionen blir tom.
+
+Se [Frågor](../../questions-negation/questions/) för hela ja/nej-mönstret.
+
 ## Direkt jämförelse
-<LanguageComparison title="Tid först"><p slot="de">Heute arbeite ich zu Hause.</p><p slot="en">Today I am working at home.</p><p slot="sv">Idag jobbar jag hemma.</p></LanguageComparison>
-<LanguageComparison title="Bisats först"><p slot="de">Wenn das Meeting vorbei ist, gehen wir nach Hause.</p><p slot="en">When the meeting is over, we go home.</p><p slot="sv">När mötet är slut går vi hem.</p></LanguageComparison>
-<MistakeBox incorrect="Efter jobbet jag ska handla." correct="Efter jobbet ska jag handla." lang="sv">Ett inledande uttryck skapar ingen extra plats före den vanliga satsen; det ändrar huvudsatsens ordning.</MistakeBox>
-<MemoryTip>Om subjektet inte står först, lyssna efter **verb + subjekt** direkt efter inledningsblocket: <Sv>Idag <strong>kommer jag</strong> …</Sv></MemoryTip>
-<QuickCheck items={[{ prompt: 'Sätt platsuttrycket först: Jag jobbar hemma idag.', answer: 'Hemma jobbar jag idag.' }, { prompt: 'Rätta: Imorgon vi ska träffa Anna.', answer: 'Imorgon ska vi träffa Anna.' }, { prompt: 'Lägg till ”vi går hem” efter ”När mötet är slut”.', answer: 'När mötet är slut går vi hem.' }]} />
-<RelatedTopics topics={[{ href: '../v2/', label: 'V2-regeln' }, { href: '../basic-word-order/', label: 'Grundläggande ordföljd' }, { href: '../subordinate-clauses/', label: 'Bisatser' }, { href: '../../questions-negation/questions/', label: 'Frågor' }]} />
+
+<LanguageComparison title="Tid först">
+	<p slot="de">Heute arbeite ich zu Hause.</p>
+	<p slot="en">Today I am working at home.</p>
+	<p slot="sv">Idag jobbar jag hemma.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Bisats först">
+	<p slot="de">Wenn das Meeting vorbei ist, gehen wir nach Hause.</p>
+	<p slot="en">When the meeting is over, we go home.</p>
+	<p slot="sv">När mötet är slut går vi hem.</p>
+</LanguageComparison>
+
+Svenska och tyska placerar huvudsatsens finita verb före subjektet här.
+Engelska gör normalt inte det.
+
+<MistakeBox
+	incorrect="Efter jobbet jag ska handla."
+	correct="Efter jobbet ska jag handla."
+	lang="sv"
+>
+Ett framflyttat uttryck skapar ingen extra plats framför den vanliga satsen.
+Det ändrar bara huvudsatsens ordföljd.
+</MistakeBox>
+
+<MemoryTip>
+Om subjektet inte står först, lyssna direkt efter det inledande blocket efter
+paret **verb + subjekt**: <Sv>Idag <strong>kommer jag</strong> …</Sv>
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Sätt platsuttrycket först: Jag jobbar hemma idag.',
+			answer: 'Hemma jobbar jag idag.',
+		},
+		{
+			prompt: 'Rätta den här meningen: Imorgon vi ska träffa Anna.',
+			answer: 'Imorgon ska vi träffa Anna.',
+		},
+		{
+			prompt: 'Lägg till huvudsatsen ”vi går hem” efter ”När mötet är slut”.',
+			answer: 'När mötet är slut går vi hem.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../v2/', label: 'V2-regeln' },
+		{ href: '../basic-word-order/', label: 'Grundläggande ordföljd' },
+		{ href: '../subordinate-clauses/', label: 'Bisatser' },
+		{ href: '../../questions-negation/questions/', label: 'Frågor' },
+	]}
+/>

@@ -1,0 +1,142 @@
+---
+title: Villkorssatser
+description: Bygg upp verkliga, hypotetiska och overkliga svenska villkorssatser upp till B2.
+metaLanguage: sv
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+  - B1
+  - B2
+tags:
+  - grammar
+  - sentence-structure
+  - verbs
+related:
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+  - /learn/swedish/grammar/verbs-time-forms/future-forms/
+  - /learn/swedish/sentence-patterns/conditions-and-consequences/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Använd <Sv>om</Sv> + presens för ett verkligt eller öppet villkor;
+  konsekvensen kan använda presens, en imperativ eller ett lämpligt
+  futurumuttryck.
+- Använd preteritum med <Sv>skulle</Sv> för en hypotetisk nutid eller
+  framtid.
+- Använd pluskvamperfekt med <Sv>skulle ha</Sv> + supinum för en situation i
+  det förflutna som inte inträffade.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+En villkorssats förbinder ett villkor med dess konsekvens. Verbformerna visar
+om talaren behandlar villkoret som öppet, hypotetiskt eller som en
+motsägelse till en känd dåtid.
+
+## Använd nu
+
+| Betydelse | Villkor | Konsekvens |
+| --- | --- | --- |
+| verkligt eller öppet | <Sv>om</Sv> + presens | presens, imperativ eller futurumuttryck |
+| hypotetisk nutid/framtid | <Sv>om</Sv> + preteritum | <Sv>skulle</Sv> + infinitiv |
+| overklig dåtid | <Sv>om</Sv> + pluskvamperfekt | <Sv>skulle ha</Sv> + supinum |
+
+## Verkliga och öppna villkor
+
+Använd presens efter <Sv>om</Sv> när villkoret verkligen är möjligt:
+
+- <Sv>Om det regnar, stannar vi hemma.</Sv>
+- <Sv>Om du har tid, ring mig.</Sv>
+- <Sv>Om tåget är sent, kommer jag att skriva.</Sv>
+
+Lägg inte automatiskt till ett futurumhjälpverb i <Sv>om</Sv>-satsen.
+
+<SentenceSchema
+	caption="Öppna villkor och deras konsekvenser"
+	columns={['Villkor', 'Finit verb', 'Rest', 'Huvudsats']}
+	rows={[
+		{ label: 'Öppet', lang: 'sv', cells: ['Om det', 'regnar', '', 'stannar vi hemma'] },
+		{ label: 'Öppet', lang: 'sv', cells: ['Om du', 'har', 'tid', 'ring mig'] },
+	]}
+/>
+
+## Hypotetisk nutid och framtid
+
+Använd en preteritumform i villkoret och <Sv>skulle</Sv> + infinitiv i
+konsekvensen när du föreställer dig en mindre verklig nutid eller framtid:
+
+<Sv>Om jag hade mer tid, skulle jag läsa mer.</Sv>
+
+Preteritumet markerar här avstånd från verkligheten, inte bara dåtid.
+
+## Overklig dåtid
+
+För ett villkor i det förflutna som inte inträffade används pluskvamperfekt i
+villkoret och <Sv>skulle ha</Sv> + supinum i konsekvensen:
+
+<Sv>Om jag hade vetat det, skulle jag ha ringt.</Sv>
+
+Det här praktiska B2-mönstret räcker för de flesta vardagliga overkliga
+situationer i det förflutna.
+
+## Alternativ till <Sv>om</Sv>
+
+<Sv>Om inte</Sv> är den tydligaste allmänna motsvarigheten till engelskans
+*if not* och ofta till *unless*: <Sv>Jag går inte om du inte följer med.</Sv>
+Svenskan använder också uttryck som <Sv>såvida inte</Sv> i mer formella eller
+restriktiva sammanhang. Välj den fras som passar det avsedda villkoret, i
+stället för att anta att engelskans *unless* bara har en fast svensk form.
+
+## Direkt jämförelse
+
+<LanguageComparison title="Hypotetisk nutid">
+	<p slot="de">Wenn ich mehr Zeit hätte, würde ich mehr lesen.</p>
+	<p slot="en">If I had more time, I would read more.</p>
+	<p slot="sv">Om jag hade mer tid, skulle jag läsa mer.</p>
+</LanguageComparison>
+
+<MistakeBox title="Vanliga misstag">
+	- Läs inte varje preteritum i en <Sv>om</Sv>-sats som dåtid; det kan
+	  markera hypotetiskt avstånd.
+	- <Sv>Om jag hade mer tid, skulle jag läsa mer</Sv> är standardvalet för
+	  en hypotetisk nutid. <Sv>Om jag skulle ha mer tid …</Sv> är också
+	  grammatiskt korrekt, men presenterar villkoret mer försiktigt eller som
+	  en markerad möjlighet; räkna inte det som fel.
+	- Behåll den vanliga bisatsordföljden efter <Sv>om</Sv>; se
+	  [Bisatser](../../sentence-structure/subordinate-clauses/).
+</MistakeBox>
+
+<MemoryTip>
+Öppet: presens. Hypotetiskt nu eller senare: preteritum + <Sv>skulle</Sv>.
+Overklig dåtid: pluskvamperfekt + <Sv>skulle ha</Sv>.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{ prompt: 'Komplettera ett öppet villkor: Om det regnar, …', answer: 'Om det regnar, stannar vi hemma.' },
+		{ prompt: 'Fyll i den hypotetiska formen: Jag skulle resa om jag ___ tid. (ha)', answer: 'Jag skulle resa om jag hade tid.' },
+		{ prompt: 'Fyll i den overkliga dåtidsformen: Om jag ___ vetat, skulle jag ha ringt. (ha)', answer: 'Om jag hade vetat, skulle jag ha ringt.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../sentence-structure/subordinate-clauses/', label: 'Bisatser' },
+		{ href: '../../verbs-time-forms/future-forms/', label: 'Futurumformer' },
+		{ href: '../../../sentence-patterns/conditions-and-consequences/', label: 'Villkor och konsekvenser' },
+	]}
+/>

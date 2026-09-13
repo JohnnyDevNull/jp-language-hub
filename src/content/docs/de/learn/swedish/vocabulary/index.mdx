@@ -1,0 +1,219 @@
+---
+title: Wortschatz
+description: Wie man ein schwedisches Wort so notiert, dass es nutzbar bleibt, plus gezielte Alltagswortschatz-Bereiche.
+metaLanguage: de
+grammarLanguage: sv
+levels:
+  - A1
+tags:
+  - vocabulary
+  - nouns
+related:
+  - /learn/swedish/vocabulary/numbers/
+  - /learn/swedish/vocabulary/telling-time/
+  - /learn/swedish/vocabulary/food-and-drinks/
+  - /learn/swedish/vocabulary/shopping-and-money/
+  - /learn/swedish/vocabulary/transport-and-travel/
+  - /learn/swedish/vocabulary/home-and-everyday-objects/
+  - /learn/swedish/vocabulary/daily-routines/
+  - /learn/swedish/grammar/nouns-articles/en-ett/
+  - /learn/swedish/grammar/nouns-articles/noun-forms/
+  - /learn/swedish/grammar/nouns-articles/plural-overview/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import VocabularyCard from '~/components/VocabularyCard.astro';
+import { getCollection, getEntry } from 'astro:content';
+
+export const requireEntry = async (id) => {
+	const entry = await getEntry('vocabulary', id);
+	if (!entry) {
+		throw new Error(`Missing required vocabulary entry: ${id}`);
+	}
+	return entry.data;
+};
+
+export const car = await requireEntry('sv-bil');
+export const apple = await requireEntry('sv-apple');
+
+export const starterIds = [
+	'sv-dag',
+	'sv-tid',
+	'sv-klocka',
+	'sv-van',
+	'sv-stad',
+	'sv-hund',
+	'sv-hus',
+	'sv-barn',
+	'sv-bord',
+];
+
+export const allNouns = await getCollection('vocabulary');
+export const starters = starterIds.map((id) => {
+	const entry = allNouns.find((candidate) => candidate.id === id);
+	if (!entry) {
+		throw new Error(`Missing required vocabulary entry: ${id}`);
+	}
+	return entry.data;
+});
+
+<KeyTakeaway>
+- Notiere ein schwedisches Substantiv immer mit seinem Artikel, nie als bloßes
+  Übersetzungspaar: <Sv>en bil</Sv>, nicht nur <Sv>bil</Sv> = „Auto“.
+- Der Artikel allein reicht nicht. Lerne die vier Formen zusammen — unbestimmter
+  und bestimmter Singular, unbestimmter und bestimmter Plural.
+- Die Form des Lemmas gibt oft einen Hinweis auf den Plural, aber das reicht
+  nicht. Den Plural einmal pro Wort zu lernen ist günstiger, als ihn jedes Mal
+  beim Sprechen zu erraten.
+</KeyTakeaway>
+
+Der größte Teil der Arbeit am schwedischen Wortschatz betrifft nicht die
+Bedeutung eines Wortes, sondern sein Genus und seinen Plural. Beides ist vom
+Deutschen aus nicht vorhersehbar, deshalb gehört es von Anfang an in den
+Eintrag. Themenseiten gruppieren Wörter nach Situation, damit du die
+Substantive und Satzrahmen, die du brauchst, zusammen lernen kannst.
+
+## Grundregel
+
+> Ein brauchbarer Substantiveintrag enthält fünf Dinge: das Lemma, das Genus
+> (<Sv>en</Sv> oder <Sv>ett</Sv>), den bestimmten Singular, den unbestimmten
+> Plural und den bestimmten Plural.
+
+<Sv>Ett hus</Sv> ist im Schwedischen und im Deutschen sächlich, aber
+<Sv>ett bord</Sv> ist ein <Sv>ett</Sv>-Wort, während das deutsche
+<span lang="de">der Tisch</span> maskulin ist. Das deutsche Genus einfach zu
+übernehmen, scheitert oft genug, um keine Strategie sein zu können.
+
+## Wie ein Eintrag aussieht
+
+<VocabularyCard
+	swedish={car.lemma}
+	gender={car.morphology.gender}
+	german={car.translations?.de}
+	english={car.translations?.en}
+	level={car.levels?.join('–')}
+	forms={[
+		{ label: 'Bestimmter Singular', value: car.morphology.definiteSingular },
+		{ label: 'Unbestimmter Plural', value: car.morphology.indefinitePlural },
+		{ label: 'Bestimmter Plural', value: car.morphology.definitePlural },
+	]}
+/>
+
+<VocabularyCard
+	swedish={apple.lemma}
+	gender={apple.morphology.gender}
+	german={apple.translations?.de}
+	english={apple.translations?.en}
+	level={apple.levels?.join('–')}
+	forms={[
+		{ label: 'Bestimmter Singular', value: apple.morphology.definiteSingular },
+		{ label: 'Unbestimmter Plural', value: apple.morphology.indefinitePlural },
+		{ label: 'Bestimmter Plural', value: apple.morphology.definitePlural },
+	]}
+/>
+
+Die beiden Karten zeigen die zwei Hälften des Systems: ein <Sv>en</Sv>-Wort,
+das im Plural <Sv>-ar</Sv> nimmt, und ein <Sv>ett</Sv>-Wort, das <Sv>-n</Sv>
+nimmt.
+
+## Grundwortschatz
+
+Eine kleine Auswahl alltäglicher Substantive, mit den Formen statt nur der
+Übersetzung. Jedes stammt aus denselben Einträgen wie die Karten oben.
+
+<table>
+	<thead>
+		<tr>
+			<th>Wort</th>
+			<th>Deutsch</th>
+			<th>Englisch</th>
+			<th>Best. Sg.</th>
+			<th>Plural</th>
+			<th>Best. Pl.</th>
+		</tr>
+	</thead>
+	<tbody>
+		{starters.map((noun) => (
+			<tr>
+				<td lang="sv">{noun.morphology.gender} {noun.lemma}</td>
+				<td lang="de">{noun.translations?.de}</td>
+				<td lang="en">{noun.translations?.en}</td>
+				<td lang="sv">{noun.morphology.definiteSingular}</td>
+				<td lang="sv">{noun.morphology.indefinitePlural}</td>
+				<td lang="sv">{noun.morphology.definitePlural}</td>
+			</tr>
+		))}
+	</tbody>
+</table>
+
+Liest man die Pluralspalte von oben nach unten, zeigen sich nützliche Muster:
+<Sv>-ar</Sv> und <Sv>-or</Sv> und <Sv>-er</Sv> bei <Sv>en</Sv>-Wörtern, und gar
+keine Endung bei vielen einsilbigen <Sv>ett</Sv>-Wörtern wie <Sv>hus</Sv>,
+<Sv>barn</Sv> und <Sv>bord</Sv>.
+
+## Nachschlageseiten
+
+Manche Wortschatzseiten sind kompakte Nachschlagewerke statt Situationslisten:
+
+| Nachschlagen | Wofür |
+| --- | --- |
+| [Zahlen](./numbers/) | Kardinalzahlen, Ordnungszahlen, Daten, Dezimalzahlen und Fallstricke bei großen Zahlen |
+
+## Themenbereiche
+
+Wortschatz ist nach der Situation geordnet, in der ein Wort gebraucht wird,
+nicht nach dem Anfangsbuchstaben. Jede Themenseite bleibt klein genug, um als
+Arbeitsliste zu dienen, nicht als Wörterbuch.
+
+| Bereich | Status |
+| --- | --- |
+| [Uhrzeit](./telling-time/) | Veröffentlicht |
+| [Essen und Trinken](./food-and-drinks/) | Veröffentlicht |
+| [Einkaufen und Geld](./shopping-and-money/) | Veröffentlicht |
+| [Verkehrsmittel und Reisen](./transport-and-travel/) | Veröffentlicht |
+| [Zuhause und Alltagsgegenstände](./home-and-everyday-objects/) | Veröffentlicht |
+| [Tagesablauf](./daily-routines/) | Veröffentlicht |
+| Personen, Beziehungen und Freizeit | Später |
+| Gesellschaft und Alltag in Schweden | Später |
+| Arbeit, Meetings und Geschäftskommunikation | Später |
+
+Bis es eine Themenseite gibt, tragen die Grammatikseiten zu
+[Genus](../grammar/nouns-articles/en-ett/) und
+[Pluralbildung](../grammar/nouns-articles/plural-overview/) die Regeln, die
+eine Themenliste nur veranschaulichen würde.
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Nenne die vier Formen von „Haus“.',
+			answer: 'ett hus – huset – hus – husen',
+		},
+		{
+			prompt: 'Die Notiz „stad = Stadt“ hat drei fehlende Formen. Ergänze sie.',
+			answer: 'en stad – staden – städer – städerna',
+		},
+		{
+			prompt: 'Sag „die Uhren“ auf Schwedisch.',
+			answer: 'klockorna',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: './numbers/', label: 'Zahlen' },
+		{ href: './telling-time/', label: 'Uhrzeit' },
+		{ href: './food-and-drinks/', label: 'Essen und Trinken' },
+		{ href: './shopping-and-money/', label: 'Einkaufen und Geld' },
+		{ href: './transport-and-travel/', label: 'Verkehrsmittel und Reisen' },
+		{
+			href: './home-and-everyday-objects/',
+			label: 'Zuhause und Alltagsgegenstände',
+		},
+		{ href: './daily-routines/', label: 'Tagesablauf' },
+		{ href: '../grammar/nouns-articles/en-ett/', label: 'en oder ett' },
+	]}
+/>

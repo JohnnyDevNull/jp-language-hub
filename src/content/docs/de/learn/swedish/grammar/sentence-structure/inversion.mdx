@@ -32,37 +32,149 @@ import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Beginnt ein Hauptsatz nicht mit dem Subjekt, rückt das Subjekt hinter das finite Verb.
-- Nur das finite Verb verschiebt sich; Infinitiv und Supinum stehen später.
-- Deutsch nutzt in vergleichbaren Hauptsätzen ebenfalls das Verb-Subjekt-Muster, Englisch meist nicht.
+- Beginnt ein Hauptsatz mit etwas anderem als dem Subjekt, rückt das Subjekt
+  hinter das finite Verb.
+- Nur das finite Verb verschiebt sich; Infinitiv und Supinum bleiben später im
+  Satz.
+- Deutsch nutzt in vergleichbaren Hauptsätzen dasselbe Verb-vor-Subjekt-Muster;
+  Englisch normalerweise nicht.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Inversion entsteht, wenn ein schwedischer Aussagesatz mit etwas anderem als dem Subjekt beginnt. Das finite Verb bleibt an zweiter Stelle, das Subjekt folgt ihm.
+Inversion entsteht, wenn ein schwedischer Aussagesatz mit etwas anderem als dem
+Subjekt beginnt. Das finite Verb bleibt an zweiter Stelle, das Subjekt folgt
+ihm.
 
 ## Kernregel
 
-> **vorangestelltes Satzglied + finites Verb + Subjekt + Satzrest**
+> **vorangestelltes Satzglied + finites Verb + Subjekt + Rest des Satzes**
 
-<SentenceSchema caption="Vorangestellte Satzglieder gegenüber neutraler Wortstellung" rowHeader="Erste Position" columns={['1 Vorfeld', '2 Finites Verb', '3 Subjekt', 'Satzadverbial', 'Nicht-finites Verb', 'Rest']} rows={[{ label: 'Subjekt (neutral)', cells: ['Jag', 'jobbar', '', '', '', 'hemma idag.'] }, { label: 'Zeit', cells: ['Idag', 'jobbar', 'jag', '', '', 'hemma.'] }, { label: 'Ort', cells: ['Hemma', 'jobbar', 'jag', '', '', 'idag.'] }, { label: 'Objekt', cells: ['Den boken', 'har', 'jag', 'redan', 'läst', ''] }, { label: 'Nebensatz', cells: ['När mötet är slut', 'går', 'vi', '', '', 'hem.'] }, { label: 'Deutsch (gleiche Verschiebung)', lang: 'de', cells: ['Heute', 'arbeite', 'ich', '', '', 'zu Hause.'] }]} />
+Die neutrale Wortstellung und ihre vorangestellten Varianten unterscheiden
+sich nur darin, was die erste Position füllt. Das Subjekt erscheint dann an
+dritter Stelle:
 
-Das ist die sichtbare Folge der [V2-Regel](../v2/). Auch mehrere Wörter können ein einziges erstes Satzglied bilden. Nur das finite Verb steht vor dem Subjekt: <Sv>Imorgon ska vi träffa Anna.</Sv>
+<SentenceSchema
+	caption="Vorangestellte Satzglieder gegenüber neutraler Wortstellung"
+	rowHeader="Erste Position"
+	columns={[
+		'1 Fundament',
+		'2 Finites Verb',
+		'3 Subjekt',
+		'Satsadverbial',
+		'Nicht-finites Verb',
+		'Rest',
+	]}
+	rows={[
+		{
+			label: 'Subjekt (neutral)',
+			cells: ['Jag', 'jobbar', '', '', '', 'hemma idag.'],
+		},
+		{ label: 'Zeit', cells: ['Idag', 'jobbar', 'jag', '', '', 'hemma.'] },
+		{ label: 'Ort', cells: ['Hemma', 'jobbar', 'jag', '', '', 'idag.'] },
+		{ label: 'Objekt', cells: ['Den boken', 'har', 'jag', 'redan', 'läst', ''] },
+		{
+			label: 'Nebensatz',
+			cells: ['När mötet är slut', 'går', 'vi', '', '', 'hem.'],
+		},
+		{
+			label: 'Deutsch (gleiche Verschiebung)',
+			lang: 'de',
+			cells: ['Heute', 'arbeite', 'ich', '', '', 'zu Hause.'],
+		},
+	]}
+/>
+
+Das ist die sichtbare Folge der [V2-Regel](../v2/): Was auch immer das
+Vorfeld füllt, es ist ein einziges Satzglied, und das finite Verb besetzt die
+nächste Position.
+
+## Mit mehreren Verben
+
+Nur das finite Verb rückt vor das Subjekt:
+
+- <Sv>Imorgon <strong>ska</strong> vi träffa Anna.</Sv>
+- <Sv>I går <strong>hade</strong> jag inte ätit frukost.</Sv>
+
+Der Infinitiv <Sv>träffa</Sv> und das Supinum <Sv>ätit</Sv> bleiben weiter
+hinten im Satz.
+
+## Nach einem vorangestellten Nebensatz
+
+Auch ein ganzer Nebensatz kann die erste Position einnehmen. Der folgende
+Hauptsatz nutzt dann ebenfalls Inversion:
+
+<p lang="sv"><strong>När mötet är slut</strong> <strong>går</strong> vi hem.</p>
 
 ## Inversion und Fragen
 
-Auch Ja-/Nein-Fragen haben ein finites Verb vor dem Subjekt: <Sv>Kommer du imorgon?</Sv> In einer Aussage steht das Verb aber nach einem vorangestellten Satzglied an zweiter Stelle; die Ja-/Nein-Frage beginnt meist mit dem Verb. Siehe [Fragen](../../questions-negation/questions/).
+Auch Ja-/Nein-Fragen stellen das finite Verb vor das Subjekt:
+
+<p lang="sv">Kommer du imorgon?</p>
+
+Trotzdem lohnt es sich, die beiden Muster zu unterscheiden:
+
+- eine Aussage behält das Verb nach einem vorangestellten Satzglied an
+  zweiter Stelle;
+- eine Ja-/Nein-Frage beginnt normalerweise mit dem finiten Verb, sodass die
+  erste Position leer bleibt.
+
+Den vollständigen Rahmen für Ja-/Nein-Fragen zeigt
+[Fragen](../../questions-negation/questions/).
 
 ## Direkter Vergleich
 
-<LanguageComparison title="Zeit zuerst"><p slot="de">Heute arbeite ich zu Hause.</p><p slot="en">Today I am working at home.</p><p slot="sv">Idag jobbar jag hemma.</p></LanguageComparison>
+<LanguageComparison title="Zeit zuerst">
+	<p slot="de">Heute arbeite ich zu Hause.</p>
+	<p slot="en">Today I am working at home.</p>
+	<p slot="sv">Idag jobbar jag hemma.</p>
+</LanguageComparison>
 
-<LanguageComparison title="Nebensatz zuerst"><p slot="de">Wenn das Meeting vorbei ist, gehen wir nach Hause.</p><p slot="en">When the meeting is over, we go home.</p><p slot="sv">När mötet är slut går vi hem.</p></LanguageComparison>
+<LanguageComparison title="Nebensatz zuerst">
+	<p slot="de">Wenn das Meeting vorbei ist, gehen wir nach Hause.</p>
+	<p slot="en">When the meeting is over, we go home.</p>
+	<p slot="sv">När mötet är slut går vi hem.</p>
+</LanguageComparison>
 
-<MistakeBox incorrect="Efter jobbet jag ska handla." correct="Efter jobbet ska jag handla." lang="sv">Ein vorangestellter Ausdruck schafft keinen zusätzlichen Platz; er verändert die Hauptsatzwortstellung.</MistakeBox>
+Schwedisch und Deutsch stellen hier das finite Verb des Hauptsatzes vor das
+Subjekt. Englisch tut das normalerweise nicht.
 
-<MemoryTip>Steht das Subjekt nicht zuerst, höre direkt nach dem Anfangsblock auf **Verb + Subjekt**: <Sv>Idag <strong>kommer jag</strong> …</Sv></MemoryTip>
+<MistakeBox
+	incorrect="Efter jobbet jag ska handla."
+	correct="Efter jobbet ska jag handla."
+	lang="sv"
+>
+Ein vorangestelltes Satzglied schafft keine zusätzliche Position vor dem
+gewöhnlichen Satz. Es verändert nur die Wortstellung des Hauptsatzes.
+</MistakeBox>
 
-<QuickCheck items={[{ prompt: 'Stelle den Ortsausdruck voran: Jag jobbar hemma idag.', answer: 'Hemma jobbar jag idag.' }, { prompt: 'Korrigiere: Imorgon vi ska träffa Anna.', answer: 'Imorgon ska vi träffa Anna.' }, { prompt: 'Ergänze „vi går hem“ nach „När mötet är slut“.', answer: 'När mötet är slut går vi hem.' }]} />
+<MemoryTip>
+Steht das Subjekt nicht zuerst, höre direkt nach dem einleitenden Block auf
+das Paar **Verb + Subjekt**: <Sv>Idag <strong>kommer jag</strong> …</Sv>
+</MemoryTip>
 
-<RelatedTopics topics={[{ href: '../v2/', label: 'V2-Regel' }, { href: '../basic-word-order/', label: 'Grundlegende Wortstellung' }, { href: '../subordinate-clauses/', label: 'Nebensätze' }, { href: '../../questions-negation/questions/', label: 'Fragen' }]} />
+<QuickCheck
+	items={[
+		{
+			prompt: 'Stelle den Ortsausdruck voran: Jag jobbar hemma idag.',
+			answer: 'Hemma jobbar jag idag.',
+		},
+		{
+			prompt: 'Korrigiere diesen Satz: Imorgon vi ska träffa Anna.',
+			answer: 'Imorgon ska vi träffa Anna.',
+		},
+		{
+			prompt: 'Ergänze den Hauptsatz „vi går hem“ nach „När mötet är slut“.',
+			answer: 'När mötet är slut går vi hem.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../v2/', label: 'V2-Regel' },
+		{ href: '../basic-word-order/', label: 'Grundwortstellung' },
+		{ href: '../subordinate-clauses/', label: 'Nebensätze' },
+		{ href: '../../questions-negation/questions/', label: 'Fragen' },
+	]}
+/>

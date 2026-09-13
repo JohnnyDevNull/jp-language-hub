@@ -1,0 +1,182 @@
+---
+title: Präteritum
+description: Wie das Schwedische das Präteritum bildet und verwendet.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/swedish/grammar/verbs-time-forms/tense-perspectives/
+  - /learn/swedish/grammar/verbs-time-forms/verb-forms/
+  - /learn/swedish/grammar/verbs-time-forms/present/
+  - /learn/swedish/grammar/verbs-time-forms/perfect/
+  - /learn/swedish/grammar/verb-patterns-voice/verb-groups/
+---
+
+import { getCollection } from 'astro:content';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+import VerbTable from '~/components/VerbTable.astro';
+
+export const verbs = await getCollection('verbs');
+export const representative = (id) => {
+	const entry = verbs.find((candidate) => candidate.id === id);
+	if (!entry) {
+		throw new Error(`Missing required verb entry: ${id}`);
+	}
+	return entry.data;
+};
+export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-skriva'].map(
+	representative,
+);
+
+<KeyTakeaway>
+- Das Präteritum ist die normale Zeitform für ein abgeschlossenes
+  Ereignis, eine Abfolge oder einen Zustand in der Vergangenheit.
+- Es ist für jedes Subjekt identisch: <Sv>jag arbetade</Sv>,
+  <Sv>de arbetade</Sv>.
+- Verwende es, sobald das Ereignis in einem abgeschlossenen Zeitrahmen der
+  Vergangenheit liegt; verwende das Perfekt, wenn das gegenwärtige Ergebnis
+  zählt.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Das schwedische Präteritum verortet ein Ereignis oder einen Zustand in einem
+Zeitrahmen der Vergangenheit. Es ist die normale Zeitform für abgeschlossene
+vergangene Ereignisse, Erzählungen und Beschreibungen dessen, was damals
+geschah.
+
+## Kernregel
+
+Wie alle finiten Verbformen im Schwedischen ist das Präteritum für jedes
+Subjekt identisch:
+
+- <Sv>Jag arbetade.</Sv>
+- <Sv>Hon arbetade.</Sv>
+- <Sv>De arbetade.</Sv>
+
+Die Form hängt von der Verbgruppe ab. Ein repräsentatives Verb pro Gruppe:
+
+<VerbTable
+	caption="Präteritumformen, ein Verb pro Gruppe"
+	forms={groupExamples.map((verb) => ({
+		label: `Gruppe ${verb.group}: ${verb.lemma}`,
+		value: verb.morphology.preterite,
+	}))}
+/>
+
+Gruppe 1 fügt meist <Sv>-ade</Sv> an, Gruppe 2 <Sv>-de</Sv> oder <Sv>-te</Sv>,
+und Gruppe 3 <Sv>-dde</Sv>. Die Formen im herkömmlichen Bereich von Gruppe 4
+und den unregelmäßigen Verben variieren; viele starke Verben ändern den
+Stammvokal, aber das ist keine einheitliche Endungsregel. Siehe
+[Verbgruppen](../../verb-patterns-voice/verb-groups/) für die Muster und ihre
+Grenzen.
+
+## Verwendung
+
+### Ein abgeschlossenes Ereignis in der Vergangenheit
+
+<Sv>Jag köpte boken i går.</Sv> — Ich kaufte gestern das Buch.
+
+### Eine Abfolge in der Vergangenheit
+
+<Sv>Hon vaknade, åt frukost och gick till jobbet.</Sv>
+
+Die drei Verben treiben die Erzählung voran: Sie wachte auf, frühstückte und
+ging zur Arbeit.
+
+### Ein Zustand oder eine Gewohnheit in der Vergangenheit
+
+<Sv>När jag bodde i Göteborg cyklade jag till jobbet.</Sv>
+
+Das Präteritum kann sowohl wiederholte Handlungen als auch Zustände in einem
+abgeschlossenen vergangenen Zeitraum beschreiben.
+
+## Präteritum oder Perfekt?
+
+Verwende das Präteritum, wenn das Ereignis zu einem eindeutig abgeschlossenen
+Zeitrahmen der Vergangenheit gehört:
+
+<Sv>Jag såg filmen förra veckan.</Sv>
+
+Verwende das Perfekt, wenn das gegenwärtige Ergebnis oder die Erfahrung im
+Mittelpunkt steht und das Ereignis nicht in einem abgeschlossenen Zeitrahmen
+der Vergangenheit verortet wird:
+
+<Sv>Jag har sett filmen.</Sv>
+
+Dieser Unterschied betrifft die Perspektive, nicht bloß das Vorhandensein
+eines Zeitworts. Ein noch laufender Zeitraum kann trotzdem das Perfekt
+zulassen:
+
+<Sv>Jag har druckit två koppar kaffe idag.</Sv>
+
+## Direkter Vergleich
+
+<LanguageComparison title="Abgeschlossenes Ereignis in der Vergangenheit">
+	<p slot="de">Ich kaufte gestern das Buch.</p>
+	<p slot="en">I bought the book yesterday.</p>
+	<p slot="sv">Jag köpte boken i går.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Zustand in der Vergangenheit">
+	<p slot="de">Als ich in Göteborg wohnte …</p>
+	<p slot="en">When I lived in Gothenburg …</p>
+	<p slot="sv">När jag bodde i Göteborg …</p>
+</LanguageComparison>
+
+Das Deutsche bevorzugt in der gesprochenen Sprache oft das Perfekt in
+Kontexten, in denen das Schwedische natürlicherweise das Präteritum
+verwendet. Wähle die schwedische Zeitform nach ihrer Funktion, nicht nach der
+deutschen Oberflächenform.
+
+## Häufige Fehler
+
+<MistakeBox title="Häufige Fehler">
+	- ❌ <Sv>Jag har köpt boken i går.</Sv>
+	  ✅ <Sv>Jag köpte boken i går.</Sv>
+	- ❌ <Sv>Hon köpade en bil.</Sv>
+	  ✅ <Sv>Hon köpte en bil.</Sv>
+	- Bilde unregelmäßige Verben nicht durch Anhängen einer regelmäßigen
+	  Endung. Lerne ihr Präteritum und Supinum zusammen.
+</MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Bilde das Präteritum von tala, köpa und bo.',
+			answer: 'talade, köpte, bodde',
+		},
+		{
+			prompt: 'Korrigiere diesen Satz: Hon köpade en bil.',
+			answer: 'Hon köpte en bil.',
+		},
+		{
+			prompt: 'Präteritum oder Perfekt? Jag … filmen i lördags.',
+			answer: 'Präteritum: Jag såg filmen i lördags.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../tense-perspectives/', label: 'Zeitperspektiven' },
+		{ href: '../verb-forms/', label: 'Verbformen' },
+		{ href: '../present/', label: 'Präsens' },
+		{ href: '../perfect/', label: 'Perfekt' },
+		{ href: '../../verb-patterns-voice/verb-groups/', label: 'Verbgruppen' },
+	]}
+/>

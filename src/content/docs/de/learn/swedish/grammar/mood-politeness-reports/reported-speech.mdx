@@ -1,0 +1,147 @@
+---
+title: Indirekte Rede
+description: Gib schwedische Aussagen und Fragen wieder und passe dabei Perspektive, Verweiswörter und Tempus sorgfältig an.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - B2
+tags:
+  - grammar
+  - sentence-structure
+  - verbs
+related:
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+  - /learn/swedish/grammar/questions-negation/question-words/
+  - /learn/swedish/grammar/pronouns-roles/personal-pronouns/
+  - /learn/swedish/grammar/verbs-time-forms/tense-perspectives/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Gib eine Aussage mit <Sv>att</Sv> wieder, eine Ja/Nein-Frage mit <Sv>om</Sv>
+  und eine W-Frage mit ihrem Fragewort.
+- Indirekte Fragen verwenden die Wortstellung des Nebensatzes, nicht die
+  Inversion der direkten Frage.
+- Ändere Pronomen sowie Zeit- oder Ortsangaben, wenn sich die Perspektive der
+  Wiedergabe ändert; das schwedische Tempus verlangt keine automatische
+  Rückverschiebung nach englischem Muster.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Die indirekte Rede gibt den Inhalt der Worte einer Person wieder, ohne den
+ursprünglichen Satz als Zitat zu wiederholen.
+
+## Jetzt anwenden
+
+| Ursprüngliche Aussage | Verknüpfung | Wiedergabe |
+| --- | --- | --- |
+| Aussage | <Sv>att</Sv> | <Sv>Hon säger att hon kommer.</Sv> |
+| Ja/Nein-Frage | <Sv>om</Sv> | <Sv>Han frågar om jag kommer.</Sv> |
+| W-Frage | dasselbe Fragewort | <Sv>Hon frågar när tåget går.</Sv> |
+
+## Aussagen mit <Sv>att</Sv>
+
+Verwende ein Redeverb wie <Sv>säga</Sv>, <Sv>berätta</Sv> oder
+<Sv>förklara</Sv>, gefolgt von einem <Sv>att</Sv>-Satz:
+
+<Sv>Lisa säger: “Jag är trött.”</Sv> →
+<Sv>Lisa säger att hon är trött.</Sv>
+
+## Indirekte Fragen
+
+Eine Ja/Nein-Frage wird zu einem <Sv>om</Sv>-Satz. Eine W-Frage behält ihr
+Fragewort. Beide verwenden die Wortstellung des Nebensatzes:
+
+<SentenceSchema
+	caption="Wortstellung in indirekten Fragen"
+	columns={['Verknüpfung', 'Subjekt', 'Satzadverbial', 'Finites Verb', 'Rest']}
+	rows={[
+		{ label: 'Ja/Nein', lang: 'sv', cells: ['om', 'du', 'inte', 'kan', 'komma'] },
+		{ label: 'Fragewort', lang: 'sv', cells: ['varför', 'hon', '', 'gick', 'hem'] },
+	]}
+/>
+
+- <Sv>Han frågar om du inte kan komma.</Sv>
+- <Sv>Jag undrar varför hon gick hem.</Sv>
+
+Behalte die Inversion der direkten Frage nicht bei: <Sv>varför hon gick</Sv>,
+nicht <Sv>varför gick hon</Sv> innerhalb der Wiedergabe.
+
+## Perspektivwechsel
+
+Passe Formen nur an, wenn die Wiedergabesituation es erfordert:
+
+- Person: <Sv>jag</Sv> kann zu <Sv>hon</Sv> oder <Sv>han</Sv> werden
+- Besitz: <Sv>min</Sv> kann zu <Sv>hennes</Sv>, <Sv>hans</Sv> oder einem
+  reflexiven Possessivum im betreffenden Satz werden
+- Zeit: <Sv>i dag</Sv> kann zu <Sv>den dagen</Sv> werden
+- Ort: <Sv>här</Sv> kann zu <Sv>där</Sv> werden
+
+Wird die ursprüngliche Perspektive weiterhin geteilt, ist eine Änderung
+möglicherweise unnötig.
+
+## Tempusverhalten
+
+Das Schwedische behält oft ein Tempus bei, das weiterhin wahr oder relevant
+ist: <Sv>Hon sa att hon bor i Malmö.</Sv> kann eine aktuell gültige Tatsache
+wiedergeben. Eine Vergangenheitsform ist ebenso natürlich, wenn die Wiedergabe
+in einen vergangenen Rahmen gehört oder die Situation nicht mehr zutrifft:
+<Sv>Hon sa att hon bodde i Malmö.</Sv>
+
+Wende keine mechanische Rückverschiebungsregel nach englischem Vorbild an.
+Wähle das Tempus anhand der aktuellen Zeitperspektive des Sprechers und der
+beabsichtigten Bedeutung.
+
+## Direkter Vergleich
+
+<LanguageComparison title="Eine indirekte Frage">
+	<p slot="de">Sie fragt, wann der Zug fährt.</p>
+	<p slot="en">She asks when the train leaves.</p>
+	<p slot="sv">Hon frågar när tåget går.</p>
+</LanguageComparison>
+
+<MistakeBox title="Typische Fehler">
+	- ❌ <Sv>Han frågar att jag kommer.</Sv>
+	  ✅ <Sv>Han frågar om jag kommer.</Sv>
+	- ❌ <Sv>Hon frågar var bor du.</Sv>
+	  ✅ <Sv>Hon frågar var du bor.</Sv>
+	- Ändere nicht jedes Präsens in ein Präteritum, nur weil das Redeverb im
+	  Präteritum steht.
+</MistakeBox>
+
+<MemoryTip>
+Wähle zuerst die Verknüpfung: Aussage <Sv>att</Sv>, Ja/Nein-Frage <Sv>om</Sv>,
+W-Frage das ursprüngliche Fragewort. Wechsle dann zur Wortstellung des
+Nebensatzes.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{ prompt: 'Gib wieder: Hon säger: “Jag är trött.”', answer: 'Hon säger att hon är trött.' },
+		{ prompt: 'Gib wieder: Han fragt mich: “Kommer du?”', answer: 'Han frågar om jag kommer.' },
+		{ prompt: 'Korrigiere: Hon frågar var bor du.', answer: 'Hon frågar var du bor.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../sentence-structure/subordinate-clauses/', label: 'Nebensätze' },
+		{ href: '../../questions-negation/question-words/', label: 'Fragewörter' },
+		{ href: '../../pronouns-roles/personal-pronouns/', label: 'Personalpronomen' },
+		{ href: '../../verbs-time-forms/tense-perspectives/', label: 'Zeitperspektiven' },
+	]}
+/>

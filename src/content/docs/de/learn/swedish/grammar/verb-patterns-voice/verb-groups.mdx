@@ -1,0 +1,176 @@
+---
+title: Verbgruppen
+description: Ein praktischer Überblick über die wichtigsten regelmäßigen schwedischen Konjugationsmuster.
+metaLanguage: de
+grammarLanguage: sv
+levels:
+  - A2
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/swedish/grammar/verbs-time-forms/verb-forms/
+  - /learn/swedish/grammar/verbs-time-forms/present/
+  - /learn/swedish/grammar/verbs-time-forms/preterite/
+  - /learn/swedish/grammar/verbs-time-forms/perfect/
+  - /learn/swedish/cheat-sheets/verb-forms/
+---
+
+import { getCollection } from 'astro:content';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+import VerbTable from '~/components/VerbTable.astro';
+
+export const verbs = await getCollection('verbs');
+export const representative = (id) => {
+	const entry = verbs.find((candidate) => candidate.id === id);
+	if (!entry) {
+		throw new Error(`Missing required verb entry: ${id}`);
+	}
+	return entry.data;
+};
+export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-skriva'].map(
+	representative,
+);
+
+<KeyTakeaway>
+- Eine Verbgruppe hilft dabei, wiederkehrende Präsens-, Präteritum- und
+  Supinum-Endungen vorherzusagen, sobald du weißt, welchem Muster ein Verb
+  folgt.
+- Die vier Muster sind <Sv>-ar/-ade/-at</Sv>, <Sv>-er/-de oder -te/-t</Sv>,
+  <Sv>-r/-dde/-tt</Sv> und der Stammvokalwechsel der Gruppe 4.
+- Ein Infinitiv auf <Sv>-a</Sv> gehört nicht automatisch zu Gruppe 1:
+  vergleiche <Sv>tala</Sv> mit <Sv>köpa</Sv>.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Schwedische Verbgruppen beschreiben wiederkehrende Muster für Präsens,
+Präteritum und Supinum. Sie helfen, Formen vorherzusagen, sobald die Gruppe
+bekannt ist, aber der Infinitiv allein verrät die Gruppe nicht immer, und
+häufige unregelmäßige Formen müssen trotzdem einzeln gelernt werden.
+
+## Überblick
+
+<VerbTable
+	caption="Formenkette eines Beispielverbs pro Gruppe"
+	forms={groupExamples.map((verb) => ({
+		label: `Gruppe ${verb.group}`,
+		value: `${verb.lemma} — ${verb.morphology.present} — ${verb.morphology.preterite} — ${verb.morphology.supine}`,
+	}))}
+/>
+
+Die Bezeichnungen und Untergruppengrenzen können zwischen Lehrwerken leicht
+variieren. Die Formenkette ist wichtiger als die ihr zugewiesene Nummer.
+
+## Gruppe 1: -ar, -ade, -at
+
+Verben der Gruppe 1 haben normalerweise einen Infinitiv auf unbetontes
+<Sv>-a</Sv>. Der vollständige Infinitiv bleibt vor den Endungen erhalten:
+
+- <Sv>arbeta → arbetar → arbetade → arbetat</Sv>
+- <Sv>prata → pratar → pratade → pratat</Sv>
+
+Das ist die größte und produktivste regelmäßige Gruppe.
+
+## Gruppe 2: -er, -de/-te, -t
+
+Bei vielen Verben der Gruppe 2 findest du den Stamm, indem du das
+abschließende <Sv>-a</Sv> des Infinitivs entfernst:
+
+- <Sv>stäng-a → stänger → stängde → stängt</Sv>
+- <Sv>ring-a → ringer → ringde → ringt</Sv>
+
+Die Präteritumendung ist meist <Sv>-de</Sv> nach stimmhaftem Stammauslaut und
+<Sv>-te</Sv> nach bestimmten stimmlosen Konsonanten. Für Anfänger ist es
+sicherer, Präteritum und Supinum mit jedem Verb zu lernen, als sich allein
+auf Schreibregeln zu verlassen.
+
+Manche Verben der Gruppe 2 zeigen Rechtschreibanpassungen, zum Beispiel
+<Sv>läsa → läste → läst</Sv>.
+
+## Gruppe 3: kurze Infinitive
+
+Gruppe 3 enthält typischerweise kurze Infinitive, die auf einen betonten
+Vokal außer <Sv>-a</Sv> enden:
+
+- <Sv>tro → tror → trodde → trott</Sv>
+- <Sv>nå → når → nådde → nått</Sv>
+
+Das gängige Muster ist Präsens auf <Sv>-r</Sv>, Präteritum auf
+<Sv>-dde</Sv> und Supinum auf <Sv>-tt</Sv>.
+
+## Gruppe 4 und unregelmäßige Verben
+
+Diese Verben folgen nicht den regelmäßigen schwachen Endungen. Viele ändern
+ihren Stammvokal:
+
+- <Sv>komma → kommer → kom → kommit</Sv>
+- <Sv>gå → går → gick → gått</Sv>
+
+Andere häufige Verben sind auf andere Weise unregelmäßig:
+
+- <Sv>vara → är → var → varit</Sv>
+- <Sv>göra → gör → gjorde → gjort</Sv>
+
+Versuche nicht, diese Formen aus einer einzigen universellen Regel
+herzuleiten.
+
+## Eine praktische Lernmethode
+
+1. Lerne den Infinitiv zusammen mit Präsens, Präteritum und Supinum.
+2. Nutze die Gruppe, um ein Muster zu erkennen und wiederzuverwenden.
+3. Markiere wirklich unregelmäßige Formen, statt jedes Verb als unregelmäßig
+   zu behandeln.
+4. Wiederhole die Form in einem vollständigen Satz.
+
+## Häufige Fehler
+
+<MistakeBox title="Häufige Fehler">
+	- ❌ <Sv>köpa → köpade</Sv>
+	  ✅ <Sv>köpa → köpte</Sv>
+	- ❌ <Sv>skriva → skrivade</Sv>
+	  ✅ <Sv>skriva → skrev</Sv>
+	- Ein Verb auf <Sv>-a</Sv> gehört nicht automatisch zu Gruppe 1.
+	  Vergleiche <Sv>tala</Sv> mit <Sv>köpa</Sv>.
+	</MistakeBox>
+
+<MemoryTip>
+Sprich die Kette laut aus: <Sv>köpa — köper — köpte — köpt</Sv>.
+Der Rhythmus macht den Zusammenhang zwischen den Formen leichter abrufbar.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'In welcher Gruppe steht köpa, und wie lautet sein Präteritum?',
+			answer: 'Gruppe 2b: köpte',
+		},
+		{
+			prompt: 'Gib die vollständige Kette von bo an: Präsens, Präteritum, Supinum.',
+			answer: 'bor — bodde — bott',
+		},
+		{
+			prompt: 'Korrigiere diese Kette: skriva → skrivade → skrivat.',
+			answer: 'skriva → skrev → skrivit',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../verbs-time-forms/verb-forms/', label: 'Verbformen' },
+		{ href: '../../verbs-time-forms/present/', label: 'Präsens' },
+		{ href: '../../verbs-time-forms/preterite/', label: 'Präteritum' },
+		{ href: '../../verbs-time-forms/perfect/', label: 'Perfekt' },
+		{
+			href: '../../../cheat-sheets/verb-forms/',
+			label: 'Verbformen-Spickzettel',
+		},
+	]}
+/>

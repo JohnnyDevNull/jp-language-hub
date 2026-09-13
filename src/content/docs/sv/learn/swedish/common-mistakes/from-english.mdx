@@ -1,0 +1,192 @@
+---
+title: Fel från engelska
+description: Vanliga fel i svenskan som orsakas av att engelsk ordföljd, artikelbruk och kongruensmönster förs över.
+metaLanguage: sv
+grammarLanguage: sv
+comparisonLanguages:
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+  - B1
+tags:
+  - common-mistakes
+  - comparison
+  - grammar
+related:
+  - /learn/swedish/grammar/verbs-time-forms/present/
+  - /learn/swedish/grammar/nouns-articles/noun-forms/
+  - /learn/swedish/grammar/adjectives-adverbs/agreement/
+  - /learn/swedish/grammar/sentence-structure/v2/
+  - /learn/swedish/grammar/prepositions-function-words/prepositions/
+  - /learn/swedish/grammar/questions-negation/questions/
+  - /learn/swedish/grammar/questions-negation/negation/
+  - /learn/swedish/grammar/sentence-structure/inte-placement/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Svenskan har ett presens; det finns ingen progressiv form och inget
+  hjälpverb *do*.
+- Den bestämda artikeln är en ändelse på substantivet, inte ett eget ord:
+  <Sv>huset</Sv>.
+- Svenskan böjer adjektiv och inverterar verbet efter en framförställd
+  satsdel, vilket engelskan inte gör i något av fallen.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Engelskan ger dig många igenkännliga ord, men mycket lite hjälp med svensk
+morfologi. Det här är mönstren den exporterar av misstag.
+
+## Att bygga en progressiv form
+
+<MistakeBox incorrect="Jag är arbetande nu." correct="Jag arbetar nu." lang="sv">
+	Ett enda presens täcker både "I work" och "I am working". När den pågående
+	handlingen verkligen spelar roll använder svenskan en konstruktion, inte
+	ett particip: <Sv>Jag håller på att arbeta.</Sv> eller <Sv>Jag sitter och
+	arbetar.</Sv> Se [Presens](../../grammar/verbs-time-forms/present/).
+</MistakeBox>
+
+## Att ta till do-stöd
+
+<LanguageComparison title="Fråga utan do" languages={['en', 'sv']}>
+	<p slot="en">Do you speak Swedish?</p>
+	<p slot="sv">Talar du svenska?</p>
+</LanguageComparison>
+
+<LanguageComparison title="Negation utan do" languages={['en', 'sv']}>
+	<p slot="en">I don't know.</p>
+	<p slot="sv">Jag vet inte.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Frågeord plus inversion" languages={['en', 'sv']}>
+	<p slot="en">Where does she live?</p>
+	<p slot="sv">Var bor hon?</p>
+</LanguageComparison>
+
+<LanguageComparison title="Nekande fråga" languages={['en', 'sv']}>
+	<p slot="en">Didn't you see it?</p>
+	<p slot="sv">Såg du det inte?</p>
+</LanguageComparison>
+
+Direkta frågor använder det redan befintliga finita verbet istället för
+engelskans *do*. Se [Frågor](../../grammar/questions-negation/questions/) för
+den återanvändbara mallen. Svensk satsnegation lägger till <Sv>inte</Sv>;
+välj negationsform på [Negation](../../grammar/questions-negation/negation/)
+och placera <Sv>inte</Sv> enligt
+[Placering av inte](../../grammar/sentence-structure/inte-placement/).
+
+## Att skriva en separat bestämd artikel
+
+<MistakeBox incorrect="den hus, det stora hus" correct="huset, det stora huset" lang="sv">
+	Bestämdhet är en ändelse: <Sv>hus</Sv> → <Sv>huset</Sv>, <Sv>bil</Sv> →
+	<Sv>bilen</Sv>, plural <Sv>husen</Sv>, <Sv>bilarna</Sv>. Med ett adjektiv
+	förekommer både artikeln *och* ändelsen — dubbel bestämdhet. Se
+	[Substantivformer](../../grammar/nouns-articles/noun-forms/).
+</MistakeBox>
+
+## Att utelämna adjektivkongruensen
+
+Engelskan lämnar oftast adjektiv oböjda i de mönster nybörjare förlitar sig
+på. Svenska adjektiv ändras efter genus, numerus och bestämdhet:
+
+| Form | Exempel |
+| --- | --- |
+| <Sv>en</Sv>-ord | <Sv>en stor bil</Sv> |
+| <Sv>ett</Sv>-ord | <Sv>ett stort hus</Sv> |
+| plural / bestämd form | <Sv>stora hus</Sv>, <Sv>det stora huset</Sv> |
+
+Se [Adjektivkongruens](../../grammar/adjectives-adverbs/agreement/).
+
+## for och since
+
+<LanguageComparison title="Varaktighet" languages={['en', 'sv']}>
+	<p slot="en">I have lived here for three years.</p>
+	<p slot="sv">Jag har bott här i tre år.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Starttidpunkt" languages={['en', 'sv']}>
+	<p slot="en">I have lived here since 2020.</p>
+	<p slot="sv">Jag har bott här sedan 2020.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Nekad tidsperiod" languages={['en', 'sv']}>
+	<p slot="en">I haven't seen him for three years.</p>
+	<p slot="sv">Jag har inte sett honom på tre år.</p>
+</LanguageComparison>
+
+En tidsperiod är <Sv>i</Sv>, en starttidpunkt är <Sv>sedan</Sv>, och en nekad
+period tar <Sv>på</Sv>.
+
+## Att översätta prepositioner ord för ord
+
+Det här är diagnostiska fällor, inte en andra prepositionsreferens. När en
+fras inte finns med här, använd den fokuserade sidan om
+[Prepositioner](../../grammar/prepositions-function-words/prepositions/).
+
+| Engelskt mönster | Svensk rättning | Förväxla inte med |
+| --- | --- | --- |
+| wait for | <Sv>vänta på</Sv> | *vänta för* |
+| listen to | <Sv>lyssna på</Sv> | <Sv>lyssna</Sv> utan preposition |
+| think about | <Sv>tänka på</Sv> | *tänka om* (dvs. ändra sig) |
+| ask for | <Sv>be om</Sv> | *be för* |
+| interested in | <Sv>intresserad av</Sv> | *intresserad i* |
+| on Monday | <Sv>på måndag</Sv> | *i måndag* |
+| in the morning | <Sv>på morgonen</Sv> | *i morgonen* |
+
+Prepositionen hör till konstruktionen. Använd den här tabellen för att
+upptäcka ett engelskt transferfel, och kolla sedan
+[Prepositioner](../../grammar/prepositions-function-words/prepositions/) för
+det bredare valet.
+
+## Att behålla engelsk ordföljd efter en framförställd satsdel
+
+<MistakeBox incorrect="Idag jag köper en bil." correct="Idag köper jag en bil." lang="sv">
+	Ett framförställt tidsuttryck fyller den första positionen, så det finita
+	verbet kommer härnäst och subjektet flyttas bakom det. Engelskan behåller
+	subjekt före verb; kopiera inte det. Se
+	[V2-regeln](../../grammar/sentence-structure/v2/).
+</MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Fyll i presens: Jag ___ en bok just nu. (läsa)',
+			answer: 'Jag läser en bok just nu.',
+		},
+		{
+			prompt: 'Gör om till fråga utan do-stöd: Du bor i Stockholm.',
+			answer: 'Bor du i Stockholm?',
+		},
+		{
+			prompt: 'Böj i bestämd form: det stora hus___.',
+			answer: 'det stora huset',
+		},
+		{
+			prompt: 'Fyll i tidsuttrycket: Jag har jobbat här ___ två år.',
+			answer: 'Jag har jobbat här i två år.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../grammar/verbs-time-forms/present/', label: 'Presens' },
+		{ href: '../../grammar/nouns-articles/noun-forms/', label: 'Substantivformer' },
+		{ href: '../../grammar/adjectives-adverbs/agreement/', label: 'Adjektivkongruens' },
+		{ href: '../../grammar/sentence-structure/v2/', label: 'V2-regeln' },
+		{ href: '../../grammar/questions-negation/questions/', label: 'Frågor' },
+		{ href: '../../grammar/questions-negation/negation/', label: 'Negation' },
+		{ href: '../../grammar/sentence-structure/inte-placement/', label: 'Placering av inte' },
+		{ href: '../../../../false-friends/', label: 'Falska vänner' },
+	]}
+/>

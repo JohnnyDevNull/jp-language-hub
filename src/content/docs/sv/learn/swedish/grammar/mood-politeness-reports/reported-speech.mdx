@@ -1,0 +1,146 @@
+---
+title: Indirekt tal
+description: Återge svenska påståenden och frågor och justera perspektiv, referensord och tempus med omsorg.
+metaLanguage: sv
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - B2
+tags:
+  - grammar
+  - sentence-structure
+  - verbs
+related:
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+  - /learn/swedish/grammar/questions-negation/question-words/
+  - /learn/swedish/grammar/pronouns-roles/personal-pronouns/
+  - /learn/swedish/grammar/verbs-time-forms/tense-perspectives/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Återge ett påstående med <Sv>att</Sv>, en ja/nej-fråga med <Sv>om</Sv> och
+  en frågeordsfråga med sitt frågeord.
+- Indirekta frågor har bisatsordföljd, inte den inversion som direkta frågor
+  har.
+- Byt pronomen samt tids- eller platsord när perspektivet i återgivningen
+  ändras; svenskt tempus kräver inte automatisk bakåtförskjutning enligt
+  engelskt mönster.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Indirekt tal återger innehållet i någons ord utan att upprepa den
+ursprungliga meningen som citat.
+
+## Använd detta nu
+
+| Ursprungligt yttrande | Länkord | Återgivning |
+| --- | --- | --- |
+| påstående | <Sv>att</Sv> | <Sv>Hon säger att hon kommer.</Sv> |
+| ja/nej-fråga | <Sv>om</Sv> | <Sv>Han frågar om jag kommer.</Sv> |
+| frågeordsfråga | samma frågeord | <Sv>Hon frågar när tåget går.</Sv> |
+
+## Påståenden med <Sv>att</Sv>
+
+Använd ett återgivande verb som <Sv>säga</Sv>, <Sv>berätta</Sv> eller
+<Sv>förklara</Sv> följt av en <Sv>att</Sv>-sats:
+
+<Sv>Lisa säger: “Jag är trött.”</Sv> →
+<Sv>Lisa säger att hon är trött.</Sv>
+
+## Indirekta frågor
+
+En ja/nej-fråga blir en <Sv>om</Sv>-sats. En frågeordsfråga behåller sitt
+frågeord. Båda har bisatsordföljd:
+
+<SentenceSchema
+	caption="Ordföljd i indirekta frågor"
+	columns={['Länkord', 'Subjekt', 'Satsadverbial', 'Finit verb', 'Rest']}
+	rows={[
+		{ label: 'Ja/nej', lang: 'sv', cells: ['om', 'du', 'inte', 'kan', 'komma'] },
+		{ label: 'Frågeord', lang: 'sv', cells: ['varför', 'hon', '', 'gick', 'hem'] },
+	]}
+/>
+
+- <Sv>Han frågar om du inte kan komma.</Sv>
+- <Sv>Jag undrar varför hon gick hem.</Sv>
+
+Behåll inte den direkta frågans inversion: <Sv>varför hon gick</Sv>, inte
+<Sv>varför gick hon</Sv> inuti återgivningen.
+
+## Perspektivbyten
+
+Ändra former endast när återgivningssituationen kräver det:
+
+- person: <Sv>jag</Sv> kan bli <Sv>hon</Sv> eller <Sv>han</Sv>
+- ägande: <Sv>min</Sv> kan bli <Sv>hennes</Sv>, <Sv>hans</Sv> eller ett
+  reflexivt possessivt pronomen i den aktuella satsen
+- tid: <Sv>i dag</Sv> kan bli <Sv>den dagen</Sv>
+- plats: <Sv>här</Sv> kan bli <Sv>där</Sv>
+
+Om det ursprungliga perspektivet fortfarande delas kan en ändring vara
+onödig.
+
+## Tempus i återgivningen
+
+Svenskan behåller ofta ett tempus som fortfarande är sant eller relevant:
+<Sv>Hon sa att hon bor i Malmö.</Sv> kan återge ett fortfarande gällande
+faktum. En dåtidsform är också naturlig när återgivningen hör hemma i en
+förfluten ram eller situationen inte längre gäller:
+<Sv>Hon sa att hon bodde i Malmö.</Sv>
+
+Använd inte en mekanisk bakåtförskjutningsregel enligt engelskt mönster.
+Välj tempus utifrån talarens nuvarande tidsperspektiv och den avsedda
+betydelsen.
+
+## Direkt jämförelse
+
+<LanguageComparison title="En indirekt fråga">
+	<p slot="de">Sie fragt, wann der Zug fährt.</p>
+	<p slot="en">She asks when the train leaves.</p>
+	<p slot="sv">Hon frågar när tåget går.</p>
+</LanguageComparison>
+
+<MistakeBox title="Vanliga misstag">
+	- ❌ <Sv>Han frågar att jag kommer.</Sv>
+	  ✅ <Sv>Han frågar om jag kommer.</Sv>
+	- ❌ <Sv>Hon frågar var bor du.</Sv>
+	  ✅ <Sv>Hon frågar var du bor.</Sv>
+	- Ändra inte varje presens till preteritum bara för att det återgivande
+	  verbet står i preteritum.
+</MistakeBox>
+
+<MemoryTip>
+Välj länkordet först: påstående <Sv>att</Sv>, ja/nej-fråga <Sv>om</Sv>,
+frågeordsfråga det ursprungliga frågeordet. Byt sedan till bisatsordföljd.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{ prompt: 'Återge: Hon säger: “Jag är trött.”', answer: 'Hon säger att hon är trött.' },
+		{ prompt: 'Återge: Han frågar mig: “Kommer du?”', answer: 'Han frågar om jag kommer.' },
+		{ prompt: 'Rätta: Hon frågar var bor du.', answer: 'Hon frågar var du bor.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../sentence-structure/subordinate-clauses/', label: 'Bisatser' },
+		{ href: '../../questions-negation/question-words/', label: 'Frågeord' },
+		{ href: '../../pronouns-roles/personal-pronouns/', label: 'Personliga pronomen' },
+		{ href: '../../verbs-time-forms/tense-perspectives/', label: 'Tidsperspektiv' },
+	]}
+/>

@@ -1,0 +1,194 @@
+---
+title: Fel från tyska
+description: Vanliga svenska fel som uppstår när man överför tyska grammatikmönster.
+metaLanguage: sv
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - sv
+levels:
+  - A1
+  - A2
+  - B1
+tags:
+  - common-mistakes
+  - comparison
+  - grammar
+related:
+  - /learn/swedish/grammar/nouns-articles/en-ett/
+  - /learn/swedish/grammar/adjectives-adverbs/agreement/
+  - /learn/swedish/grammar/pronouns-roles/sin-sitt-sina/
+  - /learn/swedish/grammar/nouns-articles/possession/
+  - /learn/swedish/grammar/pronouns-roles/personal-pronouns/
+  - /learn/swedish/grammar/sentence-structure/biff/
+  - /learn/swedish/grammar/sentence-structure/inte-placement/
+  - /learn/swedish/grammar/verb-patterns-voice/particle-verbs/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Tysk genus förutsäger inte <Sv>en</Sv> eller <Sv>ett</Sv>; de två systemen är
+  oberoende av varandra.
+- Svenskan böjer det predikativa adjektivet där tyskan lämnar det oböjt:
+  <Sv>Huset är stort.</Sv>
+- <Sv>inte</Sv> följer det finita verbet i en huvudsats, medan tyskans *nicht*
+  vandrar mot slutet.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Tyska är den bästa tillgängliga bryggan till svenska, och just därför smyger
+sig dess mönster in obemärkt. Varje punkt länkar till regeln som rättar till
+felet.
+
+## Gissa en/ett utifrån tysk genus
+
+<MistakeBox incorrect="ett bok, en brev, en bord" correct="en bok, ett brev, ett bord" lang="sv">
+	*das Buch* heter <Sv>en bok</Sv>, *der Brief* heter <Sv>ett brev</Sv>, *der
+	Tisch* heter <Sv>ett bord</Sv>. Lär dig genuset tillsammans med substantivet
+	och använd ändelsesignalerna i stället för tyskan. Se
+	[en/ett](../../grammar/nouns-articles/en-ett/).
+</MistakeBox>
+
+## Lämna det predikativa adjektivet oböjt
+
+Tyskan böjer ett adjektiv framför ett substantiv men inte efter *sein*.
+Svenskan böjer det i båda positionerna:
+
+<LanguageComparison title="Attributivt adjektiv" languages={['de', 'sv']}>
+	<p slot="de">ein großes Haus</p>
+	<p slot="sv">ett stort hus</p>
+</LanguageComparison>
+
+<LanguageComparison title="Predikativt adjektiv" languages={['de', 'sv']}>
+	<p slot="de">Das Haus ist groß.</p>
+	<p slot="sv">Huset är stort.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Predikativt adjektiv i plural" languages={['de', 'sv']}>
+	<p slot="de">Die Häuser sind groß.</p>
+	<p slot="sv">Husen är stora.</p>
+</LanguageComparison>
+
+Se [adjektivkongruens](../../grammar/adjectives-adverbs/agreement/).
+
+## sin i stället för hans/hennes
+
+<MistakeBox
+	incorrect="Anna såg Erik och hans hund. (om hunden är Annas)"
+	correct="Anna såg Erik och sin hund."
+	lang="sv"
+>
+	Använd <Sv>sin</Sv>, <Sv>sitt</Sv>, <Sv>sina</Sv> när ägaren är subjektet i
+	samma sats; <Sv>hans</Sv> och <Sv>hennes</Sv> pekar på någon annan. Tyskans
+	*sein* täcker båda, så skillnaden måste göras medvetet. Se
+	[sin, sitt och sina](../../grammar/pronouns-roles/sin-sitt-sina/).
+</MistakeBox>
+
+## Tysk bisatsordföljd
+
+<MistakeBox
+	incorrect="Jag stannar hemma eftersom jag inte tid har."
+	correct="Jag stannar hemma eftersom jag inte har tid."
+	lang="sv"
+>
+	Tyskan skickar det finita verbet till slutet av bisatsen. Svenskan behåller
+	det finita verbet efter satsadverbial som <Sv>inte</Sv>: subjekt,
+	<Sv>inte</Sv>, finit verb, sedan resten. Se
+	[BIFF](../../grammar/sentence-structure/biff/).
+</MistakeBox>
+
+## Leta efter det saknade kasussystemet
+
+Svenskan har inget produktivt nominativ–ackusativ–dativ-system av tysk modell
+för substantiv, artiklar och adjektiv. Substantiv har fortfarande en grundform
+och en s-genitiv, så ersätt inte tyska kasusändelser mekaniskt med extra
+prepositioner eller artikelformer:
+
+<LanguageComparison title="Indirekt objekt utan kasusmarkering" languages={['de', 'sv']}>
+	<p slot="de">Ich gebe dem Mann das Buch.</p>
+	<p slot="sv">Jag ger mannen boken.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Ägande" languages={['de', 'sv']}>
+	<p slot="de">das Buch des Mannes</p>
+	<p slot="sv">mannens bok</p>
+</LanguageComparison>
+
+<LanguageComparison title="Preposition plus bestämt substantiv" languages={['de', 'sv']}>
+	<p slot="de">mit dem Auto</p>
+	<p slot="sv">med bilen</p>
+</LanguageComparison>
+
+Personliga pronomen skiljer fortfarande mellan subjekts- och objektsroll:
+<Sv>med mig</Sv>, <Sv>till honom</Sv>, aldrig <Sv>med jag</Sv>. Se
+[Personliga pronomen](../../grammar/pronouns-roles/personal-pronouns/) och
+[Ägande](../../grammar/nouns-articles/possession/) för de två riktade
+uppslagen.
+
+## Anta tyska verbpartiklar
+
+Tyska avskiljbara prefix vandrar till slutet av satsen. En lös svensk partikel
+stannar direkt efter verbet, och bara <Sv>inte</Sv> får komma emellan:
+
+<LanguageComparison title="Lös partikel" languages={['de', 'sv']}>
+	<p slot="de">Ich stehe um sieben auf.</p>
+	<p slot="sv">Jag går upp klockan sju.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Nekat partikelverb" languages={['de', 'sv']}>
+	<p slot="de">Ich mag Fisch nicht.</p>
+	<p slot="sv">Jag tycker inte om fisk.</p>
+</LanguageComparison>
+
+Se [partikelverb](../../grammar/verb-patterns-voice/particle-verbs/).
+
+## Sätta inte där nicht står på tyska
+
+<MistakeBox incorrect="Jag kommer idag inte." correct="Jag kommer inte idag." lang="sv">
+	I en huvudsats står <Sv>inte</Sv> direkt efter det finita verbet, före
+	adverbial och de flesta objekt. Se
+	[placering av inte](../../grammar/sentence-structure/inte-placement/).
+	För *kein* använd <Sv>ingen</Sv>, <Sv>inget</Sv>, <Sv>inga</Sv>:
+	<Sv>Jag har ingen bil.</Sv>
+</MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Fyll i rätt form: Brevet är ___. (lång / långt / långa)',
+			answer: 'långt (ett brev, alltså neutrum singular)',
+		},
+		{
+			prompt: 'Rätta: Jag åker inte till Göteborg eftersom jag tid inte har.',
+			answer: 'Jag åker inte till Göteborg eftersom jag inte har tid.',
+		},
+		{
+			prompt: 'Välj rätt ord: Anna träffade Erik och ___ syster. (den egna systern, inte Eriks)',
+			answer: 'sin (syftar tillbaka på subjektet Anna)',
+		},
+		{
+			prompt: 'Negera: Jag tycker om fisk.',
+			answer: 'Jag tycker inte om fisk.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../grammar/nouns-articles/en-ett/', label: 'en och ett' },
+		{ href: '../../grammar/nouns-articles/possession/', label: 'Ägande' },
+		{ href: '../../grammar/pronouns-roles/personal-pronouns/', label: 'Personliga pronomen' },
+		{ href: '../../grammar/adjectives-adverbs/agreement/', label: 'Adjektivkongruens' },
+		{ href: '../../grammar/sentence-structure/inte-placement/', label: 'Placering av inte' },
+		{ href: '../../grammar/verb-patterns-voice/particle-verbs/', label: 'Partikelverb' },
+		{ href: '../../../../false-friends/', label: 'Falska vänner' },
+	]}
+/>

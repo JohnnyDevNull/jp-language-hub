@@ -32,33 +32,153 @@ import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- I neutral standardsvenska kommer <Sv>inte</Sv> **före** finit verb i bisats, men efter det i huvudsats.
-- Bisatsen lämnar andra platsen tom; det finita verbet flyttar bakom satsadverbialet.
+- I neutral standardsvenska kommer <Sv>inte</Sv> **före** det finita verbet i
+  en bisats; i en huvudsats kommer det efter.
+- Bisatsen lämnar plats två tom: det finita verbet flyttar bakom
+  satsadverbialet.
 - Samma plats används av andra satsadverbial, inte bara <Sv>inte</Sv>.
 </KeyTakeaway>
+
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-**BIFF** är en svensk minnesregel för satsadverbial i bisatser:
-> **B**isats: **I**nte **F**öre **F**init.
+**BIFF** är en svensk minnesregel för den neutrala standardplaceringen av
+satsadverbial i bisatser:
+
+> **B**isats: **I**nte **F**öre **F**init  
+> I en bisats kommer <Sv>inte</Sv> före det finita verbet.
 
 ## Kärnregel
 
 > **subjunktion + subjekt + satsadverbial + finit verb + resten**
 
-<SentenceSchema caption="Inte i huvudsats och bisats" rowHeader="Sats" columns={['1 Fundament', '2 Finit verb', '3 Subjekt', 'Satsadverbial', 'Verbgrupp', 'Rest']} rows={[{ label: 'Huvudsats', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] }, { label: 'Bisats', cells: ['eftersom', '', 'jag', 'inte', 'kommer', 'idag.'] }, { label: 'Tyska, huvudsats', lang: 'de', cells: ['Ich', 'komme', '', 'heute nicht.', '', ''] }, { label: 'Tyska, bisats', lang: 'de', cells: ['weil', '', 'ich', 'heute nicht', 'komme.', ''] }]} />
+Samma fält gör skiftet synligt. I huvudsatsen står det finita verbet på plats
+två, och <Sv>inte</Sv> kommer efter det. I bisatsen är plats två tom: det
+finita verbet har flyttat in i verbgruppen bakom <Sv>inte</Sv>.
 
-Tyskan har också en skillnad mellan huvud- och bisats, men skickar hela finita verbet till slutet. Svenskan flyttar det bara bakom satsadverbialet: <Sv>Jag stannar hemma eftersom jag inte mår bra.</Sv>
+<SentenceSchema
+	caption="Placeringen av inte i huvudsats och i bisats"
+	rowHeader="Sats"
+	columns={[
+		'1 Fundament',
+		'2 Finit verb',
+		'3 Subjekt',
+		'Satsadverbial',
+		'Verbgrupp',
+		'Rest',
+	]}
+	rows={[
+		{ label: 'Huvudsats', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] },
+		{
+			label: 'Bisats',
+			cells: ['eftersom', '', 'jag', 'inte', 'kommer', 'idag.'],
+		},
+		{
+			label: 'Tyska, huvudsats',
+			lang: 'de',
+			cells: ['Ich', 'komme', '', 'heute nicht.', '', ''],
+		},
+		{
+			label: 'Tyska, bisats',
+			lang: 'de',
+			cells: ['weil', '', 'ich', 'heute nicht', 'komme.', ''],
+		},
+	]}
+/>
+
+De tyska raderna är värda en närmare titt. Tyskan gör samma skillnad mellan
+huvudsats och bisats, och satsadverbialet hamnar också där före verbet — men
+av ett annat skäl: tyskan skickar hela det finita verbet till **slutet** av
+bisatsen. Svenskan flyttar det bara bakom satsadverbialet, och allt annat i
+satsen följer fortfarande efter det.
+
+<p lang="sv">Jag stannar hemma <strong>eftersom jag inte mår bra</strong>.</p>
 
 ## Vanliga subjunktioner
 
-BIFF är användbart efter <Sv>att</Sv>, <Sv>eftersom</Sv>, <Sv>om</Sv>, <Sv>när</Sv>, <Sv>fast</Sv> och <Sv>innan</Sv>. Andra satsadverbial som <Sv>alltid</Sv>, <Sv>aldrig</Sv>, <Sv>kanske</Sv> och <Sv>redan</Sv> har samma plats: <Sv>Hon säger att hon aldrig äter kött.</Sv>
+BIFF blir användbart efter ord som dessa:
+
+- <Sv>att</Sv> — inleder att-satser
+- <Sv>eftersom</Sv> — anger orsak
+- <Sv>om</Sv> — anger villkor
+- <Sv>när</Sv> — anger tidpunkt
+- <Sv>fast</Sv> — anger motsättning
+- <Sv>innan</Sv> — anger vad som kommer tidigare
+
+Exempel:
+
+- <Sv>Jag vet att hon inte arbetar idag.</Sv>
+- <Sv>Vi går ut om det inte regnar.</Sv>
+- <Sv>Han ringde när jag inte var hemma.</Sv>
+
+## Mer än *inte*
+
+Samma plats används av många satsadverbial, till exempel <Sv>alltid</Sv>,
+<Sv>aldrig</Sv>, <Sv>kanske</Sv> och <Sv>redan</Sv>, även om deras exakta
+betydelse och föredragna placering kan bero på sammanhanget.
+
+<p lang="sv">Hon säger att hon <strong>aldrig äter</strong> kött.</p>
+
 ## Direkt jämförelse
-<LanguageComparison title="Huvudsats"><p slot="de">Ich komme heute nicht.</p><p slot="en">I am not coming today.</p><p slot="sv">Jag kommer inte idag.</p></LanguageComparison>
-<LanguageComparison title="Bisats"><p slot="de">… weil ich heute nicht komme.</p><p slot="en">… because I am not coming today.</p><p slot="sv">… eftersom jag inte kommer idag.</p></LanguageComparison>
-<MistakeBox incorrect="Jag stannar hemma eftersom jag mår inte bra." correct="Jag stannar hemma eftersom jag inte mår bra." lang="sv">Behåll inte huvudsatsens placering i en bisats.</MistakeBox>
+
+<LanguageComparison title="Huvudsats">
+	<p slot="de">Ich komme heute nicht.</p>
+	<p slot="en">I am not coming today.</p>
+	<p slot="sv">Jag kommer inte idag.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Bisats">
+	<p slot="de">… weil ich heute nicht komme.</p>
+	<p slot="en">… because I am not coming today.</p>
+	<p slot="sv">… eftersom jag inte kommer idag.</p>
+</LanguageComparison>
+
+Engelskan visar inte den svenska kontrasten hos det finita verbet tydligt.
+Tyskan ändrar också bisatsens ordföljd, men dess finita verb flyttar normalt
+till slutet; det är inte den svenska regeln.
+
+<MistakeBox
+	incorrect="Jag stannar hemma eftersom jag mår inte bra."
+	correct="Jag stannar hemma eftersom jag inte mår bra."
+	lang="sv"
+>
+Behåll inte huvudsatsens placering i en bisats.
+</MistakeBox>
+
 :::note[BIFF är en inlärningsregel]
-BIFF hjälper dig att hitta satsadverbialet, men är inte en fullständig bisatsgrammatik. Det säkra standardmönstret gäller till B2; talspråk och hävdade bisatser kan ibland ha huvudsatslik ordföljd.
+BIFF hjälper dig att hitta satsadverbialet; det är ingen fullständig grammatik
+för svenska bisatser. Du behöver ändå subjunktionen, ett subjekt, rätt
+verbformer och resten av satsen. Huvudsatslik ordföljd förekommer även i vissa
+inbäddade satser, särskilt i talspråk och när innehållet presenteras som
+hävdat; använd BIFF som den pålitliga standarden upp till B2.
 :::
-<MemoryTip>I en **BI**sats kommer **I**nte **F**öre det **F**inita verbet.</MemoryTip>
-<QuickCheck items={[{ prompt: 'Foga ihop med eftersom: Jag stannar hemma. + Jag mår inte bra.', answer: 'Jag stannar hemma eftersom jag inte mår bra.' }, { prompt: 'Rätta: Jag vet att hon arbetar inte idag.', answer: 'Jag vet att hon inte arbetar idag.' }, { prompt: 'Placera aldrig: Hon säger att hon äter kött.', answer: 'Hon säger att hon aldrig äter kött.' }]} />
-<RelatedTopics topics={[{ href: '../subordinate-clauses/', label: 'Bisatser' }, { href: '../inte-placement/', label: 'Placering av inte' }, { href: '../v2/', label: 'V2-regeln' }, { href: '../inversion/', label: 'Inversion' }, { href: '../basic-word-order/', label: 'Grundläggande ordföljd' }]} />
+
+<MemoryTip>
+I en **BI**sats kommer **I**nte **F**öre det **F**inita verbet.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Foga ihop med eftersom: Jag stannar hemma. + Jag mår inte bra.',
+			answer: 'Jag stannar hemma eftersom jag inte mår bra.',
+		},
+		{
+			prompt: 'Rätta den här meningen: Jag vet att hon arbetar inte idag.',
+			answer: 'Jag vet att hon inte arbetar idag.',
+		},
+		{
+			prompt: 'Placera aldrig: Hon säger att hon äter kött.',
+			answer: 'Hon säger att hon aldrig äter kött.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../subordinate-clauses/', label: 'Bisatser' },
+		{ href: '../inte-placement/', label: 'Placering av inte' },
+		{ href: '../v2/', label: 'V2-regeln' },
+		{ href: '../inversion/', label: 'Inversion' },
+		{ href: '../basic-word-order/', label: 'Grundläggande ordföljd' },
+	]}
+/>

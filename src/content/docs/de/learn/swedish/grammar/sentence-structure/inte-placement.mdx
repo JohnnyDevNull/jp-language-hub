@@ -31,35 +31,178 @@ import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- <Sv>Inte</Sv> folgt im Hauptsatz dem finiten Verb und steht im Nebensatz davor.
-- Folgt das Subjekt dem finiten Verb, steht <Sv>inte</Sv> nach dem Subjekt.
-- Bei zwei Verben steht <Sv>inte</Sv> zwischen finitem und nicht-finiten Verb.
+- <Sv>Inte</Sv> folgt im Hauptsatz auf das finite Verb und steht im Nebensatz
+  davor.
+- Folgt ein Subjekt auf das finite Verb, steht <Sv>inte</Sv> nach diesem
+  Subjekt.
+- Bei zwei Verben steht <Sv>inte</Sv> zwischen dem finiten und dem
+  nicht-finiten Verb.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Die Stellung von <Sv>inte</Sv> hängt vom Satztyp ab. Wähle zunächst zwischen <Sv>inte</Sv> und einem anderen negativen Ausdruck bei [Negation](../../questions-negation/negation/).
+Die Stellung von schwedischem <Sv>inte</Sv> hängt vom Satztyp ab. Der zentrale
+Unterschied ist einfach: Im Hauptsatz folgt es normalerweise auf das finite
+Verb, im Nebensatz steht es davor. Musst du zunächst zwischen <Sv>inte</Sv>
+und einem anderen negativen Ausdruck wählen, beginne bei
+[Negation](../../questions-negation/negation/).
 
 ## Kernregel
 
-<SentenceSchema caption="Inte im Haupt- und Nebensatz" rowHeader="Satz" columns={['1 Vorfeld', '2 Finites Verb', '3 Subjekt', 'Satzadverbial', 'Verbgruppe', 'Rest']} rows={[{ label: 'Hauptsatz', cells: ['Hon', 'arbetar', '', 'inte', '', 'idag.'] }, { label: 'Hauptsatz, vorangestellt', cells: ['Idag', 'arbetar', 'hon', 'inte.', '', ''] }, { label: 'Hauptsatz, zwei Verben', cells: ['Hon', 'vill', '', 'inte', 'gå', 'hem.'] }, { label: 'Nebensatz', cells: ['eftersom', '', 'hon', 'inte', 'arbetar', 'idag.'] }, { label: 'Deutsch, Hauptsatz', lang: 'de', cells: ['Sie', 'arbeitet', '', 'heute', '', 'nicht.'] }, { label: 'Deutsch, Nebensatz', lang: 'de', cells: ['weil', '', 'sie', 'heute nicht', 'arbeitet.', ''] }]} />
+Ein einziges Feld deckt beide Satztypen ab. <Sv>inte</Sv> steht immer im
+selben Satzadverbial-Feld; was sich verschiebt, ist das finite Verb. Im
+Hauptsatz besetzt es Position zwei, im Nebensatz bleibt Position zwei leer und
+das Verb folgt auf <Sv>inte</Sv>:
 
-Im Hauptsatz: <Sv>Jag kommer inte idag.</Sv>, <Sv>Idag kommer jag inte.</Sv>, <Sv>Jag har inte köpt bilen.</Sv> Im Nebensatz: <Sv>… eftersom jag inte kommer idag.</Sv>, <Sv>… att hon inte har köpt bilen.</Sv> Das ist [BIFF](../biff/).
+<SentenceSchema
+	caption="inte im Hauptsatz und im Nebensatz"
+	rowHeader="Satz"
+	columns={[
+		'1 Vorfeld',
+		'2 Finites Verb',
+		'3 Subjekt',
+		'Satsadverbial',
+		'Verbgruppe',
+		'Rest',
+	]}
+	rows={[
+		{ label: 'Hauptsatz', cells: ['Hon', 'arbetar', '', 'inte', '', 'idag.'] },
+		{
+			label: 'Hauptsatz, vorangestellt',
+			cells: ['Idag', 'arbetar', 'hon', 'inte.', '', ''],
+		},
+		{
+			label: 'Hauptsatz, zwei Verben',
+			cells: ['Hon', 'vill', '', 'inte', 'gå', 'hem.'],
+		},
+		{
+			label: 'Nebensatz',
+			cells: ['eftersom', '', 'hon', 'inte', 'arbetar', 'idag.'],
+		},
+		{
+			label: 'Deutsch, Hauptsatz',
+			lang: 'de',
+			cells: ['Sie', 'arbeitet', '', 'heute', '', 'nicht.'],
+		},
+		{
+			label: 'Deutsch, Nebensatz',
+			lang: 'de',
+			cells: ['weil', '', 'sie', 'heute nicht', 'arbeitet.', ''],
+		},
+	]}
+/>
 
-## Fragen, Imperativ und Infinitiv
+Die beiden deutschen Zeilen zeigen beide Seiten der Parallele. Deutsch teilt
+Haupt- und Nebensatz genau wie Schwedisch, schiebt das finite Verb im
+Nebensatz aber ganz ans Ende, während Schwedisch es nur hinter das
+Satzadverbial verschiebt.
 
-In einer Ja-/Nein-Frage stehen finites Verb, Subjekt und dann <Sv>inte</Sv>: <Sv>Kommer du inte imorgon?</Sv> Im Imperativ folgt <Sv>inte</Sv> dem Verb: <Sv>Glöm inte nycklarna!</Sv> Wird der Infinitiv negiert, steht es davor: <Sv>Det är svårt att inte tänka på det.</Sv>
+## Hauptsätze
+
+Im Hauptsatz steht <Sv>inte</Sv> normalerweise nach dem finiten Verb und nach
+einem Subjekt, das diesem Verb folgt:
+
+- <Sv>Jag <strong>kommer inte</strong> idag.</Sv>
+- <Sv>Idag <strong>kommer jag inte</strong>.</Sv>
+- <Sv>Jag <strong>har inte</strong> köpt bilen.</Sv>
+
+Bei einer mehrteiligen Verbgruppe folgt <Sv>inte</Sv> auf das finite
+Hilfsverb und steht vor dem nicht-finiten Verb:
+
+<p lang="sv">Hon <strong>vill inte gå</strong> hem.</p>
+
+## Nebensätze
+
+Im Nebensatz steht <Sv>inte</Sv> normalerweise vor dem finiten Verb:
+
+- <Sv>… eftersom jag <strong>inte kommer</strong> idag.</Sv>
+- <Sv>… att hon <strong>inte har</strong> köpt bilen.</Sv>
+- <Sv>… om vi <strong>inte kan</strong> träffas.</Sv>
+
+Dieser Gegensatz wird in [BIFF](../biff/) zusammengefasst.
+
+## Fragen
+
+In einer Ja-/Nein-Frage steht zuerst das finite Verb, dann das Subjekt und
+dann <Sv>inte</Sv>:
+
+<p lang="sv">Kommer du inte imorgon?</p>
+
+Mit einem Fragewort:
+
+<p lang="sv">Varför kommer du inte imorgon?</p>
+
+Betonung und Kontext können eine verneinte Frage überrascht klingen lassen
+oder so, als hätte der Sprecher eine positive Antwort erwartet.
+
+Die vollständige Fragestruktur steht bei
+[Fragen](../../questions-negation/questions/).
+
+## Imperativ und Infinitiv
+
+Im verneinten Imperativ steht <Sv>inte</Sv> nach dem Verb:
+
+<p lang="sv">Glöm inte nycklarna!</p>
+
+Wird der Infinitiv selbst verneint, steht <Sv>inte</Sv> normalerweise davor:
+
+<p lang="sv">Det är svårt att inte tänka på det.</p>
 
 ## Direkter Vergleich
 
-<LanguageComparison title="Hauptsatz"><p slot="de">Sie arbeitet heute nicht.</p><p slot="en">She is not working today.</p><p slot="sv">Hon arbetar inte idag.</p></LanguageComparison>
+<LanguageComparison title="Hauptsatz">
+	<p slot="de">Sie arbeitet heute nicht.</p>
+	<p slot="en">She is not working today.</p>
+	<p slot="sv">Hon arbetar inte idag.</p>
+</LanguageComparison>
 
-<LanguageComparison title="Eftersom-Satz"><p slot="de">… weil sie heute nicht arbeitet.</p><p slot="en">… because she is not working today.</p><p slot="sv">… eftersom hon inte arbetar idag.</p></LanguageComparison>
+<LanguageComparison title="Weil-Satz">
+	<p slot="de">… weil sie heute nicht arbeitet.</p>
+	<p slot="en">… because she is not working today.</p>
+	<p slot="sv">… eftersom hon inte arbetar idag.</p>
+</LanguageComparison>
 
-<MistakeBox incorrect="Jag vet att hon arbetar inte idag." correct="Jag vet att hon inte arbetar idag." lang="sv">Setze <Sv>inte</Sv> nicht einfach nach das finite Verb. Entscheide zuerst, ob der Satz Hauptsatz oder Nebensatz ist.</MistakeBox>
+<MistakeBox
+	incorrect="Jag vet att hon arbetar inte idag."
+	correct="Jag vet att hon inte arbetar idag."
+	lang="sv"
+>
+Setze <Sv>inte</Sv> nicht allein deshalb nach dem finiten Verb, weil der Satz
+ein ausdrückliches Subjekt enthält. Entscheide zuerst, ob es sich um einen
+Hauptsatz oder einen Nebensatz handelt.
+</MistakeBox>
 
-<MemoryTip>**Hauptsatz:** finit, dann <Sv>inte</Sv>. **Nebensatz:** <Sv>inte</Sv>, dann finit.</MemoryTip>
+<MemoryTip>
+**Hauptsatz:** zuerst finit, dann <Sv>inte</Sv>.  
+**Nebensatz:** zuerst <Sv>inte</Sv>, dann finit.
+</MemoryTip>
 
-<QuickCheck items={[{ prompt: 'Negiere mit inte: Hon arbetar idag.', answer: 'Hon arbetar inte idag.' }, { prompt: 'Negiere denselben Satz nach eftersom.', answer: '… eftersom hon inte arbetar idag.' }, { prompt: 'Negiere: Hon vill gå hem.', answer: 'Hon vill inte gå hem.' }, { prompt: 'Negiere die Frage: Kommer du imorgon?', answer: 'Kommer du inte imorgon?' }]} />
+<QuickCheck
+	items={[
+		{
+			prompt: 'Verneine mit inte: Hon arbetar idag.',
+			answer: 'Hon arbetar inte idag.',
+		},
+		{
+			prompt: 'Verneine denselben Satz nach eftersom: … eftersom hon arbetar idag.',
+			answer: '… eftersom hon inte arbetar idag.',
+		},
+		{
+			prompt: 'Verneine die mehrteilige Verbgruppe: Hon vill gå hem.',
+			answer: 'Hon vill inte gå hem.',
+		},
+		{
+			prompt: 'Verneine die Ja-/Nein-Frage: Kommer du imorgon?',
+			answer: 'Kommer du inte imorgon?',
+		},
+	]}
+/>
 
-<RelatedTopics topics={[{ href: '../../questions-negation/negation/', label: 'Negation' }, { href: '../../questions-negation/questions/', label: 'Fragen' }, { href: '../biff/', label: 'BIFF' }, { href: '../subordinate-clauses/', label: 'Nebensätze' }]} />
+<RelatedTopics
+	topics={[
+		{ href: '../../questions-negation/negation/', label: 'Negation' },
+		{ href: '../../questions-negation/questions/', label: 'Fragen' },
+		{ href: '../biff/', label: 'BIFF' },
+		{ href: '../subordinate-clauses/', label: 'Nebensätze' },
+	]}
+/>

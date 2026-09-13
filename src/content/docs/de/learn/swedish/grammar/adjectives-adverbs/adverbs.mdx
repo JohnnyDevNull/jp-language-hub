@@ -1,0 +1,236 @@
+---
+title: Adverbien
+description: Bilde Adverbien aus Adjektiven mit -t, lerne die unregelmäßigen und halte die Paare hem/hemma und ut/ute auseinander.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - adjectives
+  - important
+related:
+  - /learn/swedish/grammar/adjectives-adverbs/agreement/
+  - /learn/swedish/grammar/adjectives-adverbs/adjective-comparison/
+  - /learn/swedish/grammar/sentence-structure/inte-placement/
+  - /learn/swedish/grammar/questions-negation/question-words/
+---
+
+import { getEntry } from 'astro:content';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RuleBox from '~/components/RuleBox.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => {
+	throw new Error('Missing adjective entry: sv-snabb');
+})();
+
+<KeyTakeaway>
+- Viele Adverbien der Art und Weise verwenden die <Sv>-t</Sv>-Form des
+  Adjektivs, dieselbe Form, die du bei einem Ett-Wort benutzt:
+  <Sv>{snabb.morphology.ett}</Sv>.
+- Zwei Gruppen lassen sich nicht ableiten und müssen auswendig gelernt werden:
+  <Sv>gärna — hellre — helst</Sv> und die Richtungs-/Lage-Paare wie
+  <Sv>hem / hemma</Sv>.
+- Viele Satzadverbien folgen demselben Stellungsmuster wie <Sv>inte</Sv>;
+  nutze die eigene Wortstellungs-Seite, wenn es um die Position geht.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Viele schwedische Adverbien der Art und Weise sind einfach die Ett-Form eines
+Adjektivs. Das macht die häufigste Bildung einfach – schwieriger sind die
+unabhängigen Adverbien, die Stellung der Satzadverbien und die Paare, die Ort
+von Richtung unterscheiden.
+
+## Adverbien aus Adjektiven
+
+<RuleBox title="Regel">
+	Viele Adverbien der Art und Weise verwenden die <Sv>-t</Sv>-Form des
+	Adjektivs: dieselbe Form, die du schon bei einem Ett-Wort benutzt.
+</RuleBox>
+
+| Adjektiv | Adverb | Beispiel |
+| --- | --- | --- |
+| <Sv>{snabb.morphology.en}</Sv> | <Sv>{snabb.morphology.ett}</Sv> | <Sv>Han springer snabbt.</Sv> |
+| <Sv>tydlig</Sv> | <Sv>tydligt</Sv> | <Sv>Hon talar tydligt.</Sv> |
+| <Sv>vacker</Sv> | <Sv>vackert</Sv> | <Sv>Hon sjunger vackert.</Sv> |
+| <Sv>försiktig</Sv> | <Sv>försiktigt</Sv> | <Sv>Kör försiktigt!</Sv> |
+
+Wenn ein Adverb die Ett-Form wiederverwendet, gelten dieselben
+Schreibmuster. Siehe
+[Adjektivkongruenz](../agreement/#schreibmuster).
+
+Das Englische markiert den Unterschied oft mit *-ly*, während das Deutsche für
+Adjektiv und Adverb oft dieselbe sichtbare Form nutzt. Das Schwedische
+verwendet meist eine Endung, aber es ist eine, die du schon von Ett-Wörtern
+kennst.
+
+## Unregelmäßige und eigenständige Adverbien
+
+Manche Adverbien werden nicht aus einem Adjektiv gebildet oder weichen von der
+erwarteten Form ab:
+
+| Adverb | Bedeutung | Anmerkung |
+| --- | --- | --- |
+| <Sv>bra</Sv> | gut | auch das Adjektiv gut; <Sv>Han sjunger bra.</Sv> |
+| <Sv>väl</Sv> | gut | enger als <Sv>bra</Sv>: <Sv>väl gjort</Sv> |
+| <Sv>illa</Sv> | schlecht | <Sv>Han mår illa.</Sv> |
+| <Sv>gärna</Sv> | gern, bereitwillig | kein Adjektiv dahinter |
+| <Sv>mycket</Sv> | sehr, viel | mit Adjektiven: <Sv>mycket bra</Sv> |
+
+<Sv>Gärna</Sv> lohnt sich als komplette Reihe zu lernen, weil ihre
+Steigerung unregelmäßig und in der Höflichkeitssprache extrem häufig ist:
+
+<p lang="sv">gärna → hellre → helst</p>
+
+- <Sv>Jag vill gärna komma.</Sv> — *Ich würde gern kommen.*
+- <Sv>Jag vill hellre stanna hemma.</Sv> — *Ich würde lieber zu Hause
+  bleiben.*
+- <Sv>Jag vill helst åka på fredag.</Sv> — *Am liebsten würde ich am
+  Freitag fahren.*
+
+## Steigerung
+
+Adverbien werden wie Adjektive gesteigert:
+
+<p lang="sv">{snabb.morphology.ett} → {snabb.comparison?.comparative} → {snabb.comparison?.superlative}</p>
+
+Die unregelmäßigen folgen ihren eigenen Reihen:
+
+| Adverb | Komparativ | Superlativ |
+| --- | --- | --- |
+| <Sv>bra / väl</Sv> | <Sv>bättre</Sv> | <Sv>bäst</Sv> |
+| <Sv>gärna</Sv> | <Sv>hellre</Sv> | <Sv>helst</Sv> |
+| <Sv>illa</Sv> | <Sv>värre</Sv> | <Sv>värst</Sv> |
+
+<Sv>Sämre</Sv> und <Sv>värre</Sv> bedeuten beide *schlechter*, wobei
+<Sv>sämre</Sv> eher auf geringere Qualität und <Sv>värre</Sv> eher auf
+größeren Schweregrad zielt. Die Grenze ist nicht scharf, lerne sie daher in
+Phrasen. Siehe
+[Adjektivsteigerung](../adjective-comparison/).
+
+## Orts- und Richtungspaare
+
+Das Schwedische hält Lage und Richtung mit zwei getrennten Wörtern
+auseinander. Deutsch und Englisch nutzen nicht genau diese schwedische
+Aufteilung, daher müssen die Paare als Paare gelernt werden:
+
+| Richtung | Lage | Beispiel |
+| --- | --- | --- |
+| <Sv>hem</Sv> | <Sv>hemma</Sv> | <Sv>Jag går hem.</Sv> · <Sv>Jag är hemma.</Sv> |
+| <Sv>ut</Sv> | <Sv>ute</Sv> | <Sv>Vi går ut.</Sv> · <Sv>Vi är ute.</Sv> |
+| <Sv>in</Sv> | <Sv>inne</Sv> | <Sv>Kom in!</Sv> · <Sv>Hon är inne.</Sv> |
+| <Sv>upp</Sv> | <Sv>uppe</Sv> | <Sv>Han går upp.</Sv> · <Sv>Han är uppe.</Sv> |
+| <Sv>ner</Sv> | <Sv>nere</Sv> | <Sv>Gå ner!</Sv> · <Sv>Hon är nere.</Sv> |
+| <Sv>bort</Sv> | <Sv>borta</Sv> | <Sv>Han reste bort.</Sv> · <Sv>Han är borta.</Sv> |
+| <Sv>dit</Sv> | <Sv>där</Sv> | <Sv>Vi åker dit.</Sv> · <Sv>Vi är där.</Sv> |
+
+Dieselbe Aufteilung zieht sich durch die Fragewörter <Sv>vart</Sv> und
+<Sv>var</Sv>. Siehe
+[Fragewörter](../../questions-negation/question-words/).
+
+## Wo Satzadverbien stehen
+
+Viele Satzadverbien, darunter <Sv>alltid</Sv>, <Sv>aldrig</Sv> und
+<Sv>ofta</Sv>, folgen demselben Stellungsmuster wie <Sv>inte</Sv>: nach dem
+finiten Verb im Hauptsatz, davor im Nebensatz. Manche Adverbien verhalten
+sich enger, nutze daher die Wortstellungs-Seite, wenn die Position die
+Hauptfrage ist.
+
+- <Sv>Hon kommer alltid sent.</Sv>
+- <Sv>…eftersom hon alltid kommer sent.</Sv>
+
+Siehe [Stellung von *inte*](../../sentence-structure/inte-placement/).
+
+## Die kleinen Einstellungswörter
+
+<Sv>Ju</Sv>, <Sv>nog</Sv>, <Sv>väl</Sv> und <Sv>visst</Sv> fügen eher Haltung
+als Information hinzu, ganz ähnlich wie im Deutschen
+<span lang="de">ja</span>, <span lang="de">wohl</span> und
+<span lang="de">doch</span>:
+
+- <Sv>Det är ju sant.</Sv> — *das wissen wir beide*
+- <Sv>Han kommer nog.</Sv> — *ich erwarte, dass er kommt*
+- <Sv>Du har väl gjort det?</Sv> — sucht Zustimmung
+
+Sie widersetzen sich einer sauberen Übersetzung und werden am besten aus dem
+Kontext gelernt. Deutschsprachige haben hier einen Vorteil, weil ihnen der
+Mechanismus vertraut ist.
+
+## Direkter Vergleich
+
+<LanguageComparison title="Adverb aus einem Adjektiv">
+	<p slot="de">Er läuft schnell.</p>
+	<p slot="en">He runs quickly.</p>
+	<p slot="sv">Han springer snabbt.</p>
+</LanguageComparison>
+
+<MistakeBox title="Häufige Fehler">
+	- ❌ <Sv>Han springer snabb.</Sv>
+	  ✅ <Sv>Han springer snabbt.</Sv>
+	- ❌ <Sv>Jag är hem.</Sv>
+	  ✅ <Sv>Jag är hemma.</Sv>
+	- ❌ <Sv>Jag går hemma.</Sv>
+	  ✅ <Sv>Jag går hem.</Sv>
+	- ❌ <Sv>Jag vill mer gärna stanna.</Sv>
+	  ✅ <Sv>Jag vill hellre stanna.</Sv>
+	- ❌ <Sv>…eftersom hon kommer alltid sent.</Sv>
+	  ✅ <Sv>…eftersom hon alltid kommer sent.</Sv>
+</MistakeBox>
+
+<MemoryTip>
+Starte bei der Ett-Form für gewöhnliche Adverbien der Art und Weise: Wenn du
+<Sv><strong>ett snabbt tåg</strong></Sv> sagen kannst, kannst du auch
+<Sv><strong>han springer snabbt</strong></Sv> sagen. Ergänze dann die beiden
+Gruppen, die sich nicht ableiten lassen:
+<Sv><strong>gärna — hellre — helst</strong></Sv> und
+<Sv><strong>hem / hemma</strong></Sv>.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Bilde aus tydlig ein Adverb und benutze es: „Sie spricht klar.“',
+			answer: 'Hon talar tydligt.',
+		},
+		{
+			prompt: 'hem oder hemma? Jag är ___. · Jag går ___.',
+			answer: 'Jag är hemma. · Jag går hem.',
+		},
+		{
+			prompt: 'Vervollständige die Reihe: gärna → ___ → ___.',
+			answer: 'hellre, helst',
+		},
+		{
+			prompt: 'Korrigiere diesen Satz: …eftersom hon kommer alltid sent.',
+			answer: '…eftersom hon alltid kommer sent.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../agreement/', label: 'Adjektivkongruenz' },
+		{ href: '../adjective-comparison/', label: 'Adjektivsteigerung' },
+		{
+			href: '../../sentence-structure/inte-placement/',
+			label: 'Stellung von inte',
+		},
+		{
+			href: '../../questions-negation/question-words/',
+			label: 'Fragewörter',
+		},
+	]}
+/>

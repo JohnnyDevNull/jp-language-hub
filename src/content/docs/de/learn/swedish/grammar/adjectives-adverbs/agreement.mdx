@@ -1,0 +1,351 @@
+---
+title: Adjektivkongruenz
+description: Wähle die richtige schwedische Adjektivform für en-Wörter, ett-Wörter, Pluralformen und bestimmte Nominalphrasen.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+tags:
+  - grammar
+  - adjectives
+  - important
+related:
+  - /learn/swedish/grammar/verb-patterns-voice/passive/
+  - /learn/swedish/grammar/nouns-articles/en-ett/
+  - /learn/swedish/grammar/nouns-articles/noun-forms/
+  - /learn/swedish/grammar/adjectives-adverbs/adjective-comparison/
+  - /learn/swedish/grammar/pronouns-roles/demonstratives-har-dar/
+---
+
+import { getEntry } from 'astro:content';
+import AdjectiveForms from '~/components/AdjectiveForms.astro';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+export const stor = (await getEntry('adjectives', 'sv-stor'))?.data ?? (() => {
+	throw new Error('Missing adjective entry: sv-stor');
+})();
+export const gul = (await getEntry('adjectives', 'sv-gul'))?.data ?? (() => {
+	throw new Error('Missing adjective entry: sv-gul');
+})();
+export const glad = (await getEntry('adjectives', 'sv-glad'))?.data ?? (() => {
+	throw new Error('Missing adjective entry: sv-glad');
+})();
+
+<KeyTakeaway>
+- Das indefinite Muster ist Grundform, <Sv>-t</Sv>, <Sv>-a</Sv>:
+  <Sv>en stor bil</Sv>, <Sv>ett stort hus</Sv>, <Sv>stora bilar</Sv>.
+- Die Pluralform ist bei en-Wörtern und ett-Wörtern identisch.
+- Eine bestimmte Nominalphrase markiert Bestimmtheit zweimal: Artikel plus
+  bestimmtes Adjektiv plus bestimmtes Substantiv — <Sv>den stora bilen</Sv>.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Schwedische Adjektive richten sich nach Genus und Numerus des Substantivs, das
+sie beschreiben. Attributive Adjektive innerhalb von Nominalphrasen spiegeln
+außerdem wider, ob die Phrase indefinit oder definit ist. Das zentrale Muster
+für Anfänger ist **Grundform**, **-t** und **-a**.
+
+## Jetzt anwenden
+
+Um schnell die richtige Adjektivform zu wählen, frage dich, welche Art von
+Phrase du bildest:
+
+| Frage | Verwende | Beispiel |
+| --- | --- | --- |
+| Ist es ein indefinites en-Wort? | Grundform | <Sv>en stor bil</Sv> |
+| Ist es ein indefinites ett-Wort? | meist <Sv>-t</Sv> ergänzen | <Sv>ett stort hus</Sv> |
+| Ist es Plural? | meist <Sv>-a</Sv> ergänzen | <Sv>stora bilar</Sv>, <Sv>stora hus</Sv> |
+| Ist es eine bestimmte Nominalphrase? | Artikel + <Sv>-a</Sv>-Adjektiv + bestimmtes Substantiv | <Sv>den stora bilen</Sv>, <Sv>det stora huset</Sv> |
+
+Prüfe danach eine der häufigen Ausnahmen:
+
+- Manche Adjektive ändern die Schreibweise vor einer Endung:
+  <Sv>röd → rött → röda</Sv>, <Sv>öppen → öppet → öppna</Sv>.
+- Manche häufigen Adjektive sind unregelmäßig oder unveränderlich:
+  <Sv>liten → litet → små</Sv>, aber <Sv>bra → bra → bra</Sv>.
+- Nach Verben wie <Sv>vara</Sv> und <Sv>bli</Sv> richte dich nach Genus oder
+  Numerus des Subjekts, verwende aber keine doppelte Bestimmtheit:
+  <Sv>Huset är stort.</Sv>
+
+Wenn du unsicher bist, bilde zuerst die ganze Nominalphrase:
+<Sv>en stor bil</Sv>, <Sv>ett stort hus</Sv>,
+<Sv>stora bilar</Sv>, <Sv>den stora bilen</Sv>.
+
+## Kernmuster
+
+| Nominalphrase | Adjektivform | Beispiel |
+| --- | --- | --- |
+| indefinit en-Singular | Grundform | <Sv>en <strong>{stor.morphology.en}</strong> bil</Sv> |
+| indefinit ett-Singular | meist <Sv>-t</Sv> | <Sv>ett <strong>{stor.morphology.ett}</strong> hus</Sv> |
+| indefiniter Plural | meist <Sv>-a</Sv> | <Sv><strong>{stor.morphology.plural}</strong> bilar</Sv> |
+| definit | meist <Sv>-a</Sv> | <Sv>den <strong>{stor.morphology.definite}</strong> bilen</Sv> |
+
+Die gleiche Pluralform des Adjektivs wird bei en-Wörtern und ett-Wörtern
+verwendet:
+
+- <Sv>stora bilar</Sv>
+- <Sv>stora hus</Sv>
+
+<AdjectiveForms
+	forms={[
+		{ label: 'en-form', value: stor.morphology.en },
+		{ label: 'ett-form', value: stor.morphology.ett },
+		{ label: 'Plural / definit', value: stor.morphology.plural },
+		{ label: 'Komparativ', value: stor.comparison?.comparative ?? '' },
+		{ label: 'Superlativ', value: stor.comparison?.superlative ?? '' },
+	]}
+	caption="Grundformen von stor"
+/>
+
+## Indefinitformen
+
+Gehe von der Wörterbuch- oder en-Form aus:
+
+<p lang="sv">stor</p>
+
+Ergänze <Sv>-t</Sv> für die reguläre ett-Form und
+<Sv>-a</Sv> für den regulären Plural:
+
+<p lang="sv">stor → stort → stora</p>
+
+Ein weiteres reguläres Beispiel:
+
+<p lang="sv">{gul.morphology.en} → {gul.morphology.ett} → {gul.morphology.plural}</p>
+
+Beim Anfügen von Endungen kann sich die Schreibweise ändern, und manche
+Adjektive sind unregelmäßig. Zum Beispiel:
+
+- <Sv>{glad.morphology.en} → {glad.morphology.ett} → {glad.morphology.plural}</Sv>
+- <Sv>liten → litet → små</Sv>
+- <Sv>bra → bra → bra</Sv>
+
+Lerne häufige Ausnahmen anhand vollständiger Phrasen.
+
+## Schreibmuster
+
+Die Endungen <Sv>-t</Sv> und <Sv>-a</Sv> sind
+regulär, aber der Stamm ändert sich beim Anfügen oft. Diese Muster
+decken die meisten Adjektive ab:
+
+| Stammmuster | en-Form | ett-Form | Plural / definit |
+| --- | --- | --- | --- |
+| betonter Vokal | <Sv>ny</Sv>, <Sv>blå</Sv> | <Sv>nytt</Sv>, <Sv>blått</Sv> | <Sv>nya</Sv>, <Sv>blåa</Sv> |
+| Vokal + <Sv>-d</Sv> | <Sv>röd</Sv>, <Sv>god</Sv> | <Sv>rött</Sv>, <Sv>gott</Sv> | <Sv>röda</Sv>, <Sv>goda</Sv> |
+| Konsonant + <Sv>-d</Sv> | <Sv>hård</Sv> | <Sv>hårt</Sv> | <Sv>hårda</Sv> |
+| Vokal + <Sv>-t</Sv> | <Sv>vit</Sv>, <Sv>söt</Sv> | <Sv>vitt</Sv>, <Sv>sött</Sv> | <Sv>vita</Sv>, <Sv>söta</Sv> |
+| Konsonant + <Sv>-t</Sv> | <Sv>kort</Sv>, <Sv>svart</Sv> | <Sv>kort</Sv>, <Sv>svart</Sv> | <Sv>korta</Sv>, <Sv>svarta</Sv> |
+| <Sv>-nn</Sv> | <Sv>sann</Sv>, <Sv>tunn</Sv> | <Sv>sant</Sv>, <Sv>tunt</Sv> | <Sv>sanna</Sv>, <Sv>tunna</Sv> |
+| <Sv>-en</Sv> | <Sv>öppen</Sv>, <Sv>mogen</Sv> | <Sv>öppet</Sv>, <Sv>moget</Sv> | <Sv>öppna</Sv>, <Sv>mogna</Sv> |
+| <Sv>-er</Sv>, <Sv>-el</Sv> | <Sv>vacker</Sv>, <Sv>enkel</Sv> | <Sv>vackert</Sv>, <Sv>enkelt</Sv> | <Sv>vackra</Sv>, <Sv>enkla</Sv> |
+
+Zwei häufige Adjektive sind über diese Muster hinaus unregelmäßig:
+
+- <Sv>gammal → gammalt → gamla</Sv>
+- <Sv>liten → litet → små</Sv>, mit
+  <Sv>lilla</Sv> im bestimmten Singular:
+  <Sv>den lilla bilen</Sv>
+
+Das Muster, das du dir zuerst einprägen solltest, ist die
+<Sv>-en</Sv>-Gruppe, weil das unbetonte
+<Sv>e</Sv> im Plural verschwindet:
+<Sv>ett öppet fönster</Sv>, aber
+<Sv>öppna fönster</Sv>.
+
+## Adjektive, die sich nie ändern
+
+Eine kleine Gruppe nimmt überhaupt keine Endungen an. Sie zu verwenden ist
+einfach, sobald du weißt, welche das sind:
+
+<Sv>bra</Sv>, <Sv>kul</Sv>,
+<Sv>äkta</Sv>, <Sv>sakta</Sv>,
+<Sv>främmande</Sv> sowie Farbwörter wie
+<Sv>rosa</Sv>, <Sv>lila</Sv>,
+<Sv>beige</Sv>.
+
+- <Sv>ett bra hus</Sv>, <Sv>bra bilar</Sv>
+- <Sv>ett rosa hus</Sv>, <Sv>rosa bilar</Sv>
+
+## Partizipien als Adjektive
+
+Partizip-Perfekt-Formen werden wie gewöhnliche Adjektive gebeugt:
+
+| Nominalphrase | Beispiel |
+| --- | --- |
+| indefinit en | <Sv>en stängd dörr</Sv> |
+| indefinit ett | <Sv>ett stängt fönster</Sv> |
+| Plural | <Sv>stängda dörrar</Sv> |
+
+Das Gleiche gilt für Partizipien anderer Verbgruppen:
+<Sv>en målad vägg</Sv>,
+<Sv>ett målat hus</Sv>,
+<Sv>målade väggar</Sv>; sowie
+<Sv>en skriven text</Sv>,
+<Sv>ett skrivet brev</Sv>,
+<Sv>skrivna brev</Sv>.
+
+Partizip-Präsens-Formen auf <Sv>-ande</Sv> und
+<Sv>-ende</Sv> werden nie gebeugt:
+
+<p lang="sv">ett leende barn · en leende flicka · leende barn</p>
+
+Partizip-Perfekt-Formen sind auch die Grundlage des bli-Passivs. Siehe
+[Passiv](../../verb-patterns-voice/passive/).
+
+## Das optionale maskuline -e
+
+Bei Bezug auf eine männliche Person kann die bestimmte Form
+<Sv>-e</Sv> statt <Sv>-a</Sv> annehmen:
+
+- <Sv>den gamle mannen</Sv> neben
+  <Sv>den gamla mannen</Sv>
+- <Sv>min gode vän</Sv>
+
+Das ist optional und gehört einem leicht formellen oder traditionellen
+Register an; es überlebt auch in festen Namen wie
+<Sv>Karl den store</Sv>. Die
+<Sv>-a</Sv>-Form ist immer akzeptabel — behandle
+<Sv>-e</Sv> also eher als etwas zum Wiedererkennen denn als
+anzuwendende Regel.
+
+## Bestimmte Nominalphrasen und doppelte Bestimmtheit
+
+Ein Substantiv ohne attributives Adjektiv markiert Bestimmtheit normalerweise
+nur mit seiner Endung:
+
+<p lang="sv">bilen · huset · bilarna</p>
+
+Wird ein attributives Adjektiv hinzugefügt, markiert das Standardschwedische
+Bestimmtheit normalerweise zweimal: mit einem eigenen bestimmten Artikel vor
+dem Adjektiv und mit der bestimmten Endung am Substantiv. Diese Konstruktion
+heißt **doppelte Bestimmtheit**.
+
+| Numerus und Genus | Bestimmter Artikel | Adjektiv | Bestimmtes Substantiv | Vollständige Phrase |
+| --- | --- | --- | --- | --- |
+| en-Singular | <Sv>den</Sv> | <Sv>{stor.morphology.definite}</Sv> | <Sv>bilen</Sv> | <Sv>den {stor.morphology.definite} bilen</Sv> |
+| ett-Singular | <Sv>det</Sv> | <Sv>{stor.morphology.definite}</Sv> | <Sv>huset</Sv> | <Sv>det {stor.morphology.definite} huset</Sv> |
+| Plural | <Sv>de</Sv> | <Sv>{stor.morphology.definite}</Sv> | <Sv>bilarna</Sv> | <Sv>de {stor.morphology.definite} bilarna</Sv> |
+
+Das dreiteilige Muster lautet also:
+
+<p lang="sv"><strong>den / det / de + bestimmtes Adjektiv + bestimmtes Substantiv</strong></p>
+
+Der Artikel markiert Genus oder Numerus, das Adjektiv verwendet meist seine
+<Sv>-a</Sv>-Form, und das Substantiv behält seine bestimmte Endung. Das
+Englische markiert dieselbe Phrase meist nur einmal in <span lang="en">the big car</span>;
+das Schwedische verwendet sowohl <Sv>den</Sv> als auch <Sv>-en</Sv> in
+<Sv>den stora bilen</Sv>.
+
+Possessiva sind eine wichtige Ausnahme vom Standardmuster. Das Adjektiv
+verwendet die bestimmte Form, aber es gibt keinen eigenen bestimmten Artikel,
+und das Substantiv nimmt keine bestimmte Endung an:
+
+<p lang="sv">min stora bil</p>
+
+Demonstrativa wie <Sv>den här</Sv> und
+<Sv>det där</Sv> folgen dem Rhythmus der bestimmten Nominalphrase:
+<Sv>den här stora bilen</Sv>,
+<Sv>det där stora huset</Sv>.
+
+Siehe [Substantivformen](../../nouns-articles/noun-forms/) für die
+Substantivendungen selbst.
+
+## Nach Verben wie *vara* und *bli*
+
+Prädikative Adjektive richten sich nach dem Subjekt, verwenden aber keine
+doppelte Bestimmtheit:
+
+- <Sv>Bilen är stor.</Sv>
+- <Sv>Huset är stort.</Sv>
+- <Sv>Bilarna är stora.</Sv>
+
+## Direkter Vergleich
+
+<LanguageComparison title="Indefiniter Singular">
+	<p slot="de">ein großes Auto</p>
+	<p slot="en">a big car</p>
+	<p slot="sv">en stor bil</p>
+</LanguageComparison>
+
+<LanguageComparison title="Indefiniter Plural">
+	<p slot="de">große Autos</p>
+	<p slot="en">big cars</p>
+	<p slot="sv">stora bilar</p>
+</LanguageComparison>
+
+<LanguageComparison title="Definiter Singular">
+	<p slot="de">das große Auto</p>
+	<p slot="en">the big car</p>
+	<p slot="sv">den stora bilen</p>
+</LanguageComparison>
+
+Englische Adjektive richten sich nicht nach dem Substantiv. Deutsche
+Adjektive stimmen zwar auch überein, aber die deutschen Endungen hängen
+zusätzlich von Kasus und Artikeltyp ab, nicht nur von Genus und Numerus.
+Übertrage das deutsche Endungssystem nicht direkt auf das Schwedische.
+
+<MistakeBox title="Häufige Fehler">
+Achte darauf, dass Artikel, Adjektiv und Substantiv zusammenpassen:
+
+<Sv>❌ ett stor hus</Sv>
+<Sv>✅ ett stort hus</Sv>
+
+Lasse in einer normalen bestimmten Phrase keinen Teil der doppelten
+Bestimmtheit weg:
+
+<Sv>❌ det stora hus</Sv>
+<Sv>✅ det stora huset</Sv>
+</MistakeBox>
+
+<MemoryTip>
+Merke dir den dreiteiligen Rhythmus:
+<Sv><strong>en stor — ett stort — flera stora</strong></Sv>.
+Für eine bestimmte Phrase verwende die vertraute <Sv>-a</Sv>-Form:
+<Sv>den stora bilen</Sv>.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Ergänze gul: ___ bil, ___ hus, ___ bilar.',
+			answer: 'en gul bil, ett gult hus, gula bilar',
+		},
+		{
+			prompt: 'Gib die ett-Form und den Plural von öppen an.',
+			answer: 'öppet, öppna',
+		},
+		{
+			prompt: 'Bilde den … bilen mit liten in der bestimmten Form.',
+			answer: 'den lilla bilen',
+		},
+		{
+			prompt: 'Korrigiere diese Phrase: det stora hus.',
+			answer: 'det stora huset',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../nouns-articles/en-ett/', label: 'en / ett' },
+		{ href: '../../nouns-articles/noun-forms/', label: 'Substantivformen' },
+		{
+			href: '../../pronouns-roles/demonstratives-har-dar/',
+			label: 'Demonstrativa mit här und där',
+		},
+		{ href: '../adjective-comparison/', label: 'Adjektivsteigerung' },
+		{ href: '../../verb-patterns-voice/passive/', label: 'Passiv' },
+	]}
+/>

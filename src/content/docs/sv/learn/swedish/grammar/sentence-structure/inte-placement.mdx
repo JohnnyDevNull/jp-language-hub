@@ -31,24 +31,176 @@ import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- <Sv>inte</Sv> följer finit verb i huvudsats och står före det i bisats.
-- Om subjektet följer det finita verbet kommer <Sv>inte</Sv> efter subjektet.
-- Med två verb står <Sv>inte</Sv> mellan finit och icke-finit verb.
+- <Sv>inte</Sv> följer det finita verbet i en huvudsats och står före det i en
+  bisats.
+- Om ett subjekt följer det finita verbet kommer <Sv>inte</Sv> efter det
+  subjektet.
+- Med två verb står <Sv>inte</Sv> mellan det finita och det icke-finita
+  verbet.
 </KeyTakeaway>
+
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Placeringen av <Sv>inte</Sv> beror på satstyp. Välj först mellan <Sv>inte</Sv> och ett annat negativt uttryck på [Negation](../../questions-negation/negation/).
+Placeringen av svenska <Sv>inte</Sv> beror på satstypen. Den centrala
+skillnaden är enkel: i en huvudsats kommer det normalt efter det finita
+verbet, i en bisats kommer det före. Måste du först välja mellan <Sv>inte</Sv>
+och ett annat nekande uttryck, börja med
+[Negation](../../questions-negation/negation/).
+
 ## Kärnregel
-<SentenceSchema caption="inte i huvud- och bisats" rowHeader="Sats" columns={['1 Fundament', '2 Finit verb', '3 Subjekt', 'Satsadverbial', 'Verbgrupp', 'Rest']} rows={[{ label: 'Huvudsats', cells: ['Hon', 'arbetar', '', 'inte', '', 'idag.'] }, { label: 'Huvudsats, framflyttad', cells: ['Idag', 'arbetar', 'hon', 'inte.', '', ''] }, { label: 'Huvudsats, två verb', cells: ['Hon', 'vill', '', 'inte', 'gå', 'hem.'] }, { label: 'Bisats', cells: ['eftersom', '', 'hon', 'inte', 'arbetar', 'idag.'] }, { label: 'Tyska, huvudsats', lang: 'de', cells: ['Sie', 'arbeitet', '', 'heute', '', 'nicht.'] }, { label: 'Tyska, bisats', lang: 'de', cells: ['weil', '', 'sie', 'heute nicht', 'arbeitet.', ''] }]} />
 
-I huvudsats: <Sv>Jag kommer inte idag.</Sv>, <Sv>Idag kommer jag inte.</Sv>, <Sv>Jag har inte köpt bilen.</Sv>. I bisats: <Sv>… eftersom jag inte kommer idag.</Sv>, <Sv>… att hon inte har köpt bilen.</Sv>. Detta är [BIFF](../biff/).
-## Frågor, imperativ och infinitiv
+Ett och samma fält täcker båda satstyperna. <Sv>inte</Sv> ligger alltid i
+samma satsadverbial-fält; det som flyttas är det finita verbet. I huvudsatsen
+upptar det position två, i bisatsen är position två tom och verbet kommer
+efter <Sv>inte</Sv>:
 
-I ja/nej-fråga kommer finit verb, subjekt och sedan <Sv>inte</Sv>: <Sv>Kommer du inte imorgon?</Sv>. I imperativ kommer <Sv>inte</Sv> efter verbet: <Sv>Glöm inte nycklarna!</Sv>. När infinitiven nekas står det före: <Sv>Det är svårt att inte tänka på det.</Sv>
+<SentenceSchema
+	caption="inte i huvudsats och i bisats"
+	rowHeader="Sats"
+	columns={[
+		'1 Fundament',
+		'2 Finit verb',
+		'3 Subjekt',
+		'Satsadverbial',
+		'Verbgrupp',
+		'Rest',
+	]}
+	rows={[
+		{ label: 'Huvudsats', cells: ['Hon', 'arbetar', '', 'inte', '', 'idag.'] },
+		{
+			label: 'Huvudsats, framflyttad',
+			cells: ['Idag', 'arbetar', 'hon', 'inte.', '', ''],
+		},
+		{
+			label: 'Huvudsats, två verb',
+			cells: ['Hon', 'vill', '', 'inte', 'gå', 'hem.'],
+		},
+		{
+			label: 'Bisats',
+			cells: ['eftersom', '', 'hon', 'inte', 'arbetar', 'idag.'],
+		},
+		{
+			label: 'Tyska, huvudsats',
+			lang: 'de',
+			cells: ['Sie', 'arbeitet', '', 'heute', '', 'nicht.'],
+		},
+		{
+			label: 'Tyska, bisats',
+			lang: 'de',
+			cells: ['weil', '', 'sie', 'heute nicht', 'arbeitet.', ''],
+		},
+	]}
+/>
+
+De två tyska raderna visar båda sidorna av parallellen. Tyskan delar upp
+huvud- och bisats precis som svenskan gör, men flyttar det finita verbet ända
+till slutet av bisatsen, medan svenskan bara flyttar det förbi
+satsadverbialet.
+
+## Huvudsatser
+
+I en huvudsats kommer <Sv>inte</Sv> normalt efter det finita verbet och efter
+ett subjekt som följer det verbet:
+
+- <Sv>Jag <strong>kommer inte</strong> idag.</Sv>
+- <Sv>Idag <strong>kommer jag inte</strong>.</Sv>
+- <Sv>Jag <strong>har inte</strong> köpt bilen.</Sv>
+
+Med en sammansatt verbfras kommer <Sv>inte</Sv> efter det finita hjälpverbet
+och före det icke-finita verbet:
+
+<p lang="sv">Hon <strong>vill inte gå</strong> hem.</p>
+
+## Bisatser
+
+I en bisats kommer <Sv>inte</Sv> normalt före det finita verbet:
+
+- <Sv>… eftersom jag <strong>inte kommer</strong> idag.</Sv>
+- <Sv>… att hon <strong>inte har</strong> köpt bilen.</Sv>
+- <Sv>… om vi <strong>inte kan</strong> träffas.</Sv>
+
+Den här skillnaden sammanfattas i [BIFF](../biff/).
+
+## Frågor
+
+I en ja/nej-fråga kommer det finita verbet först, sedan subjektet och sedan
+<Sv>inte</Sv>:
+
+<p lang="sv">Kommer du inte imorgon?</p>
+
+Med ett frågeord:
+
+<p lang="sv">Varför kommer du inte imorgon?</p>
+
+Betoningen och sammanhanget kan få en nekande fråga att låta förvånad, eller
+som om den talande hade väntat sig ett jakande svar.
+
+Se [Frågor](../../questions-negation/questions/) för hela frågeramen.
+
+## Imperativ och infinitiv
+
+I en nekande imperativ kommer <Sv>inte</Sv> efter verbet:
+
+<p lang="sv">Glöm inte nycklarna!</p>
+
+När själva infinitiven nekas kommer <Sv>inte</Sv> normalt före den:
+
+<p lang="sv">Det är svårt att inte tänka på det.</p>
+
 ## Direkt jämförelse
-<LanguageComparison title="Huvudsats"><p slot="de">Sie arbeitet heute nicht.</p><p slot="en">She is not working today.</p><p slot="sv">Hon arbetar inte idag.</p></LanguageComparison>
-<LanguageComparison title="Eftersom-sats"><p slot="de">… weil sie heute nicht arbeitet.</p><p slot="en">… because she is not working today.</p><p slot="sv">… eftersom hon inte arbetar idag.</p></LanguageComparison>
-<MistakeBox incorrect="Jag vet att hon arbetar inte idag." correct="Jag vet att hon inte arbetar idag." lang="sv">Placera inte <Sv>inte</Sv> efter finit verb bara för att satsen har ett uttalat subjekt. Avgör först om satsen är huvud- eller bisats.</MistakeBox>
-<MemoryTip>**Huvudsats:** finit först, sedan <Sv>inte</Sv>. **Bisats:** <Sv>inte</Sv> först, sedan finit.</MemoryTip>
-<QuickCheck items={[{ prompt: 'Neka med inte: Hon arbetar idag.', answer: 'Hon arbetar inte idag.' }, { prompt: 'Neka samma sats efter eftersom.', answer: '… eftersom hon inte arbetar idag.' }, { prompt: 'Neka: Hon vill gå hem.', answer: 'Hon vill inte gå hem.' }, { prompt: 'Neka frågan: Kommer du imorgon?', answer: 'Kommer du inte imorgon?' }]} />
-<RelatedTopics topics={[{ href: '../../questions-negation/negation/', label: 'Negation' }, { href: '../../questions-negation/questions/', label: 'Frågor' }, { href: '../biff/', label: 'BIFF' }, { href: '../subordinate-clauses/', label: 'Bisatser' }]} />
+
+<LanguageComparison title="Huvudsats">
+	<p slot="de">Sie arbeitet heute nicht.</p>
+	<p slot="en">She is not working today.</p>
+	<p slot="sv">Hon arbetar inte idag.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Eftersom-sats">
+	<p slot="de">… weil sie heute nicht arbeitet.</p>
+	<p slot="en">… because she is not working today.</p>
+	<p slot="sv">… eftersom hon inte arbetar idag.</p>
+</LanguageComparison>
+
+<MistakeBox
+	incorrect="Jag vet att hon arbetar inte idag."
+	correct="Jag vet att hon inte arbetar idag."
+	lang="sv"
+>
+Placera inte <Sv>inte</Sv> efter det finita verbet bara för att satsen har ett
+uttryckt subjekt. Avgör först om satsen är en huvudsats eller en bisats.
+</MistakeBox>
+
+<MemoryTip>
+**Huvudsats:** finit verb först, sedan <Sv>inte</Sv>.  
+**Bisats:** <Sv>inte</Sv> först, sedan finit verb.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Neka med inte: Hon arbetar idag.',
+			answer: 'Hon arbetar inte idag.',
+		},
+		{
+			prompt: 'Neka samma sats efter eftersom: … eftersom hon arbetar idag.',
+			answer: '… eftersom hon inte arbetar idag.',
+		},
+		{
+			prompt: 'Neka den sammansatta verbfrasen: Hon vill gå hem.',
+			answer: 'Hon vill inte gå hem.',
+		},
+		{
+			prompt: 'Neka ja/nej-frågan: Kommer du imorgon?',
+			answer: 'Kommer du inte imorgon?',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../questions-negation/negation/', label: 'Negation' },
+		{ href: '../../questions-negation/questions/', label: 'Frågor' },
+		{ href: '../biff/', label: 'BIFF' },
+		{ href: '../subordinate-clauses/', label: 'Bisatser' },
+	]}
+/>

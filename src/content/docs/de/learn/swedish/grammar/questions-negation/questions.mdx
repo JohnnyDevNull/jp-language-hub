@@ -32,39 +32,146 @@ import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Eine Ja-/Nein-Frage beginnt meist mit dem finiten Verb, dann folgt das Subjekt: <Sv>Kommer du?</Sv>
-- Schwedisch verschiebt das vorhandene finite Verb; es gibt kein Gegenstück zu englischem *do*.
-- Beginnt eine direkte Frage mit einem Nicht-Subjekt-Fragewort, folgt dasselbe Verb-Subjekt-Muster.
+- Eine Ja-/Nein-Frage beginnt meist mit dem finiten Verb, gefolgt vom Subjekt: <Sv>Kommer du?</Sv>
+- Das Schwedische verschiebt das vorhandene finite Verb; es gibt keine
+  Entsprechung zu englischem *do*.
+- Beginnt eine direkte Frage mit einem Fragewort, das nicht Subjekt ist, steht
+  dieser Ausdruck zuerst, und danach folgt dasselbe Verb-Subjekt-Muster.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Bei einer Ja-/Nein-Frage kann die Antwort zustimmen oder verneinen. Stelle das finite Verb vor das Subjekt: <Sv>Du bor här.</Sv> → <Sv>Bor du här?</Sv>; <Sv>Hon har köpt biljetten.</Sv> → <Sv>Har hon köpt biljetten?</Sv>
+Verwende eine Ja-/Nein-Frage, wenn die Antwort Bestätigung oder Verneinung
+sein kann. Das finite Verb rückt vor das Subjekt; die Intonation unterstützt
+die Frage, aber die Wortstellung markiert sie bereits.
+
+## Jetzt anwenden
+
+Mache aus einer neutralen Aussage eine Ja-/Nein-Frage, indem du das finite
+Verb an den Satzanfang stellst:
+
+- <Sv>Du **bor** här.</Sv> → <Sv>**Bor** du här?</Sv>
+- <Sv>Hon **har** köpt biljetten.</Sv> → <Sv>**Har** hon köpt biljetten?</Sv>
+- <Sv>Ni **kan** komma imorgon.</Sv> → <Sv>**Kan** ni komma imorgon?</Sv>
 
 ## Kernregel
 
-<SentenceSchema caption="Aussage und Ja-/Nein-Frage" rowHeader="Satz" columns={['Erstes Feld', 'Finites Verb', 'Subjekt', 'Satzadverbial', 'Nicht-finites Verb', 'Rest']} rows={[{ label: 'Aussage', cells: ['Du', 'kommer', '', '', '', 'imorgon.'] }, { label: 'Ja/Nein-Frage', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] }, { label: 'Verneinte Frage', cells: ['', 'Kommer', 'du', 'inte', '', 'imorgon?'] }, { label: 'Zwei Verben', cells: ['', 'Har', 'hon', '', 'köpt', 'biljetten?'] }]} />
+<SentenceSchema
+	caption="Aussage und Ja-/Nein-Frage"
+	rowHeader="Satz"
+	columns={['Erstes Feld', 'Finites Verb', 'Subjekt', 'Satzadverbial', 'Nicht-finites Verb', 'Rest']}
+	rows={[
+		{ label: 'Aussage', cells: ['Du', 'kommer', '', '', '', 'imorgon.'] },
+		{ label: 'Ja/Nein-Frage', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] },
+		{ label: 'Verneinte Frage', cells: ['', 'Kommer', 'du', 'inte', '', 'imorgon?'] },
+		{ label: 'Zwei Verben', cells: ['', 'Har', 'hon', '', 'köpt', 'biljetten?'] },
+	]}
+/>
 
-Nur das finite Verb verschiebt sich. [Die Stellung von *inte*](../../sentence-structure/inte-placement/) behandelt <Sv>inte</Sv>.
+Nur das finite Verb verschiebt sich. Ein Supinum oder Infinitiv bleibt weiter
+hinten im Satz stehen. Zur Stellung und zum pragmatischen Ton von <Sv>inte</Sv>
+siehe [Stellung von *inte*](../../sentence-structure/inte-placement/).
 
 ## Das gemeinsame Muster direkter Fragen
 
-<SentenceSchema caption="Zwei direkte Frageanfänge" rowHeader="Fragetyp" columns={['Fragephrase', 'Finites Verb', 'Subjekt', 'Rest']} rows={[{ label: 'Ja/Nein', cells: ['', 'Bor', 'du', 'här?'] }, { label: 'Fragewort', cells: ['Var', 'bor', 'du', ''] }]} />
+Eine direkte Frage kann auf zwei Arten beginnen:
 
-[Fragewörter](../question-words/) behandelt Wortwahl, Kongruenz, Subjektfragen und indirekte Fragen. Eine indirekte Ja-/Nein-Frage nutzt <Sv>om</Sv> und Nebensatzwortstellung:
+<SentenceSchema
+	caption="Zwei direkte Frageanfänge"
+	rowHeader="Fragetyp"
+	columns={['Fragephrase', 'Finites Verb', 'Subjekt', 'Rest']}
+	rows={[
+		{ label: 'Ja/Nein', cells: ['', 'Bor', 'du', 'här?'] },
+		{ label: 'Fragewort', cells: ['Var', 'bor', 'du', ''] },
+	]}
+/>
 
-<SentenceSchema caption="Direkte und indirekte Ja-/Nein-Fragen" rowHeader="Frage" columns={['Einleitung', 'Finites Verb (direkt)', 'Subjekt', 'Satzadverbial', 'Verb (indirekt)', 'Rest']} rows={[{ label: 'Direkt', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] }, { label: 'Indirekt', cells: ['om', '', 'du', '', 'kommer', 'imorgon'] }, { label: 'Indirekt, verneint', cells: ['om', '', 'du', 'inte', 'kommer', 'imorgon'] }]} />
+Die zweite Zeile zeigt nur das gemeinsame Muster. [Fragewörter](../question-words/)
+behandelt, welches Wort zu wählen ist, die Kongruenz mit Substantiven,
+Subjektfragen und die abweichende Wortstellung in indirekten Fragen.
 
-<Sv>Kommer du imorgon?</Sv> → <Sv>Jag undrar om du kommer imorgon.</Sv> Kurze Antworten sind oft <Sv>Ja, det gör jag.</Sv> oder <Sv>Nej, det har hon inte.</Sv>
+## Indirekte Ja-/Nein-Fragen mit *om*
+
+Wird eine Ja-/Nein-Frage Teil eines größeren Satzes, leite sie mit <Sv>om</Sv>
+("ob") ein und verwende die Nebensatz-Wortstellung:
+
+<SentenceSchema
+	caption="Direkte und indirekte Ja-/Nein-Fragen"
+	rowHeader="Frage"
+	columns={['Einleitung', 'Finites Verb (direkt)', 'Subjekt', 'Satzadverbial', 'Verb (indirekt)', 'Rest']}
+	rows={[
+		{ label: 'Direkt', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] },
+		{ label: 'Indirekt', cells: ['om', '', 'du', '', 'kommer', 'imorgon'] },
+		{ label: 'Indirekt, verneint', cells: ['om', '', 'du', 'inte', 'kommer', 'imorgon'] },
+	]}
+/>
+
+- <Sv>Kommer du imorgon?</Sv>
+- <Sv>Jag undrar om du kommer imorgon.</Sv>
+- <Sv>Jag vet inte om du kommer imorgon.</Sv>
+
+Die vollständige Nebensatz-Struktur findest du unter
+[Nebensätze](../../sentence-structure/subordinate-clauses/).
+
+## Kurze Antworten
+
+Im Schwedischen antwortet man oft mit <Sv>ja</Sv> oder <Sv>nej</Sv> plus einem
+knappen Nebensatz:
+
+- <Sv>Kommer du imorgon? — Ja, det gör jag.</Sv>
+- <Sv>Har hon ringt? — Nej, det har hon inte.</Sv>
+
+Im Alltagsgespräch ist auch ein blankes <Sv>ja</Sv> oder <Sv>nej</Sv> möglich,
+wenn die Antwort eindeutig ist.
 
 ## Direkter Vergleich
 
-<LanguageComparison title="Ja-/Nein-Frage im Präsens"><p slot="de">Wohnst du hier?</p><p slot="en">Do you live here?</p><p slot="sv">Bor du här?</p></LanguageComparison>
+<LanguageComparison title="Ja-/Nein-Frage im Präsens">
+	<p slot="de">Wohnst du hier?</p>
+	<p slot="en">Do you live here?</p>
+	<p slot="sv">Bor du här?</p>
+</LanguageComparison>
 
-<MistakeBox incorrect="Gör du bor här?" correct="Bor du här?" lang="sv">Übernimm nicht englisches *do*-support. Verschiebe das finite Verb, das schon in der Aussage steht.</MistakeBox>
+Deutsch und Schwedisch verschieben das lexikalische finite Verb. Englisch
+fügt im einfachen Präsens und Präteritum meist *do* hinzu, sofern nicht schon
+ein Hilfsverb oder *be* vorhanden ist.
 
-<MemoryTip>Lass das finite Verb zuerst fragen: **finites Verb → Subjekt → Rest**.</MemoryTip>
+<MistakeBox
+	incorrect="Gör du bor här?"
+	correct="Bor du här?"
+	lang="sv"
+>
+Übernimm nicht das englische *do*-Support ins Schwedische. Verschiebe das
+finite Verb, das die Aussage bereits enthält.
+</MistakeBox>
 
-<QuickCheck items={[{ prompt: 'Bilde eine Frage: Du arbetar idag.', answer: 'Arbetar du idag?' }, { prompt: 'Bilde eine Frage: Hon har köpt biljetten.', answer: 'Har hon köpt biljetten?' }, { prompt: 'Korrigiere: Gör ni kommer imorgon?', answer: 'Kommer ni imorgon?' }]} />
+<MemoryTip>
+Lass bei einer Ja-/Nein-Frage das finite Verb zuerst fragen: **finites Verb →
+Subjekt → Rest**.
+</MemoryTip>
 
-<RelatedTopics topics={[{ href: '../question-words/', label: 'Fragewörter' }, { href: '../../sentence-structure/subordinate-clauses/', label: 'Nebensätze' }, { href: '../../sentence-structure/v2/', label: 'V2-Regel' }, { href: '../../sentence-structure/inte-placement/', label: 'Stellung von inte' }]} />
+<QuickCheck
+	items={[
+		{
+			prompt: 'Mache aus der Aussage eine Frage: Du arbetar idag.',
+			answer: 'Arbetar du idag?',
+		},
+		{
+			prompt: 'Mache aus der Aussage eine Frage: Hon har köpt biljetten.',
+			answer: 'Har hon köpt biljetten?',
+		},
+		{
+			prompt: 'Korrigiere die Frage im englischen Stil: Gör ni kommer imorgon?',
+			answer: 'Kommer ni imorgon?',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../question-words/', label: 'Fragewörter' },
+		{ href: '../../sentence-structure/subordinate-clauses/', label: 'Nebensätze' },
+		{ href: '../../sentence-structure/v2/', label: 'V2-Regel' },
+		{ href: '../../sentence-structure/inte-placement/', label: 'Stellung von inte' },
+	]}
+/>

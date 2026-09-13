@@ -1,0 +1,226 @@
+---
+title: Adverb
+description: Bilda adverb av adjektiv med -t, lär dig de oregelbundna och håll isär paren hem/hemma och ut/ute.
+metaLanguage: sv
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - adjectives
+  - important
+related:
+  - /learn/swedish/grammar/adjectives-adverbs/agreement/
+  - /learn/swedish/grammar/adjectives-adverbs/adjective-comparison/
+  - /learn/swedish/grammar/sentence-structure/inte-placement/
+  - /learn/swedish/grammar/questions-negation/question-words/
+---
+
+import { getEntry } from 'astro:content';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RuleBox from '~/components/RuleBox.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => {
+	throw new Error('Missing adjective entry: sv-snabb');
+})();
+
+<KeyTakeaway>
+- Många sätt-adverb använder adjektivets <Sv>-t</Sv>-form, samma form som du
+  använder med ett ett-ord: <Sv>{snabb.morphology.ett}</Sv>.
+- Två grupper går inte att härleda utan måste läras utantill:
+  <Sv>gärna — hellre — helst</Sv> och riktnings-/lägesparen som
+  <Sv>hem / hemma</Sv>.
+- Många satsadverb följer samma placeringsmönster som <Sv>inte</Sv>;
+  använd den egna ordföljdssidan när det handlar om position.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Många svenska sätt-adverb är helt enkelt adjektivets ett-form. Det gör den
+vanligaste bildningen enkel – svårare är de självständiga adverben,
+satsadverbens placering och paren som skiljer plats från riktning.
+
+## Adverb av adjektiv
+
+<RuleBox title="Regel">
+	Många sätt-adverb använder adjektivets <Sv>-t</Sv>-form: samma form som
+	du redan använder med ett ett-ord.
+</RuleBox>
+
+| Adjektiv | Adverb | Exempel |
+| --- | --- | --- |
+| <Sv>{snabb.morphology.en}</Sv> | <Sv>{snabb.morphology.ett}</Sv> | <Sv>Han springer snabbt.</Sv> |
+| <Sv>tydlig</Sv> | <Sv>tydligt</Sv> | <Sv>Hon talar tydligt.</Sv> |
+| <Sv>vacker</Sv> | <Sv>vackert</Sv> | <Sv>Hon sjunger vackert.</Sv> |
+| <Sv>försiktig</Sv> | <Sv>försiktigt</Sv> | <Sv>Kör försiktigt!</Sv> |
+
+När ett adverb återanvänder ett-formen gäller samma stavningsmönster. Se
+[adjektivkongruens](../agreement/#stavningsmönster).
+
+Engelskan markerar ofta skillnaden med *-ly*, medan tyskan ofta använder
+samma synliga form för adjektiv och adverb. Svenskan använder oftast en
+ändelse, men det är en du redan känner från ett-ord.
+
+## Oregelbundna och självständiga adverb
+
+Vissa adverb bildas inte av ett adjektiv eller avviker från den väntade
+formen:
+
+| Adverb | Betydelse | Anmärkning |
+| --- | --- | --- |
+| <Sv>bra</Sv> | på ett bra sätt | även adjektivet bra: <Sv>Han sjunger bra.</Sv> |
+| <Sv>väl</Sv> | på ett gott sätt | snävare än <Sv>bra</Sv>: <Sv>väl gjort</Sv> |
+| <Sv>illa</Sv> | på ett dåligt sätt | <Sv>Han mår illa.</Sv> |
+| <Sv>gärna</Sv> | villigt, med glädje | inget adjektiv bakom sig |
+| <Sv>mycket</Sv> | väldigt | med adjektiv: <Sv>mycket bra</Sv> |
+
+<Sv>Gärna</Sv> är värt att lära in som en hel uppsättning, eftersom dess
+komparation är oregelbunden och extremt vanlig i artigt tal:
+
+<p lang="sv">gärna → hellre → helst</p>
+
+- <Sv>Jag vill gärna komma.</Sv> — *en artig, mjukad önskan*
+- <Sv>Jag vill hellre stanna hemma.</Sv> — *ett milt föredragande*
+- <Sv>Jag vill helst åka på fredag.</Sv> — *den starkaste preferensen*
+
+## Komparation
+
+Adverb komparerar som adjektiv:
+
+<p lang="sv">{snabb.morphology.ett} → {snabb.comparison?.comparative} → {snabb.comparison?.superlative}</p>
+
+De oregelbundna följer sina egna kedjor:
+
+| Adverb | Komparativ | Superlativ |
+| --- | --- | --- |
+| <Sv>bra / väl</Sv> | <Sv>bättre</Sv> | <Sv>bäst</Sv> |
+| <Sv>gärna</Sv> | <Sv>hellre</Sv> | <Sv>helst</Sv> |
+| <Sv>illa</Sv> | <Sv>värre</Sv> | <Sv>värst</Sv> |
+
+<Sv>Sämre</Sv> och <Sv>värre</Sv> ligger nära varandra i betydelse, men
+<Sv>sämre</Sv> lutar mot lägre kvalitet och <Sv>värre</Sv> mot större
+allvar. Gränsen är inte skarp, så lär dig dem i fraser. Se
+[adjektivets komparation](../adjective-comparison/).
+
+## Plats- och riktningspar
+
+Svenskan håller isär läge och riktning med två separata ord. Tyskan och
+engelskan använder inte exakt denna svenska uppdelning, så paren måste läras
+som par:
+
+| Riktning | Läge | Exempel |
+| --- | --- | --- |
+| <Sv>hem</Sv> | <Sv>hemma</Sv> | <Sv>Jag går hem.</Sv> · <Sv>Jag är hemma.</Sv> |
+| <Sv>ut</Sv> | <Sv>ute</Sv> | <Sv>Vi går ut.</Sv> · <Sv>Vi är ute.</Sv> |
+| <Sv>in</Sv> | <Sv>inne</Sv> | <Sv>Kom in!</Sv> · <Sv>Hon är inne.</Sv> |
+| <Sv>upp</Sv> | <Sv>uppe</Sv> | <Sv>Han går upp.</Sv> · <Sv>Han är uppe.</Sv> |
+| <Sv>ner</Sv> | <Sv>nere</Sv> | <Sv>Gå ner!</Sv> · <Sv>Hon är nere.</Sv> |
+| <Sv>bort</Sv> | <Sv>borta</Sv> | <Sv>Han reste bort.</Sv> · <Sv>Han är borta.</Sv> |
+| <Sv>dit</Sv> | <Sv>där</Sv> | <Sv>Vi åker dit.</Sv> · <Sv>Vi är där.</Sv> |
+
+Samma uppdelning går igen i frågeorden <Sv>vart</Sv> och <Sv>var</Sv>. Se
+[frågeord](../../questions-negation/question-words/).
+
+## Var satsadverb står
+
+Många satsadverb, bland annat <Sv>alltid</Sv>, <Sv>aldrig</Sv> och
+<Sv>ofta</Sv>, följer samma placeringsmönster som <Sv>inte</Sv>: efter det
+finita verbet i en huvudsats, före det i en bisats. Vissa adverb beter sig
+snävare, så använd ordföljdssidan när positionen är huvudfrågan.
+
+- <Sv>Hon kommer alltid sent.</Sv>
+- <Sv>…eftersom hon alltid kommer sent.</Sv>
+
+Se [Placering av *inte*](../../sentence-structure/inte-placement/).
+
+## De små attitydorden
+
+<Sv>Ju</Sv>, <Sv>nog</Sv>, <Sv>väl</Sv> och <Sv>visst</Sv> tillför attityd
+snarare än information, ungefär som de tyska orden
+<span lang="de">ja</span>, <span lang="de">wohl</span> och
+<span lang="de">doch</span>:
+
+- <Sv>Det är ju sant.</Sv> — *något vi båda redan vet*
+- <Sv>Han kommer nog.</Sv> — *jag räknar med att han kommer*
+- <Sv>Du har väl gjort det?</Sv> — söker medhåll
+
+De motstår en ren översättning och lärs bäst in genom sammanhang.
+Tysktalande har en fördel här, eftersom mekanismen är bekant för dem.
+
+## Direkt jämförelse
+
+<LanguageComparison title="Adverb av ett adjektiv">
+	<p slot="de">Er läuft schnell.</p>
+	<p slot="en">He runs quickly.</p>
+	<p slot="sv">Han springer snabbt.</p>
+</LanguageComparison>
+
+<MistakeBox title="Vanliga misstag">
+	- ❌ <Sv>Han springer snabb.</Sv>
+	  ✅ <Sv>Han springer snabbt.</Sv>
+	- ❌ <Sv>Jag är hem.</Sv>
+	  ✅ <Sv>Jag är hemma.</Sv>
+	- ❌ <Sv>Jag går hemma.</Sv>
+	  ✅ <Sv>Jag går hem.</Sv>
+	- ❌ <Sv>Jag vill mer gärna stanna.</Sv>
+	  ✅ <Sv>Jag vill hellre stanna.</Sv>
+	- ❌ <Sv>…eftersom hon kommer alltid sent.</Sv>
+	  ✅ <Sv>…eftersom hon alltid kommer sent.</Sv>
+</MistakeBox>
+
+<MemoryTip>
+Utgå från ett-formen för vanliga sätt-adverb: om du kan säga
+<Sv><strong>ett snabbt tåg</strong></Sv>, kan du säga
+<Sv><strong>han springer snabbt</strong></Sv>. Lägg sedan till de två
+grupper som inte går att härleda:
+<Sv><strong>gärna — hellre — helst</strong></Sv> och
+<Sv><strong>hem / hemma</strong></Sv>.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Gör tydlig till ett adverb och fyll i: Hon talar ___.',
+			answer: 'Hon talar tydligt.',
+		},
+		{
+			prompt: 'hem eller hemma? Jag är ___. · Jag går ___.',
+			answer: 'Jag är hemma. · Jag går hem.',
+		},
+		{
+			prompt: 'Komplettera raden: gärna → ___ → ___.',
+			answer: 'hellre, helst',
+		},
+		{
+			prompt: 'Rätta satsen: …eftersom hon kommer alltid sent.',
+			answer: '…eftersom hon alltid kommer sent.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../agreement/', label: 'Adjektivkongruens' },
+		{ href: '../adjective-comparison/', label: 'Adjektivets komparation' },
+		{
+			href: '../../sentence-structure/inte-placement/',
+			label: 'Placering av inte',
+		},
+		{
+			href: '../../questions-negation/question-words/',
+			label: 'Frågeord',
+		},
+	]}
+/>

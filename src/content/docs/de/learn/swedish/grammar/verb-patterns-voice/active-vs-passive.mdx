@@ -1,0 +1,116 @@
+---
+title: Aktiv vs. Passiv
+description: Wähle aktives oder passives Schwedisch nach Informationsfokus, Relevanz des Akteurs und kommunikativem Zweck.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - B1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/swedish/grammar/verb-patterns-voice/passive/
+  - /learn/swedish/grammar/pronouns-roles/man-varandra-varsin/
+  - /learn/swedish/common-mistakes/from-german/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Wähle Aktiv, wenn der Akteur bekannt und relevant ist; wähle Passiv, wenn das
+  Geschehen, das Ergebnis oder die betroffene Person wichtiger ist.
+- Lass den Akteur weg, wenn er unbekannt, offensichtlich, allgemein oder
+  bewusst in den Hintergrund gestellt ist.
+- Alltagsschwedisch verwendet oft aktives <Sv>man</Sv>, wo Deutsch oder
+  Englisch ein unpersönliches Passiv nutzen.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Diese Seite behandelt den kommunikativen Fokus. Für Bildung und Erkennen des
+s-Passivs, <Sv>bli</Sv> + Partizip und <Sv>vara</Sv> + Partizip siehe
+[Passiv](../passive/).
+
+## Jetzt anwenden
+
+| Was du hervorheben willst | Sinnvolle Wahl | Beispiel |
+| --- | --- | --- |
+| der Akteur und was er tut | Aktiv | <Sv>Anna öppnade dörren.</Sv> |
+| das Geschehen oder die betroffene Person | Passiv | <Sv>Dörren öppnades.</Sv> |
+| Menschen im Allgemeinen in der Alltagssprache | Aktiv mit <Sv>man</Sv> | <Sv>Man betalar i kassan.</Sv> |
+| der Akteur trotz passivem Fokus | Passiv + <Sv>av</Sv> | <Sv>Boken skrevs av Selma Lagerlöf.</Sv> |
+
+## Kernentscheidung
+
+Das Aktiv gibt dem Akteur die Subjektrolle. Das Passiv rückt die betroffene
+Person in den Vordergrund oder stellt das Geschehen dar, ohne einen Akteur zu
+nennen. Der passive Akteur ist optional und wird bei Bedarf mit <Sv>av</Sv>
+eingeführt.
+
+Das Weglassen des Akteurs ist natürlich, wenn er:
+
+- unbekannt ist: <Sv>Min cykel blev stulen.</Sv>
+- aus der Situation offensichtlich ist: <Sv>Ansökan behandlas nu.</Sv>
+- allgemein ist: <Sv>Här säljs biljetter.</Sv>
+- weniger wichtig ist als das Ergebnis: <Sv>Vägen är stängd.</Sv>
+
+Ist der Akteur die neue oder wichtige Information, ist ein aktiver Satz oft
+klarer: <Sv>Kommunen stängde vägen.</Sv>
+
+## Generisches <Sv>man</Sv>
+
+<Sv>Man</Sv> hält den Satz aktiv und lässt den Akteur zugleich allgemein:
+<Sv>I Sverige dricker man mycket kaffe.</Sv> Es ist besonders nützlich in
+gesprochener, persönlicher oder instruktiver Sprache. Ein Passiv kann
+kompakter oder institutioneller klingen: <Sv>Här serveras kaffe.</Sv>
+
+## Direkter Vergleich
+
+<LanguageComparison title="Allgemeine Anweisung">
+	<p slot="de">Hier bezahlt man an der Kasse.</p>
+	<p slot="en">Payment is made at the checkout.</p>
+	<p slot="sv">Man betalar i kassan.</p>
+</LanguageComparison>
+
+<MistakeBox title="Typische Fehler">
+	- Behalte ein Passiv nicht einfach bei, nur weil die deutsche oder englische
+	  Vorlage eins hat. Frage, ob das Schwedische den Akteur, das Geschehen oder
+	  das Ergebnis in den Vordergrund stellen soll.
+	- Füge keine <Sv>av</Sv>-Phrase hinzu, wenn der Akteur offensichtlich oder
+	  unwichtig ist.
+	- Nutze [Passiv](../passive/) für die Formbildung; diese Seite ersetzt nicht
+	  dessen Bildungstabellen.
+</MistakeBox>
+
+<MemoryTip>
+Wähle das Subjekt nach Fokus: Steht der Akteur zuerst, ist es Aktiv; steht das
+Geschehen oder die betroffene Sache zuerst, ist es oft Passiv. Für Menschen im
+Allgemeinen prüfe aktives <Sv>man</Sv>.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{ prompt: 'Rücke den unbekannten Dieb in den Hintergrund: Jemand hat mein Fahrrad gestohlen.', answer: 'Min cykel blev stulen.' },
+		{ prompt: 'Verwende das generische man: In Schweden wird viel Kaffee getrunken.', answer: 'I Sverige dricker man mycket kaffe.' },
+		{ prompt: 'Stelle den bekannten Akteur in den Mittelpunkt: Vägen stängdes av kommunen.', answer: 'Kommunen stängde vägen.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../passive/', label: 'Passiv' },
+		{ href: '../../pronouns-roles/man-varandra-varsin/', label: 'man, varandra und var sin' },
+		{ href: '../../../common-mistakes/from-german/', label: 'Fehler vom Deutschen ins Schwedische' },
+	]}
+/>

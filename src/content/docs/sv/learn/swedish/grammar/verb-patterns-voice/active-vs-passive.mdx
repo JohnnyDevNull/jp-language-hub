@@ -1,0 +1,113 @@
+---
+title: Aktiv vs. passiv
+description: Välj aktiv eller passiv svenska utifrån informationsfokus, aktörens relevans och kommunikativt syfte.
+metaLanguage: sv
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - B1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/swedish/grammar/verb-patterns-voice/passive/
+  - /learn/swedish/grammar/pronouns-roles/man-varandra-varsin/
+  - /learn/swedish/common-mistakes/from-german/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Välj aktiv när aktören är känd och relevant; välj passiv när händelsen,
+  resultatet eller den påverkade parten är viktigare.
+- Utelämna aktören när den är okänd, uppenbar, allmän eller medvetet nedtonad.
+- Vardagssvenska använder ofta aktivt <Sv>man</Sv> där tyska eller engelska
+  använder ett opersonligt passiv.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Den här sidan handlar om kommunikativt fokus. För bildning och igenkänning av
+s-passiv, <Sv>bli</Sv> + particip och <Sv>vara</Sv> + particip, se
+[Passiv](../passive/).
+
+## Använd detta nu
+
+| Vad du vill lyfta fram | Lämpligt val | Exempel |
+| --- | --- | --- |
+| aktören och vad hen gör | aktiv | <Sv>Anna öppnade dörren.</Sv> |
+| händelsen eller den påverkade parten | passiv | <Sv>Dörren öppnades.</Sv> |
+| människor i allmänhet i vardagligt tal | aktiv med <Sv>man</Sv> | <Sv>Man betalar i kassan.</Sv> |
+| aktören trots passivt fokus | passiv + <Sv>av</Sv> | <Sv>Boken skrevs av Selma Lagerlöf.</Sv> |
+
+## Kärnval
+
+Aktiv ger aktören subjektsrollen. Passiv lyfter fram den påverkade parten
+eller presenterar händelsen utan att nämna någon aktör. Den passiva aktören är
+valfri och införs med <Sv>av</Sv> när det är användbart.
+
+Att utelämna aktören är naturligt när den är:
+
+- okänd: <Sv>Min cykel blev stulen.</Sv>
+- uppenbar av situationen: <Sv>Ansökan behandlas nu.</Sv>
+- allmän: <Sv>Här säljs biljetter.</Sv>
+- mindre viktig än resultatet: <Sv>Vägen är stängd.</Sv>
+
+Om aktören är den nya eller viktiga informationen är en aktiv sats ofta
+tydligare: <Sv>Kommunen stängde vägen.</Sv>
+
+## Generiskt <Sv>man</Sv>
+
+<Sv>Man</Sv> håller satsen aktiv men lämnar aktören allmän:
+<Sv>I Sverige dricker man mycket kaffe.</Sv> Det är särskilt användbart i
+talad, personlig eller instruerande text. Ett passiv kan låta mer koncist
+eller institutionellt: <Sv>Här serveras kaffe.</Sv>
+
+## Direkt jämförelse
+
+<LanguageComparison title="Allmän instruktion">
+	<p slot="de">Hier bezahlt man an der Kasse.</p>
+	<p slot="en">Payment is made at the checkout.</p>
+	<p slot="sv">Man betalar i kassan.</p>
+</LanguageComparison>
+
+<MistakeBox title="Vanliga misstag">
+	- Behåll inte ett passiv bara för att den tyska eller engelska källan har
+	  ett. Fråga om svenskan bör lyfta fram aktören, händelsen eller resultatet.
+	- Lägg inte till en <Sv>av</Sv>-fras när aktören är uppenbar eller
+	  ovidkommande.
+	- Använd [Passiv](../passive/) för formval; den här sidan ersätter inte dess
+	  bildningstabeller.
+</MistakeBox>
+
+<MemoryTip>
+Välj subjekt utifrån fokus: aktör först betyder aktiv; händelse eller
+påverkad sak först betyder ofta passiv. För människor i allmänhet, testa
+aktivt <Sv>man</Sv>.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{ prompt: 'Fyll i passivformen: Min cykel ___ stulen.', answer: 'Min cykel blev stulen.' },
+		{ prompt: 'Fyll i med generiskt man: I Sverige ___ man mycket kaffe.', answer: 'I Sverige dricker man mycket kaffe.' },
+		{ prompt: 'Gör om till aktiv med känd aktör: Vägen stängdes av kommunen.', answer: 'Kommunen stängde vägen.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../passive/', label: 'Passiv' },
+		{ href: '../../pronouns-roles/man-varandra-varsin/', label: 'man, varandra och var sin' },
+		{ href: '../../../common-mistakes/from-german/', label: 'Fel från tyska till svenska' },
+	]}
+/>

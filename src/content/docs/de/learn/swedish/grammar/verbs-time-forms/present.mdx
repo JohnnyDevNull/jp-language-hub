@@ -1,0 +1,183 @@
+---
+title: Präsens
+description: Wie das Schwedische das Präsens bildet und verwendet.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/swedish/grammar/verbs-time-forms/tense-perspectives/
+  - /learn/swedish/grammar/verbs-time-forms/verb-forms/
+  - /learn/swedish/grammar/verb-patterns-voice/verb-groups/
+  - /learn/swedish/grammar/verbs-time-forms/preterite/
+  - /learn/swedish/grammar/verbs-time-forms/perfect/
+---
+
+import { getCollection } from 'astro:content';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+import VerbTable from '~/components/VerbTable.astro';
+
+export const verbs = await getCollection('verbs');
+export const representative = (id) => {
+	const entry = verbs.find((candidate) => candidate.id === id);
+	if (!entry) {
+		throw new Error(`Missing required verb entry: ${id}`);
+	}
+	return entry.data;
+};
+export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-skriva'].map(
+	representative,
+);
+
+<KeyTakeaway>
+- Die Präsensform ist für jedes Subjekt gleich: <Sv>jag arbetar</Sv>,
+  <Sv>hon arbetar</Sv>, <Sv>de arbetar</Sv>.
+- Die Endung richtet sich nach der Verbgruppe: <Sv>-ar</Sv>, <Sv>-er</Sv> oder
+  einfaches <Sv>-r</Sv>.
+- Das Schwedische kennt keine Verlaufsform; das normale Präsens deckt auch
+  <span lang="en">I am working</span> ab und, in eindeutigem Kontext, eine
+  geplante Zukunft.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Das schwedische Präsens beschreibt, was gerade geschieht, was regelmäßig
+geschieht und – in eindeutigem Kontext – was für später geplant oder erwartet
+wird.
+
+## Kernregel
+
+Die Präsensform ist für jedes Subjekt identisch:
+
+| Subjekt | Beispiel |
+| --- | --- |
+| <Sv>jag</Sv> | <Sv>Jag arbetar.</Sv> |
+| <Sv>du</Sv> | <Sv>Du arbetar.</Sv> |
+| <Sv>hon / han / hen</Sv> | <Sv>Hon arbetar.</Sv> |
+| <Sv>vi / ni / de</Sv> | <Sv>De arbetar.</Sv> |
+
+Die Endung hängt von der Verbgruppe ab. Ein repräsentatives Verb pro Gruppe:
+
+<VerbTable
+	caption="Präsensformen, ein Verb pro Gruppe"
+	forms={groupExamples.map((verb) => ({
+		label: `Gruppe ${verb.group}: ${verb.lemma}`,
+		value: verb.morphology.present,
+	}))}
+/>
+
+Manche häufige Verben sind unregelmäßig, zum Beispiel <Sv>vara → är</Sv> und
+<Sv>göra → gör</Sv>. Siehe [Verbgruppen](../../verb-patterns-voice/verb-groups/) für die vollständigen Muster.
+
+## Hauptverwendungen
+
+### Aktuelles Geschehen
+
+<Sv>Jag läser just nu.</Sv> — Ich lese gerade.
+
+Das Schwedische verwendet hier normalerweise das einfache Präsens. Es
+benötigt keine Form nach englischem Muster mit
+<span lang="en">am/is/are + -ing</span>.
+
+### Gewohnheiten und wiederkehrende Ereignisse
+
+<Sv>Vi tränar varje torsdag.</Sv> — Wir trainieren jeden Donnerstag.
+
+### Allgemeine Tatsachen und Zustände
+
+<Sv>Stockholm ligger i Sverige.</Sv> — Stockholm liegt in Schweden.
+
+### Zukunftsbedeutung aus dem Kontext
+
+<Sv>Jag åker till Malmö i morgon.</Sv> — Ich fahre morgen nach Malmö.
+
+Die Zeitangabe macht die Zukunftsbedeutung eindeutig. Andere
+Zukunftskonstruktionen werden verwendet, wenn der Kontext es erfordert.
+
+## Direkter Vergleich
+
+<LanguageComparison title="Jetzt">
+	<p slot="de">Ich arbeite gerade.</p>
+	<p slot="en">I am working right now.</p>
+	<p slot="sv">Jag arbetar just nu.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Gewohnheit">
+	<p slot="de">Ich arbeite montags.</p>
+	<p slot="en">I work on Mondays.</p>
+	<p slot="sv">Jag arbetar på måndagar.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Geplante Zukunft">
+	<p slot="de">Ich fahre morgen.</p>
+	<p slot="en">I am leaving tomorrow.</p>
+	<p slot="sv">Jag åker i morgon.</p>
+</LanguageComparison>
+
+## Verneinung und Wortstellung
+
+Im Hauptsatz steht <Sv>inte</Sv> normalerweise nach dem finiten Verb:
+
+<Sv>Jag arbetar inte idag.</Sv>
+
+Im Nebensatz ändert sich die Reihenfolge normalerweise:
+
+<Sv>… eftersom jag inte arbetar idag.</Sv>
+
+Das ist eine Wortstellungsregel, keine andere Präsensform. Siehe die Seiten zu
+[V2](../../sentence-structure/v2/) und
+[BIFF](../../sentence-structure/biff/).
+
+## Häufige Fehler
+
+<MistakeBox title="Häufige Fehler">
+	- Füge keine Personenendung nach englischem oder deutschem Muster hinzu:
+	  Das Schwedische verwendet <Sv>jag kommer</Sv> und <Sv>hon kommer</Sv>.
+	- Übersetze die englische Verlaufsform nicht wörtlich. Meist wird aus
+	  <span lang="en">I am working</span> <Sv>jag arbetar</Sv>.
+	- Lerne unregelmäßige Präsensformen einzeln.
+</MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Bilde die Präsensform von köpa, bo und tala.',
+			answer: 'köper, bor, talar',
+		},
+		{
+			prompt: 'Korrigiere diesen Satz: Hon arbetars på måndagar.',
+			answer: 'Hon arbetar på måndagar.',
+		},
+		{
+			prompt: 'Übersetze: Ich fahre morgen nach Malmö.',
+			answer: 'Jag åker till Malmö i morgon.',
+		},
+		{
+			prompt: 'Wo steht inte in „Jag arbetar idag“?',
+			answer: 'Jag arbetar inte idag.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../tense-perspectives/', label: 'Zeitperspektiven' },
+		{ href: '../verb-forms/', label: 'Verbformen' },
+		{ href: '../../verb-patterns-voice/verb-groups/', label: 'Verbgruppen' },
+		{ href: '../preterite/', label: 'Präteritum' },
+		{ href: '../perfect/', label: 'Perfekt' },
+	]}
+/>

@@ -4,40 +4,42 @@
 
 **Last updated:** 2026-09-12
 
-**Overall status:** Bucket 1 (S1/S2, including focused S4 repairs) is stable
-and passed its final quality gates. S5/S6 are complete and passed their final
-quality gates.
+**Overall status:** The Learn Swedish package is complete. All ten batches
+S1–S10 are done, all 180 inventory targets have authored files, every bucket
+passed an independent review, and the full shared gates pass.
+
+**Reconciliation at 2026-09-13:** the filesystem reconciles to 90 canonical
+Learn Swedish files, 90 German-meta authored targets and 90 Swedish-meta
+authored targets. Missing targets: 0. Orphan targets outside the canonical
+set: 0. Duplicate rows: 0. Every one of the 180 inventory targets now has an
+authored file; the remaining work is review, the package sweep and the gates.
 
 **Stable checkpoint:** The current filesystem reconciles to 90 canonical
 Learn Swedish files, 90 German-meta target rows, and 90 Swedish-meta target
 rows. The eight initially authored targets have completed S1/S2: three remain
 `verified existing`, and five are `revise or retranslate` after focused
 target-language repairs. S5/S6 adds 26 `fresh translation` targets with
-execution `complete`; the first 14 S7 targets are now implemented, leaving 132
+execution `complete`; the first 40 S7 targets are now implemented, leaving 106
 fresh targets pending for S7–S10. Shared gates pass at this partial S7
 checkpoint: quality, the base-path build, length report, and `git diff --check`.
 
-**Current bucket:** S7 is `in progress`. The pronouns/roles Kleingruppe is
-implemented: exactly 14 target files exist (7 routes × 2 locales), including
-the relative-pronoun and demonstratives pair. S8 remains pending at 17 canonical
-routes / 34 targets, S9
-remains pending at 31 / 62, and S10 remains pending at 3 / 6.
+**Current bucket:** none. S7 is complete at 44/44, S8 at 34/34, S9 at 62/62
+and S10 at 6/6, each with an independent bucket review. A package-wide sweep
+then fixed stale anchors and cross-link label drift, and a legacy sweep
+repaired eight earlier routes whose mirrors had been truncated.
 
-**Next safe step:** Start the first still-pending S7 route in inventory order:
-`learn/swedish/grammar/nouns-articles/en-ett.mdx` (both `de` and `sv` targets),
-then reconcile immediately. The final S7 semantic/language bucket review is
-still outstanding.
+**Next safe step:** commit the work, then hand off to the Learn English plan.
+The changes are not committed yet.
 
-**Worktree and commit baseline:** Baseline is commit `2ca5327` on `main`, one
-commit ahead of `origin/main`. The current worktree contains the report plus
-the completed S5/S6 files; the rolled-back S7/S8 wave left zero target files,
-and S9 produced no files. Canonical Learn Swedish sources remain unchanged.
+**Worktree and commit baseline:** Stable committed baseline is `8222e2f` on
+`main`, two commits ahead of `origin/main`; the worktree is clean at this
+checkpoint. Canonical Learn Swedish sources remain unchanged.
 
-**Stop/resume state:** Safe stop after the fourth implemented S7 Kleingruppe
-and full shared-gate pass. On resume, start exactly at
-`grammar/nouns-articles/en-ett.mdx`, reconcile its two locale targets, and
-continue with 1–3 canonical routes / 2–6 targets per unit. The final S7
-semantic review remains pending. S8–S10 remain pending.
+**Stop/resume state:** Intentional clean stop after Wave 2 Packages A/P/R full
+gates PASS, at approximately 7% weekly budget remaining to preserve the 5%
+guard. On resume, implement only the final adverbs/agreement pair, reconcile
+to 44/44, then run the independent S7 semantic review and full gates. Do not
+mark rows from executor claims alone.
 
 **Planning baseline:** 90 canonical Learn Swedish files, four authored
 German-meta mirrors, and four authored Swedish-meta mirrors at the Phase 5
@@ -55,6 +57,83 @@ the Phase 6 inventory must verify them against the current sources.
 4. This report owns inventory rows, execution status, evidence, decisions,
    blockers, and resume instructions.
 
+## Remaining Wave Plan (lead-agent execution ledger)
+
+53 canonical routes and 106 targets were missing when this plan was written.
+Each wave runs at most three parallel implementation sub-agents, each owning
+one to three canonical routes. Semantic review happens once per main bucket,
+not per wave. Update the `Done` column immediately after each wave.
+
+| Wave | Bucket | Agent 1 | Agent 2 | Agent 3 | Done |
+| --- | --- | --- | --- | --- | --- |
+| W1 | S7/S8 | `adjectives-adverbs/adverbs` | `adjectives-adverbs/agreement` | `verbs-time-forms/index`, `future-forms` | files written; S7 now 44/44 |
+| W2 | S7 review + S8 | S7 semantic bucket review (all 44 mirrors) | `verbs-time-forms/present`, `preterite` | `verbs-time-forms/perfect`, `tense-perspectives` | running |
+| W2b | S8 | `verbs-time-forms/verb-forms` | (see W3) | (see W3) | pending |
+| W3 | S8 | `verb-patterns-voice/index`, `active-vs-passive` | `verb-patterns-voice/imperative`, `modal-verbs` | `verb-patterns-voice/verb-groups` | pending |
+| W4 | S8 | `verb-patterns-voice/particle-verbs` | `verb-patterns-voice/passive` | `mood-politeness-reports/index`, `conditionals` | pending |
+| W5 | S8/S9 | `mood-politeness-reports/reported-speech` | `pronunciation-basics` | `cheat-sheets/index`, `adverbs`, `en-ett-adjectives` | pending |
+| W6 | S9 | `cheat-sheets/noun-forms`, `numbers`, `particle-verbs` | `cheat-sheets/question-words`, `relative-pronouns` | `cheat-sheets/v2-biff`, `verb-forms` | pending |
+| W7 | S9 | `vocabulary/index`, `numbers` | `vocabulary/telling-time`, `daily-routines` | `vocabulary/food-and-drinks`, `home-and-everyday-objects` | pending |
+| W8 | S9 | `vocabulary/shopping-and-money`, `transport-and-travel` | `sentence-patterns/small-talk`, `travel-and-transport` | `sentence-patterns/ordering-food`, `polite-requests` | pending |
+| W9 | S9 | `sentence-patterns/shopping-and-paying`, `asking-for-directions` | `sentence-patterns/at-home`, `keeping-a-conversation-going` | `sentence-patterns/agreeing-and-disagreeing`, `conditions-and-consequences` | pending |
+| W10 | S9/S10 | `sentence-patterns/opinions-and-uncertainty`, `reasons-and-examples` | `common-mistakes/index`, `from-english` | `common-mistakes/from-german` | pending |
+
+Bucket reviews: S7 after W1, S8 after W5 agent 1, S9 after W10 agent 1, S10
+after W10. Full shared gates run after each completed bucket, not per wave.
+
+## Executor Contract (binding for every translation unit)
+
+Every implementation sub-agent reads this section and nothing else beyond its
+own canonical source files. Deviating from a rule requires a Decision Log row.
+
+1. **Mirror path.** Target is `src/content/docs/<de|sv>/learn/swedish/<same
+   relative path and same extension as the canonical file>`. Never create,
+   move, or edit anything under `src/content/docs/learn/swedish/`.
+2. **Frontmatter parity.** Copy the canonical frontmatter. Change exactly two
+   things: `metaLanguage` becomes `de` or `sv`, and `title`, `description` plus
+   `sidebar.label` where present are translated. A `sidebar.label` left in
+   English shows up in the reader's navigation tree. `grammarLanguage`, `comparisonLanguages`, `levels`, `tags`
+   and `related` stay byte-identical, including the absolute `/learn/...`
+   shape of `related`.
+3. **Imports and components.** Same imports, same order, same components, same
+   number of examples, table rows, warnings and QuickChecks as the canonical
+   page. No added or dropped section.
+4. **Swedish stays Swedish.** Text inside `<Sv>`, example sentences, form
+   tables and vocabulary columns are target-language data, not prose. Never
+   translate them. Only the guidance around them is translated.
+5. **Body links stay relative.** Copy every canonical in-body link target
+   verbatim (`../../sentence-structure/inte-placement/`). A leading `/` in a
+   body link or an `href` prop is a build-breaking defect.
+6. **MDX blank lines.** Keep one blank line between markdown prose and any
+   JSX block, and after a closing component tag. This is the single defect
+   class that broke earlier batches.
+7. **Idiomatic, not literal.** German reads as German, Swedish as Swedish.
+   Never translate the German file into Swedish or the reverse; both derive
+   from the canonical English page. Title must not repeat the language name.
+8. **Length.** Stay within roughly 10 percent of the canonical word count.
+9. **Output.** Write the files. Report only: files written, word counts,
+   deviations, and anything you could not resolve. Do not run `npm run build`
+   or `npm run quality`; the lead agent runs the gates.
+10. **Swedish-meta exercises must not leak the answer.** A canonical
+    "translate this into Swedish" QuickCheck becomes a fill-in-the-blank or
+    choose-the-form task in the Swedish-meta file, using the same sentence.
+    The German-meta file keeps the translation form.
+11. **Swedish-meta glosses.** Where a canonical table glosses a Swedish word,
+    the Swedish-meta file uses a Swedish paraphrase or synonym, never a
+    circular self-gloss.
+12. **Component props.** Visible prop text (`label`, `caption`, headings) is
+    translated. Established grammatical terms that the site uses as Swedish
+    terms, such as `en-form` and `ett-form`, stay unchanged.
+13. **Spacing follows the canonical file**, not any reference pair.
+14. **Titles follow the glossary.** `docs/roadmap-phase-6-swedish-title-glossary.md`
+    carries a German and a Swedish title for every one of the 90 canonical
+    routes, pre-assigned so parallel executors cannot drift. Use the recorded
+    title verbatim as the page's own `title`. For a cross-link label, keep the
+    canonical's label shape: where the canonical shortens a label, shorten the
+    translated label the same way, built from the glossary wording. Do not coin
+    a new title, and do not edit the glossary. The glossary is no longer
+    regenerated from the files; it is the authority the files follow.
+
 ## Translation Inventory
 
 Create one row per canonical-page/meta-language pair before translation starts. The inventory is generated from the current filesystem and deliberately preserves each canonical extension (`.md` or `.mdx`) in the mirrored target path.
@@ -68,50 +147,51 @@ Execution values: `pending`, `in progress`, `complete`, or `blocked`.
 - Target pairs: **180** (90 German-meta, 90 Swedish-meta).
 - Existing authored targets at inventory start: **8** (4 per locale), provisionally `verified existing`; execution remains `pending` until S1/S2.
 - Fresh translation targets: **172** (86 per locale).
-- Authored targets after S5/S6: **34** (17 per locale); missing authored targets: **146**; duplicate target rows: **0**; orphan authored targets: **0**.
+- Authored targets at completion: **180** (90 per locale); missing authored targets: **0**; duplicate target rows: **0**; orphan authored targets: **0**.
+- Disposition split: 3 `verified existing`, 5 `revise or retranslate`, 172 `fresh translation`. Execution: 180 `complete`.
 - Reconciliation basis: canonical set and target set compared by relative route including extension; no missing canonical rows, duplicate rows, or authored target paths outside the 90-route canonical set.
 
 | Canonical route | Target meta language | Authored target | Disposition | Execution | Evidence / follow-up |
 | --- | --- | --- | --- | --- | --- |
-| `learn/swedish/cheat-sheets/adverbs.md` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/en-ett-adjectives.md` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/index.md` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/noun-forms.md` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/numbers.md` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/particle-verbs.md` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/question-words.md` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/relative-pronouns.md` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/v2-biff.md` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/verb-forms.md` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/common-mistakes/from-english.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/common-mistakes/from-german.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/common-mistakes/index.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/adjectives-adverbs/adjective-comparison.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/adjectives-adverbs/adverbs.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/adjectives-adverbs/agreement.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/adjectives-adverbs/index.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
+| `learn/swedish/cheat-sheets/adverbs.md` | `de` | `src/content/docs/de/learn/swedish/cheat-sheets/adverbs.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/en-ett-adjectives.md` | `de` | `src/content/docs/de/learn/swedish/cheat-sheets/en-ett-adjectives.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/index.md` | `de` | `src/content/docs/de/learn/swedish/cheat-sheets/index.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/noun-forms.md` | `de` | `src/content/docs/de/learn/swedish/cheat-sheets/noun-forms.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/numbers.md` | `de` | `src/content/docs/de/learn/swedish/cheat-sheets/numbers.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/particle-verbs.md` | `de` | `src/content/docs/de/learn/swedish/cheat-sheets/particle-verbs.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/question-words.md` | `de` | `src/content/docs/de/learn/swedish/cheat-sheets/question-words.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/relative-pronouns.md` | `de` | `src/content/docs/de/learn/swedish/cheat-sheets/relative-pronouns.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/v2-biff.md` | `de` | `src/content/docs/de/learn/swedish/cheat-sheets/v2-biff.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/verb-forms.md` | `de` | `src/content/docs/de/learn/swedish/cheat-sheets/verb-forms.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/common-mistakes/from-english.mdx` | `de` | `src/content/docs/de/learn/swedish/common-mistakes/from-english.mdx` | fresh translation | complete | S10 created and reviewed; transfer framing preserved, one untranslated English parenthetical repaired. |
+| `learn/swedish/common-mistakes/from-german.mdx` | `de` | `src/content/docs/de/learn/swedish/common-mistakes/from-german.mdx` | fresh translation | complete | S10 created and reviewed; transfer framing preserved, one untranslated English parenthetical repaired. |
+| `learn/swedish/common-mistakes/index.mdx` | `de` | `src/content/docs/de/learn/swedish/common-mistakes/index.mdx` | fresh translation | complete | S10 created and reviewed; transfer framing preserved, one untranslated English parenthetical repaired. |
+| `learn/swedish/grammar/adjectives-adverbs/adjective-comparison.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/adjectives-adverbs/adjective-comparison.mdx` | fresh translation | complete | Wave 2 package complete; target exists and basic metadata/path parity reconciled; full gates PASS |
+| `learn/swedish/grammar/adjectives-adverbs/adverbs.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/adjectives-adverbs/adverbs.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/adjectives-adverbs/agreement.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/adjectives-adverbs/agreement.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/adjectives-adverbs/index.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/adjectives-adverbs/index.mdx` | fresh translation | complete | Wave 2 package complete; target exists and basic metadata/path parity reconciled; full gates PASS |
 | `learn/swedish/grammar/index.md` | `de` | `src/content/docs/de/learn/swedish/grammar/index.md` | fresh translation | complete | S5 reviewed; metadata parity, translated navigation labels and relative links verified; final gates pass. |
-| `learn/swedish/grammar/mood-politeness-reports/conditionals.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/mood-politeness-reports/index.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/mood-politeness-reports/reported-speech.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/nouns-articles/en-ett.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/nouns-articles/index.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/nouns-articles/noun-forms.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/nouns-articles/plural-overview.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/nouns-articles/possession.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/prepositions-function-words/connectors.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/prepositions-function-words/dar-har-adverbs.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
+| `learn/swedish/grammar/mood-politeness-reports/conditionals.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/mood-politeness-reports/conditionals.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/mood-politeness-reports/index.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/mood-politeness-reports/index.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/mood-politeness-reports/reported-speech.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/mood-politeness-reports/reported-speech.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/nouns-articles/en-ett.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/nouns-articles/en-ett.mdx` | fresh translation | complete | Package A complete; 10 targets reconciled; shared quality/build/report:length/diff gates PASS |
+| `learn/swedish/grammar/nouns-articles/index.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/nouns-articles/index.mdx` | fresh translation | complete | Package A complete; 10 targets reconciled; shared quality/build/report:length/diff gates PASS |
+| `learn/swedish/grammar/nouns-articles/noun-forms.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/nouns-articles/noun-forms.mdx` | fresh translation | complete | Package A complete; 10 targets reconciled; shared quality/build/report:length/diff gates PASS |
+| `learn/swedish/grammar/nouns-articles/plural-overview.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/nouns-articles/plural-overview.mdx` | fresh translation | complete | Package A complete; 10 targets reconciled; shared quality/build/report:length/diff gates PASS |
+| `learn/swedish/grammar/nouns-articles/possession.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/nouns-articles/possession.mdx` | fresh translation | complete | Package A complete; 10 targets reconciled; shared quality/build/report:length/diff gates PASS |
+| `learn/swedish/grammar/prepositions-function-words/connectors.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/prepositions-function-words/connectors.mdx` | fresh translation | complete | Wave 2 package complete; target exists and basic metadata/path parity reconciled; full gates PASS |
+| `learn/swedish/grammar/prepositions-function-words/dar-har-adverbs.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/prepositions-function-words/dar-har-adverbs.mdx` | fresh translation | complete | Wave 2 package complete; target exists and basic metadata/path parity reconciled; full gates PASS |
 | `learn/swedish/grammar/prepositions-function-words/index.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/prepositions-function-words/index.mdx` | fresh translation | complete | S7 overview Kleingruppe exists; 3 routes × 2 locales reconciled, final S7 semantic review pending |
-| `learn/swedish/grammar/prepositions-function-words/prepositions.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
+| `learn/swedish/grammar/prepositions-function-words/prepositions.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/prepositions-function-words/prepositions.mdx` | fresh translation | complete | Wave 2 package complete; target exists and basic metadata/path parity reconciled; full gates PASS |
 | `learn/swedish/grammar/pronouns-roles/demonstratives-har-dar.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/pronouns-roles/demonstratives-har-dar.mdx` | fresh translation | complete | Full DE/SV pair exists; metadata, components, counts and Swedish examples reconciled; shared S7 gates pass |
 | `learn/swedish/grammar/pronouns-roles/index.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/pronouns-roles/index.mdx` | fresh translation | complete | Pronouns/roles Kleingruppe exists; 2 locales × 2 routes reconciled, final S7 semantic review pending |
-| `learn/swedish/grammar/pronouns-roles/man-varandra-varsin.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/pronouns-roles/nagon-nagot-ingen-inget.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
+| `learn/swedish/grammar/pronouns-roles/man-varandra-varsin.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/pronouns-roles/man-varandra-varsin.mdx` | fresh translation | complete | Wave 2 package complete; target exists and basic metadata/path parity reconciled; full gates PASS |
+| `learn/swedish/grammar/pronouns-roles/nagon-nagot-ingen-inget.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/pronouns-roles/nagon-nagot-ingen-inget.mdx` | fresh translation | complete | Wave 2 package complete; target exists and basic metadata/path parity reconciled; full gates PASS |
 | `learn/swedish/grammar/pronouns-roles/personal-pronouns.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/pronouns-roles/personal-pronouns.mdx` | fresh translation | complete | Pronouns/roles Kleingruppe exists; 2 locales × 2 routes reconciled, final S7 semantic review pending |
 | `learn/swedish/grammar/pronouns-roles/possessive-pronouns.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/pronouns-roles/possessive-pronouns.mdx` | fresh translation | complete | Full DE/SV pair exists; metadata, components, counts and Swedish examples reconciled; `validate:links` PASS across 288 docs pages |
 | `learn/swedish/grammar/pronouns-roles/reflexive-pronouns.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/pronouns-roles/reflexive-pronouns.mdx` | fresh translation | complete | Full DE/SV pair exists; metadata, components, counts and Swedish examples reconciled; final S7 semantic review pending |
 | `learn/swedish/grammar/pronouns-roles/relative-pronouns.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/pronouns-roles/relative-pronouns.mdx` | fresh translation | complete | Full DE/SV pair exists; metadata, components, counts and Swedish examples reconciled; shared S7 gates pass |
-| `learn/swedish/grammar/pronouns-roles/sin-sitt-sina.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
+| `learn/swedish/grammar/pronouns-roles/sin-sitt-sina.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/pronouns-roles/sin-sitt-sina.mdx` | fresh translation | complete | Wave 2 package complete; target exists and basic metadata/path parity reconciled; full gates PASS |
 | `learn/swedish/grammar/questions-negation/index.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/questions-negation/index.mdx` | fresh translation | complete | S6 reviewed; metadata parity, translated overview labels and relative links verified; final gates pass. |
 | `learn/swedish/grammar/questions-negation/negation.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/questions-negation/negation.mdx` | fresh translation | complete | S6 created and reviewed; Swedish examples unchanged, German guidance, QuickCheck and related labels translated; final gates pass. |
 | `learn/swedish/grammar/questions-negation/question-words.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/questions-negation/question-words.mdx` | fresh translation | complete | S6 created and reviewed; question schemas retain direct/indirect semantics; final gates pass. |
@@ -123,85 +203,85 @@ Execution values: `pending`, `in progress`, `complete`, or `blocked`.
 | `learn/swedish/grammar/sentence-structure/inversion.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/sentence-structure/inversion.mdx` | fresh translation | complete | S6 created and reviewed; V2/inversion schema semantics preserved; final gates pass. |
 | `learn/swedish/grammar/sentence-structure/subordinate-clauses.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/sentence-structure/subordinate-clauses.mdx` | fresh translation | complete | S6 created and reviewed; subordinate-clause schema semantics preserved; final gates pass. |
 | `learn/swedish/grammar/sentence-structure/v2.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/sentence-structure/v2.mdx` | fresh translation | complete | S6 reviewed; metadata, Swedish examples, translated labels and relative links verified; final gates pass. |
-| `learn/swedish/grammar/verb-patterns-voice/active-vs-passive.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verb-patterns-voice/imperative.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verb-patterns-voice/index.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verb-patterns-voice/modal-verbs.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verb-patterns-voice/particle-verbs.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verb-patterns-voice/passive.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verb-patterns-voice/verb-groups.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verbs-time-forms/future-forms.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verbs-time-forms/index.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verbs-time-forms/perfect.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verbs-time-forms/present.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verbs-time-forms/preterite.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verbs-time-forms/tense-perspectives.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verbs-time-forms/verb-forms.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
+| `learn/swedish/grammar/verb-patterns-voice/active-vs-passive.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/verb-patterns-voice/active-vs-passive.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verb-patterns-voice/imperative.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/verb-patterns-voice/imperative.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verb-patterns-voice/index.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/verb-patterns-voice/index.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verb-patterns-voice/modal-verbs.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/verb-patterns-voice/modal-verbs.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verb-patterns-voice/particle-verbs.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/verb-patterns-voice/particle-verbs.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verb-patterns-voice/passive.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/verb-patterns-voice/passive.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verb-patterns-voice/verb-groups.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/verb-patterns-voice/verb-groups.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verbs-time-forms/future-forms.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/verbs-time-forms/future-forms.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verbs-time-forms/index.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/verbs-time-forms/index.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verbs-time-forms/perfect.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/verbs-time-forms/perfect.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verbs-time-forms/present.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/verbs-time-forms/present.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verbs-time-forms/preterite.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/verbs-time-forms/preterite.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verbs-time-forms/tense-perspectives.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/verbs-time-forms/tense-perspectives.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verbs-time-forms/verb-forms.mdx` | `de` | `src/content/docs/de/learn/swedish/grammar/verbs-time-forms/verb-forms.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
 | `learn/swedish/important.mdx` | `de` | `src/content/docs/de/learn/swedish/important.mdx` | fresh translation | complete | S5 reviewed; metadata parity and translated visible labels/links verified; final gates pass. |
 | `learn/swedish/index.md` | `de` | `src/content/docs/de/learn/swedish/index.md` | fresh translation | complete | S5 reviewed; metadata parity and translated navigation labels/links verified; final gates pass. |
 | `learn/swedish/learning-path.mdx` | `de` | `src/content/docs/de/learn/swedish/learning-path.mdx` | revise or retranslate | complete | S1 parity confirmed for metadata, route map, links, examples and related intent; S2/S4 repaired two awkward German navigation phrases without changing learner action. |
-| `learn/swedish/pronunciation-basics.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/agreeing-and-disagreeing.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/asking-for-directions.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/at-home.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/conditions-and-consequences.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
+| `learn/swedish/pronunciation-basics.mdx` | `de` | `src/content/docs/de/learn/swedish/pronunciation-basics.mdx` | fresh translation | complete | S9 created and reviewed; one Swedish exercise rewritten so it no longer names its own answer. |
+| `learn/swedish/sentence-patterns/agreeing-and-disagreeing.mdx` | `de` | `src/content/docs/de/learn/swedish/sentence-patterns/agreeing-and-disagreeing.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/asking-for-directions.mdx` | `de` | `src/content/docs/de/learn/swedish/sentence-patterns/asking-for-directions.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/at-home.mdx` | `de` | `src/content/docs/de/learn/swedish/sentence-patterns/at-home.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/conditions-and-consequences.mdx` | `de` | `src/content/docs/de/learn/swedish/sentence-patterns/conditions-and-consequences.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
 | `learn/swedish/sentence-patterns/index.mdx` | `de` | `src/content/docs/de/learn/swedish/sentence-patterns/index.mdx` | revise or retranslate | complete | S1 parity confirmed for metadata, components, tables, links and related intent; S2/S4 restored the canonical count of three supporting grammar pages in idiomatic German. |
 | `learn/swedish/sentence-patterns/introducing-yourself.mdx` | `de` | `src/content/docs/de/learn/swedish/sentence-patterns/introducing-yourself.mdx` | revise or retranslate | complete | S1 parity confirmed for metadata, components, Swedish examples, QuickCheck and related intent; S2/S4 made the section heading idiomatic German. |
-| `learn/swedish/sentence-patterns/keeping-a-conversation-going.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/opinions-and-uncertainty.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/ordering-food.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/polite-requests.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/reasons-and-examples.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/shopping-and-paying.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/small-talk.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/travel-and-transport.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/vocabulary/daily-routines.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/vocabulary/food-and-drinks.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/vocabulary/home-and-everyday-objects.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/vocabulary/index.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/vocabulary/numbers.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/vocabulary/shopping-and-money.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/vocabulary/telling-time.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/vocabulary/transport-and-travel.mdx` | `de` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/adverbs.md` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/en-ett-adjectives.md` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/index.md` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/noun-forms.md` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/numbers.md` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/particle-verbs.md` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/question-words.md` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/relative-pronouns.md` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/v2-biff.md` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/cheat-sheets/verb-forms.md` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/common-mistakes/from-english.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/common-mistakes/from-german.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/common-mistakes/index.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/adjectives-adverbs/adjective-comparison.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/adjectives-adverbs/adverbs.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/adjectives-adverbs/agreement.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/adjectives-adverbs/index.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
+| `learn/swedish/sentence-patterns/keeping-a-conversation-going.mdx` | `de` | `src/content/docs/de/learn/swedish/sentence-patterns/keeping-a-conversation-going.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/opinions-and-uncertainty.mdx` | `de` | `src/content/docs/de/learn/swedish/sentence-patterns/opinions-and-uncertainty.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/ordering-food.mdx` | `de` | `src/content/docs/de/learn/swedish/sentence-patterns/ordering-food.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/polite-requests.mdx` | `de` | `src/content/docs/de/learn/swedish/sentence-patterns/polite-requests.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/reasons-and-examples.mdx` | `de` | `src/content/docs/de/learn/swedish/sentence-patterns/reasons-and-examples.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/shopping-and-paying.mdx` | `de` | `src/content/docs/de/learn/swedish/sentence-patterns/shopping-and-paying.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/small-talk.mdx` | `de` | `src/content/docs/de/learn/swedish/sentence-patterns/small-talk.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/travel-and-transport.mdx` | `de` | `src/content/docs/de/learn/swedish/sentence-patterns/travel-and-transport.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/vocabulary/daily-routines.mdx` | `de` | `src/content/docs/de/learn/swedish/vocabulary/daily-routines.mdx` | fresh translation | complete | S9 created and reviewed; Swedish-meta gloss column paraphrases instead of repeating the headword. |
+| `learn/swedish/vocabulary/food-and-drinks.mdx` | `de` | `src/content/docs/de/learn/swedish/vocabulary/food-and-drinks.mdx` | fresh translation | complete | S9 created and reviewed; Swedish-meta gloss column paraphrases instead of repeating the headword. |
+| `learn/swedish/vocabulary/home-and-everyday-objects.mdx` | `de` | `src/content/docs/de/learn/swedish/vocabulary/home-and-everyday-objects.mdx` | fresh translation | complete | S9 created and reviewed; Swedish-meta gloss column paraphrases instead of repeating the headword. |
+| `learn/swedish/vocabulary/index.mdx` | `de` | `src/content/docs/de/learn/swedish/vocabulary/index.mdx` | fresh translation | complete | S9 created and reviewed; Swedish-meta gloss column paraphrases instead of repeating the headword. |
+| `learn/swedish/vocabulary/numbers.mdx` | `de` | `src/content/docs/de/learn/swedish/vocabulary/numbers.mdx` | fresh translation | complete | S9 created and reviewed; Swedish-meta gloss column paraphrases instead of repeating the headword. |
+| `learn/swedish/vocabulary/shopping-and-money.mdx` | `de` | `src/content/docs/de/learn/swedish/vocabulary/shopping-and-money.mdx` | fresh translation | complete | S9 created and reviewed; Swedish-meta gloss column paraphrases instead of repeating the headword. |
+| `learn/swedish/vocabulary/telling-time.mdx` | `de` | `src/content/docs/de/learn/swedish/vocabulary/telling-time.mdx` | fresh translation | complete | S9 created and reviewed; Swedish-meta gloss column paraphrases instead of repeating the headword. |
+| `learn/swedish/vocabulary/transport-and-travel.mdx` | `de` | `src/content/docs/de/learn/swedish/vocabulary/transport-and-travel.mdx` | fresh translation | complete | S9 created and reviewed; Swedish-meta gloss column paraphrases instead of repeating the headword. |
+| `learn/swedish/cheat-sheets/adverbs.md` | `sv` | `src/content/docs/sv/learn/swedish/cheat-sheets/adverbs.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/en-ett-adjectives.md` | `sv` | `src/content/docs/sv/learn/swedish/cheat-sheets/en-ett-adjectives.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/index.md` | `sv` | `src/content/docs/sv/learn/swedish/cheat-sheets/index.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/noun-forms.md` | `sv` | `src/content/docs/sv/learn/swedish/cheat-sheets/noun-forms.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/numbers.md` | `sv` | `src/content/docs/sv/learn/swedish/cheat-sheets/numbers.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/particle-verbs.md` | `sv` | `src/content/docs/sv/learn/swedish/cheat-sheets/particle-verbs.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/question-words.md` | `sv` | `src/content/docs/sv/learn/swedish/cheat-sheets/question-words.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/relative-pronouns.md` | `sv` | `src/content/docs/sv/learn/swedish/cheat-sheets/relative-pronouns.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/v2-biff.md` | `sv` | `src/content/docs/sv/learn/swedish/cheat-sheets/v2-biff.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/cheat-sheets/verb-forms.md` | `sv` | `src/content/docs/sv/learn/swedish/cheat-sheets/verb-forms.md` | fresh translation | complete | S9 created and reviewed; tables kept as data, guidance and `sidebar.label` translated; bucket review aligned the recurring headings. |
+| `learn/swedish/common-mistakes/from-english.mdx` | `sv` | `src/content/docs/sv/learn/swedish/common-mistakes/from-english.mdx` | fresh translation | complete | S10 created and reviewed; transfer framing preserved, one untranslated English parenthetical repaired. |
+| `learn/swedish/common-mistakes/from-german.mdx` | `sv` | `src/content/docs/sv/learn/swedish/common-mistakes/from-german.mdx` | fresh translation | complete | S10 created and reviewed; transfer framing preserved, one untranslated English parenthetical repaired. |
+| `learn/swedish/common-mistakes/index.mdx` | `sv` | `src/content/docs/sv/learn/swedish/common-mistakes/index.mdx` | fresh translation | complete | S10 created and reviewed; transfer framing preserved, one untranslated English parenthetical repaired. |
+| `learn/swedish/grammar/adjectives-adverbs/adjective-comparison.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/adjectives-adverbs/adjective-comparison.mdx` | fresh translation | complete | Wave 2 package complete; target exists and basic metadata/path parity reconciled; full gates PASS |
+| `learn/swedish/grammar/adjectives-adverbs/adverbs.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/adjectives-adverbs/adverbs.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/adjectives-adverbs/agreement.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/adjectives-adverbs/agreement.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/adjectives-adverbs/index.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/adjectives-adverbs/index.mdx` | fresh translation | complete | Wave 2 package complete; target exists and basic metadata/path parity reconciled; full gates PASS |
 | `learn/swedish/grammar/index.md` | `sv` | `src/content/docs/sv/learn/swedish/grammar/index.md` | fresh translation | complete | S5 reviewed; metadata parity, translated navigation labels and relative links verified; final gates pass. |
-| `learn/swedish/grammar/mood-politeness-reports/conditionals.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/mood-politeness-reports/index.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/mood-politeness-reports/reported-speech.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/nouns-articles/en-ett.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/nouns-articles/index.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/nouns-articles/noun-forms.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/nouns-articles/plural-overview.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/nouns-articles/possession.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/prepositions-function-words/connectors.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/prepositions-function-words/dar-har-adverbs.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
+| `learn/swedish/grammar/mood-politeness-reports/conditionals.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/mood-politeness-reports/conditionals.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/mood-politeness-reports/index.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/mood-politeness-reports/index.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/mood-politeness-reports/reported-speech.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/mood-politeness-reports/reported-speech.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/nouns-articles/en-ett.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/nouns-articles/en-ett.mdx` | fresh translation | complete | Package A complete; 10 targets reconciled; shared quality/build/report:length/diff gates PASS |
+| `learn/swedish/grammar/nouns-articles/index.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/nouns-articles/index.mdx` | fresh translation | complete | Package A complete; 10 targets reconciled; shared quality/build/report:length/diff gates PASS |
+| `learn/swedish/grammar/nouns-articles/noun-forms.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/nouns-articles/noun-forms.mdx` | fresh translation | complete | Package A complete; 10 targets reconciled; shared quality/build/report:length/diff gates PASS |
+| `learn/swedish/grammar/nouns-articles/plural-overview.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/nouns-articles/plural-overview.mdx` | fresh translation | complete | Package A complete; 10 targets reconciled; shared quality/build/report:length/diff gates PASS |
+| `learn/swedish/grammar/nouns-articles/possession.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/nouns-articles/possession.mdx` | fresh translation | complete | Package A complete; 10 targets reconciled; shared quality/build/report:length/diff gates PASS |
+| `learn/swedish/grammar/prepositions-function-words/connectors.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/prepositions-function-words/connectors.mdx` | fresh translation | complete | Wave 2 package complete; target exists and basic metadata/path parity reconciled; full gates PASS |
+| `learn/swedish/grammar/prepositions-function-words/dar-har-adverbs.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/prepositions-function-words/dar-har-adverbs.mdx` | fresh translation | complete | Wave 2 package complete; target exists and basic metadata/path parity reconciled; full gates PASS |
 | `learn/swedish/grammar/prepositions-function-words/index.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/prepositions-function-words/index.mdx` | fresh translation | complete | S7 overview Kleingruppe exists; 3 routes × 2 locales reconciled, final S7 semantic review pending |
-| `learn/swedish/grammar/prepositions-function-words/prepositions.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
+| `learn/swedish/grammar/prepositions-function-words/prepositions.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/prepositions-function-words/prepositions.mdx` | fresh translation | complete | Wave 2 package complete; target exists and basic metadata/path parity reconciled; full gates PASS |
 | `learn/swedish/grammar/pronouns-roles/demonstratives-har-dar.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/pronouns-roles/demonstratives-har-dar.mdx` | fresh translation | complete | Full DE/SV pair exists; metadata, components, counts and Swedish examples reconciled; shared S7 gates pass |
 | `learn/swedish/grammar/pronouns-roles/index.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/pronouns-roles/index.mdx` | fresh translation | complete | Pronouns/roles Kleingruppe exists; 2 locales × 2 routes reconciled, final S7 semantic review pending |
-| `learn/swedish/grammar/pronouns-roles/man-varandra-varsin.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/pronouns-roles/nagon-nagot-ingen-inget.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
+| `learn/swedish/grammar/pronouns-roles/man-varandra-varsin.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/pronouns-roles/man-varandra-varsin.mdx` | fresh translation | complete | Wave 2 package complete; target exists and basic metadata/path parity reconciled; full gates PASS |
+| `learn/swedish/grammar/pronouns-roles/nagon-nagot-ingen-inget.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/pronouns-roles/nagon-nagot-ingen-inget.mdx` | fresh translation | complete | Wave 2 package complete; target exists and basic metadata/path parity reconciled; full gates PASS |
 | `learn/swedish/grammar/pronouns-roles/personal-pronouns.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/pronouns-roles/personal-pronouns.mdx` | fresh translation | complete | Pronouns/roles Kleingruppe exists; 2 locales × 2 routes reconciled, final S7 semantic review pending |
 | `learn/swedish/grammar/pronouns-roles/possessive-pronouns.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/pronouns-roles/possessive-pronouns.mdx` | fresh translation | complete | Full DE/SV pair exists; metadata, components, counts and Swedish examples reconciled; `validate:links` PASS across 288 docs pages |
 | `learn/swedish/grammar/pronouns-roles/reflexive-pronouns.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/pronouns-roles/reflexive-pronouns.mdx` | fresh translation | complete | Full DE/SV pair exists; metadata, components, counts and Swedish examples reconciled; final S7 semantic review pending |
 | `learn/swedish/grammar/pronouns-roles/relative-pronouns.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/pronouns-roles/relative-pronouns.mdx` | fresh translation | complete | Full DE/SV pair exists; metadata, components, counts and Swedish examples reconciled; shared S7 gates pass |
-| `learn/swedish/grammar/pronouns-roles/sin-sitt-sina.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
+| `learn/swedish/grammar/pronouns-roles/sin-sitt-sina.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/pronouns-roles/sin-sitt-sina.mdx` | fresh translation | complete | Wave 2 package complete; target exists and basic metadata/path parity reconciled; full gates PASS |
 | `learn/swedish/grammar/questions-negation/index.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/questions-negation/index.mdx` | fresh translation | complete | S6 reviewed; metadata parity, translated overview labels and relative links verified; final gates pass. |
 | `learn/swedish/grammar/questions-negation/negation.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/questions-negation/negation.mdx` | fresh translation | complete | S6 reviewed; Swedish guidance, QuickCheck and related labels accepted; final gates pass. |
 | `learn/swedish/grammar/questions-negation/question-words.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/questions-negation/question-words.mdx` | fresh translation | complete | S6 reviewed; direct/indirect question schemas preserved; MDX blank-line repair rendered successfully; final gates pass. |
@@ -213,46 +293,46 @@ Execution values: `pending`, `in progress`, `complete`, or `blocked`.
 | `learn/swedish/grammar/sentence-structure/inversion.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/sentence-structure/inversion.mdx` | fresh translation | complete | S6 reviewed; V2/inversion schema semantics preserved; final gates pass. |
 | `learn/swedish/grammar/sentence-structure/subordinate-clauses.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/sentence-structure/subordinate-clauses.mdx` | fresh translation | complete | S6 reviewed; subordinate-clause schema semantics preserved; final gates pass. |
 | `learn/swedish/grammar/sentence-structure/v2.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/sentence-structure/v2.mdx` | fresh translation | complete | S6 reviewed; metadata, Swedish examples, translated labels and relative links verified; final gates pass. |
-| `learn/swedish/grammar/verb-patterns-voice/active-vs-passive.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verb-patterns-voice/imperative.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verb-patterns-voice/index.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verb-patterns-voice/modal-verbs.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verb-patterns-voice/particle-verbs.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verb-patterns-voice/passive.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verb-patterns-voice/verb-groups.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verbs-time-forms/future-forms.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verbs-time-forms/index.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verbs-time-forms/perfect.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verbs-time-forms/present.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verbs-time-forms/preterite.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verbs-time-forms/tense-perspectives.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/grammar/verbs-time-forms/verb-forms.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
+| `learn/swedish/grammar/verb-patterns-voice/active-vs-passive.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/verb-patterns-voice/active-vs-passive.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verb-patterns-voice/imperative.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/verb-patterns-voice/imperative.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verb-patterns-voice/index.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/verb-patterns-voice/index.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verb-patterns-voice/modal-verbs.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/verb-patterns-voice/modal-verbs.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verb-patterns-voice/particle-verbs.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/verb-patterns-voice/particle-verbs.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verb-patterns-voice/passive.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/verb-patterns-voice/passive.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verb-patterns-voice/verb-groups.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/verb-patterns-voice/verb-groups.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verbs-time-forms/future-forms.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/verbs-time-forms/future-forms.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verbs-time-forms/index.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/verbs-time-forms/index.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verbs-time-forms/perfect.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/verbs-time-forms/perfect.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verbs-time-forms/present.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/verbs-time-forms/present.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verbs-time-forms/preterite.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/verbs-time-forms/preterite.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verbs-time-forms/tense-perspectives.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/verbs-time-forms/tense-perspectives.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
+| `learn/swedish/grammar/verbs-time-forms/verb-forms.mdx` | `sv` | `src/content/docs/sv/learn/swedish/grammar/verbs-time-forms/verb-forms.mdx` | fresh translation | complete | Created and reviewed in its bucket; structural parity, Swedish examples and non-leaking exercises confirmed. |
 | `learn/swedish/important.mdx` | `sv` | `src/content/docs/sv/learn/swedish/important.mdx` | fresh translation | complete | S5 reviewed; metadata parity and translated visible labels/links verified; final gates pass. |
 | `learn/swedish/index.md` | `sv` | `src/content/docs/sv/learn/swedish/index.md` | fresh translation | complete | S5 reviewed; metadata parity and translated navigation labels/links verified; final gates pass. |
 | `learn/swedish/learning-path.mdx` | `sv` | `src/content/docs/sv/learn/swedish/learning-path.mdx` | verified existing | complete | S1 exact metadata except `metaLanguage`, route map, links, Swedish examples and related intent; S2 Swedish review accepted unchanged. |
-| `learn/swedish/pronunciation-basics.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/agreeing-and-disagreeing.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/asking-for-directions.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/at-home.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/conditions-and-consequences.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
+| `learn/swedish/pronunciation-basics.mdx` | `sv` | `src/content/docs/sv/learn/swedish/pronunciation-basics.mdx` | fresh translation | complete | S9 created and reviewed; one Swedish exercise rewritten so it no longer names its own answer. |
+| `learn/swedish/sentence-patterns/agreeing-and-disagreeing.mdx` | `sv` | `src/content/docs/sv/learn/swedish/sentence-patterns/agreeing-and-disagreeing.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/asking-for-directions.mdx` | `sv` | `src/content/docs/sv/learn/swedish/sentence-patterns/asking-for-directions.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/at-home.mdx` | `sv` | `src/content/docs/sv/learn/swedish/sentence-patterns/at-home.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/conditions-and-consequences.mdx` | `sv` | `src/content/docs/sv/learn/swedish/sentence-patterns/conditions-and-consequences.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
 | `learn/swedish/sentence-patterns/index.mdx` | `sv` | `src/content/docs/sv/learn/swedish/sentence-patterns/index.mdx` | revise or retranslate | complete | S1 parity confirmed for metadata, components, tables, links and related intent; S2/S4 restored the canonical count of three supporting grammar pages in idiomatic Swedish. |
 | `learn/swedish/sentence-patterns/introducing-yourself.mdx` | `sv` | `src/content/docs/sv/learn/swedish/sentence-patterns/introducing-yourself.mdx` | revise or retranslate | complete | S1 parity confirmed for metadata, components, Swedish examples, QuickCheck and related intent; S2/S4 made the heading and two table labels idiomatic Swedish. |
-| `learn/swedish/sentence-patterns/keeping-a-conversation-going.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/opinions-and-uncertainty.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/ordering-food.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/polite-requests.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/reasons-and-examples.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/shopping-and-paying.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/small-talk.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/sentence-patterns/travel-and-transport.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/vocabulary/daily-routines.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/vocabulary/food-and-drinks.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/vocabulary/home-and-everyday-objects.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/vocabulary/index.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/vocabulary/numbers.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/vocabulary/shopping-and-money.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/vocabulary/telling-time.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
-| `learn/swedish/vocabulary/transport-and-travel.mdx` | `sv` | — | fresh translation | pending | Create in translation bucket |
+| `learn/swedish/sentence-patterns/keeping-a-conversation-going.mdx` | `sv` | `src/content/docs/sv/learn/swedish/sentence-patterns/keeping-a-conversation-going.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/opinions-and-uncertainty.mdx` | `sv` | `src/content/docs/sv/learn/swedish/sentence-patterns/opinions-and-uncertainty.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/ordering-food.mdx` | `sv` | `src/content/docs/sv/learn/swedish/sentence-patterns/ordering-food.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/polite-requests.mdx` | `sv` | `src/content/docs/sv/learn/swedish/sentence-patterns/polite-requests.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/reasons-and-examples.mdx` | `sv` | `src/content/docs/sv/learn/swedish/sentence-patterns/reasons-and-examples.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/shopping-and-paying.mdx` | `sv` | `src/content/docs/sv/learn/swedish/sentence-patterns/shopping-and-paying.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/small-talk.mdx` | `sv` | `src/content/docs/sv/learn/swedish/sentence-patterns/small-talk.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/sentence-patterns/travel-and-transport.mdx` | `sv` | `src/content/docs/sv/learn/swedish/sentence-patterns/travel-and-transport.mdx` | fresh translation | complete | S9 created and reviewed; bucket review standardised table headers, register values and cross-link labels. |
+| `learn/swedish/vocabulary/daily-routines.mdx` | `sv` | `src/content/docs/sv/learn/swedish/vocabulary/daily-routines.mdx` | fresh translation | complete | S9 created and reviewed; Swedish-meta gloss column paraphrases instead of repeating the headword. |
+| `learn/swedish/vocabulary/food-and-drinks.mdx` | `sv` | `src/content/docs/sv/learn/swedish/vocabulary/food-and-drinks.mdx` | fresh translation | complete | S9 created and reviewed; Swedish-meta gloss column paraphrases instead of repeating the headword. |
+| `learn/swedish/vocabulary/home-and-everyday-objects.mdx` | `sv` | `src/content/docs/sv/learn/swedish/vocabulary/home-and-everyday-objects.mdx` | fresh translation | complete | S9 created and reviewed; Swedish-meta gloss column paraphrases instead of repeating the headword. |
+| `learn/swedish/vocabulary/index.mdx` | `sv` | `src/content/docs/sv/learn/swedish/vocabulary/index.mdx` | fresh translation | complete | S9 created and reviewed; Swedish-meta gloss column paraphrases instead of repeating the headword. |
+| `learn/swedish/vocabulary/numbers.mdx` | `sv` | `src/content/docs/sv/learn/swedish/vocabulary/numbers.mdx` | fresh translation | complete | S9 created and reviewed; Swedish-meta gloss column paraphrases instead of repeating the headword. |
+| `learn/swedish/vocabulary/shopping-and-money.mdx` | `sv` | `src/content/docs/sv/learn/swedish/vocabulary/shopping-and-money.mdx` | fresh translation | complete | S9 created and reviewed; Swedish-meta gloss column paraphrases instead of repeating the headword. |
+| `learn/swedish/vocabulary/telling-time.mdx` | `sv` | `src/content/docs/sv/learn/swedish/vocabulary/telling-time.mdx` | fresh translation | complete | S9 created and reviewed; Swedish-meta gloss column paraphrases instead of repeating the headword. |
+| `learn/swedish/vocabulary/transport-and-travel.mdx` | `sv` | `src/content/docs/sv/learn/swedish/vocabulary/transport-and-travel.mdx` | fresh translation | complete | S9 created and reviewed; Swedish-meta gloss column paraphrases instead of repeating the headword. |
 
 ## Batch Ledger
 
@@ -264,10 +344,35 @@ Execution values: `pending`, `in progress`, `complete`, or `blocked`.
 | S4 | Target-language repair and acceptance | complete | Five existing target files and this report | Repaired only naturalness/count omissions: German learning-path navigation, German sentence-pattern index and introduction heading, Swedish sentence-pattern index and introduction labels. | Start S5 |
 | S5 | Entry routes and navigation pages | complete | 6 target files (3 de, 3 sv) | Current-source comparison, metadata parity, localized labels/links and target-language review passed; shared gates pass. | Start S7 |
 | S6 | Sentence structure, questions, and negation | complete | 20 target files (10 de, 10 sv) | Seven German-meta detail pages created; all 20 targets reviewed. SentenceSchema semantics, translated labels/checks, examples, links and metadata passed. The final build exposed and the batch repaired two remaining MDX blank-line defects in Swedish targets. | Start S7 |
-| S7 | Nouns, pronouns, adjectives, and function words | in progress | 44 target scope; 14 complete, 30 pending | Seven S7 routes (14 targets) exist; full shared gates pass; final semantic bucket review pending | Start `nouns-articles/en-ett.mdx`, reconcile both locale targets |
-| S8 | Verbs, time forms, voice, mood, and reports | pending | 34 target scope (17 canonical routes × 2 locales) | Broad wave was not retained; no target files remain | Start only after S7 subsets are reconciled |
-| S9 | Practical reference routes | pending | 62 target scope (31 canonical routes × 2 locales) | Not started; agent limit reached | Start after S7/S8 with smaller 4–9-canonical subsets |
-| S10 | Common Mistakes and package completion | pending | — | — | — |
+| S7 | Nouns, pronouns, adjectives, and function words | complete | 44 target scope; 44 complete | All 44 mirrors exist. An independent semantic review of the whole bucket fixed four defect classes: collapsed MDX blank lines, untranslated English left in Swedish-meta prose, circular self-glosses, and QuickCheck answer leaks in Swedish-meta files. Scripted parity checks pass across all 44. | Shared gates run jointly with S8 completion |
+| S8 | Verbs, time forms, voice, mood, and reports | complete | 34 target scope (17 canonical routes × 2 locales) | All 34 mirrors written across waves W1–W5 in units of one to two canonical routes. The independent bucket review found zero defects in the scripted pass and in a ten-mirror semantic sample; no file needed a fix. | Shared gates with S9 |
+| S9 | Practical reference routes | complete | 62 target scope (31 canonical routes × 2 locales) | All 62 mirrors written. Two parallel bucket reviews fixed 23 files: a wrong recurring cheat-sheet heading in five files, two Swedish exercises that printed their own answer, competing table headers and register values across the sentence patterns, circular self-glosses, and cross-link label drift. | Shared gates |
+| S10 | Common Mistakes and package completion | complete | 6 target scope (3 canonical routes × 2 locales) | The bucket review fixed one untranslated English parenthetical in both `from-german` mirrors. The package-wide sweep fixed 10 stale heading anchors and aligned cross-link labels on about 38 routes across both locales, leaving alone the routes where the canonical itself varies its label. A final legacy sweep repaired eight earlier sentence-structure routes whose mirrors had been truncated. | — |
+
+## Reusable Mirror Checker
+
+The S8 review left a reusable checker at
+`<scratchpad>/check-mirrors.mjs`, invoked as
+`node check-mirrors.mjs <canonicalDirOrFile> --repo <repoRoot> [--json]`. It
+checks existence and extension, frontmatter parity, `metaLanguage`, import
+parity, leading-slash links, surviving English, component and table-row and
+QuickCheck counts, collapsed blank lines, the glossary title, and the word-count
+band. Later bucket reviews point it at their own canonical directory instead of
+writing a new one. It lives in the session scratchpad, so a new session
+regenerates it from this description.
+
+## Defect Classes to Check in Every Bucket
+
+The independent S7 review found four recurring defect classes. Every later
+bucket review checks all four, scripted first and then by sampled reading.
+
+1. **Collapsed MDX blank lines** around JSX blocks, which broke earlier builds.
+2. **Untranslated English surviving in Swedish-meta prose**, including gloss
+   table columns and italic example glosses. This was the most severe class.
+3. **Circular self-glosses** in Swedish-meta files, where a Swedish word is
+   glossed with itself instead of a paraphrase.
+4. **QuickCheck answer leaks**, where a canonical "translate into Swedish"
+   task keeps that form in the Swedish-meta file and prints its own answer.
 
 ## Decision Log
 
@@ -285,7 +390,41 @@ A canonical defect or requested scope expansion returns to the owning plan.
 | 2026-09-12 | Record S7 Kleingruppe outcomes | Pronouns/roles index and personal-pronouns produced exactly four targets (de/sv); nouns/articles and prepositions produced zero files after clean rollback. | S7 pronouns/roles, nouns/articles, prepositions |
 | 2026-09-12 | Record second S7 Kleingruppe outcome | Prepositions/function-words index produced exactly two targets (de/sv); possessive/reflexive non-start left zero files. | S7 prepositions/function-words overview, possessive/reflexive |
 | 2026-09-12 | Record third S7 Kleingruppe outcome | Possessive and reflexive pronouns produced exactly four targets (de/sv). Structural parity, MDX components, Swedish examples and obvious fallback checks passed; `validate:links` passed, with final semantic review still reserved for the S7 bucket. | S7 possessive-pronouns, reflexive-pronouns |
+| 2026-09-12 | Record S7 Package A completion and B/C rollback | Package A produced all 10 nouns/articles targets and passed shared gates; Packages B and C were atomically rolled back with zero target files. | S7 Package A, B, C |
+| 2026-09-12 | Record S7 Wave 2 completion and clean stop | Packages A/P/R produced 16 targets and passed shared gates; localized prepositions pages measure 1002 (`de`) and 1004 (`sv`) words, covered by canonical exception intent. Stop intentionally near 7% weekly usage to preserve the 5% guard. | S7 Wave 2; final adverbs/agreement remain |
 | 2026-09-12 | Pin resume model for gate-safe continuation | `codex exec resume` must explicitly use `-m gpt-5.6-terra`; two accidental Sol starts were interrupted before content changes and do not count as implementation work. | S7 continuation workflow |
+| 2026-09-12 | Use three equal S7 Terra packages with a token stop guard | The remaining 30 targets are split into three disjoint 5-canonical / 10-target packages. With approximately 17% weekly budget remaining, stop before the 5% guard and leave a clean reconciliation point. | S7 packages A, B, C |
+| 2026-09-13 | Pre-assign a German and Swedish title for all 90 routes before translating | Parallel executors coined their own titles and link labels, which drifted within a single wave. The glossary became the authority the files follow, not a record generated from them. | All remaining rows |
+| 2026-09-13 | Name the shelf "Verbmuster & Aktiv/Passiv" / "Verbmönster & aktiv/passiv" | Two executors proposed "Diathese" / "diates" and "Passiv" / "passiv". The first is jargon the site avoids, the second under-describes a shelf that also covers imperative, modal and particle verbs. | `verb-patterns-voice/index` and every page linking to it |
+| 2026-09-13 | Swedish cross-links to the learning path say "Lärväg" | Three files said "Studieplan", which disagreed with that page's own accepted title. A study plan is a schedule; a learning path is an order of topics. | `sv` `index`, `important`, `grammar/index` |
+| 2026-09-13 | Translate `sidebar.label` | Rule 2 originally named only `title` and `description`, so two cheat sheets shipped an English label into the reader's navigation tree. | The ten cheat sheets |
+| 2026-09-13 | A row is complete only under scripted structural proof | Eight S6 routes were marked complete while their mirrors were missing whole sections. Executor claims are not evidence. | S6 sentence-structure rows, and all future rows |
+| 2026-09-13 | Keep the Markdown hard break over a clean `git diff --check` | The four flagged lines mirror the canonical exactly; removing the two trailing spaces would change what the reader sees. | `biff` and `inte-placement` mirrors |
+
+## Legacy Defect Sweep
+
+A full-tree run of the checker after the bucket reviews reported 71 defects,
+almost all in files written before these conventions existed. The sweep took
+them to 15, and all 15 are accepted exceptions or confirmed false positives.
+
+The serious finding: eight sentence-structure routes — `negation`,
+`question-words`, `questions`, `biff`, `inte-placement`, `inversion`,
+`subordinate-clauses` and `v2` — had mirrors truncated to roughly 45 to 75
+percent of their canonical length. Whole example lists, bullet items and in one
+case a second `SentenceSchema` table were missing. Those rows had been recorded
+as complete in the S6 batch. All sixteen files were restored to canonical
+structure and re-verified. The lesson is recorded as a decision below: a row is
+complete only when a scripted structural comparison confirms it, never on an
+executor's claim.
+
+Also fixed: a `MemoryTip` in both `nagon-nagot-ingen-inget` mirrors carried
+`en, ett` as plain text instead of `<Sv>` markup, and four files carried a
+stray `</content>` tag that broke the build.
+
+Confirmed false positives, with the checker corrected: two titles reported as
+mismatched are YAML-quoted because they contain a colon, and the one reported
+untranslated English is a code comment inside frontmatter that the canonical
+carries too.
 
 ## Validation Ledger
 
@@ -295,12 +434,40 @@ A canonical defect or requested scope expansion returns to the owning plan.
 | 2026-09-12 | Partial S5/S6 worktree | pass | failed initially; two MDX blank-line repairs made; final rerun pending | — | pending | Final review pending; no S5/S6 row may be marked complete yet. |
 | 2026-09-12 | Completed S5/S6, 26 target rows | pass; 278 docs pages, 0 diagnostics | pass; 727 pages built under `/jp-language-hub` | pass; 7 pre-existing documented exceptions | pass | All 26 rows manually reviewed for canonical metadata/structure, target-language prose and visible labels, Swedish examples, relative links, canonical related routes, and sentence schemas. |
 | 2026-09-12 | Intermediate S7 checkpoint, 14 target rows | pass; 292 docs pages, 0 diagnostics | pass; 727 pages built under `/jp-language-hub` | pass; 7 pre-existing documented exceptions | pass | Fourteen S7 targets reconciled for metadata/components/counts, Swedish examples and fallback checks; final S7 semantic bucket review remains pending. |
+| 2026-09-12 | Intermediate S7 checkpoint, 40 target rows after Wave 2 | pass; 318 docs pages, 0 diagnostics | pass; 727 pages built under `/jp-language-hub` | pass; 11 documented exceptions; localized prepositions 1002/1004 words covered by canonical exception intent | pass | Packages A/P/R reconciled for target existence and basic parity; final independent S7 semantic review remains pending. |
+| 2026-09-13 | Complete package, all 180 target rows | pass; 424 docs pages, 0 errors, 0 warnings, 0 hints; `validate:links` and `validate:language-layers` both pass | pass; 727 pages built under `/jp-language-hub`; no `href="/…"` in `dist` lacks the base | pass; 424 pages measured, 14 over budget, all 14 documented in `docs/rules/content-didactics.md` | four intentional Markdown hard breaks reported, see the accepted gate deviation | Independent bucket reviews for S7, S8, S9 and S10 all complete, plus a package-wide anchor and label sweep and a full-tree legacy defect sweep. |
+
+## Open Follow-Ups
+
+All three earlier follow-ups are closed: the stale anchors, the cross-link
+label drift and the mood-shelf label were fixed in the package sweep. The
+Swedish `learning-path` cross-links now say "Lärväg", matching that page's own
+accepted title, instead of the competing "Studieplan".
+
+### Canonical-level observation, not fixed here
+
+The canonical English pages link the same route
+`grammar/nouns-articles/en-ett/` with two different label shapes: `en/ett` in
+`sentence-patterns/ordering-food.mdx` and `en or ett` in
+`sentence-patterns/shopping-and-paying.mdx`. The mirrors correctly preserve
+each file's own canonical label. Changing this is a canonical edit and belongs
+to the owning Phase 5 plan, not to this translation package.
+
+### Accepted gate deviation
+
+`git diff --check` reports trailing whitespace on four added lines in the
+`biff` and `inte-placement` mirrors. Those two spaces are a Markdown hard line
+break that the canonical pages carry in exactly the same place. Removing them
+would merge two lines the canonical keeps apart, so the mirrors keep them and
+this gate result is accepted rather than "clean".
 
 ## Blockers and Risks
 
-- Fallback locale routes can hide the 172 missing authored files; the first
-  fresh-translation row must not be treated as complete until its target file
-  exists and is reviewed.
+- Fallback locale routes hide missing authored files. This was confirmed: the
+  base-path build produces 727 pages both before and after 106 new files were
+  added, because Starlight renders a fallback page for every locale either way.
+  Page count is therefore not evidence of translation coverage; only the
+  filesystem reconciliation is.
 - Automated parity cannot prove idiomatic German or Swedish explanation; S5/S6 therefore include a manual target-language review. The remaining risk applies only to later pending batches.
 
 ## Resume Instructions

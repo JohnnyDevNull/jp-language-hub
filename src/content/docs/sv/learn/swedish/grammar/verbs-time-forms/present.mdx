@@ -1,0 +1,182 @@
+---
+title: Presens
+description: Hur svenskan bildar och använder presens.
+metaLanguage: sv
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A1
+tags:
+  - grammar
+  - verbs
+related:
+  - /learn/swedish/grammar/verbs-time-forms/tense-perspectives/
+  - /learn/swedish/grammar/verbs-time-forms/verb-forms/
+  - /learn/swedish/grammar/verb-patterns-voice/verb-groups/
+  - /learn/swedish/grammar/verbs-time-forms/preterite/
+  - /learn/swedish/grammar/verbs-time-forms/perfect/
+---
+
+import { getCollection } from 'astro:content';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+import VerbTable from '~/components/VerbTable.astro';
+
+export const verbs = await getCollection('verbs');
+export const representative = (id) => {
+	const entry = verbs.find((candidate) => candidate.id === id);
+	if (!entry) {
+		throw new Error(`Missing required verb entry: ${id}`);
+	}
+	return entry.data;
+};
+export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-skriva'].map(
+	representative,
+);
+
+<KeyTakeaway>
+- Presensformen är densamma för alla subjekt: <Sv>jag arbetar</Sv>,
+  <Sv>hon arbetar</Sv>, <Sv>de arbetar</Sv>.
+- Ändelsen följer verbgruppen: <Sv>-ar</Sv>, <Sv>-er</Sv> eller enkelt
+  <Sv>-r</Sv>.
+- Svenskan saknar en progressiv form; det vanliga presens täcker även
+  <span lang="en">I am working</span> och, i tydligt sammanhang, en planerad
+  framtid.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Det svenska presens beskriver vad som händer nu, vad som händer regelbundet
+och – i tydligt sammanhang – vad som är planerat eller väntat att hända
+senare.
+
+## Kärnregel
+
+Presensformen är identisk för alla subjekt:
+
+| Subjekt | Exempel |
+| --- | --- |
+| <Sv>jag</Sv> | <Sv>Jag arbetar.</Sv> |
+| <Sv>du</Sv> | <Sv>Du arbetar.</Sv> |
+| <Sv>hon / han / hen</Sv> | <Sv>Hon arbetar.</Sv> |
+| <Sv>vi / ni / de</Sv> | <Sv>De arbetar.</Sv> |
+
+Ändelsen beror på verbgruppen. Ett representativt verb per grupp:
+
+<VerbTable
+	caption="Presensformer, ett verb per grupp"
+	forms={groupExamples.map((verb) => ({
+		label: `Grupp ${verb.group}: ${verb.lemma}`,
+		value: verb.morphology.present,
+	}))}
+/>
+
+Några vanliga verb är oregelbundna, till exempel <Sv>vara → är</Sv> och
+<Sv>göra → gör</Sv>. Se [verbgrupper](../../verb-patterns-voice/verb-groups/) för de fullständiga mönstren.
+
+## Huvudsakliga användningar
+
+### Det som händer just nu
+
+<Sv>Jag läser just nu.</Sv> — Jag håller på och läser.
+
+Svenskan använder normalt det vanliga presens här. Det krävs ingen form efter
+engelskt mönster med <span lang="en">am/is/are + -ing</span>.
+
+### Vanor och återkommande händelser
+
+<Sv>Vi tränar varje torsdag.</Sv> — Vi har träning varje torsdag.
+
+### Allmänna fakta och tillstånd
+
+<Sv>Stockholm ligger i Sverige.</Sv> — Stockholm är en stad i Sverige.
+
+### Framtidsbetydelse utifrån sammanhanget
+
+<Sv>Jag åker till Malmö i morgon.</Sv> — Jag reser till Malmö i morgon.
+
+Tidsuttrycket gör framtidsbetydelsen tydlig. Andra futurumkonstruktioner
+används när sammanhanget kräver det.
+
+## Direkt jämförelse
+
+<LanguageComparison title="Nu">
+	<p slot="de">Ich arbeite gerade.</p>
+	<p slot="en">I am working right now.</p>
+	<p slot="sv">Jag arbetar just nu.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Vana">
+	<p slot="de">Ich arbeite montags.</p>
+	<p slot="en">I work on Mondays.</p>
+	<p slot="sv">Jag arbetar på måndagar.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Planerad framtid">
+	<p slot="de">Ich fahre morgen.</p>
+	<p slot="en">I am leaving tomorrow.</p>
+	<p slot="sv">Jag åker i morgon.</p>
+</LanguageComparison>
+
+## Negation och ordföljd
+
+I huvudsats kommer <Sv>inte</Sv> normalt efter det finita verbet:
+
+<Sv>Jag arbetar inte idag.</Sv>
+
+I bisats ändras normalt ordningen:
+
+<Sv>… eftersom jag inte arbetar idag.</Sv>
+
+Det här är en ordföljdsregel, inte en annan presensform. Se sidorna om
+[V2](../../sentence-structure/v2/) och
+[BIFF](../../sentence-structure/biff/).
+
+## Vanliga misstag
+
+<MistakeBox title="Vanliga misstag">
+	- Lägg inte till en personändelse efter engelskt eller tyskt mönster:
+	  Svenskan använder <Sv>jag kommer</Sv> och <Sv>hon kommer</Sv>.
+	- Översätt inte den engelska progressiva formen ord för ord. Oftast blir
+	  <span lang="en">I am working</span> till <Sv>jag arbetar</Sv>.
+	- Lär dig oregelbundna presensformer var för sig.
+</MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Böj köpa, bo och tala i presens.',
+			answer: 'köper, bor, talar',
+		},
+		{
+			prompt: 'Rätta den här meningen: Hon arbetars på måndagar.',
+			answer: 'Hon arbetar på måndagar.',
+		},
+		{
+			prompt: 'Fyll i presensformen: Jag ___ till Malmö i morgon. (åka)',
+			answer: 'Jag åker till Malmö i morgon.',
+		},
+		{
+			prompt: 'Var står inte i ”Jag arbetar idag”?',
+			answer: 'Jag arbetar inte idag.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../tense-perspectives/', label: 'Tidsperspektiv' },
+		{ href: '../verb-forms/', label: 'Verbformer' },
+		{ href: '../../verb-patterns-voice/verb-groups/', label: 'Verbgrupper' },
+		{ href: '../preterite/', label: 'Preteritum' },
+		{ href: '../perfect/', label: 'Perfekt' },
+	]}
+/>

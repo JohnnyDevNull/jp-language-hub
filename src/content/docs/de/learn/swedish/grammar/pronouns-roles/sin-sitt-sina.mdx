@@ -1,0 +1,163 @@
+---
+title: sin, sitt und sina
+description: Wie schwedische reflexive Possessivpronomen auf das Subjekt eines Satzes zurückverweisen.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+tags:
+  - grammar
+  - pronouns
+related:
+  - /learn/swedish/grammar/pronouns-roles/possessive-pronouns/
+  - /learn/swedish/grammar/nouns-articles/en-ett/
+  - /learn/swedish/grammar/nouns-articles/noun-forms/
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Verwende <Sv>sin</Sv>, <Sv>sitt</Sv> oder <Sv>sina</Sv>, wenn der Besitz auf
+  das Subjekt der dritten Person im selben Satz zurückverweist.
+- <Sv>hans</Sv>, <Sv>hennes</Sv> und <Sv>deras</Sv> verweisen auf jemand anderen
+  als dieses Subjekt.
+- Die Form richtet sich nach dem besessenen Nomen: <Sv>sin jacka</Sv>,
+  <Sv>sitt hus</Sv>, <Sv>sina vänner</Sv>.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Schwedisch verwendet <Sv>sin</Sv>, <Sv>sitt</Sv> und <Sv>sina</Sv>, wenn ein
+Subjekt der dritten Person etwas besitzt und das Possessivpronomen auf eben
+dieses Subjekt zurückverweist.
+
+## Grundregel
+
+Die Form stimmt mit dem Besitz überein, nicht mit dem Besitzer:
+
+| Besessenes Nomen | Form | Beispiel |
+| --- | --- | --- |
+| Singularisches <Sv>en</Sv>-Nomen | <Sv>sin</Sv> | <Sv>Sara tar sin jacka.</Sv> |
+| Singularisches <Sv>ett</Sv>-Nomen | <Sv>sitt</Sv> | <Sv>Sara säljer sitt hus.</Sv> |
+| Pluralnomen | <Sv>sina</Sv> | <Sv>Sara träffar sina vänner.</Sv> |
+
+In allen Sätzen besitzt Sara Jacke, Haus oder Freunde. Ihr Geschlecht bestimmt
+die Form nicht; entscheidend sind Genus oder Zahl des Nomens.
+
+## Eigene oder fremde Sache?
+
+Der Gegensatz zu <Sv>hans</Sv>, <Sv>hennes</Sv> oder <Sv>deras</Sv> kann
+entscheiden, wem etwas gehört:
+
+| Schwedisch | Bedeutung |
+| --- | --- |
+| <Sv>Anna tog sin jacka.</Sv> | Anna nahm ihre eigene Jacke. |
+| <Sv>Anna tog hennes jacka.</Sv> | Anna nahm die Jacke einer anderen Frau. |
+| <Sv>Erik tog sin jacka.</Sv> | Erik nahm seine eigene Jacke. |
+| <Sv>Erik tog hans jacka.</Sv> | Erik nahm die Jacke eines anderen Mannes. |
+| <Sv>De tog sina jackor.</Sv> | Sie nahmen ihre eigenen Jacken. |
+| <Sv>De tog deras jackor.</Sv> | Sie nahmen die Jacken einer anderen Gruppe. |
+
+Bei <Sv>hans</Sv>, <Sv>hennes</Sv> und <Sv>deras</Sv> muss der Kontext die
+andere Person oder Gruppe bestimmen.
+
+## Die Satzgrenze zählt
+
+Entscheidend ist das Subjekt desselben Satzes:
+
+<Sv>Anna sa att Erik tog sin jacka.</Sv>
+
+Im Nebensatz ist <Sv>Erik</Sv> das Subjekt. Daher bedeutet <Sv>sin jacka</Sv>
+normalerweise Eriks eigene Jacke, nicht Annas.
+
+Vergleiche:
+
+<Sv>Anna sa att Erik tog hennes jacka.</Sv>
+
+Hier kann <Sv>hennes</Sv> je nach Kontext Anna oder eine andere Frau meinen.
+
+Die allgemeine Struktur des Nebensatzes erklärt
+[Nebensätze](../../sentence-structure/subordinate-clauses/). Diese Seite
+behandelt nur, auf welchen Besitzer die Reflexivform zurückverweisen kann.
+
+## Wo sin, sitt und sina nicht stehen
+
+Sie sind reflexive Possessivpronomen der dritten Person. Subjekte der ersten und
+zweiten Person verwenden die gewöhnlichen Possessivpronomen:
+
+- <Sv>Jag tar min jacka.</Sv>
+- <Sv>Du tar din jacka.</Sv>
+- <Sv>Vi tar våra jackor.</Sv>
+
+Sie stehen normalerweise auch nicht innerhalb des Subjekts selbst:
+
+- <Sv>Hans bil är ny.</Sv> — Sein Auto ist neu.
+- <Sv>Hennes vänner kommer.</Sv> — Ihre Freunde kommen.
+
+## Direkter Vergleich
+
+Deutsch und Englisch markieren in der Possessivform nicht denselben Gegensatz
+zwischen eigener und fremder Sache. Derselbe deutsche oder englische Satz deckt
+beide Lesarten ab; Schwedisch entscheidet sich:
+
+<LanguageComparison title="Annas eigene Jacke">
+	<p slot="de">Anna nimmt ihre Jacke.</p>
+	<p slot="en">Anna takes her jacket.</p>
+	<p slot="sv">Anna tar sin jacka.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Die Jacke einer anderen Frau">
+	<p slot="de">Anna nimmt ihre Jacke.</p>
+	<p slot="en">Anna takes her jacket.</p>
+	<p slot="sv">Anna tar hennes jacka.</p>
+</LanguageComparison>
+
+Die deutschen und englischen Sätze können ohne Kontext mehrdeutig sein.
+Schwedisch verwendet normalerweise <Sv>sin</Sv>, um „die eigene“ Sache klarzumachen.
+
+## Typische Fehler
+
+<MistakeBox title="Typische Fehler">
+	- ❌ <Sv>Anna säljer hennes hus.</Sv>, wenn Anna ihr eigenes Haus verkauft
+	  ✅ <Sv>Anna säljer sitt hus.</Sv>
+	- ❌ <Sv>Erik träffar sin vänner.</Sv>
+	  ✅ <Sv>Erik träffar sina vänner.</Sv>
+	- ❌ <Sv>sin</Sv> wählen, weil der Besitzer eine Person ist.
+	  Wähle nach dem besessenen Nomen: <Sv>sin bil</Sv>, <Sv>sitt hus</Sv>,
+	  <Sv>sina böcker</Sv>.
+</MistakeBox>
+
+<MemoryTip title="Zwei Fragen">
+Frage zuerst: „Verweist das Possessivpronomen auf das Subjekt der dritten Person
+in diesem Satz zurück?“ Wenn ja: „Ist das besessene Nomen en, ett oder Plural?“
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{ prompt: 'Erik nahm die Jacke, die ihm selbst gehört: Erik tog ___ jacka.', answer: 'Erik tog sin jacka.' },
+		{ prompt: 'Erik nahm eine Jacke, die einem anderen Mann gehört: Erik tog ___ jacka.', answer: 'Erik tog hans jacka.' },
+		{ prompt: 'Korrigiere: Erik träffar sin vänner.', answer: 'Erik träffar sina vänner.' },
+		{ prompt: 'Sage in einem Satz, dass Anna sagte, Erik habe seine eigene Jacke genommen.', answer: 'Anna sa att Erik tog sin jacka.' },
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../possessive-pronouns/', label: 'Possessivpronomen' },
+		{ href: '../../nouns-articles/en-ett/', label: 'en und ett' },
+		{ href: '../../nouns-articles/noun-forms/', label: 'Substantivformen' },
+		{ href: '../../sentence-structure/subordinate-clauses/', label: 'Nebensätze' },
+	]}
+/>

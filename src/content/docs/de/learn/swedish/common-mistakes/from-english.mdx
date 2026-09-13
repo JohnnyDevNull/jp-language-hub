@@ -1,0 +1,194 @@
+---
+title: Fehler aus dem Englischen
+description: Häufige Schwedischfehler, die durch die Übertragung englischer Wortstellung, Artikel- und Kongruenzmuster entstehen.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - en
+  - sv
+levels:
+  - A1
+  - A2
+  - B1
+tags:
+  - common-mistakes
+  - comparison
+  - grammar
+related:
+  - /learn/swedish/grammar/verbs-time-forms/present/
+  - /learn/swedish/grammar/nouns-articles/noun-forms/
+  - /learn/swedish/grammar/adjectives-adverbs/agreement/
+  - /learn/swedish/grammar/sentence-structure/v2/
+  - /learn/swedish/grammar/prepositions-function-words/prepositions/
+  - /learn/swedish/grammar/questions-negation/questions/
+  - /learn/swedish/grammar/questions-negation/negation/
+  - /learn/swedish/grammar/sentence-structure/inte-placement/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- Das Schwedische hat ein Präsens; es gibt keine Verlaufsform und kein
+  Hilfsverb *do*.
+- Der bestimmte Artikel ist eine Endung am Substantiv, kein eigenes Wort:
+  <Sv>huset</Sv>.
+- Das Schwedische flektiert Adjektive und invertiert das Verb nach einem
+  vorangestellten Satzglied, während das Englische beides nicht tut.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Das Englische liefert dir viele erkennbare Wörter, aber kaum Hilfe bei der
+schwedischen Morphologie. Das sind die Muster, die es versehentlich exportiert.
+
+## Eine Verlaufsform bilden
+
+<MistakeBox incorrect="Jag är arbetande nu." correct="Jag arbetar nu." lang="sv">
+	Ein einziges Präsens deckt sowohl "I work" als auch "I am working" ab. Wenn
+	die andauernde Handlung wirklich wichtig ist, verwendet das Schwedische eine
+	Konstruktion, kein Partizip: <Sv>Jag håller på att arbeta.</Sv> oder
+	<Sv>Jag sitter och arbetar.</Sv> Siehe
+	[Präsens](../../grammar/verbs-time-forms/present/).
+</MistakeBox>
+
+## Zur do-Stütze greifen
+
+<LanguageComparison title="Frage ohne do" languages={['en', 'sv']}>
+	<p slot="en">Do you speak Swedish?</p>
+	<p slot="sv">Talar du svenska?</p>
+</LanguageComparison>
+
+<LanguageComparison title="Verneinung ohne do" languages={['en', 'sv']}>
+	<p slot="en">I don't know.</p>
+	<p slot="sv">Jag vet inte.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Fragewort plus Inversion" languages={['en', 'sv']}>
+	<p slot="en">Where does she live?</p>
+	<p slot="sv">Var bor hon?</p>
+</LanguageComparison>
+
+<LanguageComparison title="Verneinte Frage" languages={['en', 'sv']}>
+	<p slot="en">Didn't you see it?</p>
+	<p slot="sv">Såg du det inte?</p>
+</LanguageComparison>
+
+Direkte Fragen verwenden das schon vorhandene finite Verb statt des englischen
+*do*. Siehe [Fragen](../../grammar/questions-negation/questions/) für den
+wiederverwendbaren Rahmen. Die schwedische Satznegation fügt <Sv>inte</Sv>
+hinzu; wähle die Negationsform auf [Negation](../../grammar/questions-negation/negation/)
+und platziere <Sv>inte</Sv> mit
+[Stellung von inte](../../grammar/sentence-structure/inte-placement/).
+
+## Einen eigenen bestimmten Artikel schreiben
+
+<MistakeBox incorrect="den hus, det stora hus" correct="huset, det stora huset" lang="sv">
+	Bestimmtheit ist eine Endung: <Sv>hus</Sv> → <Sv>huset</Sv>, <Sv>bil</Sv> →
+	<Sv>bilen</Sv>, Plural <Sv>husen</Sv>, <Sv>bilarna</Sv>. Mit einem Adjektiv
+	erscheinen sowohl der Artikel *als auch* die Endung — doppelte Bestimmtheit.
+	Siehe [Substantivformen](../../grammar/nouns-articles/noun-forms/).
+</MistakeBox>
+
+## Die Adjektivkongruenz weglassen
+
+Das Englische lässt Adjektive in den Mustern, auf die Anfänger sich stützen,
+meist unflektiert. Schwedische Adjektive ändern sich nach Genus, Numerus und
+Bestimmtheit:
+
+| Form | Beispiel |
+| --- | --- |
+| <Sv>en</Sv>-Substantiv | <Sv>en stor bil</Sv> |
+| <Sv>ett</Sv>-Substantiv | <Sv>ett stort hus</Sv> |
+| Plural / bestimmt | <Sv>stora hus</Sv>, <Sv>det stora huset</Sv> |
+
+Siehe [Adjektivkongruenz](../../grammar/adjectives-adverbs/agreement/).
+
+## for und since
+
+<LanguageComparison title="Dauer" languages={['en', 'sv']}>
+	<p slot="en">I have lived here for three years.</p>
+	<p slot="sv">Jag har bott här i tre år.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Startzeitpunkt" languages={['en', 'sv']}>
+	<p slot="en">I have lived here since 2020.</p>
+	<p slot="sv">Jag har bott här sedan 2020.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Verneinter Zeitraum" languages={['en', 'sv']}>
+	<p slot="en">I haven't seen him for three years.</p>
+	<p slot="sv">Jag har inte sett honom på tre år.</p>
+</LanguageComparison>
+
+Ein Zeitraum ist <Sv>i</Sv>, ein Startzeitpunkt ist <Sv>sedan</Sv>, und ein
+verneinter Zeitraum nimmt <Sv>på</Sv>.
+
+## Präpositionen Wort für Wort übersetzen
+
+Das sind diagnostische Fallen, keine zweite Präpositionen-Referenz. Wenn eine
+Wendung hier nicht aufgeführt ist, nutze die fokussierte Seite zu
+[Präpositionen](../../grammar/prepositions-function-words/prepositions/).
+
+| Englisches Muster | Schwedische Korrektur | Nicht verwechseln mit |
+| --- | --- | --- |
+| wait for | <Sv>vänta på</Sv> | *vänta för* |
+| listen to | <Sv>lyssna på</Sv> | <Sv>lyssna</Sv> ohne Präposition |
+| think about | <Sv>tänka på</Sv> | *tänka om* (= umdenken) |
+| ask for | <Sv>be om</Sv> | *be för* |
+| interested in | <Sv>intresserad av</Sv> | *intresserad i* |
+| on Monday | <Sv>på måndag</Sv> | *i måndag* |
+| in the morning | <Sv>på morgonen</Sv> | *i morgonen* |
+
+Die Präposition gehört zur Konstruktion. Nutze diese Tabelle, um einen
+englischen Transferfehler zu erkennen, und schau dann bei
+[Präpositionen](../../grammar/prepositions-function-words/prepositions/) für
+die umfassendere Auswahl nach.
+
+## Die englische Wortstellung nach einem vorangestellten Satzglied beibehalten
+
+<MistakeBox incorrect="Idag jag köper en bil." correct="Idag köper jag en bil." lang="sv">
+	Ein vorangestellter Zeitausdruck füllt die erste Position, sodass als
+	Nächstes das finite Verb kommt und das Subjekt dahinter rückt. Das
+	Englische behält Subjekt vor Verb bei; übernimm das nicht. Siehe
+	[V2](../../grammar/sentence-structure/v2/).
+</MistakeBox>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Übersetze: I am reading a book right now.',
+			answer: 'Jag läser en bok just nu.',
+		},
+		{
+			prompt: 'Übersetze: Do you live in Stockholm?',
+			answer: 'Bor du i Stockholm?',
+		},
+		{
+			prompt: 'Übersetze: the big house',
+			answer: 'det stora huset',
+		},
+		{
+			prompt: 'Übersetze: I have worked here for two years.',
+			answer: 'Jag har jobbat här i två år.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../../grammar/verbs-time-forms/present/', label: 'Präsens' },
+		{ href: '../../grammar/nouns-articles/noun-forms/', label: 'Substantivformen' },
+		{ href: '../../grammar/adjectives-adverbs/agreement/', label: 'Adjektivkongruenz' },
+		{ href: '../../grammar/sentence-structure/v2/', label: 'V2-Regel' },
+		{ href: '../../grammar/questions-negation/questions/', label: 'Fragen' },
+		{ href: '../../grammar/questions-negation/negation/', label: 'Negation' },
+		{ href: '../../grammar/sentence-structure/inte-placement/', label: 'Stellung von inte' },
+		{ href: '../../../../false-friends/', label: 'Falsche Freunde' },
+	]}
+/>

@@ -1,0 +1,180 @@
+---
+title: Adjektivets komparation
+description: Bilda svenska komparativer och superlativer med regelbundna ändelser, oregelbundna former samt mer eller mest.
+metaLanguage: sv
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+tags:
+  - grammar
+  - adjectives
+  - comparison
+related:
+  - /learn/swedish/grammar/adjectives-adverbs/agreement/
+  - /learn/swedish/grammar/nouns-articles/en-ett/
+  - /learn/swedish/grammar/nouns-articles/noun-forms/
+---
+
+import { getEntry } from 'astro:content';
+import AdjectiveForms from '~/components/AdjectiveForms.astro';
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import Sv from '~/components/Sv.astro';
+import TagList from '~/components/TagList.astro';
+
+export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => {
+	throw new Error('Missing adjective entry: sv-snabb');
+})();
+
+<KeyTakeaway>
+- Den regelbundna komparationen lägger till <Sv>-are</Sv> och <Sv>-ast</Sv>:
+  <Sv>{snabb.morphology.en} → {snabb.comparison?.comparative} → {snabb.comparison?.superlative}</Sv>.
+- <Sv>än</Sv> motsvarar engelska ”than”.
+- Långa och participiella adjektiv använder ofta <Sv>mer</Sv> och <Sv>mest</Sv>
+  i stället för ändelser; använd aldrig båda strategierna samtidigt.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Svenska adjektiv kan uttrycka tre grader: positiv, komparativ och superlativ.
+Många korta adjektiv använder ändelserna <Sv>-are</Sv> och <Sv>-ast</Sv>;
+andra har oregelbundna former eller använder <Sv>mer</Sv> och <Sv>mest</Sv>.
+
+## Regelbunden komparation
+
+Positiv är grundformen, komparativ får oftast <Sv>-are</Sv> och superlativ
+får oftast <Sv>-ast</Sv>:
+
+<AdjectiveForms
+	forms={[
+		{ label: 'en-form', value: snabb.morphology.en },
+		{ label: 'ett-form', value: snabb.morphology.ett },
+		{ label: 'plural / bestämd form', value: snabb.morphology.plural },
+		{ label: 'komparativ', value: snabb.comparison?.comparative ?? '' },
+		{ label: 'superlativ', value: snabb.comparison?.superlative ?? '' },
+	]}
+	caption="Grundformer av snabb"
+/>
+
+I en jämförelse motsvarar <Sv>än</Sv> engelska ”than”:
+
+<p lang="sv">Tåget är snabbare än bussen.</p>
+
+Den enkla predikativa superlativen behöver ingen ändelse för genus eller numerus:
+
+<p lang="sv">Det här tåget är snabbast.</p>
+
+## Vanliga oregelbundna former
+
+| Positiv | Komparativ | Superlativ | Betydelse |
+| --- | --- | --- | --- |
+| <Sv>stor</Sv> | <Sv>större</Sv> | <Sv>störst</Sv> | stor |
+| <Sv>liten</Sv> | <Sv>mindre</Sv> | <Sv>minst</Sv> | liten |
+| <Sv>gammal</Sv> | <Sv>äldre</Sv> | <Sv>äldst</Sv> | gammal |
+| <Sv>bra</Sv> | <Sv>bättre</Sv> | <Sv>bäst</Sv> | bra |
+| <Sv>dålig</Sv> | <Sv>sämre</Sv> | <Sv>sämst</Sv> | dålig |
+
+De här vanliga formerna lär du dig bäst som serier.
+
+## Komparation med *mer* och *mest*
+
+Vissa adjektiv, särskilt längre adjektiv och många participiella adjektiv,
+kompareras vanligen med <Sv>mer</Sv> och <Sv>mest</Sv> i stället för med suffix:
+
+<p lang="sv">komplicerad → mer komplicerad → mest komplicerad</p>
+
+<p lang="sv">överraskande → mer överraskande → mest överraskande</p>
+
+Användningen kan variera för vissa adjektiv. När både en form med suffix och
+en konstruktion med <Sv>mer</Sv> förekommer, följ etablerat bruk i stället för
+att mekaniskt använda samma regel för varje ord.
+
+## Attributiva superlativer
+
+Före ett bestämt substantiv använder du adjektivets bestämda superlativform.
+Dess ändelse beror på komparationsmönstret:
+
+- <Sv>den snabbaste bilen</Sv>
+- <Sv>det största huset</Sv>
+- <Sv>de bästa resultaten</Sv>
+
+Konstruktionen använder också den bestämda artikeln och det bestämda substantivet
+som [adjektivkongruens](../agreement/) kräver. En maskulin singularform på
+<Sv>-e</Sv>, som <Sv>den bäste spelaren</Sv>, förekommer också, särskilt när en
+manlig person uttryckligen avses. Den icke maskulint specifika formen, till
+exempel <Sv>den bästa spelaren</Sv>, används också mycket.
+
+## Direkt jämförelse
+
+<LanguageComparison title="Stegring med suffix">
+	<p slot="de">groß → größer → am größten</p>
+	<p slot="en">big → bigger → biggest</p>
+	<p slot="sv">stor → större → störst</p>
+</LanguageComparison>
+
+<LanguageComparison title="Analytisk stegring">
+	<p slot="de">kompliziert → komplizierter → am kompliziertesten</p>
+	<p slot="en">complicated → more complicated → most complicated</p>
+	<p slot="sv">komplicerad → mer komplicerad → mest komplicerad</p>
+</LanguageComparison>
+
+Alla tre språken har regelbundna och oregelbundna mönster. Engelska
+<span lang="en">more / most</span> kan vara en användbar brygga till svenska
+<Sv>mer / mest</Sv>, men språken väljer inte det analytiska mönstret för exakt
+samma uppsättning adjektiv.
+
+<MistakeBox title="Vanliga misstag">
+Kombinera inte båda komparationsstrategierna:
+
+<Sv>❌ mer snabbare</Sv>  
+<Sv>✅ snabbare</Sv>
+
+Lär dig oregelbundna serier i stället för att lägga till regelbundna ändelser:
+
+<Sv>❌ braare / braast</Sv>  
+<Sv>✅ bättre / bäst</Sv>
+</MistakeBox>
+
+<MemoryTip>
+Lagra varje vanligt adjektiv som en stege i tre steg:
+<Sv><strong>stor — större — störst</strong></Sv>. Om adjektivet är långt eller
+participiellt, kontrollera om <Sv>mer — mest</Sv> är det naturliga mönstret i
+stället för att anta att det alltid får ändelser.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Fyll i stegen: gammal → ___ → ___.',
+			answer: 'äldre, äldst',
+		},
+		{
+			prompt: 'Fyll i den rätta komparativformen: Tåget är ___ än bussen. (snabb)',
+			answer: 'Tåget är snabbare än bussen.',
+		},
+		{
+			prompt: 'Komparera komplicerad.',
+			answer: 'mer komplicerad, mest komplicerad',
+		},
+		{
+			prompt: 'Rätta den här frasen: det störst huset.',
+			answer: 'det största huset',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../agreement/', label: 'Adjektivkongruens' },
+		{ href: '../../nouns-articles/en-ett/', label: 'en / ett' },
+		{ href: '../../nouns-articles/noun-forms/', label: 'Substantivformer' },
+	]}
+/>
