@@ -57,5 +57,5 @@ an isolated translation pair.
 ## Full references
 
 - [Noun forms](../../grammar/nouns-articles/noun-forms/)
-- [en and ett](../../grammar/nouns-articles/en-ett/)
+- [en / ett](../../grammar/nouns-articles/en-ett/)
 - [Adjective agreement](../../grammar/adjectives-adverbs/agreement/)

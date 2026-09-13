@@ -152,15 +152,16 @@ or a callout at least every few paragraphs.
 | `grammar/prepositions-function-words/prepositions` | 1172 | A survey page whose value is the collected contrast with German and the practical decision path for place, direction, time, and fixed phrases; splitting it by preposition would produce stubs. |
 | `grammar/nouns-articles/en-ett` | 1219 | Gender, ending signals and the compound rule are one lookup, and the fast decision path makes the longer page usable for real noun choices. Nobody needs the endings without the rule they serve. |
 | `learning-path` | 1220 | This is an index route, not a single reference page. The ordered map now includes practical situation, vocabulary, S1-S4 grammar integration, and B2 report/conditional routes so learners can choose between grammar-first and situation-first paths without leaving the page. |
-| `de/learn/swedish/learning-path` | 1116 | Authored meta-language mirror of the canonical Learning Path; it preserves the same route structure, B2 additions, and learner choices rather than falling back to the English source. |
-| `sv/learn/swedish/learning-path` | 1103 | Authored meta-language mirror of the canonical Learning Path; it preserves the same route structure, B2 additions, and learner choices rather than falling back to the English source. |
+| `de/learn/swedish/learning-path` | 1109 | Authored meta-language mirror of the canonical Learning Path; it preserves the same route structure, B2 additions, and learner choices rather than falling back to the English source. |
+| `sv/learn/swedish/learning-path` | 1096 | Authored meta-language mirror of the canonical Learning Path; it preserves the same route structure, B2 additions, and learner choices rather than falling back to the English source. |
 | `de/learn/swedish/grammar/verb-patterns-voice/particle-verbs` | 1391 | Authored German mirror of the canonical particle-verb page; it carries the same two-sided rule and the same frequency glossary, so it inherits the canonical exception. |
-| `sv/learn/swedish/grammar/verb-patterns-voice/particle-verbs` | 1338 | Authored Swedish mirror of the same page. Its gloss column paraphrases each particle verb in Swedish instead of translating it, which is longer than the canonical's one-word English gloss. |
+| `sv/learn/swedish/grammar/verb-patterns-voice/particle-verbs` | 1340 | Authored Swedish mirror of the same page. Its gloss column paraphrases each particle verb in Swedish instead of translating it, which is longer than the canonical's one-word English gloss. |
 | `de/learn/swedish/grammar/adjectives-adverbs/agreement` | 1275 | Authored German mirror of the canonical agreement page; agreement and double definiteness stay one paradigm, as in the canonical. |
-| `sv/learn/swedish/grammar/adjectives-adverbs/agreement` | 1244 | Authored Swedish mirror of the same paradigm page. |
-| `de/learn/swedish/grammar/nouns-articles/en-ett` | 1146 | Authored German mirror of the canonical `en-ett` page; gender, ending signals and the compound rule remain one lookup. |
-| `sv/learn/swedish/grammar/nouns-articles/en-ett` | 1111 | Authored Swedish mirror of the same lookup page. |
-| `sv/learn/swedish/grammar/prepositions-function-words/prepositions` | 1009 | Authored Swedish mirror of the canonical preposition survey; the Swedish-meta gloss column describes each use in Swedish rather than translating it, which adds length the canonical does not carry. |
+| `sv/learn/swedish/grammar/adjectives-adverbs/agreement` | 1246 | Authored Swedish mirror of the same paradigm page. |
+| `de/learn/swedish/grammar/nouns-articles/en-ett` | 1144 | Authored German mirror of the canonical `en-ett` page; gender, ending signals and the compound rule remain one lookup. |
+| `sv/learn/swedish/grammar/nouns-articles/en-ett` | 1106 | Authored Swedish mirror of the same lookup page. |
+| `de/learn/swedish/grammar/prepositions-function-words/prepositions` | 1002 | Authored German mirror of the canonical preposition survey. Restoring the cited Swedish forms inside `<Sv>` required naming each preposition explicitly in the German sentence, which pushed the mirror just over the budget. |
+| `sv/learn/swedish/grammar/prepositions-function-words/prepositions` | 1013 | Authored Swedish mirror of the canonical preposition survey; the Swedish-meta gloss column describes each use in Swedish rather than translating it, which adds length the canonical does not carry. |
 
 Add a row when a page crosses the budget for a real reason. Do not add one to
 avoid editing.

@@ -2,7 +2,9 @@
 
 ## Status and Dependencies
 
-**Status:** Planned. Implementation has not started.
+**Status:** In progress. Bucket 1, Learn Swedish, is complete and has passed
+its independent review. Buckets 2 and 3, Learn English and Learn German, have
+not started.
 
 **Dependencies:** Phase 5 is complete through its Whole-Tree Quality Check. Its
 frozen information architecture, canonical root-locale pages, and passing
@@ -26,11 +28,11 @@ learning-language trees exactly.
 
 Phase 6 has three large buckets, one per learning language:
 
-| Order | Learning-language bucket | Authored target package | Planning baseline |
-| --- | --- | --- | --- |
-| 1 | Learn Swedish | German and Swedish meta language | 90 canonical pages; 4 German and 4 Swedish authored mirrors |
-| 2 | Learn English | German and Swedish meta language | 66 canonical pages; no authored learning-tree mirrors |
-| 3 | Learn German | German and Swedish meta language | 82 canonical pages; no authored learning-tree mirrors |
+| Order | Learning-language bucket | Authored target package          | Planning baseline                                           |
+| ----- | ------------------------ | -------------------------------- | ----------------------------------------------------------- |
+| 1     | Learn Swedish            | German and Swedish meta language | 90 canonical pages; 4 German and 4 Swedish authored mirrors |
+| 2     | Learn English            | German and Swedish meta language | 66 canonical pages; no authored learning-tree mirrors       |
+| 3     | Learn German             | German and Swedish meta language | 82 canonical pages; no authored learning-tree mirrors       |
 
 The counts are the Phase 5 hand-off, not permanent scope constants. Each
 language inventory must reconcile the current repository before translation.

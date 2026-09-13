@@ -81,6 +81,6 @@ Never inflected: <span lang="sv">bra, kul, äkta, rosa, lila, beige</span> —
 
 ## Full references
 
-- [en and ett](../../grammar/nouns-articles/en-ett/)
+- [en / ett](../../grammar/nouns-articles/en-ett/)
 - [Adjective agreement](../../grammar/adjectives-adverbs/agreement/)
 - [Noun forms](../../grammar/nouns-articles/noun-forms/)

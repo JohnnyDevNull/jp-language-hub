@@ -2,8 +2,10 @@
 
 ## Status and Dependencies
 
-**Status:** Planned. Translation work is blocked on the initial inventory and
-classification gate.
+**Status:** Complete. All ten batches S1-S10 are done, all 180 translation
+targets are authored, and the package passed an independent review whose
+findings are all remediated. See the
+[review report](./roadmap-phase-6-finalize-swedish-meta-translations-review-report.md).
 
 **Dependencies:** Phase 5 and its Whole-Tree Quality Check are complete. This
 is the first language bucket in

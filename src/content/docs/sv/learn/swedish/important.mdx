@@ -35,7 +35,18 @@ export const groups = [...LEVEL_ORDER, UNLEVELLED].map((level) => ({ level, rule
 
 Följer du referensen i ordning använder du [studieplanen](../learning-path/) i stället. Här får du svaret på vad du ska återvända till när något känns fel men du inte vet vilken regel du brutit mot.
 
-{groups.map((group) => (<section><h2>{group.level}</h2><ul>{group.rules.map((rule) => (<li><a href={rule.href}>{rule.title}</a> — {rule.description}</li>))}</ul></section>))}
+{groups.map((group) => (
+	<section>
+		<h2>{group.level}</h2>
+		<ul>
+			{group.rules.map((rule) => (
+				<li>
+					<a href={rule.href}>{rule.title}</a> — {rule.description}
+				</li>
+			))}
+		</ul>
+	</section>
+))}
 
 <RelatedTopics topics={[
 	{ href: '../learning-path/', label: 'Lärväg' },

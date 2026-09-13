@@ -78,5 +78,5 @@ ten comes first, exactly as in English.
 ## Full references
 
 - [Numbers](../../vocabulary/numbers/)
-- [en and ett](../../grammar/nouns-articles/en-ett/)
+- [en / ett](../../grammar/nouns-articles/en-ett/)
 - [Telling time](../../vocabulary/telling-time/)

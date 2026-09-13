@@ -56,9 +56,9 @@ Regelmäßige Adverbien werden wie Adjektive gesteigert:
 Dieselbe Aufteilung wie bei den Fragewörtern <span lang="sv">vart</span> und
 <span lang="sv">var</span>.
 
-## Satzadverbien
+## Satzadverbiale
 
-Viele Satzadverbien, darunter <span lang="sv">alltid</span>,
+Viele Satzadverbiale, darunter <span lang="sv">alltid</span>,
 <span lang="sv">aldrig</span> und <span lang="sv">ofta</span>, teilen sich das
 Platzierungsmuster von <span lang="sv">inte</span>:
 
