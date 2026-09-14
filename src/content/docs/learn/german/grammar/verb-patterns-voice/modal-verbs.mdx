@@ -27,7 +27,7 @@ import TagList from '~/components/TagList.astro';
 <KeyTakeaway>
 - Modal verbs change the sentence meaning and send the lexical verb to the end.
 - Use können, müssen, wollen, sollen, dürfen, mögen with a bare infinitive.
-- The modal is finite in the left bracket; the lexical infinitive closes the right bracket.
+- The modal is finite in the linke Satzklammer; the lexical infinitive closes the rechte Satzklammer.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -40,13 +40,13 @@ Use <span lang="de">können, müssen, wollen, sollen, dürfen, mögen</span> wit
 
 ## Core rule
 
-The modal is finite in the left bracket; the lexical infinitive waits at the end.
+The modal is finite in the linke Satzklammer; the lexical infinitive waits at the end.
 
 <SentenceSchema
 	caption="Modal verb bracket"
 	rowHeader="Pattern"
 	lang="de"
-	columns={["First field", "Finite modal", "Middle field", "Right bracket"]}
+	columns={["Vorfeld", "linke Satzklammer", "Mittelfeld", "rechte Satzklammer"]}
 	rows={[
 		{ label: "Ability", cells: ["Ich", "kann", "heute", "schwimmen"] },
 		{ label: "Necessity", cells: ["Wir", "müssen", "morgen", "arbeiten"] },
@@ -61,7 +61,7 @@ The modal is finite in the left bracket; the lexical infinitive waits at the end
 	correct="Ich muss nach Hause gehen."
 	lang="de"
 >
-	The infinitive belongs in the right bracket.
+	The infinitive belongs in the rechte Satzklammer.
 </MistakeBox>
 
 <MemoryTip>

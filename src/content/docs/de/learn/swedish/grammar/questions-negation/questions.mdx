@@ -59,12 +59,12 @@ Verb an den Satzanfang stellst:
 <SentenceSchema
 	caption="Aussage und Ja-/Nein-Frage"
 	rowHeader="Satz"
-	columns={['Erstes Feld', 'Finites Verb', 'Subjekt', 'Satzadverbial', 'Nicht-finites Verb', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'satsadverbial', 'infinit verb', 'objekt / predikativ', 'adverbial']}
 	rows={[
-		{ label: 'Aussage', cells: ['Du', 'kommer', '', '', '', 'imorgon.'] },
-		{ label: 'Ja/Nein-Frage', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] },
-		{ label: 'Verneinte Frage', cells: ['', 'Kommer', 'du', 'inte', '', 'imorgon?'] },
-		{ label: 'Zwei Verben', cells: ['', 'Har', 'hon', '', 'köpt', 'biljetten?'] },
+		{ label: 'Aussage', cells: ['Du', 'kommer', '', '', '', '', 'imorgon.'] },
+		{ label: 'Ja/Nein-Frage', cells: ['', 'Kommer', 'du', '', '', '', 'imorgon?'] },
+		{ label: 'Verneinte Frage', cells: ['', 'Kommer', 'du', 'inte', '', '', 'imorgon?'] },
+		{ label: 'Zwei Verben', cells: ['', 'Har', 'hon', '', 'köpt', 'biljetten?', ''] },
 	]}
 />
 
@@ -79,7 +79,7 @@ Eine direkte Frage kann auf zwei Arten beginnen:
 <SentenceSchema
 	caption="Zwei direkte Frageanfänge"
 	rowHeader="Fragetyp"
-	columns={['Fragephrase', 'Finites Verb', 'Subjekt', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'adverbial']}
 	rows={[
 		{ label: 'Ja/Nein', cells: ['', 'Bor', 'du', 'här?'] },
 		{ label: 'Fragewort', cells: ['Var', 'bor', 'du', ''] },
@@ -96,13 +96,21 @@ Wird eine Ja-/Nein-Frage Teil eines größeren Satzes, leite sie mit <Sv>om</Sv>
 ("ob") ein und verwende die Nebensatz-Wortstellung:
 
 <SentenceSchema
-	caption="Direkte und indirekte Ja-/Nein-Fragen"
+	caption="Wortstellung der direkten Ja-/Nein-Frage"
 	rowHeader="Frage"
-	columns={['Einleitung', 'Finites Verb (direkt)', 'Subjekt', 'Satzadverbial', 'Verb (indirekt)', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'satsadverbial', 'adverbial']}
 	rows={[
-		{ label: 'Direkt', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] },
-		{ label: 'Indirekt', cells: ['om', '', 'du', '', 'kommer', 'imorgon'] },
-		{ label: 'Indirekt, verneint', cells: ['om', '', 'du', 'inte', 'kommer', 'imorgon'] },
+		{ label: 'Direkt', cells: ['', 'Kommer', 'du', '', 'imorgon?'] },
+	]}
+/>
+
+<SentenceSchema
+	caption="Wortstellung der indirekten Ja-/Nein-Frage"
+	rowHeader="Frage"
+	columns={['bisatsinledare', 'subjekt', 'satsadverbial', 'finit verb', 'adverbial']}
+	rows={[
+		{ label: 'Neutral', cells: ['om', 'du', '', 'kommer', 'imorgon'] },
+		{ label: 'Verneint', cells: ['om', 'du', 'inte', 'kommer', 'imorgon'] },
 	]}
 />
 

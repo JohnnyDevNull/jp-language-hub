@@ -36,7 +36,7 @@ import TagList from '~/components/TagList.astro';
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Use a subordinate clause to give a reason, time, condition, or contrast. The
-connector signals the relationship; it does not send the English verb to the
+subordinator signals the relationship; it does not send the English verb to the
 end as German does.
 
 ## Use this now
@@ -46,7 +46,7 @@ end as German does.
 - condition: <span lang="en">if</span>, <span lang="en">unless</span>
 - contrast: <span lang="en">although</span>
 
-Choose the connector by meaning before choosing its position in the clause.
+Choose the subordinator by meaning before choosing its position in the clause.
 
 ## Core rule
 
@@ -54,9 +54,9 @@ Choose the connector by meaning before choosing its position in the clause.
 	caption="English subordinate clause order"
 	rowHeader="Position"
 	lang="en"
-	columns={['Connector', 'Subject', 'Verb', 'Rest', 'Main clause']}
+	columns={['subordinator', 'subject', 'verb', 'object / complement', 'main clause']}
 	rows={[
-		{ label: 'Reason', cells: ['because', 'it', 'was', 'raining,', 'we stayed inside.'] },
+		{ label: 'Reason', cells: ['because', 'it', 'was raining,', '', 'we stayed inside.'] },
 		{ label: 'Time', cells: ['When', 'the train', 'arrives,', '', 'we will leave.'] },
 		{ label: 'Condition', cells: ['if', 'you', 'need', 'help,', 'call me.'] },
 	]}
@@ -94,7 +94,7 @@ form belongs in the main clause, not in the time or condition clause.
 </MistakeBox>
 
 <MemoryTip>
-After a connector, write a normal English clause: subject first, then verb.
+After a subordinator, write a normal English clause: subject first, then verb.
 </MemoryTip>
 
 <QuickCheck

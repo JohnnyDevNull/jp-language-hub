@@ -33,8 +33,8 @@ import TagList from '~/components/TagList.astro';
 <KeyTakeaway>
 - En bisats är del av en större mening och börjar ofta med en subjunktion som
   <Sv>att</Sv>, <Sv>eftersom</Sv>, <Sv>om</Sv> eller <Sv>när</Sv>.
-- Den praktiska grundramen är **subjunktion + subjekt + satsadverbial + finit
-  verb + resten**.
+- Den praktiska grundramen är **bisatsinledare + subjekt + satsadverbial + finit
+  verb + adverbial**.
 - Om hela bisatsen kommer först använder följande huvudsats inversion.
 </KeyTakeaway>
 
@@ -62,11 +62,11 @@ som <Sv>inte</Sv>:
 <SentenceSchema
 	caption="Den svenska bisatsramen"
 	rowHeader="Betydelse"
-	columns={['Subjunktion', 'Subjekt', 'Satsadverbial', 'Finit verb', 'Icke-finit verb', 'Rest']}
+	columns={['bisatsinledare', 'subjekt', 'satsadverbial', 'finit verb', 'infinit verb', 'objekt / predikativ', 'adverbial']}
 	rows={[
-		{ label: 'Orsak', cells: ['eftersom', 'jag', 'inte', 'kan', 'komma', 'idag'] },
-		{ label: 'Innehåll', cells: ['att', 'hon', 'redan', 'har', 'köpt', 'biljetten'] },
-		{ label: 'Villkor', cells: ['om', 'det', 'inte', 'regnar', '', ''] },
+		{ label: 'Orsak', cells: ['eftersom', 'jag', 'inte', 'kan', 'komma', '', 'idag'] },
+		{ label: 'Innehåll', cells: ['att', 'hon', 'redan', 'har', 'köpt', 'biljetten', ''] },
+		{ label: 'Villkor', cells: ['om', 'det', 'inte', 'regnar', '', '', ''] },
 	]}
 />
 
@@ -86,7 +86,7 @@ finita verb före subjektet:
 <SentenceSchema
 	caption="En bisats före en huvudsats"
 	rowHeader="Sats"
-	columns={['Första fältet', 'Finit verb', 'Subjekt', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'adverbial']}
 	rows={[
 		{
 			label: 'Bisats + huvudsats',
@@ -129,8 +129,8 @@ För inte in huvudsatsens satsadverbialplacering i en bisats.
 </MistakeBox>
 
 <MemoryTip>
-Bygg det beroende blocket från vänster till höger: **bindeord → subjekt →
-satsadverbial → finit verb → resten**.
+Bygg det beroende blocket från vänster till höger: **bisatsinledare → subjekt →
+satsadverbial → finit verb → adverbial**.
 </MemoryTip>
 
 <QuickCheck

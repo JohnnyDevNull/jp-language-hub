@@ -59,12 +59,12 @@ verb till första plats:
 <SentenceSchema
 	caption="Påstående och ja/nej-fråga"
 	rowHeader="Mening"
-	columns={['Första fält', 'Finit verb', 'Subjekt', 'Satsadverbial', 'Icke-finit verb', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'satsadverbial', 'infinit verb', 'objekt / predikativ', 'adverbial']}
 	rows={[
-		{ label: 'Påstående', cells: ['Du', 'kommer', '', '', '', 'imorgon.'] },
-		{ label: 'Ja/nej-fråga', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] },
-		{ label: 'Nekande fråga', cells: ['', 'Kommer', 'du', 'inte', '', 'imorgon?'] },
-		{ label: 'Två verb', cells: ['', 'Har', 'hon', '', 'köpt', 'biljetten?'] },
+		{ label: 'Påstående', cells: ['Du', 'kommer', '', '', '', '', 'imorgon.'] },
+		{ label: 'Ja/nej-fråga', cells: ['', 'Kommer', 'du', '', '', '', 'imorgon?'] },
+		{ label: 'Nekande fråga', cells: ['', 'Kommer', 'du', 'inte', '', '', 'imorgon?'] },
+		{ label: 'Två verb', cells: ['', 'Har', 'hon', '', 'köpt', 'biljetten?', ''] },
 	]}
 />
 
@@ -79,7 +79,7 @@ En direkt fråga kan inledas på två sätt:
 <SentenceSchema
 	caption="Två direkta frågeöppningar"
 	rowHeader="Frågetyp"
-	columns={['Frågefras', 'Finit verb', 'Subjekt', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'adverbial']}
 	rows={[
 		{ label: 'Ja/nej', cells: ['', 'Bor', 'du', 'här?'] },
 		{ label: 'Frågeord', cells: ['Var', 'bor', 'du', ''] },
@@ -96,13 +96,21 @@ När en ja/nej-fråga blir en del av en större mening inleder du den med
 <Sv>om</Sv> (ungefär "ifall") och använder bisatsordföljd:
 
 <SentenceSchema
-	caption="Direkta och indirekta ja/nej-frågor"
+	caption="Ordföljd i direkt ja/nej-fråga"
 	rowHeader="Fråga"
-	columns={['Inledning', 'Finit verb (direkt)', 'Subjekt', 'Satsadverbial', 'Verb (indirekt)', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'satsadverbial', 'adverbial']}
 	rows={[
-		{ label: 'Direkt', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] },
-		{ label: 'Indirekt', cells: ['om', '', 'du', '', 'kommer', 'imorgon'] },
-		{ label: 'Indirekt, nekande', cells: ['om', '', 'du', 'inte', 'kommer', 'imorgon'] },
+		{ label: 'Direkt', cells: ['', 'Kommer', 'du', '', 'imorgon?'] },
+	]}
+/>
+
+<SentenceSchema
+	caption="Ordföljd i indirekt ja/nej-fråga"
+	rowHeader="Fråga"
+	columns={['bisatsinledare', 'subjekt', 'satsadverbial', 'finit verb', 'adverbial']}
+	rows={[
+		{ label: 'Neutral', cells: ['om', 'du', '', 'kommer', 'imorgon'] },
+		{ label: 'Nekande', cells: ['om', 'du', 'inte', 'kommer', 'imorgon'] },
 	]}
 />
 

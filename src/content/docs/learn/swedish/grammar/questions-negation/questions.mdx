@@ -60,12 +60,12 @@ the front:
 <SentenceSchema
 	caption="Statement and yes/no question"
 	rowHeader="Sentence"
-	columns={['First field', 'Finite verb', 'Subject', 'Sentence adverb', 'Non-finite verb', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'satsadverbial', 'infinit verb', 'objekt / predikativ', 'adverbial']}
 	rows={[
-		{ label: 'Statement', cells: ['Du', 'kommer', '', '', '', 'imorgon.'] },
-		{ label: 'Yes/no question', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] },
-		{ label: 'Negative question', cells: ['', 'Kommer', 'du', 'inte', '', 'imorgon?'] },
-		{ label: 'Two verbs', cells: ['', 'Har', 'hon', '', 'köpt', 'biljetten?'] },
+		{ label: 'Statement', cells: ['Du', 'kommer', '', '', '', '', 'imorgon.'] },
+		{ label: 'Yes/no question', cells: ['', 'Kommer', 'du', '', '', '', 'imorgon?'] },
+		{ label: 'Negative question', cells: ['', 'Kommer', 'du', 'inte', '', '', 'imorgon?'] },
+		{ label: 'Two verbs', cells: ['', 'Har', 'hon', '', 'köpt', 'biljetten?', ''] },
 	]}
 />
 
@@ -80,7 +80,7 @@ A direct question can begin in two ways:
 <SentenceSchema
 	caption="Two direct-question openings"
 	rowHeader="Question type"
-	columns={['Question phrase', 'Finite verb', 'Subject', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'adverbial']}
 	rows={[
 		{ label: 'Yes/no', cells: ['', 'Bor', 'du', 'här?'] },
 		{ label: 'Question word', cells: ['Var', 'bor', 'du', ''] },
@@ -97,13 +97,21 @@ When a yes/no question becomes part of a larger sentence, introduce it with
 <Sv>om</Sv> (“whether / if”) and use subordinate-clause order:
 
 <SentenceSchema
-	caption="Direct and indirect yes/no questions"
+	caption="Direct yes/no question order"
 	rowHeader="Question"
-	columns={['Opening', 'Finite verb (direct)', 'Subject', 'Sentence adverb', 'Verb (indirect)', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'satsadverbial', 'adverbial']}
 	rows={[
-		{ label: 'Direct', cells: ['', 'Kommer', 'du', '', '', 'imorgon?'] },
-		{ label: 'Indirect', cells: ['om', '', 'du', '', 'kommer', 'imorgon'] },
-		{ label: 'Indirect, negative', cells: ['om', '', 'du', 'inte', 'kommer', 'imorgon'] },
+		{ label: 'Direct', cells: ['', 'Kommer', 'du', '', 'imorgon?'] },
+	]}
+/>
+
+<SentenceSchema
+	caption="Indirect yes/no question order"
+	rowHeader="Question"
+	columns={['bisatsinledare', 'subjekt', 'satsadverbial', 'finit verb', 'adverbial']}
+	rows={[
+		{ label: 'Neutral', cells: ['om', 'du', '', 'kommer', 'imorgon'] },
+		{ label: 'Negative', cells: ['om', 'du', 'inte', 'kommer', 'imorgon'] },
 	]}
 />
 

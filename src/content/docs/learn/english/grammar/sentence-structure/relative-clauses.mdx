@@ -53,15 +53,15 @@ uses normal subject--verb order inside the clause, so it is a focused kind of
 	caption="English relative clause positions"
 	rowHeader="Use"
 	lang="en"
-	columns={['Noun', 'Relative word', 'Subject', 'Verb', 'Rest']}
+	columns={['antecedent', 'relative pronoun', 'subject', 'verb', 'object / complement', 'adverbial']}
 	rows={[
-		{ label: 'Relative word is subject', cells: ['the colleague', 'who', '', 'called', 'me'] },
-		{ label: 'Relative word is object', cells: ['the colleague', 'who', 'I', 'called', 'yesterday'] },
-		{ label: 'Thing', cells: ['the report', 'that', 'we', 'finished', 'today'] },
+		{ label: 'Relative word is subject', cells: ['the colleague', 'who', '', 'called', 'me', ''] },
+		{ label: 'Relative word is object', cells: ['the colleague', 'who', 'I', 'called', '', 'yesterday'] },
+		{ label: 'Thing', cells: ['the report', 'that', 'we', 'finished', '', 'today'] },
 	]}
 />
 
-When the relative word is the subject, no second subject appears:
+When the relative pronoun is the subject, no second subject appears:
 <span lang="en">the colleague who called</span>. When it is the object, the
 clause needs its own subject: <span lang="en">the colleague who I called</span>.
 
@@ -83,7 +83,7 @@ Do not use <span lang="en">that</span> in this comma pair; use
 </LanguageComparison>
 
 German relative pronouns change with gender and case. English usually chooses
-the relative word by meaning and clause role, not by the gender of the noun.
+the relative pronoun by meaning and clause role, not by the gender of the noun.
 
 <MistakeBox
 	incorrect="My laptop, that is five years old, still works well."
@@ -101,7 +101,7 @@ No commas means “which one?” Commas mean “by the way.”
 <QuickCheck
 	items={[
 		{ prompt: 'Join: I know a woman. She works at the hospital.', answer: 'I know a woman who works at the hospital.' },
-		{ prompt: 'Choose the relative word: The book ___ I bought is useful.', answer: 'The book that I bought is useful.' },
+		{ prompt: 'Choose the relative pronoun: The book ___ I bought is useful.', answer: 'The book that I bought is useful.' },
 		{ prompt: 'Add commas for extra information: My only brother who lives in Malmö is visiting.', answer: 'My only brother, who lives in Malmö, is visiting.' },
 		{ prompt: 'Correct: The office, that is near the station, opens at nine.', answer: 'The office, which is near the station, opens at nine.' },
 	]}

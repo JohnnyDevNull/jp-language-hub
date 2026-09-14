@@ -8,6 +8,9 @@
  *    byte-identical to its canonical counterpart, or shares an untranslated
  *    content word with it (a half-translated leftover), which is how a
  *    translation leftover slips past a diff-blind read.
+ *
+ * SentenceSchema `columns` are deliberately excluded: they must be identical
+ * across meta locales, which validate-schema-terminology.mjs enforces.
  */
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
@@ -126,8 +129,6 @@ function findSelfGlosses(file, source, metaLanguage, grammarLanguage) {
 
 const MIRRORED_PROP_NAMES = ['title', 'caption', 'label', 'alt'];
 const PROP_VALUE_RE = new RegExp(`\\b(${MIRRORED_PROP_NAMES.join('|')})=("([^"]*)"|'([^']*)')`, 'g');
-const COLUMNS_ARRAY_RE = /columns=\{\[([\s\S]*?)\]\}/g;
-const STRING_ENTRY_RE = /"([^"]*)"|'([^']*)'/g;
 const MARKED_TEXT_RE = /<Sv>([\s\S]*?)<\/Sv>|<span lang="(?:de|en|sv)">([\s\S]*?)<\/span>/g;
 
 /**
@@ -219,14 +220,6 @@ function extractProps(source) {
 	return byProp;
 }
 
-function extractColumnsArrays(source) {
-	return [...source.matchAll(COLUMNS_ARRAY_RE)].map((match) => ({
-		entries: [...match[1].matchAll(STRING_ENTRY_RE)].map((entry) => ({
-			value: entry[1] ?? entry[2],
-			index: match.index + entry.index,
-		})),
-	}));
-}
 
 /** A header row is a table row immediately followed by a `| --- |` separator row. */
 function extractTableHeaderRows(source) {
@@ -308,26 +301,6 @@ function findUntranslatedProps(mirrorFile, mirrorSource, canonicalSource, canoni
 				line: lineOf(mirrorSource, mirrorValues[i].index),
 				severity: 'error',
 				message: untranslatedMessage(prop, mirrorValue, canonicalValue, sharedTokens),
-			});
-		}
-	}
-
-	const canonicalColumns = extractColumnsArrays(canonicalSource);
-	const mirrorColumns = extractColumnsArrays(mirrorSource);
-	for (let i = 0; i < Math.min(canonicalColumns.length, mirrorColumns.length); i++) {
-		const canonicalEntries = canonicalColumns[i].entries;
-		const mirrorEntries = mirrorColumns[i].entries;
-		for (let j = 0; j < Math.min(canonicalEntries.length, mirrorEntries.length); j++) {
-			const canonicalValue = canonicalEntries[j].value;
-			const mirrorValue = mirrorEntries[j].value;
-			const sharedTokens = sharedUntranslatedTokens(canonicalValue, mirrorValue, canonicalMarkedTokens);
-			if (sharedTokens.length === 0) continue;
-
-			findings.push({
-				file: mirrorFile,
-				line: lineOf(mirrorSource, mirrorEntries[j].index),
-				severity: 'error',
-				message: untranslatedMessage('columns entry', mirrorValue, canonicalValue, sharedTokens),
 			});
 		}
 	}

@@ -5,8 +5,8 @@ by hand; regenerate it instead. The vocabularies are owned by
 [Phase 6: Align Sentence-Schema Terminology](./roadmap-phase-6-align-schema-terminology.md)
 and the rule by [Content Didactics](./rules/content-didactics.md).
 
-One row per canonical schema: 35 rows for 63
-schema instances. The 28 German- and Swedish-meta mirrors are not listed
+One row per canonical schema: 37 rows for 69
+schema instances. The 32 German- and Swedish-meta mirrors are not listed
 because they carry no decision — each copies its canonical `columns` array
 verbatim.
 
@@ -26,48 +26,50 @@ Columns inside a row are separated by `·`. Three actions occur:
 
 | Page | # | Today | Target | Action |
 | --- | --- | --- | --- | --- |
-| `grammar/mood-politeness-reports/conditionals` | 1 | Condition · Finite verb · Rest · Main clause | fundament · finit verb · adverbial · huvudsats | check cells |
-| `grammar/mood-politeness-reports/reported-speech` | 1 | Link · Subject · Sentence adverb · Finite verb · Rest | bisatsinledare · subjekt · satsadverbial · finit verb · adverbial | check cells |
-| `grammar/questions-negation/question-words` | 1 | Question phrase · Finite verb · Subject · Rest | fundament · finit verb · subjekt · adverbial | check cells |
-| `grammar/questions-negation/question-words` | 2 | Question word · Finite verb (direct) · Subject · Sentence adverb · Verb (indirect) · Rest | fundament · finit verb · subjekt · satsadverbial · finit verb · adverbial | split table |
-| `grammar/questions-negation/questions` | 1 | First field · Finite verb · Subject · Sentence adverb · Non-finite verb · Rest | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | check cells |
-| `grammar/questions-negation/questions` | 2 | Question phrase · Finite verb · Subject · Rest | fundament · finit verb · subjekt · adverbial | check cells |
-| `grammar/questions-negation/questions` | 3 | Opening · Finite verb (direct) · Subject · Sentence adverb · Verb (indirect) · Rest | fundament · finit verb · subjekt · satsadverbial · finit verb · adverbial | split table |
-| `grammar/sentence-structure/basic-word-order` | 1 | 1 Fundament · 2 Finite verb · 3 Subject · Sentence adverb · Non-finite verb · Rest | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | check cells |
-| `grammar/sentence-structure/biff` | 1 | 1 Fundament · 2 Finite verb · 3 Subject · Sentence adverb · Verb group · Rest | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | check cells |
-| `grammar/sentence-structure/inte-placement` | 1 | 1 Fundament · 2 Finite verb · 3 Subject · Sentence adverb · Verb group · Rest | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | check cells |
-| `grammar/sentence-structure/inversion` | 1 | 1 Fundament · 2 Finite verb · 3 Subject · Sentence adverb · Non-finite verb · Rest | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | check cells |
-| `grammar/sentence-structure/subordinate-clauses` | 1 | Subordinator · Subject · Sentence adverb · Finite verb · Non-finite verb · Rest | bisatsinledare · subjekt · satsadverbial · finit verb · infinit verb · adverbial | check cells |
-| `grammar/sentence-structure/subordinate-clauses` | 2 | First field · Finite verb · Subject · Rest | fundament · finit verb · subjekt · adverbial | check cells |
-| `grammar/sentence-structure/v2` | 1 | 1 Fundament · 2 Finite verb · 3 Subject · Rest | fundament · finit verb · subjekt · adverbial | check cells |
+| `grammar/mood-politeness-reports/conditionals` | 1 | fundament · finit verb · adverbial · huvudsats | fundament · finit verb · adverbial · huvudsats | mechanical |
+| `grammar/mood-politeness-reports/reported-speech` | 1 | bisatsinledare · subjekt · satsadverbial · finit verb · infinit verb · adverbial | bisatsinledare · subjekt · satsadverbial · finit verb · infinit verb · adverbial | mechanical |
+| `grammar/questions-negation/question-words` | 1 | fundament · finit verb · subjekt · adverbial | fundament · finit verb · subjekt · adverbial | mechanical |
+| `grammar/questions-negation/question-words` | 2 | fundament · finit verb · subjekt · satsadverbial · adverbial | fundament · finit verb · subjekt · satsadverbial · adverbial | mechanical |
+| `grammar/questions-negation/question-words` | 3 | bisatsinledare · subjekt · satsadverbial · finit verb · adverbial | bisatsinledare · subjekt · satsadverbial · finit verb · adverbial | mechanical |
+| `grammar/questions-negation/questions` | 1 | fundament · finit verb · subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | fundament · finit verb · subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | mechanical |
+| `grammar/questions-negation/questions` | 2 | fundament · finit verb · subjekt · adverbial | fundament · finit verb · subjekt · adverbial | mechanical |
+| `grammar/questions-negation/questions` | 3 | fundament · finit verb · subjekt · satsadverbial · adverbial | fundament · finit verb · subjekt · satsadverbial · adverbial | mechanical |
+| `grammar/questions-negation/questions` | 4 | bisatsinledare · subjekt · satsadverbial · finit verb · adverbial | bisatsinledare · subjekt · satsadverbial · finit verb · adverbial | mechanical |
+| `grammar/sentence-structure/basic-word-order` | 1 | fundament · finit verb · subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | fundament · finit verb · subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | mechanical |
+| `grammar/sentence-structure/biff` | 1 | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | mechanical |
+| `grammar/sentence-structure/inte-placement` | 1 | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | mechanical |
+| `grammar/sentence-structure/inversion` | 1 | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | mechanical |
+| `grammar/sentence-structure/subordinate-clauses` | 1 | bisatsinledare · subjekt · satsadverbial · finit verb · infinit verb · objekt / predikativ · adverbial | bisatsinledare · subjekt · satsadverbial · finit verb · infinit verb · objekt / predikativ · adverbial | mechanical |
+| `grammar/sentence-structure/subordinate-clauses` | 2 | fundament · finit verb · subjekt · adverbial | fundament · finit verb · subjekt · adverbial | mechanical |
+| `grammar/sentence-structure/v2` | 1 | fundament · finit verb · subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | fundament · finit verb · subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | mechanical |
 
 ### Learn English
 
 | Page | # | Today | Target | Action |
 | --- | --- | --- | --- | --- |
-| `grammar/mood-politeness-reports/reported-speech` | 1 | Reporting verb · Question word · Auxiliary · Subject · Verb · Rest | reporting verb · question word · auxiliary · subject · main verb · adverbial | check cells |
-| `grammar/questions-negation/negation` | 1 | Subject · Auxiliary · Not · Main verb · Rest | subject · auxiliary · not · main verb · adverbial | check cells |
-| `grammar/questions-negation/questions-and-do-support` | 1 | Question word · Auxiliary · Subject · Main verb · Rest | question word · auxiliary · subject · main verb · adverbial | check cells |
-| `grammar/sentence-structure/adverb-placement` | 1 | Subject · First verb · Frequency · Main verb · Manner · Place · Time | subject · auxiliary · frequency · main verb · manner · place · time | mechanical |
-| `grammar/sentence-structure/relative-clauses` | 1 | Noun · Relative word · Subject · Verb · Rest | antecedent · relative pronoun · subject · verb · adverbial | check cells |
-| `grammar/sentence-structure/sentence-order` | 1 | Opening · Subject · Finite verb · Object / complement · Place · Time | adverbial · subject · verb · object / complement · place · time | mechanical |
-| `grammar/sentence-structure/subordinate-clauses` | 1 | Connector · Subject · Verb · Rest · Main clause | subordinator · subject · verb · adverbial · main clause | check cells |
-| `grammar/verb-patterns-voice/auxiliary-verbs` | 1 | Subject · Auxiliary · Main verb · Rest | subject · auxiliary · main verb · adverbial | check cells |
-| `grammar/verb-patterns-voice/passive` | 1 | Subject · Be · Past participle · Agent | subject · auxiliary · past participle · agent | mechanical |
+| `grammar/mood-politeness-reports/reported-speech` | 1 | reporting verb · question word · auxiliary · subject · main verb · adverbial | reporting verb · question word · auxiliary · subject · main verb · adverbial | mechanical |
+| `grammar/questions-negation/negation` | 1 | subject · auxiliary · not · main verb · object / complement · adverbial | subject · auxiliary · not · main verb · object / complement · adverbial | mechanical |
+| `grammar/questions-negation/questions-and-do-support` | 1 | question word · auxiliary · subject · main verb · object / complement · adverbial | question word · auxiliary · subject · main verb · object / complement · adverbial | mechanical |
+| `grammar/sentence-structure/adverb-placement` | 1 | subject · auxiliary · frequency · main verb · manner · place · time | subject · auxiliary · frequency · main verb · manner · place · time | mechanical |
+| `grammar/sentence-structure/relative-clauses` | 1 | antecedent · relative pronoun · subject · verb · object / complement · adverbial | antecedent · relative pronoun · subject · verb · object / complement · adverbial | mechanical |
+| `grammar/sentence-structure/sentence-order` | 1 | adverbial · subject · verb · object / complement · place · time | adverbial · subject · verb · object / complement · place · time | mechanical |
+| `grammar/sentence-structure/subordinate-clauses` | 1 | subordinator · subject · verb · object / complement · main clause | subordinator · subject · verb · object / complement · main clause | mechanical |
+| `grammar/verb-patterns-voice/auxiliary-verbs` | 1 | subject · auxiliary · main verb · adverbial | subject · auxiliary · main verb · adverbial | mechanical |
+| `grammar/verb-patterns-voice/passive` | 1 | subject · auxiliary · past participle · agent | subject · auxiliary · past participle · agent | mechanical |
 
 ### Learn German
 
 | Page | # | Today | Target | Action |
 | --- | --- | --- | --- | --- |
-| `grammar/sentence-structure/coordinating-conjunctions` | 1 | Clause 1 · Connector · Clause 2 | Hauptsatz · Konjunktion · Hauptsatz | mechanical |
-| `grammar/sentence-structure/infinitive-clauses` | 1 | Main clause · Adverbial material · zu + infinitive | Hauptsatz · Mittelfeld · rechte Satzklammer | mechanical |
-| `grammar/sentence-structure/main-clause-verb-second` | 1 | 1 First field · 2 Finite verb · Subject if not first · Rest | Vorfeld · linke Satzklammer · Mittelfeld · Mittelfeld | check cells |
-| `grammar/sentence-structure/questions` | 1 | Question field · Finite verb · Subject · Rest | Vorfeld · linke Satzklammer · Mittelfeld · Mittelfeld | check cells |
-| `grammar/sentence-structure/relative-clauses` | 1 | Noun · Relative pronoun · Middle · Final verb | Bezugswort · linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
-| `grammar/sentence-structure/subordinate-clauses` | 1 | Connector · Middle field · Final finite verb | linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
-| `grammar/sentence-structure/subordinating-conjunctions` | 1 | Connector · Middle · Final verb | linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
-| `grammar/sentence-structure/verb-bracket` | 1 | Left bracket · Middle · Right bracket | linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
-| `grammar/verb-patterns-voice/modal-verbs` | 1 | First field · Finite modal · Middle field · Right bracket | Vorfeld · linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
-| `grammar/verb-patterns-voice/passive` | 1 | Left field · Finite verb · Middle · Right bracket | Vorfeld · linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
-| `grammar/word-formation-particles/particle-verbs` | 1 | Clause start · Finite verb · Middle · Right bracket | Vorfeld · linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
-| `grammar/word-formation-particles/separable-verbs` | 1 | Clause start · Finite verb · Middle · Right bracket | Vorfeld · linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
+| `grammar/sentence-structure/coordinating-conjunctions` | 1 | Hauptsatz · Konjunktion · Hauptsatz | Hauptsatz · Konjunktion · Hauptsatz | mechanical |
+| `grammar/sentence-structure/infinitive-clauses` | 1 | Hauptsatz · Mittelfeld · rechte Satzklammer | Hauptsatz · Mittelfeld · rechte Satzklammer | mechanical |
+| `grammar/sentence-structure/main-clause-verb-second` | 1 | Vorfeld · linke Satzklammer · Mittelfeld | Vorfeld · linke Satzklammer · Mittelfeld | mechanical |
+| `grammar/sentence-structure/questions` | 1 | Vorfeld · linke Satzklammer · Mittelfeld | Vorfeld · linke Satzklammer · Mittelfeld | mechanical |
+| `grammar/sentence-structure/relative-clauses` | 1 | Bezugswort · linke Satzklammer · Mittelfeld · rechte Satzklammer | Bezugswort · linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
+| `grammar/sentence-structure/subordinate-clauses` | 1 | linke Satzklammer · Mittelfeld · rechte Satzklammer | linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
+| `grammar/sentence-structure/subordinating-conjunctions` | 1 | linke Satzklammer · Mittelfeld · rechte Satzklammer | linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
+| `grammar/sentence-structure/verb-bracket` | 1 | linke Satzklammer · Mittelfeld · rechte Satzklammer | linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
+| `grammar/verb-patterns-voice/modal-verbs` | 1 | Vorfeld · linke Satzklammer · Mittelfeld · rechte Satzklammer | Vorfeld · linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
+| `grammar/verb-patterns-voice/passive` | 1 | Vorfeld · linke Satzklammer · Mittelfeld · rechte Satzklammer | Vorfeld · linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
+| `grammar/word-formation-particles/particle-verbs` | 1 | Vorfeld · linke Satzklammer · Mittelfeld · rechte Satzklammer | Vorfeld · linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
+| `grammar/word-formation-particles/separable-verbs` | 1 | Vorfeld · linke Satzklammer · Mittelfeld · rechte Satzklammer | Vorfeld · linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |

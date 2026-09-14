@@ -26,7 +26,7 @@ import TagList from '~/components/TagList.astro';
 <KeyTakeaway>
 - In a German declarative main clause, the finite verb is in position two.
 - The first position can be one element or phrase; the subject does not have to come first.
-- Move the finite verb with the first field, not after the subject.
+- Move the finite verb with the Vorfeld, not after the subject.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -40,7 +40,7 @@ constituent before it in a declarative main clause.
 
 ## Core rule
 
-German main clauses use verb-second (V2) order. The first field may be the
+German main clauses use verb-second (V2) order. The Vorfeld may be the
 subject, a time phrase, or an object; the finite verb follows it, and the
 remaining material comes after the verb.
 
@@ -48,8 +48,8 @@ remaining material comes after the verb.
 	caption="Main clause verb second"
 	rowHeader="Pattern"
 	lang="de"
-	columns={["1 First field","2 Finite verb","Subject if not first","Rest"]}
-	rows={[{"label":"Neutral","cells":["Ich","kaufe","","heute Brot."]},{"label":"Time first","cells":["Heute","kaufe","ich","Brot."]},{"label":"Object first","cells":["Brot","kaufe","ich","heute."]}]}
+	columns={["Vorfeld","linke Satzklammer","Mittelfeld"]}
+	rows={[{"label":"Neutral","cells":["Ich","kaufe","heute Brot."]},{"label":"Time first","cells":["Heute","kaufe","ich Brot."]},{"label":"Object first","cells":["Brot","kaufe","ich heute."]}]}
 />
 
 
@@ -59,7 +59,7 @@ remaining material comes after the verb.
 	correct="Heute kaufe ich Brot."
 	lang="de"
 >
-	The first field changes, but the finite verb stays second.
+	The Vorfeld changes, but the finite verb stays second.
 </MistakeBox>
 
 <MemoryTip>

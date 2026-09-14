@@ -56,12 +56,12 @@ Wörter enthält; das finite Verb besitzt Position zwei.
 <SentenceSchema
 	caption="V2 im aussagenden Hauptsatz"
 	rowHeader="Variante"
-	columns={['1 Fundament', '2 Finites Verb', '3 Subjekt', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'satsadverbial', 'infinit verb', 'objekt / predikativ', 'adverbial']}
 	rows={[
-		{ label: 'Neutral', cells: ['Jag', 'köper', '', 'en bil idag.'] },
-		{ label: 'Zeit zuerst', cells: ['Idag', 'köper', 'jag', 'en bil.'] },
-		{ label: 'Objekt zuerst', cells: ['Den boken', 'har', 'jag', 'redan läst.'] },
-		{ label: 'Deutsch', lang: 'de', cells: ['Heute', 'kaufe', 'ich', 'ein Auto.'] },
+		{ label: 'Neutral', cells: ['Jag', 'köper', '', '', '', 'en bil', 'idag.'] },
+		{ label: 'Zeit zuerst', cells: ['Idag', 'köper', 'jag', '', '', 'en bil.', ''] },
+		{ label: 'Objekt zuerst', cells: ['Den boken', 'har', 'jag', 'redan', 'läst.', '', ''] },
+		{ label: 'Deutsch', lang: 'de', cells: ['Heute', 'kaufe', 'ich', '', '', 'ein Auto.', ''] },
 	]}
 />
 

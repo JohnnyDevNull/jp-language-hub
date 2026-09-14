@@ -134,27 +134,16 @@ The column labels are therefore the one part of a schema that must not differ
 between the `en`, `de` and `sv` copies of a page. A reader who switches the
 meta language is switching the explanation, not the grammar being explained.
 
+`npm run quality` enforces both halves of this rule, and also that a row has
+as many cells as the table has columns. The `de`/`sv` mirrors are exempt from
+the gloss validator for `columns` alone: an identical label there is the rule,
+not an untranslated leftover.
+
 A comparison row is only admissible where the pattern genuinely matches. German
 fills the opening fields of the Swedish schema, but sends non-finite verb forms
 to its own right bracket, so a German row must stop before the point where the
 models diverge. Explain the divergence in prose instead of bending a field to
 fit.
-
-Known deviations, left in place on purpose (2026-09-14):
-
-- Swedish field names are currently translated per locale: `Finite verb`,
-  `Finites Verb`, `Finit verb`. Only `Fundament` and `Rest` are shared across
-  the three copies. Under this rule every copy must read `finit verb`.
-- `Rest` is not a field name in any version of the schema. The model ends in two
-  separate fields, `objekt / predikativ` and `adverbial`.
-- German pages use `1 First field` and `Rest` — the model's own structure under
-  English names.
-- English pages use `Opening`, which is not one of the S V O C A elements.
-
-Bringing the content in line means re-cutting 63 schema instances: 14 Learn
-Swedish schemas in each of three locales, 9 canonical Learn English schemas, and
-12 canonical Learn German schemas. That work is planned as
-[Phase 6: Align Sentence-Schema Terminology](../roadmap-phase-6-align-schema-terminology.md).
 
 ## Marking Swedish text
 

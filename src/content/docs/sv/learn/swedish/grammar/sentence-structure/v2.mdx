@@ -57,15 +57,15 @@ många ord den innehåller, och det finita verbet äger den andra platsen:
 <SentenceSchema
 	caption="V2 i en påståendesats"
 	rowHeader="Variant"
-	columns={['1 Fundament', '2 Finit verb', '3 Subjekt', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'satsadverbial', 'infinit verb', 'objekt / predikativ', 'adverbial']}
 	rows={[
-		{ label: 'Neutral', cells: ['Jag', 'köper', '', 'en bil idag.'] },
-		{ label: 'Tid först', cells: ['Idag', 'köper', 'jag', 'en bil.'] },
-		{ label: 'Objekt först', cells: ['Den boken', 'har', 'jag', 'redan läst.'] },
+		{ label: 'Neutral', cells: ['Jag', 'köper', '', '', '', 'en bil', 'idag.'] },
+		{ label: 'Tid först', cells: ['Idag', 'köper', 'jag', '', '', 'en bil.', ''] },
+		{ label: 'Objekt först', cells: ['Den boken', 'har', 'jag', 'redan', 'läst.', '', ''] },
 		{
 			label: 'Tyska',
 			lang: 'de',
-			cells: ['Heute', 'kaufe', 'ich', 'ein Auto.'],
+			cells: ['Heute', 'kaufe', 'ich', '', '', 'ein Auto.', ''],
 		},
 	]}
 />

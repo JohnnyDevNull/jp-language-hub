@@ -76,7 +76,7 @@ finite verb follows it. Compare that frame with a yes/no question:
 <SentenceSchema
 	caption="Direct question frames"
 	rowHeader="Question"
-	columns={['Question phrase', 'Finite verb', 'Subject', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'adverbial']}
 	rows={[
 		{ label: 'Question word', cells: ['Var', 'bor', 'du', ''] },
 		{ label: 'Question phrase', cells: ['Vilken bok', 'läser', 'du', ''] },
@@ -128,13 +128,21 @@ before the finite verb, and a sentence adverb such as <Sv>inte</Sv> comes before
 that verb:
 
 <SentenceSchema
-	caption="Direct and indirect question-word order"
+	caption="Direct question order"
 	rowHeader="Question"
-	columns={['Question word', 'Finite verb (direct)', 'Subject', 'Sentence adverb', 'Verb (indirect)', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'satsadverbial', 'adverbial']}
 	rows={[
-		{ label: 'Direct', cells: ['Var', 'bor', 'hon', '', '', ''] },
-		{ label: 'Indirect', cells: ['var', '', 'hon', '', 'bor', ''] },
-		{ label: 'Indirect, negative', cells: ['varför', '', 'hon', 'inte', 'kommer', ''] },
+		{ label: 'Direct', cells: ['Var', 'bor', 'hon', '', ''] },
+	]}
+/>
+
+<SentenceSchema
+	caption="Indirect question order"
+	rowHeader="Question"
+	columns={['bisatsinledare', 'subjekt', 'satsadverbial', 'finit verb', 'adverbial']}
+	rows={[
+		{ label: 'Neutral', cells: ['var', 'hon', '', 'bor', ''] },
+		{ label: 'Negative', cells: ['varför', 'hon', 'inte', 'kommer', ''] },
 	]}
 />
 

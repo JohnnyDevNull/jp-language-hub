@@ -48,7 +48,7 @@ frågor och bisatser.
 
 I en neutral påståendesats följer svenska vanligtvis denna ordning:
 
-> **subjekt + finit verb + satsadverbial + återstående verbdelar + objekt + adverbial**
+> **subjekt + finit verb + satsadverbial + infinit verb + objekt / predikativ + adverbial**
 
 Läs satsen som en rad fält. Det här är det neutrala schemat bakom
 [V2-regeln](../v2/):
@@ -57,27 +57,28 @@ Läs satsen som en rad fält. Det här är det neutrala schemat bakom
 	caption="Det neutrala huvudsatsschemat"
 	rowHeader="Variant"
 	columns={[
-		'1 Fundament',
-		'2 Finit verb',
-		'3 Subjekt',
-		'Satsadverbial',
-		'Icke-finit verb',
-		'Rest',
+		'fundament',
+		'finit verb',
+		'subjekt',
+		'satsadverbial',
+		'infinit verb',
+		'objekt / predikativ',
+		'adverbial',
 	]}
 	rows={[
-		{ label: 'Neutral', cells: ['Jag', 'köper', '', '', '', 'bilen idag.'] },
+		{ label: 'Neutral', cells: ['Jag', 'köper', '', '', '', 'bilen', 'idag.'] },
 		{
 			label: 'Med inte',
-			cells: ['Jag', 'köper', '', 'inte', '', 'bilen idag.'],
+			cells: ['Jag', 'köper', '', 'inte', '', 'bilen', 'idag.'],
 		},
 		{
 			label: 'Två verb',
-			cells: ['Jag', 'har', '', 'inte', 'köpt', 'bilen idag.'],
+			cells: ['Jag', 'har', '', 'inte', 'köpt', 'bilen', 'idag.'],
 		},
 		{
 			label: 'Tyska (samma mönster)',
 			lang: 'de',
-			cells: ['Ich', 'kaufe', '', '', '', 'das Auto heute.'],
+			cells: ['Ich', 'kaufe', '', '', '', 'das Auto', 'heute.'],
 		},
 	]}
 />

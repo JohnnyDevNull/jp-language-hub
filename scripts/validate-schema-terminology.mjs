@@ -171,19 +171,31 @@ function getPageInfo(filePath) {
 	return { locale, learningLanguage: canonical[1], key: canonical.join('/') };
 }
 
-/** Extracts every `columns={[ ... ]}` array in source order. */
-function extractColumnArrays(source) {
-	const arrays = [];
-	const marker = 'columns={[';
-	let index = source.indexOf(marker);
+function quotedStrings(body) {
+	return [...body.matchAll(/'([^']*)'|"([^"]*)"/g)].map((match) => match[1] ?? match[2]);
+}
+
+/** Extracts each SentenceSchema's columns and its rows' cell counts, in source order. */
+function extractSchemas(source) {
+	const schemas = [];
+	let index = source.indexOf('<SentenceSchema');
 	while (index !== -1) {
-		const end = source.indexOf(']}', index);
+		// The tag is written both multi-line and on a single line, so end at its
+		// own `/>` rather than at a line-leading one.
+		const end = source.indexOf('/>', index);
 		if (end === -1) break;
-		const body = source.slice(index + marker.length, end);
-		arrays.push([...body.matchAll(/'([^']*)'|"([^"]*)"/g)].map((match) => match[1] ?? match[2]));
-		index = source.indexOf(marker, end);
+		const block = source.slice(index, end);
+		const start = block.indexOf('columns={[');
+		if (start !== -1) {
+			const columnsEnd = block.indexOf(']}', start);
+			schemas.push({
+				columns: quotedStrings(block.slice(start + 'columns={['.length, columnsEnd)),
+				rowWidths: [...block.matchAll(/cells:\s*\[([^\]]*)\]/g)].map((match) => quotedStrings(match[1]).length),
+			});
+		}
+		index = source.indexOf('<SentenceSchema', end);
 	}
-	return arrays;
+	return schemas;
 }
 
 /** Drops the position prefix so `1 Fundament` and `Fundament` compare equal. */
@@ -200,8 +212,8 @@ const schemas = [];
 for (const file of files) {
 	const info = getPageInfo(file);
 	if (!info) continue;
-	extractColumnArrays(readFileSync(file, 'utf8')).forEach((columns, position) => {
-		schemas.push({ ...info, file, position, columns });
+	extractSchemas(readFileSync(file, 'utf8')).forEach(({ columns, rowWidths }, position) => {
+		schemas.push({ ...info, file, position, columns, rowWidths });
 	});
 }
 
@@ -219,6 +231,20 @@ for (const schema of schemas) {
 			message: `"${label}" is not a field name of the ${schema.learningLanguage} model.`,
 		});
 	}
+}
+
+// A row that has fewer or more cells than the table has columns renders
+// silently misaligned, which is exactly what re-cutting a merged field risks.
+for (const schema of schemas) {
+	schema.rowWidths.forEach((width, row) => {
+		if (width === schema.columns.length) return;
+		problems.push({
+			defect: 'row-width-mismatch',
+			file: schema.file,
+			position: schema.position,
+			message: `Row ${row + 1} has ${width} cells but the table has ${schema.columns.length} columns.`,
+		});
+	});
 }
 
 const byCanonical = new Map();

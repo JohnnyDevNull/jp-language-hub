@@ -76,7 +76,7 @@ verbet följer direkt efter. Jämför den ramen med en ja/nej-fråga:
 <SentenceSchema
 	caption="Ramar för direkta frågor"
 	rowHeader="Fråga"
-	columns={['Frågefras', 'Finit verb', 'Subjekt', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'adverbial']}
 	rows={[
 		{ label: 'Frågeord', cells: ['Var', 'bor', 'du', ''] },
 		{ label: 'Frågefras', cells: ['Vilken bok', 'läser', 'du', ''] },
@@ -127,13 +127,21 @@ verbet, och ett satsadverbial som <Sv>inte</Sv> kommer också före det
 verbet:
 
 <SentenceSchema
-	caption="Direkt och indirekt frågeordföljd"
+	caption="Ordföljd i direkt fråga"
 	rowHeader="Fråga"
-	columns={['Frågeord', 'Finit verb (direkt)', 'Subjekt', 'Satsadverbial', 'Verb (indirekt)', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'satsadverbial', 'adverbial']}
 	rows={[
-		{ label: 'Direkt', cells: ['Var', 'bor', 'hon', '', '', ''] },
-		{ label: 'Indirekt', cells: ['var', '', 'hon', '', 'bor', ''] },
-		{ label: 'Indirekt, nekande', cells: ['varför', '', 'hon', 'inte', 'kommer', ''] },
+		{ label: 'Direkt', cells: ['Var', 'bor', 'hon', '', ''] },
+	]}
+/>
+
+<SentenceSchema
+	caption="Ordföljd i indirekt fråga"
+	rowHeader="Fråga"
+	columns={['bisatsinledare', 'subjekt', 'satsadverbial', 'finit verb', 'adverbial']}
+	rows={[
+		{ label: 'Neutral', cells: ['var', 'hon', '', 'bor', ''] },
+		{ label: 'Nekande', cells: ['varför', 'hon', 'inte', 'kommer', ''] },
 	]}
 />
 

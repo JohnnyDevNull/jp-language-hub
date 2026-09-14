@@ -223,7 +223,7 @@ order:
 3. complete Learn English in German and Swedish meta language; and
 4. complete Learn German in German and Swedish meta language.
 
-Step 2 is a review followed by a remediation. It reviews every `SentenceSchema`
+Step 2 is complete. It was a review followed by a remediation. It reviews every `SentenceSchema`
 against the terminology rule in
 [Content Didactics](./rules/content-didactics.md), then corrects the canonical
 Learn English and Learn German pages and all three Learn Swedish locales, and

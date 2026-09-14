@@ -49,7 +49,7 @@ questions, and subordinate clauses.
 
 In a neutral declarative main clause, Swedish usually follows this order:
 
-> **subject + finite verb + sentence adverb + remaining verb parts + object + adverbial**
+> **subjekt + finit verb + satsadverbial + infinit verb + objekt / predikativ + adverbial**
 
 Read the clause as a row of fields. This is the neutral schema behind the
 [V2 rule](../v2/):
@@ -58,27 +58,28 @@ Read the clause as a row of fields. This is the neutral schema behind the
 	caption="The neutral main-clause schema"
 	rowHeader="Variant"
 	columns={[
-		'1 Fundament',
-		'2 Finite verb',
-		'3 Subject',
-		'Sentence adverb',
-		'Non-finite verb',
-		'Rest',
+		'fundament',
+		'finit verb',
+		'subjekt',
+		'satsadverbial',
+		'infinit verb',
+		'objekt / predikativ',
+		'adverbial',
 	]}
 	rows={[
-		{ label: 'Neutral', cells: ['Jag', 'köper', '', '', '', 'bilen idag.'] },
+		{ label: 'Neutral', cells: ['Jag', 'köper', '', '', '', 'bilen', 'idag.'] },
 		{
 			label: 'With inte',
-			cells: ['Jag', 'köper', '', 'inte', '', 'bilen idag.'],
+			cells: ['Jag', 'köper', '', 'inte', '', 'bilen', 'idag.'],
 		},
 		{
 			label: 'Two verbs',
-			cells: ['Jag', 'har', '', 'inte', 'köpt', 'bilen idag.'],
+			cells: ['Jag', 'har', '', 'inte', 'köpt', 'bilen', 'idag.'],
 		},
 		{
 			label: 'Deutsch (same pattern)',
 			lang: 'de',
-			cells: ['Ich', 'kaufe', '', '', '', 'das Auto heute.'],
+			cells: ['Ich', 'kaufe', '', '', '', 'das Auto', 'heute.'],
 		},
 	]}
 />

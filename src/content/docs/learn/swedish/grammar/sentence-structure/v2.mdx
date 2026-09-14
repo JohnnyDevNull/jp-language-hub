@@ -57,15 +57,15 @@ many words it holds, and the finite verb owns position two:
 <SentenceSchema
 	caption="V2 in a declarative main clause"
 	rowHeader="Variant"
-	columns={['1 Fundament', '2 Finite verb', '3 Subject', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'satsadverbial', 'infinit verb', 'objekt / predikativ', 'adverbial']}
 	rows={[
-		{ label: 'Neutral', cells: ['Jag', 'köper', '', 'en bil idag.'] },
-		{ label: 'Time first', cells: ['Idag', 'köper', 'jag', 'en bil.'] },
-		{ label: 'Object first', cells: ['Den boken', 'har', 'jag', 'redan läst.'] },
+		{ label: 'Neutral', cells: ['Jag', 'köper', '', '', '', 'en bil', 'idag.'] },
+		{ label: 'Time first', cells: ['Idag', 'köper', 'jag', '', '', 'en bil.', ''] },
+		{ label: 'Object first', cells: ['Den boken', 'har', 'jag', 'redan', 'läst.', '', ''] },
 		{
 			label: 'Deutsch',
 			lang: 'de',
-			cells: ['Heute', 'kaufe', 'ich', 'ein Auto.'],
+			cells: ['Heute', 'kaufe', 'ich', '', '', 'ein Auto.', ''],
 		},
 	]}
 />

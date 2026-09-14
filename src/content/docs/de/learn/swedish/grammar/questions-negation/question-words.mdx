@@ -77,7 +77,7 @@ Ja/Nein-Frage:
 <SentenceSchema
 	caption="Muster direkter Fragen"
 	rowHeader="Frage"
-	columns={['Fragephrase', 'Finites Verb', 'Subjekt', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'adverbial']}
 	rows={[
 		{ label: 'Fragewort', cells: ['Var', 'bor', 'du', ''] },
 		{ label: 'Fragephrase', cells: ['Vilken bok', 'läser', 'du', ''] },
@@ -129,13 +129,21 @@ finiten Verb, und ein Satzadverbial wie <Sv>inte</Sv> steht ebenfalls vor
 diesem Verb:
 
 <SentenceSchema
-	caption="Wortstellung bei direkten und indirekten Fragen"
+	caption="Wortstellung in der direkten Frage"
 	rowHeader="Frage"
-	columns={['Fragewort', 'Finites Verb (direkt)', 'Subjekt', 'Satzadverbial', 'Verb (indirekt)', 'Rest']}
+	columns={['fundament', 'finit verb', 'subjekt', 'satsadverbial', 'adverbial']}
 	rows={[
-		{ label: 'Direkt', cells: ['Var', 'bor', 'hon', '', '', ''] },
-		{ label: 'Indirekt', cells: ['var', '', 'hon', '', 'bor', ''] },
-		{ label: 'Indirekt, verneint', cells: ['varför', '', 'hon', 'inte', 'kommer', ''] },
+		{ label: 'Direkt', cells: ['Var', 'bor', 'hon', '', ''] },
+	]}
+/>
+
+<SentenceSchema
+	caption="Wortstellung in der indirekten Frage"
+	rowHeader="Frage"
+	columns={['bisatsinledare', 'subjekt', 'satsadverbial', 'finit verb', 'adverbial']}
+	rows={[
+		{ label: 'Neutral', cells: ['var', 'hon', '', 'bor', ''] },
+		{ label: 'Verneint', cells: ['varför', 'hon', 'inte', 'kommer', ''] },
 	]}
 />
 

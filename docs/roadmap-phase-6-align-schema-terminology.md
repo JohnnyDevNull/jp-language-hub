@@ -2,7 +2,7 @@
 
 ## Status and Dependencies
 
-**Status:** Planned; unblocked; implementation has not started.
+**Status:** Complete. All 69 schema instances match the rule, `npm run quality` carries the check, and the ledger closed with no open row.
 
 **Dependencies:** The Learn Swedish meta-language package is complete. This step
 sits between that bucket and the Learn English bucket, and both the Learn
@@ -266,10 +266,14 @@ outside the tree's vocabulary, and that the `columns` array is identical across
 the meta locales of a page. Cell content stays out of scope, because splitting a
 merged field correctly is a judgement a script cannot make.
 
-What remains is the wiring: add it to the `quality` script. That is deliberately
-not done yet. With 63 schemas still non-compliant it would turn every
-`npm run quality` red and block unrelated work. Wire it in at the end of T4,
-the way `validate:links` guards the base path.
+It is wired into `npm run quality`, and it also checks that a row carries as
+many cells as the table has columns — the failure re-cutting a merged field
+actually risks, and one no reviewer reliably catches by eye.
+
+Wiring it in surfaced a conflict: `validate-language-glosses.mjs` flagged every
+identical mirror label as an untranslated leftover, 128 errors. That check
+encoded the assumption this step overturned, so its `columns` case was removed;
+`columns` now belong to this validator alone.
 
 The guard must tolerate a page that has no mirror yet, so that it does not block
 the Learn English and Learn German buckets.
@@ -304,3 +308,25 @@ deviates any more.
 The Learn English and Learn German meta-language buckets author their mirrors
 against the corrected sources. Their acceptance criteria gain one line: the
 `columns` array is copied verbatim from the canonical page, never translated.
+
+## Outcome
+
+69 schema instances, up from 63: the two merged question tables became four.
+Learn German moved to the Duden field names, Learn English to clause elements,
+Learn Swedish to the satsschema in all three meta locales.
+
+Two defects surfaced only once the cells were read against the new labels:
+
+- `learn/english/.../subordinate-clauses` had `was` in the verb column and
+  `raining,` in the object column. `was raining` is one verb phrase; the cells
+  were mis-cut, not the label.
+- `learn/swedish/.../v2` carried `redan läst.` in the adverbial column. `redan`
+  is a satsadverbial and `läst` an infinit verb, so the table gained the two
+  fields its own example needs.
+
+Neither was findable before the columns had real names. That is the argument for
+the rule, in two concrete cases.
+
+Left for a follow-up, because frontmatter is a Non-Goal here: two Learn German
+`description` fields still say "at the right bracket" while their pages now say
+`rechte Satzklammer`.
