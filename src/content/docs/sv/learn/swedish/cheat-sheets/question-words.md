@@ -51,7 +51,7 @@ ibland <span lang="sv">var</span> även för riktning.
 
 | Typ | Mönster | Exempel |
 | --- | --- | --- |
-| Med frågeord | frågeord + verb | <span lang="sv">Var bor du?</span> |
+| Med frågeord | fundament + finit verb | <span lang="sv">Var bor du?</span> |
 | Ja/nej-fråga | verb först, inget <span lang="sv">do</span> | <span lang="sv">Bor du här?</span> |
 | Indirekt | ingen inversion | <span lang="sv">Jag vet inte var hon bor.</span> |
 | Indirekt ja/nej | <span lang="sv">om</span> | <span lang="sv">Jag vet inte om hon kommer.</span> |

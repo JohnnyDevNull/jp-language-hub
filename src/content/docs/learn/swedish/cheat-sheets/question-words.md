@@ -51,7 +51,7 @@ also use <span lang="sv">var</span> for direction.
 
 | Type | Pattern | Example |
 | --- | --- | --- |
-| With a question word | question word + verb | <span lang="sv">Var bor du?</span> |
+| With a question word | <span lang="sv">fundament + finit verb</span> | <span lang="sv">Var bor du?</span> |
 | Yes/no question | verb first, no <span lang="sv">do</span> | <span lang="sv">Bor du här?</span> |
 | Indirect | no inversion | <span lang="sv">Jag vet inte var hon bor.</span> |
 | Indirect yes/no | <span lang="sv">om</span> | <span lang="sv">Jag vet inte om hon kommer.</span> |

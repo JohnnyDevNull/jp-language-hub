@@ -52,7 +52,7 @@ für die Richtung verwendet.
 
 | Typ | Muster | Beispiel |
 | --- | --- | --- |
-| Mit Fragewort | Fragewort + Verb | <span lang="sv">Var bor du?</span> |
+| Mit Fragewort | <span lang="sv">fundament + finit verb</span> | <span lang="sv">Var bor du?</span> |
 | Ja/Nein-Frage | Verb zuerst, kein <span lang="sv">do</span> | <span lang="sv">Bor du här?</span> |
 | Indirekt | keine Inversion | <span lang="sv">Jag vet inte var hon bor.</span> |
 | Indirekt Ja/Nein | <span lang="sv">om</span> | <span lang="sv">Jag vet inte om hon kommer.</span> |

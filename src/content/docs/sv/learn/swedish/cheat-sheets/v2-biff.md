@@ -23,10 +23,10 @@ related:
 
 Det finita verbet står normalt på den andra satspositionen.
 
-| Första plats | Finit verb | Subjekt | Resten |
-| --- | --- | --- | --- |
-| <span lang="sv">Jag</span> | <span lang="sv">köper</span> | — | <span lang="sv">en bok idag.</span> |
-| <span lang="sv">Idag</span> | <span lang="sv">köper</span> | <span lang="sv">jag</span> | <span lang="sv">en bok.</span> |
+| 1 fundament | 2 finit verb | 3 subjekt | objekt / predikativ | adverbial |
+| --- | --- | --- | --- | --- |
+| <span lang="sv">Jag</span> | <span lang="sv">köper</span> | — | <span lang="sv">en bok</span> | <span lang="sv">idag.</span> |
+| <span lang="sv">Idag</span> | <span lang="sv">köper</span> | <span lang="sv">jag</span> | <span lang="sv">en bok.</span> | — |
 
 ✅ <span lang="sv">Idag köper jag en bok.</span>  
 ❌ <span lang="sv">Idag jag köper en bok.</span>
@@ -42,7 +42,7 @@ fylla hela den första positionen.
 
 När en annan satsdel kommer först utlöser V2 inversion:
 
-> första satsdelen + finit verb + subjekt + <span lang="sv">inte</span> + …
+> fundament + finit verb + subjekt + <span lang="sv">inte</span> + …
 
 <span lang="sv">Idag kommer jag inte.</span>
 
@@ -51,14 +51,14 @@ När en annan satsdel kommer först utlöser V2 inversion:
 **B**isats **I**nte **F**öre **F**init: i en bisats kommer
 <span lang="sv">inte</span> normalt före det finita verbet.
 
-> subjunktion + subjekt + <span lang="sv">inte</span> + finit verb + …
+> bisatsinledare + subjekt + <span lang="sv">inte</span> + finit verb + …
 
 <span lang="sv">… eftersom jag inte kommer idag.</span>
 
 | Sats | Mönster | Exempel |
 | --- | --- | --- |
 | Huvudsats | subjekt + finit verb + <span lang="sv">inte</span> | <span lang="sv">Jag kommer inte.</span> |
-| Bisats | subjunktion + subjekt + <span lang="sv">inte</span> + finit verb | <span lang="sv">… eftersom jag inte kommer.</span> |
+| Bisats | bisatsinledare + subjekt + <span lang="sv">inte</span> + finit verb | <span lang="sv">… eftersom jag inte kommer.</span> |
 
 :::caution[Räckvidd]
 V2 och BIFF är pålitliga nybörjarregler, men ingen av dem är en fullständig

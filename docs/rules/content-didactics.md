@@ -135,7 +135,11 @@ between the `en`, `de` and `sv` copies of a page. A reader who switches the
 meta language is switching the explanation, not the grammar being explained.
 
 `npm run quality` enforces both halves of this rule, and also that a row has
-as many cells as the table has columns. The `de`/`sv` mirrors are exempt from
+as many cells as the table has columns.
+
+The check reads `SentenceSchema` only. The cheat sheets build their tables from
+raw markdown, so their header cells follow the same rule but nothing verifies
+it. Diff the three locales by hand after editing one. The `de`/`sv` mirrors are exempt from
 the gloss validator for `columns` alone: an identical label there is the rule,
 not an untranslated leftover.
 
