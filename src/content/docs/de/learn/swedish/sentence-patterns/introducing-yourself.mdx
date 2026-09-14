@@ -24,16 +24,15 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Nutze <Sv>Jag heter ...</Sv> als normalen ersten Satz; es bedeutet "ich
+- Nutze <span lang="sv">Jag heter ...</span> als normalen ersten Satz; es bedeutet "ich
   heiße", nicht wörtlich "ich nenne".
-- Nutze <Sv>kommer från</Sv> für Herkunft und <Sv>bor i</Sv> für den Ort, an
+- Nutze <span lang="sv">kommer från</span> für Herkunft und <span lang="sv">bor i</span> für den Ort, an
   dem du jetzt wohnst.
-- Frag mit demselben Rahmen zurück: <Sv>Vad heter du?</Sv>,
-  <Sv>Var kommer du ifrån?</Sv>, <Sv>Vad gör du?</Sv>
+- Frag mit demselben Rahmen zurück: <span lang="sv">Vad heter du?</span>,
+  <span lang="sv">Var kommer du ifrån?</span>, <span lang="sv">Vad gör du?</span>
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -45,39 +44,39 @@ Grund, warum du hier bist, und eine Rückfrage.
 
 | Muster | Wofür du es nutzt | Beispiel |
 | --- | --- | --- |
-| <Sv>Hej, jag heter ...</Sv> | mit deinem Namen eröffnen | <Sv>Hej, jag heter Philipp.</Sv> |
-| <Sv>Jag kommer från ...</Sv> | Land, Stadt, Hintergrund | <Sv>Jag kommer från Tyskland.</Sv> |
-| <Sv>Jag bor i ...</Sv> | wo du jetzt wohnst | <Sv>Jag bor i Stockholm.</Sv> |
-| <Sv>Jag jobbar som ...</Sv> | berufliche Rolle | <Sv>Jag jobbar som utvecklare.</Sv> |
-| <Sv>Jag pluggar ...</Sv> | Studienfach oder Lerninhalt | <Sv>Jag pluggar svenska.</Sv> |
-| <Sv>Jag lär mig svenska.</Sv> | warum du langsam sprichst | <Sv>Jag lär mig svenska.</Sv> |
-| <Sv>Trevligt att träffas.</Sv> | schön, dich kennenzulernen | <Sv>Trevligt att träffas!</Sv> |
+| <span lang="sv">Hej, jag heter ...</span> | mit deinem Namen eröffnen | <span lang="sv">Hej, jag heter Philipp.</span> |
+| <span lang="sv">Jag kommer från ...</span> | Land, Stadt, Hintergrund | <span lang="sv">Jag kommer från Tyskland.</span> |
+| <span lang="sv">Jag bor i ...</span> | wo du jetzt wohnst | <span lang="sv">Jag bor i Stockholm.</span> |
+| <span lang="sv">Jag jobbar som ...</span> | berufliche Rolle | <span lang="sv">Jag jobbar som utvecklare.</span> |
+| <span lang="sv">Jag pluggar ...</span> | Studienfach oder Lerninhalt | <span lang="sv">Jag pluggar svenska.</span> |
+| <span lang="sv">Jag lär mig svenska.</span> | warum du langsam sprichst | <span lang="sv">Jag lär mig svenska.</span> |
+| <span lang="sv">Trevligt att träffas.</span> | schön, dich kennenzulernen | <span lang="sv">Trevligt att träffas!</span> |
 
 ## Zurückfragen
 
 | Frage | Wonach sie fragt | Natürliche Antwort |
 | --- | --- | --- |
-| <Sv>Vad heter du?</Sv> | Name | <Sv>Jag heter Anna.</Sv> |
-| <Sv>Var kommer du ifrån?</Sv> | Herkunft | <Sv>Jag kommer från Malmö.</Sv> |
-| <Sv>Var bor du?</Sv> | aktueller Wohnort | <Sv>Jag bor i Uppsala.</Sv> |
-| <Sv>Vad gör du?</Sv> | Arbeit oder Studium, im Kontext | <Sv>Jag pluggar.</Sv> |
-| <Sv>Hur länge har du bott här?</Sv> | wie lange jemand hier wohnt | <Sv>I två år.</Sv> |
+| <span lang="sv">Vad heter du?</span> | Name | <span lang="sv">Jag heter Anna.</span> |
+| <span lang="sv">Var kommer du ifrån?</span> | Herkunft | <span lang="sv">Jag kommer från Malmö.</span> |
+| <span lang="sv">Var bor du?</span> | aktueller Wohnort | <span lang="sv">Jag bor i Uppsala.</span> |
+| <span lang="sv">Vad gör du?</span> | Arbeit oder Studium, im Kontext | <span lang="sv">Jag pluggar.</span> |
+| <span lang="sv">Hur länge har du bott här?</span> | wie lange jemand hier wohnt | <span lang="sv">I två år.</span> |
 
-Bei Städten und Ländern ist <Sv>i</Sv> das sichere frühe Muster:
-<Sv>i Sverige</Sv>, <Sv>i Stockholm</Sv>, <Sv>i Tyskland</Sv>. Straßennamen und
-manche Institutionen nutzen oft <Sv>på</Sv>, aber heb dir das für die
+Bei Städten und Ländern ist <span lang="sv">i</span> das sichere frühe Muster:
+<span lang="sv">i Sverige</span>, <span lang="sv">i Stockholm</span>, <span lang="sv">i Tyskland</span>. Straßennamen und
+manche Institutionen nutzen oft <span lang="sv">på</span>, aber heb dir das für die
 Präpositionsseite auf.
 
 ## Mini-Sequenz
 
 | Sprecher | Schwedisch |
 | --- | --- |
-| A | <Sv>Hej, jag heter Anna. Vad heter du?</Sv> |
-| B | <Sv>Jag heter Philipp. Trevligt att träffas.</Sv> |
-| A | <Sv>Trevligt! Var kommer du ifrån?</Sv> |
-| B | <Sv>Jag kommer från Tyskland, men jag bor i Stockholm.</Sv> |
-| A | <Sv>Vad gör du?</Sv> |
-| B | <Sv>Jag jobbar som utvecklare och jag lär mig svenska.</Sv> |
+| A | <span lang="sv">Hej, jag heter Anna. Vad heter du?</span> |
+| B | <span lang="sv">Jag heter Philipp. Trevligt att träffas.</span> |
+| A | <span lang="sv">Trevligt! Var kommer du ifrån?</span> |
+| B | <span lang="sv">Jag kommer från Tyskland, men jag bor i Stockholm.</span> |
+| A | <span lang="sv">Vad gör du?</span> |
+| B | <span lang="sv">Jag jobbar som utvecklare och jag lär mig svenska.</span> |
 
 ## Direkter Vergleich
 
@@ -88,7 +87,7 @@ Präpositionsseite auf.
 </LanguageComparison>
 
 Deutsch ist hier die bessere Brücke: <span lang="de">heißen</span> und
-<Sv>heta</Sv> funktionieren beide wie "genannt werden". Englisch zieht dich zu
+<span lang="sv">heta</span> funktionieren beide wie "genannt werden". Englisch zieht dich zu
 einer Nominalphrase, aber der alltägliche schwedische Satz ist der Verb-Rahmen.
 
 <LanguageComparison title="Herkunft und aktueller Wohnort">

@@ -27,11 +27,10 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import SentenceSchema from '~/components/SentenceSchema.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Gib eine Aussage mit <Sv>att</Sv> wieder, eine Ja/Nein-Frage mit <Sv>om</Sv>
+- Gib eine Aussage mit <span lang="sv">att</span> wieder, eine Ja/Nein-Frage mit <span lang="sv">om</span>
   und eine W-Frage mit ihrem Fragewort.
 - Indirekte Fragen verwenden die Wortstellung des Nebensatzes, nicht die
   Inversion der direkten Frage.
@@ -49,21 +48,21 @@ ursprünglichen Satz als Zitat zu wiederholen.
 
 | Ursprüngliche Aussage | Verknüpfung | Wiedergabe |
 | --- | --- | --- |
-| Aussage | <Sv>att</Sv> | <Sv>Hon säger att hon kommer.</Sv> |
-| Ja/Nein-Frage | <Sv>om</Sv> | <Sv>Han frågar om jag kommer.</Sv> |
-| W-Frage | dasselbe Fragewort | <Sv>Hon frågar när tåget går.</Sv> |
+| Aussage | <span lang="sv">att</span> | <span lang="sv">Hon säger att hon kommer.</span> |
+| Ja/Nein-Frage | <span lang="sv">om</span> | <span lang="sv">Han frågar om jag kommer.</span> |
+| W-Frage | dasselbe Fragewort | <span lang="sv">Hon frågar när tåget går.</span> |
 
-## Aussagen mit <Sv>att</Sv>
+## Aussagen mit <span lang="sv">att</span>
 
-Verwende ein Redeverb wie <Sv>säga</Sv>, <Sv>berätta</Sv> oder
-<Sv>förklara</Sv>, gefolgt von einem <Sv>att</Sv>-Satz:
+Verwende ein Redeverb wie <span lang="sv">säga</span>, <span lang="sv">berätta</span> oder
+<span lang="sv">förklara</span>, gefolgt von einem <span lang="sv">att</span>-Satz:
 
-<Sv>Lisa säger: “Jag är trött.”</Sv> →
-<Sv>Lisa säger att hon är trött.</Sv>
+<span lang="sv">Lisa säger: “Jag är trött.”</span> →
+<span lang="sv">Lisa säger att hon är trött.</span>
 
 ## Indirekte Fragen
 
-Eine Ja/Nein-Frage wird zu einem <Sv>om</Sv>-Satz. Eine W-Frage behält ihr
+Eine Ja/Nein-Frage wird zu einem <span lang="sv">om</span>-Satz. Eine W-Frage behält ihr
 Fragewort. Beide verwenden die Wortstellung des Nebensatzes:
 
 <SentenceSchema
@@ -75,21 +74,21 @@ Fragewort. Beide verwenden die Wortstellung des Nebensatzes:
 	]}
 />
 
-- <Sv>Han frågar om du inte kan komma.</Sv>
-- <Sv>Jag undrar varför hon gick hem.</Sv>
+- <span lang="sv">Han frågar om du inte kan komma.</span>
+- <span lang="sv">Jag undrar varför hon gick hem.</span>
 
-Behalte die Inversion der direkten Frage nicht bei: <Sv>varför hon gick</Sv>,
-nicht <Sv>varför gick hon</Sv> innerhalb der Wiedergabe.
+Behalte die Inversion der direkten Frage nicht bei: <span lang="sv">varför hon gick</span>,
+nicht <span lang="sv">varför gick hon</span> innerhalb der Wiedergabe.
 
 ## Perspektivwechsel
 
 Passe Formen nur an, wenn die Wiedergabesituation es erfordert:
 
-- Person: <Sv>jag</Sv> kann zu <Sv>hon</Sv> oder <Sv>han</Sv> werden
-- Besitz: <Sv>min</Sv> kann zu <Sv>hennes</Sv>, <Sv>hans</Sv> oder einem
+- Person: <span lang="sv">jag</span> kann zu <span lang="sv">hon</span> oder <span lang="sv">han</span> werden
+- Besitz: <span lang="sv">min</span> kann zu <span lang="sv">hennes</span>, <span lang="sv">hans</span> oder einem
   reflexiven Possessivpronomen im betreffenden Satz werden
-- Zeit: <Sv>i dag</Sv> kann zu <Sv>den dagen</Sv> werden
-- Ort: <Sv>här</Sv> kann zu <Sv>där</Sv> werden
+- Zeit: <span lang="sv">i dag</span> kann zu <span lang="sv">den dagen</span> werden
+- Ort: <span lang="sv">här</span> kann zu <span lang="sv">där</span> werden
 
 Wird die ursprüngliche Perspektive weiterhin geteilt, ist eine Änderung
 möglicherweise unnötig.
@@ -97,10 +96,10 @@ möglicherweise unnötig.
 ## Tempusverhalten
 
 Das Schwedische behält oft ein Tempus bei, das weiterhin wahr oder relevant
-ist: <Sv>Hon sa att hon bor i Malmö.</Sv> kann eine aktuell gültige Tatsache
+ist: <span lang="sv">Hon sa att hon bor i Malmö.</span> kann eine aktuell gültige Tatsache
 wiedergeben. Eine Vergangenheitsform ist ebenso natürlich, wenn die Wiedergabe
 in einen vergangenen Rahmen gehört oder die Situation nicht mehr zutrifft:
-<Sv>Hon sa att hon bodde i Malmö.</Sv>
+<span lang="sv">Hon sa att hon bodde i Malmö.</span>
 
 Wende keine mechanische Rückverschiebungsregel nach englischem Vorbild an.
 Wähle das Tempus anhand der aktuellen Zeitperspektive des Sprechers und der
@@ -115,16 +114,16 @@ beabsichtigten Bedeutung.
 </LanguageComparison>
 
 <MistakeBox title="Typische Fehler">
-	- ❌ <Sv>Han frågar att jag kommer.</Sv>
-	  ✅ <Sv>Han frågar om jag kommer.</Sv>
-	- ❌ <Sv>Hon frågar var bor du.</Sv>
-	  ✅ <Sv>Hon frågar var du bor.</Sv>
+	- ❌ <span lang="sv">Han frågar att jag kommer.</span>
+	  ✅ <span lang="sv">Han frågar om jag kommer.</span>
+	- ❌ <span lang="sv">Hon frågar var bor du.</span>
+	  ✅ <span lang="sv">Hon frågar var du bor.</span>
 	- Ändere nicht jedes Präsens in ein Präteritum, nur weil das Redeverb im
 	  Präteritum steht.
 </MistakeBox>
 
 <MemoryTip>
-Wähle zuerst die Verknüpfung: Aussage <Sv>att</Sv>, Ja/Nein-Frage <Sv>om</Sv>,
+Wähle zuerst die Verknüpfung: Aussage <span lang="sv">att</span>, Ja/Nein-Frage <span lang="sv">om</span>,
 W-Frage das ursprüngliche Fragewort. Wechsle dann zur Wortstellung des
 Nebensatzes.
 </MemoryTip>

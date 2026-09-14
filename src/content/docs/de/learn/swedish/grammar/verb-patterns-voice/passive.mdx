@@ -28,25 +28,24 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Das s-Passiv verwendet eine <Sv>-s</Sv>-Form über die gängigen Muster
+- Das s-Passiv verwendet eine <span lang="sv">-s</span>-Form über die gängigen Muster
   Infinitiv, Präsens, Präteritum und Perfekt hinweg; die genaue Form richtet
   sich nach der Morphologie des Verbs.
-- <Sv>Bli</Sv> + Partizip stellt ein Ereignis oder einen Wechsel dar, während
-  <Sv>vara</Sv> + Partizip einen Zustand darstellt; das Partizip kongruiert
+- <span lang="sv">Bli</span> + Partizip stellt ein Ereignis oder einen Wechsel dar, während
+  <span lang="sv">vara</span> + Partizip einen Zustand darstellt; das Partizip kongruiert
   mit dem Subjekt.
-- Eine <Sv>-s</Sv>-Form ist nicht immer ein Passiv: <Sv>hoppas</Sv> und
-  <Sv>Vi ses!</Sv> sind es nicht.
+- Eine <span lang="sv">-s</span>-Form ist nicht immer ein Passiv: <span lang="sv">hoppas</span> und
+  <span lang="sv">Vi ses!</span> sind es nicht.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Das Schwedische hat ein in die Verbform eingebautes **s-Passiv** sowie
-periphrastische Passivkonstruktionen mit <Sv>bli</Sv> oder <Sv>vara</Sv>.
-Deutschsprachige erkennen oft die vertraute Form von <Sv>bli</Sv> + Partizip
+periphrastische Passivkonstruktionen mit <span lang="sv">bli</span> oder <span lang="sv">vara</span>.
+Deutschsprachige erkennen oft die vertraute Form von <span lang="sv">bli</span> + Partizip
 wieder, aber die Konstruktionen entsprechen sich nicht eins zu eins zwischen
 den Sprachen.
 
@@ -56,76 +55,76 @@ siehe [Aktiv vs. Passiv](../active-vs-passive/).
 
 ## Das s-Passiv
 
-Das <Sv>-s</Sv>-Muster erscheint im Infinitiv, Präsens, Präteritum und
+Das <span lang="sv">-s</span>-Muster erscheint im Infinitiv, Präsens, Präteritum und
 Supinum. Die genaue Präsensform hängt vom Verbmuster ab: Gruppe 1 hat meist
-<Sv>-as</Sv>, viele andere Verben verwenden den Stamm plus <Sv>-s</Sv>, und
-Stämme, die bereits auf einen s-Laut enden, verwenden mitunter <Sv>-es</Sv>,
-wie in <Sv>läsa → läses</Sv>. Präteritum und Supinum fügen der entsprechenden
-aktiven Form meist <Sv>-s</Sv> hinzu. Nutze die Formenkette statt einer
+<span lang="sv">-as</span>, viele andere Verben verwenden den Stamm plus <span lang="sv">-s</span>, und
+Stämme, die bereits auf einen s-Laut enden, verwenden mitunter <span lang="sv">-es</span>,
+wie in <span lang="sv">läsa → läses</span>. Präteritum und Supinum fügen der entsprechenden
+aktiven Form meist <span lang="sv">-s</span> hinzu. Nutze die Formenkette statt einer
 ausnahmslosen Schreibregel:
 
 | Form | Aktiv | Passiv |
 | --- | --- | --- |
-| Infinitiv | <Sv>öppna</Sv> | <Sv>öppnas</Sv> |
-| Präsens | <Sv>öppnar</Sv> | <Sv>öppnas</Sv> |
-| Präteritum | <Sv>öppnade</Sv> | <Sv>öppnades</Sv> |
-| Supinum | <Sv>öppnat</Sv> | <Sv>öppnats</Sv> |
+| Infinitiv | <span lang="sv">öppna</span> | <span lang="sv">öppnas</span> |
+| Präsens | <span lang="sv">öppnar</span> | <span lang="sv">öppnas</span> |
+| Präteritum | <span lang="sv">öppnade</span> | <span lang="sv">öppnades</span> |
+| Supinum | <span lang="sv">öppnat</span> | <span lang="sv">öppnats</span> |
 
 Andere Verbgruppen bilden Formen wie diese:
 
 | Verb | Präsens | Präteritum | Supinum |
 | --- | --- | --- | --- |
-| <Sv>köpa</Sv> | <Sv>köps</Sv> | <Sv>köptes</Sv> | <Sv>köpts</Sv> |
-| <Sv>skriva</Sv> | <Sv>skrivs</Sv> | <Sv>skrevs</Sv> | <Sv>skrivits</Sv> |
+| <span lang="sv">köpa</span> | <span lang="sv">köps</span> | <span lang="sv">köptes</span> | <span lang="sv">köpts</span> |
+| <span lang="sv">skriva</span> | <span lang="sv">skrivs</span> | <span lang="sv">skrevs</span> | <span lang="sv">skrivits</span> |
 
 Beispiele im Gebrauch:
 
-- <Sv>Rummet städas varje dag.</Sv> — *Das Zimmer wird jeden Tag geputzt.*
-- <Sv>Cykeln stals i går.</Sv> — *Das Fahrrad wurde gestern gestohlen.*
-- <Sv>Boken skrevs av Astrid Lindgren.</Sv> — *Das Buch wurde von Astrid
+- <span lang="sv">Rummet städas varje dag.</span> — *Das Zimmer wird jeden Tag geputzt.*
+- <span lang="sv">Cykeln stals i går.</span> — *Das Fahrrad wurde gestern gestohlen.*
+- <span lang="sv">Boken skrevs av Astrid Lindgren.</span> — *Das Buch wurde von Astrid
   Lindgren geschrieben.*
 
 Der Agens wird, falls überhaupt genannt, mit
-<Sv>av</Sv> eingeführt.
+<span lang="sv">av</span> eingeführt.
 
 <RuleBox title="Das s-Passiv erkennen">
 	Bestimme das zugrunde liegende Verb und prüfe, ob das Subjekt die betroffene
-	Person oder Sache ist: <Sv>Dörrarna stängs automatiskt.</Sv> Eine
-	<Sv>-s</Sv>-Endung allein ist kein Beweis für passivische Bedeutung.
+	Person oder Sache ist: <span lang="sv">Dörrarna stängs automatiskt.</span> Eine
+	<span lang="sv">-s</span>-Endung allein ist kein Beweis für passivische Bedeutung.
 </RuleBox>
 
-## Partizipiale Passivkonstruktionen mit <Sv>bli</Sv> und <Sv>vara</Sv>
+## Partizipiale Passivkonstruktionen mit <span lang="sv">bli</span> und <span lang="sv">vara</span>
 
-<Sv>Bli</Sv> plus Partizip Perfekt stellt meist ein Ereignis oder einen
+<span lang="sv">Bli</span> plus Partizip Perfekt stellt meist ein Ereignis oder einen
 Zustandswechsel dar:
 
-- <Sv>Dörren blev öppnad.</Sv> — *Die Tür wurde geöffnet.*
-- <Sv>Han blev vald till ordförande.</Sv> — *Er wurde zum Vorsitzenden
+- <span lang="sv">Dörren blev öppnad.</span> — *Die Tür wurde geöffnet.*
+- <span lang="sv">Han blev vald till ordförande.</span> — *Er wurde zum Vorsitzenden
   gewählt.*
 
 Das Partizip verhält sich wie ein Adjektiv und kongruiert mit dem Subjekt:
 
 | Subjekt | Beispiel |
 | --- | --- |
-| en-Wort | <Sv>Bilen blev såld.</Sv> |
-| ett-Wort | <Sv>Huset blev sålt.</Sv> |
-| Plural | <Sv>Böckerna blev sålda.</Sv> |
+| en-Wort | <span lang="sv">Bilen blev såld.</span> |
+| ett-Wort | <span lang="sv">Huset blev sålt.</span> |
+| Plural | <span lang="sv">Böckerna blev sålda.</span> |
 
 Siehe [Adjektivkongruenz](../../adjectives-adverbs/agreement/)
 für die Endungen.
 
-Mit <Sv>vara</Sv> statt <Sv>bli</Sv> beschreibt dasselbe
+Mit <span lang="sv">vara</span> statt <span lang="sv">bli</span> beschreibt dasselbe
 Partizip einen resultierenden Zustand statt des Ereignisses:
-<Sv>Huset är sålt.</Sv>
+<span lang="sv">Huset är sålt.</span>
 
 ## Bildungsübersicht
 
 | Konstruktion | Form | Beispiel |
 | --- | --- | --- |
-| s-Passiv, Präsens | Präsensstamm/-form + <Sv>-s</Sv> | <Sv>Biljetter köps i appen.</Sv> |
-| s-Passiv, Präteritum | Präteritum + <Sv>-s</Sv> | <Sv>Boken skrevs 1950.</Sv> |
-| Ereignis-/Wechselpassiv | finites <Sv>bli</Sv> + kongruierendes Partizip | <Sv>Han blev bjuden.</Sv> |
-| resultierender Zustand | finites <Sv>vara</Sv> + kongruierendes Partizip | <Sv>Dörren är stängd.</Sv> |
+| s-Passiv, Präsens | Präsensstamm/-form + <span lang="sv">-s</span> | <span lang="sv">Biljetter köps i appen.</span> |
+| s-Passiv, Präteritum | Präteritum + <span lang="sv">-s</span> | <span lang="sv">Boken skrevs 1950.</span> |
+| Ereignis-/Wechselpassiv | finites <span lang="sv">bli</span> + kongruierendes Partizip | <span lang="sv">Han blev bjuden.</span> |
+| resultierender Zustand | finites <span lang="sv">vara</span> + kongruierendes Partizip | <span lang="sv">Dörren är stängd.</span> |
 
 ## Direkter Vergleich
 
@@ -141,60 +140,60 @@ Partizip einen resultierenden Zustand statt des Ereignisses:
 	<p slot="sv">Dörren blev öppnad.</p>
 </LanguageComparison>
 
-Das s-Passiv kann auch ein konkretes Ereignis beschreiben, wie in <Sv>Cykeln
-stals i går</Sv>. <Sv>Bli</Sv> hebt das Ereignis oder den Übergang expliziter
+Das s-Passiv kann auch ein konkretes Ereignis beschreiben, wie in <span lang="sv">Cykeln
+stals i går</span>. <span lang="sv">Bli</span> hebt das Ereignis oder den Übergang expliziter
 hervor; es beansprucht nicht jedes Einzelereignis-Passiv für sich. Siehe
 [Aktiv vs. Passiv](../active-vs-passive/) für die kommunikative Wahl und die
-aktive Alternative mit <Sv>man</Sv>.
+aktive Alternative mit <span lang="sv">man</span>.
 
 ## S-Verben, die kein Passiv sind
 
-Manche Verben enden einfach auf <Sv>-s</Sv> und haben keine aktive Form.
+Manche Verben enden einfach auf <span lang="sv">-s</span> und haben keine aktive Form.
 Sie sind keine Passive, und sie als solche zu übersetzen führt nicht weiter:
 
 | Verb | Bedeutung |
 | --- | --- |
-| <Sv>finns</Sv> | es gibt, existieren |
-| <Sv>hoppas</Sv> | hoffen |
-| <Sv>trivs</Sv> | sich wohlfühlen |
-| <Sv>minns</Sv> | sich erinnern |
-| <Sv>lyckas</Sv> | gelingen, erfolgreich sein |
-| <Sv>andas</Sv> | atmen |
+| <span lang="sv">finns</span> | es gibt, existieren |
+| <span lang="sv">hoppas</span> | hoffen |
+| <span lang="sv">trivs</span> | sich wohlfühlen |
+| <span lang="sv">minns</span> | sich erinnern |
+| <span lang="sv">lyckas</span> | gelingen, erfolgreich sein |
+| <span lang="sv">andas</span> | atmen |
 
-- <Sv>Jag hoppas att du mår bra.</Sv>
-- <Sv>Jag trivs i Malmö.</Sv>
+- <span lang="sv">Jag hoppas att du mår bra.</span>
+- <span lang="sv">Jag trivs i Malmö.</span>
 
 ## Das reziproke -s
 
-Eine <Sv>-s</Sv>-Form kann auch bedeuten, dass zwei oder mehr Personen etwas
+Eine <span lang="sv">-s</span>-Form kann auch bedeuten, dass zwei oder mehr Personen etwas
 *miteinander* tun:
 
-- <Sv>Vi ses!</Sv> — *Wir sehen uns!*
-- <Sv>De träffas varje vecka.</Sv> — *Sie treffen sich jede Woche.*
-- <Sv>De kramades.</Sv> — *Sie umarmten sich.*
+- <span lang="sv">Vi ses!</span> — *Wir sehen uns!*
+- <span lang="sv">De träffas varje vecka.</span> — *Sie treffen sich jede Woche.*
+- <span lang="sv">De kramades.</span> — *Sie umarmten sich.*
 
 ## Typische Fehler
 
 <MistakeBox title="Typische Fehler">
-	- <Sv>Rummet städas varje dag</Sv> ist das kompakte Routinemuster; schließe
-	  daraus nicht, dass <Sv>bli</Sv> jedem Einzelereignis vorbehalten ist.
-	- ❌ <Sv>Huset blev sålld</Sv>
-	  ✅ <Sv>Huset blev sålt.</Sv> — das Partizip kongruiert mit dem
+	- <span lang="sv">Rummet städas varje dag</span> ist das kompakte Routinemuster; schließe
+	  daraus nicht, dass <span lang="sv">bli</span> jedem Einzelereignis vorbehalten ist.
+	- ❌ <span lang="sv">Huset blev sålld</span>
+	  ✅ <span lang="sv">Huset blev sålt.</span> — das Partizip kongruiert mit dem
 	  Subjekt
-	- ❌ <Sv>Jag hoppar att du mår bra</Sv>
-	  ✅ <Sv>Jag hoppas att du mår bra.</Sv> —
-	  <Sv>hoppas</Sv> hat keine aktive Form
-	- ❌ <Sv>Boken skrevs från Astrid Lindgren</Sv>
-	  ✅ <Sv>Boken skrevs av Astrid Lindgren.</Sv>
-	- Greife nicht zu <Sv>bli</Sv>, nur weil das Deutsche
+	- ❌ <span lang="sv">Jag hoppar att du mår bra</span>
+	  ✅ <span lang="sv">Jag hoppas att du mår bra.</span> —
+	  <span lang="sv">hoppas</span> hat keine aktive Form
+	- ❌ <span lang="sv">Boken skrevs från Astrid Lindgren</span>
+	  ✅ <span lang="sv">Boken skrevs av Astrid Lindgren.</span>
+	- Greife nicht zu <span lang="sv">bli</span>, nur weil das Deutsche
 	  <span lang="de">werden</span> verwendet.
 	</MistakeBox>
 
 <MemoryTip>
 Drei kurze Sätze trennen die zentralen Muster:
-<Sv><strong>Rummet städas varje dag</strong></Sv> — Routine.
-<Sv><strong>Dörren blev öppnad</strong></Sv> — Ereignis oder Wechsel.
-<Sv><strong>Vi ses!</strong></Sv> — miteinander, überhaupt kein Passiv.
+<span lang="sv"><strong>Rummet städas varje dag</strong></span> — Routine.
+<span lang="sv"><strong>Dörren blev öppnad</strong></span> — Ereignis oder Wechsel.
+<span lang="sv"><strong>Vi ses!</strong></span> — miteinander, überhaupt kein Passiv.
 </MemoryTip>
 
 <QuickCheck

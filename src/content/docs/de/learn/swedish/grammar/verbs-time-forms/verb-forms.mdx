@@ -30,7 +30,6 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 import VerbTable from '~/components/VerbTable.astro';
 
@@ -43,11 +42,11 @@ export const buy = verbs.find(({ id }) => id === 'sv-kopa')?.data ?? (() => {
 
 <KeyTakeaway>
 - Ein schwedisches Verb hat pro Zeitform eine einzige finite Form: dieselbe
-  Form für <Sv>jag</Sv>, <Sv>du</Sv>, <Sv>hon</Sv> und <Sv>de</Sv>.
+  Form für <span lang="sv">jag</span>, <span lang="sv">du</span>, <span lang="sv">hon</span> und <span lang="sv">de</span>.
 - Fünf Kernformen bilden die aktive Formenkette: Infinitiv, Imperativ,
   Präsens, Präteritum und Supinum. Partizipien und Passivformen ergänzen
   weitere Muster bei Bedarf.
-- Das Supinum ist die Form nach <Sv>har</Sv> oder <Sv>hade</Sv>; es ist nie
+- Das Supinum ist die Form nach <span lang="sv">har</span> oder <span lang="sv">hade</span>; es ist nie
   der Infinitiv und nie das Präteritum.
 </KeyTakeaway>
 
@@ -62,7 +61,7 @@ richtige Zeitform zu wählen.
 Lerne jedes neue Verb mit der Kernkette **Infinitiv — Imperativ — Präsens —
 Präteritum — Supinum**. Das ist ein praktischer Lernrahmen, keine Behauptung,
 dass dies die einzigen Formen sind, die schwedische Verben haben können. Als
-Beispiel <Sv>köpa</Sv> („kaufen“):
+Beispiel <span lang="sv">köpa</span> („kaufen“):
 
 <VerbTable
 	caption="köpa — Kernformen"
@@ -78,14 +77,14 @@ Beispiel <Sv>köpa</Sv> („kaufen“):
 
 Jede Form hat eine Aufgabe:
 
-- Infinitiv nach einem Modalverb: <Sv>Jag vill köpa boken.</Sv>
-- Imperativ für einen Befehl: <Sv>Köp boken!</Sv>
-- Präsens für jetzt, allgemein oder wiederholt: <Sv>Jag köper en bok.</Sv>
-- Präteritum für ein abgeschlossenes vergangenes Ereignis: <Sv>Jag köpte en bok.</Sv>
-- Supinum nach <Sv>har</Sv> oder <Sv>hade</Sv>: <Sv>Jag har köpt en bok.</Sv>
+- Infinitiv nach einem Modalverb: <span lang="sv">Jag vill köpa boken.</span>
+- Imperativ für einen Befehl: <span lang="sv">Köp boken!</span>
+- Präsens für jetzt, allgemein oder wiederholt: <span lang="sv">Jag köper en bok.</span>
+- Präteritum für ein abgeschlossenes vergangenes Ereignis: <span lang="sv">Jag köpte en bok.</span>
+- Supinum nach <span lang="sv">har</span> oder <span lang="sv">hade</span>: <span lang="sv">Jag har köpt en bok.</span>
 
 :::note[Eine Form für jede Person]
-<Sv>Jag köper</Sv>, <Sv>du köper</Sv> und <Sv>de köper</Sv> verwenden alle
+<span lang="sv">Jag köper</span>, <span lang="sv">du köper</span> und <span lang="sv">de köper</span> verwenden alle
 dieselbe Präsensform.
 :::
 
@@ -129,16 +128,16 @@ Zukunftskonstruktionen siehe [Zeitperspektiven](../tense-perspectives/).
 
 ## Zusammengesetzte Zeiten bilden
 
-Das Supinum verbindet sich mit einer finiten Form von <Sv>ha</Sv>:
+Das Supinum verbindet sich mit einer finiten Form von <span lang="sv">ha</span>:
 
-- Perfekt: <Sv>Jag har köpt en bok.</Sv> — Ich habe ein Buch gekauft.
-- Plusquamperfekt: <Sv>Jag hade köpt boken.</Sv> — Ich hatte das Buch gekauft.
+- Perfekt: <span lang="sv">Jag har köpt en bok.</span> — Ich habe ein Buch gekauft.
+- Plusquamperfekt: <span lang="sv">Jag hade köpt boken.</span> — Ich hatte das Buch gekauft.
 
 Das Supinum ist nicht dasselbe wie der Infinitiv oder das Präteritum:
 
-- <Sv>Jag vill köpa boken.</Sv> — Infinitiv nach einem Modalverb
-- <Sv>Jag köpte boken i går.</Sv> — Präteritum
-- <Sv>Jag har köpt boken.</Sv> — Supinum nach <Sv>har</Sv>
+- <span lang="sv">Jag vill köpa boken.</span> — Infinitiv nach einem Modalverb
+- <span lang="sv">Jag köpte boken i går.</span> — Präteritum
+- <span lang="sv">Jag har köpt boken.</span> — Supinum nach <span lang="sv">har</span>
 
 ## Direkter Vergleich
 
@@ -172,7 +171,7 @@ nützliche Brücken, aber ihre Verwendung stimmt nicht in jedem Kontext genau
 	correct={`Jag har ${buy.morphology.supine} en bok.`}
 	lang="sv"
 >
-	Verwende das Supinum nach <Sv>har</Sv> oder <Sv>hade</Sv>.
+	Verwende das Supinum nach <span lang="sv">har</span> oder <span lang="sv">hade</span>.
 </MistakeBox>
 
 <MistakeBox

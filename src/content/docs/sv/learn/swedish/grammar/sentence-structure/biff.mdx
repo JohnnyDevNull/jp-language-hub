@@ -28,15 +28,14 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import SentenceSchema from '~/components/SentenceSchema.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- I neutral standardsvenska kommer <Sv>inte</Sv> **före** det finita verbet i
+- I neutral standardsvenska kommer <span lang="sv">inte</span> **före** det finita verbet i
   en bisats; i en huvudsats kommer det efter.
 - Bisatsen lämnar plats två tom: det finita verbet flyttar bakom
   satsadverbialet.
-- Samma plats används av andra satsadverbial, inte bara <Sv>inte</Sv>.
+- Samma plats används av andra satsadverbial, inte bara <span lang="sv">inte</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -45,15 +44,15 @@ import TagList from '~/components/TagList.astro';
 satsadverbial i bisatser:
 
 > **B**isats: **I**nte **F**öre **F**init  
-> I en bisats kommer <Sv>inte</Sv> före det finita verbet.
+> I en bisats kommer <span lang="sv">inte</span> före det finita verbet.
 
 ## Kärnregel
 
 > **bisatsinledare + subjekt + satsadverbial + finit verb + adverbial**
 
 Samma fält gör skiftet synligt. I huvudsatsen står det finita verbet på plats
-två, och <Sv>inte</Sv> kommer efter det. I bisatsen är plats två tom: det
-finita verbet har flyttat in i verbgruppen bakom <Sv>inte</Sv>.
+två, och <span lang="sv">inte</span> kommer efter det. I bisatsen är plats två tom: det
+finita verbet har flyttat in i verbgruppen bakom <span lang="sv">inte</span>.
 
 <SentenceSchema
 	caption="Placeringen av inte i huvudsats och i bisats"
@@ -97,23 +96,23 @@ satsen följer fortfarande efter det.
 
 BIFF blir användbart efter ord som dessa:
 
-- <Sv>att</Sv> — inleder att-satser
-- <Sv>eftersom</Sv> — anger orsak
-- <Sv>om</Sv> — anger villkor
-- <Sv>när</Sv> — anger tidpunkt
-- <Sv>fast</Sv> — anger motsättning
-- <Sv>innan</Sv> — anger vad som kommer tidigare
+- <span lang="sv">att</span> — inleder att-satser
+- <span lang="sv">eftersom</span> — anger orsak
+- <span lang="sv">om</span> — anger villkor
+- <span lang="sv">när</span> — anger tidpunkt
+- <span lang="sv">fast</span> — anger motsättning
+- <span lang="sv">innan</span> — anger vad som kommer tidigare
 
 Exempel:
 
-- <Sv>Jag vet att hon inte arbetar idag.</Sv>
-- <Sv>Vi går ut om det inte regnar.</Sv>
-- <Sv>Han ringde när jag inte var hemma.</Sv>
+- <span lang="sv">Jag vet att hon inte arbetar idag.</span>
+- <span lang="sv">Vi går ut om det inte regnar.</span>
+- <span lang="sv">Han ringde när jag inte var hemma.</span>
 
 ## Mer än *inte*
 
-Samma plats används av många satsadverbial, till exempel <Sv>alltid</Sv>,
-<Sv>aldrig</Sv>, <Sv>kanske</Sv> och <Sv>redan</Sv>, även om deras exakta
+Samma plats används av många satsadverbial, till exempel <span lang="sv">alltid</span>,
+<span lang="sv">aldrig</span>, <span lang="sv">kanske</span> och <span lang="sv">redan</span>, även om deras exakta
 betydelse och föredragna placering kan bero på sammanhanget.
 
 <p lang="sv">Hon säger att hon <strong>aldrig äter</strong> kött.</p>

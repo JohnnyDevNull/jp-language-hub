@@ -28,15 +28,14 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import SentenceSchema from '~/components/SentenceSchema.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Im neutralen Standardschwedisch steht <Sv>inte</Sv> im Nebensatz **vor** dem
+- Im neutralen Standardschwedisch steht <span lang="sv">inte</span> im Nebensatz **vor** dem
   finiten Verb; im Hauptsatz steht es danach.
 - Der Nebensatz lässt Position zwei leer: Das finite Verb rückt hinter das
   Satzadverbial.
-- Dieselbe Position nutzen auch andere Satzadverbiale, nicht nur <Sv>inte</Sv>.
+- Dieselbe Position nutzen auch andere Satzadverbiale, nicht nur <span lang="sv">inte</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -45,15 +44,15 @@ import TagList from '~/components/TagList.astro';
 Satzadverbialen in Nebensätzen:
 
 > **B**isats: **I**nte **F**öre **F**init  
-> Im Nebensatz steht <Sv>inte</Sv> vor dem finiten Verb.
+> Im Nebensatz steht <span lang="sv">inte</span> vor dem finiten Verb.
 
 ## Kernregel
 
-> **<Sv>bisatsinledare + subjekt + satsadverbial + finit verb + adverbial</Sv>**
+> **<span lang="sv">bisatsinledare + subjekt + satsadverbial + finit verb + adverbial</span>**
 
 Dieselben Felder machen die Verschiebung sichtbar. Im Hauptsatz steht das
-finite Verb in Position zwei, und <Sv>inte</Sv> folgt ihm. Im Nebensatz bleibt
-Position zwei leer: Das finite Verb ist in die Verbgruppe hinter <Sv>inte</Sv>
+finite Verb in Position zwei, und <span lang="sv">inte</span> folgt ihm. Im Nebensatz bleibt
+Position zwei leer: Das finite Verb ist in die Verbgruppe hinter <span lang="sv">inte</span>
 gerückt.
 
 <SentenceSchema
@@ -99,23 +98,23 @@ weiterhin danach.
 
 BIFF wird nach Wörtern wie diesen nützlich:
 
-- <Sv>att</Sv> — dass
-- <Sv>eftersom</Sv> — weil
-- <Sv>om</Sv> — ob / falls
-- <Sv>när</Sv> — wenn / als
-- <Sv>fast</Sv> — obwohl / auch wenn
-- <Sv>innan</Sv> — bevor
+- <span lang="sv">att</span> — dass
+- <span lang="sv">eftersom</span> — weil
+- <span lang="sv">om</span> — ob / falls
+- <span lang="sv">när</span> — wenn / als
+- <span lang="sv">fast</span> — obwohl / auch wenn
+- <span lang="sv">innan</span> — bevor
 
 Beispiele:
 
-- <Sv>Jag vet att hon inte arbetar idag.</Sv>
-- <Sv>Vi går ut om det inte regnar.</Sv>
-- <Sv>Han ringde när jag inte var hemma.</Sv>
+- <span lang="sv">Jag vet att hon inte arbetar idag.</span>
+- <span lang="sv">Vi går ut om det inte regnar.</span>
+- <span lang="sv">Han ringde när jag inte var hemma.</span>
 
 ## Mehr als *inte*
 
-Dieselbe Position nutzen viele Satzadverbiale, zum Beispiel <Sv>alltid</Sv>,
-<Sv>aldrig</Sv>, <Sv>kanske</Sv> und <Sv>redan</Sv>, auch wenn ihre genaue
+Dieselbe Position nutzen viele Satzadverbiale, zum Beispiel <span lang="sv">alltid</span>,
+<span lang="sv">aldrig</span>, <span lang="sv">kanske</span> und <span lang="sv">redan</span>, auch wenn ihre genaue
 Bedeutung und bevorzugte Stellung vom Kontext abhängen können.
 
 <p lang="sv">Hon säger att hon <strong>aldrig äter</strong> kött.</p>

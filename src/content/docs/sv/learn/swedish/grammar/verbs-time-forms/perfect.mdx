@@ -27,7 +27,6 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 import VerbTable from '~/components/VerbTable.astro';
 
@@ -44,29 +43,29 @@ export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-sk
 );
 
 <KeyTakeaway>
-- Perfekt är <Sv>har</Sv> + supinum, och <Sv>har</Sv> är samma för alla
+- Perfekt är <span lang="sv">har</span> + supinum, och <span lang="sv">har</span> är samma för alla
   subjekt.
 - Använd det när det aktuella resultatet, erfarenheten eller en oavslutad
   tidsperiod är det viktiga.
-- Supinum är en egen form: <Sv>har köpt</Sv>, aldrig
-  <Sv>har köpa</Sv> eller <Sv>har köpte</Sv>.
+- Supinum är en egen form: <span lang="sv">har köpt</span>, aldrig
+  <span lang="sv">har köpa</span> eller <span lang="sv">har köpte</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Det svenska perfektet knyter en förfluten händelse eller ett förflutet
-tillstånd till nuet. Det bildas med presens av <Sv>har</Sv> plus verbets
+tillstånd till nuet. Det bildas med presens av <span lang="sv">har</span> plus verbets
 supinum.
 
 ## Kärnregel
 
-**Mönster:** <Sv>har</Sv> + supinum
+**Mönster:** <span lang="sv">har</span> + supinum
 
-- <Sv>Jag har köpt en bok.</Sv>
-- <Sv>Hon har skrivit ett mejl.</Sv>
-- <Sv>Vi har bott här länge.</Sv>
+- <span lang="sv">Jag har köpt en bok.</span>
+- <span lang="sv">Hon har skrivit ett mejl.</span>
+- <span lang="sv">Vi har bott här länge.</span>
 
-Hjälpverbet <Sv>har</Sv> är identiskt för alla subjekt. Supinum är en egen
+Hjälpverbet <span lang="sv">har</span> är identiskt för alla subjekt. Supinum är en egen
 verbform:
 
 <VerbTable
@@ -78,33 +77,33 @@ verbform:
 />
 
 <MistakeBox title="Supinum, inte infinitiv">
-Efter <Sv>har</Sv> används <Sv>köpt</Sv>, inte
-<Sv>köpa</Sv> eller <Sv>köpte</Sv>.
+Efter <span lang="sv">har</span> används <span lang="sv">köpt</span>, inte
+<span lang="sv">köpa</span> eller <span lang="sv">köpte</span>.
 </MistakeBox>
 
 ## Huvudsakliga användningar
 
 ### Aktuellt resultat
 
-<Sv>Jag har tappat nyckeln.</Sv>
+<span lang="sv">Jag har tappat nyckeln.</span>
 
 Nyckeln saknas nu; det aktuella resultatet är det som räknas.
 
 ### Erfarenhet fram till nu
 
-<Sv>Har du varit i Kiruna?</Sv>
+<span lang="sv">Har du varit i Kiruna?</span>
 
 Frågan gäller personens erfarenhet, inte ett specifikt tidigare besök.
 
 ### En situation som fortsätter fram till nu
 
-<Sv>Vi har bott här i tre år.</Sv>
+<span lang="sv">Vi har bott här i tre år.</span>
 
 Utan vidare sammanhang betyder det här normalt att vi fortfarande bor här.
 
 ### En oavslutad tidsperiod
 
-<Sv>Jag har läst två kapitel idag.</Sv>
+<span lang="sv">Jag har läst två kapitel idag.</span>
 
 Idag räknas som fortfarande pågående. Berättar talaren i stället om ett
 avslutat tillfälle i det förflutna, är preteritum det lämpliga perspektivet.
@@ -113,8 +112,8 @@ avslutat tillfälle i det förflutna, är preteritum det lämpliga perspektivet.
 
 | Fokus | Svenskt exempel |
 | --- | --- |
-| Relevans för nuet eller erfarenhet | <Sv>Jag har sett filmen.</Sv> |
-| Avslutad tid i det förflutna | <Sv>Jag såg filmen i lördags.</Sv> |
+| Relevans för nuet eller erfarenhet | <span lang="sv">Jag har sett filmen.</span> |
+| Avslutad tid i det förflutna | <span lang="sv">Jag såg filmen i lördags.</span> |
 
 ## Direkt jämförelse
 
@@ -139,24 +138,24 @@ tyska perfektet där svenskan i stället använder preteritum.
 
 ## Negation och ordföljd
 
-I en huvudsats står <Sv>inte</Sv> efter det finita hjälpverbet:
+I en huvudsats står <span lang="sv">inte</span> efter det finita hjälpverbet:
 
-<Sv>Jag har inte läst boken.</Sv>
+<span lang="sv">Jag har inte läst boken.</span>
 
 I en bisats står det normalt före det finita hjälpverbet:
 
-<Sv>… eftersom jag inte har läst boken.</Sv>
+<span lang="sv">… eftersom jag inte har läst boken.</span>
 
-Bara <Sv>har</Sv> är finit; <Sv>läst</Sv> är supinum. Den här skillnaden är
+Bara <span lang="sv">har</span> är finit; <span lang="sv">läst</span> är supinum. Den här skillnaden är
 till hjälp när man tillämpar V2 och BIFF.
 
 ## Vanliga misstag
 
 <MistakeBox title="Vanliga misstag">
-	- ❌ <Sv>Jag har köpa boken.</Sv>
-	  ✅ <Sv>Jag har köpt boken.</Sv>
-	- ❌ <Sv>Jag har köpte boken.</Sv>
-	  ✅ <Sv>Jag har köpt boken.</Sv>
+	- ❌ <span lang="sv">Jag har köpa boken.</span>
+	  ✅ <span lang="sv">Jag har köpt boken.</span>
+	- ❌ <span lang="sv">Jag har köpte boken.</span>
+	  ✅ <span lang="sv">Jag har köpt boken.</span>
 	- Undvik att mekaniskt kopiera det tyska perfektet när svenskan placerar
 	  händelsen i en avslutad tidsram i det förflutna.
 </MistakeBox>

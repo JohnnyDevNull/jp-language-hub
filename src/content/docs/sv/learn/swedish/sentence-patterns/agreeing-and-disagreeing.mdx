@@ -24,17 +24,16 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Ett positivt svar på en negativ fråga är <Sv>jo</Sv>, inte <Sv>ja</Sv> —
+- Ett positivt svar på en negativ fråga är <span lang="sv">jo</span>, inte <span lang="sv">ja</span> —
   precis som tyskans <span lang="de">doch</span>, till skillnad från
   engelskans *yes*.
-- Instämmande verb tar en preposition: <Sv>hålla med</Sv> någon,
-  <Sv>hålla med om</Sv> något.
-- Korta svar upprepar hjälpverbet med <Sv>det</Sv>:
-  <Sv>Jo, det gör jag.</Sv>
+- Instämmande verb tar en preposition: <span lang="sv">hålla med</span> någon,
+  <span lang="sv">hålla med om</span> något.
+- Korta svar upprepar hjälpverbet med <span lang="sv">det</span>:
+  <span lang="sv">Jo, det gör jag.</span>
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -46,43 +45,43 @@ kräver riktig grammatik är kortsvaret, som återanvänder verbet från frågan
 
 | Mönster | Vad det gör | Register |
 | --- | --- | --- |
-| <Sv>Precis!</Sv> / <Sv>Exakt!</Sv> | starkt instämmande med det som just sagts | talspråk |
-| <Sv>Just det!</Sv> | helt rätt, bekräfta ett faktum | talspråk |
-| <Sv>Det stämmer.</Sv> | det är korrekt | neutral |
-| <Sv>Jag håller med dig.</Sv> | uttrycka att man delar någons uppfattning | neutral |
-| <Sv>Det har du rätt i.</Sv> | erkänna att någon har en poäng | neutral, idiomatiskt |
-| <Sv>Jag tycker samma sak.</Sv> | dela samma åsikt | neutral |
-| <Sv>Absolut.</Sv> | oreserverat instämmande | neutral |
+| <span lang="sv">Precis!</span> / <span lang="sv">Exakt!</span> | starkt instämmande med det som just sagts | talspråk |
+| <span lang="sv">Just det!</span> | helt rätt, bekräfta ett faktum | talspråk |
+| <span lang="sv">Det stämmer.</span> | det är korrekt | neutral |
+| <span lang="sv">Jag håller med dig.</span> | uttrycka att man delar någons uppfattning | neutral |
+| <span lang="sv">Det har du rätt i.</span> | erkänna att någon har en poäng | neutral, idiomatiskt |
+| <span lang="sv">Jag tycker samma sak.</span> | dela samma åsikt | neutral |
+| <span lang="sv">Absolut.</span> | oreserverat instämmande | neutral |
 
 ## Vara oense
 
 | Mönster | Vad det gör | Register |
 | --- | --- | --- |
-| <Sv>Jag håller inte med.</Sv> | vanlig invändning | neutral |
-| <Sv>Det håller jag inte med om.</Sv> | invända mot ett *påstående* | neutral |
-| <Sv>Nja …</Sv> | tveka innan en invändning; mildrar det som följer | talspråk |
-| <Sv>Det tror jag inte.</Sv> | uttrycka tvivel | neutral |
-| <Sv>Jag förstår vad du menar, men …</Sv> | medge en poäng och invända ändå | neutral, artigt |
-| <Sv>Tvärtom.</Sv> | markera motsatsen | neutral, rakt på sak |
+| <span lang="sv">Jag håller inte med.</span> | vanlig invändning | neutral |
+| <span lang="sv">Det håller jag inte med om.</span> | invända mot ett *påstående* | neutral |
+| <span lang="sv">Nja …</span> | tveka innan en invändning; mildrar det som följer | talspråk |
+| <span lang="sv">Det tror jag inte.</span> | uttrycka tvivel | neutral |
+| <span lang="sv">Jag förstår vad du menar, men …</span> | medge en poäng och invända ändå | neutral, artigt |
+| <span lang="sv">Tvärtom.</span> | markera motsatsen | neutral, rakt på sak |
 
-<Sv>Nja</Sv> saknar motsvarighet som ett enda ord på tyska eller engelska. Det
+<span lang="sv">Nja</span> saknar motsvarighet som ett enda ord på tyska eller engelska. Det
 signalerar "inte riktigt" innan invändningen är formulerad, och det är det som
 gör en invändning svensk snarare än konfrontativ.
 
 ## Svara på en negativ fråga
 
-En negativ fråga — <Sv>Kommer du inte med?</Sv> — har två olika positiva svar
-beroende på vilket språk man utgår från. Svenska använder <Sv>jo</Sv> för att
-motsäga negationen och <Sv>nej</Sv> för att bekräfta den.
+En negativ fråga — <span lang="sv">Kommer du inte med?</span> — har två olika positiva svar
+beroende på vilket språk man utgår från. Svenska använder <span lang="sv">jo</span> för att
+motsäga negationen och <span lang="sv">nej</span> för att bekräfta den.
 
 | Fråga | Motsäger den | Bekräftar den |
 | --- | --- | --- |
-| <Sv>Kommer du inte med?</Sv> | <Sv>Jo, jag kommer.</Sv> | <Sv>Nej, jag stannar hemma.</Sv> |
-| <Sv>Har du inte läst boken?</Sv> | <Sv>Jo, det har jag.</Sv> | <Sv>Nej, det har jag inte.</Sv> |
-| <Sv>Tycker du inte om kaffe?</Sv> | <Sv>Jo, det gör jag.</Sv> | <Sv>Nej, det gör jag inte.</Sv> |
+| <span lang="sv">Kommer du inte med?</span> | <span lang="sv">Jo, jag kommer.</span> | <span lang="sv">Nej, jag stannar hemma.</span> |
+| <span lang="sv">Har du inte läst boken?</span> | <span lang="sv">Jo, det har jag.</span> | <span lang="sv">Nej, det har jag inte.</span> |
+| <span lang="sv">Tycker du inte om kaffe?</span> | <span lang="sv">Jo, det gör jag.</span> | <span lang="sv">Nej, det gör jag inte.</span> |
 
-Kortsvaret plockar upp frågans finita verb, eller <Sv>gör</Sv> när frågan
-saknade hjälpverb, och sätter <Sv>det</Sv> framför det.
+Kortsvaret plockar upp frågans finita verb, eller <span lang="sv">gör</span> när frågan
+saknade hjälpverb, och sätter <span lang="sv">det</span> framför det.
 
 ## Direkt jämförelse
 
@@ -102,7 +101,7 @@ båda frågetyperna.
 	<p slot="sv">Det har du rätt i.</p>
 </LanguageComparison>
 
-Det svenska idiomet är <Sv>ha rätt i</Sv> något. Att flytta fram <Sv>det</Sv>
+Det svenska idiomet är <span lang="sv">ha rätt i</span> något. Att flytta fram <span lang="sv">det</span>
 sätter det finita verbet på andra plats, så subjektet kommer efter.
 
 <LanguageComparison title="Vara oense">

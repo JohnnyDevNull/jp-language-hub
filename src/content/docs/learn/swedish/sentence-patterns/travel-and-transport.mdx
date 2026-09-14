@@ -24,15 +24,14 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Use <Sv>Jag vill åka till …</Sv> for destination and
-  <Sv>Vilken buss går till …?</Sv> to find the right line.
-- Use <Sv>När går …?</Sv> for scheduled departures and
-  <Sv>Är tåget försenat?</Sv> for delays.
-- Travel Swedish uses <Sv>till</Sv> for destination but often <Sv>på</Sv> for
+- Use <span lang="sv">Jag vill åka till …</span> for destination and
+  <span lang="sv">Vilken buss går till …?</span> to find the right line.
+- Use <span lang="sv">När går …?</span> for scheduled departures and
+  <span lang="sv">Är tåget försenat?</span> for delays.
+- Travel Swedish uses <span lang="sv">till</span> for destination but often <span lang="sv">på</span> for
   being on a bus, train, or platform.
 </KeyTakeaway>
 
@@ -46,26 +45,26 @@ changed.
 
 | Pattern | Use it when | Register |
 | --- | --- | --- |
-| <Sv>Jag vill åka till …</Sv> | saying where you want to go | neutral |
-| <Sv>Vilken buss går till …?</Sv> | asking which bus goes there | neutral |
-| <Sv>Går den här bussen till …?</Sv> | checking this bus | neutral |
-| <Sv>Varifrån går tåget?</Sv> | asking where the train leaves from | neutral |
-| <Sv>Vilken perrong?</Sv> | asking which platform | spoken |
-| <Sv>Måste jag byta?</Sv> | asking whether you need to change | neutral |
+| <span lang="sv">Jag vill åka till …</span> | saying where you want to go | neutral |
+| <span lang="sv">Vilken buss går till …?</span> | asking which bus goes there | neutral |
+| <span lang="sv">Går den här bussen till …?</span> | checking this bus | neutral |
+| <span lang="sv">Varifrån går tåget?</span> | asking where the train leaves from | neutral |
+| <span lang="sv">Vilken perrong?</span> | asking which platform | spoken |
+| <span lang="sv">Måste jag byta?</span> | asking whether you need to change | neutral |
 
-<Sv>åka</Sv> is the general travel-by-vehicle verb. Use <Sv>gå</Sv> for a
-scheduled service: <Sv>När går tåget?</Sv>
+<span lang="sv">åka</span> is the general travel-by-vehicle verb. Use <span lang="sv">gå</span> for a
+scheduled service: <span lang="sv">När går tåget?</span>
 
 ## Tickets and departures
 
 | Pattern | Use it when | Register |
 | --- | --- | --- |
-| <Sv>En biljett till …, tack.</Sv> | buying one ticket | neutral |
-| <Sv>En enkelbiljett, tack.</Sv> | one single ticket | neutral |
-| <Sv>En tur och retur, tack.</Sv> | a return ticket | neutral |
-| <Sv>När går nästa tåg?</Sv> | asking for the next train | neutral |
-| <Sv>När kommer bussen?</Sv> | asking when the bus arrives | neutral |
-| <Sv>Är tåget försenat?</Sv> | asking whether the train is delayed | neutral |
+| <span lang="sv">En biljett till …, tack.</span> | buying one ticket | neutral |
+| <span lang="sv">En enkelbiljett, tack.</span> | one single ticket | neutral |
+| <span lang="sv">En tur och retur, tack.</span> | a return ticket | neutral |
+| <span lang="sv">När går nästa tåg?</span> | asking for the next train | neutral |
+| <span lang="sv">När kommer bussen?</span> | asking when the bus arrives | neutral |
+| <span lang="sv">Är tåget försenat?</span> | asking whether the train is delayed | neutral |
 
 ## Tiny station sequence
 
@@ -87,8 +86,8 @@ scheduled service: <Sv>När går tåget?</Sv>
 	<p slot="sv">Jag vill åka till Uppsala.</p>
 </LanguageComparison>
 
-Swedish does not use one verb for every kind of "go". <Sv>åka</Sv> means going
-by vehicle; <Sv>gå</Sv> can mean walking or a scheduled departure.
+Swedish does not use one verb for every kind of "go". <span lang="sv">åka</span> means going
+by vehicle; <span lang="sv">gå</span> can mean walking or a scheduled departure.
 
 <LanguageComparison title="Scheduled departure">
 	<p slot="de">Wann fährt der nächste Zug?</p>

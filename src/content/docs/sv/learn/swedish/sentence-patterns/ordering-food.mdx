@@ -24,16 +24,15 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Använd <Sv>Jag skulle vilja ha ...</Sv> som den säkra, artiga
+- Använd <span lang="sv">Jag skulle vilja ha ...</span> som den säkra, artiga
   beställningsramen.
-- Använd <Sv>Kan jag få ...?</Sv> när du frågar efter en sak, en meny, vatten
+- Använd <span lang="sv">Kan jag få ...?</span> när du frågar efter en sak, en meny, vatten
   eller notan.
-- Justera beställningen med <Sv>med</Sv>, <Sv>utan</Sv>, <Sv>extra</Sv> och
-  <Sv>vid sidan av</Sv>.
+- Justera beställningen med <span lang="sv">med</span>, <span lang="sv">utan</span>, <span lang="sv">extra</span> och
+  <span lang="sv">vid sidan av</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -45,43 +44,43 @@ som finns, beställa, justera, svara på en fråga och betala.
 
 | Mönster | Använd det för | Exempel |
 | --- | --- | --- |
-| <Sv>Jag skulle vilja ha ...</Sv> | artig standardbeställning | <Sv>Jag skulle vilja ha en kaffe.</Sv> |
-| <Sv>Kan jag få ...?</Sv> | fråga efter en sak | <Sv>Kan jag få menyn?</Sv> |
-| <Sv>Jag tar ...</Sv> | snabbt val | <Sv>Jag tar dagens lunch.</Sv> |
-| <Sv>Har ni ...?</Sv> | kontrollera vad som finns | <Sv>Har ni något vegetariskt?</Sv> |
-| <Sv>Vad rekommenderar du?</Sv> | be om ett råd | <Sv>Vad rekommenderar du?</Sv> |
-| <Sv>Vad ingår?</Sv> | vad beställningen innehåller | <Sv>Vad ingår i dagens lunch?</Sv> |
+| <span lang="sv">Jag skulle vilja ha ...</span> | artig standardbeställning | <span lang="sv">Jag skulle vilja ha en kaffe.</span> |
+| <span lang="sv">Kan jag få ...?</span> | fråga efter en sak | <span lang="sv">Kan jag få menyn?</span> |
+| <span lang="sv">Jag tar ...</span> | snabbt val | <span lang="sv">Jag tar dagens lunch.</span> |
+| <span lang="sv">Har ni ...?</span> | kontrollera vad som finns | <span lang="sv">Har ni något vegetariskt?</span> |
+| <span lang="sv">Vad rekommenderar du?</span> | be om ett råd | <span lang="sv">Vad rekommenderar du?</span> |
+| <span lang="sv">Vad ingår?</span> | vad beställningen innehåller | <span lang="sv">Vad ingår i dagens lunch?</span> |
 
 ## Justera beställningen
 
 | Mönster | Använd det för | Exempel |
 | --- | --- | --- |
-| <Sv>med ...</Sv> | med något | <Sv>med mjölk</Sv> |
-| <Sv>utan ...</Sv> | utan något | <Sv>utan lök</Sv> |
-| <Sv>extra ...</Sv> | extra | <Sv>extra sås</Sv> |
-| <Sv>vid sidan av</Sv> | separat | <Sv>Kan jag få såsen vid sidan av?</Sv> |
-| <Sv>att dricka</Sv> | avsett att drickas på plats | <Sv>En kaffe att dricka här.</Sv> |
-| <Sv>att ta med</Sv> | avsett att tas med | <Sv>En kaffe att ta med, tack.</Sv> |
+| <span lang="sv">med ...</span> | med något | <span lang="sv">med mjölk</span> |
+| <span lang="sv">utan ...</span> | utan något | <span lang="sv">utan lök</span> |
+| <span lang="sv">extra ...</span> | extra | <span lang="sv">extra sås</span> |
+| <span lang="sv">vid sidan av</span> | separat | <span lang="sv">Kan jag få såsen vid sidan av?</span> |
+| <span lang="sv">att dricka</span> | avsett att drickas på plats | <span lang="sv">En kaffe att dricka här.</span> |
+| <span lang="sv">att ta med</span> | avsett att tas med | <span lang="sv">En kaffe att ta med, tack.</span> |
 
 ## Betala och avsluta
 
 | Mönster | Använd det för | Exempel |
 | --- | --- | --- |
-| <Sv>Kan jag få notan?</Sv> | fråga efter notan | <Sv>Kan jag få notan?</Sv> |
-| <Sv>Kan jag betala med kort?</Sv> | kortbetalning | <Sv>Kan jag betala med kort?</Sv> |
-| <Sv>Det var allt, tack.</Sv> | inget mer behövs | <Sv>Det var allt, tack.</Sv> |
-| <Sv>Tack, det var jättegott.</Sv> | tacka efter maten | <Sv>Tack, det var jättegott.</Sv> |
+| <span lang="sv">Kan jag få notan?</span> | fråga efter notan | <span lang="sv">Kan jag få notan?</span> |
+| <span lang="sv">Kan jag betala med kort?</span> | kortbetalning | <span lang="sv">Kan jag betala med kort?</span> |
+| <span lang="sv">Det var allt, tack.</span> | inget mer behövs | <span lang="sv">Det var allt, tack.</span> |
+| <span lang="sv">Tack, det var jättegott.</span> | tacka efter maten | <span lang="sv">Tack, det var jättegott.</span> |
 
 ## Kort dialog
 
 | Talare | Svenska |
 | --- | --- |
-| A | <Sv>Hej! Vad vill du ha?</Sv> |
-| B | <Sv>Jag skulle vilja ha en kaffe och en bulle.</Sv> |
-| A | <Sv>Vill du ha mjölk i kaffet?</Sv> |
-| B | <Sv>Ja tack, lite mjölk. Och kan jag få ett glas vatten?</Sv> |
-| A | <Sv>Självklart.</Sv> |
-| B | <Sv>Tack. Det var allt.</Sv> |
+| A | <span lang="sv">Hej! Vad vill du ha?</span> |
+| B | <span lang="sv">Jag skulle vilja ha en kaffe och en bulle.</span> |
+| A | <span lang="sv">Vill du ha mjölk i kaffet?</span> |
+| B | <span lang="sv">Ja tack, lite mjölk. Och kan jag få ett glas vatten?</span> |
+| A | <span lang="sv">Självklart.</span> |
+| B | <span lang="sv">Tack. Det var allt.</span> |
 
 ## Direkt jämförelse
 
@@ -92,8 +91,8 @@ som finns, beställa, justera, svara på en fråga och betala.
 </LanguageComparison>
 
 Det här är den säkraste fullständiga ramen eftersom den innehåller
-konditionalisen <Sv>skulle</Sv>, önskeverbet <Sv>vilja</Sv> och mottagarverbet
-<Sv>ha</Sv>.
+konditionalisen <span lang="sv">skulle</span>, önskeverbet <span lang="sv">vilja</span> och mottagarverbet
+<span lang="sv">ha</span>.
 
 <LanguageComparison title="Att ta med">
 	<p slot="de">Einen Kaffee zum Mitnehmen, bitte.</p>
@@ -102,7 +101,7 @@ konditionalisen <Sv>skulle</Sv>, önskeverbet <Sv>vilja</Sv> och mottagarverbet
 </LanguageComparison>
 
 Svenska använder en infinitivfras: bokstavligen ”en kaffe att ta med”. Lär dig
-<Sv>att ta med</Sv> som en fast kaféfras.
+<span lang="sv">att ta med</span> som en fast kaféfras.
 
 <QuickCheck
 	items={[

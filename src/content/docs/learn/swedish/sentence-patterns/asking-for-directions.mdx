@@ -26,16 +26,15 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Start with <Sv>Ursäkta, var ligger …?</Sv> for places and
-  <Sv>Hur kommer jag till …?</Sv> for routes.
-- Use <Sv>till</Sv> for destination, <Sv>mot</Sv> for direction, and
-  <Sv>förbi</Sv> for "past".
+- Start with <span lang="sv">Ursäkta, var ligger …?</span> for places and
+  <span lang="sv">Hur kommer jag till …?</span> for routes.
+- Use <span lang="sv">till</span> for destination, <span lang="sv">mot</span> for direction, and
+  <span lang="sv">förbi</span> for "past".
 - Direction answers are often imperatives:
-  <Sv>Gå rakt fram</Sv>, <Sv>sväng vänster</Sv>, <Sv>ta höger</Sv>.
+  <span lang="sv">Gå rakt fram</span>, <span lang="sv">sväng vänster</span>, <span lang="sv">ta höger</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -51,29 +50,29 @@ the route script.
 
 | Pattern | Use it when | Register |
 | --- | --- | --- |
-| <Sv>Ursäkta, var ligger …?</Sv> | asking where a place is | neutral |
-| <Sv>Vet du var … ligger?</Sv> | softer: do you know where it is | neutral |
-| <Sv>Hur kommer jag till …?</Sv> | asking how to get there | neutral |
-| <Sv>Är det långt härifrån?</Sv> | asking whether it is far from here | neutral |
-| <Sv>Är det åt rätt håll?</Sv> | checking whether this is the right direction | neutral |
-| <Sv>Kan du visa på kartan?</Sv> | asking someone to show it on the map | neutral |
+| <span lang="sv">Ursäkta, var ligger …?</span> | asking where a place is | neutral |
+| <span lang="sv">Vet du var … ligger?</span> | softer: do you know where it is | neutral |
+| <span lang="sv">Hur kommer jag till …?</span> | asking how to get there | neutral |
+| <span lang="sv">Är det långt härifrån?</span> | asking whether it is far from here | neutral |
+| <span lang="sv">Är det åt rätt håll?</span> | checking whether this is the right direction | neutral |
+| <span lang="sv">Kan du visa på kartan?</span> | asking someone to show it on the map | neutral |
 
-A common Swedish location question is <Sv>Var ligger stationen?</Sv> For the
+A common Swedish location question is <span lang="sv">Var ligger stationen?</span> For the
 full question-word pattern, see
 [Question words](../../grammar/questions-negation/question-words/). For a
-route, use <Sv>till</Sv>: <Sv>Hur kommer jag till stationen?</Sv>
+route, use <span lang="sv">till</span>: <span lang="sv">Hur kommer jag till stationen?</span>
 
 ## Understanding the answer
 
 | Pattern | Meaning |
 | --- | --- |
-| <Sv>Gå rakt fram.</Sv> | go straight ahead |
-| <Sv>Sväng vänster.</Sv> / <Sv>Ta vänster.</Sv> | turn left |
-| <Sv>Sväng höger.</Sv> / <Sv>Ta höger.</Sv> | turn right |
-| <Sv>Gå förbi kyrkan.</Sv> | go past the church |
-| <Sv>Det ligger bredvid apoteket.</Sv> | it is next to the pharmacy |
-| <Sv>Det ligger mittemot stationen.</Sv> | it is opposite the station |
-| <Sv>Det är på vänster sida.</Sv> | it is on the left-hand side |
+| <span lang="sv">Gå rakt fram.</span> | go straight ahead |
+| <span lang="sv">Sväng vänster.</span> / <span lang="sv">Ta vänster.</span> | turn left |
+| <span lang="sv">Sväng höger.</span> / <span lang="sv">Ta höger.</span> | turn right |
+| <span lang="sv">Gå förbi kyrkan.</span> | go past the church |
+| <span lang="sv">Det ligger bredvid apoteket.</span> | it is next to the pharmacy |
+| <span lang="sv">Det ligger mittemot stationen.</span> | it is opposite the station |
+| <span lang="sv">Det är på vänster sida.</span> | it is on the left-hand side |
 
 ## Tiny street exchange
 
@@ -95,7 +94,7 @@ route, use <Sv>till</Sv>: <Sv>Hur kommer jag till stationen?</Sv>
 	<p slot="sv">Var ligger stationen?</p>
 </LanguageComparison>
 
-Swedish often uses <Sv>ligger</Sv> for where buildings and places are located.
+Swedish often uses <span lang="sv">ligger</span> for where buildings and places are located.
 The question is not about an object lying down; it is the normal location verb.
 
 <LanguageComparison title="How do I get to it?">

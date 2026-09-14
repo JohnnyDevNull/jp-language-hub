@@ -27,7 +27,6 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 import VerbTable from '~/components/VerbTable.astro';
 
@@ -44,28 +43,28 @@ export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-sk
 );
 
 <KeyTakeaway>
-- The perfect is <Sv>har</Sv> + supine, and <Sv>har</Sv> is the same for every
+- The perfect is <span lang="sv">har</span> + supine, and <span lang="sv">har</span> is the same for every
   subject.
 - Use it when the present result, the experience or an unfinished time period
   matters.
-- The supine is a form of its own: <Sv>har köpt</Sv>, never
-  <Sv>har köpa</Sv> or <Sv>har köpte</Sv>.
+- The supine is a form of its own: <span lang="sv">har köpt</span>, never
+  <span lang="sv">har köpa</span> or <span lang="sv">har köpte</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 The Swedish perfect connects a past event or state to the present. It is formed
-with present-tense <Sv>har</Sv> plus the verb's supine.
+with present-tense <span lang="sv">har</span> plus the verb's supine.
 
 ## Core rule
 
-**Pattern:** <Sv>har</Sv> + supine
+**Pattern:** <span lang="sv">har</span> + supine
 
-- <Sv>Jag har köpt en bok.</Sv>
-- <Sv>Hon har skrivit ett mejl.</Sv>
-- <Sv>Vi har bott här länge.</Sv>
+- <span lang="sv">Jag har köpt en bok.</span>
+- <span lang="sv">Hon har skrivit ett mejl.</span>
+- <span lang="sv">Vi har bott här länge.</span>
 
-The auxiliary <Sv>har</Sv> is identical for every subject. The
+The auxiliary <span lang="sv">har</span> is identical for every subject. The
 supine is a dedicated verb form:
 
 <VerbTable
@@ -77,33 +76,33 @@ supine is a dedicated verb form:
 />
 
 <MistakeBox title="Supine, not infinitive">
-After <Sv>har</Sv>, use <Sv>köpt</Sv>, not
-<Sv>köpa</Sv> or <Sv>köpte</Sv>.
+After <span lang="sv">har</span>, use <span lang="sv">köpt</span>, not
+<span lang="sv">köpa</span> or <span lang="sv">köpte</span>.
 </MistakeBox>
 
 ## Main uses
 
 ### Present result
 
-<Sv>Jag har tappat nyckeln.</Sv>
+<span lang="sv">Jag har tappat nyckeln.</span>
 
 The key is missing now; the current result matters.
 
 ### Experience up to now
 
-<Sv>Har du varit i Kiruna?</Sv>
+<span lang="sv">Har du varit i Kiruna?</span>
 
 The question concerns the person's experience, not one specified past visit.
 
 ### A situation continuing until now
 
-<Sv>Vi har bott här i tre år.</Sv>
+<span lang="sv">Vi har bott här i tre år.</span>
 
 Without further context, this normally means that we still live here.
 
 ### An unfinished time period
 
-<Sv>Jag har läst två kapitel idag.</Sv>
+<span lang="sv">Jag har läst två kapitel idag.</span>
 
 Today is treated as still current. If the speaker instead narrates a completed
 past occasion, the preterite may be the appropriate perspective.
@@ -112,8 +111,8 @@ past occasion, the preterite may be the appropriate perspective.
 
 | Focus | Swedish example |
 | --- | --- |
-| Present relevance or experience | <Sv>Jag har sett filmen.</Sv> |
-| Completed past time | <Sv>Jag såg filmen i lördags.</Sv> |
+| Present relevance or experience | <span lang="sv">Jag har sett filmen.</span> |
+| Completed past time | <span lang="sv">Jag såg filmen i lördags.</span> |
 
 ## Direct comparison
 
@@ -137,24 +136,24 @@ block above keeps the German perfect where Swedish takes the preterite.
 
 ## Negation and word order
 
-In a main clause, <Sv>inte</Sv> follows the finite auxiliary:
+In a main clause, <span lang="sv">inte</span> follows the finite auxiliary:
 
-<Sv>Jag har inte läst boken.</Sv>
+<span lang="sv">Jag har inte läst boken.</span>
 
 In a subordinate clause, it normally precedes the finite auxiliary:
 
-<Sv>… eftersom jag inte har läst boken.</Sv>
+<span lang="sv">… eftersom jag inte har läst boken.</span>
 
-Only <Sv>har</Sv> is finite; <Sv>läst</Sv> is the
+Only <span lang="sv">har</span> is finite; <span lang="sv">läst</span> is the
 supine. This distinction helps when applying V2 and BIFF.
 
 ## Common mistakes
 
 <MistakeBox title="Common mistakes">
-	- ❌ <Sv>Jag har köpa boken.</Sv>
-	  ✅ <Sv>Jag har köpt boken.</Sv>
-	- ❌ <Sv>Jag har köpte boken.</Sv>
-	  ✅ <Sv>Jag har köpt boken.</Sv>
+	- ❌ <span lang="sv">Jag har köpa boken.</span>
+	  ✅ <span lang="sv">Jag har köpt boken.</span>
+	- ❌ <span lang="sv">Jag har köpte boken.</span>
+	  ✅ <span lang="sv">Jag har köpt boken.</span>
 	- Avoid mechanically copying the German perfect whenever Swedish places the
 	  event in a finished past time frame.
 </MistakeBox>

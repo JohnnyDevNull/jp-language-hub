@@ -30,7 +30,6 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 import VerbTable from '~/components/VerbTable.astro';
 
@@ -43,11 +42,11 @@ export const buy = verbs.find(({ id }) => id === 'sv-kopa')?.data ?? (() => {
 
 <KeyTakeaway>
 - A Swedish verb has one finite form per tense: the same form for
-  <Sv>jag</Sv>, <Sv>du</Sv>, <Sv>hon</Sv> and <Sv>de</Sv>.
+  <span lang="sv">jag</span>, <span lang="sv">du</span>, <span lang="sv">hon</span> and <span lang="sv">de</span>.
 - Five core forms organize the basic active form chain: infinitive, imperative,
   present, preterite and supine. Participles and passive forms add further
   patterns when you need them.
-- The supine is the form after <Sv>har</Sv> or <Sv>hade</Sv>; it is never the
+- The supine is the form after <span lang="sv">har</span> or <span lang="sv">hade</span>; it is never the
   infinitive and never the preterite.
 </KeyTakeaway>
 
@@ -60,7 +59,7 @@ task is therefore recognizing the form and choosing the right tense.
 
 Learn every new verb with the core chain **infinitive — imperative — present —
 preterite — supine**. It is a practical learning frame, not a claim that these
-are the only forms Swedish verbs can have. Using <Sv>köpa</Sv> (“buy”) as an
+are the only forms Swedish verbs can have. Using <span lang="sv">köpa</span> (“buy”) as an
 example:
 
 <VerbTable
@@ -77,14 +76,14 @@ example:
 
 Each form has one job:
 
-- Infinitive after a modal verb: <Sv>Jag vill köpa boken.</Sv>
-- Imperative for a command: <Sv>Köp boken!</Sv>
-- Present for now, generally or repeatedly: <Sv>Jag köper en bok.</Sv>
-- Preterite for a completed past event: <Sv>Jag köpte en bok.</Sv>
-- Supine after <Sv>har</Sv> or <Sv>hade</Sv>: <Sv>Jag har köpt en bok.</Sv>
+- Infinitive after a modal verb: <span lang="sv">Jag vill köpa boken.</span>
+- Imperative for a command: <span lang="sv">Köp boken!</span>
+- Present for now, generally or repeatedly: <span lang="sv">Jag köper en bok.</span>
+- Preterite for a completed past event: <span lang="sv">Jag köpte en bok.</span>
+- Supine after <span lang="sv">har</span> or <span lang="sv">hade</span>: <span lang="sv">Jag har köpt en bok.</span>
 
 :::note[One form for every person]
-<Sv>Jag köper</Sv>, <Sv>du köper</Sv> and <Sv>de köper</Sv> all use the same
+<span lang="sv">Jag köper</span>, <span lang="sv">du köper</span> and <span lang="sv">de köper</span> all use the same
 present form.
 :::
 
@@ -127,16 +126,16 @@ constructions, see [tense perspectives](../tense-perspectives/).
 
 ## Building compound tenses
 
-The supine combines with a finite form of <Sv>ha</Sv>:
+The supine combines with a finite form of <span lang="sv">ha</span>:
 
-- Perfect: <Sv>Jag har köpt en bok.</Sv> — I have bought a book.
-- Pluperfect: <Sv>Jag hade köpt boken.</Sv> — I had bought the book.
+- Perfect: <span lang="sv">Jag har köpt en bok.</span> — I have bought a book.
+- Pluperfect: <span lang="sv">Jag hade köpt boken.</span> — I had bought the book.
 
 The supine is not the same as the infinitive or the preterite:
 
-- <Sv>Jag vill köpa boken.</Sv> — infinitive after a modal verb
-- <Sv>Jag köpte boken i går.</Sv> — preterite
-- <Sv>Jag har köpt boken.</Sv> — supine after <Sv>har</Sv>
+- <span lang="sv">Jag vill köpa boken.</span> — infinitive after a modal verb
+- <span lang="sv">Jag köpte boken i går.</span> — preterite
+- <span lang="sv">Jag har köpt boken.</span> — supine after <span lang="sv">har</span>
 
 ## Direct comparison
 
@@ -169,7 +168,7 @@ does not match perfectly in every context.
 	correct={`Jag har ${buy.morphology.supine} en bok.`}
 	lang="sv"
 >
-	Use the supine after <Sv>har</Sv> or <Sv>hade</Sv>.
+	Use the supine after <span lang="sv">har</span> or <span lang="sv">hade</span>.
 </MistakeBox>
 
 <MistakeBox

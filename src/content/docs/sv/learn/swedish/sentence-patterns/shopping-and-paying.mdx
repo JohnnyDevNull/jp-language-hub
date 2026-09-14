@@ -24,15 +24,14 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Använd <Sv>Jag letar efter …</Sv> när du behöver hjälp att hitta något.
-- Använd <Sv>Hur mycket kostar …?</Sv> för priser och <Sv>Kan jag betala med kort?</Sv>
+- Använd <span lang="sv">Jag letar efter …</span> när du behöver hjälp att hitta något.
+- Använd <span lang="sv">Hur mycket kostar …?</span> för priser och <span lang="sv">Kan jag betala med kort?</span>
   innan du betalar.
 - Svenska kassafrågor är ofta korta fasta uttryck:
-  <Sv>Kvitto?</Sv>, <Sv>Påse?</Sv>, <Sv>Medlemskap?</Sv>
+  <span lang="sv">Kvitto?</span>, <span lang="sv">Påse?</span>, <span lang="sv">Medlemskap?</span>
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -45,36 +44,36 @@ kassapersonal frågar ofta utan en hel mening.
 
 | Mönster | Använd det när … | Register |
 | --- | --- | --- |
-| <Sv>Jag letar efter …</Sv> | du letar efter något | neutral |
-| <Sv>Har ni …?</Sv> | fråga om butiken har det | neutral |
-| <Sv>Var finns …?</Sv> | fråga var något finns | neutral |
-| <Sv>Finns den i en annan storlek?</Sv> | fråga efter en annan storlek | neutral |
-| <Sv>Finns den i en annan färg?</Sv> | fråga efter en annan färg | neutral |
-| <Sv>Kan jag prova den?</Sv> | fråga om du får prova det | neutral |
+| <span lang="sv">Jag letar efter …</span> | du letar efter något | neutral |
+| <span lang="sv">Har ni …?</span> | fråga om butiken har det | neutral |
+| <span lang="sv">Var finns …?</span> | fråga var något finns | neutral |
+| <span lang="sv">Finns den i en annan storlek?</span> | fråga efter en annan storlek | neutral |
+| <span lang="sv">Finns den i en annan färg?</span> | fråga efter en annan färg | neutral |
+| <span lang="sv">Kan jag prova den?</span> | fråga om du får prova det | neutral |
 
-Använd <Sv>den</Sv> för en vara med <Sv>en</Sv>-genus och <Sv>det</Sv> för en
-vara med <Sv>ett</Sv>-genus. Vet du inte genuset än? Peka på varan och säg
-<Sv>den här</Sv> i vardagligt tal.
+Använd <span lang="sv">den</span> för en vara med <span lang="sv">en</span>-genus och <span lang="sv">det</span> för en
+vara med <span lang="sv">ett</span>-genus. Vet du inte genuset än? Peka på varan och säg
+<span lang="sv">den här</span> i vardagligt tal.
 
 ## Välja och betala
 
 | Mönster | Använd det när … | Register |
 | --- | --- | --- |
-| <Sv>Hur mycket kostar den?</Sv> | fråga vad ett föremål kostar | neutral |
-| <Sv>Jag tar den här.</Sv> | du bestämmer dig för ett visst föremål | talspråk |
-| <Sv>Det blir bra.</Sv> | du tycker att det duger | talspråk |
-| <Sv>Kan jag betala med kort?</Sv> | fråga om du kan betala med kort | neutral |
-| <Sv>Jag betalar med kort.</Sv> | berätta hur du betalar | neutral |
-| <Sv>Kan jag få kvittot?</Sv> | be om kvittot | neutral |
+| <span lang="sv">Hur mycket kostar den?</span> | fråga vad ett föremål kostar | neutral |
+| <span lang="sv">Jag tar den här.</span> | du bestämmer dig för ett visst föremål | talspråk |
+| <span lang="sv">Det blir bra.</span> | du tycker att det duger | talspråk |
+| <span lang="sv">Kan jag betala med kort?</span> | fråga om du kan betala med kort | neutral |
+| <span lang="sv">Jag betalar med kort.</span> | berätta hur du betalar | neutral |
+| <span lang="sv">Kan jag få kvittot?</span> | be om kvittot | neutral |
 
 ## Svar i kassan
 
 | Om de frågar | Svar |
 | --- | --- |
-| <Sv>Kvitto?</Sv> | <Sv>Ja tack.</Sv> / <Sv>Nej tack.</Sv> |
-| <Sv>Påse?</Sv> | <Sv>Ja, en påse tack.</Sv> |
-| <Sv>Är det bra så?</Sv> | <Sv>Ja, det är bra.</Sv> |
-| <Sv>Medlemskap?</Sv> | <Sv>Nej, jag är inte medlem.</Sv> |
+| <span lang="sv">Kvitto?</span> | <span lang="sv">Ja tack.</span> / <span lang="sv">Nej tack.</span> |
+| <span lang="sv">Påse?</span> | <span lang="sv">Ja, en påse tack.</span> |
+| <span lang="sv">Är det bra så?</span> | <span lang="sv">Ja, det är bra.</span> |
+| <span lang="sv">Medlemskap?</span> | <span lang="sv">Nej, jag är inte medlem.</span> |
 
 ## Minisamtal i kassan
 
@@ -96,7 +95,7 @@ vara med <Sv>ett</Sv>-genus. Vet du inte genuset än? Peka på varan och säg
 	<p slot="sv">Jag letar efter en laddare.</p>
 </LanguageComparison>
 
-Det svenska mönstret är <Sv>leta efter</Sv>, ingen direkt ord-för-ord-kopia av
+Det svenska mönstret är <span lang="sv">leta efter</span>, ingen direkt ord-för-ord-kopia av
 tyskans <span lang="de">suchen</span> eller engelskans "look for".
 
 <LanguageComparison title="Ta den här">

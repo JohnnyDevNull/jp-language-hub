@@ -24,17 +24,16 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Svenska håller igång ett samtal med mycket korta frågor:
-  <Sv>Hur så?</Sv>, <Sv>Och sen då?</Sv>, <Sv>Hur menar du?</Sv>
-- <Sv>Förresten</Sv> och <Sv>apropå</Sv> är de två vanliga sätten att öppna
-  ett ämnesbyte; <Sv>apropå</Sv> knyter an till det som just sagts,
-  <Sv>förresten</Sv> behöver inte göra det.
+  <span lang="sv">Hur så?</span>, <span lang="sv">Och sen då?</span>, <span lang="sv">Hur menar du?</span>
+- <span lang="sv">Förresten</span> och <span lang="sv">apropå</span> är de två vanliga sätten att öppna
+  ett ämnesbyte; <span lang="sv">apropå</span> knyter an till det som just sagts,
+  <span lang="sv">förresten</span> behöver inte göra det.
 - Ett avbrott aviseras, det bara startas inte:
-  <Sv>Förlåt att jag avbryter, men …</Sv>
+  <span lang="sv">Förlåt att jag avbryter, men …</span>
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -46,42 +45,42 @@ bär på innehåll, och just därför kan de läras in som fasta enheter.
 
 | Mönster | Vad det gör | Register |
 | --- | --- | --- |
-| <Sv>Hur menar du?</Sv> | vad menar du med det | neutral |
-| <Sv>Hur så?</Sv> | varför det, hur kommer det sig | talspråk |
-| <Sv>Och sen då?</Sv> | och vad hände sedan | talspråk |
-| <Sv>Vad hände sen?</Sv> | vad hände efter det | talspråk |
-| <Sv>Berätta mer!</Sv> | be någon utveckla | talspråk |
-| <Sv>Menar du att …?</Sv> | kontrollera att du förstått rätt | neutral |
-| <Sv>Kan du utveckla det?</Sv> | be om ett mer utförligt svar | neutral till formell |
+| <span lang="sv">Hur menar du?</span> | vad menar du med det | neutral |
+| <span lang="sv">Hur så?</span> | varför det, hur kommer det sig | talspråk |
+| <span lang="sv">Och sen då?</span> | och vad hände sedan | talspråk |
+| <span lang="sv">Vad hände sen?</span> | vad hände efter det | talspråk |
+| <span lang="sv">Berätta mer!</span> | be någon utveckla | talspråk |
+| <span lang="sv">Menar du att …?</span> | kontrollera att du förstått rätt | neutral |
+| <span lang="sv">Kan du utveckla det?</span> | be om ett mer utförligt svar | neutral till formell |
 
 ## Fortsätta och byta ämne
 
 | Mönster | Vad det gör | Register |
 | --- | --- | --- |
-| <Sv>Just det, och …</Sv> | hålla med och sedan lägga till något | talspråk |
-| <Sv>Som sagt …</Sv> | återknyta till en poäng som redan nämnts | neutral |
-| <Sv>Apropå det …</Sv> | på tal om det | neutral |
-| <Sv>Förresten …</Sv> | inleda en sidoreplik | talspråk |
-| <Sv>En annan sak …</Sv> | föra in ett nytt ämne | talspråk |
-| <Sv>För att byta ämne …</Sv> | markera ett medvetet ämnesbyte | neutral |
+| <span lang="sv">Just det, och …</span> | hålla med och sedan lägga till något | talspråk |
+| <span lang="sv">Som sagt …</span> | återknyta till en poäng som redan nämnts | neutral |
+| <span lang="sv">Apropå det …</span> | på tal om det | neutral |
+| <span lang="sv">Förresten …</span> | inleda en sidoreplik | talspråk |
+| <span lang="sv">En annan sak …</span> | föra in ett nytt ämne | talspråk |
+| <span lang="sv">För att byta ämne …</span> | markera ett medvetet ämnesbyte | neutral |
 
 ## Avbryta artigt
 
 | Mönster | Vad det gör | Register |
 | --- | --- | --- |
-| <Sv>Förlåt att jag avbryter, men …</Sv> | be om ursäkt innan ett avbrott | neutral |
-| <Sv>Ursäkta, men …</Sv> | be om uppmärksamhet innan invändningen | neutral |
-| <Sv>Får jag säga en sak?</Sv> | be om utrymme att komma till tals | neutral |
+| <span lang="sv">Förlåt att jag avbryter, men …</span> | be om ursäkt innan ett avbrott | neutral |
+| <span lang="sv">Ursäkta, men …</span> | be om uppmärksamhet innan invändningen | neutral |
+| <span lang="sv">Får jag säga en sak?</span> | be om utrymme att komma till tals | neutral |
 
 ## Sammanfatta
 
 | Mönster | Vad det gör | Register |
 | --- | --- | --- |
-| <Sv>Kort sagt …</Sv> | sammanfatta i få ord | neutral |
-| <Sv>Sammanfattningsvis …</Sv> | inleda en formell sammanfattning | formell, skriftlig |
-| <Sv>Så det du säger är att …</Sv> | kontrollera din tolkning av den andra | neutral |
-| <Sv>Om jag förstår dig rätt …</Sv> | be om bekräftelse på din tolkning | neutral |
-| <Sv>Med andra ord …</Sv> | omformulera det som sagts | neutral |
+| <span lang="sv">Kort sagt …</span> | sammanfatta i få ord | neutral |
+| <span lang="sv">Sammanfattningsvis …</span> | inleda en formell sammanfattning | formell, skriftlig |
+| <span lang="sv">Så det du säger är att …</span> | kontrollera din tolkning av den andra | neutral |
+| <span lang="sv">Om jag förstår dig rätt …</span> | be om bekräftelse på din tolkning | neutral |
+| <span lang="sv">Med andra ord …</span> | omformulera det som sagts | neutral |
 
 ## Direkt jämförelse
 
@@ -97,8 +96,8 @@ bär på innehåll, och just därför kan de läras in som fasta enheter.
 	<p slot="sv">Förlåt att jag avbryter, men …</p>
 </LanguageComparison>
 
-<Sv>Förlåt</Sv> ber om ursäkt för något du själv gör; <Sv>ursäkta</Sv> ber om
-uppmärksamhet. Båda fungerar här, och <Sv>att</Sv>-satsen är obligatorisk i
+<span lang="sv">Förlåt</span> ber om ursäkt för något du själv gör; <span lang="sv">ursäkta</span> ber om
+uppmärksamhet. Båda fungerar här, och <span lang="sv">att</span>-satsen är obligatorisk i
 det första mönstret.
 
 <LanguageComparison title="Spela tillbaka en poäng">

@@ -26,7 +26,6 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 import VerbTable from '~/components/VerbTable.astro';
 
@@ -45,8 +44,8 @@ export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-sk
 <KeyTakeaway>
 - The preterite is the normal tense for a completed past event, a past
   sequence and a past state.
-- It is identical for every subject: <Sv>jag arbetade</Sv>,
-  <Sv>de arbetade</Sv>.
+- It is identical for every subject: <span lang="sv">jag arbetade</span>,
+  <span lang="sv">de arbetade</span>.
 - Use it whenever the event sits in a finished past time frame; use the
   perfect when the present result matters.
 </KeyTakeaway>
@@ -62,9 +61,9 @@ happened then.
 Like all Swedish finite verb forms, the preterite is identical for every
 subject:
 
-- <Sv>Jag arbetade.</Sv>
-- <Sv>Hon arbetade.</Sv>
-- <Sv>De arbetade.</Sv>
+- <span lang="sv">Jag arbetade.</span>
+- <span lang="sv">Hon arbetade.</span>
+- <span lang="sv">De arbetade.</span>
 
 The form depends on the verb group. One representative verb per group:
 
@@ -76,8 +75,8 @@ The form depends on the verb group. One representative verb per group:
 	}))}
 />
 
-Group 1 commonly adds <Sv>-ade</Sv>, group 2 <Sv>-de</Sv> or <Sv>-te</Sv>, and
-group 3 <Sv>-dde</Sv>. Forms in the conventional group 4 and irregular area
+Group 1 commonly adds <span lang="sv">-ade</span>, group 2 <span lang="sv">-de</span> or <span lang="sv">-te</span>, and
+group 3 <span lang="sv">-dde</span>. Forms in the conventional group 4 and irregular area
 vary; many strong verbs change the stem vowel, but this is not one universal
 ending rule. See [Verb groups](../../verb-patterns-voice/verb-groups/) for the
 patterns and their limits.
@@ -86,18 +85,18 @@ patterns and their limits.
 
 ### A completed past event
 
-<Sv>Jag köpte boken i går.</Sv> — I bought the book yesterday.
+<span lang="sv">Jag köpte boken i går.</span> — I bought the book yesterday.
 
 ### A past sequence
 
-<Sv>Hon vaknade, åt frukost och gick till jobbet.</Sv>
+<span lang="sv">Hon vaknade, åt frukost och gick till jobbet.</span>
 
 The three verbs move the story forward: she woke up, ate breakfast, and went to
 work.
 
 ### A past state or habit
 
-<Sv>När jag bodde i Göteborg cyklade jag till jobbet.</Sv>
+<span lang="sv">När jag bodde i Göteborg cyklade jag till jobbet.</span>
 
 The preterite can describe both repeated actions and states in a finished past
 period.
@@ -106,17 +105,17 @@ period.
 
 Use the preterite when the event belongs to a clearly completed past frame:
 
-<Sv>Jag såg filmen förra veckan.</Sv>
+<span lang="sv">Jag såg filmen förra veckan.</span>
 
 Use the perfect when the present result or experience is central and the event
 is not placed in a completed past frame:
 
-<Sv>Jag har sett filmen.</Sv>
+<span lang="sv">Jag har sett filmen.</span>
 
 This distinction is about perspective, not merely the presence of a time word.
 An ongoing time period can still allow the perfect:
 
-<Sv>Jag har druckit två koppar kaffe idag.</Sv>
+<span lang="sv">Jag har druckit två koppar kaffe idag.</span>
 
 ## Direct comparison
 
@@ -139,10 +138,10 @@ the German surface form.
 ## Common mistakes
 
 <MistakeBox title="Common mistakes">
-	- ❌ <Sv>Jag har köpt boken i går.</Sv>
-	  ✅ <Sv>Jag köpte boken i går.</Sv>
-	- ❌ <Sv>Hon köpade en bil.</Sv>
-	  ✅ <Sv>Hon köpte en bil.</Sv>
+	- ❌ <span lang="sv">Jag har köpt boken i går.</span>
+	  ✅ <span lang="sv">Jag köpte boken i går.</span>
+	- ❌ <span lang="sv">Hon köpade en bil.</span>
+	  ✅ <span lang="sv">Hon köpte en bil.</span>
 	- Do not form irregular verbs by attaching a regular ending. Learn their
 	  preterite and supine together.
 </MistakeBox>

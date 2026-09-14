@@ -26,63 +26,62 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- <Sv>Kan jag få ...?</Sv> ist das Standardmuster, wenn du darum bittest, eine
+- <span lang="sv">Kan jag få ...?</span> ist das Standardmuster, wenn du darum bittest, eine
   Sache zu bekommen.
-- <Sv>Kan du ...?</Sv> bittet jemanden, etwas zu tun; <Sv>Skulle du kunna ...?</Sv>
+- <span lang="sv">Kan du ...?</span> bittet jemanden, etwas zu tun; <span lang="sv">Skulle du kunna ...?</span>
   macht dieselbe Bitte weicher.
-- Stell <Sv>tack</Sv> ans Ende kleiner Serviceanfragen:
-  <Sv>En kaffe, tack.</Sv>
+- Stell <span lang="sv">tack</span> ans Ende kleiner Serviceanfragen:
+  <span lang="sv">En kaffe, tack.</span>
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Höfliches Schwedisch ist meist direkt, wird aber durch den richtigen Rahmen,
-Ton und <Sv>tack</Sv> abgemildert. Du brauchst keine lange Entschuldigung vor
+Ton und <span lang="sv">tack</span> abgemildert. Du brauchst keine lange Entschuldigung vor
 jeder Bitte.
 
 ## Etwas erbitten
 
 | Muster | Wofür du es nutzt | Beispiel |
 | --- | --- | --- |
-| <Sv>Kan jag få ...?</Sv> | kann ich haben, kann ich bekommen | <Sv>Kan jag få ett kvitto?</Sv> |
-| <Sv>Jag skulle vilja ha ...</Sv> | ich möchte gern; höflicher Standard | <Sv>Jag skulle vilja ha en kaffe.</Sv> |
-| <Sv>En ..., tack.</Sv> | kurze Bestellung am Tresen | <Sv>En bulle, tack.</Sv> |
-| <Sv>Har ni ...?</Sv> | habt ihr | <Sv>Har ni havremjölk?</Sv> |
-| <Sv>Finns det ...?</Sv> | gibt es | <Sv>Finns det en toalett här?</Sv> |
+| <span lang="sv">Kan jag få ...?</span> | kann ich haben, kann ich bekommen | <span lang="sv">Kan jag få ett kvitto?</span> |
+| <span lang="sv">Jag skulle vilja ha ...</span> | ich möchte gern; höflicher Standard | <span lang="sv">Jag skulle vilja ha en kaffe.</span> |
+| <span lang="sv">En ..., tack.</span> | kurze Bestellung am Tresen | <span lang="sv">En bulle, tack.</span> |
+| <span lang="sv">Har ni ...?</span> | habt ihr | <span lang="sv">Har ni havremjölk?</span> |
+| <span lang="sv">Finns det ...?</span> | gibt es | <span lang="sv">Finns det en toalett här?</span> |
 
 ## Jemanden bitten, etwas zu tun
 
 | Muster | Wofür du es nutzt | Beispiel |
 | --- | --- | --- |
-| <Sv>Kan du ...?</Sv> | einfache Bitte | <Sv>Kan du hjälpa mig?</Sv> |
-| <Sv>Skulle du kunna ...?</Sv> | weichere Bitte | <Sv>Skulle du kunna skriva ner det?</Sv> |
-| <Sv>Kan du säga det igen?</Sv> | etwas wiederholen lassen | <Sv>Kan du säga det igen?</Sv> |
-| <Sv>Kan du prata lite långsammare?</Sv> | um langsameres Sprechen bitten | <Sv>Kan du prata lite långsammare?</Sv> |
-| <Sv>Ursäkta, var ligger ...?</Sv> | nach einem Ort fragen | <Sv>Ursäkta, var ligger stationen?</Sv> |
+| <span lang="sv">Kan du ...?</span> | einfache Bitte | <span lang="sv">Kan du hjälpa mig?</span> |
+| <span lang="sv">Skulle du kunna ...?</span> | weichere Bitte | <span lang="sv">Skulle du kunna skriva ner det?</span> |
+| <span lang="sv">Kan du säga det igen?</span> | etwas wiederholen lassen | <span lang="sv">Kan du säga det igen?</span> |
+| <span lang="sv">Kan du prata lite långsammare?</span> | um langsameres Sprechen bitten | <span lang="sv">Kan du prata lite långsammare?</span> |
+| <span lang="sv">Ursäkta, var ligger ...?</span> | nach einem Ort fragen | <span lang="sv">Ursäkta, var ligger stationen?</span> |
 
 ## Abmildern und abschließen
 
 | Muster | Wofür du es nutzt | Beispiel |
 | --- | --- | --- |
-| <Sv>Ursäkta ...</Sv> | Aufmerksamkeit bekommen | <Sv>Ursäkta, kan du hjälpa mig?</Sv> |
-| <Sv>lite</Sv> | eine Menge oder einen Grad abmildern | <Sv>Kan du prata lite långsammare?</Sv> |
-| <Sv>om det går</Sv> | wenn es möglich ist | <Sv>Jag skulle vilja byta tid, om det går.</Sv> |
-| <Sv>Tack så mycket.</Sv> | vielen Dank | <Sv>Tack så mycket!</Sv> |
-| <Sv>Ingen fara.</Sv> | kein Problem | <Sv>Ingen fara.</Sv> |
+| <span lang="sv">Ursäkta ...</span> | Aufmerksamkeit bekommen | <span lang="sv">Ursäkta, kan du hjälpa mig?</span> |
+| <span lang="sv">lite</span> | eine Menge oder einen Grad abmildern | <span lang="sv">Kan du prata lite långsammare?</span> |
+| <span lang="sv">om det går</span> | wenn es möglich ist | <span lang="sv">Jag skulle vilja byta tid, om det går.</span> |
+| <span lang="sv">Tack så mycket.</span> | vielen Dank | <span lang="sv">Tack så mycket!</span> |
+| <span lang="sv">Ingen fara.</span> | kein Problem | <span lang="sv">Ingen fara.</span> |
 
 ## Mini-Sequenz
 
 | Sprecher | Schwedisch |
 | --- | --- |
-| A | <Sv>Ursäkta, kan du hjälpa mig?</Sv> |
-| B | <Sv>Ja, absolut.</Sv> |
-| A | <Sv>Kan du säga det igen, lite långsammare?</Sv> |
-| B | <Sv>Självklart.</Sv> |
-| A | <Sv>Tack så mycket.</Sv> |
+| A | <span lang="sv">Ursäkta, kan du hjälpa mig?</span> |
+| B | <span lang="sv">Ja, absolut.</span> |
+| A | <span lang="sv">Kan du säga det igen, lite långsammare?</span> |
+| B | <span lang="sv">Självklart.</span> |
+| A | <span lang="sv">Tack så mycket.</span> |
 
 ## Direkter Vergleich
 
@@ -92,8 +91,8 @@ jeder Bitte.
 	<p slot="sv">Kan jag få ett kvitto?</p>
 </LanguageComparison>
 
-<Sv>få</Sv> ist hier das nützliche Serviceverb: Du bittest darum, etwas zu
-bekommen. Ein abschließendes <Sv>tack</Sv> kann hinzugefügt werden, aber der
+<span lang="sv">få</span> ist hier das nützliche Serviceverb: Du bittest darum, etwas zu
+bekommen. Ein abschließendes <span lang="sv">tack</span> kann hinzugefügt werden, aber der
 Rahmen ist in einer normalen Servicesituation schon höflich.
 
 <LanguageComparison title="Könntest du?">
@@ -102,7 +101,7 @@ Rahmen ist in einer normalen Servicesituation schon höflich.
 	<p slot="sv">Skulle du kunna skriva ner det?</p>
 </LanguageComparison>
 
-Schwedisch nutzt <Sv>skulle</Sv> + <Sv>kunna</Sv>, um die Bitte abzumildern,
+Schwedisch nutzt <span lang="sv">skulle</span> + <span lang="sv">kunna</span>, um die Bitte abzumildern,
 ganz ähnlich wie im Deutschen und Englischen ein Konditional-Modalverb genutzt
 wird.
 

@@ -27,7 +27,6 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => {
@@ -35,23 +34,23 @@ export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => 
 })();
 
 <KeyTakeaway>
-- Den regelbundna komparationen lägger till <Sv>-are</Sv> och <Sv>-ast</Sv>:
-  <Sv>{snabb.morphology.en} → {snabb.comparison?.comparative} → {snabb.comparison?.superlative}</Sv>.
-- <Sv>än</Sv> motsvarar engelska ”than”.
-- Långa och participiella adjektiv använder ofta <Sv>mer</Sv> och <Sv>mest</Sv>
+- Den regelbundna komparationen lägger till <span lang="sv">-are</span> och <span lang="sv">-ast</span>:
+  <span lang="sv">{snabb.morphology.en} → {snabb.comparison?.comparative} → {snabb.comparison?.superlative}</span>.
+- <span lang="sv">än</span> motsvarar engelska ”than”.
+- Långa och participiella adjektiv använder ofta <span lang="sv">mer</span> och <span lang="sv">mest</span>
   i stället för ändelser; använd aldrig båda strategierna samtidigt.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Svenska adjektiv kan uttrycka tre grader: positiv, komparativ och superlativ.
-Många korta adjektiv använder ändelserna <Sv>-are</Sv> och <Sv>-ast</Sv>;
-andra har oregelbundna former eller använder <Sv>mer</Sv> och <Sv>mest</Sv>.
+Många korta adjektiv använder ändelserna <span lang="sv">-are</span> och <span lang="sv">-ast</span>;
+andra har oregelbundna former eller använder <span lang="sv">mer</span> och <span lang="sv">mest</span>.
 
 ## Regelbunden komparation
 
-Positiv är grundformen, komparativ får oftast <Sv>-are</Sv> och superlativ
-får oftast <Sv>-ast</Sv>:
+Positiv är grundformen, komparativ får oftast <span lang="sv">-are</span> och superlativ
+får oftast <span lang="sv">-ast</span>:
 
 <AdjectiveForms
 	forms={[
@@ -64,7 +63,7 @@ får oftast <Sv>-ast</Sv>:
 	caption="Grundformer av snabb"
 />
 
-I en jämförelse motsvarar <Sv>än</Sv> engelska ”than”:
+I en jämförelse motsvarar <span lang="sv">än</span> engelska ”than”:
 
 <p lang="sv">Tåget är snabbare än bussen.</p>
 
@@ -76,25 +75,25 @@ Den enkla predikativa superlativen behöver ingen ändelse för genus eller nume
 
 | Positiv | Komparativ | Superlativ | Betydelse |
 | --- | --- | --- | --- |
-| <Sv>stor</Sv> | <Sv>större</Sv> | <Sv>störst</Sv> | stor |
-| <Sv>liten</Sv> | <Sv>mindre</Sv> | <Sv>minst</Sv> | liten |
-| <Sv>gammal</Sv> | <Sv>äldre</Sv> | <Sv>äldst</Sv> | gammal |
-| <Sv>bra</Sv> | <Sv>bättre</Sv> | <Sv>bäst</Sv> | bra |
-| <Sv>dålig</Sv> | <Sv>sämre</Sv> | <Sv>sämst</Sv> | dålig |
+| <span lang="sv">stor</span> | <span lang="sv">större</span> | <span lang="sv">störst</span> | stor |
+| <span lang="sv">liten</span> | <span lang="sv">mindre</span> | <span lang="sv">minst</span> | liten |
+| <span lang="sv">gammal</span> | <span lang="sv">äldre</span> | <span lang="sv">äldst</span> | gammal |
+| <span lang="sv">bra</span> | <span lang="sv">bättre</span> | <span lang="sv">bäst</span> | bra |
+| <span lang="sv">dålig</span> | <span lang="sv">sämre</span> | <span lang="sv">sämst</span> | dålig |
 
 De här vanliga formerna lär du dig bäst som serier.
 
 ## Komparation med *mer* och *mest*
 
 Vissa adjektiv, särskilt längre adjektiv och många participiella adjektiv,
-kompareras vanligen med <Sv>mer</Sv> och <Sv>mest</Sv> i stället för med suffix:
+kompareras vanligen med <span lang="sv">mer</span> och <span lang="sv">mest</span> i stället för med suffix:
 
 <p lang="sv">komplicerad → mer komplicerad → mest komplicerad</p>
 
 <p lang="sv">överraskande → mer överraskande → mest överraskande</p>
 
 Användningen kan variera för vissa adjektiv. När både en form med suffix och
-en konstruktion med <Sv>mer</Sv> förekommer, följ etablerat bruk i stället för
+en konstruktion med <span lang="sv">mer</span> förekommer, följ etablerat bruk i stället för
 att mekaniskt använda samma regel för varje ord.
 
 ## Attributiva superlativer
@@ -102,15 +101,15 @@ att mekaniskt använda samma regel för varje ord.
 Före ett bestämt substantiv använder du adjektivets bestämda superlativform.
 Dess ändelse beror på komparationsmönstret:
 
-- <Sv>den snabbaste bilen</Sv>
-- <Sv>det största huset</Sv>
-- <Sv>de bästa resultaten</Sv>
+- <span lang="sv">den snabbaste bilen</span>
+- <span lang="sv">det största huset</span>
+- <span lang="sv">de bästa resultaten</span>
 
 Konstruktionen använder också den bestämda artikeln och det bestämda substantivet
 som [adjektivkongruens](../agreement/) kräver. En maskulin singularform på
-<Sv>-e</Sv>, som <Sv>den bäste spelaren</Sv>, förekommer också, särskilt när en
+<span lang="sv">-e</span>, som <span lang="sv">den bäste spelaren</span>, förekommer också, särskilt när en
 manlig person uttryckligen avses. Den icke maskulint specifika formen, till
-exempel <Sv>den bästa spelaren</Sv>, används också mycket.
+exempel <span lang="sv">den bästa spelaren</span>, används också mycket.
 
 ## Direkt jämförelse
 
@@ -128,25 +127,25 @@ exempel <Sv>den bästa spelaren</Sv>, används också mycket.
 
 Alla tre språken har regelbundna och oregelbundna mönster. Engelska
 <span lang="en">more / most</span> kan vara en användbar brygga till svenska
-<Sv>mer / mest</Sv>, men språken väljer inte det analytiska mönstret för exakt
+<span lang="sv">mer / mest</span>, men språken väljer inte det analytiska mönstret för exakt
 samma uppsättning adjektiv.
 
 <MistakeBox title="Vanliga misstag">
 Kombinera inte båda komparationsstrategierna:
 
-<Sv>❌ mer snabbare</Sv>  
-<Sv>✅ snabbare</Sv>
+<span lang="sv">❌ mer snabbare</span>  
+<span lang="sv">✅ snabbare</span>
 
 Lär dig oregelbundna serier i stället för att lägga till regelbundna ändelser:
 
-<Sv>❌ braare / braast</Sv>  
-<Sv>✅ bättre / bäst</Sv>
+<span lang="sv">❌ braare / braast</span>  
+<span lang="sv">✅ bättre / bäst</span>
 </MistakeBox>
 
 <MemoryTip>
 Lagra varje vanligt adjektiv som en stege i tre steg:
-<Sv><strong>stor — större — störst</strong></Sv>. Om adjektivet är långt eller
-participiellt, kontrollera om <Sv>mer — mest</Sv> är det naturliga mönstret i
+<span lang="sv"><strong>stor — större — störst</strong></span>. Om adjektivet är långt eller
+participiellt, kontrollera om <span lang="sv">mer — mest</span> är det naturliga mönstret i
 stället för att anta att det alltid får ändelser.
 </MemoryTip>
 

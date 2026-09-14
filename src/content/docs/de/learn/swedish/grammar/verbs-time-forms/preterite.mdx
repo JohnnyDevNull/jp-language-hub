@@ -26,7 +26,6 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 import VerbTable from '~/components/VerbTable.astro';
 
@@ -45,8 +44,8 @@ export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-sk
 <KeyTakeaway>
 - Das Präteritum ist die normale Zeitform für ein abgeschlossenes
   Ereignis, eine Abfolge oder einen Zustand in der Vergangenheit.
-- Es ist für jedes Subjekt identisch: <Sv>jag arbetade</Sv>,
-  <Sv>de arbetade</Sv>.
+- Es ist für jedes Subjekt identisch: <span lang="sv">jag arbetade</span>,
+  <span lang="sv">de arbetade</span>.
 - Verwende es, sobald das Ereignis in einem abgeschlossenen Zeitrahmen der
   Vergangenheit liegt; verwende das Perfekt, wenn das gegenwärtige Ergebnis
   zählt.
@@ -64,9 +63,9 @@ geschah.
 Wie alle finiten Verbformen im Schwedischen ist das Präteritum für jedes
 Subjekt identisch:
 
-- <Sv>Jag arbetade.</Sv>
-- <Sv>Hon arbetade.</Sv>
-- <Sv>De arbetade.</Sv>
+- <span lang="sv">Jag arbetade.</span>
+- <span lang="sv">Hon arbetade.</span>
+- <span lang="sv">De arbetade.</span>
 
 Die Form hängt von der Verbgruppe ab. Ein repräsentatives Verb pro Gruppe:
 
@@ -78,8 +77,8 @@ Die Form hängt von der Verbgruppe ab. Ein repräsentatives Verb pro Gruppe:
 	}))}
 />
 
-Gruppe 1 fügt meist <Sv>-ade</Sv> an, Gruppe 2 <Sv>-de</Sv> oder <Sv>-te</Sv>,
-und Gruppe 3 <Sv>-dde</Sv>. Die Formen im herkömmlichen Bereich von Gruppe 4
+Gruppe 1 fügt meist <span lang="sv">-ade</span> an, Gruppe 2 <span lang="sv">-de</span> oder <span lang="sv">-te</span>,
+und Gruppe 3 <span lang="sv">-dde</span>. Die Formen im herkömmlichen Bereich von Gruppe 4
 und den unregelmäßigen Verben variieren; viele starke Verben ändern den
 Stammvokal, aber das ist keine einheitliche Endungsregel. Siehe
 [Verbgruppen](../../verb-patterns-voice/verb-groups/) für die Muster und ihre
@@ -89,18 +88,18 @@ Grenzen.
 
 ### Ein abgeschlossenes Ereignis in der Vergangenheit
 
-<Sv>Jag köpte boken i går.</Sv> — Ich kaufte gestern das Buch.
+<span lang="sv">Jag köpte boken i går.</span> — Ich kaufte gestern das Buch.
 
 ### Eine Abfolge in der Vergangenheit
 
-<Sv>Hon vaknade, åt frukost och gick till jobbet.</Sv>
+<span lang="sv">Hon vaknade, åt frukost och gick till jobbet.</span>
 
 Die drei Verben treiben die Erzählung voran: Sie wachte auf, frühstückte und
 ging zur Arbeit.
 
 ### Ein Zustand oder eine Gewohnheit in der Vergangenheit
 
-<Sv>När jag bodde i Göteborg cyklade jag till jobbet.</Sv>
+<span lang="sv">När jag bodde i Göteborg cyklade jag till jobbet.</span>
 
 Das Präteritum kann sowohl wiederholte Handlungen als auch Zustände in einem
 abgeschlossenen vergangenen Zeitraum beschreiben.
@@ -110,19 +109,19 @@ abgeschlossenen vergangenen Zeitraum beschreiben.
 Verwende das Präteritum, wenn das Ereignis zu einem eindeutig abgeschlossenen
 Zeitrahmen der Vergangenheit gehört:
 
-<Sv>Jag såg filmen förra veckan.</Sv>
+<span lang="sv">Jag såg filmen förra veckan.</span>
 
 Verwende das Perfekt, wenn das gegenwärtige Ergebnis oder die Erfahrung im
 Mittelpunkt steht und das Ereignis nicht in einem abgeschlossenen Zeitrahmen
 der Vergangenheit verortet wird:
 
-<Sv>Jag har sett filmen.</Sv>
+<span lang="sv">Jag har sett filmen.</span>
 
 Dieser Unterschied betrifft die Perspektive, nicht bloß das Vorhandensein
 eines Zeitworts. Ein noch laufender Zeitraum kann trotzdem das Perfekt
 zulassen:
 
-<Sv>Jag har druckit två koppar kaffe idag.</Sv>
+<span lang="sv">Jag har druckit två koppar kaffe idag.</span>
 
 ## Direkter Vergleich
 
@@ -146,10 +145,10 @@ deutschen Oberflächenform.
 ## Häufige Fehler
 
 <MistakeBox title="Häufige Fehler">
-	- ❌ <Sv>Jag har köpt boken i går.</Sv>
-	  ✅ <Sv>Jag köpte boken i går.</Sv>
-	- ❌ <Sv>Hon köpade en bil.</Sv>
-	  ✅ <Sv>Hon köpte en bil.</Sv>
+	- ❌ <span lang="sv">Jag har köpt boken i går.</span>
+	  ✅ <span lang="sv">Jag köpte boken i går.</span>
+	- ❌ <span lang="sv">Hon köpade en bil.</span>
+	  ✅ <span lang="sv">Hon köpte en bil.</span>
 	- Bilde unregelmäßige Verben nicht durch Anhängen einer regelmäßigen
 	  Endung. Lerne ihr Präteritum und Supinum zusammen.
 </MistakeBox>

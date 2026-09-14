@@ -24,17 +24,16 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Schwedisch hält ein Gespräch mit sehr kurzen Fragen am Laufen:
-  <Sv>Hur så?</Sv>, <Sv>Och sen då?</Sv>, <Sv>Hur menar du?</Sv>
-- <Sv>Förresten</Sv> und <Sv>apropå</Sv> sind die zwei Standard-Eröffner für
-  einen Themenwechsel; <Sv>apropå</Sv> knüpft an das gerade Gesagte an,
-  <Sv>förresten</Sv> muss das nicht.
+  <span lang="sv">Hur så?</span>, <span lang="sv">Och sen då?</span>, <span lang="sv">Hur menar du?</span>
+- <span lang="sv">Förresten</span> und <span lang="sv">apropå</span> sind die zwei Standard-Eröffner für
+  einen Themenwechsel; <span lang="sv">apropå</span> knüpft an das gerade Gesagte an,
+  <span lang="sv">förresten</span> muss das nicht.
 - Eine Unterbrechung wird angekündigt, nicht einfach begonnen:
-  <Sv>Förlåt att jag avbryter, men …</Sv>
+  <span lang="sv">Förlåt att jag avbryter, men …</span>
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -47,42 +46,42 @@ lernen.
 
 | Muster | Wofür es steht | Register |
 | --- | --- | --- |
-| <Sv>Hur menar du?</Sv> | was meinst du damit | neutral |
-| <Sv>Hur så?</Sv> | wieso, wie kommt's | gesprochen |
-| <Sv>Och sen då?</Sv> | und was dann | gesprochen |
-| <Sv>Vad hände sen?</Sv> | was ist dann passiert | gesprochen |
-| <Sv>Berätta mer!</Sv> | erzähl mehr | gesprochen |
-| <Sv>Menar du att …?</Sv> | dein Verständnis überprüfen | neutral |
-| <Sv>Kan du utveckla det?</Sv> | kannst du das ausführen | neutral bis formell |
+| <span lang="sv">Hur menar du?</span> | was meinst du damit | neutral |
+| <span lang="sv">Hur så?</span> | wieso, wie kommt's | gesprochen |
+| <span lang="sv">Och sen då?</span> | und was dann | gesprochen |
+| <span lang="sv">Vad hände sen?</span> | was ist dann passiert | gesprochen |
+| <span lang="sv">Berätta mer!</span> | erzähl mehr | gesprochen |
+| <span lang="sv">Menar du att …?</span> | dein Verständnis überprüfen | neutral |
+| <span lang="sv">Kan du utveckla det?</span> | kannst du das ausführen | neutral bis formell |
 
 ## Weiterführen und das Thema wechseln
 
 | Muster | Wofür es steht | Register |
 | --- | --- | --- |
-| <Sv>Just det, och …</Sv> | zustimmen, dann ergänzen | gesprochen |
-| <Sv>Som sagt …</Sv> | wie gesagt, zu deinem Punkt zurückkehren | neutral |
-| <Sv>Apropå det …</Sv> | apropos das | neutral |
-| <Sv>Förresten …</Sv> | übrigens | gesprochen |
-| <Sv>En annan sak …</Sv> | eine andere Sache | gesprochen |
-| <Sv>För att byta ämne …</Sv> | um das Thema zu wechseln | neutral |
+| <span lang="sv">Just det, och …</span> | zustimmen, dann ergänzen | gesprochen |
+| <span lang="sv">Som sagt …</span> | wie gesagt, zu deinem Punkt zurückkehren | neutral |
+| <span lang="sv">Apropå det …</span> | apropos das | neutral |
+| <span lang="sv">Förresten …</span> | übrigens | gesprochen |
+| <span lang="sv">En annan sak …</span> | eine andere Sache | gesprochen |
+| <span lang="sv">För att byta ämne …</span> | um das Thema zu wechseln | neutral |
 
 ## Höflich unterbrechen
 
 | Muster | Wofür es steht | Register |
 | --- | --- | --- |
-| <Sv>Förlåt att jag avbryter, men …</Sv> | Entschuldigung, dass ich unterbreche, aber | neutral |
-| <Sv>Ursäkta, men …</Sv> | Entschuldigung, aber | neutral |
-| <Sv>Får jag säga en sak?</Sv> | darf ich etwas sagen | neutral |
+| <span lang="sv">Förlåt att jag avbryter, men …</span> | Entschuldigung, dass ich unterbreche, aber | neutral |
+| <span lang="sv">Ursäkta, men …</span> | Entschuldigung, aber | neutral |
+| <span lang="sv">Får jag säga en sak?</span> | darf ich etwas sagen | neutral |
 
 ## Zusammenfassen
 
 | Muster | Wofür es steht | Register |
 | --- | --- | --- |
-| <Sv>Kort sagt …</Sv> | kurz gesagt | neutral |
-| <Sv>Sammanfattningsvis …</Sv> | zusammenfassend | formell, schriftlich |
-| <Sv>Så det du säger är att …</Sv> | also, was du sagst, ist dass | neutral |
-| <Sv>Om jag förstår dig rätt …</Sv> | wenn ich dich richtig verstehe | neutral |
-| <Sv>Med andra ord …</Sv> | mit anderen Worten | neutral |
+| <span lang="sv">Kort sagt …</span> | kurz gesagt | neutral |
+| <span lang="sv">Sammanfattningsvis …</span> | zusammenfassend | formell, schriftlich |
+| <span lang="sv">Så det du säger är att …</span> | also, was du sagst, ist dass | neutral |
+| <span lang="sv">Om jag förstår dig rätt …</span> | wenn ich dich richtig verstehe | neutral |
+| <span lang="sv">Med andra ord …</span> | mit anderen Worten | neutral |
 
 ## Direkter Vergleich
 
@@ -98,8 +97,8 @@ lernen.
 	<p slot="sv">Förlåt att jag avbryter, men …</p>
 </LanguageComparison>
 
-<Sv>Förlåt</Sv> entschuldigt sich für etwas, das du gerade tust; <Sv>ursäkta</Sv>
-bittet um Aufmerksamkeit. Beide funktionieren hier, und der <Sv>att</Sv>-Satz
+<span lang="sv">Förlåt</span> entschuldigt sich für etwas, das du gerade tust; <span lang="sv">ursäkta</span>
+bittet um Aufmerksamkeit. Beide funktionieren hier, und der <span lang="sv">att</span>-Satz
 ist im ersten Muster obligatorisch.
 
 <LanguageComparison title="Einen Punkt zurückspielen">

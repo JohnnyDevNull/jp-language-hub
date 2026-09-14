@@ -26,7 +26,6 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
@@ -36,7 +35,7 @@ import TagList from '~/components/TagList.astro';
 - Nu-perspektivet är perfekt — presens — framtid, med flera möjliga
   framtidskonstruktioner.
 - Dåtidsperspektivet är pluskvamperfekt — preteritum —
-  <Sv>skulle</Sv> + infinitiv.
+  <span lang="sv">skulle</span> + infinitiv.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -49,23 +48,23 @@ som är förankrat kring **nu** och det som är förankrat kring en punkt i det
 
 | Position | Svenskt tempus | Exempel | Betydelse |
 | --- | --- | --- | --- |
-| före nu | perfekt | <Sv>Jag har skrivit mejlet.</Sv> | Mejlet är skrivet nu. |
-| nu | presens | <Sv>Jag läser svaret.</Sv> | Läsandet pågår just nu. |
-| efter nu | framtid | <Sv>Jag ringer / ska ringa Anna.</Sv> | Samtalet till Anna ligger framöver. |
+| före nu | perfekt | <span lang="sv">Jag har skrivit mejlet.</span> | Mejlet är skrivet nu. |
+| nu | presens | <span lang="sv">Jag läser svaret.</span> | Läsandet pågår just nu. |
+| efter nu | framtid | <span lang="sv">Jag ringer / ska ringa Anna.</span> | Samtalet till Anna ligger framöver. |
 
 Presens är den grundläggande finita formen för utsagor i nutid. Perfekt
-använder <Sv>har</Sv> + supinum för att knyta en tidigare handling till nuet.
-Framtid kan uttryckas med det kontextuella presens, <Sv>ska</Sv>,
-<Sv>tänker</Sv> eller <Sv>kommer att</Sv>; sidan
+använder <span lang="sv">har</span> + supinum för att knyta en tidigare handling till nuet.
+Framtid kan uttryckas med det kontextuella presens, <span lang="sv">ska</span>,
+<span lang="sv">tänker</span> eller <span lang="sv">kommer att</span>; sidan
 [Futurumformer](../future-forms/) äger det valet.
 
 ## Dåtidsperspektivet
 
 | Position | Svenskt tempus | Exempel | Betydelse |
 | --- | --- | --- | --- |
-| före då | pluskvamperfekt | <Sv>Jag hade packat väskan.</Sv> | Väskan var redan packad vid den tidpunkten. |
-| då | preteritum | <Sv>Resan började.</Sv> | Det är själva huvudhändelsen i berättelsen. |
-| efter då | framtid i det förflutna | <Sv>Jag skulle köpa biljetten.</Sv> | Planen låg framför den tidpunkten, sedd bakåt. |
+| före då | pluskvamperfekt | <span lang="sv">Jag hade packat väskan.</span> | Väskan var redan packad vid den tidpunkten. |
+| då | preteritum | <span lang="sv">Resan började.</span> | Det är själva huvudhändelsen i berättelsen. |
+| efter då | framtid i det förflutna | <span lang="sv">Jag skulle köpa biljetten.</span> | Planen låg framför den tidpunkten, sedd bakåt. |
 
 Dåtidsperspektivet är användbart när man berättar en historia. Etablera
 först en referenspunkt i det förflutna, och välj sedan om en annan handling
@@ -117,17 +116,17 @@ karta; använd de enskilda tempussidorna för detaljerna.
 
 För ordföljden, identifiera det finita verbet:
 
-- <Sv>Jag skriver mejlet.</Sv> — <Sv>skriver</Sv> är finit.
-- <Sv>Jag har skrivit mejlet.</Sv> — <Sv>har</Sv> är finit.
-- <Sv>Jag hade skrivit mejlet.</Sv> — <Sv>hade</Sv> är finit.
-- <Sv>Jag ska skriva mejlet.</Sv> — <Sv>ska</Sv> är finit.
+- <span lang="sv">Jag skriver mejlet.</span> — <span lang="sv">skriver</span> är finit.
+- <span lang="sv">Jag har skrivit mejlet.</span> — <span lang="sv">har</span> är finit.
+- <span lang="sv">Jag hade skrivit mejlet.</span> — <span lang="sv">hade</span> är finit.
+- <span lang="sv">Jag ska skriva mejlet.</span> — <span lang="sv">ska</span> är finit.
 
 Det spelar roll för [V2](../../sentence-structure/v2/) och för placeringen
-av <Sv>inte</Sv>.
+av <span lang="sv">inte</span>.
 
 <MistakeBox title="Vanliga misstag">
-	- Använd inte infinitiv efter <Sv>har</Sv> eller <Sv>hade</Sv>; använd
-	  supinum: <Sv>har skrivit</Sv>, <Sv>hade skrivit</Sv>.
+	- Använd inte infinitiv efter <span lang="sv">har</span> eller <span lang="sv">hade</span>; använd
+	  supinum: <span lang="sv">har skrivit</span>, <span lang="sv">hade skrivit</span>.
 	- Behandla inte engelska progressiva former som egna svenska tempus.
 	  Svenskan använder oftast det vanliga presens.
 	- Välj inte tempus bara genom att översätta de tyska namnen. Fråga först

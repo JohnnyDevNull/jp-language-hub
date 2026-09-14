@@ -26,58 +26,57 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Das besessene Nomen bestimmt die Form: <Sv>min bil</Sv>, <Sv>mitt hus</Sv>,
-  <Sv>mina böcker</Sv>.
-- <Sv>hans</Sv>, <Sv>hennes</Sv>, <Sv>hens</Sv> und <Sv>deras</Sv> verändern
+- Das besessene Nomen bestimmt die Form: <span lang="sv">min bil</span>, <span lang="sv">mitt hus</span>,
+  <span lang="sv">mina böcker</span>.
+- <span lang="sv">hans</span>, <span lang="sv">hennes</span>, <span lang="sv">hens</span> und <span lang="sv">deras</span> verändern
   sich nie.
-- Dieselben Formen können allein stehen: <Sv>Bilen är min</Sv>,
-  <Sv>Huset är mitt</Sv>, <Sv>Böckerna är mina</Sv>.
+- Dieselben Formen können allein stehen: <span lang="sv">Bilen är min</span>,
+  <span lang="sv">Huset är mitt</span>, <span lang="sv">Böckerna är mina</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Schwedische Possessivpronomen verändern sich oft danach, was besessen wird.
-Bei vielen Formen folgt die Wahl dem bekannten Muster für <Sv>en</Sv>-Nomen,
-<Sv>ett</Sv>-Nomen und Pluralnomen.
+Bei vielen Formen folgt die Wahl dem bekannten Muster für <span lang="sv">en</span>-Nomen,
+<span lang="sv">ett</span>-Nomen und Pluralnomen.
 
 ## Jetzt anwenden
 
 | Was du brauchst | Wähle nach | Beispiel |
 | --- | --- | --- |
-| eine Form vor einem Nomen | Genus oder Zahl des besessenen Nomens | <Sv>min bil, mitt hus, mina böcker</Sv> |
-| eine Form ohne folgendes Nomen | Genus oder Zahl der gemeinten Sache | <Sv>Bilen är min. Huset är mitt.</Sv> |
-| die eigene Sache eines Subjekts in der dritten Person | der eigenen Regel für Subjektreflexivität | <Sv>Anna tar sin jacka.</Sv> |
+| eine Form vor einem Nomen | Genus oder Zahl des besessenen Nomens | <span lang="sv">min bil, mitt hus, mina böcker</span> |
+| eine Form ohne folgendes Nomen | Genus oder Zahl der gemeinten Sache | <span lang="sv">Bilen är min. Huset är mitt.</span> |
+| die eigene Sache eines Subjekts in der dritten Person | der eigenen Regel für Subjektreflexivität | <span lang="sv">Anna tar sin jacka.</span> |
 
 ## Grundmuster
 
 Wähle die Possessivform nach dem folgenden Nomen:
 
-| Besitzer | <Sv>en</Sv>-Nomen | <Sv>ett</Sv>-Nomen | Pluralnomen |
+| Besitzer | <span lang="sv">en</span>-Nomen | <span lang="sv">ett</span>-Nomen | Pluralnomen |
 | --- | --- | --- | --- |
-| ich | <Sv>min bil</Sv> | <Sv>mitt hus</Sv> | <Sv>mina böcker</Sv> |
-| du | <Sv>din bil</Sv> | <Sv>ditt hus</Sv> | <Sv>dina böcker</Sv> |
-| er / sie / sie, eigene Sache | <Sv>sin bil</Sv> | <Sv>sitt hus</Sv> | <Sv>sina böcker</Sv> |
-| wir | <Sv>vår bil</Sv> | <Sv>vårt hus</Sv> | <Sv>våra böcker</Sv> |
-| ihr | <Sv>er bil</Sv> | <Sv>ert hus</Sv> | <Sv>era böcker</Sv> |
+| ich | <span lang="sv">min bil</span> | <span lang="sv">mitt hus</span> | <span lang="sv">mina böcker</span> |
+| du | <span lang="sv">din bil</span> | <span lang="sv">ditt hus</span> | <span lang="sv">dina böcker</span> |
+| er / sie / sie, eigene Sache | <span lang="sv">sin bil</span> | <span lang="sv">sitt hus</span> | <span lang="sv">sina böcker</span> |
+| wir | <span lang="sv">vår bil</span> | <span lang="sv">vårt hus</span> | <span lang="sv">våra böcker</span> |
+| ihr | <span lang="sv">er bil</span> | <span lang="sv">ert hus</span> | <span lang="sv">era böcker</span> |
 
 ## Formen ohne Veränderung
 
-Einige schwedische Possessivpronomen verändern sich nicht nach <Sv>en</Sv>,
-<Sv>ett</Sv> oder Plural:
+Einige schwedische Possessivpronomen verändern sich nicht nach <span lang="sv">en</span>,
+<span lang="sv">ett</span> oder Plural:
 
 | Besitzer | Form | Beispiele |
 | --- | --- | --- |
-| er | <Sv>hans</Sv> | <Sv>hans bil</Sv>, <Sv>hans hus</Sv>, <Sv>hans böcker</Sv> |
-| sie | <Sv>hennes</Sv> | <Sv>hennes bil</Sv>, <Sv>hennes hus</Sv>, <Sv>hennes böcker</Sv> |
-| geschlechtsneutrale Person im Singular | <Sv>hens</Sv> | <Sv>hens bil</Sv>, <Sv>hens hus</Sv>, <Sv>hens böcker</Sv> |
-| sie | <Sv>deras</Sv> | <Sv>deras bil</Sv>, <Sv>deras hus</Sv>, <Sv>deras böcker</Sv> |
+| er | <span lang="sv">hans</span> | <span lang="sv">hans bil</span>, <span lang="sv">hans hus</span>, <span lang="sv">hans böcker</span> |
+| sie | <span lang="sv">hennes</span> | <span lang="sv">hennes bil</span>, <span lang="sv">hennes hus</span>, <span lang="sv">hennes böcker</span> |
+| geschlechtsneutrale Person im Singular | <span lang="sv">hens</span> | <span lang="sv">hens bil</span>, <span lang="sv">hens hus</span>, <span lang="sv">hens böcker</span> |
+| sie | <span lang="sv">deras</span> | <span lang="sv">deras bil</span>, <span lang="sv">deras hus</span>, <span lang="sv">deras böcker</span> |
 
 Diese Formen verweisen auf einen Besitzer, zeigen aber nicht, ob das besessene
-Ding ein <Sv>en</Sv>-Nomen, ein <Sv>ett</Sv>-Nomen oder Plural ist.
+Ding ein <span lang="sv">en</span>-Nomen, ein <span lang="sv">ett</span>-Nomen oder Plural ist.
 
 ## Formen, die sich mit dem besessenen Nomen verändern
 
@@ -86,28 +85,28 @@ ett-Wörter und Plural:
 
 | Nomengruppe | Mein | Dein | Unser | Euer |
 | --- | --- | --- | --- | --- |
-| <Sv>en</Sv>-Nomen | <Sv>min jacka</Sv> | <Sv>din jacka</Sv> | <Sv>vår jacka</Sv> | <Sv>er jacka</Sv> |
-| <Sv>ett</Sv>-Nomen | <Sv>mitt rum</Sv> | <Sv>ditt rum</Sv> | <Sv>vårt rum</Sv> | <Sv>ert rum</Sv> |
-| Pluralnomen | <Sv>mina skor</Sv> | <Sv>dina skor</Sv> | <Sv>våra skor</Sv> | <Sv>era skor</Sv> |
+| <span lang="sv">en</span>-Nomen | <span lang="sv">min jacka</span> | <span lang="sv">din jacka</span> | <span lang="sv">vår jacka</span> | <span lang="sv">er jacka</span> |
+| <span lang="sv">ett</span>-Nomen | <span lang="sv">mitt rum</span> | <span lang="sv">ditt rum</span> | <span lang="sv">vårt rum</span> | <span lang="sv">ert rum</span> |
+| Pluralnomen | <span lang="sv">mina skor</span> | <span lang="sv">dina skor</span> | <span lang="sv">våra skor</span> | <span lang="sv">era skor</span> |
 
 ## Alleinstehend
 
 Das Possessivpronomen kann die ganze Nominalgruppe ersetzen. Seine Form richtet
 sich weiterhin nach dem gemeinten Nomen:
 
-- <Sv>Vems bil är det? — Den är min.</Sv>
-- <Sv>Är huset ert? — Ja, det är vårt.</Sv>
-- <Sv>Vilka böcker är hennes? — De här är hennes.</Sv>
+- <span lang="sv">Vems bil är det? — Den är min.</span>
+- <span lang="sv">Är huset ert? — Ja, det är vårt.</span>
+- <span lang="sv">Vilka böcker är hennes? — De här är hennes.</span>
 
-Die unveränderlichen Formen <Sv>hans</Sv>, <Sv>hennes</Sv>, <Sv>hens</Sv> und
-<Sv>deras</Sv> bleiben auch hier gleich: <Sv>Bilen är hennes</Sv>, <Sv>Huset är hennes</Sv>.
+Die unveränderlichen Formen <span lang="sv">hans</span>, <span lang="sv">hennes</span>, <span lang="sv">hens</span> und
+<span lang="sv">deras</span> bleiben auch hier gleich: <span lang="sv">Bilen är hennes</span>, <span lang="sv">Huset är hennes</span>.
 
 ## Die eigene Sache des Subjekts
 
 Bei einem Subjekt in der dritten Person entscheidest du zuerst, ob die Sache
 diesem Subjekt selbst gehört. Dann verwendet Schwedisch normalerweise
-<Sv>sin, sitt,</Sv> oder <Sv>sina</Sv>; andernfalls <Sv>hans, hennes, hens,</Sv>
-oder <Sv>deras</Sv>. Die vollständige Referenz zu
+<span lang="sv">sin, sitt,</span> oder <span lang="sv">sina</span>; andernfalls <span lang="sv">hans, hennes, hens,</span>
+oder <span lang="sv">deras</span>. Die vollständige Referenz zu
 [*sin, sitt, sina*](../sin-sitt-sina/) behandelt diese Bedeutung, die
 Satzgrenze und den genauen Kontrast.
 
@@ -141,18 +140,18 @@ Subjektreflexivsystem, wenn die Jacke Anna selbst gehört.
 ## Typische Fehler
 
 <MistakeBox title="Typische Fehler">
-	- ❌ <Sv>mitt bil</Sv>
-	  ✅ <Sv>min bil</Sv>
-	- ❌ <Sv>min hus</Sv>
-	  ✅ <Sv>mitt hus</Sv>
-	- ❌ <Sv>din böcker</Sv>
-	  ✅ <Sv>dina böcker</Sv>
-	- Wähle <Sv>min</Sv>, <Sv>din</Sv> oder <Sv>sin</Sv> nicht nach dem
+	- ❌ <span lang="sv">mitt bil</span>
+	  ✅ <span lang="sv">min bil</span>
+	- ❌ <span lang="sv">min hus</span>
+	  ✅ <span lang="sv">mitt hus</span>
+	- ❌ <span lang="sv">din böcker</span>
+	  ✅ <span lang="sv">dina böcker</span>
+	- Wähle <span lang="sv">min</span>, <span lang="sv">din</span> oder <span lang="sv">sin</span> nicht nach dem
 	  Besitzer. Die besessene Sache bestimmt die Form.
 </MistakeBox>
 
 <MemoryTip title="Das besessene Nomen entscheidet">
-In <Sv>min bil</Sv>, <Sv>mitt hus</Sv> und <Sv>mina böcker</Sv> ist der Besitzer
+In <span lang="sv">min bil</span>, <span lang="sv">mitt hus</span> und <span lang="sv">mina böcker</span> ist der Besitzer
 immer „ich“. Die Form ändert sich, weil sich die besessene Sache ändert.
 </MemoryTip>
 

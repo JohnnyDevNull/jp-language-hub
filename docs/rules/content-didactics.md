@@ -145,26 +145,32 @@ to its own right bracket, so a German row must stop before the point where the
 models diverge. Explain the divergence in prose instead of bending a field to
 fit.
 
-## Marking Swedish text
+## Marking target-language text
 
-In `.mdx`, wrap inline Swedish in `<Sv>`. In plain `.md` — the cheat sheets —
-components are unavailable, so `<span lang="sv">` stays correct there.
+Wrap inline target-language text in `<span lang="…">`, with the language's own
+code: `sv`, `de` or `en`. The same markup works in `.mdx` and in the plain `.md`
+cheat sheets, and no learning language gets a shorthand the others lack.
 
-Mark German and English examples with `lang="de"` and `lang="en"` directly; the
-comparison and schema components do this for their own content.
+A `<Sv>` component used to exist for Swedish alone. It rendered exactly
+`<span lang="sv">` and nothing else, so it bought no behaviour, left German and
+English on a second mechanism, and did not work in `.md` at all. It was removed
+at 9563 call sites rather than copied twice.
+
+The comparison and schema components mark their own content, so text inside them
+needs nothing.
 
 ### Grammar terms count as target-language text
 
 A field name carried into the prose — `fundament` in an English sentence,
 `rechte Satzklammer` in one about German — is foreign text like any example, and
 is marked the same way. Without the mark a screen reader pronounces it in the
-meta language. `<Sv>` and `lang` add no visible styling, so marking costs the
-reader nothing.
+meta language. The mark adds no visible styling, so it costs the reader
+nothing.
 
 Two consequences:
 
 - A run of field names is wrapped once, not term by term:
-  `**<Sv>subjekt + finit verb + satsadverbial</Sv>**`.
+  `**<span lang="sv">subjekt + finit verb + satsadverbial</span>**`.
 - A term needs no mark when the page's meta language is the same language. An
   `sv/` page about Swedish writes `fundament` plain.
 
@@ -182,7 +188,7 @@ English source.
 
 Translate page titles, descriptions, headings, prose, visible helper labels,
 card text, related-topic labels, and quick-check prompts. Keep Swedish example
-sentences and forms in Swedish, still marked with `<Sv>` in MDX.
+sentences and forms in Swedish, still marked with `<span lang="sv">`.
 
 Do not use a Swedish meta-language translation to add extra Swedish-learning
 content that does not exist in the canonical learning tree. New learning
@@ -231,7 +237,7 @@ or a callout at least every few paragraphs.
 | `sv/learn/swedish/grammar/adjectives-adverbs/agreement` | 1246 | Authored Swedish mirror of the same paradigm page. |
 | `de/learn/swedish/grammar/nouns-articles/en-ett` | 1144 | Authored German mirror of the canonical `en-ett` page; gender, ending signals and the compound rule remain one lookup. |
 | `sv/learn/swedish/grammar/nouns-articles/en-ett` | 1106 | Authored Swedish mirror of the same lookup page. |
-| `de/learn/swedish/grammar/prepositions-function-words/prepositions` | 1002 | Authored German mirror of the canonical preposition survey. Restoring the cited Swedish forms inside `<Sv>` required naming each preposition explicitly in the German sentence, which pushed the mirror just over the budget. |
+| `de/learn/swedish/grammar/prepositions-function-words/prepositions` | 1002 | Authored German mirror of the canonical preposition survey. Restoring the cited Swedish forms inside a `lang` span required naming each preposition explicitly in the German sentence, which pushed the mirror just over the budget. |
 | `sv/learn/swedish/grammar/prepositions-function-words/prepositions` | 1013 | Authored Swedish mirror of the canonical preposition survey; the Swedish-meta gloss column describes each use in Swedish rather than translating it, which adds length the canonical does not carry. |
 
 Add a row when a page crosses the budget for a real reason. Do not add one to

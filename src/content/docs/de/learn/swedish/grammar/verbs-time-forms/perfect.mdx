@@ -27,7 +27,6 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 import VerbTable from '~/components/VerbTable.astro';
 
@@ -44,29 +43,29 @@ export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-sk
 );
 
 <KeyTakeaway>
-- Das Perfekt ist <Sv>har</Sv> + Supinum, und <Sv>har</Sv> ist für jedes
+- Das Perfekt ist <span lang="sv">har</span> + Supinum, und <span lang="sv">har</span> ist für jedes
   Subjekt gleich.
 - Verwende es, wenn das gegenwärtige Ergebnis, die Erfahrung oder ein noch
   nicht abgeschlossener Zeitraum wichtig ist.
-- Das Supinum ist eine eigene Form: <Sv>har köpt</Sv>, niemals
-  <Sv>har köpa</Sv> oder <Sv>har köpte</Sv>.
+- Das Supinum ist eine eigene Form: <span lang="sv">har köpt</span>, niemals
+  <span lang="sv">har köpa</span> oder <span lang="sv">har köpte</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Das schwedische Perfekt verbindet ein vergangenes Ereignis oder einen
 vergangenen Zustand mit der Gegenwart. Es wird mit dem Präsens von
-<Sv>har</Sv> plus dem Supinum des Verbs gebildet.
+<span lang="sv">har</span> plus dem Supinum des Verbs gebildet.
 
 ## Kernregel
 
-**Muster:** <Sv>har</Sv> + Supinum
+**Muster:** <span lang="sv">har</span> + Supinum
 
-- <Sv>Jag har köpt en bok.</Sv>
-- <Sv>Hon har skrivit ett mejl.</Sv>
-- <Sv>Vi har bott här länge.</Sv>
+- <span lang="sv">Jag har köpt en bok.</span>
+- <span lang="sv">Hon har skrivit ett mejl.</span>
+- <span lang="sv">Vi har bott här länge.</span>
 
-Das Hilfsverb <Sv>har</Sv> ist für jedes Subjekt identisch. Das Supinum ist
+Das Hilfsverb <span lang="sv">har</span> ist für jedes Subjekt identisch. Das Supinum ist
 eine eigene Verbform:
 
 <VerbTable
@@ -78,35 +77,35 @@ eine eigene Verbform:
 />
 
 <MistakeBox title="Supinum, nicht Infinitiv">
-Nach <Sv>har</Sv> wird <Sv>köpt</Sv> verwendet, nicht
-<Sv>köpa</Sv> oder <Sv>köpte</Sv>.
+Nach <span lang="sv">har</span> wird <span lang="sv">köpt</span> verwendet, nicht
+<span lang="sv">köpa</span> oder <span lang="sv">köpte</span>.
 </MistakeBox>
 
 ## Hauptverwendungen
 
 ### Gegenwärtiges Ergebnis
 
-<Sv>Jag har tappat nyckeln.</Sv>
+<span lang="sv">Jag har tappat nyckeln.</span>
 
 Der Schlüssel fehlt jetzt; das aktuelle Ergebnis ist entscheidend.
 
 ### Erfahrung bis jetzt
 
-<Sv>Har du varit i Kiruna?</Sv>
+<span lang="sv">Har du varit i Kiruna?</span>
 
 Die Frage betrifft die Erfahrung der Person, nicht einen bestimmten
 vergangenen Besuch.
 
 ### Eine bis jetzt andauernde Situation
 
-<Sv>Vi har bott här i tre år.</Sv>
+<span lang="sv">Vi har bott här i tre år.</span>
 
 Ohne weiteren Kontext bedeutet das normalerweise, dass wir immer noch hier
 wohnen.
 
 ### Ein noch nicht abgeschlossener Zeitraum
 
-<Sv>Jag har läst två kapitel idag.</Sv>
+<span lang="sv">Jag har läst två kapitel idag.</span>
 
 Heute gilt als noch nicht abgeschlossen. Erzählt die sprechende Person
 dagegen von einem abgeschlossenen vergangenen Anlass, ist das Präteritum die
@@ -116,8 +115,8 @@ passende Perspektive.
 
 | Fokus | Schwedisches Beispiel |
 | --- | --- |
-| Gegenwartsbezug oder Erfahrung | <Sv>Jag har sett filmen.</Sv> |
-| Abgeschlossene Vergangenheit | <Sv>Jag såg filmen i lördags.</Sv> |
+| Gegenwartsbezug oder Erfahrung | <span lang="sv">Jag har sett filmen.</span> |
+| Abgeschlossene Vergangenheit | <span lang="sv">Jag såg filmen i lördags.</span> |
 
 ## Direkter Vergleich
 
@@ -143,24 +142,24 @@ Schwedische das Präteritum verwendet.
 
 ## Verneinung und Wortstellung
 
-Im Hauptsatz steht <Sv>inte</Sv> nach dem finiten Hilfsverb:
+Im Hauptsatz steht <span lang="sv">inte</span> nach dem finiten Hilfsverb:
 
-<Sv>Jag har inte läst boken.</Sv>
+<span lang="sv">Jag har inte läst boken.</span>
 
 Im Nebensatz steht es normalerweise vor dem finiten Hilfsverb:
 
-<Sv>… eftersom jag inte har läst boken.</Sv>
+<span lang="sv">… eftersom jag inte har läst boken.</span>
 
-Nur <Sv>har</Sv> ist finit; <Sv>läst</Sv> ist das Supinum. Diese
+Nur <span lang="sv">har</span> ist finit; <span lang="sv">läst</span> ist das Supinum. Diese
 Unterscheidung hilft bei der Anwendung von V2 und BIFF.
 
 ## Häufige Fehler
 
 <MistakeBox title="Häufige Fehler">
-	- ❌ <Sv>Jag har köpa boken.</Sv>
-	  ✅ <Sv>Jag har köpt boken.</Sv>
-	- ❌ <Sv>Jag har köpte boken.</Sv>
-	  ✅ <Sv>Jag har köpt boken.</Sv>
+	- ❌ <span lang="sv">Jag har köpa boken.</span>
+	  ✅ <span lang="sv">Jag har köpt boken.</span>
+	- ❌ <span lang="sv">Jag har köpte boken.</span>
+	  ✅ <span lang="sv">Jag har köpt boken.</span>
 	- Übertrage das deutsche Perfekt nicht mechanisch, wenn das Schwedische das
 	  Ereignis in einen abgeschlossenen Vergangenheitsrahmen setzt.
 </MistakeBox>

@@ -30,7 +30,6 @@ import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import SentenceSchema from '~/components/SentenceSchema.astro';
 import SpecialRule from '~/components/SpecialRule.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
@@ -78,7 +77,7 @@ Eine Konstituente kann mehrere Wörter haben:
 
 <p lang="sv"><strong>Efter jobbet</strong> <strong>köper</strong> jag mat.</p>
 
-<Sv>Efter jobbet</Sv> ist eine adverbiale Konstituente. <Sv>köper</Sv> bleibt
+<span lang="sv">Efter jobbet</span> ist eine adverbiale Konstituente. <span lang="sv">köper</span> bleibt
 an zweiter Satzposition, obwohl es als drittes Wort geschrieben wird.
 
 ## Zusammengesetzte Verbgruppen
@@ -88,15 +87,15 @@ V2 gilt für das **finite** Verb, nicht für jedes Verb:
 <p lang="sv">Idag <strong>vill</strong> jag köpa en bil.</p>
 <p lang="sv">Idag <strong>har</strong> jag köpt en bil.</p>
 
-Die nicht-finiten Verben <Sv>köpa</Sv> und <Sv>köpt</Sv> bleiben später im Satz.
+Die nicht-finiten Verben <span lang="sv">köpa</span> und <span lang="sv">köpt</span> bleiben später im Satz.
 
 ## Was kann Position eins füllen?
 
-- das Subjekt: <Sv>Jag arbetar hemma idag.</Sv>
-- Zeit: <Sv>Idag arbetar jag hemma.</Sv>
-- Ort: <Sv>Hemma arbetar jag bäst.</Sv>
-- ein Objekt: <Sv>Den boken har jag redan läst.</Sv>
-- ein Nebensatz: <Sv>När jag är klar går jag hem.</Sv>
+- das Subjekt: <span lang="sv">Jag arbetar hemma idag.</span>
+- Zeit: <span lang="sv">Idag arbetar jag hemma.</span>
+- Ort: <span lang="sv">Hemma arbetar jag bäst.</span>
+- ein Objekt: <span lang="sv">Den boken har jag redan läst.</span>
+- ein Nebensatz: <span lang="sv">När jag är klar går jag hem.</span>
 
 Die Voranstellung verändert die Betonung, nicht die V2-Pflicht.
 
@@ -125,7 +124,7 @@ bleibt das Subjekt nicht vor dem Verb.
 
 <SpecialRule language="Swedish" title="Geltungsbereich von V2">
 	V2 beschreibt aussagende **Hauptsätze**. Ein Nebensatz hat ein anderes
-	inneres Muster: Satzadverbiale wie <Sv>inte</Sv> stehen dort normalerweise vor
+	inneres Muster: Satzadverbiale wie <span lang="sv">inte</span> stehen dort normalerweise vor
 	dem finiten Verb. Siehe [Nebensätze](../subordinate-clauses/) für das ganze
 	Muster und [BIFF](../biff/) für Satzadverbiale.
 </SpecialRule>

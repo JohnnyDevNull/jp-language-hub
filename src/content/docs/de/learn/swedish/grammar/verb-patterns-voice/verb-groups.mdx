@@ -22,7 +22,6 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 import VerbTable from '~/components/VerbTable.astro';
 
@@ -42,10 +41,10 @@ export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-sk
 - Eine Verbgruppe hilft dabei, wiederkehrende Präsens-, Präteritum- und
   Supinum-Endungen vorherzusagen, sobald du weißt, welchem Muster ein Verb
   folgt.
-- Die vier Muster sind <Sv>-ar/-ade/-at</Sv>, <Sv>-er/-de eller -te/-t</Sv>,
-  <Sv>-r/-dde/-tt</Sv> und der Stammvokalwechsel der Gruppe 4.
-- Ein Infinitiv auf <Sv>-a</Sv> gehört nicht automatisch zu Gruppe 1:
-  vergleiche <Sv>tala</Sv> mit <Sv>köpa</Sv>.
+- Die vier Muster sind <span lang="sv">-ar/-ade/-at</span>, <span lang="sv">-er/-de eller -te/-t</span>,
+  <span lang="sv">-r/-dde/-tt</span> und der Stammvokalwechsel der Gruppe 4.
+- Ein Infinitiv auf <span lang="sv">-a</span> gehört nicht automatisch zu Gruppe 1:
+  vergleiche <span lang="sv">tala</span> mit <span lang="sv">köpa</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -71,52 +70,52 @@ variieren. Die Formenkette ist wichtiger als die ihr zugewiesene Nummer.
 ## Gruppe 1: -ar, -ade, -at
 
 Verben der Gruppe 1 haben normalerweise einen Infinitiv auf unbetontes
-<Sv>-a</Sv>. Der vollständige Infinitiv bleibt vor den Endungen erhalten:
+<span lang="sv">-a</span>. Der vollständige Infinitiv bleibt vor den Endungen erhalten:
 
-- <Sv>arbeta → arbetar → arbetade → arbetat</Sv>
-- <Sv>prata → pratar → pratade → pratat</Sv>
+- <span lang="sv">arbeta → arbetar → arbetade → arbetat</span>
+- <span lang="sv">prata → pratar → pratade → pratat</span>
 
 Das ist die größte und produktivste regelmäßige Gruppe.
 
 ## Gruppe 2: -er, -de/-te, -t
 
 Bei vielen Verben der Gruppe 2 findest du den Stamm, indem du das
-abschließende <Sv>-a</Sv> des Infinitivs entfernst:
+abschließende <span lang="sv">-a</span> des Infinitivs entfernst:
 
-- <Sv>stäng-a → stänger → stängde → stängt</Sv>
-- <Sv>ring-a → ringer → ringde → ringt</Sv>
+- <span lang="sv">stäng-a → stänger → stängde → stängt</span>
+- <span lang="sv">ring-a → ringer → ringde → ringt</span>
 
-Die Präteritumendung ist meist <Sv>-de</Sv> nach stimmhaftem Stammauslaut und
-<Sv>-te</Sv> nach bestimmten stimmlosen Konsonanten. Für Anfänger ist es
+Die Präteritumendung ist meist <span lang="sv">-de</span> nach stimmhaftem Stammauslaut und
+<span lang="sv">-te</span> nach bestimmten stimmlosen Konsonanten. Für Anfänger ist es
 sicherer, Präteritum und Supinum mit jedem Verb zu lernen, als sich allein
 auf Schreibregeln zu verlassen.
 
 Manche Verben der Gruppe 2 zeigen Rechtschreibanpassungen, zum Beispiel
-<Sv>läsa → läste → läst</Sv>.
+<span lang="sv">läsa → läste → läst</span>.
 
 ## Gruppe 3: kurze Infinitive
 
 Gruppe 3 enthält typischerweise kurze Infinitive, die auf einen betonten
-Vokal außer <Sv>-a</Sv> enden:
+Vokal außer <span lang="sv">-a</span> enden:
 
-- <Sv>tro → tror → trodde → trott</Sv>
-- <Sv>nå → når → nådde → nått</Sv>
+- <span lang="sv">tro → tror → trodde → trott</span>
+- <span lang="sv">nå → når → nådde → nått</span>
 
-Das gängige Muster ist Präsens auf <Sv>-r</Sv>, Präteritum auf
-<Sv>-dde</Sv> und Supinum auf <Sv>-tt</Sv>.
+Das gängige Muster ist Präsens auf <span lang="sv">-r</span>, Präteritum auf
+<span lang="sv">-dde</span> und Supinum auf <span lang="sv">-tt</span>.
 
 ## Gruppe 4 und unregelmäßige Verben
 
 Diese Verben folgen nicht den regelmäßigen schwachen Endungen. Viele ändern
 ihren Stammvokal:
 
-- <Sv>komma → kommer → kom → kommit</Sv>
-- <Sv>gå → går → gick → gått</Sv>
+- <span lang="sv">komma → kommer → kom → kommit</span>
+- <span lang="sv">gå → går → gick → gått</span>
 
 Andere häufige Verben sind auf andere Weise unregelmäßig:
 
-- <Sv>vara → är → var → varit</Sv>
-- <Sv>göra → gör → gjorde → gjort</Sv>
+- <span lang="sv">vara → är → var → varit</span>
+- <span lang="sv">göra → gör → gjorde → gjort</span>
 
 Versuche nicht, diese Formen aus einer einzigen universellen Regel
 herzuleiten.
@@ -132,16 +131,16 @@ herzuleiten.
 ## Häufige Fehler
 
 <MistakeBox title="Häufige Fehler">
-	- ❌ <Sv>köpa → köpade</Sv>
-	  ✅ <Sv>köpa → köpte</Sv>
-	- ❌ <Sv>skriva → skrivade</Sv>
-	  ✅ <Sv>skriva → skrev</Sv>
-	- Ein Verb auf <Sv>-a</Sv> gehört nicht automatisch zu Gruppe 1.
-	  Vergleiche <Sv>tala</Sv> mit <Sv>köpa</Sv>.
+	- ❌ <span lang="sv">köpa → köpade</span>
+	  ✅ <span lang="sv">köpa → köpte</span>
+	- ❌ <span lang="sv">skriva → skrivade</span>
+	  ✅ <span lang="sv">skriva → skrev</span>
+	- Ein Verb auf <span lang="sv">-a</span> gehört nicht automatisch zu Gruppe 1.
+	  Vergleiche <span lang="sv">tala</span> mit <span lang="sv">köpa</span>.
 	</MistakeBox>
 
 <MemoryTip>
-Sprich die Kette laut aus: <Sv>köpa — köper — köpte — köpt</Sv>.
+Sprich die Kette laut aus: <span lang="sv">köpa — köper — köpte — köpt</span>.
 Der Rhythmus macht den Zusammenhang zwischen den Formen leichter abrufbar.
 </MemoryTip>
 

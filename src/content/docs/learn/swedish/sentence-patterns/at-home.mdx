@@ -24,16 +24,15 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Use <Sv>hemma</Sv> for being at home and <Sv>hem</Sv> for going home:
-  <Sv>Jag är hemma</Sv>, <Sv>Jag går hem</Sv>.
-- Use <Sv>Var är …?</Sv> for missing objects and <Sv>Den ligger …</Sv> /
-  <Sv>Det står …</Sv> for where things are.
+- Use <span lang="sv">hemma</span> for being at home and <span lang="sv">hem</span> for going home:
+  <span lang="sv">Jag är hemma</span>, <span lang="sv">Jag går hem</span>.
+- Use <span lang="sv">Var är …?</span> for missing objects and <span lang="sv">Den ligger …</span> /
+  <span lang="sv">Det står …</span> for where things are.
 - Home routines often start with time:
-  <Sv>På morgonen dricker jag kaffe.</Sv>
+  <span lang="sv">På morgonen dricker jag kaffe.</span>
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -45,36 +44,36 @@ and making small guest or household requests without building a long sentence.
 
 | Pattern | Use it when | Register |
 | --- | --- | --- |
-| <Sv>Var är …?</Sv> | asking where something is | neutral |
-| <Sv>Har du sett …?</Sv> | asking whether someone has seen it | neutral |
-| <Sv>Den ligger på bordet.</Sv> | saying where an item is lying | neutral |
-| <Sv>Det står i köket.</Sv> | saying where something stands or is placed | neutral |
-| <Sv>Jag hittar inte …</Sv> | saying you cannot find something | neutral |
-| <Sv>Kan du lägga den på bordet?</Sv> | asking someone to put it on the table | neutral |
+| <span lang="sv">Var är …?</span> | asking where something is | neutral |
+| <span lang="sv">Har du sett …?</span> | asking whether someone has seen it | neutral |
+| <span lang="sv">Den ligger på bordet.</span> | saying where an item is lying | neutral |
+| <span lang="sv">Det står i köket.</span> | saying where something stands or is placed | neutral |
+| <span lang="sv">Jag hittar inte …</span> | saying you cannot find something | neutral |
+| <span lang="sv">Kan du lägga den på bordet?</span> | asking someone to put it on the table | neutral |
 
-Use <Sv>ligger</Sv> for many loose objects and <Sv>står</Sv> for things that
+Use <span lang="sv">ligger</span> for many loose objects and <span lang="sv">står</span> for things that
 stand upright, are parked, or are placed somewhere as fixtures.
 
 ## Home routines and needs
 
 | Pattern | Use it when | Register |
 | --- | --- | --- |
-| <Sv>Jag är hemma idag.</Sv> | saying you are at home today | neutral |
-| <Sv>Jag går hem nu.</Sv> | saying you are going home now | neutral |
-| <Sv>På morgonen …</Sv> | talking about morning routines | neutral |
-| <Sv>Jag måste städa.</Sv> | saying you have to clean | neutral |
-| <Sv>Kan du hjälpa mig?</Sv> | asking for help | neutral |
-| <Sv>Det är slut på kaffe.</Sv> | saying something has run out | spoken |
+| <span lang="sv">Jag är hemma idag.</span> | saying you are at home today | neutral |
+| <span lang="sv">Jag går hem nu.</span> | saying you are going home now | neutral |
+| <span lang="sv">På morgonen …</span> | talking about morning routines | neutral |
+| <span lang="sv">Jag måste städa.</span> | saying you have to clean | neutral |
+| <span lang="sv">Kan du hjälpa mig?</span> | asking for help | neutral |
+| <span lang="sv">Det är slut på kaffe.</span> | saying something has run out | spoken |
 
 ## Guest phrases
 
 | Pattern | Use it when | Register |
 | --- | --- | --- |
-| <Sv>Kom in!</Sv> | inviting someone in | spoken |
-| <Sv>Känn dig som hemma.</Sv> | make yourself at home | neutral |
-| <Sv>Vill du ha kaffe?</Sv> | offering coffee | neutral |
-| <Sv>Kan jag få lite vatten?</Sv> | asking for water | neutral |
-| <Sv>Var är toaletten?</Sv> | asking for the bathroom | neutral |
+| <span lang="sv">Kom in!</span> | inviting someone in | spoken |
+| <span lang="sv">Känn dig som hemma.</span> | make yourself at home | neutral |
+| <span lang="sv">Vill du ha kaffe?</span> | offering coffee | neutral |
+| <span lang="sv">Kan jag få lite vatten?</span> | asking for water | neutral |
+| <span lang="sv">Var är toaletten?</span> | asking for the bathroom | neutral |
 
 ## Tiny home exchange
 
@@ -97,7 +96,7 @@ stand upright, are parked, or are placed somewhere as fixtures.
 </LanguageComparison>
 
 German and English both change the whole phrase. Swedish changes the adverb:
-<Sv>hemma</Sv> is location, <Sv>hem</Sv> is direction.
+<span lang="sv">hemma</span> is location, <span lang="sv">hem</span> is direction.
 
 <LanguageComparison title="Something has run out">
 	<p slot="de">Der Kaffee ist alle.</p>
@@ -106,7 +105,7 @@ German and English both change the whole phrase. Swedish changes the adverb:
 </LanguageComparison>
 
 The Swedish phrase is impersonal: literally "it is finished on coffee". Learn
-<Sv>slut på</Sv> as one household pattern.
+<span lang="sv">slut på</span> as one household pattern.
 
 <QuickCheck
 	items={[

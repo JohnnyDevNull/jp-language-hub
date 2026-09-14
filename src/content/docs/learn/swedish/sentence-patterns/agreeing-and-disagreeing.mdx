@@ -24,16 +24,15 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- A positive answer to a negative question is <Sv>jo</Sv>, not <Sv>ja</Sv> —
+- A positive answer to a negative question is <span lang="sv">jo</span>, not <span lang="sv">ja</span> —
   exactly like German <span lang="de">doch</span>, unlike English *yes*.
-- Agreement verbs take a preposition: <Sv>hålla med</Sv> someone,
-  <Sv>hålla med om</Sv> something.
-- Short answers repeat the auxiliary with <Sv>det</Sv>:
-  <Sv>Jo, det gör jag.</Sv>
+- Agreement verbs take a preposition: <span lang="sv">hålla med</span> someone,
+  <span lang="sv">hålla med om</span> something.
+- Short answers repeat the auxiliary with <span lang="sv">det</span>:
+  <span lang="sv">Jo, det gör jag.</span>
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -45,43 +44,43 @@ needs real grammar is the short answer, which reuses the verb of the question.
 
 | Pattern | What it does | Register |
 | --- | --- | --- |
-| <Sv>Precis!</Sv> / <Sv>Exakt!</Sv> | strong agreement with what was just said | spoken |
-| <Sv>Just det!</Sv> | that's right, confirming a fact | spoken |
-| <Sv>Det stämmer.</Sv> | that is correct | neutral |
-| <Sv>Jag håller med dig.</Sv> | I agree with you | neutral |
-| <Sv>Det har du rätt i.</Sv> | you have a point there | neutral, idiomatic |
-| <Sv>Jag tycker samma sak.</Sv> | I hold the same view | neutral |
-| <Sv>Absolut.</Sv> | unreserved agreement | neutral |
+| <span lang="sv">Precis!</span> / <span lang="sv">Exakt!</span> | strong agreement with what was just said | spoken |
+| <span lang="sv">Just det!</span> | that's right, confirming a fact | spoken |
+| <span lang="sv">Det stämmer.</span> | that is correct | neutral |
+| <span lang="sv">Jag håller med dig.</span> | I agree with you | neutral |
+| <span lang="sv">Det har du rätt i.</span> | you have a point there | neutral, idiomatic |
+| <span lang="sv">Jag tycker samma sak.</span> | I hold the same view | neutral |
+| <span lang="sv">Absolut.</span> | unreserved agreement | neutral |
 
 ## Disagreeing
 
 | Pattern | What it does | Register |
 | --- | --- | --- |
-| <Sv>Jag håller inte med.</Sv> | plain disagreement | neutral |
-| <Sv>Det håller jag inte med om.</Sv> | disagreement with a *statement* | neutral |
-| <Sv>Nja …</Sv> | hesitation before objecting; softens what follows | spoken |
-| <Sv>Det tror jag inte.</Sv> | I don't think so | neutral |
-| <Sv>Jag förstår vad du menar, men …</Sv> | concede, then object | neutral, polite |
-| <Sv>Tvärtom.</Sv> | on the contrary | neutral, blunt |
+| <span lang="sv">Jag håller inte med.</span> | plain disagreement | neutral |
+| <span lang="sv">Det håller jag inte med om.</span> | disagreement with a *statement* | neutral |
+| <span lang="sv">Nja …</span> | hesitation before objecting; softens what follows | spoken |
+| <span lang="sv">Det tror jag inte.</span> | I don't think so | neutral |
+| <span lang="sv">Jag förstår vad du menar, men …</span> | concede, then object | neutral, polite |
+| <span lang="sv">Tvärtom.</span> | on the contrary | neutral, blunt |
 
-<Sv>Nja</Sv> has no German or English equivalent as a single word. It signals
+<span lang="sv">Nja</span> has no German or English equivalent as a single word. It signals
 "not quite" before you have formulated the objection, and it is what makes a
 disagreement sound Swedish rather than confrontational.
 
 ## Answering a negative question
 
-A negative question — <Sv>Kommer du inte med?</Sv> — has two different positive
-answers depending on the language you come from. Swedish uses <Sv>jo</Sv> to
-contradict the negation and <Sv>nej</Sv> to confirm it.
+A negative question — <span lang="sv">Kommer du inte med?</span> — has two different positive
+answers depending on the language you come from. Swedish uses <span lang="sv">jo</span> to
+contradict the negation and <span lang="sv">nej</span> to confirm it.
 
 | Question | Contradicting it | Confirming it |
 | --- | --- | --- |
-| <Sv>Kommer du inte med?</Sv> | <Sv>Jo, jag kommer.</Sv> | <Sv>Nej, jag stannar hemma.</Sv> |
-| <Sv>Har du inte läst boken?</Sv> | <Sv>Jo, det har jag.</Sv> | <Sv>Nej, det har jag inte.</Sv> |
-| <Sv>Tycker du inte om kaffe?</Sv> | <Sv>Jo, det gör jag.</Sv> | <Sv>Nej, det gör jag inte.</Sv> |
+| <span lang="sv">Kommer du inte med?</span> | <span lang="sv">Jo, jag kommer.</span> | <span lang="sv">Nej, jag stannar hemma.</span> |
+| <span lang="sv">Har du inte läst boken?</span> | <span lang="sv">Jo, det har jag.</span> | <span lang="sv">Nej, det har jag inte.</span> |
+| <span lang="sv">Tycker du inte om kaffe?</span> | <span lang="sv">Jo, det gör jag.</span> | <span lang="sv">Nej, det gör jag inte.</span> |
 
-The short answer picks up the finite verb of the question, or <Sv>gör</Sv> when
-the question had no auxiliary, and puts <Sv>det</Sv> in front of it.
+The short answer picks up the finite verb of the question, or <span lang="sv">gör</span> when
+the question had no auxiliary, and puts <span lang="sv">det</span> in front of it.
 
 ## Direct comparison
 
@@ -101,7 +100,7 @@ both question types.
 	<p slot="sv">Det har du rätt i.</p>
 </LanguageComparison>
 
-The Swedish idiom is <Sv>ha rätt i</Sv> something. Fronting <Sv>det</Sv> puts
+The Swedish idiom is <span lang="sv">ha rätt i</span> something. Fronting <span lang="sv">det</span> puts
 the finite verb second, so the subject follows it.
 
 <LanguageComparison title="Disagreeing">

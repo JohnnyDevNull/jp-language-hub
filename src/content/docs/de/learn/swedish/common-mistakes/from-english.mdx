@@ -30,14 +30,13 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Das Schwedische hat ein Präsens; es gibt keine Verlaufsform und kein
   Hilfsverb *do*.
 - Der bestimmte Artikel ist eine Endung am Substantiv, kein eigenes Wort:
-  <Sv>huset</Sv>.
+  <span lang="sv">huset</span>.
 - Das Schwedische flektiert Adjektive und invertiert das Verb nach einem
   vorangestellten Satzglied, während das Englische beides nicht tut.
 </KeyTakeaway>
@@ -52,8 +51,8 @@ schwedischen Morphologie. Das sind die Muster, die es versehentlich exportiert.
 <MistakeBox incorrect="Jag är arbetande nu." correct="Jag arbetar nu." lang="sv">
 	Ein einziges Präsens deckt sowohl "I work" als auch "I am working" ab. Wenn
 	die andauernde Handlung wirklich wichtig ist, verwendet das Schwedische eine
-	Konstruktion, kein Partizip: <Sv>Jag håller på att arbeta.</Sv> oder
-	<Sv>Jag sitter och arbetar.</Sv> Siehe
+	Konstruktion, kein Partizip: <span lang="sv">Jag håller på att arbeta.</span> oder
+	<span lang="sv">Jag sitter och arbetar.</span> Siehe
 	[Präsens](../../grammar/verbs-time-forms/present/).
 </MistakeBox>
 
@@ -81,16 +80,16 @@ schwedischen Morphologie. Das sind die Muster, die es versehentlich exportiert.
 
 Direkte Fragen verwenden das schon vorhandene finite Verb statt des englischen
 *do*. Siehe [Fragen](../../grammar/questions-negation/questions/) für den
-wiederverwendbaren Rahmen. Die schwedische Satznegation fügt <Sv>inte</Sv>
+wiederverwendbaren Rahmen. Die schwedische Satznegation fügt <span lang="sv">inte</span>
 hinzu; wähle die Negationsform auf [Negation](../../grammar/questions-negation/negation/)
-und platziere <Sv>inte</Sv> mit
+und platziere <span lang="sv">inte</span> mit
 [Stellung von inte](../../grammar/sentence-structure/inte-placement/).
 
 ## Einen eigenen bestimmten Artikel schreiben
 
 <MistakeBox incorrect="den hus, det stora hus" correct="huset, det stora huset" lang="sv">
-	Bestimmtheit ist eine Endung: <Sv>hus</Sv> → <Sv>huset</Sv>, <Sv>bil</Sv> →
-	<Sv>bilen</Sv>, Plural <Sv>husen</Sv>, <Sv>bilarna</Sv>. Mit einem Adjektiv
+	Bestimmtheit ist eine Endung: <span lang="sv">hus</span> → <span lang="sv">huset</span>, <span lang="sv">bil</span> →
+	<span lang="sv">bilen</span>, Plural <span lang="sv">husen</span>, <span lang="sv">bilarna</span>. Mit einem Adjektiv
 	erscheinen sowohl der Artikel *als auch* die Endung — doppelte Bestimmtheit.
 	Siehe [Substantivformen](../../grammar/nouns-articles/noun-forms/).
 </MistakeBox>
@@ -103,9 +102,9 @@ Bestimmtheit:
 
 | Form | Beispiel |
 | --- | --- |
-| <Sv>en</Sv>-Substantiv | <Sv>en stor bil</Sv> |
-| <Sv>ett</Sv>-Substantiv | <Sv>ett stort hus</Sv> |
-| Plural / bestimmt | <Sv>stora hus</Sv>, <Sv>det stora huset</Sv> |
+| <span lang="sv">en</span>-Substantiv | <span lang="sv">en stor bil</span> |
+| <span lang="sv">ett</span>-Substantiv | <span lang="sv">ett stort hus</span> |
+| Plural / bestimmt | <span lang="sv">stora hus</span>, <span lang="sv">det stora huset</span> |
 
 Siehe [Adjektivkongruenz](../../grammar/adjectives-adverbs/agreement/).
 
@@ -126,8 +125,8 @@ Siehe [Adjektivkongruenz](../../grammar/adjectives-adverbs/agreement/).
 	<p slot="sv">Jag har inte sett honom på tre år.</p>
 </LanguageComparison>
 
-Ein Zeitraum ist <Sv>i</Sv>, ein Startzeitpunkt ist <Sv>sedan</Sv>, und ein
-verneinter Zeitraum nimmt <Sv>på</Sv>.
+Ein Zeitraum ist <span lang="sv">i</span>, ein Startzeitpunkt ist <span lang="sv">sedan</span>, und ein
+verneinter Zeitraum nimmt <span lang="sv">på</span>.
 
 ## Präpositionen Wort für Wort übersetzen
 
@@ -137,13 +136,13 @@ Wendung hier nicht aufgeführt ist, nutze die fokussierte Seite zu
 
 | Englisches Muster | Schwedische Korrektur | Nicht verwechseln mit |
 | --- | --- | --- |
-| wait for | <Sv>vänta på</Sv> | *vänta för* |
-| listen to | <Sv>lyssna på</Sv> | <Sv>lyssna</Sv> ohne Präposition |
-| think about | <Sv>tänka på</Sv> | *tänka om* (= umdenken) |
-| ask for | <Sv>be om</Sv> | *be för* |
-| interested in | <Sv>intresserad av</Sv> | *intresserad i* |
-| on Monday | <Sv>på måndag</Sv> | *i måndag* |
-| in the morning | <Sv>på morgonen</Sv> | *i morgonen* |
+| wait for | <span lang="sv">vänta på</span> | *vänta för* |
+| listen to | <span lang="sv">lyssna på</span> | <span lang="sv">lyssna</span> ohne Präposition |
+| think about | <span lang="sv">tänka på</span> | *tänka om* (= umdenken) |
+| ask for | <span lang="sv">be om</span> | *be för* |
+| interested in | <span lang="sv">intresserad av</span> | *intresserad i* |
+| on Monday | <span lang="sv">på måndag</span> | *i måndag* |
+| in the morning | <span lang="sv">på morgonen</span> | *i morgonen* |
 
 Die Präposition gehört zur Konstruktion. Nutze diese Tabelle, um einen
 englischen Transferfehler zu erkennen, und schau dann bei

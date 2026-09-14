@@ -27,7 +27,6 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => {
@@ -35,10 +34,10 @@ export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => 
 })();
 
 <KeyTakeaway>
-- The regular ladder adds <Sv>-are</Sv> and <Sv>-ast</Sv>:
-  <Sv>{snabb.morphology.en} → {snabb.comparison?.comparative} → {snabb.comparison?.superlative}</Sv>.
-- <Sv>än</Sv> is the word for “than”.
-- Long and participial adjectives often use <Sv>mer</Sv> and <Sv>mest</Sv>
+- The regular ladder adds <span lang="sv">-are</span> and <span lang="sv">-ast</span>:
+  <span lang="sv">{snabb.morphology.en} → {snabb.comparison?.comparative} → {snabb.comparison?.superlative}</span>.
+- <span lang="sv">än</span> is the word for “than”.
+- Long and participial adjectives often use <span lang="sv">mer</span> and <span lang="sv">mest</span>
   instead of endings; never use both strategies at once.
 </KeyTakeaway>
 
@@ -46,14 +45,14 @@ export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => 
 
 Swedish adjectives can express three degrees: positive, comparative, and
 superlative. Many short adjectives use the endings
-<Sv>-are</Sv> and <Sv>-ast</Sv>; other adjectives
-change irregularly or use <Sv>mer</Sv> and
-<Sv>mest</Sv>.
+<span lang="sv">-are</span> and <span lang="sv">-ast</span>; other adjectives
+change irregularly or use <span lang="sv">mer</span> and
+<span lang="sv">mest</span>.
 
 ## Regular comparison
 
 The positive is the base form, the comparative normally adds
-<Sv>-are</Sv>, and the superlative normally adds <Sv>-ast</Sv>:
+<span lang="sv">-are</span>, and the superlative normally adds <span lang="sv">-ast</span>:
 
 <AdjectiveForms
 	forms={[
@@ -66,7 +65,7 @@ The positive is the base form, the comparative normally adds
 	caption="Core forms of snabb"
 />
 
-In a comparison, <Sv>än</Sv> means “than”:
+In a comparison, <span lang="sv">än</span> means “than”:
 
 <p lang="sv">Tåget är snabbare än bussen.</p>
 
@@ -78,18 +77,18 @@ The basic predicative superlative does not need an ending for gender or number:
 
 | Positive | Comparative | Superlative | Meaning |
 | --- | --- | --- | --- |
-| <Sv>stor</Sv> | <Sv>större</Sv> | <Sv>störst</Sv> | big |
-| <Sv>liten</Sv> | <Sv>mindre</Sv> | <Sv>minst</Sv> | small |
-| <Sv>gammal</Sv> | <Sv>äldre</Sv> | <Sv>äldst</Sv> | old |
-| <Sv>bra</Sv> | <Sv>bättre</Sv> | <Sv>bäst</Sv> | good |
-| <Sv>dålig</Sv> | <Sv>sämre</Sv> | <Sv>sämst</Sv> | bad |
+| <span lang="sv">stor</span> | <span lang="sv">större</span> | <span lang="sv">störst</span> | big |
+| <span lang="sv">liten</span> | <span lang="sv">mindre</span> | <span lang="sv">minst</span> | small |
+| <span lang="sv">gammal</span> | <span lang="sv">äldre</span> | <span lang="sv">äldst</span> | old |
+| <span lang="sv">bra</span> | <span lang="sv">bättre</span> | <span lang="sv">bäst</span> | good |
+| <span lang="sv">dålig</span> | <span lang="sv">sämre</span> | <span lang="sv">sämst</span> | bad |
 
 These common forms are best learned as sets.
 
 ## Comparison with *mer* and *mest*
 
 Some adjectives, especially longer adjectives and many participial adjectives,
-are commonly compared with <Sv>mer</Sv> and <Sv>mest</Sv> rather than with
+are commonly compared with <span lang="sv">mer</span> and <span lang="sv">mest</span> rather than with
 suffixes:
 
 <p lang="sv">komplicerad → mer komplicerad → mest komplicerad</p>
@@ -97,7 +96,7 @@ suffixes:
 <p lang="sv">överraskande → mer överraskande → mest överraskande</p>
 
 Usage can vary for some adjectives. When both a suffixed form and a
-<Sv>mer</Sv> construction occur, follow established usage rather
+<span lang="sv">mer</span> construction occur, follow established usage rather
 than mechanically applying one rule to every word.
 
 ## Attributive superlatives
@@ -105,16 +104,16 @@ than mechanically applying one rule to every word.
 Before a definite noun, use the adjective's definite superlative form. Its
 ending depends on the comparison pattern:
 
-- <Sv>den snabbaste bilen</Sv>
-- <Sv>det största huset</Sv>
-- <Sv>de bästa resultaten</Sv>
+- <span lang="sv">den snabbaste bilen</span>
+- <span lang="sv">det största huset</span>
+- <span lang="sv">de bästa resultaten</span>
 
 This construction also uses the definite article and definite noun expected by
 [adjective agreement](../agreement/). A masculine
-singular form in <Sv>-e</Sv>, such as
-<Sv>den bäste spelaren</Sv>, also occurs, especially when a male
+singular form in <span lang="sv">-e</span>, such as
+<span lang="sv">den bäste spelaren</span>, also occurs, especially when a male
 person is explicitly meant. The non-masculine-specific form, for example
-<Sv>den bästa spelaren</Sv>, is also widely used.
+<span lang="sv">den bästa spelaren</span>, is also widely used.
 
 ## Direct comparison
 
@@ -132,25 +131,25 @@ person is explicitly meant. The non-masculine-specific form, for example
 
 All three languages have regular and irregular patterns. English
 <span lang="en">more / most</span> can be a useful bridge to Swedish
-<Sv>mer / mest</Sv>, but the languages do not choose the analytic
+<span lang="sv">mer / mest</span>, but the languages do not choose the analytic
 pattern for exactly the same set of adjectives.
 
 <MistakeBox title="Common mistakes">
 Do not combine both comparison strategies:
 
-<Sv>❌ mer snabbare</Sv>  
-<Sv>✅ snabbare</Sv>
+<span lang="sv">❌ mer snabbare</span>  
+<span lang="sv">✅ snabbare</span>
 
 Learn irregular sets instead of adding regular endings:
 
-<Sv>❌ braare / braast</Sv>  
-<Sv>✅ bättre / bäst</Sv>
+<span lang="sv">❌ braare / braast</span>  
+<span lang="sv">✅ bättre / bäst</span>
 </MistakeBox>
 
 <MemoryTip>
 Store each frequent adjective as a three-step ladder:
-<Sv><strong>stor — större — störst</strong></Sv>. If the adjective is long or
-participial, check whether <Sv>mer — mest</Sv> is the natural pattern instead of
+<span lang="sv"><strong>stor — större — störst</strong></span>. If the adjective is long or
+participial, check whether <span lang="sv">mer — mest</span> is the natural pattern instead of
 assuming it always takes endings.
 </MemoryTip>
 

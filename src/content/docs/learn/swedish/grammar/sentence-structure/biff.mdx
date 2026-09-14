@@ -28,15 +28,14 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import SentenceSchema from '~/components/SentenceSchema.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- In neutral standard order, <Sv>inte</Sv> comes **before** the finite verb in a
+- In neutral standard order, <span lang="sv">inte</span> comes **before** the finite verb in a
   subordinate clause; in a main clause it comes after it.
 - The subordinate clause leaves position two empty: the finite verb moves behind
   the sentence adverb.
-- The same position is used by other sentence adverbs, not only <Sv>inte</Sv>.
+- The same position is used by other sentence adverbs, not only <span lang="sv">inte</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -45,16 +44,16 @@ import TagList from '~/components/TagList.astro';
 sentence adverbs in subordinate clauses:
 
 > **B**isats: **I**nte **F**öre **F**init  
-> In a subordinate clause, <Sv>inte</Sv> comes before the finite verb.
+> In a subordinate clause, <span lang="sv">inte</span> comes before the finite verb.
 
 ## Core rule
 
-> **<Sv>bisatsinledare + subjekt + satsadverbial + finit verb + adverbial</Sv>**
+> **<span lang="sv">bisatsinledare + subjekt + satsadverbial + finit verb + adverbial</span>**
 
 The same fields make the shift visible. In the main clause the finite verb sits
-in position two and <Sv>inte</Sv> follows it. In the subordinate clause position
+in position two and <span lang="sv">inte</span> follows it. In the subordinate clause position
 two is empty: the finite verb has moved into the verb group behind
-<Sv>inte</Sv>.
+<span lang="sv">inte</span>.
 
 <SentenceSchema
 	caption="Position of inte in the main clause and in the bisats"
@@ -98,23 +97,23 @@ adverb, and anything else in the clause still follows it.
 
 BIFF becomes useful after words such as:
 
-- <Sv>att</Sv> — that
-- <Sv>eftersom</Sv> — because
-- <Sv>om</Sv> — if / whether
-- <Sv>när</Sv> — when
-- <Sv>fast</Sv> — although / even though
-- <Sv>innan</Sv> — before
+- <span lang="sv">att</span> — that
+- <span lang="sv">eftersom</span> — because
+- <span lang="sv">om</span> — if / whether
+- <span lang="sv">när</span> — when
+- <span lang="sv">fast</span> — although / even though
+- <span lang="sv">innan</span> — before
 
 Examples:
 
-- <Sv>Jag vet att hon inte arbetar idag.</Sv>
-- <Sv>Vi går ut om det inte regnar.</Sv>
-- <Sv>Han ringde när jag inte var hemma.</Sv>
+- <span lang="sv">Jag vet att hon inte arbetar idag.</span>
+- <span lang="sv">Vi går ut om det inte regnar.</span>
+- <span lang="sv">Han ringde när jag inte var hemma.</span>
 
 ## More than *inte*
 
-The same position is used by many sentence adverbs, for example <Sv>alltid</Sv>,
-<Sv>aldrig</Sv>, <Sv>kanske</Sv>, and <Sv>redan</Sv>, although their exact
+The same position is used by many sentence adverbs, for example <span lang="sv">alltid</span>,
+<span lang="sv">aldrig</span>, <span lang="sv">kanske</span>, and <span lang="sv">redan</span>, although their exact
 meaning and preferred placement can depend on context.
 
 <p lang="sv">Hon säger att hon <strong>aldrig äter</strong> kött.</p>

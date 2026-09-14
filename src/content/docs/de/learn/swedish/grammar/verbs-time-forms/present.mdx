@@ -26,7 +26,6 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 import VerbTable from '~/components/VerbTable.astro';
 
@@ -43,10 +42,10 @@ export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-sk
 );
 
 <KeyTakeaway>
-- Die Präsensform ist für jedes Subjekt gleich: <Sv>jag arbetar</Sv>,
-  <Sv>hon arbetar</Sv>, <Sv>de arbetar</Sv>.
-- Die Endung richtet sich nach der Verbgruppe: <Sv>-ar</Sv>, <Sv>-er</Sv> oder
-  einfaches <Sv>-r</Sv>.
+- Die Präsensform ist für jedes Subjekt gleich: <span lang="sv">jag arbetar</span>,
+  <span lang="sv">hon arbetar</span>, <span lang="sv">de arbetar</span>.
+- Die Endung richtet sich nach der Verbgruppe: <span lang="sv">-ar</span>, <span lang="sv">-er</span> oder
+  einfaches <span lang="sv">-r</span>.
 - Das Schwedische kennt keine Verlaufsform; das normale Präsens deckt auch
   <span lang="en">I am working</span> ab und, in eindeutigem Kontext, eine
   geplante Zukunft.
@@ -64,10 +63,10 @@ Die Präsensform ist für jedes Subjekt identisch:
 
 | Subjekt | Beispiel |
 | --- | --- |
-| <Sv>jag</Sv> | <Sv>Jag arbetar.</Sv> |
-| <Sv>du</Sv> | <Sv>Du arbetar.</Sv> |
-| <Sv>hon / han / hen</Sv> | <Sv>Hon arbetar.</Sv> |
-| <Sv>vi / ni / de</Sv> | <Sv>De arbetar.</Sv> |
+| <span lang="sv">jag</span> | <span lang="sv">Jag arbetar.</span> |
+| <span lang="sv">du</span> | <span lang="sv">Du arbetar.</span> |
+| <span lang="sv">hon / han / hen</span> | <span lang="sv">Hon arbetar.</span> |
+| <span lang="sv">vi / ni / de</span> | <span lang="sv">De arbetar.</span> |
 
 Die Endung hängt von der Verbgruppe ab. Ein repräsentatives Verb pro Gruppe:
 
@@ -79,14 +78,14 @@ Die Endung hängt von der Verbgruppe ab. Ein repräsentatives Verb pro Gruppe:
 	}))}
 />
 
-Manche häufige Verben sind unregelmäßig, zum Beispiel <Sv>vara → är</Sv> und
-<Sv>göra → gör</Sv>. Siehe [Verbgruppen](../../verb-patterns-voice/verb-groups/) für die vollständigen Muster.
+Manche häufige Verben sind unregelmäßig, zum Beispiel <span lang="sv">vara → är</span> und
+<span lang="sv">göra → gör</span>. Siehe [Verbgruppen](../../verb-patterns-voice/verb-groups/) für die vollständigen Muster.
 
 ## Hauptverwendungen
 
 ### Aktuelles Geschehen
 
-<Sv>Jag läser just nu.</Sv> — Ich lese gerade.
+<span lang="sv">Jag läser just nu.</span> — Ich lese gerade.
 
 Das Schwedische verwendet hier normalerweise das einfache Präsens. Es
 benötigt keine Form nach englischem Muster mit
@@ -94,15 +93,15 @@ benötigt keine Form nach englischem Muster mit
 
 ### Gewohnheiten und wiederkehrende Ereignisse
 
-<Sv>Vi tränar varje torsdag.</Sv> — Wir trainieren jeden Donnerstag.
+<span lang="sv">Vi tränar varje torsdag.</span> — Wir trainieren jeden Donnerstag.
 
 ### Allgemeine Tatsachen und Zustände
 
-<Sv>Stockholm ligger i Sverige.</Sv> — Stockholm liegt in Schweden.
+<span lang="sv">Stockholm ligger i Sverige.</span> — Stockholm liegt in Schweden.
 
 ### Zukunftsbedeutung aus dem Kontext
 
-<Sv>Jag åker till Malmö i morgon.</Sv> — Ich fahre morgen nach Malmö.
+<span lang="sv">Jag åker till Malmö i morgon.</span> — Ich fahre morgen nach Malmö.
 
 Die Zeitangabe macht die Zukunftsbedeutung eindeutig. Andere
 Zukunftskonstruktionen werden verwendet, wenn der Kontext es erfordert.
@@ -129,13 +128,13 @@ Zukunftskonstruktionen werden verwendet, wenn der Kontext es erfordert.
 
 ## Verneinung und Wortstellung
 
-Im Hauptsatz steht <Sv>inte</Sv> normalerweise nach dem finiten Verb:
+Im Hauptsatz steht <span lang="sv">inte</span> normalerweise nach dem finiten Verb:
 
-<Sv>Jag arbetar inte idag.</Sv>
+<span lang="sv">Jag arbetar inte idag.</span>
 
 Im Nebensatz ändert sich die Reihenfolge normalerweise:
 
-<Sv>… eftersom jag inte arbetar idag.</Sv>
+<span lang="sv">… eftersom jag inte arbetar idag.</span>
 
 Das ist eine Wortstellungsregel, keine andere Präsensform. Siehe die Seiten zu
 [V2](../../sentence-structure/v2/) und
@@ -145,9 +144,9 @@ Das ist eine Wortstellungsregel, keine andere Präsensform. Siehe die Seiten zu
 
 <MistakeBox title="Häufige Fehler">
 	- Füge keine Personenendung nach englischem oder deutschem Muster hinzu:
-	  Das Schwedische verwendet <Sv>jag kommer</Sv> und <Sv>hon kommer</Sv>.
+	  Das Schwedische verwendet <span lang="sv">jag kommer</span> und <span lang="sv">hon kommer</span>.
 	- Übersetze die englische Verlaufsform nicht wörtlich. Meist wird aus
-	  <span lang="en">I am working</span> <Sv>jag arbetar</Sv>.
+	  <span lang="en">I am working</span> <span lang="sv">jag arbetar</span>.
 	- Lerne unregelmäßige Präsensformen einzeln.
 </MistakeBox>
 

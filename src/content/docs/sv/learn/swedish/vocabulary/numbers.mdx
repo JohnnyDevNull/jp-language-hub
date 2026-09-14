@@ -26,18 +26,17 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Vanliga tvådelade tal sätter tiotalet före entalet och skrivs
-  normalt ihop som ett ord utan <Sv>och</Sv>: <Sv>tjugoett</Sv>.
-- Fristående <Sv>en</Sv>/<Sv>ett</Sv> böjs efter substantivet. Efter
-  tiotal är sista siffran 1 normalt <Sv>-en</Sv>; <Sv>-ett</Sv> lever
-  kvar i etablerade uttryck som <Sv>år</Sv>, <Sv>nummer</Sv>,
-  <Sv>öre</Sv>, och vid klockslag.
+  normalt ihop som ett ord utan <span lang="sv">och</span>: <span lang="sv">tjugoett</span>.
+- Fristående <span lang="sv">en</span>/<span lang="sv">ett</span> böjs efter substantivet. Efter
+  tiotal är sista siffran 1 normalt <span lang="sv">-en</span>; <span lang="sv">-ett</span> lever
+  kvar i etablerade uttryck som <span lang="sv">år</span>, <span lang="sv">nummer</span>,
+  <span lang="sv">öre</span>, och vid klockslag.
 - I ett sammansatt ordningstal blir bara sista ledet ett ordningstal:
-  <Sv>tjugoförsta</Sv>.
+  <span lang="sv">tjugoförsta</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -51,42 +50,42 @@ vardagliga formerna ett förutsägbart mönster.
 | Om du vill... | Använd |
 | --- | --- |
 | räkna från 0 till 20 | lär dig grundlistan utantill |
-| bilda 21, 42 eller 156 | tiotal före ental, inget <Sv>och</Sv>: <Sv>tjugoett</Sv>, <Sv>fyrtiotvå</Sv>, <Sv>hundrafemtiosex</Sv> |
-| räkna ett substantiv för sig | välj <Sv>en</Sv> eller <Sv>ett</Sv> efter substantivets genus |
-| bilda 21, 31, 41 framför ett substantiv | använd normalt sista <Sv>-en</Sv>: <Sv>trettioen fartyg</Sv> |
-| använda etablerade uttryck med t-formen | använd <Sv>-ett</Sv>: <Sv>tjugoett år</Sv>, <Sv>nummer tjugoett</Sv>, <Sv>tjugoett öre</Sv> |
-| skriva datum | använd ordningstalet efter <Sv>den</Sv>: <Sv>den tredje maj</Sv> |
-| skriva decimaltal | använd kommatecken: <Sv>3,5</Sv> |
+| bilda 21, 42 eller 156 | tiotal före ental, inget <span lang="sv">och</span>: <span lang="sv">tjugoett</span>, <span lang="sv">fyrtiotvå</span>, <span lang="sv">hundrafemtiosex</span> |
+| räkna ett substantiv för sig | välj <span lang="sv">en</span> eller <span lang="sv">ett</span> efter substantivets genus |
+| bilda 21, 31, 41 framför ett substantiv | använd normalt sista <span lang="sv">-en</span>: <span lang="sv">trettioen fartyg</span> |
+| använda etablerade uttryck med t-formen | använd <span lang="sv">-ett</span>: <span lang="sv">tjugoett år</span>, <span lang="sv">nummer tjugoett</span>, <span lang="sv">tjugoett öre</span> |
+| skriva datum | använd ordningstalet efter <span lang="sv">den</span>: <span lang="sv">den tredje maj</span> |
+| skriva decimaltal | använd kommatecken: <span lang="sv">3,5</span> |
 
 ## Grundtal
 
 | Tal | Svenska | Tal | Svenska |
 | --- | --- | --- | --- |
-| 0 | <Sv>noll</Sv> | 11 | <Sv>elva</Sv> |
-| 1 | <Sv>en / ett</Sv> | 12 | <Sv>tolv</Sv> |
-| 2 | <Sv>två</Sv> | 13 | <Sv>tretton</Sv> |
-| 3 | <Sv>tre</Sv> | 14 | <Sv>fjorton</Sv> |
-| 4 | <Sv>fyra</Sv> | 15 | <Sv>femton</Sv> |
-| 5 | <Sv>fem</Sv> | 16 | <Sv>sexton</Sv> |
-| 6 | <Sv>sex</Sv> | 17 | <Sv>sjutton</Sv> |
-| 7 | <Sv>sju</Sv> | 18 | <Sv>arton</Sv> |
-| 8 | <Sv>åtta</Sv> | 19 | <Sv>nitton</Sv> |
-| 9 | <Sv>nio</Sv> | 20 | <Sv>tjugo</Sv> |
-| 10 | <Sv>tio</Sv> | | |
+| 0 | <span lang="sv">noll</span> | 11 | <span lang="sv">elva</span> |
+| 1 | <span lang="sv">en / ett</span> | 12 | <span lang="sv">tolv</span> |
+| 2 | <span lang="sv">två</span> | 13 | <span lang="sv">tretton</span> |
+| 3 | <span lang="sv">tre</span> | 14 | <span lang="sv">fjorton</span> |
+| 4 | <span lang="sv">fyra</span> | 15 | <span lang="sv">femton</span> |
+| 5 | <span lang="sv">fem</span> | 16 | <span lang="sv">sexton</span> |
+| 6 | <span lang="sv">sex</span> | 17 | <span lang="sv">sjutton</span> |
+| 7 | <span lang="sv">sju</span> | 18 | <span lang="sv">arton</span> |
+| 8 | <span lang="sv">åtta</span> | 19 | <span lang="sv">nitton</span> |
+| 9 | <span lang="sv">nio</span> | 20 | <span lang="sv">tjugo</span> |
+| 10 | <span lang="sv">tio</span> | | |
 
-Tiotalen bildas med <Sv>-tio</Sv>:
+Tiotalen bildas med <span lang="sv">-tio</span>:
 
 | Tal | Svenska | Tal | Svenska |
 | --- | --- | --- | --- |
-| 30 | <Sv>trettio</Sv> | 70 | <Sv>sjuttio</Sv> |
-| 40 | <Sv>fyrtio</Sv> | 80 | <Sv>åttio</Sv> |
-| 50 | <Sv>femtio</Sv> | 90 | <Sv>nittio</Sv> |
-| 60 | <Sv>sextio</Sv> | 100 | <Sv>hundra</Sv> |
+| 30 | <span lang="sv">trettio</span> | 70 | <span lang="sv">sjuttio</span> |
+| 40 | <span lang="sv">fyrtio</span> | 80 | <span lang="sv">åttio</span> |
+| 50 | <span lang="sv">femtio</span> | 90 | <span lang="sv">nittio</span> |
+| 60 | <span lang="sv">sextio</span> | 100 | <span lang="sv">hundra</span> |
 
-Lägg märke till stavningen <Sv>fyrtio</Sv> för 40, som inte följer
-<Sv>fyra</Sv>. Flera räkneord innehåller också sj- och tj-ljuden:
-<Sv>sju</Sv>, <Sv>sjutton</Sv>,
-<Sv>sjuttio</Sv>, <Sv>tjugo</Sv>. Se
+Lägg märke till stavningen <span lang="sv">fyrtio</span> för 40, som inte följer
+<span lang="sv">fyra</span>. Flera räkneord innehåller också sj- och tj-ljuden:
+<span lang="sv">sju</span>, <span lang="sv">sjutton</span>,
+<span lang="sv">sjuttio</span>, <span lang="sv">tjugo</span>. Se
 [uttalsgrunder](../../pronunciation-basics/).
 
 ## Bilda större tal
@@ -94,44 +93,44 @@ Lägg märke till stavningen <Sv>fyrtio</Sv> för 40, som inte följer
 Vardagliga sammansatta tal byggs upp från den största delen och nedåt.
 Två- och tredelade sammansättningar skrivs normalt som ett ord:
 
-- 21 — <Sv>tjugoett</Sv>
-- 42 — <Sv>fyrtiotvå</Sv>
-- 156 — <Sv>hundrafemtiosex</Sv>
-- 3 000 — <Sv>tretusen</Sv>
+- 21 — <span lang="sv">tjugoett</span>
+- 42 — <span lang="sv">fyrtiotvå</span>
+- 156 — <span lang="sv">hundrafemtiosex</span>
+- 3 000 — <span lang="sv">tretusen</span>
 
 <RuleBox title="Svenska vänder inte på siffrorna">
 	Tyska säger <span lang="de">einundzwanzig</span>, med entalet
 	först. Svenska säger, liksom engelskan, tiotalet först:
-	<Sv>tjugoett</Sv>. Det finns inget <Sv>och</Sv> mellan delarna.
+	<span lang="sv">tjugoett</span>. Det finns inget <span lang="sv">och</span> mellan delarna.
 </RuleBox>
 
-<Sv>Hundra</Sv> och <Sv>tusen</Sv> kan stå ensamma
-eller ta <Sv>ett</Sv> för betoning eller tydlighet:
-<Sv>hundra kronor</Sv> eller
-<Sv>etthundra kronor</Sv>.
+<span lang="sv">Hundra</span> och <span lang="sv">tusen</span> kan stå ensamma
+eller ta <span lang="sv">ett</span> för betoning eller tydlighet:
+<span lang="sv">hundra kronor</span> eller
+<span lang="sv">etthundra kronor</span>.
 
 ## en eller ett för talet 1
 
 Räknat för sig böjs talet 1 efter det räknade substantivets genus,
 precis som den obestämda artikeln:
 
-- <Sv>en bil</Sv> — ett fordon
-- <Sv>ett hus</Sv> — en byggnad
+- <span lang="sv">en bil</span> — ett fordon
+- <span lang="sv">ett hus</span> — en byggnad
 
-Efter ett tiotal är sista siffran 1 dock normalt <Sv>-en</Sv>, även
+Efter ett tiotal är sista siffran 1 dock normalt <span lang="sv">-en</span>, även
 framför många ett-ord:
 
-- <Sv>tjugoen kronor</Sv> — 21 SEK
-- <Sv>trettioen fartyg</Sv> — 31 skepp, trots att <Sv>ett fartyg</Sv> är
+- <span lang="sv">tjugoen kronor</span> — 21 SEK
+- <span lang="sv">trettioen fartyg</span> — 31 skepp, trots att <span lang="sv">ett fartyg</span> är
   ett ett-ord
 
-Använd <Sv>-ett</Sv> i etablerade uttryck med t-formen, särskilt
-<Sv>år</Sv>, <Sv>nummer</Sv>, <Sv>öre</Sv>, och vid klockslag:
+Använd <span lang="sv">-ett</span> i etablerade uttryck med t-formen, särskilt
+<span lang="sv">år</span>, <span lang="sv">nummer</span>, <span lang="sv">öre</span>, och vid klockslag:
 
-- <Sv>tjugoett år</Sv>
-- <Sv>nummer tjugoett</Sv>
-- <Sv>tjugoett öre</Sv>
-- <Sv>klockan tjugoett</Sv>
+- <span lang="sv">tjugoett år</span>
+- <span lang="sv">nummer tjugoett</span>
+- <span lang="sv">tjugoett öre</span>
+- <span lang="sv">klockan tjugoett</span>
 
 Alla andra tal böjs inte. Se
 [en / ett](../../grammar/nouns-articles/en-ett/) för substantivgenus.
@@ -140,87 +139,87 @@ Alla andra tal böjs inte. Se
 
 | Tal | Svenska | Tal | Svenska |
 | --- | --- | --- | --- |
-| 1:a | <Sv>första</Sv> | 11:e | <Sv>elfte</Sv> |
-| 2:a | <Sv>andra</Sv> | 12:e | <Sv>tolfte</Sv> |
-| 3:e | <Sv>tredje</Sv> | 13:e | <Sv>trettonde</Sv> |
-| 4:e | <Sv>fjärde</Sv> | 14:e | <Sv>fjortonde</Sv> |
-| 5:e | <Sv>femte</Sv> | 15:e | <Sv>femtonde</Sv> |
-| 6:e | <Sv>sjätte</Sv> | 16:e | <Sv>sextonde</Sv> |
-| 7:e | <Sv>sjunde</Sv> | 17:e | <Sv>sjuttonde</Sv> |
-| 8:e | <Sv>åttonde</Sv> | 18:e | <Sv>artonde</Sv> |
-| 9:e | <Sv>nionde</Sv> | 19:e | <Sv>nittonde</Sv> |
-| 10:e | <Sv>tionde</Sv> | 20:e | <Sv>tjugonde</Sv> |
+| 1:a | <span lang="sv">första</span> | 11:e | <span lang="sv">elfte</span> |
+| 2:a | <span lang="sv">andra</span> | 12:e | <span lang="sv">tolfte</span> |
+| 3:e | <span lang="sv">tredje</span> | 13:e | <span lang="sv">trettonde</span> |
+| 4:e | <span lang="sv">fjärde</span> | 14:e | <span lang="sv">fjortonde</span> |
+| 5:e | <span lang="sv">femte</span> | 15:e | <span lang="sv">femtonde</span> |
+| 6:e | <span lang="sv">sjätte</span> | 16:e | <span lang="sv">sextonde</span> |
+| 7:e | <span lang="sv">sjunde</span> | 17:e | <span lang="sv">sjuttonde</span> |
+| 8:e | <span lang="sv">åttonde</span> | 18:e | <span lang="sv">artonde</span> |
+| 9:e | <span lang="sv">nionde</span> | 19:e | <span lang="sv">nittonde</span> |
+| 10:e | <span lang="sv">tionde</span> | 20:e | <span lang="sv">tjugonde</span> |
 
 De första tolv är värda att lära sig utantill. Från 13 till 19 lägger
-svenskan normalt till <Sv>-de</Sv> på grundtalet:
-<Sv>trettonde</Sv>, <Sv>fjortonde</Sv>,
-<Sv>nittonde</Sv>. Hela tiotal har egna former, som
-<Sv>tjugo → tjugonde</Sv> och
-<Sv>trettio → trettionde</Sv>.
+svenskan normalt till <span lang="sv">-de</span> på grundtalet:
+<span lang="sv">trettonde</span>, <span lang="sv">fjortonde</span>,
+<span lang="sv">nittonde</span>. Hela tiotal har egna former, som
+<span lang="sv">tjugo → tjugonde</span> och
+<span lang="sv">trettio → trettionde</span>.
 
 I ett sammansatt ordningstal blir **bara sista ledet** ett ordningstal.
-Är sista ledet 1 eller 2, används <Sv>första</Sv> eller
-<Sv>andra</Sv>:
+Är sista ledet 1 eller 2, används <span lang="sv">första</span> eller
+<span lang="sv">andra</span>:
 
-- 21:a — <Sv>tjugoförsta</Sv>
-- 42:a — <Sv>fyrtioandra</Sv>
-- 100:e — <Sv>hundrade</Sv>
+- 21:a — <span lang="sv">tjugoförsta</span>
+- 42:a — <span lang="sv">fyrtioandra</span>
+- 100:e — <span lang="sv">hundrade</span>
 
 ## Ordningstal i datum och skrift
 
-Ordningstal följer normalt efter <Sv>den</Sv>:
+Ordningstal följer normalt efter <span lang="sv">den</span>:
 
-- <Sv>Vi ses den första maj.</Sv> — vi träffas den 1 maj
-- <Sv>Det är hennes tredje bok.</Sv> — det är hennes bok nummer tre
+- <span lang="sv">Vi ses den första maj.</span> — vi träffas den 1 maj
+- <span lang="sv">Det är hennes tredje bok.</span> — det är hennes bok nummer tre
 
 Skrivet med siffror markerar svenskan ordningstalet med kolon plus
-ändelse: <Sv>1:a</Sv> och <Sv>2:a</Sv> för
-formerna på <Sv>-a</Sv>, och <Sv>3:e</Sv>,
-<Sv>4:e</Sv>, <Sv>24:e</Sv> för de övriga.
+ändelse: <span lang="sv">1:a</span> och <span lang="sv">2:a</span> för
+formerna på <span lang="sv">-a</span>, och <span lang="sv">3:e</span>,
+<span lang="sv">4:e</span>, <span lang="sv">24:e</span> för de övriga.
 
 ## Miljoner, miljarder och decimaltal
 
-<Sv>Miljon</Sv> och <Sv>miljard</Sv> är substantiv: de
+<span lang="sv">Miljon</span> och <span lang="sv">miljard</span> är substantiv: de
 tar artikel och plural.
 
 | Värde | Svenska | Plural |
 | --- | --- | --- |
-| 10⁶ | <Sv>en miljon</Sv> | <Sv>två miljoner</Sv> |
-| 10⁹ | <Sv>en miljard</Sv> | <Sv>två miljarder</Sv> |
-| 10¹² | <Sv>en biljon</Sv> | <Sv>två biljoner</Sv> |
+| 10⁶ | <span lang="sv">en miljon</span> | <span lang="sv">två miljoner</span> |
+| 10⁹ | <span lang="sv">en miljard</span> | <span lang="sv">två miljarder</span> |
+| 10¹² | <span lang="sv">en biljon</span> | <span lang="sv">två biljoner</span> |
 
 <MistakeBox title="En farlig falsk vän">
-Svenska <Sv>en biljon</Sv> är 10¹², inte en miljard. Engelskans
-*billion* motsvarar <Sv>en miljard</Sv>. Svenskan räknar som tyskan:
-<span lang="de">Milliarde</span> → <Sv>miljard</Sv>,
-<span lang="de">Billion</span> → <Sv>biljon</Sv>.
+Svenska <span lang="sv">en biljon</span> är 10¹², inte en miljard. Engelskans
+*billion* motsvarar <span lang="sv">en miljard</span>. Svenskan räknar som tyskan:
+<span lang="de">Milliarde</span> → <span lang="sv">miljard</span>,
+<span lang="de">Billion</span> → <span lang="sv">biljon</span>.
 </MistakeBox>
 
 Liksom tyskan använder svenskan **kommatecken** som decimaltecken och
-mellanslag för att gruppera tusental: <Sv>3,5</Sv> läses
-<Sv>tre komma fem</Sv>, och 10 000 skrivs med mellanslag.
+mellanslag för att gruppera tusental: <span lang="sv">3,5</span> läses
+<span lang="sv">tre komma fem</span>, och 10 000 skrivs med mellanslag.
 
 <MistakeBox title="Vanliga misstag">
-	- ❌ <Sv>ettochtjugo</Sv> — tysk siffernordning
-	  ✅ <Sv>tjugoett</Sv>
-	- ❌ <Sv>tjugo och ett</Sv>
-	  ✅ <Sv>tjugoett</Sv>
-	- ❌ <Sv>tjugoett kronor</Sv>
-	  ✅ <Sv>tjugoen kronor</Sv>
-	- ❌ <Sv>trettioett fartyg</Sv>
-	  ✅ <Sv>trettioen fartyg</Sv>
-	- ❌ <Sv>den 3:a maj</Sv>
-	  ✅ <Sv>den 3:e maj</Sv>
+	- ❌ <span lang="sv">ettochtjugo</span> — tysk siffernordning
+	  ✅ <span lang="sv">tjugoett</span>
+	- ❌ <span lang="sv">tjugo och ett</span>
+	  ✅ <span lang="sv">tjugoett</span>
+	- ❌ <span lang="sv">tjugoett kronor</span>
+	  ✅ <span lang="sv">tjugoen kronor</span>
+	- ❌ <span lang="sv">trettioett fartyg</span>
+	  ✅ <span lang="sv">trettioen fartyg</span>
+	- ❌ <span lang="sv">den 3:a maj</span>
+	  ✅ <span lang="sv">den 3:e maj</span>
 	- Gör inte båda delarna av ett sammansatt ordningstal till
 	  ordningstal:
-	  <Sv>❌ fyrtiondeandra</Sv>,
-	  <Sv>✅ fyrtioandra</Sv>.
+	  <span lang="sv">❌ fyrtiondeandra</span>,
+	  <span lang="sv">✅ fyrtioandra</span>.
 </MistakeBox>
 
 <MemoryTip>
 Öva först på de tal du verkligen behöver: priser, husnummer, årtal och
 ditt eget telefonnummer. Säg dem högt i svensk rytm —
-<Sv>tjugoett, tjugotvå, tjugotre</Sv> — så att ordningen
+<span lang="sv">tjugoett, tjugotvå, tjugotre</span> — så att ordningen
 tiotal-före-ental blir automatisk i stället för översatt.
 </MemoryTip>
 

@@ -25,22 +25,21 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- <Sv>Eftersom</Sv> is the neutral way to open a full sentence with "because";
-  <Sv>därför att</Sv> is marked there, but normal after a main clause and as a
+- <span lang="sv">Eftersom</span> is the neutral way to open a full sentence with "because";
+  <span lang="sv">därför att</span> is marked there, but normal after a main clause and as a
   short answer fragment.
-- <Sv>därför</Sv> is the *consequence* adverb ("therefore") and takes the finite
-  verb straight after it: <Sv>Därför stannar jag hemma.</Sv>
-- Reason clauses are subordinate clauses, so <Sv>inte</Sv> goes before the
+- <span lang="sv">därför</span> is the *consequence* adverb ("therefore") and takes the finite
+  verb straight after it: <span lang="sv">Därför stannar jag hemma.</span>
+- Reason clauses are subordinate clauses, so <span lang="sv">inte</span> goes before the
   finite verb inside them.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-The pair <Sv>därför</Sv> and <Sv>därför att</Sv> is the single most useful
+The pair <span lang="sv">därför</span> and <span lang="sv">därför att</span> is the single most useful
 distinction on this page, and the one German speakers get wrong most often.
 For the broader connector system, use
 [Connectors](../../grammar/prepositions-function-words/connectors/); this page
@@ -50,34 +49,34 @@ keeps the ready-to-use reason and example frames.
 
 | Pattern | What it does | Register |
 | --- | --- | --- |
-| <Sv>… eftersom …</Sv> | because; neutral inside or before the sentence | neutral |
-| <Sv>… därför att …</Sv> | because; answers *why*, common after a main clause and as a fragment | neutral, marked before a full main clause |
-| <Sv>… för …</Sv> | because, joining two main clauses | spoken |
-| <Sv>Det beror på att …</Sv> | that is because | neutral |
-| <Sv>Anledningen är att …</Sv> | the reason is that | neutral to formal |
-| <Sv>på grund av …</Sv> + noun | because of | neutral |
-| <Sv>tack vare …</Sv> + noun | thanks to; positive reason only | neutral |
+| <span lang="sv">… eftersom …</span> | because; neutral inside or before the sentence | neutral |
+| <span lang="sv">… därför att …</span> | because; answers *why*, common after a main clause and as a fragment | neutral, marked before a full main clause |
+| <span lang="sv">… för …</span> | because, joining two main clauses | spoken |
+| <span lang="sv">Det beror på att …</span> | that is because | neutral |
+| <span lang="sv">Anledningen är att …</span> | the reason is that | neutral to formal |
+| <span lang="sv">på grund av …</span> + noun | because of | neutral |
+| <span lang="sv">tack vare …</span> + noun | thanks to; positive reason only | neutral |
 
 ## Explaining a point
 
 | Pattern | What it does | Register |
 | --- | --- | --- |
-| <Sv>Det betyder att …</Sv> | that means that | neutral |
-| <Sv>Med andra ord …</Sv> | in other words | neutral |
-| <Sv>Vad jag menar är att …</Sv> | reformulating your own point | neutral |
-| <Sv>alltså</Sv> | so, that is; also fills a pause | spoken |
+| <span lang="sv">Det betyder att …</span> | that means that | neutral |
+| <span lang="sv">Med andra ord …</span> | in other words | neutral |
+| <span lang="sv">Vad jag menar är att …</span> | reformulating your own point | neutral |
+| <span lang="sv">alltså</span> | so, that is; also fills a pause | spoken |
 
 ## Giving an example and comparing
 
 | Pattern | What it does | Register |
 | --- | --- | --- |
-| <Sv>till exempel</Sv> (<Sv>t.ex.</Sv>) | for example | neutral |
-| <Sv>Ta … som exempel.</Sv> | take X as an example | neutral |
-| <Sv>jämfört med …</Sv> | compared with | neutral |
-| <Sv>till skillnad från …</Sv> | unlike | neutral |
-| <Sv>precis som …</Sv> | just like | neutral |
-| <Sv>… medan …</Sv> | whereas, contrasting two facts | neutral |
-| <Sv>å ena sidan … å andra sidan …</Sv> | on the one hand … on the other | formal |
+| <span lang="sv">till exempel</span> (<span lang="sv">t.ex.</span>) | for example | neutral |
+| <span lang="sv">Ta … som exempel.</span> | take X as an example | neutral |
+| <span lang="sv">jämfört med …</span> | compared with | neutral |
+| <span lang="sv">till skillnad från …</span> | unlike | neutral |
+| <span lang="sv">precis som …</span> | just like | neutral |
+| <span lang="sv">… medan …</span> | whereas, contrasting two facts | neutral |
+| <span lang="sv">å ena sidan … å andra sidan …</span> | on the one hand … on the other | formal |
 
 ## Direct comparison
 
@@ -93,12 +92,12 @@ keeps the ready-to-use reason and example frames.
 	<p slot="sv">Eftersom det regnar stannar jag hemma.</p>
 </LanguageComparison>
 
-The fronted clause is one constituent, so the finite verb <Sv>stannar</Sv>
-follows it directly and the subject comes after the verb. <Sv>Eftersom</Sv> is
-the neutral choice here. <Sv>Därför att det regnar stannar jag hemma</Sv> is
+The fronted clause is one constituent, so the finite verb <span lang="sv">stannar</span>
+follows it directly and the subject comes after the verb. <span lang="sv">Eftersom</span> is
+the neutral choice here. <span lang="sv">Därför att det regnar stannar jag hemma</span> is
 possible, but it sounds marked before a full main clause; use
-<Sv>därför att</Sv> freely after a main clause or as a short answer:
-<Sv>Varför stannar du hemma? Därför att det regnar.</Sv>
+<span lang="sv">därför att</span> freely after a main clause or as a short answer:
+<span lang="sv">Varför stannar du hemma? Därför att det regnar.</span>
 
 <LanguageComparison title="Consequence: därför">
 	<p slot="de">Es regnet, deshalb bleibe ich zu Hause.</p>

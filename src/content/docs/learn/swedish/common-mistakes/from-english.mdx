@@ -30,14 +30,13 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Swedish has one present tense; there is no progressive and no auxiliary
   *do*.
 - The definite article is a suffix on the noun, not a separate word:
-  <Sv>huset</Sv>.
+  <span lang="sv">huset</span>.
 - Swedish inflects adjectives and inverts the verb after a fronted element,
   where English does neither.
 </KeyTakeaway>
@@ -52,7 +51,7 @@ morphology. These are the patterns it exports by mistake.
 <MistakeBox incorrect="Jag är arbetande nu." correct="Jag arbetar nu." lang="sv">
 	One present tense covers both "I work" and "I am working". When the ongoing
 	action really matters, Swedish uses a construction, not a participle:
-	<Sv>Jag håller på att arbeta.</Sv> or <Sv>Jag sitter och arbetar.</Sv> See
+	<span lang="sv">Jag håller på att arbeta.</span> or <span lang="sv">Jag sitter och arbetar.</span> See
 	[present tense](../../grammar/verbs-time-forms/present/).
 </MistakeBox>
 
@@ -80,15 +79,15 @@ morphology. These are the patterns it exports by mistake.
 
 Direct questions use the existing finite verb instead of English *do*. See
 [Questions](../../grammar/questions-negation/questions/) for the reusable
-frame. Swedish clause negation adds <Sv>inte</Sv>; choose the negative form on
-[Negation](../../grammar/questions-negation/negation/) and place <Sv>inte</Sv>
+frame. Swedish clause negation adds <span lang="sv">inte</span>; choose the negative form on
+[Negation](../../grammar/questions-negation/negation/) and place <span lang="sv">inte</span>
 with [Placement of *inte*](../../grammar/sentence-structure/inte-placement/).
 
 ## Writing a separate definite article
 
 <MistakeBox incorrect="den hus, det stora hus" correct="huset, det stora huset" lang="sv">
-	Definiteness is a suffix: <Sv>hus</Sv> → <Sv>huset</Sv>, <Sv>bil</Sv> →
-	<Sv>bilen</Sv>, plural <Sv>husen</Sv>, <Sv>bilarna</Sv>. With an adjective
+	Definiteness is a suffix: <span lang="sv">hus</span> → <span lang="sv">huset</span>, <span lang="sv">bil</span> →
+	<span lang="sv">bilen</span>, plural <span lang="sv">husen</span>, <span lang="sv">bilarna</span>. With an adjective
 	both the article *and* the suffix appear — double definiteness. See
 	[noun forms](../../grammar/nouns-articles/noun-forms/).
 </MistakeBox>
@@ -100,9 +99,9 @@ on. Swedish adjectives change by gender, number, and definiteness:
 
 | Form | Example |
 | --- | --- |
-| <Sv>en</Sv> noun | <Sv>en stor bil</Sv> |
-| <Sv>ett</Sv> noun | <Sv>ett stort hus</Sv> |
-| plural / definite | <Sv>stora hus</Sv>, <Sv>det stora huset</Sv> |
+| <span lang="sv">en</span> noun | <span lang="sv">en stor bil</span> |
+| <span lang="sv">ett</span> noun | <span lang="sv">ett stort hus</span> |
+| plural / definite | <span lang="sv">stora hus</span>, <span lang="sv">det stora huset</span> |
 
 See [adjective agreement](../../grammar/adjectives-adverbs/agreement/).
 
@@ -123,8 +122,8 @@ See [adjective agreement](../../grammar/adjectives-adverbs/agreement/).
 	<p slot="sv">Jag har inte sett honom på tre år.</p>
 </LanguageComparison>
 
-A stretch of time is <Sv>i</Sv>, a starting point is <Sv>sedan</Sv>, and a
-negated stretch takes <Sv>på</Sv>.
+A stretch of time is <span lang="sv">i</span>, a starting point is <span lang="sv">sedan</span>, and a
+negated stretch takes <span lang="sv">på</span>.
 
 ## Translating prepositions one by one
 
@@ -134,13 +133,13 @@ is not listed here, use the focused
 
 | English pattern | Swedish repair | Do not diagnose it as |
 | --- | --- | --- |
-| wait for | <Sv>vänta på</Sv> | *vänta för* |
-| listen to | <Sv>lyssna på</Sv> | <Sv>lyssna</Sv> with no preposition |
-| think about | <Sv>tänka på</Sv> | *tänka om* (= rethink) |
-| ask for | <Sv>be om</Sv> | *be för* |
-| interested in | <Sv>intresserad av</Sv> | *intresserad i* |
-| on Monday | <Sv>på måndag</Sv> | *i måndag* |
-| in the morning | <Sv>på morgonen</Sv> | *i morgonen* |
+| wait for | <span lang="sv">vänta på</span> | *vänta för* |
+| listen to | <span lang="sv">lyssna på</span> | <span lang="sv">lyssna</span> with no preposition |
+| think about | <span lang="sv">tänka på</span> | *tänka om* (= rethink) |
+| ask for | <span lang="sv">be om</span> | *be för* |
+| interested in | <span lang="sv">intresserad av</span> | *intresserad i* |
+| on Monday | <span lang="sv">på måndag</span> | *i måndag* |
+| in the morning | <span lang="sv">på morgonen</span> | *i morgonen* |
 
 The preposition belongs to the construction. Use this table to spot an English
 transfer error, then check

@@ -25,68 +25,67 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Before a noun, the form follows the noun: <Sv>någon</Sv> for an <Sv>en</Sv>
-  noun, <Sv>något</Sv> for an <Sv>ett</Sv> noun, <Sv>några</Sv> for a plural.
-- Standing alone, <Sv>någon</Sv> is a person, <Sv>något</Sv> is a thing, and
-  <Sv>några</Sv> refers to a plural group.
-- <Sv>ingen</Sv>, <Sv>inget</Sv>, and <Sv>inga</Sv> are the negative forms of
+- Before a noun, the form follows the noun: <span lang="sv">någon</span> for an <span lang="sv">en</span>
+  noun, <span lang="sv">något</span> for an <span lang="sv">ett</span> noun, <span lang="sv">några</span> for a plural.
+- Standing alone, <span lang="sv">någon</span> is a person, <span lang="sv">något</span> is a thing, and
+  <span lang="sv">några</span> refers to a plural group.
+- <span lang="sv">ingen</span>, <span lang="sv">inget</span>, and <span lang="sv">inga</span> are the negative forms of
   the same three-way choice.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Swedish uses <Sv>någon</Sv>, <Sv>något</Sv>, and
-<Sv>några</Sv> for indefinite meaning: “some”, “any”,
+Swedish uses <span lang="sv">någon</span>, <span lang="sv">något</span>, and
+<span lang="sv">några</span> for indefinite meaning: “some”, “any”,
 “someone”, or “something”. Their negative forms are
-<Sv>ingen</Sv>, <Sv>inget</Sv>, and
-<Sv>inga</Sv>: “no”, “not any”, “nobody”, or “nothing”.
+<span lang="sv">ingen</span>, <span lang="sv">inget</span>, and
+<span lang="sv">inga</span>: “no”, “not any”, “nobody”, or “nothing”.
 
 ## Core forms
 
 When one of these words stands before a noun, choose the form from the noun:
 
-| Meaning | <Sv>en</Sv> noun | <Sv>ett</Sv> noun | Plural noun |
+| Meaning | <span lang="sv">en</span> noun | <span lang="sv">ett</span> noun | Plural noun |
 | --- | --- | --- | --- |
-| some / any | <Sv>någon</Sv> | <Sv>något</Sv> | <Sv>några</Sv> |
-| no / not any | <Sv>ingen</Sv> | <Sv>inget</Sv> | <Sv>inga</Sv> |
+| some / any | <span lang="sv">någon</span> | <span lang="sv">något</span> | <span lang="sv">några</span> |
+| no / not any | <span lang="sv">ingen</span> | <span lang="sv">inget</span> | <span lang="sv">inga</span> |
 
 ## Before a noun
 
-Use <Sv>någon</Sv> before a singular
-<Sv>en</Sv> noun:
+Use <span lang="sv">någon</span> before a singular
+<span lang="sv">en</span> noun:
 
-<Sv>Finns det någon mataffär?</Sv>
+<span lang="sv">Finns det någon mataffär?</span>
 
 <span lang="de">Gibt es einen Supermarkt?</span>
 
-Use <Sv>något</Sv> before a singular
-<Sv>ett</Sv> noun:
+Use <span lang="sv">något</span> before a singular
+<span lang="sv">ett</span> noun:
 
-<Sv>Har du något smultronställe?</Sv>
+<span lang="sv">Har du något smultronställe?</span>
 
 <span lang="de">Hast du einen Lieblingsplatz?</span>
 
-Use <Sv>några</Sv> before a plural noun:
+Use <span lang="sv">några</span> before a plural noun:
 
-<Sv>Har ni några lediga rum?</Sv>
+<span lang="sv">Har ni några lediga rum?</span>
 
 <span lang="de">Habt ihr irgendwelche freien Zimmer?</span>
 
 ## Negative forms
 
-For negation, use <Sv>ingen</Sv>,
-<Sv>inget</Sv>, or <Sv>inga</Sv> with the same
+For negation, use <span lang="sv">ingen</span>,
+<span lang="sv">inget</span>, or <span lang="sv">inga</span> with the same
 noun pattern:
 
 | Question | Negative answer |
 | --- | --- |
-| <Sv>Finns det någon kyrka?</Sv> | <Sv>Nej, det finns ingen kyrka.</Sv> |
-| <Sv>Finns det något hav här?</Sv> | <Sv>Nej, det finns inget hav här.</Sv> |
-| <Sv>Har ni några lediga rum?</Sv> | <Sv>Nej, vi har inga lediga rum.</Sv> |
+| <span lang="sv">Finns det någon kyrka?</span> | <span lang="sv">Nej, det finns ingen kyrka.</span> |
+| <span lang="sv">Finns det något hav här?</span> | <span lang="sv">Nej, det finns inget hav här.</span> |
+| <span lang="sv">Har ni några lediga rum?</span> | <span lang="sv">Nej, vi har inga lediga rum.</span> |
 
 The German meaning is often “kein”, “keine”, or “nicht irgendein”:
 
@@ -94,21 +93,21 @@ The German meaning is often “kein”, “keine”, or “nicht irgendein”:
 
 ## Standing alone
 
-<Sv>Någon</Sv> and <Sv>något</Sv> can also stand
+<span lang="sv">Någon</span> and <span lang="sv">något</span> can also stand
 alone. Then the choice is about person or thing:
 
 | Swedish | Meaning | Example |
 | --- | --- | --- |
-| <Sv>någon</Sv> | someone / anyone | <Sv>Ska någon gå till spaavdelningen?</Sv> |
-| <Sv>något</Sv> | something / anything | <Sv>Finns det något att äta?</Sv> |
-| <Sv>ingen</Sv> | nobody / no one | <Sv>Ingen behöver köpa ägg.</Sv> |
-| <Sv>inget</Sv> | nothing / not anything | <Sv>Jag förstår inget.</Sv> |
-| <Sv>några</Sv> | some / a few people or things | <Sv>Några kom tidigt.</Sv> |
-| <Sv>inga</Sv> | none / no people or things | <Sv>Inga kom för sent.</Sv> |
+| <span lang="sv">någon</span> | someone / anyone | <span lang="sv">Ska någon gå till spaavdelningen?</span> |
+| <span lang="sv">något</span> | something / anything | <span lang="sv">Finns det något att äta?</span> |
+| <span lang="sv">ingen</span> | nobody / no one | <span lang="sv">Ingen behöver köpa ägg.</span> |
+| <span lang="sv">inget</span> | nothing / not anything | <span lang="sv">Jag förstår inget.</span> |
+| <span lang="sv">några</span> | some / a few people or things | <span lang="sv">Några kom tidigt.</span> |
+| <span lang="sv">inga</span> | none / no people or things | <span lang="sv">Inga kom för sent.</span> |
 
 The plural forms can also replace an understood plural noun:
-<Sv>Jag köpte några</Sv> (“I bought some”) and
-<Sv>Jag hittade inga</Sv> (“I found none”).
+<span lang="sv">Jag köpte några</span> (“I bought some”) and
+<span lang="sv">Jag hittade inga</span> (“I found none”).
 
 Compare:
 
@@ -126,29 +125,29 @@ Compare:
 
 ## Questions and statements
 
-In questions, <Sv>någon</Sv>, <Sv>något</Sv>, and
-<Sv>några</Sv> often mean “any” or “some”:
+In questions, <span lang="sv">någon</span>, <span lang="sv">något</span>, and
+<span lang="sv">några</span> often mean “any” or “some”:
 
-- <Sv>Finns det någon kyrka?</Sv>
-- <Sv>Finns det något hav här?</Sv>
-- <Sv>Har du några planer för semestern?</Sv>
+- <span lang="sv">Finns det någon kyrka?</span>
+- <span lang="sv">Finns det något hav här?</span>
+- <span lang="sv">Har du några planer för semestern?</span>
 
-In statements, <Sv>några</Sv> can also mean “a few” or “some”:
+In statements, <span lang="sv">några</span> can also mean “a few” or “some”:
 
-<Sv>Jag tar några tomater också.</Sv>
+<span lang="sv">Jag tar några tomater också.</span>
 
 <span lang="de">Ich nehme auch ein paar Tomaten.</span>
 
 ## Spoken forms
 
-In everyday speech, <Sv>någon</Sv> is often pronounced and
-written informally as <Sv>nån</Sv>. Likewise,
-<Sv>något</Sv> often becomes <Sv>nåt</Sv>.
+In everyday speech, <span lang="sv">någon</span> is often pronounced and
+written informally as <span lang="sv">nån</span>. Likewise,
+<span lang="sv">något</span> often becomes <span lang="sv">nåt</span>.
 
 | Standard | Informal | Meaning |
 | --- | --- | --- |
-| <Sv>någon</Sv> | <Sv>nån</Sv> | someone / any <Sv>en</Sv> noun |
-| <Sv>något</Sv> | <Sv>nåt</Sv> | something / any <Sv>ett</Sv> noun |
+| <span lang="sv">någon</span> | <span lang="sv">nån</span> | someone / any <span lang="sv">en</span> noun |
+| <span lang="sv">något</span> | <span lang="sv">nåt</span> | something / any <span lang="sv">ett</span> noun |
 
 Use the standard forms in careful writing unless the tone is intentionally
 informal.
@@ -157,10 +156,10 @@ informal.
 
 | Context | Choose by | Use |
 | --- | --- | --- |
-| A noun follows | <Sv>en</Sv>, <Sv>ett</Sv>, or plural | <Sv>någon</Sv> / <Sv>något</Sv> / <Sv>några</Sv> |
-| A negative noun phrase follows | <Sv>en</Sv>, <Sv>ett</Sv>, or plural | <Sv>ingen</Sv> / <Sv>inget</Sv> / <Sv>inga</Sv> |
-| No noun follows | person, thing, or plural group | <Sv>någon</Sv> = someone, <Sv>något</Sv> = something, <Sv>några</Sv> = some / a few |
-| Negative and no noun follows | person, thing, or plural group | <Sv>ingen</Sv> = nobody, <Sv>inget</Sv> = nothing, <Sv>inga</Sv> = none |
+| A noun follows | <span lang="sv">en</span>, <span lang="sv">ett</span>, or plural | <span lang="sv">någon</span> / <span lang="sv">något</span> / <span lang="sv">några</span> |
+| A negative noun phrase follows | <span lang="sv">en</span>, <span lang="sv">ett</span>, or plural | <span lang="sv">ingen</span> / <span lang="sv">inget</span> / <span lang="sv">inga</span> |
+| No noun follows | person, thing, or plural group | <span lang="sv">någon</span> = someone, <span lang="sv">något</span> = something, <span lang="sv">några</span> = some / a few |
+| Negative and no noun follows | person, thing, or plural group | <span lang="sv">ingen</span> = nobody, <span lang="sv">inget</span> = nothing, <span lang="sv">inga</span> = none |
 
 This page owns the forms and their noun-phrase agreement. For the broader
 choice between clause negation, a negative noun phrase, and a negative adverb,
@@ -169,20 +168,20 @@ use [Negation](../../questions-negation/negation/).
 ## Common mistakes
 
 <MistakeBox title="Common mistakes">
-	- ❌ <Sv>något kyrka</Sv>
-	  ✅ <Sv>någon kyrka</Sv>
-	- ❌ <Sv>någon hav</Sv>
-	  ✅ <Sv>något hav</Sv>
-	- ❌ <Sv>ingen lediga rum</Sv>
-	  ✅ <Sv>inga lediga rum</Sv>
-	- ❌ Choosing <Sv>någon</Sv> and <Sv>något</Sv>
+	- ❌ <span lang="sv">något kyrka</span>
+	  ✅ <span lang="sv">någon kyrka</span>
+	- ❌ <span lang="sv">någon hav</span>
+	  ✅ <span lang="sv">något hav</span>
+	- ❌ <span lang="sv">ingen lediga rum</span>
+	  ✅ <span lang="sv">inga lediga rum</span>
+	- ❌ Choosing <span lang="sv">någon</span> and <span lang="sv">något</span>
 	  by person or thing when a noun follows. Before a noun, choose by
-	  <Sv>en</Sv>, <Sv>ett</Sv>, or plural.
+	  <span lang="sv">en</span>, <span lang="sv">ett</span>, or plural.
 </MistakeBox>
 
 <MemoryTip title="Noun or no noun?">
-If a noun follows, check whether it is an <Sv>en</Sv> noun, an
-<Sv>ett</Sv> noun, or plural. If no noun follows, ask whether
+If a noun follows, check whether it is an <span lang="sv">en</span> noun, an
+<span lang="sv">ett</span> noun, or plural. If no noun follows, ask whether
 you mean a person, a thing, or a plural group.
 </MemoryTip>
 

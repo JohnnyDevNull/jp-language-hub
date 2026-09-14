@@ -30,7 +30,6 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 import VerbTable from '~/components/VerbTable.astro';
 
@@ -42,12 +41,12 @@ export const buy = verbs.find(({ id }) => id === 'sv-kopa')?.data ?? (() => {
 })();
 
 <KeyTakeaway>
-- Ett svenskt verb har en finit form per tempus: samma form för <Sv>jag</Sv>,
-  <Sv>du</Sv>, <Sv>hon</Sv> och <Sv>de</Sv>.
+- Ett svenskt verb har en finit form per tempus: samma form för <span lang="sv">jag</span>,
+  <span lang="sv">du</span>, <span lang="sv">hon</span> och <span lang="sv">de</span>.
 - Fem grundformer bygger upp den aktiva formkedjan: infinitiv, imperativ,
   presens, preteritum och supinum. Particip och passiva former lägger till
   fler mönster vid behov.
-- Supinum är formen efter <Sv>har</Sv> eller <Sv>hade</Sv>; det är aldrig
+- Supinum är formen efter <span lang="sv">har</span> eller <span lang="sv">hade</span>; det är aldrig
   infinitiv och aldrig preteritum.
 </KeyTakeaway>
 
@@ -60,7 +59,7 @@ Svenska verb böjs inte efter person eller numerus. Den centrala läruppgiften
 
 Lär dig varje nytt verb med kärnkedjan **infinitiv — imperativ — presens —
 preteritum — supinum**. Det är ett praktiskt inlärningsramverk, inte ett
-påstående att detta är de enda former svenska verb kan ha. Med <Sv>köpa</Sv>
+påstående att detta är de enda former svenska verb kan ha. Med <span lang="sv">köpa</span>
 som exempel:
 
 <VerbTable
@@ -77,14 +76,14 @@ som exempel:
 
 Varje form har en uppgift:
 
-- Infinitiv efter ett modalt verb: <Sv>Jag vill köpa boken.</Sv>
-- Imperativ för en uppmaning: <Sv>Köp boken!</Sv>
-- Presens för nu, allmänt eller upprepat: <Sv>Jag köper en bok.</Sv>
-- Preteritum för en avslutad händelse i det förflutna: <Sv>Jag köpte en bok.</Sv>
-- Supinum efter <Sv>har</Sv> eller <Sv>hade</Sv>: <Sv>Jag har köpt en bok.</Sv>
+- Infinitiv efter ett modalt verb: <span lang="sv">Jag vill köpa boken.</span>
+- Imperativ för en uppmaning: <span lang="sv">Köp boken!</span>
+- Presens för nu, allmänt eller upprepat: <span lang="sv">Jag köper en bok.</span>
+- Preteritum för en avslutad händelse i det förflutna: <span lang="sv">Jag köpte en bok.</span>
+- Supinum efter <span lang="sv">har</span> eller <span lang="sv">hade</span>: <span lang="sv">Jag har köpt en bok.</span>
 
 :::note[En form för alla personer]
-<Sv>Jag köper</Sv>, <Sv>du köper</Sv> och <Sv>de köper</Sv> använder alla
+<span lang="sv">Jag köper</span>, <span lang="sv">du köper</span> och <span lang="sv">de köper</span> använder alla
 samma presensform.
 :::
 
@@ -128,17 +127,17 @@ futurumkonstruktioner, se [tidsperspektiv](../tense-perspectives/).
 
 ## Bygga sammansatta tempus
 
-Supinum kombineras med en finit form av <Sv>ha</Sv>:
+Supinum kombineras med en finit form av <span lang="sv">ha</span>:
 
-- Perfekt: <Sv>Jag har köpt en bok.</Sv> — Jag äger nu en bok jag nyss köpte.
-- Pluskvamperfekt: <Sv>Jag hade köpt boken.</Sv> — Jag ägde redan boken vid
+- Perfekt: <span lang="sv">Jag har köpt en bok.</span> — Jag äger nu en bok jag nyss köpte.
+- Pluskvamperfekt: <span lang="sv">Jag hade köpt boken.</span> — Jag ägde redan boken vid
   den tidpunkten.
 
 Supinum är inte samma sak som infinitiv eller preteritum:
 
-- <Sv>Jag vill köpa boken.</Sv> — infinitiv efter ett modalt verb
-- <Sv>Jag köpte boken i går.</Sv> — preteritum
-- <Sv>Jag har köpt boken.</Sv> — supinum efter <Sv>har</Sv>
+- <span lang="sv">Jag vill köpa boken.</span> — infinitiv efter ett modalt verb
+- <span lang="sv">Jag köpte boken i går.</span> — preteritum
+- <span lang="sv">Jag har köpt boken.</span> — supinum efter <span lang="sv">har</span>
 
 ## Direkt jämförelse
 
@@ -171,7 +170,7 @@ användning stämmer inte exakt överens i varje sammanhang.
 	correct={`Jag har ${buy.morphology.supine} en bok.`}
 	lang="sv"
 >
-	Använd supinum efter <Sv>har</Sv> eller <Sv>hade</Sv>.
+	Använd supinum efter <span lang="sv">har</span> eller <span lang="sv">hade</span>.
 </MistakeBox>
 
 <MistakeBox

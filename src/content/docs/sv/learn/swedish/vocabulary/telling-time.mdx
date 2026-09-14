@@ -25,16 +25,15 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Klockslag klaras med bara fem ord: <Sv>klockan</Sv>, <Sv>över</Sv>,
-  <Sv>i</Sv>, <Sv>halv</Sv> och <Sv>kvart</Sv>.
-- <Sv>halv</Sv> räknar mot den kommande timmen, precis som tyskans
-  <span lang="de">halb</span>: <Sv>halv tre</Sv> är 2:30, inte 3:30.
+- Klockslag klaras med bara fem ord: <span lang="sv">klockan</span>, <span lang="sv">över</span>,
+  <span lang="sv">i</span>, <span lang="sv">halv</span> och <span lang="sv">kvart</span>.
+- <span lang="sv">halv</span> räknar mot den kommande timmen, precis som tyskans
+  <span lang="de">halb</span>: <span lang="sv">halv tre</span> är 2:30, inte 3:30.
 - Minuterna räknas från den närmaste referenspunkten, som kan vara
-  halvtimmen: <Sv>tio i halv nio</Sv> är 8:20.
+  halvtimmen: <span lang="sv">tio i halv nio</span> är 8:20.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -45,8 +44,8 @@ sig själv.
 
 ## Grundregel
 
-> Timmen namnges med <Sv>klockan</Sv> plus talet. Minuterna knyts till
-> en referenspunkt med <Sv>över</Sv> (efter) eller <Sv>i</Sv> (före),
+> Timmen namnges med <span lang="sv">klockan</span> plus talet. Minuterna knyts till
+> en referenspunkt med <span lang="sv">över</span> (efter) eller <span lang="sv">i</span> (före),
 > och referenspunkten kan vara en hel eller en halv timme.
 
 ## Fråga och svara
@@ -63,13 +62,13 @@ sig själv.
 	<p slot="sv">Klockan är nio.</p>
 </LanguageComparison>
 
-<Sv>Klockan</Sv> är den bestämda formen av <Sv>en klocka</Sv> och
-fungerar som subjekt i <Sv>Klockan är nio</Sv>; därför behövs inget
+<span lang="sv">Klockan</span> är den bestämda formen av <span lang="sv">en klocka</span> och
+fungerar som subjekt i <span lang="sv">Klockan är nio</span>; därför behövs inget
 eget ord som motsvarar engelskans „o'clock“.
 
 ## Minuter efter och före
 
-Använd <Sv>över</Sv> för minuter efter timmen och <Sv>i</Sv> för
+Använd <span lang="sv">över</span> för minuter efter timmen och <span lang="sv">i</span> för
 minuter före nästa timme:
 
 <p lang="sv">Klockan är sju över två.</p>
@@ -77,46 +76,46 @@ minuter före nästa timme:
 
 | Svenska | Klockslag |
 | --- | --- |
-| <Sv>sju över två</Sv> | 2:07 |
-| <Sv>fem i sex</Sv> | 5:55 |
-| <Sv>tjugo över tre</Sv> | 3:20 |
+| <span lang="sv">sju över två</span> | 2:07 |
+| <span lang="sv">fem i sex</span> | 5:55 |
+| <span lang="sv">tjugo över tre</span> | 3:20 |
 
 ## Halva timmar
 
-<Sv>halv</Sv> pekar mot den timme den räknar mot, inte mot timmen som
+<span lang="sv">halv</span> pekar mot den timme den räknar mot, inte mot timmen som
 just passerat. Minuterna kan sedan mätas från den halvtimmespunkten i
 båda riktningarna:
 
 | Svenska | Klockslag |
 | --- | --- |
-| <Sv>halv nio</Sv> | 8:30 |
-| <Sv>tio i halv nio</Sv> | 8:20 |
-| <Sv>tio över halv nio</Sv> | 8:40 |
-| <Sv>halv tre</Sv> | 2:30 |
+| <span lang="sv">halv nio</span> | 8:30 |
+| <span lang="sv">tio i halv nio</span> | 8:20 |
+| <span lang="sv">tio över halv nio</span> | 8:40 |
+| <span lang="sv">halv tre</span> | 2:30 |
 
 ## Kvart i och kvart över
 
 | Svenska | Klockslag |
 | --- | --- |
-| <Sv>kvart över fyra</Sv> | 4:15 |
-| <Sv>kvart i sju</Sv> | 6:45 |
+| <span lang="sv">kvart över fyra</span> | 4:15 |
+| <span lang="sv">kvart i sju</span> | 6:45 |
 
 ## Skriven och talad tid
 
 Tidtabeller, öppettider och möten skrivs digitalt med punkt:
-<Sv>14.30</Sv>. Uppläst blir det <Sv>fjorton och trettio</Sv>, medan
-den talade vardagsformen för samma tidpunkt är <Sv>halv tre</Sv>.
+<span lang="sv">14.30</span>. Uppläst blir det <span lang="sv">fjorton och trettio</span>, medan
+den talade vardagsformen för samma tidpunkt är <span lang="sv">halv tre</span>.
 
 ## Snabbmönster
 
 | Betydelse | Svenskt mönster |
 | --- | --- |
-| exakt timme | <Sv>Klockan är nio.</Sv> |
-| efter timmen | <Sv>X över Y</Sv> |
-| före nästa timme | <Sv>X i Y</Sv> |
-| halv till nästa timme | <Sv>halv Y</Sv> |
-| kvart över | <Sv>kvart över Y</Sv> |
-| kvart i | <Sv>kvart i Y</Sv> |
+| exakt timme | <span lang="sv">Klockan är nio.</span> |
+| efter timmen | <span lang="sv">X över Y</span> |
+| före nästa timme | <span lang="sv">X i Y</span> |
+| halv till nästa timme | <span lang="sv">halv Y</span> |
+| kvart över | <span lang="sv">kvart över Y</span> |
+| kvart i | <span lang="sv">kvart i Y</span> |
 
 ## Direkt jämförelse
 
@@ -147,16 +146,16 @@ just passerat.
 	correct="halv tre = 2:30"
 	lang="sv"
 >
-	Engelskans „half three“ och svenskans <Sv>halv tre</Sv> avser olika
-	tidpunkter. Härled inte heller <Sv>över</Sv> och <Sv>i</Sv> från en
+	Engelskans „half three“ och svenskans <span lang="sv">halv tre</span> avser olika
+	tidpunkter. Härled inte heller <span lang="sv">över</span> och <span lang="sv">i</span> från en
 	allmän prepositionsregel; klockslag följer sitt eget mönster.
 </MistakeBox>
 
 <MemoryTip>
-Ta den tyska vägen: <Sv>halv</Sv> beter sig som tyskans
+Ta den tyska vägen: <span lang="sv">halv</span> beter sig som tyskans
 <span lang="de">halb</span>, och talet är timmen du är på väg mot.
 Kommer du från engelskan, lägg till „past“ och dra bort ett:
-<Sv>halv nio</Sv> = „half past eight“.
+<span lang="sv">halv nio</span> = „half past eight“.
 </MemoryTip>
 
 <QuickCheck

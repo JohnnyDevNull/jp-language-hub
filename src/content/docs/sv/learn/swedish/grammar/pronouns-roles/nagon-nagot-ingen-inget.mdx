@@ -25,64 +25,63 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Före ett substantiv följer formen substantivet: <Sv>någon</Sv> för ett
-  <Sv>en</Sv>-ord, <Sv>något</Sv> för ett <Sv>ett</Sv>-ord och <Sv>några</Sv> i plural.
-- När orden står ensamma är <Sv>någon</Sv> en person, <Sv>något</Sv> en sak och
-  <Sv>några</Sv> en grupp i plural.
-- <Sv>ingen</Sv>, <Sv>inget</Sv> och <Sv>inga</Sv> är negativa former i samma
+- Före ett substantiv följer formen substantivet: <span lang="sv">någon</span> för ett
+  <span lang="sv">en</span>-ord, <span lang="sv">något</span> för ett <span lang="sv">ett</span>-ord och <span lang="sv">några</span> i plural.
+- När orden står ensamma är <span lang="sv">någon</span> en person, <span lang="sv">något</span> en sak och
+  <span lang="sv">några</span> en grupp i plural.
+- <span lang="sv">ingen</span>, <span lang="sv">inget</span> och <span lang="sv">inga</span> är negativa former i samma
   tredelning.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Svenskan använder <Sv>någon</Sv>, <Sv>något</Sv> och <Sv>några</Sv> för
+Svenskan använder <span lang="sv">någon</span>, <span lang="sv">något</span> och <span lang="sv">några</span> för
 obestämd betydelse: ”ett visst antal”, ”vilken som helst” eller ”en person
-eller sak”. De negativa formerna är <Sv>ingen</Sv>, <Sv>inget</Sv> och
-<Sv>inga</Sv>: ”inte alls”, ”ingen alls” eller ”ingenting”.
+eller sak”. De negativa formerna är <span lang="sv">ingen</span>, <span lang="sv">inget</span> och
+<span lang="sv">inga</span>: ”inte alls”, ”ingen alls” eller ”ingenting”.
 
 ## Grundformer
 
 När ett av orden står före ett substantiv väljer du efter substantivet:
 
-| Betydelse | <Sv>en</Sv>-ord | <Sv>ett</Sv>-ord | Pluralord |
+| Betydelse | <span lang="sv">en</span>-ord | <span lang="sv">ett</span>-ord | Pluralord |
 | --- | --- | --- | --- |
-| bekräftande | <Sv>någon</Sv> | <Sv>något</Sv> | <Sv>några</Sv> |
-| nekande | <Sv>ingen</Sv> | <Sv>inget</Sv> | <Sv>inga</Sv> |
+| bekräftande | <span lang="sv">någon</span> | <span lang="sv">något</span> | <span lang="sv">några</span> |
+| nekande | <span lang="sv">ingen</span> | <span lang="sv">inget</span> | <span lang="sv">inga</span> |
 
 ## Före ett substantiv
 
-Använd <Sv>någon</Sv> före ett <Sv>en</Sv>-ord i singular:
+Använd <span lang="sv">någon</span> före ett <span lang="sv">en</span>-ord i singular:
 
-<Sv>Finns det någon mataffär?</Sv>
+<span lang="sv">Finns det någon mataffär?</span>
 
 <span lang="de">Gibt es einen Supermarkt?</span>
 
-Använd <Sv>något</Sv> före ett <Sv>ett</Sv>-ord i singular:
+Använd <span lang="sv">något</span> före ett <span lang="sv">ett</span>-ord i singular:
 
-<Sv>Har du något smultronställe?</Sv>
+<span lang="sv">Har du något smultronställe?</span>
 
 <span lang="de">Hast du einen Lieblingsplatz?</span>
 
-Använd <Sv>några</Sv> före ett pluralord:
+Använd <span lang="sv">några</span> före ett pluralord:
 
-<Sv>Har ni några lediga rum?</Sv>
+<span lang="sv">Har ni några lediga rum?</span>
 
 <span lang="de">Habt ihr irgendwelche freien Zimmer?</span>
 
 ## Negativa former
 
-Vid negation använder du <Sv>ingen</Sv>, <Sv>inget</Sv> eller <Sv>inga</Sv>
+Vid negation använder du <span lang="sv">ingen</span>, <span lang="sv">inget</span> eller <span lang="sv">inga</span>
 enligt samma substantivmönster:
 
 | Fråga | Nekande svar |
 | --- | --- |
-| <Sv>Finns det någon kyrka?</Sv> | <Sv>Nej, det finns ingen kyrka.</Sv> |
-| <Sv>Finns det något hav här?</Sv> | <Sv>Nej, det finns inget hav här.</Sv> |
-| <Sv>Har ni några lediga rum?</Sv> | <Sv>Nej, vi har inga lediga rum.</Sv> |
+| <span lang="sv">Finns det någon kyrka?</span> | <span lang="sv">Nej, det finns ingen kyrka.</span> |
+| <span lang="sv">Finns det något hav här?</span> | <span lang="sv">Nej, det finns inget hav här.</span> |
+| <span lang="sv">Har ni några lediga rum?</span> | <span lang="sv">Nej, vi har inga lediga rum.</span> |
 
 På tyska motsvaras det ofta av ”kein”, ”keine” eller ”nicht irgendein”:
 
@@ -90,20 +89,20 @@ På tyska motsvaras det ofta av ”kein”, ”keine” eller ”nicht irgendein
 
 ## När orden står ensamma
 
-<Sv>Någon</Sv> och <Sv>något</Sv> kan också stå ensamma. Då väljer du mellan
+<span lang="sv">Någon</span> och <span lang="sv">något</span> kan också stå ensamma. Då väljer du mellan
 person och sak:
 
 | Svenska | Betydelse | Exempel |
 | --- | --- | --- |
-| <Sv>någon</Sv> | en person | <Sv>Ska någon gå till spaavdelningen?</Sv> |
-| <Sv>något</Sv> | en sak | <Sv>Finns det något att äta?</Sv> |
-| <Sv>ingen</Sv> | ingen person | <Sv>Ingen behöver köpa ägg.</Sv> |
-| <Sv>inget</Sv> | ingen sak | <Sv>Jag förstår inget.</Sv> |
-| <Sv>några</Sv> | några personer eller saker | <Sv>Några kom tidigt.</Sv> |
-| <Sv>inga</Sv> | inga personer eller saker | <Sv>Inga kom för sent.</Sv> |
+| <span lang="sv">någon</span> | en person | <span lang="sv">Ska någon gå till spaavdelningen?</span> |
+| <span lang="sv">något</span> | en sak | <span lang="sv">Finns det något att äta?</span> |
+| <span lang="sv">ingen</span> | ingen person | <span lang="sv">Ingen behöver köpa ägg.</span> |
+| <span lang="sv">inget</span> | ingen sak | <span lang="sv">Jag förstår inget.</span> |
+| <span lang="sv">några</span> | några personer eller saker | <span lang="sv">Några kom tidigt.</span> |
+| <span lang="sv">inga</span> | inga personer eller saker | <span lang="sv">Inga kom för sent.</span> |
 
 Pluralformerna kan också ersätta ett underförstått pluralord:
-<Sv>Jag köpte några</Sv> och <Sv>Jag hittade inga</Sv>.
+<span lang="sv">Jag köpte några</span> och <span lang="sv">Jag hittade inga</span>.
 
 Jämför:
 
@@ -113,28 +112,28 @@ Jämför:
 
 ## Frågor och påståenden
 
-I frågor betyder <Sv>någon</Sv>, <Sv>något</Sv> och <Sv>några</Sv> ofta
+I frågor betyder <span lang="sv">någon</span>, <span lang="sv">något</span> och <span lang="sv">några</span> ofta
 ”vilken/vilket som helst” eller ”en del”:
 
-- <Sv>Finns det någon kyrka?</Sv>
-- <Sv>Finns det något hav här?</Sv>
-- <Sv>Har du några planer för semestern?</Sv>
+- <span lang="sv">Finns det någon kyrka?</span>
+- <span lang="sv">Finns det något hav här?</span>
+- <span lang="sv">Har du några planer för semestern?</span>
 
-I påståenden kan <Sv>några</Sv> också betyda ”ett par”:
+I påståenden kan <span lang="sv">några</span> också betyda ”ett par”:
 
-<Sv>Jag tar några tomater också.</Sv>
+<span lang="sv">Jag tar några tomater också.</span>
 
 <span lang="de">Ich nehme auch ein paar Tomaten.</span>
 
 ## Talspråksformer
 
-I vardagligt tal uttalas och skrivs <Sv>någon</Sv> ofta som <Sv>nån</Sv>.
-På samma sätt blir <Sv>något</Sv> ofta <Sv>nåt</Sv>.
+I vardagligt tal uttalas och skrivs <span lang="sv">någon</span> ofta som <span lang="sv">nån</span>.
+På samma sätt blir <span lang="sv">något</span> ofta <span lang="sv">nåt</span>.
 
 | Standardspråk | Informellt | Betydelse |
 | --- | --- | --- |
-| <Sv>någon</Sv> | <Sv>nån</Sv> | en person / ett <Sv>en</Sv>-ord |
-| <Sv>något</Sv> | <Sv>nåt</Sv> | en sak / ett <Sv>ett</Sv>-ord |
+| <span lang="sv">någon</span> | <span lang="sv">nån</span> | en person / ett <span lang="sv">en</span>-ord |
+| <span lang="sv">något</span> | <span lang="sv">nåt</span> | en sak / ett <span lang="sv">ett</span>-ord |
 
 Använd standardformerna i vårdad skrift om inte tonen medvetet ska vara ledig.
 
@@ -142,10 +141,10 @@ Använd standardformerna i vårdad skrift om inte tonen medvetet ska vara ledig.
 
 | Kontext | Välj efter | Använd |
 | --- | --- | --- |
-| Ett substantiv följer | <Sv>en</Sv>, <Sv>ett</Sv> eller plural | <Sv>någon</Sv> / <Sv>något</Sv> / <Sv>några</Sv> |
-| En negativ nominalfras följer | <Sv>en</Sv>, <Sv>ett</Sv> eller plural | <Sv>ingen</Sv> / <Sv>inget</Sv> / <Sv>inga</Sv> |
-| Inget substantiv följer | person, sak eller pluralgrupp | <Sv>någon</Sv> = en person, <Sv>något</Sv> = en sak, <Sv>några</Sv> = ett antal personer eller saker |
-| Negativt utan substantiv | person, sak eller pluralgrupp | <Sv>ingen</Sv> = ingen person, <Sv>inget</Sv> = ingen sak, <Sv>inga</Sv> = inga personer eller saker |
+| Ett substantiv följer | <span lang="sv">en</span>, <span lang="sv">ett</span> eller plural | <span lang="sv">någon</span> / <span lang="sv">något</span> / <span lang="sv">några</span> |
+| En negativ nominalfras följer | <span lang="sv">en</span>, <span lang="sv">ett</span> eller plural | <span lang="sv">ingen</span> / <span lang="sv">inget</span> / <span lang="sv">inga</span> |
+| Inget substantiv följer | person, sak eller pluralgrupp | <span lang="sv">någon</span> = en person, <span lang="sv">något</span> = en sak, <span lang="sv">några</span> = ett antal personer eller saker |
+| Negativt utan substantiv | person, sak eller pluralgrupp | <span lang="sv">ingen</span> = ingen person, <span lang="sv">inget</span> = ingen sak, <span lang="sv">inga</span> = inga personer eller saker |
 
 Den här sidan handlar om formerna och deras kongruens i nominalfrasen. För det
 större valet mellan satsnegation, negativ nominalfras och negativt adverb, se
@@ -154,14 +153,14 @@ större valet mellan satsnegation, negativ nominalfras och negativt adverb, se
 ## Vanliga misstag
 
 <MistakeBox title="Vanliga misstag">
-	- ❌ <Sv>något kyrka</Sv> ✅ <Sv>någon kyrka</Sv>
-	- ❌ <Sv>någon hav</Sv> ✅ <Sv>något hav</Sv>
-	- ❌ <Sv>ingen lediga rum</Sv> ✅ <Sv>inga lediga rum</Sv>
-	- ❌ Välj <Sv>någon</Sv> och <Sv>något</Sv> efter person eller sak när ett
-	  substantiv följer. Välj då efter <Sv>en</Sv>, <Sv>ett</Sv> eller plural.
+	- ❌ <span lang="sv">något kyrka</span> ✅ <span lang="sv">någon kyrka</span>
+	- ❌ <span lang="sv">någon hav</span> ✅ <span lang="sv">något hav</span>
+	- ❌ <span lang="sv">ingen lediga rum</span> ✅ <span lang="sv">inga lediga rum</span>
+	- ❌ Välj <span lang="sv">någon</span> och <span lang="sv">något</span> efter person eller sak när ett
+	  substantiv följer. Välj då efter <span lang="sv">en</span>, <span lang="sv">ett</span> eller plural.
 </MistakeBox>
 
-<MemoryTip title="Substantiv eller inget substantiv?">Följer ett substantiv, kontrollera <Sv>en</Sv>, <Sv>ett</Sv> eller plural. Följer inget, fråga efter person, sak eller pluralgrupp.</MemoryTip>
+<MemoryTip title="Substantiv eller inget substantiv?">Följer ett substantiv, kontrollera <span lang="sv">en</span>, <span lang="sv">ett</span> eller plural. Följer inget, fråga efter person, sak eller pluralgrupp.</MemoryTip>
 
 <QuickCheck items={[
 	{ prompt: 'Fyll i: Finns det ___ hav här? (hav är ett ett-ord)', answer: 'Finns det något hav här?' },

@@ -26,18 +26,17 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Ordinary two-part numbers put the ten before the unit and normally write the
-  parts as one word without <Sv>och</Sv>: <Sv>tjugoett</Sv>.
-- Standalone <Sv>en</Sv>/<Sv>ett</Sv> agrees with the noun. After tens, the
-  final 1 is normally <Sv>-en</Sv>; <Sv>-ett</Sv> survives in conventional
-  contexts such as <Sv>år</Sv>, <Sv>nummer</Sv>, <Sv>öre</Sv>, and clock
+  parts as one word without <span lang="sv">och</span>: <span lang="sv">tjugoett</span>.
+- Standalone <span lang="sv">en</span>/<span lang="sv">ett</span> agrees with the noun. After tens, the
+  final 1 is normally <span lang="sv">-en</span>; <span lang="sv">-ett</span> survives in conventional
+  contexts such as <span lang="sv">år</span>, <span lang="sv">nummer</span>, <span lang="sv">öre</span>, and clock
   readings.
 - In a compound ordinal only the last element becomes an ordinal:
-  <Sv>tjugoförsta</Sv>.
+  <span lang="sv">tjugoförsta</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -51,42 +50,42 @@ predictable pattern.
 | If you need to… | Use |
 | --- | --- |
 | count from 0 to 20 | memorize the base list |
-| build 21, 42, or 156 | ten before unit, no <Sv>och</Sv>: <Sv>tjugoett</Sv>, <Sv>fyrtiotvå</Sv>, <Sv>hundrafemtiosex</Sv> |
-| count one noun by itself | choose <Sv>en</Sv> or <Sv>ett</Sv> by noun gender |
-| build 21, 31, 41 before a noun | normally use final <Sv>-en</Sv>: <Sv>trettioen fartyg</Sv> |
-| use conventional t-word number contexts | use <Sv>-ett</Sv>: <Sv>tjugoett år</Sv>, <Sv>nummer tjugoett</Sv>, <Sv>tjugoett öre</Sv> |
-| write dates | use the ordinal after <Sv>den</Sv>: <Sv>den tredje maj</Sv> |
-| write decimals | use a comma: <Sv>3,5</Sv> |
+| build 21, 42, or 156 | ten before unit, no <span lang="sv">och</span>: <span lang="sv">tjugoett</span>, <span lang="sv">fyrtiotvå</span>, <span lang="sv">hundrafemtiosex</span> |
+| count one noun by itself | choose <span lang="sv">en</span> or <span lang="sv">ett</span> by noun gender |
+| build 21, 31, 41 before a noun | normally use final <span lang="sv">-en</span>: <span lang="sv">trettioen fartyg</span> |
+| use conventional t-word number contexts | use <span lang="sv">-ett</span>: <span lang="sv">tjugoett år</span>, <span lang="sv">nummer tjugoett</span>, <span lang="sv">tjugoett öre</span> |
+| write dates | use the ordinal after <span lang="sv">den</span>: <span lang="sv">den tredje maj</span> |
+| write decimals | use a comma: <span lang="sv">3,5</span> |
 
 ## Cardinal numbers
 
 | Number | Swedish | Number | Swedish |
 | --- | --- | --- | --- |
-| 0 | <Sv>noll</Sv> | 11 | <Sv>elva</Sv> |
-| 1 | <Sv>en / ett</Sv> | 12 | <Sv>tolv</Sv> |
-| 2 | <Sv>två</Sv> | 13 | <Sv>tretton</Sv> |
-| 3 | <Sv>tre</Sv> | 14 | <Sv>fjorton</Sv> |
-| 4 | <Sv>fyra</Sv> | 15 | <Sv>femton</Sv> |
-| 5 | <Sv>fem</Sv> | 16 | <Sv>sexton</Sv> |
-| 6 | <Sv>sex</Sv> | 17 | <Sv>sjutton</Sv> |
-| 7 | <Sv>sju</Sv> | 18 | <Sv>arton</Sv> |
-| 8 | <Sv>åtta</Sv> | 19 | <Sv>nitton</Sv> |
-| 9 | <Sv>nio</Sv> | 20 | <Sv>tjugo</Sv> |
-| 10 | <Sv>tio</Sv> | | |
+| 0 | <span lang="sv">noll</span> | 11 | <span lang="sv">elva</span> |
+| 1 | <span lang="sv">en / ett</span> | 12 | <span lang="sv">tolv</span> |
+| 2 | <span lang="sv">två</span> | 13 | <span lang="sv">tretton</span> |
+| 3 | <span lang="sv">tre</span> | 14 | <span lang="sv">fjorton</span> |
+| 4 | <span lang="sv">fyra</span> | 15 | <span lang="sv">femton</span> |
+| 5 | <span lang="sv">fem</span> | 16 | <span lang="sv">sexton</span> |
+| 6 | <span lang="sv">sex</span> | 17 | <span lang="sv">sjutton</span> |
+| 7 | <span lang="sv">sju</span> | 18 | <span lang="sv">arton</span> |
+| 8 | <span lang="sv">åtta</span> | 19 | <span lang="sv">nitton</span> |
+| 9 | <span lang="sv">nio</span> | 20 | <span lang="sv">tjugo</span> |
+| 10 | <span lang="sv">tio</span> | | |
 
-The tens are formed with <Sv>-tio</Sv>:
+The tens are formed with <span lang="sv">-tio</span>:
 
 | Number | Swedish | Number | Swedish |
 | --- | --- | --- | --- |
-| 30 | <Sv>trettio</Sv> | 70 | <Sv>sjuttio</Sv> |
-| 40 | <Sv>fyrtio</Sv> | 80 | <Sv>åttio</Sv> |
-| 50 | <Sv>femtio</Sv> | 90 | <Sv>nittio</Sv> |
-| 60 | <Sv>sextio</Sv> | 100 | <Sv>hundra</Sv> |
+| 30 | <span lang="sv">trettio</span> | 70 | <span lang="sv">sjuttio</span> |
+| 40 | <span lang="sv">fyrtio</span> | 80 | <span lang="sv">åttio</span> |
+| 50 | <span lang="sv">femtio</span> | 90 | <span lang="sv">nittio</span> |
+| 60 | <span lang="sv">sextio</span> | 100 | <span lang="sv">hundra</span> |
 
-Note the spelling <Sv>fyrtio</Sv> for 40, which does not follow
-<Sv>fyra</Sv>. Several number words also contain the sj- and
-tj-sounds: <Sv>sju</Sv>, <Sv>sjutton</Sv>,
-<Sv>sjuttio</Sv>, <Sv>tjugo</Sv>. See
+Note the spelling <span lang="sv">fyrtio</span> for 40, which does not follow
+<span lang="sv">fyra</span>. Several number words also contain the sj- and
+tj-sounds: <span lang="sv">sju</span>, <span lang="sv">sjutton</span>,
+<span lang="sv">sjuttio</span>, <span lang="sv">tjugo</span>. See
 [pronunciation basics](../../pronunciation-basics/).
 
 ## Building larger numbers
@@ -94,45 +93,45 @@ tj-sounds: <Sv>sju</Sv>, <Sv>sjutton</Sv>,
 Everyday compound numbers are assembled from the largest part down. Two-part
 and three-part compounds are normally written as one word:
 
-- 21 — <Sv>tjugoett</Sv>
-- 42 — <Sv>fyrtiotvå</Sv>
-- 156 — <Sv>hundrafemtiosex</Sv>
-- 3 000 — <Sv>tretusen</Sv>
+- 21 — <span lang="sv">tjugoett</span>
+- 42 — <span lang="sv">fyrtiotvå</span>
+- 156 — <span lang="sv">hundrafemtiosex</span>
+- 3 000 — <span lang="sv">tretusen</span>
 
 <RuleBox title="Swedish does not reverse the digits">
 	German says <span lang="de">einundzwanzig</span>, with the unit first.
 	Swedish, like English, says the ten first:
-	<Sv>tjugoett</Sv> — *twenty-one*. There is no
-	<Sv>och</Sv> between the parts.
+	<span lang="sv">tjugoett</span> — *twenty-one*. There is no
+	<span lang="sv">och</span> between the parts.
 </RuleBox>
 
-<Sv>Hundra</Sv> and <Sv>tusen</Sv> can stand alone
-or take <Sv>ett</Sv> for emphasis or clarity:
-<Sv>hundra kronor</Sv> or
-<Sv>etthundra kronor</Sv>.
+<span lang="sv">Hundra</span> and <span lang="sv">tusen</span> can stand alone
+or take <span lang="sv">ett</span> for emphasis or clarity:
+<span lang="sv">hundra kronor</span> or
+<span lang="sv">etthundra kronor</span>.
 
 ## en or ett for "one"
 
 By itself, the number 1 agrees with the gender of the noun it counts, exactly
 like the indefinite article:
 
-- <Sv>en bil</Sv> — one car
-- <Sv>ett hus</Sv> — one house
+- <span lang="sv">en bil</span> — one car
+- <span lang="sv">ett hus</span> — one house
 
-After a ten, however, the final 1 is normally <Sv>-en</Sv>, even before many
+After a ten, however, the final 1 is normally <span lang="sv">-en</span>, even before many
 ett-words:
 
-- <Sv>tjugoen kronor</Sv> — 21 kronor
-- <Sv>trettioen fartyg</Sv> — 31 vessels, even though <Sv>ett fartyg</Sv> is
+- <span lang="sv">tjugoen kronor</span> — 21 kronor
+- <span lang="sv">trettioen fartyg</span> — 31 vessels, even though <span lang="sv">ett fartyg</span> is
   an ett-word
 
-Use <Sv>-ett</Sv> in conventional t-word number contexts, especially
-<Sv>år</Sv>, <Sv>nummer</Sv>, <Sv>öre</Sv>, and clock readings:
+Use <span lang="sv">-ett</span> in conventional t-word number contexts, especially
+<span lang="sv">år</span>, <span lang="sv">nummer</span>, <span lang="sv">öre</span>, and clock readings:
 
-- <Sv>tjugoett år</Sv>
-- <Sv>nummer tjugoett</Sv>
-- <Sv>tjugoett öre</Sv>
-- <Sv>klockan tjugoett</Sv>
+- <span lang="sv">tjugoett år</span>
+- <span lang="sv">nummer tjugoett</span>
+- <span lang="sv">tjugoett öre</span>
+- <span lang="sv">klockan tjugoett</span>
 
 Every other number is uninflected. See
 [en / ett](../../grammar/nouns-articles/en-ett/) for noun gender.
@@ -141,85 +140,85 @@ Every other number is uninflected. See
 
 | Number | Swedish | Number | Swedish |
 | --- | --- | --- | --- |
-| 1st | <Sv>första</Sv> | 11th | <Sv>elfte</Sv> |
-| 2nd | <Sv>andra</Sv> | 12th | <Sv>tolfte</Sv> |
-| 3rd | <Sv>tredje</Sv> | 13th | <Sv>trettonde</Sv> |
-| 4th | <Sv>fjärde</Sv> | 14th | <Sv>fjortonde</Sv> |
-| 5th | <Sv>femte</Sv> | 15th | <Sv>femtonde</Sv> |
-| 6th | <Sv>sjätte</Sv> | 16th | <Sv>sextonde</Sv> |
-| 7th | <Sv>sjunde</Sv> | 17th | <Sv>sjuttonde</Sv> |
-| 8th | <Sv>åttonde</Sv> | 18th | <Sv>artonde</Sv> |
-| 9th | <Sv>nionde</Sv> | 19th | <Sv>nittonde</Sv> |
-| 10th | <Sv>tionde</Sv> | 20th | <Sv>tjugonde</Sv> |
+| 1st | <span lang="sv">första</span> | 11th | <span lang="sv">elfte</span> |
+| 2nd | <span lang="sv">andra</span> | 12th | <span lang="sv">tolfte</span> |
+| 3rd | <span lang="sv">tredje</span> | 13th | <span lang="sv">trettonde</span> |
+| 4th | <span lang="sv">fjärde</span> | 14th | <span lang="sv">fjortonde</span> |
+| 5th | <span lang="sv">femte</span> | 15th | <span lang="sv">femtonde</span> |
+| 6th | <span lang="sv">sjätte</span> | 16th | <span lang="sv">sextonde</span> |
+| 7th | <span lang="sv">sjunde</span> | 17th | <span lang="sv">sjuttonde</span> |
+| 8th | <span lang="sv">åttonde</span> | 18th | <span lang="sv">artonde</span> |
+| 9th | <span lang="sv">nionde</span> | 19th | <span lang="sv">nittonde</span> |
+| 10th | <span lang="sv">tionde</span> | 20th | <span lang="sv">tjugonde</span> |
 
 The first twelve are worth memorizing. From 13 to 19, Swedish usually adds
-<Sv>-de</Sv> to the cardinal number:
-<Sv>trettonde</Sv>, <Sv>fjortonde</Sv>,
-<Sv>nittonde</Sv>. Full tens have their own forms, such as
-<Sv>tjugo → tjugonde</Sv> and
-<Sv>trettio → trettionde</Sv>.
+<span lang="sv">-de</span> to the cardinal number:
+<span lang="sv">trettonde</span>, <span lang="sv">fjortonde</span>,
+<span lang="sv">nittonde</span>. Full tens have their own forms, such as
+<span lang="sv">tjugo → tjugonde</span> and
+<span lang="sv">trettio → trettionde</span>.
 
 In a compound ordinal, **only the last element** becomes an ordinal. If the
-final element is 1 or 2, use <Sv>första</Sv> or <Sv>andra</Sv>:
+final element is 1 or 2, use <span lang="sv">första</span> or <span lang="sv">andra</span>:
 
-- 21st — <Sv>tjugoförsta</Sv>
-- 42nd — <Sv>fyrtioandra</Sv>
-- 100th — <Sv>hundrade</Sv>
+- 21st — <span lang="sv">tjugoförsta</span>
+- 42nd — <span lang="sv">fyrtioandra</span>
+- 100th — <span lang="sv">hundrade</span>
 
 ## Ordinals in dates and writing
 
-Ordinals normally follow <Sv>den</Sv>:
+Ordinals normally follow <span lang="sv">den</span>:
 
-- <Sv>Vi ses den första maj.</Sv> — *We will meet on 1 May.*
-- <Sv>Det är hennes tredje bok.</Sv> — *It is her third book.*
+- <span lang="sv">Vi ses den första maj.</span> — *We will meet on 1 May.*
+- <span lang="sv">Det är hennes tredje bok.</span> — *It is her third book.*
 
 Written as digits, Swedish marks the ordinal with a colon plus the ending:
-<Sv>1:a</Sv> and <Sv>2:a</Sv> for the forms in
-<Sv>-a</Sv>, and <Sv>3:e</Sv>,
-<Sv>4:e</Sv>, <Sv>24:e</Sv> for the rest.
+<span lang="sv">1:a</span> and <span lang="sv">2:a</span> for the forms in
+<span lang="sv">-a</span>, and <span lang="sv">3:e</span>,
+<span lang="sv">4:e</span>, <span lang="sv">24:e</span> for the rest.
 
 ## Millions, billions, and decimals
 
-<Sv>Miljon</Sv> and <Sv>miljard</Sv> are nouns:
+<span lang="sv">Miljon</span> and <span lang="sv">miljard</span> are nouns:
 they take an article and a plural.
 
 | Value | Swedish | Plural |
 | --- | --- | --- |
-| 10⁶ | <Sv>en miljon</Sv> | <Sv>två miljoner</Sv> |
-| 10⁹ | <Sv>en miljard</Sv> | <Sv>två miljarder</Sv> |
-| 10¹² | <Sv>en biljon</Sv> | <Sv>två biljoner</Sv> |
+| 10⁶ | <span lang="sv">en miljon</span> | <span lang="sv">två miljoner</span> |
+| 10⁹ | <span lang="sv">en miljard</span> | <span lang="sv">två miljarder</span> |
+| 10¹² | <span lang="sv">en biljon</span> | <span lang="sv">två biljoner</span> |
 
 <MistakeBox title="A dangerous false friend">
-Swedish <Sv>en biljon</Sv> is 10¹², not a billion. English
-*billion* is <Sv>en miljard</Sv>. Swedish counts the way German
-does: <span lang="de">Milliarde</span> → <Sv>miljard</Sv>,
-<span lang="de">Billion</span> → <Sv>biljon</Sv>.
+Swedish <span lang="sv">en biljon</span> is 10¹², not a billion. English
+*billion* is <span lang="sv">en miljard</span>. Swedish counts the way German
+does: <span lang="de">Milliarde</span> → <span lang="sv">miljard</span>,
+<span lang="de">Billion</span> → <span lang="sv">biljon</span>.
 </MistakeBox>
 
 Like German, Swedish uses a **comma** as the decimal separator and a space to
-group thousands: <Sv>3,5</Sv> is read
-<Sv>tre komma fem</Sv>, and 10 000 is written with a space.
+group thousands: <span lang="sv">3,5</span> is read
+<span lang="sv">tre komma fem</span>, and 10 000 is written with a space.
 
 <MistakeBox title="Common mistakes">
-	- ❌ <Sv>ettochtjugo</Sv> — German digit order
-	  ✅ <Sv>tjugoett</Sv>
-	- ❌ <Sv>tjugo och ett</Sv>
-	  ✅ <Sv>tjugoett</Sv>
-	- ❌ <Sv>tjugoett kronor</Sv>
-	  ✅ <Sv>tjugoen kronor</Sv>
-	- ❌ <Sv>trettioett fartyg</Sv>
-	  ✅ <Sv>trettioen fartyg</Sv>
-	- ❌ <Sv>den 3:a maj</Sv>
-	  ✅ <Sv>den 3:e maj</Sv>
+	- ❌ <span lang="sv">ettochtjugo</span> — German digit order
+	  ✅ <span lang="sv">tjugoett</span>
+	- ❌ <span lang="sv">tjugo och ett</span>
+	  ✅ <span lang="sv">tjugoett</span>
+	- ❌ <span lang="sv">tjugoett kronor</span>
+	  ✅ <span lang="sv">tjugoen kronor</span>
+	- ❌ <span lang="sv">trettioett fartyg</span>
+	  ✅ <span lang="sv">trettioen fartyg</span>
+	- ❌ <span lang="sv">den 3:a maj</span>
+	  ✅ <span lang="sv">den 3:e maj</span>
 	- Do not make both parts of a compound ordinal an ordinal:
-	  <Sv>❌ fyrtiondeandra</Sv>,
-	  <Sv>✅ fyrtioandra</Sv>.
+	  <span lang="sv">❌ fyrtiondeandra</span>,
+	  <span lang="sv">✅ fyrtioandra</span>.
 </MistakeBox>
 
 <MemoryTip>
 Drill the numbers you actually need first: prices, house numbers, years, and
 your own phone number. Say them aloud in Swedish rhythm —
-<Sv>tjugoett, tjugotvå, tjugotre</Sv> — so the ten-before-unit
+<span lang="sv">tjugoett, tjugotvå, tjugotre</span> — so the ten-before-unit
 order becomes automatic instead of translated.
 </MemoryTip>
 

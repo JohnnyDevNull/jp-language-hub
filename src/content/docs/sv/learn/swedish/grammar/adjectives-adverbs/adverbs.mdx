@@ -29,7 +29,6 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => {
@@ -37,12 +36,12 @@ export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => 
 })();
 
 <KeyTakeaway>
-- Många sätt-adverb använder adjektivets <Sv>-t</Sv>-form, samma form som du
-  använder med ett ett-ord: <Sv>{snabb.morphology.ett}</Sv>.
+- Många sätt-adverb använder adjektivets <span lang="sv">-t</span>-form, samma form som du
+  använder med ett ett-ord: <span lang="sv">{snabb.morphology.ett}</span>.
 - Två grupper går inte att härleda utan måste läras utantill:
-  <Sv>gärna — hellre — helst</Sv> och riktnings-/lägesparen som
-  <Sv>hem / hemma</Sv>.
-- Många satsadverb följer samma placeringsmönster som <Sv>inte</Sv>;
+  <span lang="sv">gärna — hellre — helst</span> och riktnings-/lägesparen som
+  <span lang="sv">hem / hemma</span>.
+- Många satsadverb följer samma placeringsmönster som <span lang="sv">inte</span>;
   använd den egna ordföljdssidan när det handlar om position.
 </KeyTakeaway>
 
@@ -55,16 +54,16 @@ satsadverbens placering och paren som skiljer plats från riktning.
 ## Adverb av adjektiv
 
 <RuleBox title="Regel">
-	Många sätt-adverb använder adjektivets <Sv>-t</Sv>-form: samma form som
+	Många sätt-adverb använder adjektivets <span lang="sv">-t</span>-form: samma form som
 	du redan använder med ett ett-ord.
 </RuleBox>
 
 | Adjektiv | Adverb | Exempel |
 | --- | --- | --- |
-| <Sv>{snabb.morphology.en}</Sv> | <Sv>{snabb.morphology.ett}</Sv> | <Sv>Han springer snabbt.</Sv> |
-| <Sv>tydlig</Sv> | <Sv>tydligt</Sv> | <Sv>Hon talar tydligt.</Sv> |
-| <Sv>vacker</Sv> | <Sv>vackert</Sv> | <Sv>Hon sjunger vackert.</Sv> |
-| <Sv>försiktig</Sv> | <Sv>försiktigt</Sv> | <Sv>Kör försiktigt!</Sv> |
+| <span lang="sv">{snabb.morphology.en}</span> | <span lang="sv">{snabb.morphology.ett}</span> | <span lang="sv">Han springer snabbt.</span> |
+| <span lang="sv">tydlig</span> | <span lang="sv">tydligt</span> | <span lang="sv">Hon talar tydligt.</span> |
+| <span lang="sv">vacker</span> | <span lang="sv">vackert</span> | <span lang="sv">Hon sjunger vackert.</span> |
+| <span lang="sv">försiktig</span> | <span lang="sv">försiktigt</span> | <span lang="sv">Kör försiktigt!</span> |
 
 När ett adverb återanvänder ett-formen gäller samma stavningsmönster. Se
 [adjektivkongruens](../agreement/#stavningsmönster).
@@ -80,20 +79,20 @@ formen:
 
 | Adverb | Betydelse | Anmärkning |
 | --- | --- | --- |
-| <Sv>bra</Sv> | på ett bra sätt | även adjektivet bra: <Sv>Han sjunger bra.</Sv> |
-| <Sv>väl</Sv> | på ett gott sätt | snävare än <Sv>bra</Sv>: <Sv>väl gjort</Sv> |
-| <Sv>illa</Sv> | på ett dåligt sätt | <Sv>Han mår illa.</Sv> |
-| <Sv>gärna</Sv> | villigt, med glädje | inget adjektiv bakom sig |
-| <Sv>mycket</Sv> | väldigt | med adjektiv: <Sv>mycket bra</Sv> |
+| <span lang="sv">bra</span> | på ett bra sätt | även adjektivet bra: <span lang="sv">Han sjunger bra.</span> |
+| <span lang="sv">väl</span> | på ett gott sätt | snävare än <span lang="sv">bra</span>: <span lang="sv">väl gjort</span> |
+| <span lang="sv">illa</span> | på ett dåligt sätt | <span lang="sv">Han mår illa.</span> |
+| <span lang="sv">gärna</span> | villigt, med glädje | inget adjektiv bakom sig |
+| <span lang="sv">mycket</span> | väldigt | med adjektiv: <span lang="sv">mycket bra</span> |
 
-<Sv>Gärna</Sv> är värt att lära in som en hel uppsättning, eftersom dess
+<span lang="sv">Gärna</span> är värt att lära in som en hel uppsättning, eftersom dess
 komparation är oregelbunden och extremt vanlig i artigt tal:
 
 <p lang="sv">gärna → hellre → helst</p>
 
-- <Sv>Jag vill gärna komma.</Sv> — *en artig, mjukad önskan*
-- <Sv>Jag vill hellre stanna hemma.</Sv> — *ett milt föredragande*
-- <Sv>Jag vill helst åka på fredag.</Sv> — *den starkaste preferensen*
+- <span lang="sv">Jag vill gärna komma.</span> — *en artig, mjukad önskan*
+- <span lang="sv">Jag vill hellre stanna hemma.</span> — *ett milt föredragande*
+- <span lang="sv">Jag vill helst åka på fredag.</span> — *den starkaste preferensen*
 
 ## Komparation
 
@@ -105,12 +104,12 @@ De oregelbundna följer sina egna kedjor:
 
 | Adverb | Komparativ | Superlativ |
 | --- | --- | --- |
-| <Sv>bra / väl</Sv> | <Sv>bättre</Sv> | <Sv>bäst</Sv> |
-| <Sv>gärna</Sv> | <Sv>hellre</Sv> | <Sv>helst</Sv> |
-| <Sv>illa</Sv> | <Sv>värre</Sv> | <Sv>värst</Sv> |
+| <span lang="sv">bra / väl</span> | <span lang="sv">bättre</span> | <span lang="sv">bäst</span> |
+| <span lang="sv">gärna</span> | <span lang="sv">hellre</span> | <span lang="sv">helst</span> |
+| <span lang="sv">illa</span> | <span lang="sv">värre</span> | <span lang="sv">värst</span> |
 
-<Sv>Sämre</Sv> och <Sv>värre</Sv> ligger nära varandra i betydelse, men
-<Sv>sämre</Sv> lutar mot lägre kvalitet och <Sv>värre</Sv> mot större
+<span lang="sv">Sämre</span> och <span lang="sv">värre</span> ligger nära varandra i betydelse, men
+<span lang="sv">sämre</span> lutar mot lägre kvalitet och <span lang="sv">värre</span> mot större
 allvar. Gränsen är inte skarp, så lär dig dem i fraser. Se
 [adjektivets komparation](../adjective-comparison/).
 
@@ -122,39 +121,39 @@ som par:
 
 | Riktning | Läge | Exempel |
 | --- | --- | --- |
-| <Sv>hem</Sv> | <Sv>hemma</Sv> | <Sv>Jag går hem.</Sv> · <Sv>Jag är hemma.</Sv> |
-| <Sv>ut</Sv> | <Sv>ute</Sv> | <Sv>Vi går ut.</Sv> · <Sv>Vi är ute.</Sv> |
-| <Sv>in</Sv> | <Sv>inne</Sv> | <Sv>Kom in!</Sv> · <Sv>Hon är inne.</Sv> |
-| <Sv>upp</Sv> | <Sv>uppe</Sv> | <Sv>Han går upp.</Sv> · <Sv>Han är uppe.</Sv> |
-| <Sv>ner</Sv> | <Sv>nere</Sv> | <Sv>Gå ner!</Sv> · <Sv>Hon är nere.</Sv> |
-| <Sv>bort</Sv> | <Sv>borta</Sv> | <Sv>Han reste bort.</Sv> · <Sv>Han är borta.</Sv> |
-| <Sv>dit</Sv> | <Sv>där</Sv> | <Sv>Vi åker dit.</Sv> · <Sv>Vi är där.</Sv> |
+| <span lang="sv">hem</span> | <span lang="sv">hemma</span> | <span lang="sv">Jag går hem.</span> · <span lang="sv">Jag är hemma.</span> |
+| <span lang="sv">ut</span> | <span lang="sv">ute</span> | <span lang="sv">Vi går ut.</span> · <span lang="sv">Vi är ute.</span> |
+| <span lang="sv">in</span> | <span lang="sv">inne</span> | <span lang="sv">Kom in!</span> · <span lang="sv">Hon är inne.</span> |
+| <span lang="sv">upp</span> | <span lang="sv">uppe</span> | <span lang="sv">Han går upp.</span> · <span lang="sv">Han är uppe.</span> |
+| <span lang="sv">ner</span> | <span lang="sv">nere</span> | <span lang="sv">Gå ner!</span> · <span lang="sv">Hon är nere.</span> |
+| <span lang="sv">bort</span> | <span lang="sv">borta</span> | <span lang="sv">Han reste bort.</span> · <span lang="sv">Han är borta.</span> |
+| <span lang="sv">dit</span> | <span lang="sv">där</span> | <span lang="sv">Vi åker dit.</span> · <span lang="sv">Vi är där.</span> |
 
-Samma uppdelning går igen i frågeorden <Sv>vart</Sv> och <Sv>var</Sv>. Se
+Samma uppdelning går igen i frågeorden <span lang="sv">vart</span> och <span lang="sv">var</span>. Se
 [frågeord](../../questions-negation/question-words/).
 
 ## Var satsadverb står
 
-Många satsadverb, bland annat <Sv>alltid</Sv>, <Sv>aldrig</Sv> och
-<Sv>ofta</Sv>, följer samma placeringsmönster som <Sv>inte</Sv>: efter det
+Många satsadverb, bland annat <span lang="sv">alltid</span>, <span lang="sv">aldrig</span> och
+<span lang="sv">ofta</span>, följer samma placeringsmönster som <span lang="sv">inte</span>: efter det
 finita verbet i en huvudsats, före det i en bisats. Vissa adverb beter sig
 snävare, så använd ordföljdssidan när positionen är huvudfrågan.
 
-- <Sv>Hon kommer alltid sent.</Sv>
-- <Sv>…eftersom hon alltid kommer sent.</Sv>
+- <span lang="sv">Hon kommer alltid sent.</span>
+- <span lang="sv">…eftersom hon alltid kommer sent.</span>
 
 Se [Placering av *inte*](../../sentence-structure/inte-placement/).
 
 ## De små attitydorden
 
-<Sv>Ju</Sv>, <Sv>nog</Sv>, <Sv>väl</Sv> och <Sv>visst</Sv> tillför attityd
+<span lang="sv">Ju</span>, <span lang="sv">nog</span>, <span lang="sv">väl</span> och <span lang="sv">visst</span> tillför attityd
 snarare än information, ungefär som de tyska orden
 <span lang="de">ja</span>, <span lang="de">wohl</span> och
 <span lang="de">doch</span>:
 
-- <Sv>Det är ju sant.</Sv> — *något vi båda redan vet*
-- <Sv>Han kommer nog.</Sv> — *jag räknar med att han kommer*
-- <Sv>Du har väl gjort det?</Sv> — söker medhåll
+- <span lang="sv">Det är ju sant.</span> — *något vi båda redan vet*
+- <span lang="sv">Han kommer nog.</span> — *jag räknar med att han kommer*
+- <span lang="sv">Du har väl gjort det?</span> — söker medhåll
 
 De motstår en ren översättning och lärs bäst in genom sammanhang.
 Tysktalande har en fördel här, eftersom mekanismen är bekant för dem.
@@ -168,25 +167,25 @@ Tysktalande har en fördel här, eftersom mekanismen är bekant för dem.
 </LanguageComparison>
 
 <MistakeBox title="Vanliga misstag">
-	- ❌ <Sv>Han springer snabb.</Sv>
-	  ✅ <Sv>Han springer snabbt.</Sv>
-	- ❌ <Sv>Jag är hem.</Sv>
-	  ✅ <Sv>Jag är hemma.</Sv>
-	- ❌ <Sv>Jag går hemma.</Sv>
-	  ✅ <Sv>Jag går hem.</Sv>
-	- ❌ <Sv>Jag vill mer gärna stanna.</Sv>
-	  ✅ <Sv>Jag vill hellre stanna.</Sv>
-	- ❌ <Sv>…eftersom hon kommer alltid sent.</Sv>
-	  ✅ <Sv>…eftersom hon alltid kommer sent.</Sv>
+	- ❌ <span lang="sv">Han springer snabb.</span>
+	  ✅ <span lang="sv">Han springer snabbt.</span>
+	- ❌ <span lang="sv">Jag är hem.</span>
+	  ✅ <span lang="sv">Jag är hemma.</span>
+	- ❌ <span lang="sv">Jag går hemma.</span>
+	  ✅ <span lang="sv">Jag går hem.</span>
+	- ❌ <span lang="sv">Jag vill mer gärna stanna.</span>
+	  ✅ <span lang="sv">Jag vill hellre stanna.</span>
+	- ❌ <span lang="sv">…eftersom hon kommer alltid sent.</span>
+	  ✅ <span lang="sv">…eftersom hon alltid kommer sent.</span>
 </MistakeBox>
 
 <MemoryTip>
 Utgå från ett-formen för vanliga sätt-adverb: om du kan säga
-<Sv><strong>ett snabbt tåg</strong></Sv>, kan du säga
-<Sv><strong>han springer snabbt</strong></Sv>. Lägg sedan till de två
+<span lang="sv"><strong>ett snabbt tåg</strong></span>, kan du säga
+<span lang="sv"><strong>han springer snabbt</strong></span>. Lägg sedan till de två
 grupper som inte går att härleda:
-<Sv><strong>gärna — hellre — helst</strong></Sv> och
-<Sv><strong>hem / hemma</strong></Sv>.
+<span lang="sv"><strong>gärna — hellre — helst</strong></span> och
+<span lang="sv"><strong>hem / hemma</strong></span>.
 </MemoryTip>
 
 <QuickCheck

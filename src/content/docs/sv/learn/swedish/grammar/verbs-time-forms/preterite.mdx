@@ -26,7 +26,6 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 import VerbTable from '~/components/VerbTable.astro';
 
@@ -45,8 +44,8 @@ export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-sk
 <KeyTakeaway>
 - Preteritum är den normala tempusformen för en avslutad händelse, en
   händelsekedja och ett tillstånd i det förflutna.
-- Det är identiskt för alla subjekt: <Sv>jag arbetade</Sv>,
-  <Sv>de arbetade</Sv>.
+- Det är identiskt för alla subjekt: <span lang="sv">jag arbetade</span>,
+  <span lang="sv">de arbetade</span>.
 - Använd det så snart händelsen ligger i en avslutad tidsram i det förflutna;
   använd perfekt när det aktuella resultatet är det viktiga.
 </KeyTakeaway>
@@ -62,9 +61,9 @@ berättelser och beskrivningar av vad som hände då.
 Liksom alla finita verbformer i svenskan är preteritum identiskt för alla
 subjekt:
 
-- <Sv>Jag arbetade.</Sv>
-- <Sv>Hon arbetade.</Sv>
-- <Sv>De arbetade.</Sv>
+- <span lang="sv">Jag arbetade.</span>
+- <span lang="sv">Hon arbetade.</span>
+- <span lang="sv">De arbetade.</span>
 
 Formen beror på verbgruppen. Ett representativt verb per grupp:
 
@@ -76,8 +75,8 @@ Formen beror på verbgruppen. Ett representativt verb per grupp:
 	}))}
 />
 
-Grupp 1 lägger oftast till <Sv>-ade</Sv>, grupp 2 <Sv>-de</Sv> eller
-<Sv>-te</Sv>, och grupp 3 <Sv>-dde</Sv>. Formerna inom det konventionella
+Grupp 1 lägger oftast till <span lang="sv">-ade</span>, grupp 2 <span lang="sv">-de</span> eller
+<span lang="sv">-te</span>, och grupp 3 <span lang="sv">-dde</span>. Formerna inom det konventionella
 området för grupp 4 och de oregelbundna verben varierar; många starka verb
 ändrar stamvokalen, men det är ingen enhetlig ändelseregel. Se
 [verbgrupper](../../verb-patterns-voice/verb-groups/) för mönstren och deras
@@ -87,18 +86,18 @@ gränser.
 
 ### En avslutad händelse i det förflutna
 
-<Sv>Jag köpte boken i går.</Sv> — Boken köpte jag i går.
+<span lang="sv">Jag köpte boken i går.</span> — Boken köpte jag i går.
 
 ### En händelsekedja i det förflutna
 
-<Sv>Hon vaknade, åt frukost och gick till jobbet.</Sv>
+<span lang="sv">Hon vaknade, åt frukost och gick till jobbet.</span>
 
 De tre verben för berättelsen framåt: hon vaknade, åt frukost och gick till
 jobbet.
 
 ### Ett tillstånd eller en vana i det förflutna
 
-<Sv>När jag bodde i Göteborg cyklade jag till jobbet.</Sv>
+<span lang="sv">När jag bodde i Göteborg cyklade jag till jobbet.</span>
 
 Preteritum kan beskriva både upprepade handlingar och tillstånd i en
 avslutad period i det förflutna.
@@ -108,17 +107,17 @@ avslutad period i det förflutna.
 Använd preteritum när händelsen hör till en tydligt avslutad tidsram i det
 förflutna:
 
-<Sv>Jag såg filmen förra veckan.</Sv>
+<span lang="sv">Jag såg filmen förra veckan.</span>
 
 Använd perfekt när det aktuella resultatet eller erfarenheten är det
 centrala och händelsen inte placeras i en avslutad tidsram i det förflutna:
 
-<Sv>Jag har sett filmen.</Sv>
+<span lang="sv">Jag har sett filmen.</span>
 
 Den här skillnaden handlar om perspektiv, inte bara om att det finns ett
 tidsord. En pågående tidsperiod kan ändå tillåta perfekt:
 
-<Sv>Jag har druckit två koppar kaffe idag.</Sv>
+<span lang="sv">Jag har druckit två koppar kaffe idag.</span>
 
 ## Direkt jämförelse
 
@@ -141,10 +140,10 @@ genom att matcha den tyska ytformen.
 ## Vanliga misstag
 
 <MistakeBox title="Vanliga misstag">
-	- ❌ <Sv>Jag har köpt boken i går.</Sv>
-	  ✅ <Sv>Jag köpte boken i går.</Sv>
-	- ❌ <Sv>Hon köpade en bil.</Sv>
-	  ✅ <Sv>Hon köpte en bil.</Sv>
+	- ❌ <span lang="sv">Jag har köpt boken i går.</span>
+	  ✅ <span lang="sv">Jag köpte boken i går.</span>
+	- ❌ <span lang="sv">Hon köpade en bil.</span>
+	  ✅ <span lang="sv">Hon köpte en bil.</span>
 	- Bilda inte oregelbundna verb genom att lägga till en regelbunden
 	  ändelse. Lär dig deras preteritum och supinum tillsammans.
 </MistakeBox>

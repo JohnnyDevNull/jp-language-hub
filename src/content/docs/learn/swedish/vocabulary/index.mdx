@@ -24,7 +24,6 @@ related:
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import VocabularyCard from '~/components/VocabularyCard.astro';
 import { getCollection, getEntry } from 'astro:content';
 
@@ -62,7 +61,7 @@ export const starters = starterIds.map((id) => {
 
 <KeyTakeaway>
 - Record a Swedish noun with its article, never as a bare translation pair:
-  <Sv>en bil</Sv>, not just <Sv>bil</Sv> = "car".
+  <span lang="sv">en bil</span>, not just <span lang="sv">bil</span> = "car".
 - The article alone is not enough. Learn the four forms together —
   indefinite and definite singular, indefinite and definite plural.
 - The lemma's shape often gives clues to the plural, but it is not enough.
@@ -78,11 +77,11 @@ the nouns and phrase frames you need together.
 ## Core rule
 
 > A usable noun entry holds five things: the lemma, the gender
-> (<Sv>en</Sv> or <Sv>ett</Sv>), the definite singular, the indefinite plural
+> (<span lang="sv">en</span> or <span lang="sv">ett</span>), the definite singular, the indefinite plural
 > and the definite plural.
 
-<Sv>Ett hus</Sv> is neuter in Swedish and neuter in German, but <Sv>ett bord</Sv>
-is an <Sv>ett</Sv>-word while German <span lang="de">der Tisch</span> is
+<span lang="sv">Ett hus</span> is neuter in Swedish and neuter in German, but <span lang="sv">ett bord</span>
+is an <span lang="sv">ett</span>-word while German <span lang="de">der Tisch</span> is
 masculine. Copying the German gender fails often enough that it cannot be a
 strategy.
 
@@ -114,8 +113,8 @@ strategy.
 	]}
 />
 
-The two cards show the two halves of the system: an <Sv>en</Sv>-word taking
-<Sv>-ar</Sv> in the plural, and an <Sv>ett</Sv>-word taking <Sv>-n</Sv>.
+The two cards show the two halves of the system: an <span lang="sv">en</span>-word taking
+<span lang="sv">-ar</span> in the plural, and an <span lang="sv">ett</span>-word taking <span lang="sv">-n</span>.
 
 ## Starter words
 
@@ -148,9 +147,9 @@ Each one comes from the same entries as the cards above.
 </table>
 
 Read the plural column downwards and useful patterns begin to appear:
-<Sv>-ar</Sv> and <Sv>-or</Sv> and <Sv>-er</Sv> for <Sv>en</Sv>-words, and no
-ending at all for many one-syllable <Sv>ett</Sv>-words such as <Sv>hus</Sv>,
-<Sv>barn</Sv> and <Sv>bord</Sv>.
+<span lang="sv">-ar</span> and <span lang="sv">-or</span> and <span lang="sv">-er</span> for <span lang="sv">en</span>-words, and no
+ending at all for many one-syllable <span lang="sv">ett</span>-words such as <span lang="sv">hus</span>,
+<span lang="sv">barn</span> and <span lang="sv">bord</span>.
 
 ## Lookup pages
 

@@ -30,7 +30,6 @@ import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import SentenceSchema from '~/components/SentenceSchema.astro';
 import SpecialRule from '~/components/SpecialRule.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
@@ -84,7 +83,7 @@ One constituent may contain several words:
 
 <p lang="sv"><strong>Efter jobbet</strong> <strong>köper</strong> jag mat.</p>
 
-<Sv>Efter jobbet</Sv> is one adverbial constituent. The verb <Sv>köper</Sv> is
+<span lang="sv">Efter jobbet</span> is one adverbial constituent. The verb <span lang="sv">köper</span> is
 still in the second sentence position even though it is the third written word.
 
 ## Compound verb phrases
@@ -94,17 +93,17 @@ V2 applies to the **finite** verb, not to every verb in the clause:
 <p lang="sv">Idag <strong>vill</strong> jag köpa en bil.</p>
 <p lang="sv">Idag <strong>har</strong> jag köpt en bil.</p>
 
-The non-finite verbs <Sv>köpa</Sv> and <Sv>köpt</Sv> stay later in the clause.
+The non-finite verbs <span lang="sv">köpa</span> and <span lang="sv">köpt</span> stay later in the clause.
 
 ## What can occupy position one?
 
 Common choices include:
 
-- the subject: <Sv>Jag arbetar hemma idag.</Sv>
-- time: <Sv>Idag arbetar jag hemma.</Sv>
-- place: <Sv>Hemma arbetar jag bäst.</Sv>
-- an object: <Sv>Den boken har jag redan läst.</Sv>
-- a subordinate clause: <Sv>När jag är klar går jag hem.</Sv>
+- the subject: <span lang="sv">Jag arbetar hemma idag.</span>
+- time: <span lang="sv">Idag arbetar jag hemma.</span>
+- place: <span lang="sv">Hemma arbetar jag bäst.</span>
+- an object: <span lang="sv">Den boken har jag redan läst.</span>
+- a subordinate clause: <span lang="sv">När jag är klar går jag hem.</span>
 
 Changing position one changes the emphasis, not the V2 requirement.
 
@@ -138,7 +137,7 @@ fronting another constituent.
 <SpecialRule language="Swedish" title="Scope of V2">
 	V2 describes declarative **main clauses**. A subordinate clause has a
 	different internal pattern; in particular, sentence adverbs such as
-	<Sv>inte</Sv> normally come before the finite verb. See
+	<span lang="sv">inte</span> normally come before the finite verb. See
 	[Subordinate clauses](../subordinate-clauses/) for the whole pattern and
 	[BIFF](../biff/) for sentence-adverb placement.
 </SpecialRule>

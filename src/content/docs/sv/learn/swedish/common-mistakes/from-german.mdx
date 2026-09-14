@@ -30,15 +30,14 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Tysk genus förutsäger inte <Sv>en</Sv> eller <Sv>ett</Sv>; de två systemen är
+- Tysk genus förutsäger inte <span lang="sv">en</span> eller <span lang="sv">ett</span>; de två systemen är
   oberoende av varandra.
 - Svenskan böjer det predikativa adjektivet där tyskan lämnar det oböjt:
-  <Sv>Huset är stort.</Sv>
-- <Sv>inte</Sv> följer det finita verbet i en huvudsats, medan tyskans *nicht*
+  <span lang="sv">Huset är stort.</span>
+- <span lang="sv">inte</span> följer det finita verbet i en huvudsats, medan tyskans *nicht*
   vandrar mot slutet.
 </KeyTakeaway>
 
@@ -51,8 +50,8 @@ felet.
 ## Gissa en/ett utifrån tysk genus
 
 <MistakeBox incorrect="ett bok, en brev, en bord" correct="en bok, ett brev, ett bord" lang="sv">
-	*das Buch* heter <Sv>en bok</Sv>, *der Brief* heter <Sv>ett brev</Sv>, *der
-	Tisch* heter <Sv>ett bord</Sv>. Lär dig genuset tillsammans med substantivet
+	*das Buch* heter <span lang="sv">en bok</span>, *der Brief* heter <span lang="sv">ett brev</span>, *der
+	Tisch* heter <span lang="sv">ett bord</span>. Lär dig genuset tillsammans med substantivet
 	och använd ändelsesignalerna i stället för tyskan. Se
 	[en / ett](../../grammar/nouns-articles/en-ett/).
 </MistakeBox>
@@ -86,8 +85,8 @@ Se [adjektivkongruens](../../grammar/adjectives-adverbs/agreement/).
 	correct="Anna såg Erik och sin hund."
 	lang="sv"
 >
-	Använd <Sv>sin</Sv>, <Sv>sitt</Sv>, <Sv>sina</Sv> när ägaren är subjektet i
-	samma sats; <Sv>hans</Sv> och <Sv>hennes</Sv> pekar på någon annan. Tyskans
+	Använd <span lang="sv">sin</span>, <span lang="sv">sitt</span>, <span lang="sv">sina</span> när ägaren är subjektet i
+	samma sats; <span lang="sv">hans</span> och <span lang="sv">hennes</span> pekar på någon annan. Tyskans
 	*sein* täcker båda, så skillnaden måste göras medvetet. Se
 	[sin, sitt och sina](../../grammar/pronouns-roles/sin-sitt-sina/).
 </MistakeBox>
@@ -100,8 +99,8 @@ Se [adjektivkongruens](../../grammar/adjectives-adverbs/agreement/).
 	lang="sv"
 >
 	Tyskan skickar det finita verbet till slutet av bisatsen. Svenskan behåller
-	det finita verbet efter satsadverbial som <Sv>inte</Sv>: subjekt,
-	<Sv>inte</Sv>, finit verb, sedan resten. Se
+	det finita verbet efter satsadverbial som <span lang="sv">inte</span>: subjekt,
+	<span lang="sv">inte</span>, finit verb, sedan resten. Se
 	[BIFF](../../grammar/sentence-structure/biff/).
 </MistakeBox>
 
@@ -128,7 +127,7 @@ prepositioner eller artikelformer:
 </LanguageComparison>
 
 Personliga pronomen skiljer fortfarande mellan subjekts- och objektsroll:
-<Sv>med mig</Sv>, <Sv>till honom</Sv>, aldrig <Sv>med jag</Sv>. Se
+<span lang="sv">med mig</span>, <span lang="sv">till honom</span>, aldrig <span lang="sv">med jag</span>. Se
 [Personliga pronomen](../../grammar/pronouns-roles/personal-pronouns/) och
 [Ägande](../../grammar/nouns-articles/possession/) för de två riktade
 uppslagen.
@@ -136,7 +135,7 @@ uppslagen.
 ## Anta tyska verbpartiklar
 
 Tyska avskiljbara prefix vandrar till slutet av satsen. En lös svensk partikel
-stannar direkt efter verbet, och bara <Sv>inte</Sv> får komma emellan:
+stannar direkt efter verbet, och bara <span lang="sv">inte</span> får komma emellan:
 
 <LanguageComparison title="Lös partikel" languages={['de', 'sv']}>
 	<p slot="de">Ich stehe um sieben auf.</p>
@@ -153,11 +152,11 @@ Se [partikelverb](../../grammar/verb-patterns-voice/particle-verbs/).
 ## Sätta inte där nicht står på tyska
 
 <MistakeBox incorrect="Jag kommer idag inte." correct="Jag kommer inte idag." lang="sv">
-	I en huvudsats står <Sv>inte</Sv> direkt efter det finita verbet, före
+	I en huvudsats står <span lang="sv">inte</span> direkt efter det finita verbet, före
 	adverbial och de flesta objekt. Se
 	[placering av inte](../../grammar/sentence-structure/inte-placement/).
-	För *kein* använd <Sv>ingen</Sv>, <Sv>inget</Sv>, <Sv>inga</Sv>:
-	<Sv>Jag har ingen bil.</Sv>
+	För *kein* använd <span lang="sv">ingen</span>, <span lang="sv">inget</span>, <span lang="sv">inga</span>:
+	<span lang="sv">Jag har ingen bil.</span>
 </MistakeBox>
 
 <QuickCheck

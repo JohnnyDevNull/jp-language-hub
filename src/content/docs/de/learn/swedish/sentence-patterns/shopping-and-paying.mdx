@@ -24,15 +24,14 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Nutze <Sv>Jag letar efter …</Sv>, wenn du Hilfe beim Finden brauchst.
-- Nutze <Sv>Hur mycket kostar …?</Sv> für Preise und <Sv>Kan jag betala med kort?</Sv>
+- Nutze <span lang="sv">Jag letar efter …</span>, wenn du Hilfe beim Finden brauchst.
+- Nutze <span lang="sv">Hur mycket kostar …?</span> für Preise und <span lang="sv">Kan jag betala med kort?</span>
   bevor du bezahlst.
 - Schwedische Kassenfragen sind oft kurze feste Wendungen:
-  <Sv>Kvitto?</Sv>, <Sv>Påse?</Sv>, <Sv>Medlemskap?</Sv>
+  <span lang="sv">Kvitto?</span>, <span lang="sv">Påse?</span>, <span lang="sv">Medlemskap?</span>
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -45,36 +44,36 @@ Antworten, denn Kassierer fragen oft ohne einen vollständigen Satz.
 
 | Muster | Verwende es, wenn … | Register |
 | --- | --- | --- |
-| <Sv>Jag letar efter …</Sv> | du suchst etwas | neutral |
-| <Sv>Har ni …?</Sv> | fragen, ob der Laden es hat | neutral |
-| <Sv>Var finns …?</Sv> | fragen, wo etwas ist | neutral |
-| <Sv>Finns den i en annan storlek?</Sv> | nach einer anderen Größe fragen | neutral |
-| <Sv>Finns den i en annan färg?</Sv> | nach einer anderen Farbe fragen | neutral |
-| <Sv>Kan jag prova den?</Sv> | fragen, ob du es anprobieren kannst | neutral |
+| <span lang="sv">Jag letar efter …</span> | du suchst etwas | neutral |
+| <span lang="sv">Har ni …?</span> | fragen, ob der Laden es hat | neutral |
+| <span lang="sv">Var finns …?</span> | fragen, wo etwas ist | neutral |
+| <span lang="sv">Finns den i en annan storlek?</span> | nach einer anderen Größe fragen | neutral |
+| <span lang="sv">Finns den i en annan färg?</span> | nach einer anderen Farbe fragen | neutral |
+| <span lang="sv">Kan jag prova den?</span> | fragen, ob du es anprobieren kannst | neutral |
 
-Nutze <Sv>den</Sv> für einen Artikel mit <Sv>en</Sv>-Wort und <Sv>det</Sv> für
-einen Artikel mit <Sv>ett</Sv>-Wort. Wenn du das Genus noch nicht kennst, zeig
-darauf und nutze <Sv>den här</Sv> für "dieses hier" in der Alltagssprache.
+Nutze <span lang="sv">den</span> für einen Artikel mit <span lang="sv">en</span>-Wort und <span lang="sv">det</span> für
+einen Artikel mit <span lang="sv">ett</span>-Wort. Wenn du das Genus noch nicht kennst, zeig
+darauf und nutze <span lang="sv">den här</span> für "dieses hier" in der Alltagssprache.
 
 ## Wählen und bezahlen
 
 | Muster | Verwende es, wenn … | Register |
 | --- | --- | --- |
-| <Sv>Hur mycket kostar den?</Sv> | nach dem Preis eines Artikels fragen | neutral |
-| <Sv>Jag tar den här.</Sv> | dieses hier wählen | gesprochen |
-| <Sv>Det blir bra.</Sv> | das passt so | gesprochen |
-| <Sv>Kan jag betala med kort?</Sv> | fragen, ob du mit Karte zahlen kannst | neutral |
-| <Sv>Jag betalar med kort.</Sv> | sagen, wie du bezahlst | neutral |
-| <Sv>Kan jag få kvittot?</Sv> | nach der Quittung fragen | neutral |
+| <span lang="sv">Hur mycket kostar den?</span> | nach dem Preis eines Artikels fragen | neutral |
+| <span lang="sv">Jag tar den här.</span> | dieses hier wählen | gesprochen |
+| <span lang="sv">Det blir bra.</span> | das passt so | gesprochen |
+| <span lang="sv">Kan jag betala med kort?</span> | fragen, ob du mit Karte zahlen kannst | neutral |
+| <span lang="sv">Jag betalar med kort.</span> | sagen, wie du bezahlst | neutral |
+| <span lang="sv">Kan jag få kvittot?</span> | nach der Quittung fragen | neutral |
 
 ## Antworten an der Kasse
 
 | Wenn sie fragen | Antwort |
 | --- | --- |
-| <Sv>Kvitto?</Sv> | <Sv>Ja tack.</Sv> / <Sv>Nej tack.</Sv> |
-| <Sv>Påse?</Sv> | <Sv>Ja, en påse tack.</Sv> |
-| <Sv>Är det bra så?</Sv> | <Sv>Ja, det är bra.</Sv> |
-| <Sv>Medlemskap?</Sv> | <Sv>Nej, jag är inte medlem.</Sv> |
+| <span lang="sv">Kvitto?</span> | <span lang="sv">Ja tack.</span> / <span lang="sv">Nej tack.</span> |
+| <span lang="sv">Påse?</span> | <span lang="sv">Ja, en påse tack.</span> |
+| <span lang="sv">Är det bra så?</span> | <span lang="sv">Ja, det är bra.</span> |
+| <span lang="sv">Medlemskap?</span> | <span lang="sv">Nej, jag är inte medlem.</span> |
 
 ## Mini-Kassengespräch
 
@@ -96,7 +95,7 @@ darauf und nutze <Sv>den här</Sv> für "dieses hier" in der Alltagssprache.
 	<p slot="sv">Jag letar efter en laddare.</p>
 </LanguageComparison>
 
-Das schwedische Muster ist <Sv>leta efter</Sv>, keine direkte
+Das schwedische Muster ist <span lang="sv">leta efter</span>, keine direkte
 Wort-für-Wort-Kopie des deutschen <span lang="de">suchen</span> oder des
 englischen "look for".
 

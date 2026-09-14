@@ -28,21 +28,20 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Wähle <Sv>den</Sv> für ein en-Wort und <Sv>det</Sv> für ein ett-Wort; ergänze
-  dann <Sv>här</Sv> für Nähe und <Sv>där</Sv> für Entfernung.
-- Das Nomen nach <Sv>den här</Sv> und <Sv>den där</Sv> steht bestimmt:
-  <Sv>den här nyckeln</Sv>.
-- Das formelle <Sv>denna</Sv>, <Sv>detta</Sv> und <Sv>dessa</Sv> lässt das Nomen
-  unbestimmt: <Sv>denna bok</Sv>.
+- Wähle <span lang="sv">den</span> für ein en-Wort und <span lang="sv">det</span> für ein ett-Wort; ergänze
+  dann <span lang="sv">här</span> für Nähe und <span lang="sv">där</span> für Entfernung.
+- Das Nomen nach <span lang="sv">den här</span> und <span lang="sv">den där</span> steht bestimmt:
+  <span lang="sv">den här nyckeln</span>.
+- Das formelle <span lang="sv">denna</span>, <span lang="sv">detta</span> und <span lang="sv">dessa</span> lässt das Nomen
+  unbestimmt: <span lang="sv">denna bok</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Schwedisch verwendet <Sv>här</Sv> und <Sv>där</Sv> oft mit Demonstrativa, um
+Schwedisch verwendet <span lang="sv">här</span> und <span lang="sv">där</span> oft mit Demonstrativa, um
 „dies hier“ von „das dort“ zu unterscheiden. Die Form vor dem Nomen richtet sich
 nach dessen Geschlecht.
 
@@ -50,34 +49,34 @@ nach dessen Geschlecht.
 
 | Entfernung | en-Wort | ett-Wort |
 | --- | --- | --- |
-| nah beim Sprecher | <Sv>den här jackan</Sv> | <Sv>det här paraplyet</Sv> |
-| weiter entfernt | <Sv>den där cykeln</Sv> | <Sv>det där biblioteket</Sv> |
+| nah beim Sprecher | <span lang="sv">den här jackan</span> | <span lang="sv">det här paraplyet</span> |
+| weiter entfernt | <span lang="sv">den där cykeln</span> | <span lang="sv">det där biblioteket</span> |
 
-Verwende <Sv>den</Sv> mit en-Wörtern und <Sv>det</Sv> mit ett-Wörtern:
+Verwende <span lang="sv">den</span> mit en-Wörtern und <span lang="sv">det</span> mit ett-Wörtern:
 
-- <Sv>den här nyckeln</Sv> — dieser Schlüssel hier
-- <Sv>det här mejlet</Sv> — diese E-Mail hier
-- <Sv>den där cykeln</Sv> — dieses Fahrrad dort
-- <Sv>det där biblioteket</Sv> — diese Bibliothek dort
+- <span lang="sv">den här nyckeln</span> — dieser Schlüssel hier
+- <span lang="sv">det här mejlet</span> — diese E-Mail hier
+- <span lang="sv">den där cykeln</span> — dieses Fahrrad dort
+- <span lang="sv">det där biblioteket</span> — diese Bibliothek dort
 
 ## Das Nomen steht bestimmt
 
-Nach <Sv>den här</Sv>, <Sv>det här</Sv>, <Sv>den där</Sv> und <Sv>det där</Sv>
+Nach <span lang="sv">den här</span>, <span lang="sv">det här</span>, <span lang="sv">den där</span> und <span lang="sv">det där</span>
 steht das Nomen normalerweise in der bestimmten Form:
 
 | Unbestimmt | Demonstrativphrase |
 | --- | --- |
-| <Sv>en nyckel</Sv> | <Sv>den här nyckeln</Sv> |
-| <Sv>ett paraply</Sv> | <Sv>det här paraplyet</Sv> |
-| <Sv>en cykel</Sv> | <Sv>den där cykeln</Sv> |
-| <Sv>ett bibliotek</Sv> | <Sv>det där biblioteket</Sv> |
+| <span lang="sv">en nyckel</span> | <span lang="sv">den här nyckeln</span> |
+| <span lang="sv">ett paraply</span> | <span lang="sv">det här paraplyet</span> |
+| <span lang="sv">en cykel</span> | <span lang="sv">den där cykeln</span> |
+| <span lang="sv">ett bibliotek</span> | <span lang="sv">det där biblioteket</span> |
 
 Das ist ein Grund, die vier Nomenformen früh zu lernen.
 
 ## Allein stehend
 
 Wenn das Nomen nicht direkt nach dem Demonstrativum steht, verwendet Schwedisch
-normalerweise <Sv>det här</Sv> oder <Sv>det där</Sv> als allgemeines „dies“ oder
+normalerweise <span lang="sv">det här</span> oder <span lang="sv">det där</span> als allgemeines „dies“ oder
 „das“:
 
 <LanguageComparison title="Das hier">
@@ -92,8 +91,8 @@ normalerweise <Sv>det här</Sv> oder <Sv>det där</Sv> als allgemeines „dies�
 	<p slot="sv">Det där är vår buss.</p>
 </LanguageComparison>
 
-In <Sv>Det här är min plats</Sv> ist das Demonstrativum nicht an die Nominalphrase
-<Sv>min plats</Sv> gebunden. Es verweist auf die Situation als „dies“.
+In <span lang="sv">Det här är min plats</span> ist das Demonstrativum nicht an die Nominalphrase
+<span lang="sv">min plats</span> gebunden. Es verweist auf die Situation als „dies“.
 
 ## Mit Adjektiven
 
@@ -102,15 +101,15 @@ bestimmte Adjektivform; das Nomen bleibt ebenfalls bestimmt:
 
 | Phrase | Muster |
 | --- | --- |
-| <Sv>den här varma jackan</Sv> | <Sv>den här</Sv> + bestimmtes Adjektiv + bestimmtes Nomen |
-| <Sv>det där nya biblioteket</Sv> | <Sv>det där</Sv> + bestimmtes Adjektiv + bestimmtes Nomen |
+| <span lang="sv">den här varma jackan</span> | <span lang="sv">den här</span> + bestimmtes Adjektiv + bestimmtes Nomen |
+| <span lang="sv">det där nya biblioteket</span> | <span lang="sv">det där</span> + bestimmtes Adjektiv + bestimmtes Nomen |
 
 Das hängt eng mit der [doppelten Bestimmtheit](../../adjectives-adverbs/agreement/#bestimmte-nominalphrasen-und-doppelte-bestimmtheit) zusammen.
 
 ## Die formelle Alternative: denna, detta, dessa
 
-<Sv>Denna</Sv>, <Sv>detta</Sv> und <Sv>dessa</Sv> bedeuten dasselbe wie
-<Sv>den här</Sv>, <Sv>det här</Sv> und <Sv>de här</Sv>, gehören aber zum
+<span lang="sv">Denna</span>, <span lang="sv">detta</span> und <span lang="sv">dessa</span> bedeuten dasselbe wie
+<span lang="sv">den här</span>, <span lang="sv">det här</span> und <span lang="sv">de här</span>, gehören aber zum
 geschriebenen und formellen Schwedisch: Berichte, Bekanntmachungen, Verträge,
 wissenschaftliche Texte.
 
@@ -119,52 +118,52 @@ Sie verhalten sich in einem wichtigen Punkt anders: Das Nomen danach bleibt
 
 | Alltagssprache | Formell |
 | --- | --- |
-| <Sv>den här boken</Sv> | <Sv>denna bok</Sv> |
-| <Sv>det här huset</Sv> | <Sv>detta hus</Sv> |
-| <Sv>de här böckerna</Sv> | <Sv>dessa böcker</Sv> |
+| <span lang="sv">den här boken</span> | <span lang="sv">denna bok</span> |
+| <span lang="sv">det här huset</span> | <span lang="sv">detta hus</span> |
+| <span lang="sv">de här böckerna</span> | <span lang="sv">dessa böcker</span> |
 
-- <Sv>Denna fråga är viktig.</Sv> — *Diese Frage ist wichtig.*
-- <Sv>Detta beslut gäller från januari.</Sv>
+- <span lang="sv">Denna fråga är viktig.</span> — *Diese Frage ist wichtig.*
+- <span lang="sv">Detta beslut gäller från januari.</span>
 
 Ein dazwischenstehendes Adjektiv erhält wie immer die bestimmte Form auf
-<Sv>-a</Sv>: <Sv>denna viktiga fråga</Sv>.
+<span lang="sv">-a</span>: <span lang="sv">denna viktiga fråga</span>.
 
-Bei einem männlichen Bezug hat das formelle Schwedisch auch <Sv>denne</Sv>:
-<Sv>denne författare</Sv>. Wie das männliche <Sv>-e</Sv> bei Adjektiven sollte
+Bei einem männlichen Bezug hat das formelle Schwedisch auch <span lang="sv">denne</span>:
+<span lang="sv">denne författare</span>. Wie das männliche <span lang="sv">-e</span> bei Adjektiven sollte
 man diese Form erkennen, aber nicht aktiv verwenden müssen.
 
 <RuleBox title="Welche Form?">
-	Verwende beim Sprechen und im Alltagstext <Sv>den här</Sv> mit einem
-	bestimmten Nomen. Greife nur im formellen Schreiben zu <Sv>denna</Sv>
+	Verwende beim Sprechen und im Alltagstext <span lang="sv">den här</span> mit einem
+	bestimmten Nomen. Greife nur im formellen Schreiben zu <span lang="sv">denna</span>
 	— und lass das Nomen dann unbestimmt.
 </RuleBox>
 
 ## Zeigen, fragen und zusammengesetzte Adverbien trennen
 
-Diese Seite behandelt demonstrative Nominalphrasen wie <Sv>den här boken</Sv> und
-<Sv>det där huset</Sv>. Verwende [Fragewörter](../../questions-negation/question-words/)
-für <Sv>vilken, vilket, vilka</Sv> bei der Frage „welcher?“, und
+Diese Seite behandelt demonstrative Nominalphrasen wie <span lang="sv">den här boken</span> und
+<span lang="sv">det där huset</span>. Verwende [Fragewörter](../../questions-negation/question-words/)
+für <span lang="sv">vilken, vilket, vilka</span> bei der Frage „welcher?“, und
 [*där-* und *här*-Adverbien](../../prepositions-function-words/dar-har-adverbs/)
-für Zusammensetzungen wie <Sv>därför</Sv> und <Sv>härmed</Sv>.
+für Zusammensetzungen wie <span lang="sv">därför</span> und <span lang="sv">härmed</span>.
 
 <MistakeBox title="Typische Fehler">
-	- ❌ <Sv>den här nyckel</Sv>
-	  ✅ <Sv>den här nyckeln</Sv>
-	- ❌ <Sv>det här jackan</Sv>
-	  ✅ <Sv>den här jackan</Sv>
-	- ❌ <Sv>den här varm jackan</Sv>
-	  ✅ <Sv>den här varma jackan</Sv>
-	- ❌ <Sv>denna boken</Sv>
-	  ✅ <Sv>denna bok</Sv> — das Nomen bleibt nach <Sv>denna</Sv>
+	- ❌ <span lang="sv">den här nyckel</span>
+	  ✅ <span lang="sv">den här nyckeln</span>
+	- ❌ <span lang="sv">det här jackan</span>
+	  ✅ <span lang="sv">den här jackan</span>
+	- ❌ <span lang="sv">den här varm jackan</span>
+	  ✅ <span lang="sv">den här varma jackan</span>
+	- ❌ <span lang="sv">denna boken</span>
+	  ✅ <span lang="sv">denna bok</span> — das Nomen bleibt nach <span lang="sv">denna</span>
 	  unbestimmt
-	- ❌ <Sv>detta bok</Sv>
-	  ✅ <Sv>denna bok</Sv> — <Sv>bok</Sv> ist ein en-Wort
+	- ❌ <span lang="sv">detta bok</span>
+	  ✅ <span lang="sv">denna bok</span> — <span lang="sv">bok</span> ist ein en-Wort
 </MistakeBox>
 
 <MemoryTip>
-Wähle zuerst <Sv>den</Sv> oder <Sv>det</Sv> nach dem Geschlecht des Nomens.
+Wähle zuerst <span lang="sv">den</span> oder <span lang="sv">det</span> nach dem Geschlecht des Nomens.
 Verwende dann dessen bestimmte Form:
-<Sv><strong>en nyckel → den här nyckeln</strong></Sv>.
+<span lang="sv"><strong>en nyckel → den här nyckeln</strong></span>.
 </MemoryTip>
 
 <QuickCheck

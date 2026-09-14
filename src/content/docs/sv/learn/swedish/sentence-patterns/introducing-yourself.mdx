@@ -24,15 +24,14 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Använd <Sv>Jag heter ...</Sv> som den normala första meningen; den betyder
+- Använd <span lang="sv">Jag heter ...</span> som den normala första meningen; den betyder
   "jag kallas", inte bokstavligen "jag namnger".
-- Använd <Sv>kommer från</Sv> för ursprung och <Sv>bor i</Sv> för var du bor nu.
-- Fråga tillbaka med samma ram: <Sv>Vad heter du?</Sv>,
-  <Sv>Var kommer du ifrån?</Sv>, <Sv>Vad gör du?</Sv>
+- Använd <span lang="sv">kommer från</span> för ursprung och <span lang="sv">bor i</span> för var du bor nu.
+- Fråga tillbaka med samma ram: <span lang="sv">Vad heter du?</span>,
+  <span lang="sv">Var kommer du ifrån?</span>, <span lang="sv">Vad gör du?</span>
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -44,39 +43,39 @@ skäl till att du är här och en fråga tillbaka.
 
 | Mönster | Använd det för | Exempel |
 | --- | --- | --- |
-| <Sv>Hej, jag heter ...</Sv> | öppna med ditt namn | <Sv>Hej, jag heter Philipp.</Sv> |
-| <Sv>Jag kommer från ...</Sv> | land, stad, bakgrund | <Sv>Jag kommer från Tyskland.</Sv> |
-| <Sv>Jag bor i ...</Sv> | var du bor nu | <Sv>Jag bor i Stockholm.</Sv> |
-| <Sv>Jag jobbar som ...</Sv> | yrkesroll | <Sv>Jag jobbar som utvecklare.</Sv> |
-| <Sv>Jag pluggar ...</Sv> | ämne du studerar | <Sv>Jag pluggar svenska.</Sv> |
-| <Sv>Jag lär mig svenska.</Sv> | varför du talar långsamt | <Sv>Jag lär mig svenska.</Sv> |
-| <Sv>Trevligt att träffas.</Sv> | hälsningsfras vid en första träff | <Sv>Trevligt att träffas!</Sv> |
+| <span lang="sv">Hej, jag heter ...</span> | öppna med ditt namn | <span lang="sv">Hej, jag heter Philipp.</span> |
+| <span lang="sv">Jag kommer från ...</span> | land, stad, bakgrund | <span lang="sv">Jag kommer från Tyskland.</span> |
+| <span lang="sv">Jag bor i ...</span> | var du bor nu | <span lang="sv">Jag bor i Stockholm.</span> |
+| <span lang="sv">Jag jobbar som ...</span> | yrkesroll | <span lang="sv">Jag jobbar som utvecklare.</span> |
+| <span lang="sv">Jag pluggar ...</span> | ämne du studerar | <span lang="sv">Jag pluggar svenska.</span> |
+| <span lang="sv">Jag lär mig svenska.</span> | varför du talar långsamt | <span lang="sv">Jag lär mig svenska.</span> |
+| <span lang="sv">Trevligt att träffas.</span> | hälsningsfras vid en första träff | <span lang="sv">Trevligt att träffas!</span> |
 
 ## Fråga tillbaka
 
 | Fråga | Vad den frågar om | Naturligt svar |
 | --- | --- | --- |
-| <Sv>Vad heter du?</Sv> | namn | <Sv>Jag heter Anna.</Sv> |
-| <Sv>Var kommer du ifrån?</Sv> | ursprung | <Sv>Jag kommer från Malmö.</Sv> |
-| <Sv>Var bor du?</Sv> | var du bor nu | <Sv>Jag bor i Uppsala.</Sv> |
-| <Sv>Vad gör du?</Sv> | arbete eller studier, i kontext | <Sv>Jag pluggar.</Sv> |
-| <Sv>Hur länge har du bott här?</Sv> | hur länge du har bott här | <Sv>I två år.</Sv> |
+| <span lang="sv">Vad heter du?</span> | namn | <span lang="sv">Jag heter Anna.</span> |
+| <span lang="sv">Var kommer du ifrån?</span> | ursprung | <span lang="sv">Jag kommer från Malmö.</span> |
+| <span lang="sv">Var bor du?</span> | var du bor nu | <span lang="sv">Jag bor i Uppsala.</span> |
+| <span lang="sv">Vad gör du?</span> | arbete eller studier, i kontext | <span lang="sv">Jag pluggar.</span> |
+| <span lang="sv">Hur länge har du bott här?</span> | hur länge du har bott här | <span lang="sv">I två år.</span> |
 
-Med städer och länder är <Sv>i</Sv> det säkra tidiga mönstret:
-<Sv>i Sverige</Sv>, <Sv>i Stockholm</Sv>, <Sv>i Tyskland</Sv>. Gatunamn och
-vissa institutioner använder ofta <Sv>på</Sv>, men spara det till
+Med städer och länder är <span lang="sv">i</span> det säkra tidiga mönstret:
+<span lang="sv">i Sverige</span>, <span lang="sv">i Stockholm</span>, <span lang="sv">i Tyskland</span>. Gatunamn och
+vissa institutioner använder ofta <span lang="sv">på</span>, men spara det till
 prepositionssidan.
 
 ## Minisekvens
 
 | Talare | Svenska |
 | --- | --- |
-| A | <Sv>Hej, jag heter Anna. Vad heter du?</Sv> |
-| B | <Sv>Jag heter Philipp. Trevligt att träffas.</Sv> |
-| A | <Sv>Trevligt! Var kommer du ifrån?</Sv> |
-| B | <Sv>Jag kommer från Tyskland, men jag bor i Stockholm.</Sv> |
-| A | <Sv>Vad gör du?</Sv> |
-| B | <Sv>Jag jobbar som utvecklare och jag lär mig svenska.</Sv> |
+| A | <span lang="sv">Hej, jag heter Anna. Vad heter du?</span> |
+| B | <span lang="sv">Jag heter Philipp. Trevligt att träffas.</span> |
+| A | <span lang="sv">Trevligt! Var kommer du ifrån?</span> |
+| B | <span lang="sv">Jag kommer från Tyskland, men jag bor i Stockholm.</span> |
+| A | <span lang="sv">Vad gör du?</span> |
+| B | <span lang="sv">Jag jobbar som utvecklare och jag lär mig svenska.</span> |
 
 ## Direkt jämförelse
 
@@ -86,7 +85,7 @@ prepositionssidan.
 	<p slot="sv">Jag heter Philipp.</p>
 </LanguageComparison>
 
-Tyska är den bättre bron här: <span lang="de">heißen</span> och <Sv>heta</Sv>
+Tyska är den bättre bron här: <span lang="de">heißen</span> och <span lang="sv">heta</span>
 beter sig båda som "kallas". Engelska lockar dig mot en nominalfras, men den
 vardagliga svenska meningen är verbmönstret.
 

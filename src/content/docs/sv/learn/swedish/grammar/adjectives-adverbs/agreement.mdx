@@ -30,7 +30,6 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 export const stor = (await getEntry('adjectives', 'sv-stor'))?.data ?? (() => {
@@ -44,11 +43,11 @@ export const glad = (await getEntry('adjectives', 'sv-glad'))?.data ?? (() => {
 })();
 
 <KeyTakeaway>
-- Det obestämda mönstret är grundform, <Sv>-t</Sv>, <Sv>-a</Sv>:
-  <Sv>en stor bil</Sv>, <Sv>ett stort hus</Sv>, <Sv>stora bilar</Sv>.
+- Det obestämda mönstret är grundform, <span lang="sv">-t</span>, <span lang="sv">-a</span>:
+  <span lang="sv">en stor bil</span>, <span lang="sv">ett stort hus</span>, <span lang="sv">stora bilar</span>.
 - Pluralformen är samma för en-ord och ett-ord.
 - En bestämd nominalfras markerar bestämdhet två gånger: artikel plus
-  bestämt adjektiv plus bestämt substantiv — <Sv>den stora bilen</Sv>.
+  bestämt adjektiv plus bestämt substantiv — <span lang="sv">den stora bilen</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -65,38 +64,38 @@ bygger:
 
 | Fråga | Använd | Exempel |
 | --- | --- | --- |
-| Är det ett obestämt en-ord? | grundform | <Sv>en stor bil</Sv> |
-| Är det ett obestämt ett-ord? | oftast lägg till <Sv>-t</Sv> | <Sv>ett stort hus</Sv> |
-| Är det plural? | oftast lägg till <Sv>-a</Sv> | <Sv>stora bilar</Sv>, <Sv>stora hus</Sv> |
-| Är det en bestämd nominalfras? | artikel + <Sv>-a</Sv>-adjektiv + bestämt substantiv | <Sv>den stora bilen</Sv>, <Sv>det stora huset</Sv> |
+| Är det ett obestämt en-ord? | grundform | <span lang="sv">en stor bil</span> |
+| Är det ett obestämt ett-ord? | oftast lägg till <span lang="sv">-t</span> | <span lang="sv">ett stort hus</span> |
+| Är det plural? | oftast lägg till <span lang="sv">-a</span> | <span lang="sv">stora bilar</span>, <span lang="sv">stora hus</span> |
+| Är det en bestämd nominalfras? | artikel + <span lang="sv">-a</span>-adjektiv + bestämt substantiv | <span lang="sv">den stora bilen</span>, <span lang="sv">det stora huset</span> |
 
 Kontrollera sedan om ett av de vanliga undantagen gäller:
 
 - Vissa adjektiv ändrar stavning framför en ändelse:
-  <Sv>röd → rött → röda</Sv>, <Sv>öppen → öppet → öppna</Sv>.
+  <span lang="sv">röd → rött → röda</span>, <span lang="sv">öppen → öppet → öppna</span>.
 - Vissa vanliga adjektiv är oregelbundna eller oböjliga:
-  <Sv>liten → litet → små</Sv>, men <Sv>bra → bra → bra</Sv>.
-- Efter verb som <Sv>vara</Sv> och <Sv>bli</Sv> kongruerar adjektivet med
+  <span lang="sv">liten → litet → små</span>, men <span lang="sv">bra → bra → bra</span>.
+- Efter verb som <span lang="sv">vara</span> och <span lang="sv">bli</span> kongruerar adjektivet med
   subjektets genus eller numerus, men utan dubbel bestämdhet:
-  <Sv>Huset är stort.</Sv>
+  <span lang="sv">Huset är stort.</span>
 
 Är du osäker, bygg hela nominalfrasen först:
-<Sv>en stor bil</Sv>, <Sv>ett stort hus</Sv>,
-<Sv>stora bilar</Sv>, <Sv>den stora bilen</Sv>.
+<span lang="sv">en stor bil</span>, <span lang="sv">ett stort hus</span>,
+<span lang="sv">stora bilar</span>, <span lang="sv">den stora bilen</span>.
 
 ## Kärnmönster
 
 | Nominalfras | Adjektivform | Exempel |
 | --- | --- | --- |
-| obestämd en-singular | grundform | <Sv>en <strong>{stor.morphology.en}</strong> bil</Sv> |
-| obestämd ett-singular | ofta <Sv>-t</Sv> | <Sv>ett <strong>{stor.morphology.ett}</strong> hus</Sv> |
-| obestämd plural | ofta <Sv>-a</Sv> | <Sv><strong>{stor.morphology.plural}</strong> bilar</Sv> |
-| bestämd | ofta <Sv>-a</Sv> | <Sv>den <strong>{stor.morphology.definite}</strong> bilen</Sv> |
+| obestämd en-singular | grundform | <span lang="sv">en <strong>{stor.morphology.en}</strong> bil</span> |
+| obestämd ett-singular | ofta <span lang="sv">-t</span> | <span lang="sv">ett <strong>{stor.morphology.ett}</strong> hus</span> |
+| obestämd plural | ofta <span lang="sv">-a</span> | <span lang="sv"><strong>{stor.morphology.plural}</strong> bilar</span> |
+| bestämd | ofta <span lang="sv">-a</span> | <span lang="sv">den <strong>{stor.morphology.definite}</strong> bilen</span> |
 
 Samma pluralform av adjektivet används för en-ord och ett-ord:
 
-- <Sv>stora bilar</Sv>
-- <Sv>stora hus</Sv>
+- <span lang="sv">stora bilar</span>
+- <span lang="sv">stora hus</span>
 
 <AdjectiveForms
 	forms={[
@@ -115,8 +114,8 @@ Utgå från grundformen (en-formen):
 
 <p lang="sv">stor</p>
 
-Lägg till <Sv>-t</Sv> för den regelbundna ett-formen och
-<Sv>-a</Sv> för den regelbundna pluralformen:
+Lägg till <span lang="sv">-t</span> för den regelbundna ett-formen och
+<span lang="sv">-a</span> för den regelbundna pluralformen:
 
 <p lang="sv">stor → stort → stora</p>
 
@@ -127,54 +126,54 @@ Ytterligare ett regelbundet exempel:
 Stavningen kan ändras när ändelser läggs till, och vissa adjektiv är
 oregelbundna. Till exempel:
 
-- <Sv>{glad.morphology.en} → {glad.morphology.ett} → {glad.morphology.plural}</Sv>
-- <Sv>liten → litet → små</Sv>
-- <Sv>bra → bra → bra</Sv>
+- <span lang="sv">{glad.morphology.en} → {glad.morphology.ett} → {glad.morphology.plural}</span>
+- <span lang="sv">liten → litet → små</span>
+- <span lang="sv">bra → bra → bra</span>
 
 Lär dig vanliga undantag genom hela fraser.
 
 ## Stavningsmönster
 
-Ändelserna <Sv>-t</Sv> och <Sv>-a</Sv> är regelbundna, men stammen ändras
+Ändelserna <span lang="sv">-t</span> och <span lang="sv">-a</span> är regelbundna, men stammen ändras
 ofta när de läggs till. Dessa mönster täcker de flesta adjektiv:
 
 | Stammönster | en-form | ett-form | plural/bestämd form |
 | --- | --- | --- | --- |
-| betonad vokal | <Sv>ny</Sv>, <Sv>blå</Sv> | <Sv>nytt</Sv>, <Sv>blått</Sv> | <Sv>nya</Sv>, <Sv>blåa</Sv> |
-| vokal + <Sv>-d</Sv> | <Sv>röd</Sv>, <Sv>god</Sv> | <Sv>rött</Sv>, <Sv>gott</Sv> | <Sv>röda</Sv>, <Sv>goda</Sv> |
-| konsonant + <Sv>-d</Sv> | <Sv>hård</Sv> | <Sv>hårt</Sv> | <Sv>hårda</Sv> |
-| vokal + <Sv>-t</Sv> | <Sv>vit</Sv>, <Sv>söt</Sv> | <Sv>vitt</Sv>, <Sv>sött</Sv> | <Sv>vita</Sv>, <Sv>söta</Sv> |
-| konsonant + <Sv>-t</Sv> | <Sv>kort</Sv>, <Sv>svart</Sv> | <Sv>kort</Sv>, <Sv>svart</Sv> | <Sv>korta</Sv>, <Sv>svarta</Sv> |
-| <Sv>-nn</Sv> | <Sv>sann</Sv>, <Sv>tunn</Sv> | <Sv>sant</Sv>, <Sv>tunt</Sv> | <Sv>sanna</Sv>, <Sv>tunna</Sv> |
-| <Sv>-en</Sv> | <Sv>öppen</Sv>, <Sv>mogen</Sv> | <Sv>öppet</Sv>, <Sv>moget</Sv> | <Sv>öppna</Sv>, <Sv>mogna</Sv> |
-| <Sv>-er</Sv>, <Sv>-el</Sv> | <Sv>vacker</Sv>, <Sv>enkel</Sv> | <Sv>vackert</Sv>, <Sv>enkelt</Sv> | <Sv>vackra</Sv>, <Sv>enkla</Sv> |
+| betonad vokal | <span lang="sv">ny</span>, <span lang="sv">blå</span> | <span lang="sv">nytt</span>, <span lang="sv">blått</span> | <span lang="sv">nya</span>, <span lang="sv">blåa</span> |
+| vokal + <span lang="sv">-d</span> | <span lang="sv">röd</span>, <span lang="sv">god</span> | <span lang="sv">rött</span>, <span lang="sv">gott</span> | <span lang="sv">röda</span>, <span lang="sv">goda</span> |
+| konsonant + <span lang="sv">-d</span> | <span lang="sv">hård</span> | <span lang="sv">hårt</span> | <span lang="sv">hårda</span> |
+| vokal + <span lang="sv">-t</span> | <span lang="sv">vit</span>, <span lang="sv">söt</span> | <span lang="sv">vitt</span>, <span lang="sv">sött</span> | <span lang="sv">vita</span>, <span lang="sv">söta</span> |
+| konsonant + <span lang="sv">-t</span> | <span lang="sv">kort</span>, <span lang="sv">svart</span> | <span lang="sv">kort</span>, <span lang="sv">svart</span> | <span lang="sv">korta</span>, <span lang="sv">svarta</span> |
+| <span lang="sv">-nn</span> | <span lang="sv">sann</span>, <span lang="sv">tunn</span> | <span lang="sv">sant</span>, <span lang="sv">tunt</span> | <span lang="sv">sanna</span>, <span lang="sv">tunna</span> |
+| <span lang="sv">-en</span> | <span lang="sv">öppen</span>, <span lang="sv">mogen</span> | <span lang="sv">öppet</span>, <span lang="sv">moget</span> | <span lang="sv">öppna</span>, <span lang="sv">mogna</span> |
+| <span lang="sv">-er</span>, <span lang="sv">-el</span> | <span lang="sv">vacker</span>, <span lang="sv">enkel</span> | <span lang="sv">vackert</span>, <span lang="sv">enkelt</span> | <span lang="sv">vackra</span>, <span lang="sv">enkla</span> |
 
 Två vanliga adjektiv är oregelbundna utöver dessa mönster:
 
-- <Sv>gammal → gammalt → gamla</Sv>
-- <Sv>liten → litet → små</Sv>, med
-  <Sv>lilla</Sv> i den bestämda singularformen:
-  <Sv>den lilla bilen</Sv>
+- <span lang="sv">gammal → gammalt → gamla</span>
+- <span lang="sv">liten → litet → små</span>, med
+  <span lang="sv">lilla</span> i den bestämda singularformen:
+  <span lang="sv">den lilla bilen</span>
 
 Mönstret som är viktigast att lära sig först är
-<Sv>-en</Sv>-gruppen, eftersom det obetonade
-<Sv>e</Sv>-et försvinner i pluralformen:
-<Sv>ett öppet fönster</Sv> men
-<Sv>öppna fönster</Sv>.
+<span lang="sv">-en</span>-gruppen, eftersom det obetonade
+<span lang="sv">e</span>-et försvinner i pluralformen:
+<span lang="sv">ett öppet fönster</span> men
+<span lang="sv">öppna fönster</span>.
 
 ## Adjektiv som aldrig böjs
 
 En liten grupp tar inga ändelser alls. De är lätta att använda så snart du
 vet vilka de är:
 
-<Sv>bra</Sv>, <Sv>kul</Sv>,
-<Sv>äkta</Sv>, <Sv>sakta</Sv>,
-<Sv>främmande</Sv>, samt färgord som
-<Sv>rosa</Sv>, <Sv>lila</Sv>,
-<Sv>beige</Sv>.
+<span lang="sv">bra</span>, <span lang="sv">kul</span>,
+<span lang="sv">äkta</span>, <span lang="sv">sakta</span>,
+<span lang="sv">främmande</span>, samt färgord som
+<span lang="sv">rosa</span>, <span lang="sv">lila</span>,
+<span lang="sv">beige</span>.
 
-- <Sv>ett bra hus</Sv>, <Sv>bra bilar</Sv>
-- <Sv>ett rosa hus</Sv>, <Sv>rosa bilar</Sv>
+- <span lang="sv">ett bra hus</span>, <span lang="sv">bra bilar</span>
+- <span lang="sv">ett rosa hus</span>, <span lang="sv">rosa bilar</span>
 
 ## Particip som adjektiv
 
@@ -182,20 +181,20 @@ Perfektparticip böjs som vanliga adjektiv:
 
 | Nominalfras | Exempel |
 | --- | --- |
-| obestämd en | <Sv>en stängd dörr</Sv> |
-| obestämd ett | <Sv>ett stängt fönster</Sv> |
-| plural | <Sv>stängda dörrar</Sv> |
+| obestämd en | <span lang="sv">en stängd dörr</span> |
+| obestämd ett | <span lang="sv">ett stängt fönster</span> |
+| plural | <span lang="sv">stängda dörrar</span> |
 
 Samma sak gäller particip från andra verbgrupper:
-<Sv>en målad vägg</Sv>,
-<Sv>ett målat hus</Sv>,
-<Sv>målade väggar</Sv>; och
-<Sv>en skriven text</Sv>,
-<Sv>ett skrivet brev</Sv>,
-<Sv>skrivna brev</Sv>.
+<span lang="sv">en målad vägg</span>,
+<span lang="sv">ett målat hus</span>,
+<span lang="sv">målade väggar</span>; och
+<span lang="sv">en skriven text</span>,
+<span lang="sv">ett skrivet brev</span>,
+<span lang="sv">skrivna brev</span>.
 
-Presensparticip på <Sv>-ande</Sv> och
-<Sv>-ende</Sv> böjs aldrig:
+Presensparticip på <span lang="sv">-ande</span> och
+<span lang="sv">-ende</span> böjs aldrig:
 
 <p lang="sv">ett leende barn · en leende flicka · leende barn</p>
 
@@ -205,16 +204,16 @@ Perfektparticip ligger också till grund för bli-passivet. Se
 ## Det valfria maskulina -e
 
 När man syftar på en man kan den bestämda formen ta
-<Sv>-e</Sv> i stället för <Sv>-a</Sv>:
+<span lang="sv">-e</span> i stället för <span lang="sv">-a</span>:
 
-- <Sv>den gamle mannen</Sv> vid sidan av
-  <Sv>den gamla mannen</Sv>
-- <Sv>min gode vän</Sv>
+- <span lang="sv">den gamle mannen</span> vid sidan av
+  <span lang="sv">den gamla mannen</span>
+- <span lang="sv">min gode vän</span>
 
 Detta är valfritt och hör till ett något formellt eller traditionellt
 register; det lever också kvar i fasta namn som
-<Sv>Karl den store</Sv>. <Sv>-a</Sv>-formen är
-alltid godtagbar, så behandla <Sv>-e</Sv> som något att känna igen snarare
+<span lang="sv">Karl den store</span>. <span lang="sv">-a</span>-formen är
+alltid godtagbar, så behandla <span lang="sv">-e</span> som något att känna igen snarare
 än en regel att tillämpa.
 
 ## Bestämda nominalfraser och dubbel bestämdhet
@@ -231,19 +230,19 @@ med den bestämda ändelsen på substantivet. Denna konstruktion kallas
 
 | Numerus och genus | Bestämd artikel | Adjektiv | Bestämt substantiv | Hel fras |
 | --- | --- | --- | --- | --- |
-| en-singular | <Sv>den</Sv> | <Sv>{stor.morphology.definite}</Sv> | <Sv>bilen</Sv> | <Sv>den {stor.morphology.definite} bilen</Sv> |
-| ett-singular | <Sv>det</Sv> | <Sv>{stor.morphology.definite}</Sv> | <Sv>huset</Sv> | <Sv>det {stor.morphology.definite} huset</Sv> |
-| plural | <Sv>de</Sv> | <Sv>{stor.morphology.definite}</Sv> | <Sv>bilarna</Sv> | <Sv>de {stor.morphology.definite} bilarna</Sv> |
+| en-singular | <span lang="sv">den</span> | <span lang="sv">{stor.morphology.definite}</span> | <span lang="sv">bilen</span> | <span lang="sv">den {stor.morphology.definite} bilen</span> |
+| ett-singular | <span lang="sv">det</span> | <span lang="sv">{stor.morphology.definite}</span> | <span lang="sv">huset</span> | <span lang="sv">det {stor.morphology.definite} huset</span> |
+| plural | <span lang="sv">de</span> | <span lang="sv">{stor.morphology.definite}</span> | <span lang="sv">bilarna</span> | <span lang="sv">de {stor.morphology.definite} bilarna</span> |
 
 Det tredelade mönstret är alltså:
 
 <p lang="sv"><strong>den / det / de + bestämt adjektiv + bestämt substantiv</strong></p>
 
 Artikeln markerar genus eller numerus, adjektivet använder oftast sin
-<Sv>-a</Sv>-form, och substantivet behåller sin bestämda ändelse. Engelskan
+<span lang="sv">-a</span>-form, och substantivet behåller sin bestämda ändelse. Engelskan
 markerar vanligen samma fras bara en gång i <span lang="en">the big car</span>;
-svenskan använder både <Sv>den</Sv> och <Sv>-en</Sv> i
-<Sv>den stora bilen</Sv>.
+svenskan använder både <span lang="sv">den</span> och <span lang="sv">-en</span> i
+<span lang="sv">den stora bilen</span>.
 
 Possessiver är ett viktigt undantag från standardmönstret. Adjektivet
 använder den bestämda formen, men det finns ingen separat bestämd artikel,
@@ -251,10 +250,10 @@ och substantivet tar inte sin bestämda ändelse:
 
 <p lang="sv">min stora bil</p>
 
-Demonstrativ som <Sv>den här</Sv> och
-<Sv>det där</Sv> följer samma rytm som en bestämd nominalfras:
-<Sv>den här stora bilen</Sv>,
-<Sv>det där stora huset</Sv>.
+Demonstrativ som <span lang="sv">den här</span> och
+<span lang="sv">det där</span> följer samma rytm som en bestämd nominalfras:
+<span lang="sv">den här stora bilen</span>,
+<span lang="sv">det där stora huset</span>.
 
 Se [substantivformer](../../nouns-articles/noun-forms/) för själva
 substantivändelserna.
@@ -264,9 +263,9 @@ substantivändelserna.
 Predikativa adjektiv kongruerar med subjektet men använder inte dubbel
 bestämdhet:
 
-- <Sv>Bilen är stor.</Sv>
-- <Sv>Huset är stort.</Sv>
-- <Sv>Bilarna är stora.</Sv>
+- <span lang="sv">Bilen är stor.</span>
+- <span lang="sv">Huset är stort.</span>
+- <span lang="sv">Bilarna är stora.</span>
 
 ## Direkt jämförelse
 
@@ -296,21 +295,21 @@ direkt till svenskan.
 <MistakeBox title="Vanliga misstag">
 Se till att artikel, adjektiv och substantiv stämmer överens:
 
-<Sv>❌ ett stor hus</Sv>
-<Sv>✅ ett stort hus</Sv>
+<span lang="sv">❌ ett stor hus</span>
+<span lang="sv">✅ ett stort hus</span>
 
 I en vanlig bestämd fras, utelämna inte någon del av den dubbla
 bestämdheten:
 
-<Sv>❌ det stora hus</Sv>
-<Sv>✅ det stora huset</Sv>
+<span lang="sv">❌ det stora hus</span>
+<span lang="sv">✅ det stora huset</span>
 </MistakeBox>
 
 <MemoryTip>
 Kom ihåg den tredelade rytmen:
-<Sv><strong>en stor — ett stort — flera stora</strong></Sv>.
-I en bestämd fras, använd den välbekanta <Sv>-a</Sv>-formen:
-<Sv>den stora bilen</Sv>.
+<span lang="sv"><strong>en stor — ett stort — flera stora</strong></span>.
+I en bestämd fras, använd den välbekanta <span lang="sv">-a</span>-formen:
+<span lang="sv">den stora bilen</span>.
 </MemoryTip>
 
 <QuickCheck

@@ -24,15 +24,14 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Nutze <Sv>Jag vill åka till …</Sv> für das Ziel und
-  <Sv>Vilken buss går till …?</Sv>, um die richtige Linie zu finden.
-- Nutze <Sv>När går …?</Sv> für planmäßige Abfahrten und
-  <Sv>Är tåget försenat?</Sv> für Verspätungen.
-- Reiseschwedisch nutzt <Sv>till</Sv> für das Ziel, aber oft <Sv>på</Sv> dafür,
+- Nutze <span lang="sv">Jag vill åka till …</span> für das Ziel und
+  <span lang="sv">Vilken buss går till …?</span>, um die richtige Linie zu finden.
+- Nutze <span lang="sv">När går …?</span> für planmäßige Abfahrten und
+  <span lang="sv">Är tåget försenat?</span> für Verspätungen.
+- Reiseschwedisch nutzt <span lang="sv">till</span> für das Ziel, aber oft <span lang="sv">på</span> dafür,
   in einem Bus oder Zug oder auf einem Bahnsteig zu sein.
 </KeyTakeaway>
 
@@ -46,26 +45,26 @@ geändert hat.
 
 | Muster | Verwende es, wenn … | Register |
 | --- | --- | --- |
-| <Sv>Jag vill åka till …</Sv> | du sagst, wohin du willst | neutral |
-| <Sv>Vilken buss går till …?</Sv> | du fragst, welcher Bus dahin fährt | neutral |
-| <Sv>Går den här bussen till …?</Sv> | du überprüfst diesen Bus | neutral |
-| <Sv>Varifrån går tåget?</Sv> | du fragst, von wo der Zug abfährt | neutral |
-| <Sv>Vilken perrong?</Sv> | du fragst nach dem Bahnsteig | gesprochen |
-| <Sv>Måste jag byta?</Sv> | du fragst, ob du umsteigen musst | neutral |
+| <span lang="sv">Jag vill åka till …</span> | du sagst, wohin du willst | neutral |
+| <span lang="sv">Vilken buss går till …?</span> | du fragst, welcher Bus dahin fährt | neutral |
+| <span lang="sv">Går den här bussen till …?</span> | du überprüfst diesen Bus | neutral |
+| <span lang="sv">Varifrån går tåget?</span> | du fragst, von wo der Zug abfährt | neutral |
+| <span lang="sv">Vilken perrong?</span> | du fragst nach dem Bahnsteig | gesprochen |
+| <span lang="sv">Måste jag byta?</span> | du fragst, ob du umsteigen musst | neutral |
 
-<Sv>åka</Sv> ist das allgemeine Verb für Reisen mit einem Fahrzeug. Nutze
-<Sv>gå</Sv> für einen fahrplanmäßigen Dienst: <Sv>När går tåget?</Sv>
+<span lang="sv">åka</span> ist das allgemeine Verb für Reisen mit einem Fahrzeug. Nutze
+<span lang="sv">gå</span> für einen fahrplanmäßigen Dienst: <span lang="sv">När går tåget?</span>
 
 ## Fahrkarten und Abfahrten
 
 | Muster | Verwende es, wenn … | Register |
 | --- | --- | --- |
-| <Sv>En biljett till …, tack.</Sv> | du kaufst eine Fahrkarte | neutral |
-| <Sv>En enkelbiljett, tack.</Sv> | eine einfache Fahrkarte | neutral |
-| <Sv>En tur och retur, tack.</Sv> | eine Hin- und Rückfahrkarte | neutral |
-| <Sv>När går nästa tåg?</Sv> | du fragst nach dem nächsten Zug | neutral |
-| <Sv>När kommer bussen?</Sv> | du fragst, wann der Bus kommt | neutral |
-| <Sv>Är tåget försenat?</Sv> | du fragst, ob der Zug Verspätung hat | neutral |
+| <span lang="sv">En biljett till …, tack.</span> | du kaufst eine Fahrkarte | neutral |
+| <span lang="sv">En enkelbiljett, tack.</span> | eine einfache Fahrkarte | neutral |
+| <span lang="sv">En tur och retur, tack.</span> | eine Hin- und Rückfahrkarte | neutral |
+| <span lang="sv">När går nästa tåg?</span> | du fragst nach dem nächsten Zug | neutral |
+| <span lang="sv">När kommer bussen?</span> | du fragst, wann der Bus kommt | neutral |
+| <span lang="sv">Är tåget försenat?</span> | du fragst, ob der Zug Verspätung hat | neutral |
 
 ## Kurze Bahnhofsszene
 
@@ -87,8 +86,8 @@ geändert hat.
 	<p slot="sv">Jag vill åka till Uppsala.</p>
 </LanguageComparison>
 
-Schwedisch nutzt nicht ein einziges Verb für jede Art von „gehen". <Sv>åka</Sv>
-bedeutet, sich mit einem Fahrzeug fortzubewegen; <Sv>gå</Sv> kann zu Fuß gehen
+Schwedisch nutzt nicht ein einziges Verb für jede Art von „gehen". <span lang="sv">åka</span>
+bedeutet, sich mit einem Fahrzeug fortzubewegen; <span lang="sv">gå</span> kann zu Fuß gehen
 oder eine fahrplanmäßige Abfahrt bedeuten.
 
 <LanguageComparison title="Fahrplanmäßige Abfahrt">

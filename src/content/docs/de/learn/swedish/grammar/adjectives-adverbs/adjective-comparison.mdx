@@ -27,7 +27,6 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => {
@@ -35,24 +34,24 @@ export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => 
 })();
 
 <KeyTakeaway>
-- Die regelmäßige Reihe ergänzt <Sv>-are</Sv> und <Sv>-ast</Sv>:
-  <Sv>{snabb.morphology.en} → {snabb.comparison?.comparative} → {snabb.comparison?.superlative}</Sv>.
-- <Sv>än</Sv> bedeutet „als“.
-- Lange und partizipiale Adjektive verwenden oft <Sv>mer</Sv> und <Sv>mest</Sv>
+- Die regelmäßige Reihe ergänzt <span lang="sv">-are</span> und <span lang="sv">-ast</span>:
+  <span lang="sv">{snabb.morphology.en} → {snabb.comparison?.comparative} → {snabb.comparison?.superlative}</span>.
+- <span lang="sv">än</span> bedeutet „als“.
+- Lange und partizipiale Adjektive verwenden oft <span lang="sv">mer</span> und <span lang="sv">mest</span>
   statt Endungen; nutze nie beide Strategien zugleich.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Schwedische Adjektive können drei Grade ausdrücken: Positiv, Komparativ und
-Superlativ. Viele kurze Adjektive verwenden die Endungen <Sv>-are</Sv> und
-<Sv>-ast</Sv>; andere ändern sich unregelmäßig oder verwenden <Sv>mer</Sv> und
-<Sv>mest</Sv>.
+Superlativ. Viele kurze Adjektive verwenden die Endungen <span lang="sv">-are</span> und
+<span lang="sv">-ast</span>; andere ändern sich unregelmäßig oder verwenden <span lang="sv">mer</span> und
+<span lang="sv">mest</span>.
 
 ## Regelmäßige Steigerung
 
-Der Positiv ist die Grundform, der Komparativ erhält meist <Sv>-are</Sv> und
-der Superlativ meist <Sv>-ast</Sv>:
+Der Positiv ist die Grundform, der Komparativ erhält meist <span lang="sv">-are</span> und
+der Superlativ meist <span lang="sv">-ast</span>:
 
 <AdjectiveForms
 	forms={[
@@ -65,7 +64,7 @@ der Superlativ meist <Sv>-ast</Sv>:
 	caption="Grundformen von snabb"
 />
 
-In einem Vergleich bedeutet <Sv>än</Sv> „als“:
+In einem Vergleich bedeutet <span lang="sv">än</span> „als“:
 
 <p lang="sv">Tåget är snabbare än bussen.</p>
 
@@ -77,25 +76,25 @@ Der einfache prädikative Superlativ braucht keine Endung für Genus oder Zahl:
 
 | Positiv | Komparativ | Superlativ | Bedeutung |
 | --- | --- | --- | --- |
-| <Sv>stor</Sv> | <Sv>större</Sv> | <Sv>störst</Sv> | groß |
-| <Sv>liten</Sv> | <Sv>mindre</Sv> | <Sv>minst</Sv> | klein |
-| <Sv>gammal</Sv> | <Sv>äldre</Sv> | <Sv>äldst</Sv> | alt |
-| <Sv>bra</Sv> | <Sv>bättre</Sv> | <Sv>bäst</Sv> | gut |
-| <Sv>dålig</Sv> | <Sv>sämre</Sv> | <Sv>sämst</Sv> | schlecht |
+| <span lang="sv">stor</span> | <span lang="sv">större</span> | <span lang="sv">störst</span> | groß |
+| <span lang="sv">liten</span> | <span lang="sv">mindre</span> | <span lang="sv">minst</span> | klein |
+| <span lang="sv">gammal</span> | <span lang="sv">äldre</span> | <span lang="sv">äldst</span> | alt |
+| <span lang="sv">bra</span> | <span lang="sv">bättre</span> | <span lang="sv">bäst</span> | gut |
+| <span lang="sv">dålig</span> | <span lang="sv">sämre</span> | <span lang="sv">sämst</span> | schlecht |
 
 Diese häufigen Formen lernst du am besten als Reihen.
 
 ## Steigerung mit *mer* und *mest*
 
 Einige Adjektive, besonders längere und viele partizipiale Adjektive, werden
-meist mit <Sv>mer</Sv> und <Sv>mest</Sv> statt mit Endungen gesteigert:
+meist mit <span lang="sv">mer</span> und <span lang="sv">mest</span> statt mit Endungen gesteigert:
 
 <p lang="sv">komplicerad → mer komplicerad → mest komplicerad</p>
 
 <p lang="sv">överraskande → mer överraskande → mest överraskande</p>
 
 Bei manchen Adjektiven variiert der Gebrauch. Wenn sowohl eine Form mit Endung
-als auch eine Konstruktion mit <Sv>mer</Sv> vorkommt, orientiere dich am
+als auch eine Konstruktion mit <span lang="sv">mer</span> vorkommt, orientiere dich am
 üblichen Gebrauch, statt dieselbe Regel mechanisch auf jedes Wort anzuwenden.
 
 ## Attributive Superlative
@@ -103,15 +102,15 @@ als auch eine Konstruktion mit <Sv>mer</Sv> vorkommt, orientiere dich am
 Vor einem bestimmten Substantiv steht die bestimmte Superlativform des
 Adjektivs. Ihre Endung hängt vom Steigerungsmuster ab:
 
-- <Sv>den snabbaste bilen</Sv>
-- <Sv>det största huset</Sv>
-- <Sv>de bästa resultaten</Sv>
+- <span lang="sv">den snabbaste bilen</span>
+- <span lang="sv">det största huset</span>
+- <span lang="sv">de bästa resultaten</span>
 
 Diese Konstruktion verwendet auch den bestimmten Artikel und das bestimmte
 Substantiv, wie es die [Adjektivkongruenz](../agreement/) verlangt. Eine
-maskuline Singularform auf <Sv>-e</Sv>, etwa <Sv>den bäste spelaren</Sv>, kommt
+maskuline Singularform auf <span lang="sv">-e</span>, etwa <span lang="sv">den bäste spelaren</span>, kommt
 ebenfalls vor, besonders wenn ausdrücklich eine männliche Person gemeint ist.
-Die nicht maskulin-spezifische Form, zum Beispiel <Sv>den bästa spelaren</Sv>,
+Die nicht maskulin-spezifische Form, zum Beispiel <span lang="sv">den bästa spelaren</span>,
 ist ebenfalls weit verbreitet.
 
 ## Direkter Vergleich
@@ -130,25 +129,25 @@ ist ebenfalls weit verbreitet.
 
 Alle drei Sprachen haben regelmäßige und unregelmäßige Muster. Englisch
 <span lang="en">more / most</span> kann eine nützliche Brücke zu schwedisch
-<Sv>mer / mest</Sv> sein, aber die Sprachen wählen das analytische Muster nicht
+<span lang="sv">mer / mest</span> sein, aber die Sprachen wählen das analytische Muster nicht
 bei genau denselben Adjektiven.
 
 <MistakeBox title="Häufige Fehler">
 Kombiniere nicht beide Steigerungsstrategien:
 
-<Sv>❌ mer snabbare</Sv>  
-<Sv>✅ snabbare</Sv>
+<span lang="sv">❌ mer snabbare</span>  
+<span lang="sv">✅ snabbare</span>
 
 Lerne unregelmäßige Reihen, statt regelmäßige Endungen anzuhängen:
 
-<Sv>❌ braare / braast</Sv>  
-<Sv>✅ bättre / bäst</Sv>
+<span lang="sv">❌ braare / braast</span>  
+<span lang="sv">✅ bättre / bäst</span>
 </MistakeBox>
 
 <MemoryTip>
 Speichere jedes häufige Adjektiv als dreistufige Reihe:
-<Sv><strong>stor — större — störst</strong></Sv>. Ist das Adjektiv lang oder
-partizipial, prüfe, ob <Sv>mer — mest</Sv> das natürliche Muster ist, statt
+<span lang="sv"><strong>stor — större — störst</strong></span>. Ist das Adjektiv lang oder
+partizipial, prüfe, ob <span lang="sv">mer — mest</span> das natürliche Muster ist, statt
 anzunehmen, dass es immer Endungen erhält.
 </MemoryTip>
 

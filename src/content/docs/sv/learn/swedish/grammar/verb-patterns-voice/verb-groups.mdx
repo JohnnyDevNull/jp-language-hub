@@ -22,7 +22,6 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 import VerbTable from '~/components/VerbTable.astro';
 
@@ -41,10 +40,10 @@ export const groupExamples = ['sv-tala', 'sv-stanga', 'sv-kopa', 'sv-bo', 'sv-sk
 <KeyTakeaway>
 - En verbgrupp hjälper dig att förutse återkommande ändelser i presens,
   preteritum och supinum när du väl vet vilket mönster verbet följer.
-- De fyra mönstren är <Sv>-ar/-ade/-at</Sv>, <Sv>-er/-de eller -te/-t</Sv>,
-  <Sv>-r/-dde/-tt</Sv> och stamvokalväxlingen i grupp 4.
-- En infinitiv på <Sv>-a</Sv> tillhör inte automatiskt grupp 1: jämför
-  <Sv>tala</Sv> med <Sv>köpa</Sv>.
+- De fyra mönstren är <span lang="sv">-ar/-ade/-at</span>, <span lang="sv">-er/-de eller -te/-t</span>,
+  <span lang="sv">-r/-dde/-tt</span> och stamvokalväxlingen i grupp 4.
+- En infinitiv på <span lang="sv">-a</span> tillhör inte automatiskt grupp 1: jämför
+  <span lang="sv">tala</span> med <span lang="sv">köpa</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -70,52 +69,52 @@ läromedel. Formkedjan är viktigare än numret den tilldelas.
 ## Grupp 1: -ar, -ade, -at
 
 Verb i grupp 1 har vanligtvis en infinitiv som slutar på obetonat
-<Sv>-a</Sv>. Den fullständiga infinitiven finns kvar framför ändelserna:
+<span lang="sv">-a</span>. Den fullständiga infinitiven finns kvar framför ändelserna:
 
-- <Sv>arbeta → arbetar → arbetade → arbetat</Sv>
-- <Sv>prata → pratar → pratade → pratat</Sv>
+- <span lang="sv">arbeta → arbetar → arbetade → arbetat</span>
+- <span lang="sv">prata → pratar → pratade → pratat</span>
 
 Det här är den största och mest produktiva regelbundna gruppen.
 
 ## Grupp 2: -er, -de/-te, -t
 
 För många verb i grupp 2 hittar du stammen genom att ta bort infinitivens
-avslutande <Sv>-a</Sv>:
+avslutande <span lang="sv">-a</span>:
 
-- <Sv>stäng-a → stänger → stängde → stängt</Sv>
-- <Sv>ring-a → ringer → ringde → ringt</Sv>
+- <span lang="sv">stäng-a → stänger → stängde → stängt</span>
+- <span lang="sv">ring-a → ringer → ringde → ringt</span>
 
-Preteritumändelsen är oftast <Sv>-de</Sv> efter en tonande stamändelse och
-<Sv>-te</Sv> efter vissa tonlösa konsonanter. För en nybörjare är det
+Preteritumändelsen är oftast <span lang="sv">-de</span> efter en tonande stamändelse och
+<span lang="sv">-te</span> efter vissa tonlösa konsonanter. För en nybörjare är det
 säkrare att lära sig preteritum och supinum tillsammans med varje verb än
 att enbart lita på stavningsregler.
 
 Vissa verb i grupp 2 uppvisar stavningsanpassningar, till exempel
-<Sv>läsa → läste → läst</Sv>.
+<span lang="sv">läsa → läste → läst</span>.
 
 ## Grupp 3: korta infinitiver
 
 Grupp 3 innehåller typiskt korta infinitiver som slutar på en betonad vokal
-annan än <Sv>-a</Sv>:
+annan än <span lang="sv">-a</span>:
 
-- <Sv>tro → tror → trodde → trott</Sv>
-- <Sv>nå → når → nådde → nått</Sv>
+- <span lang="sv">tro → tror → trodde → trott</span>
+- <span lang="sv">nå → når → nådde → nått</span>
 
-Det vanliga mönstret är presens på <Sv>-r</Sv>, preteritum på
-<Sv>-dde</Sv> och supinum på <Sv>-tt</Sv>.
+Det vanliga mönstret är presens på <span lang="sv">-r</span>, preteritum på
+<span lang="sv">-dde</span> och supinum på <span lang="sv">-tt</span>.
 
 ## Grupp 4 och oregelbundna verb
 
 De här verben följer inte de regelbundna svaga ändelserna. Många ändrar sin
 stamvokal:
 
-- <Sv>komma → kommer → kom → kommit</Sv>
-- <Sv>gå → går → gick → gått</Sv>
+- <span lang="sv">komma → kommer → kom → kommit</span>
+- <span lang="sv">gå → går → gick → gått</span>
 
 Andra vanliga verb är oregelbundna på andra sätt:
 
-- <Sv>vara → är → var → varit</Sv>
-- <Sv>göra → gör → gjorde → gjort</Sv>
+- <span lang="sv">vara → är → var → varit</span>
+- <span lang="sv">göra → gör → gjorde → gjort</span>
 
 Försök inte konstruera fram dessa former ur en enda universell regel.
 
@@ -130,16 +129,16 @@ Försök inte konstruera fram dessa former ur en enda universell regel.
 ## Vanliga misstag
 
 <MistakeBox title="Vanliga misstag">
-	- ❌ <Sv>köpa → köpade</Sv>
-	  ✅ <Sv>köpa → köpte</Sv>
-	- ❌ <Sv>skriva → skrivade</Sv>
-	  ✅ <Sv>skriva → skrev</Sv>
-	- Ett verb som slutar på <Sv>-a</Sv> tillhör inte automatiskt grupp 1.
-	  Jämför <Sv>tala</Sv> med <Sv>köpa</Sv>.
+	- ❌ <span lang="sv">köpa → köpade</span>
+	  ✅ <span lang="sv">köpa → köpte</span>
+	- ❌ <span lang="sv">skriva → skrivade</span>
+	  ✅ <span lang="sv">skriva → skrev</span>
+	- Ett verb som slutar på <span lang="sv">-a</span> tillhör inte automatiskt grupp 1.
+	  Jämför <span lang="sv">tala</span> med <span lang="sv">köpa</span>.
 	</MistakeBox>
 
 <MemoryTip>
-Säg kedjan högt: <Sv>köpa — köper — köpte — köpt</Sv>.
+Säg kedjan högt: <span lang="sv">köpa — köper — köpte — köpt</span>.
 Rytmen gör sambandet mellan formerna lättare att minnas.
 </MemoryTip>
 

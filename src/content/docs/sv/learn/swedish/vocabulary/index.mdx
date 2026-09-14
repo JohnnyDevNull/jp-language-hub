@@ -24,7 +24,6 @@ related:
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import VocabularyCard from '~/components/VocabularyCard.astro';
 import { getCollection, getEntry } from 'astro:content';
 
@@ -62,7 +61,7 @@ export const starters = starterIds.map((id) => {
 
 <KeyTakeaway>
 - Anteckna alltid ett svenskt substantiv med dess artikel, aldrig bara som ett
-  ordpar: <Sv>en bil</Sv>, inte bara <Sv>bil</Sv> tillsammans med en enda
+  ordpar: <span lang="sv">en bil</span>, inte bara <span lang="sv">bil</span> tillsammans med en enda
   översättning.
 - Artikeln ensam räcker inte. Lär dig de fyra formerna tillsammans — obestämd
   och bestämd singular, obestämd och bestämd plural.
@@ -80,11 +79,11 @@ tillsammans.
 ## Grundregel
 
 > Ett användbart substantivuppslag innehåller fem saker: lemmat, genuset
-> (<Sv>en</Sv> eller <Sv>ett</Sv>), den bestämda singularen, den obestämda
+> (<span lang="sv">en</span> eller <span lang="sv">ett</span>), den bestämda singularen, den obestämda
 > pluralen och den bestämda pluralen.
 
-<Sv>Ett hus</Sv> är neutrum på svenska och neutrum på tyska, men
-<Sv>ett bord</Sv> är ett <Sv>ett</Sv>-ord medan tyskans
+<span lang="sv">Ett hus</span> är neutrum på svenska och neutrum på tyska, men
+<span lang="sv">ett bord</span> är ett <span lang="sv">ett</span>-ord medan tyskans
 <span lang="de">der Tisch</span> är maskulinum. Att bara kopiera det tyska
 genuset slår fel tillräckligt ofta för att det inte ska duga som strategi.
 
@@ -116,8 +115,8 @@ genuset slår fel tillräckligt ofta för att det inte ska duga som strategi.
 	]}
 />
 
-De två korten visar systemets två halvor: ett <Sv>en</Sv>-ord som tar
-<Sv>-ar</Sv> i pluralis, och ett <Sv>ett</Sv>-ord som tar <Sv>-n</Sv>.
+De två korten visar systemets två halvor: ett <span lang="sv">en</span>-ord som tar
+<span lang="sv">-ar</span> i pluralis, och ett <span lang="sv">ett</span>-ord som tar <span lang="sv">-n</span>.
 
 ## Grundläggande ord
 
@@ -149,10 +148,10 @@ En liten samling vardagliga substantiv, med formerna snarare än bara
 	</tbody>
 </table>
 
-Läser man pluralkolumnen nedåt börjar användbara mönster synas: <Sv>-ar</Sv>
-och <Sv>-or</Sv> och <Sv>-er</Sv> för <Sv>en</Sv>-ord, och ingen ändelse alls
-för många enstaviga <Sv>ett</Sv>-ord som <Sv>hus</Sv>, <Sv>barn</Sv> och
-<Sv>bord</Sv>.
+Läser man pluralkolumnen nedåt börjar användbara mönster synas: <span lang="sv">-ar</span>
+och <span lang="sv">-or</span> och <span lang="sv">-er</span> för <span lang="sv">en</span>-ord, och ingen ändelse alls
+för många enstaviga <span lang="sv">ett</span>-ord som <span lang="sv">hus</span>, <span lang="sv">barn</span> och
+<span lang="sv">bord</span>.
 
 ## Uppslagssidor
 

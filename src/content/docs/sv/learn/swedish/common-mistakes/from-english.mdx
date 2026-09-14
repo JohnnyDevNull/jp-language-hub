@@ -30,14 +30,13 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - Svenskan har ett presens; det finns ingen progressiv form och inget
   hjälpverb *do*.
 - Den bestämda artikeln är en ändelse på substantivet, inte ett eget ord:
-  <Sv>huset</Sv>.
+  <span lang="sv">huset</span>.
 - Svenskan böjer adjektiv och inverterar verbet efter en framförställd
   satsdel, vilket engelskan inte gör i något av fallen.
 </KeyTakeaway>
@@ -52,8 +51,8 @@ morfologi. Det här är mönstren den exporterar av misstag.
 <MistakeBox incorrect="Jag är arbetande nu." correct="Jag arbetar nu." lang="sv">
 	Ett enda presens täcker både "I work" och "I am working". När den pågående
 	handlingen verkligen spelar roll använder svenskan en konstruktion, inte
-	ett particip: <Sv>Jag håller på att arbeta.</Sv> eller <Sv>Jag sitter och
-	arbetar.</Sv> Se [Presens](../../grammar/verbs-time-forms/present/).
+	ett particip: <span lang="sv">Jag håller på att arbeta.</span> eller <span lang="sv">Jag sitter och
+	arbetar.</span> Se [Presens](../../grammar/verbs-time-forms/present/).
 </MistakeBox>
 
 ## Att ta till do-stöd
@@ -80,16 +79,16 @@ morfologi. Det här är mönstren den exporterar av misstag.
 
 Direkta frågor använder det redan befintliga finita verbet istället för
 engelskans *do*. Se [Frågor](../../grammar/questions-negation/questions/) för
-den återanvändbara mallen. Svensk satsnegation lägger till <Sv>inte</Sv>;
+den återanvändbara mallen. Svensk satsnegation lägger till <span lang="sv">inte</span>;
 välj negationsform på [Negation](../../grammar/questions-negation/negation/)
-och placera <Sv>inte</Sv> enligt
+och placera <span lang="sv">inte</span> enligt
 [Placering av inte](../../grammar/sentence-structure/inte-placement/).
 
 ## Att skriva en separat bestämd artikel
 
 <MistakeBox incorrect="den hus, det stora hus" correct="huset, det stora huset" lang="sv">
-	Bestämdhet är en ändelse: <Sv>hus</Sv> → <Sv>huset</Sv>, <Sv>bil</Sv> →
-	<Sv>bilen</Sv>, plural <Sv>husen</Sv>, <Sv>bilarna</Sv>. Med ett adjektiv
+	Bestämdhet är en ändelse: <span lang="sv">hus</span> → <span lang="sv">huset</span>, <span lang="sv">bil</span> →
+	<span lang="sv">bilen</span>, plural <span lang="sv">husen</span>, <span lang="sv">bilarna</span>. Med ett adjektiv
 	förekommer både artikeln *och* ändelsen — dubbel bestämdhet. Se
 	[Substantivformer](../../grammar/nouns-articles/noun-forms/).
 </MistakeBox>
@@ -101,9 +100,9 @@ på. Svenska adjektiv ändras efter genus, numerus och bestämdhet:
 
 | Form | Exempel |
 | --- | --- |
-| <Sv>en</Sv>-ord | <Sv>en stor bil</Sv> |
-| <Sv>ett</Sv>-ord | <Sv>ett stort hus</Sv> |
-| plural / bestämd form | <Sv>stora hus</Sv>, <Sv>det stora huset</Sv> |
+| <span lang="sv">en</span>-ord | <span lang="sv">en stor bil</span> |
+| <span lang="sv">ett</span>-ord | <span lang="sv">ett stort hus</span> |
+| plural / bestämd form | <span lang="sv">stora hus</span>, <span lang="sv">det stora huset</span> |
 
 Se [Adjektivkongruens](../../grammar/adjectives-adverbs/agreement/).
 
@@ -124,8 +123,8 @@ Se [Adjektivkongruens](../../grammar/adjectives-adverbs/agreement/).
 	<p slot="sv">Jag har inte sett honom på tre år.</p>
 </LanguageComparison>
 
-En tidsperiod är <Sv>i</Sv>, en starttidpunkt är <Sv>sedan</Sv>, och en nekad
-period tar <Sv>på</Sv>.
+En tidsperiod är <span lang="sv">i</span>, en starttidpunkt är <span lang="sv">sedan</span>, och en nekad
+period tar <span lang="sv">på</span>.
 
 ## Att översätta prepositioner ord för ord
 
@@ -135,13 +134,13 @@ fras inte finns med här, använd den fokuserade sidan om
 
 | Engelskt mönster | Svensk rättning | Förväxla inte med |
 | --- | --- | --- |
-| wait for | <Sv>vänta på</Sv> | *vänta för* |
-| listen to | <Sv>lyssna på</Sv> | <Sv>lyssna</Sv> utan preposition |
-| think about | <Sv>tänka på</Sv> | *tänka om* (dvs. ändra sig) |
-| ask for | <Sv>be om</Sv> | *be för* |
-| interested in | <Sv>intresserad av</Sv> | *intresserad i* |
-| on Monday | <Sv>på måndag</Sv> | *i måndag* |
-| in the morning | <Sv>på morgonen</Sv> | *i morgonen* |
+| wait for | <span lang="sv">vänta på</span> | *vänta för* |
+| listen to | <span lang="sv">lyssna på</span> | <span lang="sv">lyssna</span> utan preposition |
+| think about | <span lang="sv">tänka på</span> | *tänka om* (dvs. ändra sig) |
+| ask for | <span lang="sv">be om</span> | *be för* |
+| interested in | <span lang="sv">intresserad av</span> | *intresserad i* |
+| on Monday | <span lang="sv">på måndag</span> | *i måndag* |
+| in the morning | <span lang="sv">på morgonen</span> | *i morgonen* |
 
 Prepositionen hör till konstruktionen. Använd den här tabellen för att
 upptäcka ett engelskt transferfel, och kolla sedan

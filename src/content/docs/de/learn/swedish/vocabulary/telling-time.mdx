@@ -25,17 +25,16 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Die Uhrzeit kommt mit nur fünf Wörtern aus: <Sv>klockan</Sv>,
-  <Sv>över</Sv>, <Sv>i</Sv>, <Sv>halv</Sv> und <Sv>kvart</Sv>.
-- <Sv>halv</Sv> zählt auf die kommende Stunde hin, genau wie das
-  deutsche <span lang="de">halb</span>: <Sv>halv tre</Sv> ist 2:30,
+- Die Uhrzeit kommt mit nur fünf Wörtern aus: <span lang="sv">klockan</span>,
+  <span lang="sv">över</span>, <span lang="sv">i</span>, <span lang="sv">halv</span> und <span lang="sv">kvart</span>.
+- <span lang="sv">halv</span> zählt auf die kommende Stunde hin, genau wie das
+  deutsche <span lang="de">halb</span>: <span lang="sv">halv tre</span> ist 2:30,
   nicht 3:30.
 - Die Minuten werden vom nächstgelegenen Bezugspunkt aus gezählt, der
-  auch die halbe Stunde sein kann: <Sv>tio i halv nio</Sv> ist 8:20.
+  auch die halbe Stunde sein kann: <span lang="sv">tio i halv nio</span> ist 8:20.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -46,8 +45,8 @@ Tageszeit folgt von selbst.
 
 ## Grundregel
 
-> Die Stunde wird mit <Sv>klockan</Sv> plus der Zahl benannt. Minuten
-> knüpfen mit <Sv>över</Sv> (danach) oder <Sv>i</Sv> (davor) an einen
+> Die Stunde wird mit <span lang="sv">klockan</span> plus der Zahl benannt. Minuten
+> knüpfen mit <span lang="sv">över</span> (danach) oder <span lang="sv">i</span> (davor) an einen
 > Bezugspunkt an, und der Bezugspunkt kann eine volle oder eine halbe
 > Stunde sein.
 
@@ -65,13 +64,13 @@ Tageszeit folgt von selbst.
 	<p slot="sv">Klockan är nio.</p>
 </LanguageComparison>
 
-<Sv>Klockan</Sv> ist die bestimmte Form von <Sv>en klocka</Sv> und
-übernimmt in <Sv>Klockan är nio</Sv> die Rolle des Subjekts; deshalb
+<span lang="sv">Klockan</span> ist die bestimmte Form von <span lang="sv">en klocka</span> und
+übernimmt in <span lang="sv">Klockan är nio</span> die Rolle des Subjekts; deshalb
 braucht es kein eigenes Wort für „o'clock“.
 
 ## Minuten danach und davor
 
-Verwende <Sv>över</Sv> für Minuten nach der Stunde und <Sv>i</Sv> für
+Verwende <span lang="sv">över</span> für Minuten nach der Stunde und <span lang="sv">i</span> für
 Minuten vor der nächsten Stunde:
 
 <p lang="sv">Klockan är sju över två.</p>
@@ -79,47 +78,47 @@ Minuten vor der nächsten Stunde:
 
 | Schwedisch | Uhrzeit |
 | --- | --- |
-| <Sv>sju över två</Sv> | 2:07 |
-| <Sv>fem i sex</Sv> | 5:55 |
-| <Sv>tjugo över tre</Sv> | 3:20 |
+| <span lang="sv">sju över två</span> | 2:07 |
+| <span lang="sv">fem i sex</span> | 5:55 |
+| <span lang="sv">tjugo över tre</span> | 3:20 |
 
 ## Halbe Stunden
 
-<Sv>halv</Sv> zeigt auf die Stunde, auf die es hinzählt, nicht auf die
+<span lang="sv">halv</span> zeigt auf die Stunde, auf die es hinzählt, nicht auf die
 gerade vergangene Stunde. Minuten können dann von diesem
 Halbe-Stunde-Punkt aus in beide Richtungen gemessen werden:
 
 | Schwedisch | Uhrzeit |
 | --- | --- |
-| <Sv>halv nio</Sv> | 8:30 |
-| <Sv>tio i halv nio</Sv> | 8:20 |
-| <Sv>tio över halv nio</Sv> | 8:40 |
-| <Sv>halv tre</Sv> | 2:30 |
+| <span lang="sv">halv nio</span> | 8:30 |
+| <span lang="sv">tio i halv nio</span> | 8:20 |
+| <span lang="sv">tio över halv nio</span> | 8:40 |
+| <span lang="sv">halv tre</span> | 2:30 |
 
 ## Viertelstunden
 
 | Schwedisch | Uhrzeit |
 | --- | --- |
-| <Sv>kvart över fyra</Sv> | 4:15 |
-| <Sv>kvart i sju</Sv> | 6:45 |
+| <span lang="sv">kvart över fyra</span> | 4:15 |
+| <span lang="sv">kvart i sju</span> | 6:45 |
 
 ## Geschriebene und gesprochene Uhrzeit
 
 Fahrpläne, Öffnungszeiten und Termine werden digital mit einem Punkt
-geschrieben: <Sv>14.30</Sv>. Laut vorgelesen wird daraus
-<Sv>fjorton och trettio</Sv>, während die gesprochene Alltagsform für
-denselben Zeitpunkt <Sv>halv tre</Sv> ist.
+geschrieben: <span lang="sv">14.30</span>. Laut vorgelesen wird daraus
+<span lang="sv">fjorton och trettio</span>, während die gesprochene Alltagsform für
+denselben Zeitpunkt <span lang="sv">halv tre</span> ist.
 
 ## Schnelles Muster
 
 | Bedeutung | Schwedisches Muster |
 | --- | --- |
-| volle Stunde | <Sv>Klockan är nio.</Sv> |
-| nach der Stunde | <Sv>X över Y</Sv> |
-| vor der nächsten Stunde | <Sv>X i Y</Sv> |
-| halb zur nächsten Stunde | <Sv>halv Y</Sv> |
-| Viertel nach | <Sv>kvart över Y</Sv> |
-| Viertel vor | <Sv>kvart i Y</Sv> |
+| volle Stunde | <span lang="sv">Klockan är nio.</span> |
+| nach der Stunde | <span lang="sv">X över Y</span> |
+| vor der nächsten Stunde | <span lang="sv">X i Y</span> |
+| halb zur nächsten Stunde | <span lang="sv">halv Y</span> |
+| Viertel nach | <span lang="sv">kvart över Y</span> |
+| Viertel vor | <span lang="sv">kvart i Y</span> |
 
 ## Direkter Vergleich
 
@@ -150,17 +149,17 @@ von der gerade vergangenen Stunde zurück.
 	correct="halv tre = 2:30"
 	lang="sv"
 >
-	Englisches „half three“ und schwedisches <Sv>halv tre</Sv>
-	bezeichnen unterschiedliche Zeitpunkte. Leite <Sv>över</Sv> und
-	<Sv>i</Sv> auch nicht aus einer allgemeinen Präpositionsregel ab;
+	Englisches „half three“ und schwedisches <span lang="sv">halv tre</span>
+	bezeichnen unterschiedliche Zeitpunkte. Leite <span lang="sv">över</span> und
+	<span lang="sv">i</span> auch nicht aus einer allgemeinen Präpositionsregel ab;
 	die Uhrzeit folgt ihrem eigenen Muster.
 </MistakeBox>
 
 <MemoryTip>
-Nimm die deutsche Route: <Sv>halv</Sv> verhält sich wie das deutsche
+Nimm die deutsche Route: <span lang="sv">halv</span> verhält sich wie das deutsche
 <span lang="de">halb</span>, und die Zahl ist die Stunde, auf die du
 zusteuerst. Kommst du vom Englischen her, addiere „past“ und ziehe
-eins ab: <Sv>halv nio</Sv> = „half past eight“.
+eins ab: <span lang="sv">halv nio</span> = „half past eight“.
 </MemoryTip>
 
 <QuickCheck

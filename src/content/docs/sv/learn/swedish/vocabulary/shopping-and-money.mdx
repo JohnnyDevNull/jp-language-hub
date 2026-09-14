@@ -18,14 +18,13 @@ related:
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Priser uttrycks med <Sv>kostar</Sv>: <Sv>Vad kostar den?</Sv>
-- Peka med <Sv>den här</Sv> eller <Sv>det här</Sv> när du inte kan ordet.
-- Betalningsuttryck är korta: <Sv>med kort</Sv>, <Sv>med Swish</Sv>,
-  <Sv>kontant</Sv>.
+- Priser uttrycks med <span lang="sv">kostar</span>: <span lang="sv">Vad kostar den?</span>
+- Peka med <span lang="sv">den här</span> eller <span lang="sv">det här</span> när du inte kan ordet.
+- Betalningsuttryck är korta: <span lang="sv">med kort</span>, <span lang="sv">med Swish</span>,
+  <span lang="sv">kontant</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -37,39 +36,39 @@ förstå de vanligaste orden i kassan.
 
 | Område | Svenska | Förklaring |
 | --- | --- | --- |
-| plats | <Sv>en affär, affärer</Sv> | ställe där man handlar |
-| plats | <Sv>en butik, butiker</Sv> | mindre försäljningsställe |
-| sak | <Sv>en vara, varor</Sv> | det man köper eller säljer |
-| sak | <Sv>ett kvitto, kvitton</Sv> | bevis på ett köp |
-| pengar | <Sv>ett pris, priser</Sv> | vad något kostar |
-| pengar | <Sv>en krona, kronor</Sv> | svensk valutaenhet |
-| betalning | <Sv>ett kort, kort</Sv> | plastbricka för att betala |
-| betalning | <Sv>kontanter</Sv> | sedlar och mynt |
+| plats | <span lang="sv">en affär, affärer</span> | ställe där man handlar |
+| plats | <span lang="sv">en butik, butiker</span> | mindre försäljningsställe |
+| sak | <span lang="sv">en vara, varor</span> | det man köper eller säljer |
+| sak | <span lang="sv">ett kvitto, kvitton</span> | bevis på ett köp |
+| pengar | <span lang="sv">ett pris, priser</span> | vad något kostar |
+| pengar | <span lang="sv">en krona, kronor</span> | svensk valutaenhet |
+| betalning | <span lang="sv">ett kort, kort</span> | plastbricka för att betala |
+| betalning | <span lang="sv">kontanter</span> | sedlar och mynt |
 
 ## Butiksmönster
 
 | Behov | Svenskt mönster |
 | --- | --- |
-| fråga om priset | <Sv>Vad kostar den?</Sv> |
-| fråga om en ett-sak | <Sv>Vad kostar det här?</Sv> |
-| säga att du tar den här | <Sv>Jag tar den här.</Sv> |
-| be om hjälp | <Sv>Kan du hjälpa mig?</Sv> |
-| betala med kort | <Sv>Jag betalar med kort.</Sv> |
-| be om ett kvitto | <Sv>Kan jag få kvitto?</Sv> |
+| fråga om priset | <span lang="sv">Vad kostar den?</span> |
+| fråga om en ett-sak | <span lang="sv">Vad kostar det här?</span> |
+| säga att du tar den här | <span lang="sv">Jag tar den här.</span> |
+| be om hjälp | <span lang="sv">Kan du hjälpa mig?</span> |
+| betala med kort | <span lang="sv">Jag betalar med kort.</span> |
+| be om ett kvitto | <span lang="sv">Kan jag få kvitto?</span> |
 
 ## Prisord
 
 | Svenska | Förklaring |
 | --- | --- |
-| <Sv>billig</Sv> | kostar lite |
-| <Sv>dyr</Sv> | kostar mycket |
-| <Sv>rea</Sv> | tillfälligt sänkt pris |
-| <Sv>rabatt</Sv> | sänkning av priset |
-| <Sv>öppet</Sv> | går att handla i just nu |
-| <Sv>stängt</Sv> | går inte att handla i just nu |
+| <span lang="sv">billig</span> | kostar lite |
+| <span lang="sv">dyr</span> | kostar mycket |
+| <span lang="sv">rea</span> | tillfälligt sänkt pris |
+| <span lang="sv">rabatt</span> | sänkning av priset |
+| <span lang="sv">öppet</span> | går att handla i just nu |
+| <span lang="sv">stängt</span> | går inte att handla i just nu |
 
-Vid priser säger man på svenska oftast talet plus <Sv>kronor</Sv>:
-<Sv>Det kostar femtio kronor.</Sv>
+Vid priser säger man på svenska oftast talet plus <span lang="sv">kronor</span>:
+<span lang="sv">Det kostar femtio kronor.</span>
 
 <QuickCheck
 	items={[

@@ -43,18 +43,16 @@ function lineOf(source, index) {
 // Check 1: circular self-gloss in a table row
 // ---------------------------------------------------------------------------
 
-/** `<Sv>x</Sv>` is the Swedish-only shorthand for `<span lang="sv">x</span>`. */
-const FULL_SV_CELL = /^<Sv>([\s\S]*)<\/Sv>$/;
+/** A cell that is nothing but marked target-language text. */
 const FULL_SPAN_CELL = /^<span lang="(?:de|en|sv)">([\s\S]*)<\/span>$/;
 
 function markedCellText(cell) {
 	const trimmed = cell.trim();
-	return (trimmed.match(FULL_SV_CELL) ?? trimmed.match(FULL_SPAN_CELL))?.[1].trim();
+	return trimmed.match(FULL_SPAN_CELL)?.[1].trim();
 }
 
 function strippedCellText(cell) {
 	return cell
-		.replace(/<\/?Sv>/g, '')
 		.replace(/<span lang="(?:de|en|sv)">/g, '')
 		.replace(/<\/span>/g, '')
 		.trim();
@@ -129,7 +127,7 @@ function findSelfGlosses(file, source, metaLanguage, grammarLanguage) {
 
 const MIRRORED_PROP_NAMES = ['title', 'caption', 'label', 'alt'];
 const PROP_VALUE_RE = new RegExp(`\\b(${MIRRORED_PROP_NAMES.join('|')})=("([^"]*)"|'([^']*)')`, 'g');
-const MARKED_TEXT_RE = /<Sv>([\s\S]*?)<\/Sv>|<span lang="(?:de|en|sv)">([\s\S]*?)<\/span>/g;
+const MARKED_TEXT_RE = /<span lang="(?:de|en|sv)">([\s\S]*?)<\/span>/g;
 
 /**
  * A byte-identical mirror value only catches a verbatim copy. The real
@@ -141,14 +139,17 @@ const MARKED_TEXT_RE = /<Sv>([\s\S]*?)<\/Sv>|<span lang="(?:de|en|sv)">([\s\S]*?
  * byte-identical value is just the case where every token is shared.
  */
 function tokenize(value) {
-	return [...value.matchAll(/\p{L}+/gu)].map((match) => match[0].toLowerCase()).filter((token) => token.length >= 4);
+	// Strip markup first: `span` and `lang` are four letters long and would
+	// otherwise count as shared content words in every marked cell.
+	const text = value.replace(/<[^>]*>/g, ' ');
+	return [...text.matchAll(/\p{L}+/gu)].map((match) => match[0].toLowerCase()).filter((token) => token.length >= 4);
 }
 
-/** Tokens the canonical page itself marks as target-language text, e.g. `<Sv>bisats</Sv>` — a shared token is then a deliberate foreign term, not an untranslated leftover. */
+/** Tokens the canonical page itself marks as target-language text, e.g. `<span lang="sv">bisats</span>` — a shared token is then a deliberate foreign term, not an untranslated leftover. */
 function markedTokensOnPage(source) {
 	const tokens = new Set();
 	for (const match of source.matchAll(MARKED_TEXT_RE)) {
-		for (const token of tokenize(match[1] ?? match[2] ?? '')) tokens.add(token);
+		for (const token of tokenize(match[1] ?? '')) tokens.add(token);
 	}
 	return tokens;
 }

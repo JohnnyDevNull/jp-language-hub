@@ -24,16 +24,15 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- <Sv>Hur är läget?</Sv> is the everyday social "How are things?"; use
-  <Sv>Hur mår du?</Sv> when you really ask about how someone feels.
-- Small talk often runs on short questions: <Sv>Vad gör du i helgen?</Sv>,
-  <Sv>Har du haft en bra dag?</Sv>, <Sv>Ska du göra något kul?</Sv>
-- Reply lightly, then ask back with <Sv>själv då?</Sv> or
-  <Sv>och du?</Sv>
+- <span lang="sv">Hur är läget?</span> is the everyday social "How are things?"; use
+  <span lang="sv">Hur mår du?</span> when you really ask about how someone feels.
+- Small talk often runs on short questions: <span lang="sv">Vad gör du i helgen?</span>,
+  <span lang="sv">Har du haft en bra dag?</span>, <span lang="sv">Ska du göra något kul?</span>
+- Reply lightly, then ask back with <span lang="sv">själv då?</span> or
+  <span lang="sv">och du?</span>
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -45,35 +44,35 @@ next turn.
 
 | Pattern | Use it for | Example answer |
 | --- | --- | --- |
-| <Sv>Hej!</Sv> / <Sv>Hallå!</Sv> | greeting | <Sv>Hej!</Sv> |
-| <Sv>Hur är läget?</Sv> | how are things | <Sv>Bra, tack. Själv då?</Sv> |
-| <Sv>Hur mår du?</Sv> | how are you feeling | <Sv>Jag mår bra.</Sv> |
-| <Sv>Det var länge sedan!</Sv> | long time no see | <Sv>Ja, verkligen!</Sv> |
-| <Sv>Kul att se dig.</Sv> | good to see you | <Sv>Detsamma!</Sv> |
+| <span lang="sv">Hej!</span> / <span lang="sv">Hallå!</span> | greeting | <span lang="sv">Hej!</span> |
+| <span lang="sv">Hur är läget?</span> | how are things | <span lang="sv">Bra, tack. Själv då?</span> |
+| <span lang="sv">Hur mår du?</span> | how are you feeling | <span lang="sv">Jag mår bra.</span> |
+| <span lang="sv">Det var länge sedan!</span> | long time no see | <span lang="sv">Ja, verkligen!</span> |
+| <span lang="sv">Kul att se dig.</span> | good to see you | <span lang="sv">Detsamma!</span> |
 
-<Sv>Själv då?</Sv> is the compact spoken "and you?" after you have answered a
-question about yourself. <Sv>Och du?</Sv> is simpler and always safe.
+<span lang="sv">Själv då?</span> is the compact spoken "and you?" after you have answered a
+question about yourself. <span lang="sv">Och du?</span> is simpler and always safe.
 
 ## Safe everyday topics
 
 | Pattern | Use it for | Example answer |
 | --- | --- | --- |
-| <Sv>Vad gör du i helgen?</Sv> | weekend plans | <Sv>Jag ska träffa en kompis.</Sv> |
-| <Sv>Har du haft en bra dag?</Sv> | someone's day | <Sv>Ja, ganska bra.</Sv> |
-| <Sv>Ska du göra något kul?</Sv> | light plans | <Sv>Inte så mycket.</Sv> |
-| <Sv>Vad tycker du om vädret?</Sv> | weather | <Sv>Det är lite kallt.</Sv> |
-| <Sv>Vill du ta en kaffe?</Sv> | casual invitation | <Sv>Gärna!</Sv> |
-| <Sv>Hur går det med svenskan?</Sv> | language learning | <Sv>Det går långsamt men bra.</Sv> |
+| <span lang="sv">Vad gör du i helgen?</span> | weekend plans | <span lang="sv">Jag ska träffa en kompis.</span> |
+| <span lang="sv">Har du haft en bra dag?</span> | someone's day | <span lang="sv">Ja, ganska bra.</span> |
+| <span lang="sv">Ska du göra något kul?</span> | light plans | <span lang="sv">Inte så mycket.</span> |
+| <span lang="sv">Vad tycker du om vädret?</span> | weather | <span lang="sv">Det är lite kallt.</span> |
+| <span lang="sv">Vill du ta en kaffe?</span> | casual invitation | <span lang="sv">Gärna!</span> |
+| <span lang="sv">Hur går det med svenskan?</span> | language learning | <span lang="sv">Det går långsamt men bra.</span> |
 
 ## Tiny exchange
 
 | Speaker | Swedish |
 | --- | --- |
-| A | <Sv>Hej! Hur är läget?</Sv> |
-| B | <Sv>Bra, tack. Själv då?</Sv> |
-| A | <Sv>Jo, det är bra. Vad gör du i helgen?</Sv> |
-| B | <Sv>Jag ska träffa en kompis. Och du?</Sv> |
-| A | <Sv>Inte så mycket. Kanske ta en kaffe.</Sv> |
+| A | <span lang="sv">Hej! Hur är läget?</span> |
+| B | <span lang="sv">Bra, tack. Själv då?</span> |
+| A | <span lang="sv">Jo, det är bra. Vad gör du i helgen?</span> |
+| B | <span lang="sv">Jag ska träffa en kompis. Och du?</span> |
+| A | <span lang="sv">Inte så mycket. Kanske ta en kaffe.</span> |
 
 ## Direct comparison
 
@@ -83,8 +82,8 @@ question about yourself. <Sv>Och du?</Sv> is simpler and always safe.
 	<p slot="sv">Hur är läget?</p>
 </LanguageComparison>
 
-<Sv>Hur är läget?</Sv> asks about the situation more than the body. For a
-health or mood question, switch to <Sv>Hur mår du?</Sv>.
+<span lang="sv">Hur är läget?</span> asks about the situation more than the body. For a
+health or mood question, switch to <span lang="sv">Hur mår du?</span>.
 
 <LanguageComparison title="What do you do this weekend?">
 	<p slot="de">Was machst du am Wochenende?</p>

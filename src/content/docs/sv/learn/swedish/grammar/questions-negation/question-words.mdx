@@ -31,21 +31,20 @@ import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import SentenceSchema from '~/components/SentenceSchema.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - I en direkt fråga kommer frågeordet först och det finita verbet på andra
-  plats: <Sv>Var bor du?</Sv>
+  plats: <span lang="sv">Var bor du?</span>
 - En indirekt fråga är en bisats, så subjektet kommer tillbaka före verbet:
-  <Sv>Jag vet inte var hon bor.</Sv>
-- I en indirekt fråga får <Sv>vem</Sv> och <Sv>vad</Sv> tillägget
-  <Sv>som</Sv> när de är subjekt i sin egen sats.
+  <span lang="sv">Jag vet inte var hon bor.</span>
+- I en indirekt fråga får <span lang="sv">vem</span> och <span lang="sv">vad</span> tillägget
+  <span lang="sv">som</span> när de är subjekt i sin egen sats.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Svenska frågeord börjar nästan alla på <Sv>v-</Sv>, vilket gör dem lätta att
+Svenska frågeord börjar nästan alla på <span lang="sv">v-</span>, vilket gör dem lätta att
 känna igen. Det svåra är ordföljden, som skiljer sig mellan direkta och
 indirekta frågor.
 
@@ -53,19 +52,19 @@ indirekta frågor.
 
 | Svenska | Frågar om … |
 | --- | --- |
-| <Sv>vem</Sv> | en person |
-| <Sv>vems</Sv> | en ägare |
-| <Sv>vad</Sv> | en sak, en händelse eller en identitet |
-| <Sv>vilken / vilket / vilka</Sv> | ett val ur en mängd |
-| <Sv>var</Sv> | en plats |
-| <Sv>vart</Sv> | en riktning |
-| <Sv>när</Sv> | en tidpunkt |
-| <Sv>hur</Sv> | ett sätt eller ett tillstånd |
-| <Sv>varför</Sv> | en orsak |
-| <Sv>hur mycket / hur många</Sv> | en mängd eller ett antal |
+| <span lang="sv">vem</span> | en person |
+| <span lang="sv">vems</span> | en ägare |
+| <span lang="sv">vad</span> | en sak, en händelse eller en identitet |
+| <span lang="sv">vilken / vilket / vilka</span> | ett val ur en mängd |
+| <span lang="sv">var</span> | en plats |
+| <span lang="sv">vart</span> | en riktning |
+| <span lang="sv">när</span> | en tidpunkt |
+| <span lang="sv">hur</span> | ett sätt eller ett tillstånd |
+| <span lang="sv">varför</span> | en orsak |
+| <span lang="sv">hur mycket / hur många</span> | en mängd eller ett antal |
 
-<Sv>Vem</Sv> böjs inte — det finns ingen egen objektsform, så
-<Sv>Vem såg du?</Sv> och <Sv>Vem såg dig?</Sv> skiljs bara åt av
+<span lang="sv">Vem</span> böjs inte — det finns ingen egen objektsform, så
+<span lang="sv">Vem såg du?</span> och <span lang="sv">Vem såg dig?</span> skiljs bara åt av
 ordföljden, inte av pronomenet.
 
 ## Kärnregel: direkta frågor
@@ -85,11 +84,11 @@ verbet följer direkt efter. Jämför den ramen med en ja/nej-fråga:
 />
 
 Är frågeordet självt subjekt, tar det subjektsrollen och inget separat
-subjekt följer: <Sv>Vem ringde?</Sv> och <Sv>Vad hände?</Sv>
+subjekt följer: <span lang="sv">Vem ringde?</span> och <span lang="sv">Vad hände?</span>
 
 <RuleBox title="Inget do-stöd">
-	Svenskan har inget som motsvarar engelskans *do*. <Sv>Bor du här?</Sv>
-	betyder *Do you live here?*, och <Sv>Vad sa han?</Sv> betyder *What did
+	Svenskan har inget som motsvarar engelskans *do*. <span lang="sv">Bor du här?</span>
+	betyder *Do you live here?*, och <span lang="sv">Vad sa han?</span> betyder *What did
 	he say?* Verbet flyttar sig självt; inget hjälpverb läggs till.
 </RuleBox>
 
@@ -100,30 +99,30 @@ Se [Frågor](../questions/) för den gemensamma ja/nej-ramen och
 
 Standardsvenskan skiljer läge från riktning:
 
-- <Sv>Var bor du?</Sv> frågar var någon befinner sig.
-- <Sv>Vart går du?</Sv> frågar vart någon är på väg.
+- <span lang="sv">Var bor du?</span> frågar var någon befinner sig.
+- <span lang="sv">Vart går du?</span> frågar vart någon är på väg.
 
 För utgångspunkt hamnar prepositionen sist:
-<Sv>Var kommer du ifrån?</Sv>
+<span lang="sv">Var kommer du ifrån?</span>
 
 ## Vilken stämmer med substantivet
 
-Serien med <Sv>vilken</Sv> stämmer med substantivets genus och numerus:
+Serien med <span lang="sv">vilken</span> stämmer med substantivets genus och numerus:
 
-- <Sv>Vilken bok läser du?</Sv> — ett en-ord
-- <Sv>Vilket hus är ditt?</Sv> — ett ett-ord
-- <Sv>Vilka böcker har du läst?</Sv> — plural
+- <span lang="sv">Vilken bok läser du?</span> — ett en-ord
+- <span lang="sv">Vilket hus är ditt?</span> — ett ett-ord
+- <span lang="sv">Vilka böcker har du läst?</span> — plural
 
-För att fråga vilken sort använder svenskan <Sv>vad för</Sv> eller
-<Sv>vad för sorts</Sv>:
-<Sv>Vad för sorts musik lyssnar du på?</Sv>
+För att fråga vilken sort använder svenskan <span lang="sv">vad för</span> eller
+<span lang="sv">vad för sorts</span>:
+<span lang="sv">Vad för sorts musik lyssnar du på?</span>
 
 Se [en / ett](../../nouns-articles/en-ett/) för genuset bakom valet.
 
 ## Indirekta frågor: ingen inversion
 
 En indirekt fråga är en bisats. Subjektet kommer därför före det finita
-verbet, och ett satsadverbial som <Sv>inte</Sv> kommer också före det
+verbet, och ett satsadverbial som <span lang="sv">inte</span> kommer också före det
 verbet:
 
 <SentenceSchema
@@ -145,29 +144,29 @@ verbet:
 	]}
 />
 
-- <Sv>Var bor hon?</Sv> → <Sv>Jag vet inte var hon bor.</Sv>
-- <Sv>Varför kommer hon?</Sv> → <Sv>Jag förstår inte varför hon kommer.</Sv>
+- <span lang="sv">Var bor hon?</span> → <span lang="sv">Jag vet inte var hon bor.</span>
+- <span lang="sv">Varför kommer hon?</span> → <span lang="sv">Jag förstår inte varför hon kommer.</span>
 
 Se [Bisatser](../../sentence-structure/subordinate-clauses/) för den
 allmänna ramen för bisatser. [Frågor](../questions/#indirect-yesno-questions-with-om)
-tar upp indirekta ja/nej-frågor med <Sv>om</Sv>.
+tar upp indirekta ja/nej-frågor med <span lang="sv">om</span>.
 
 ## Lägg till som när frågeordet är subjekt
 
-I en indirekt fråga får <Sv>vem</Sv> och <Sv>vad</Sv> tillägget
-<Sv>som</Sv> när de är subjekt i sin egen sats:
+I en indirekt fråga får <span lang="sv">vem</span> och <span lang="sv">vad</span> tillägget
+<span lang="sv">som</span> när de är subjekt i sin egen sats:
 
-- <Sv>Jag vet inte vem som ringde.</Sv> — frågeordet är subjekt i bisatsen.
-- <Sv>Berätta vad som hände!</Sv> — samma mönster i en uppmaning.
+- <span lang="sv">Jag vet inte vem som ringde.</span> — frågeordet är subjekt i bisatsen.
+- <span lang="sv">Berätta vad som hände!</span> — samma mönster i en uppmaning.
 
-När de i stället är objekt, uteblir <Sv>som</Sv>:
+När de i stället är objekt, uteblir <span lang="sv">som</span>:
 
-- <Sv>Jag vet inte vem hon ringde.</Sv> — frågeordet är objekt, inte
+- <span lang="sv">Jag vet inte vem hon ringde.</span> — frågeordet är objekt, inte
   subjekt.
-- <Sv>Berätta vad du gjorde!</Sv> — objektet i uppmaningen.
+- <span lang="sv">Berätta vad du gjorde!</span> — objektet i uppmaningen.
 
-Direkta frågor behöver det inte: <Sv>Vem ringde?</Sv>,
-<Sv>Vad hände?</Sv>
+Direkta frågor behöver det inte: <span lang="sv">Vem ringde?</span>,
+<span lang="sv">Vad hände?</span>
 
 ## Direkt jämförelse
 
@@ -186,21 +185,21 @@ Direkta frågor behöver det inte: <Sv>Vem ringde?</Sv>,
 ## Vanliga misstag
 
 <MistakeBox title="Vanliga misstag">
-	- ❌ <Sv>Jag vet inte var bor hon.</Sv>
-	  ✅ <Sv>Jag vet inte var hon bor.</Sv>
-	- ❌ <Sv>Jag vet inte vem ringde.</Sv>
-	  ✅ <Sv>Jag vet inte vem som ringde.</Sv>
-	- ❌ <Sv>Vart bor du?</Sv>
-	  ✅ <Sv>Var bor du?</Sv>
-	- ❌ <Sv>Vilken hus är ditt?</Sv>
-	  ✅ <Sv>Vilket hus är ditt?</Sv>
+	- ❌ <span lang="sv">Jag vet inte var bor hon.</span>
+	  ✅ <span lang="sv">Jag vet inte var hon bor.</span>
+	- ❌ <span lang="sv">Jag vet inte vem ringde.</span>
+	  ✅ <span lang="sv">Jag vet inte vem som ringde.</span>
+	- ❌ <span lang="sv">Vart bor du?</span>
+	  ✅ <span lang="sv">Var bor du?</span>
+	- ❌ <span lang="sv">Vilken hus är ditt?</span>
+	  ✅ <span lang="sv">Vilket hus är ditt?</span>
 </MistakeBox>
 
 <MemoryTip>
 Kontrastera ett par tills det sitter automatiskt:
-<Sv><strong>Vem som ringde</strong></Sv> — den som ringde är subjektet.
-<Sv><strong>Vem hon ringde</strong></Sv> — den som ringde är någon annan.
-Det extra <Sv>som</Sv> markerar subjektet.
+<span lang="sv"><strong>Vem som ringde</strong></span> — den som ringde är subjektet.
+<span lang="sv"><strong>Vem hon ringde</strong></span> — den som ringde är någon annan.
+Det extra <span lang="sv">som</span> markerar subjektet.
 </MemoryTip>
 
 <QuickCheck

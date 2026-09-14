@@ -24,16 +24,15 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Använd <Sv>hemma</Sv> för att vara hemma och <Sv>hem</Sv> för att gå hem:
-  <Sv>Jag är hemma</Sv>, <Sv>Jag går hem</Sv>.
-- Använd <Sv>Var är …?</Sv> för saker som saknas och <Sv>Den ligger …</Sv> /
-  <Sv>Det står …</Sv> för var saker befinner sig.
+- Använd <span lang="sv">hemma</span> för att vara hemma och <span lang="sv">hem</span> för att gå hem:
+  <span lang="sv">Jag är hemma</span>, <span lang="sv">Jag går hem</span>.
+- Använd <span lang="sv">Var är …?</span> för saker som saknas och <span lang="sv">Den ligger …</span> /
+  <span lang="sv">Det står …</span> för var saker befinner sig.
 - Rutiner hemma börjar ofta med tiden:
-  <Sv>På morgonen dricker jag kaffe.</Sv>
+  <span lang="sv">På morgonen dricker jag kaffe.</span>
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -46,36 +45,36 @@ mening.
 
 | Mönster | Använd det när … | Register |
 | --- | --- | --- |
-| <Sv>Var är …?</Sv> | du frågar var något är | neutral |
-| <Sv>Har du sett …?</Sv> | du frågar om någon har sett det | neutral |
-| <Sv>Den ligger på bordet.</Sv> | du säger var ett föremål ligger | neutral |
-| <Sv>Det står i köket.</Sv> | du säger var något står eller är placerat | neutral |
-| <Sv>Jag hittar inte …</Sv> | du säger att du inte kan hitta något | neutral |
-| <Sv>Kan du lägga den på bordet?</Sv> | du ber någon lägga det på bordet | neutral |
+| <span lang="sv">Var är …?</span> | du frågar var något är | neutral |
+| <span lang="sv">Har du sett …?</span> | du frågar om någon har sett det | neutral |
+| <span lang="sv">Den ligger på bordet.</span> | du säger var ett föremål ligger | neutral |
+| <span lang="sv">Det står i köket.</span> | du säger var något står eller är placerat | neutral |
+| <span lang="sv">Jag hittar inte …</span> | du säger att du inte kan hitta något | neutral |
+| <span lang="sv">Kan du lägga den på bordet?</span> | du ber någon lägga det på bordet | neutral |
 
-Använd <Sv>ligger</Sv> för många lösa föremål och <Sv>står</Sv> för saker som
+Använd <span lang="sv">ligger</span> för många lösa föremål och <span lang="sv">står</span> för saker som
 står upprätt, är parkerade eller är fast placerade någonstans.
 
 ## Rutiner och behov hemma
 
 | Mönster | Använd det när … | Register |
 | --- | --- | --- |
-| <Sv>Jag är hemma idag.</Sv> | du säger att du är hemma idag | neutral |
-| <Sv>Jag går hem nu.</Sv> | du säger att du går hem nu | neutral |
-| <Sv>På morgonen …</Sv> | du talar om morgonrutiner | neutral |
-| <Sv>Jag måste städa.</Sv> | du säger att du måste städa | neutral |
-| <Sv>Kan du hjälpa mig?</Sv> | du ber om hjälp | neutral |
-| <Sv>Det är slut på kaffe.</Sv> | du säger att något har tagit slut | talspråk |
+| <span lang="sv">Jag är hemma idag.</span> | du säger att du är hemma idag | neutral |
+| <span lang="sv">Jag går hem nu.</span> | du säger att du går hem nu | neutral |
+| <span lang="sv">På morgonen …</span> | du talar om morgonrutiner | neutral |
+| <span lang="sv">Jag måste städa.</span> | du säger att du måste städa | neutral |
+| <span lang="sv">Kan du hjälpa mig?</span> | du ber om hjälp | neutral |
+| <span lang="sv">Det är slut på kaffe.</span> | du säger att något har tagit slut | talspråk |
 
 ## Gästfraser
 
 | Mönster | Använd det när … | Register |
 | --- | --- | --- |
-| <Sv>Kom in!</Sv> | du bjuder in någon | talspråk |
-| <Sv>Känn dig som hemma.</Sv> | uppmana gästen att trivas och slappna av | neutral |
-| <Sv>Vill du ha kaffe?</Sv> | du erbjuder kaffe | neutral |
-| <Sv>Kan jag få lite vatten?</Sv> | du ber om vatten | neutral |
-| <Sv>Var är toaletten?</Sv> | du frågar efter toaletten | neutral |
+| <span lang="sv">Kom in!</span> | du bjuder in någon | talspråk |
+| <span lang="sv">Känn dig som hemma.</span> | uppmana gästen att trivas och slappna av | neutral |
+| <span lang="sv">Vill du ha kaffe?</span> | du erbjuder kaffe | neutral |
+| <span lang="sv">Kan jag få lite vatten?</span> | du ber om vatten | neutral |
+| <span lang="sv">Var är toaletten?</span> | du frågar efter toaletten | neutral |
 
 ## Kort dialog hemma
 
@@ -98,7 +97,7 @@ står upprätt, är parkerade eller är fast placerade någonstans.
 </LanguageComparison>
 
 Tyska och engelska ändrar båda hela frasen. Svenska ändrar adverbet:
-<Sv>hemma</Sv> är plats, <Sv>hem</Sv> är riktning.
+<span lang="sv">hemma</span> är plats, <span lang="sv">hem</span> är riktning.
 
 <LanguageComparison title="Något har tagit slut">
 	<p slot="de">Der Kaffee ist alle.</p>
@@ -107,7 +106,7 @@ Tyska och engelska ändrar båda hela frasen. Svenska ändrar adverbet:
 </LanguageComparison>
 
 Den svenska frasen är opersonlig: bokstavligen "det är slut på kaffe". Lär dig
-<Sv>slut på</Sv> som ett fast hushållsmönster.
+<span lang="sv">slut på</span> som ett fast hushållsmönster.
 
 <QuickCheck
 	items={[

@@ -25,21 +25,20 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Använd <Sv>sin</Sv>, <Sv>sitt</Sv> eller <Sv>sina</Sv> när possessivet syftar
+- Använd <span lang="sv">sin</span>, <span lang="sv">sitt</span> eller <span lang="sv">sina</span> när possessivet syftar
   tillbaka på subjektet i tredje person i samma sats.
-- <Sv>hans</Sv>, <Sv>hennes</Sv> och <Sv>deras</Sv> syftar på någon annan än
+- <span lang="sv">hans</span>, <span lang="sv">hennes</span> och <span lang="sv">deras</span> syftar på någon annan än
   det subjektet.
-- Formen följer det ägda substantivet: <Sv>sin jacka</Sv>, <Sv>sitt hus</Sv>,
-  <Sv>sina vänner</Sv>.
+- Formen följer det ägda substantivet: <span lang="sv">sin jacka</span>, <span lang="sv">sitt hus</span>,
+  <span lang="sv">sina vänner</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Svenskan använder <Sv>sin</Sv>, <Sv>sitt</Sv> och <Sv>sina</Sv> när ett subjekt
+Svenskan använder <span lang="sv">sin</span>, <span lang="sv">sitt</span> och <span lang="sv">sina</span> när ett subjekt
 i tredje person äger något och possessivet syftar tillbaka på just det subjektet.
 
 ## Grundregel
@@ -48,44 +47,44 @@ Formen stämmer med det som ägs, inte med ägaren:
 
 | Ägt substantiv | Form | Exempel |
 | --- | --- | --- |
-| Singulariskt <Sv>en</Sv>-ord | <Sv>sin</Sv> | <Sv>Sara tar sin jacka.</Sv> |
-| Singulariskt <Sv>ett</Sv>-ord | <Sv>sitt</Sv> | <Sv>Sara säljer sitt hus.</Sv> |
-| Pluralord | <Sv>sina</Sv> | <Sv>Sara träffar sina vänner.</Sv> |
+| Singulariskt <span lang="sv">en</span>-ord | <span lang="sv">sin</span> | <span lang="sv">Sara tar sin jacka.</span> |
+| Singulariskt <span lang="sv">ett</span>-ord | <span lang="sv">sitt</span> | <span lang="sv">Sara säljer sitt hus.</span> |
+| Pluralord | <span lang="sv">sina</span> | <span lang="sv">Sara träffar sina vänner.</span> |
 
 I varje mening äger Sara jackan, huset eller vännerna. Hennes kön väljer inte
 formen; substantivets genus eller antal gör det.
 
 ## Egen eller någon annans sak?
 
-Kontrasten mot <Sv>hans</Sv>, <Sv>hennes</Sv> eller <Sv>deras</Sv> kan ändra vem
+Kontrasten mot <span lang="sv">hans</span>, <span lang="sv">hennes</span> eller <span lang="sv">deras</span> kan ändra vem
 som äger saken:
 
 | Svenska | Betydelse |
 | --- | --- |
-| <Sv>Anna tog sin jacka.</Sv> | Anna tog sin egen jacka. |
-| <Sv>Anna tog hennes jacka.</Sv> | Anna tog en annan kvinnas jacka. |
-| <Sv>Erik tog sin jacka.</Sv> | Erik tog sin egen jacka. |
-| <Sv>Erik tog hans jacka.</Sv> | Erik tog en annan mans jacka. |
-| <Sv>De tog sina jackor.</Sv> | De tog sina egna jackor. |
-| <Sv>De tog deras jackor.</Sv> | De tog en annan grupps jackor. |
+| <span lang="sv">Anna tog sin jacka.</span> | Anna tog sin egen jacka. |
+| <span lang="sv">Anna tog hennes jacka.</span> | Anna tog en annan kvinnas jacka. |
+| <span lang="sv">Erik tog sin jacka.</span> | Erik tog sin egen jacka. |
+| <span lang="sv">Erik tog hans jacka.</span> | Erik tog en annan mans jacka. |
+| <span lang="sv">De tog sina jackor.</span> | De tog sina egna jackor. |
+| <span lang="sv">De tog deras jackor.</span> | De tog en annan grupps jackor. |
 
 Sammanhanget måste visa vem den andra personen eller gruppen är när
-<Sv>hans</Sv>, <Sv>hennes</Sv> eller <Sv>deras</Sv> används.
+<span lang="sv">hans</span>, <span lang="sv">hennes</span> eller <span lang="sv">deras</span> används.
 
 ## Satsgränsen spelar roll
 
 Det relevanta subjektet är subjektet i samma sats:
 
-<Sv>Anna sa att Erik tog sin jacka.</Sv>
+<span lang="sv">Anna sa att Erik tog sin jacka.</span>
 
-I bisatsen är <Sv>Erik</Sv> subjekt, så <Sv>sin jacka</Sv> betyder normalt Eriks
+I bisatsen är <span lang="sv">Erik</span> subjekt, så <span lang="sv">sin jacka</span> betyder normalt Eriks
 egen jacka, inte Annas.
 
 Jämför:
 
-<Sv>Anna sa att Erik tog hennes jacka.</Sv>
+<span lang="sv">Anna sa att Erik tog hennes jacka.</span>
 
-Här kan <Sv>hennes</Sv> syfta på Anna eller en annan kvinna, beroende på
+Här kan <span lang="sv">hennes</span> syfta på Anna eller en annan kvinna, beroende på
 sammanhanget.
 
 Den allmänna bisatsstrukturen hör till
@@ -97,14 +96,14 @@ bara upp vilken ägare den reflexiva formen kan syfta tillbaka på.
 De är reflexiva possessiv i tredje person. Subjekt i första och andra person
 använder sina vanliga possessiv:
 
-- <Sv>Jag tar min jacka.</Sv>
-- <Sv>Du tar din jacka.</Sv>
-- <Sv>Vi tar våra jackor.</Sv>
+- <span lang="sv">Jag tar min jacka.</span>
+- <span lang="sv">Du tar din jacka.</span>
+- <span lang="sv">Vi tar våra jackor.</span>
 
 De står normalt inte heller inuti själva subjektet:
 
-- <Sv>Hans bil är ny.</Sv>
-- <Sv>Hennes vänner kommer.</Sv>
+- <span lang="sv">Hans bil är ny.</span>
+- <span lang="sv">Hennes vänner kommer.</span>
 
 ## Direkt jämförelse
 
@@ -125,18 +124,18 @@ medan svenskan väljer:
 </LanguageComparison>
 
 De tyska och engelska meningarna kan vara tvetydiga utan sammanhang. Svenskan
-använder normalt <Sv>sin</Sv> för att göra ”sin egen” tydligt.
+använder normalt <span lang="sv">sin</span> för att göra ”sin egen” tydligt.
 
 ## Vanliga misstag
 
 <MistakeBox title="Vanliga misstag">
-	- ❌ <Sv>Anna säljer hennes hus.</Sv> när Anna säljer sitt eget hus
-	  ✅ <Sv>Anna säljer sitt hus.</Sv>
-	- ❌ <Sv>Erik träffar sin vänner.</Sv>
-	  ✅ <Sv>Erik träffar sina vänner.</Sv>
-	- ❌ Välj <Sv>sin</Sv> för att ägaren är en person.
-	  Välj efter det ägda substantivet: <Sv>sin bil</Sv>, <Sv>sitt hus</Sv>,
-	  <Sv>sina böcker</Sv>.
+	- ❌ <span lang="sv">Anna säljer hennes hus.</span> när Anna säljer sitt eget hus
+	  ✅ <span lang="sv">Anna säljer sitt hus.</span>
+	- ❌ <span lang="sv">Erik träffar sin vänner.</span>
+	  ✅ <span lang="sv">Erik träffar sina vänner.</span>
+	- ❌ Välj <span lang="sv">sin</span> för att ägaren är en person.
+	  Välj efter det ägda substantivet: <span lang="sv">sin bil</span>, <span lang="sv">sitt hus</span>,
+	  <span lang="sv">sina böcker</span>.
 </MistakeBox>
 
 <MemoryTip title="Två frågor">

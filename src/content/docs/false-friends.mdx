@@ -22,13 +22,12 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
 - A familiar-looking Swedish word is a warning sign, not a translation.
-- The dangerous pairs are the everyday ones: <Sv>rolig</Sv>, <Sv>full</Sv>,
-  <Sv>gift</Sv>, <Sv>semester</Sv>, <Sv>middag</Sv>.
+- The dangerous pairs are the everyday ones: <span lang="sv">rolig</span>, <span lang="sv">full</span>,
+  <span lang="sv">gift</span>, <span lang="sv">semester</span>, <span lang="sv">middag</span>.
 - Store a false friend with the word you actually meant, so the correct form is
   one lookup away.
 </KeyTakeaway>
@@ -42,30 +41,30 @@ misleading word, what it really means, and the word you probably wanted.
 
 | Swedish | Actually means | You probably meant | Example |
 | --- | --- | --- | --- |
-| <Sv>snäll</Sv> | kind, nice | *schnell* → <Sv>snabb</Sv> | <Sv>Han är snäll mot alla.</Sv> |
-| <Sv>rolig</Sv> | funny, enjoyable | *ruhig* → <Sv>lugn</Sv> | <Sv>Filmen var rolig.</Sv> |
-| <Sv>kul</Sv> | fun | *kühl* → <Sv>sval</Sv> | <Sv>Det var kul!</Sv> |
-| <Sv>middag</Sv> | dinner (evening meal) | *Mittag* → <Sv>lunch</Sv> | <Sv>Vi äter middag klockan sju.</Sv> |
-| <Sv>semester</Sv> | holiday, vacation | *Semester* → <Sv>termin</Sv> | <Sv>Jag har semester i juli.</Sv> |
-| <Sv>öl</Sv> | beer | *Öl* → <Sv>olja</Sv> | <Sv>En öl, tack.</Sv> |
-| <Sv>glass</Sv> | ice cream | *Glas* → <Sv>glas</Sv> | <Sv>Barnen vill ha glass.</Sv> |
-| <Sv>springa</Sv> | to run | *springen* → <Sv>hoppa</Sv> | <Sv>Jag springer varje morgon.</Sv> |
-| <Sv>bekant</Sv> | an acquaintance | *bekannt* (famous) → <Sv>känd</Sv> | <Sv>Hon är en gammal bekant.</Sv> |
-| <Sv>art</Sv> | species | *Art* (kind) → <Sv>sort</Sv>, <Sv>slag</Sv> | <Sv>Vilken art är det?</Sv> |
-| <Sv>nödig</Sv> | needing the toilet | *nötig* → <Sv>nödvändig</Sv> | <Sv>Jag är nödig.</Sv> |
-| <Sv>rar</Sv> | sweet, endearing | *rar* (scarce) → <Sv>sällsynt</Sv> | <Sv>Vilken rar liten katt.</Sv> |
-| <Sv>by</Sv> | village | *bei* → <Sv>hos</Sv>, <Sv>vid</Sv> | <Sv>Vi bor i en liten by.</Sv> |
-| <Sv>kör</Sv> | drives; also choir | *Chor* → only the noun <Sv>kör</Sv> | <Sv>Hon kör bil.</Sv> / <Sv>Vi sjunger i kör.</Sv> |
-| <Sv>hemsk</Sv> | awful, horrible | *heimisch* → <Sv>hemtrevlig</Sv> | <Sv>Vädret var hemskt.</Sv> |
+| <span lang="sv">snäll</span> | kind, nice | *schnell* → <span lang="sv">snabb</span> | <span lang="sv">Han är snäll mot alla.</span> |
+| <span lang="sv">rolig</span> | funny, enjoyable | *ruhig* → <span lang="sv">lugn</span> | <span lang="sv">Filmen var rolig.</span> |
+| <span lang="sv">kul</span> | fun | *kühl* → <span lang="sv">sval</span> | <span lang="sv">Det var kul!</span> |
+| <span lang="sv">middag</span> | dinner (evening meal) | *Mittag* → <span lang="sv">lunch</span> | <span lang="sv">Vi äter middag klockan sju.</span> |
+| <span lang="sv">semester</span> | holiday, vacation | *Semester* → <span lang="sv">termin</span> | <span lang="sv">Jag har semester i juli.</span> |
+| <span lang="sv">öl</span> | beer | *Öl* → <span lang="sv">olja</span> | <span lang="sv">En öl, tack.</span> |
+| <span lang="sv">glass</span> | ice cream | *Glas* → <span lang="sv">glas</span> | <span lang="sv">Barnen vill ha glass.</span> |
+| <span lang="sv">springa</span> | to run | *springen* → <span lang="sv">hoppa</span> | <span lang="sv">Jag springer varje morgon.</span> |
+| <span lang="sv">bekant</span> | an acquaintance | *bekannt* (famous) → <span lang="sv">känd</span> | <span lang="sv">Hon är en gammal bekant.</span> |
+| <span lang="sv">art</span> | species | *Art* (kind) → <span lang="sv">sort</span>, <span lang="sv">slag</span> | <span lang="sv">Vilken art är det?</span> |
+| <span lang="sv">nödig</span> | needing the toilet | *nötig* → <span lang="sv">nödvändig</span> | <span lang="sv">Jag är nödig.</span> |
+| <span lang="sv">rar</span> | sweet, endearing | *rar* (scarce) → <span lang="sv">sällsynt</span> | <span lang="sv">Vilken rar liten katt.</span> |
+| <span lang="sv">by</span> | village | *bei* → <span lang="sv">hos</span>, <span lang="sv">vid</span> | <span lang="sv">Vi bor i en liten by.</span> |
+| <span lang="sv">kör</span> | drives; also choir | *Chor* → only the noun <span lang="sv">kör</span> | <span lang="sv">Hon kör bil.</span> / <span lang="sv">Vi sjunger i kör.</span> |
+| <span lang="sv">hemsk</span> | awful, horrible | *heimisch* → <span lang="sv">hemtrevlig</span> | <span lang="sv">Vädret var hemskt.</span> |
 
 <MistakeBox
 	incorrect="Jag är full."
 	correct="Jag är mätt."
 	lang="sv"
 >
-	<Sv>full</Sv> said about a person means **drunk**. After a meal you are
-	<Sv>mätt</Sv>. The literal sense survives for containers:
-	<Sv>Glaset är fullt.</Sv>
+	<span lang="sv">full</span> said about a person means **drunk**. After a meal you are
+	<span lang="sv">mätt</span>. The literal sense survives for containers:
+	<span lang="sv">Glaset är fullt.</span>
 </MistakeBox>
 
 <MistakeBox
@@ -73,32 +72,32 @@ misleading word, what it really means, and the word you probably wanted.
 	correct="Jag vill ha ett rum som är lugnt."
 	lang="sv"
 >
-	Asking for a *ruhig* hotel room with <Sv>rolig</Sv> asks for an amusing one.
-	Note the agreement too: <Sv>ett lugnt rum</Sv>.
+	Asking for a *ruhig* hotel room with <span lang="sv">rolig</span> asks for an amusing one.
+	Note the agreement too: <span lang="sv">ett lugnt rum</span>.
 </MistakeBox>
 
 ## Traps for English speakers
 
 | Swedish | Actually means | You probably meant | Example |
 | --- | --- | --- | --- |
-| <Sv>fart</Sv> | speed | flatulence → <Sv>fjärt</Sv>, <Sv>prutt</Sv> | <Sv>Bilen har hög fart.</Sv> |
-| <Sv>slut</Sv> | end, finished, sold out | (no shared meaning) | <Sv>Filmen är slut.</Sv> |
-| <Sv>barn</Sv> | child, children | barn → <Sv>lada</Sv> | <Sv>Vi har två barn.</Sv> |
-| <Sv>bra</Sv> | good, well | bra → <Sv>behå</Sv> | <Sv>Maten var bra.</Sv> |
-| <Sv>kock</Sv> | cook, chef | (no shared meaning) | <Sv>Han är kock på en restaurang.</Sv> |
-| <Sv>sex</Sv> | six; also sex | usually just the number | <Sv>Klockan är sex.</Sv> |
-| <Sv>sky</Sv> | meat juices, gravy; to shun | sky → <Sv>himmel</Sv> | <Sv>Kött med sky.</Sv> / <Sv>Han skyr socker.</Sv> |
-| <Sv>hyra</Sv> | to rent | hire a person → <Sv>anställa</Sv> | <Sv>Vi hyr en bil i Malmö.</Sv> |
+| <span lang="sv">fart</span> | speed | flatulence → <span lang="sv">fjärt</span>, <span lang="sv">prutt</span> | <span lang="sv">Bilen har hög fart.</span> |
+| <span lang="sv">slut</span> | end, finished, sold out | (no shared meaning) | <span lang="sv">Filmen är slut.</span> |
+| <span lang="sv">barn</span> | child, children | barn → <span lang="sv">lada</span> | <span lang="sv">Vi har två barn.</span> |
+| <span lang="sv">bra</span> | good, well | bra → <span lang="sv">behå</span> | <span lang="sv">Maten var bra.</span> |
+| <span lang="sv">kock</span> | cook, chef | (no shared meaning) | <span lang="sv">Han är kock på en restaurang.</span> |
+| <span lang="sv">sex</span> | six; also sex | usually just the number | <span lang="sv">Klockan är sex.</span> |
+| <span lang="sv">sky</span> | meat juices, gravy; to shun | sky → <span lang="sv">himmel</span> | <span lang="sv">Kött med sky.</span> / <span lang="sv">Han skyr socker.</span> |
+| <span lang="sv">hyra</span> | to rent | hire a person → <span lang="sv">anställa</span> | <span lang="sv">Vi hyr en bil i Malmö.</span> |
 
 <MistakeBox
 	incorrect="Tack för giftet!"
 	correct="Tack för gåvan!"
 	lang="sv"
 >
-	<Sv>gift</Sv> is either the adjective **married** (<Sv>Hon är gift.</Sv>) or
-	the noun <Sv>ett gift</Sv>, **poison** — so <Sv>Tack för giftet!</Sv> is
-	perfectly grammatical and thanks your host for the poison. A present is <Sv>en gåva</Sv> or
-	<Sv>en present</Sv>.
+	<span lang="sv">gift</span> is either the adjective **married** (<span lang="sv">Hon är gift.</span>) or
+	the noun <span lang="sv">ett gift</span>, **poison** — so <span lang="sv">Tack för giftet!</span> is
+	perfectly grammatical and thanks your host for the poison. A present is <span lang="sv">en gåva</span> or
+	<span lang="sv">en present</span>.
 </MistakeBox>
 
 <QuickCheck

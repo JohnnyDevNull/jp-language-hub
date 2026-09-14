@@ -25,21 +25,20 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Verwende <Sv>sin</Sv>, <Sv>sitt</Sv> oder <Sv>sina</Sv>, wenn der Besitz auf
+- Verwende <span lang="sv">sin</span>, <span lang="sv">sitt</span> oder <span lang="sv">sina</span>, wenn der Besitz auf
   das Subjekt der dritten Person im selben Satz zurückverweist.
-- <Sv>hans</Sv>, <Sv>hennes</Sv> und <Sv>deras</Sv> verweisen auf jemand anderen
+- <span lang="sv">hans</span>, <span lang="sv">hennes</span> und <span lang="sv">deras</span> verweisen auf jemand anderen
   als dieses Subjekt.
-- Die Form richtet sich nach dem besessenen Nomen: <Sv>sin jacka</Sv>,
-  <Sv>sitt hus</Sv>, <Sv>sina vänner</Sv>.
+- Die Form richtet sich nach dem besessenen Nomen: <span lang="sv">sin jacka</span>,
+  <span lang="sv">sitt hus</span>, <span lang="sv">sina vänner</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Schwedisch verwendet <Sv>sin</Sv>, <Sv>sitt</Sv> und <Sv>sina</Sv>, wenn ein
+Schwedisch verwendet <span lang="sv">sin</span>, <span lang="sv">sitt</span> und <span lang="sv">sina</span>, wenn ein
 Subjekt der dritten Person etwas besitzt und das Possessivpronomen auf eben
 dieses Subjekt zurückverweist.
 
@@ -49,44 +48,44 @@ Die Form stimmt mit dem Besitz überein, nicht mit dem Besitzer:
 
 | Besessenes Nomen | Form | Beispiel |
 | --- | --- | --- |
-| Singularisches <Sv>en</Sv>-Nomen | <Sv>sin</Sv> | <Sv>Sara tar sin jacka.</Sv> |
-| Singularisches <Sv>ett</Sv>-Nomen | <Sv>sitt</Sv> | <Sv>Sara säljer sitt hus.</Sv> |
-| Pluralnomen | <Sv>sina</Sv> | <Sv>Sara träffar sina vänner.</Sv> |
+| Singularisches <span lang="sv">en</span>-Nomen | <span lang="sv">sin</span> | <span lang="sv">Sara tar sin jacka.</span> |
+| Singularisches <span lang="sv">ett</span>-Nomen | <span lang="sv">sitt</span> | <span lang="sv">Sara säljer sitt hus.</span> |
+| Pluralnomen | <span lang="sv">sina</span> | <span lang="sv">Sara träffar sina vänner.</span> |
 
 In allen Sätzen besitzt Sara Jacke, Haus oder Freunde. Ihr Geschlecht bestimmt
 die Form nicht; entscheidend sind Genus oder Zahl des Nomens.
 
 ## Eigene oder fremde Sache?
 
-Der Gegensatz zu <Sv>hans</Sv>, <Sv>hennes</Sv> oder <Sv>deras</Sv> kann
+Der Gegensatz zu <span lang="sv">hans</span>, <span lang="sv">hennes</span> oder <span lang="sv">deras</span> kann
 entscheiden, wem etwas gehört:
 
 | Schwedisch | Bedeutung |
 | --- | --- |
-| <Sv>Anna tog sin jacka.</Sv> | Anna nahm ihre eigene Jacke. |
-| <Sv>Anna tog hennes jacka.</Sv> | Anna nahm die Jacke einer anderen Frau. |
-| <Sv>Erik tog sin jacka.</Sv> | Erik nahm seine eigene Jacke. |
-| <Sv>Erik tog hans jacka.</Sv> | Erik nahm die Jacke eines anderen Mannes. |
-| <Sv>De tog sina jackor.</Sv> | Sie nahmen ihre eigenen Jacken. |
-| <Sv>De tog deras jackor.</Sv> | Sie nahmen die Jacken einer anderen Gruppe. |
+| <span lang="sv">Anna tog sin jacka.</span> | Anna nahm ihre eigene Jacke. |
+| <span lang="sv">Anna tog hennes jacka.</span> | Anna nahm die Jacke einer anderen Frau. |
+| <span lang="sv">Erik tog sin jacka.</span> | Erik nahm seine eigene Jacke. |
+| <span lang="sv">Erik tog hans jacka.</span> | Erik nahm die Jacke eines anderen Mannes. |
+| <span lang="sv">De tog sina jackor.</span> | Sie nahmen ihre eigenen Jacken. |
+| <span lang="sv">De tog deras jackor.</span> | Sie nahmen die Jacken einer anderen Gruppe. |
 
-Bei <Sv>hans</Sv>, <Sv>hennes</Sv> und <Sv>deras</Sv> muss der Kontext die
+Bei <span lang="sv">hans</span>, <span lang="sv">hennes</span> und <span lang="sv">deras</span> muss der Kontext die
 andere Person oder Gruppe bestimmen.
 
 ## Die Satzgrenze zählt
 
 Entscheidend ist das Subjekt desselben Satzes:
 
-<Sv>Anna sa att Erik tog sin jacka.</Sv>
+<span lang="sv">Anna sa att Erik tog sin jacka.</span>
 
-Im Nebensatz ist <Sv>Erik</Sv> das Subjekt. Daher bedeutet <Sv>sin jacka</Sv>
+Im Nebensatz ist <span lang="sv">Erik</span> das Subjekt. Daher bedeutet <span lang="sv">sin jacka</span>
 normalerweise Eriks eigene Jacke, nicht Annas.
 
 Vergleiche:
 
-<Sv>Anna sa att Erik tog hennes jacka.</Sv>
+<span lang="sv">Anna sa att Erik tog hennes jacka.</span>
 
-Hier kann <Sv>hennes</Sv> je nach Kontext Anna oder eine andere Frau meinen.
+Hier kann <span lang="sv">hennes</span> je nach Kontext Anna oder eine andere Frau meinen.
 
 Die allgemeine Struktur des Nebensatzes erklärt
 [Nebensätze](../../sentence-structure/subordinate-clauses/). Diese Seite
@@ -97,14 +96,14 @@ behandelt nur, auf welchen Besitzer die Reflexivform zurückverweisen kann.
 Sie sind reflexive Possessivpronomen der dritten Person. Subjekte der ersten und
 zweiten Person verwenden die gewöhnlichen Possessivpronomen:
 
-- <Sv>Jag tar min jacka.</Sv>
-- <Sv>Du tar din jacka.</Sv>
-- <Sv>Vi tar våra jackor.</Sv>
+- <span lang="sv">Jag tar min jacka.</span>
+- <span lang="sv">Du tar din jacka.</span>
+- <span lang="sv">Vi tar våra jackor.</span>
 
 Sie stehen normalerweise auch nicht innerhalb des Subjekts selbst:
 
-- <Sv>Hans bil är ny.</Sv> — Sein Auto ist neu.
-- <Sv>Hennes vänner kommer.</Sv> — Ihre Freunde kommen.
+- <span lang="sv">Hans bil är ny.</span> — Sein Auto ist neu.
+- <span lang="sv">Hennes vänner kommer.</span> — Ihre Freunde kommen.
 
 ## Direkter Vergleich
 
@@ -125,18 +124,18 @@ beide Lesarten ab; Schwedisch entscheidet sich:
 </LanguageComparison>
 
 Die deutschen und englischen Sätze können ohne Kontext mehrdeutig sein.
-Schwedisch verwendet normalerweise <Sv>sin</Sv>, um „die eigene“ Sache klarzumachen.
+Schwedisch verwendet normalerweise <span lang="sv">sin</span>, um „die eigene“ Sache klarzumachen.
 
 ## Typische Fehler
 
 <MistakeBox title="Typische Fehler">
-	- ❌ <Sv>Anna säljer hennes hus.</Sv>, wenn Anna ihr eigenes Haus verkauft
-	  ✅ <Sv>Anna säljer sitt hus.</Sv>
-	- ❌ <Sv>Erik träffar sin vänner.</Sv>
-	  ✅ <Sv>Erik träffar sina vänner.</Sv>
-	- ❌ <Sv>sin</Sv> wählen, weil der Besitzer eine Person ist.
-	  Wähle nach dem besessenen Nomen: <Sv>sin bil</Sv>, <Sv>sitt hus</Sv>,
-	  <Sv>sina böcker</Sv>.
+	- ❌ <span lang="sv">Anna säljer hennes hus.</span>, wenn Anna ihr eigenes Haus verkauft
+	  ✅ <span lang="sv">Anna säljer sitt hus.</span>
+	- ❌ <span lang="sv">Erik träffar sin vänner.</span>
+	  ✅ <span lang="sv">Erik träffar sina vänner.</span>
+	- ❌ <span lang="sv">sin</span> wählen, weil der Besitzer eine Person ist.
+	  Wähle nach dem besessenen Nomen: <span lang="sv">sin bil</span>, <span lang="sv">sitt hus</span>,
+	  <span lang="sv">sina böcker</span>.
 </MistakeBox>
 
 <MemoryTip title="Zwei Fragen">

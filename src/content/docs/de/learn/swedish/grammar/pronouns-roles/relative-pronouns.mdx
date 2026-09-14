@@ -28,32 +28,31 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- <Sv>Som</Sv> ist unveränderlich und gilt für Menschen und Dinge, als Subjekt und als Objekt.
-- Eine Präposition steht nicht vor <Sv>som</Sv>; im gewöhnlichen Schwedisch bleibt sie im Relativsatz weit hinten, oft am Ende.
-- <Sv>Vilket</Sv> verweist auf einen ganzen Satz zurück, und <Sv>vars</Sv> ist das formelle „wessen“.
+- <span lang="sv">Som</span> ist unveränderlich und gilt für Menschen und Dinge, als Subjekt und als Objekt.
+- Eine Präposition steht nicht vor <span lang="sv">som</span>; im gewöhnlichen Schwedisch bleibt sie im Relativsatz weit hinten, oft am Ende.
+- <span lang="sv">Vilket</span> verweist auf einen ganzen Satz zurück, und <span lang="sv">vars</span> ist das formelle „wessen“.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Schwedische Relativsätze sind einfacher als deutsche: Das Relativpronomen verändert sich nicht nach Genus, Zahl oder Kasus. In fast jedem Alltagssatz lautet es <Sv>som</Sv>.
+Schwedische Relativsätze sind einfacher als deutsche: Das Relativpronomen verändert sich nicht nach Genus, Zahl oder Kasus. In fast jedem Alltagssatz lautet es <span lang="sv">som</span>.
 
 ## som ist die Standardform
 
-<Sv>Som</Sv> ist unveränderlich. Es funktioniert für Menschen und Dinge, als Subjekt und als Objekt des Relativsatzes:
+<span lang="sv">Som</span> ist unveränderlich. Es funktioniert für Menschen und Dinge, als Subjekt und als Objekt des Relativsatzes:
 
-- <Sv>Mannen som bor här heter Erik.</Sv> — *Der Mann, der hier wohnt, heißt Erik.*
-- <Sv>Boken som jag läste var bra.</Sv> — *Das Buch, das ich gelesen habe, war gut.*
-- <Sv>Barnen som vi träffade var trevliga.</Sv> — *Die Kinder, die wir getroffen haben, waren nett.*
+- <span lang="sv">Mannen som bor här heter Erik.</span> — *Der Mann, der hier wohnt, heißt Erik.*
+- <span lang="sv">Boken som jag läste var bra.</span> — *Das Buch, das ich gelesen habe, war gut.*
+- <span lang="sv">Barnen som vi träffade var trevliga.</span> — *Die Kinder, die wir getroffen haben, waren nett.*
 
-Vergleiche die deutschen Entsprechungen, deren Form sich ändert: <span lang="de">der Mann, **der** hier wohnt</span> gegenüber <span lang="de">das Buch, **das** ich gelesen habe</span>. Schwedisch behält <Sv>som</Sv> in beiden Fällen.
+Vergleiche die deutschen Entsprechungen, deren Form sich ändert: <span lang="de">der Mann, **der** hier wohnt</span> gegenüber <span lang="de">das Buch, **das** ich gelesen habe</span>. Schwedisch behält <span lang="sv">som</span> in beiden Fällen.
 
 ## Die Präposition bleibt normalerweise hinten
 
-Das ist die wichtigste Regel für Deutschsprachige. <Sv>Som</Sv> folgt nicht auf eine Präposition. Im gewöhnlichen Schwedisch bleibt die Präposition im Relativsatz weit hinten, oft am Ende:
+Das ist die wichtigste Regel für Deutschsprachige. <span lang="sv">Som</span> folgt nicht auf eine Präposition. Im gewöhnlichen Schwedisch bleibt die Präposition im Relativsatz weit hinten, oft am Ende:
 
 <LanguageComparison title="Im Haus">
 	<p slot="de">das Haus, in dem ich wohne</p>
@@ -76,70 +75,70 @@ Das ist die wichtigste Regel für Deutschsprachige. <Sv>Som</Sv> folgt nicht auf
 Englisch stellt die Präposition oft auf dieselbe Weise ans Ende; Deutsch zieht sie mit dem Relativpronomen nach vorn.
 
 <RuleBox title="Regel">
-	Schreibe keine Präposition direkt vor <Sv>som</Sv>. Im gewöhnlichen Muster steht sie im Relativsatz weit hinten, oft am Ende: <Sv>❌ huset i som jag bor</Sv>, <Sv>✅ huset som jag bor i</Sv>.
+	Schreibe keine Präposition direkt vor <span lang="sv">som</span>. Im gewöhnlichen Muster steht sie im Relativsatz weit hinten, oft am Ende: <span lang="sv">❌ huset i som jag bor</span>, <span lang="sv">✅ huset som jag bor i</span>.
 </RuleBox>
 
 ## som kann als Objekt wegfallen
 
-Wenn <Sv>som</Sv> das **Objekt** des Relativsatzes ist, kann es wegfallen, so wie im Englischen *that* entfallen kann:
+Wenn <span lang="sv">som</span> das **Objekt** des Relativsatzes ist, kann es wegfallen, so wie im Englischen *that* entfallen kann:
 
-- <Sv>Boken (som) jag läste var bra.</Sv>
+- <span lang="sv">Boken (som) jag läste var bra.</span>
 
 Ist es das **Subjekt**, muss es stehen bleiben:
 
-- <Sv>Mannen som bor här</Sv> — nicht <Sv>❌ Mannen bor här</Sv>; das ist ein ganz anderer Satz.
+- <span lang="sv">Mannen som bor här</span> — nicht <span lang="sv">❌ Mannen bor här</span>; das ist ein ganz anderer Satz.
 
 ## vilket verweist auf einen ganzen Satz
 
-<Sv>Vilken / vilket / vilka</Sv> ist das flektierte Relativpronomen. Im modernen Alltagsschwedisch brauchst du vor allem eine Verwendung: <Sv>vilket</Sv> verweist auf einen ganzen vorhergehenden Satz zurück, wo im Englischen *which* steht:
+<span lang="sv">Vilken / vilket / vilka</span> ist das flektierte Relativpronomen. Im modernen Alltagsschwedisch brauchst du vor allem eine Verwendung: <span lang="sv">vilket</span> verweist auf einen ganzen vorhergehenden Satz zurück, wo im Englischen *which* steht:
 
-- <Sv>Han kom för sent, vilket irriterade alla.</Sv> — *Er kam zu spät, was alle ärgerte.*
-- <Sv>Det regnade hela veckan, vilket vi inte hade väntat oss.</Sv>
+- <span lang="sv">Han kom för sent, vilket irriterade alla.</span> — *Er kam zu spät, was alle ärgerte.*
+- <span lang="sv">Det regnade hela veckan, vilket vi inte hade väntat oss.</span>
 
 Beachte: Deutsch verwendet hier normalerweise <span lang="de">was</span>, nicht eine Form von <span lang="de">welcher</span>.
 
-Nach einer Präposition ist <Sv>vilken</Sv> zwar grammatisch möglich, das Ergebnis wirkt aber formell und schriftsprachlich: <Sv>ett problem för vilket det inte finns någon lösning</Sv>. Beim Sprechen formulierst du den Satz besser um.
+Nach einer Präposition ist <span lang="sv">vilken</span> zwar grammatisch möglich, das Ergebnis wirkt aber formell und schriftsprachlich: <span lang="sv">ett problem för vilket det inte finns någon lösning</span>. Beim Sprechen formulierst du den Satz besser um.
 
 ## vars für „wessen“
 
-<Sv>Vars</Sv> ist das genitivische Relativpronomen. Es ist unveränderlich, steht ohne folgenden Artikel und gehört zu einem eher formellen Register:
+<span lang="sv">Vars</span> ist das genitivische Relativpronomen. Es ist unveränderlich, steht ohne folgenden Artikel und gehört zu einem eher formellen Register:
 
-- <Sv>en författare vars böcker jag älskar</Sv> — *ein Autor, dessen Bücher ich liebe*
+- <span lang="sv">en författare vars böcker jag älskar</span> — *ein Autor, dessen Bücher ich liebe*
 
-Bei einem Plural-Bezugswort verwendet formelles Schwedisch <Sv>vilkas</Sv>. Im Alltag vermeiden viele beide Formen und formulieren mit <Sv>som</Sv> und einem Possessivpronomen um.
+Bei einem Plural-Bezugswort verwendet formelles Schwedisch <span lang="sv">vilkas</span>. Im Alltag vermeiden viele beide Formen und formulieren mit <span lang="sv">som</span> und einem Possessivpronomen um.
 
 ## där und dit für Orte
 
-Für einen Ort ersetzt <Sv>där</Sv> oft <Sv>som … i</Sv>, und <Sv>dit</Sv> steht für eine Richtung:
+Für einen Ort ersetzt <span lang="sv">där</span> oft <span lang="sv">som … i</span>, und <span lang="sv">dit</span> steht für eine Richtung:
 
-- <Sv>staden där jag bor</Sv> = <Sv>staden som jag bor i</Sv>
-- <Sv>staden dit jag flyttade</Sv> — *die Stadt, in die ich gezogen bin*
+- <span lang="sv">staden där jag bor</span> = <span lang="sv">staden som jag bor i</span>
+- <span lang="sv">staden dit jag flyttade</span> — *die Stadt, in die ich gezogen bin*
 
 ## Wortstellung im Relativsatz
 
-Ein Relativsatz ist ein Nebensatz und folgt deshalb dem Nebensatzmuster: <Sv>inte</Sv> und ähnliche Adverbien stehen **vor** dem Verb.
+Ein Relativsatz ist ein Nebensatz und folgt deshalb dem Nebensatzmuster: <span lang="sv">inte</span> und ähnliche Adverbien stehen **vor** dem Verb.
 
-- <Sv>Mannen som inte bor här</Sv>
-- <Sv>Boken som jag aldrig läste</Sv>
+- <span lang="sv">Mannen som inte bor här</span>
+- <span lang="sv">Boken som jag aldrig läste</span>
 
 Siehe [Nebensätze](../../sentence-structure/subordinate-clauses/) für den allgemeinen Satzrahmen und [BIFF](../../sentence-structure/biff/) für die engere Stellung von Satzadverbialen.
 
 ## Typische Fehler
 
 <MistakeBox title="Typische Fehler">
-	- ❌ <Sv>huset i som jag bor</Sv>
-	  ✅ <Sv>huset som jag bor i</Sv>
-	- ❌ <Sv>Mannen vilken bor här</Sv>
-	  ✅ <Sv>Mannen som bor här</Sv>
-	- ❌ <Sv>Han kom sent, som irriterade alla.</Sv>
-	  ✅ <Sv>Han kom sent, vilket irriterade alla.</Sv>
-	- ❌ <Sv>Mannen som bor inte här</Sv>
-	  ✅ <Sv>Mannen som inte bor här</Sv>
-	- Flektiere <Sv>som</Sv> nicht nach Genus oder Kasus, wie Deutsch <span lang="de">der / die / das</span> flektiert.
+	- ❌ <span lang="sv">huset i som jag bor</span>
+	  ✅ <span lang="sv">huset som jag bor i</span>
+	- ❌ <span lang="sv">Mannen vilken bor här</span>
+	  ✅ <span lang="sv">Mannen som bor här</span>
+	- ❌ <span lang="sv">Han kom sent, som irriterade alla.</span>
+	  ✅ <span lang="sv">Han kom sent, vilket irriterade alla.</span>
+	- ❌ <span lang="sv">Mannen som bor inte här</span>
+	  ✅ <span lang="sv">Mannen som inte bor här</span>
+	- Flektiere <span lang="sv">som</span> nicht nach Genus oder Kasus, wie Deutsch <span lang="de">der / die / das</span> flektiert.
 </MistakeBox>
 
 <MemoryTip>
-Zwei Sätze tragen fast alles, was du brauchst: <Sv><strong>Bussen som vi väntar på är sen.</strong></Sv> — Präposition am Ende. <Sv><strong>Han kom sent, vilket irriterade alla.</strong></Sv> — <Sv>vilket</Sv> für einen ganzen Satz.
+Zwei Sätze tragen fast alles, was du brauchst: <span lang="sv"><strong>Bussen som vi väntar på är sen.</strong></span> — Präposition am Ende. <span lang="sv"><strong>Han kom sent, vilket irriterade alla.</strong></span> — <span lang="sv">vilket</span> für einen ganzen Satz.
 </MemoryTip>
 
 <QuickCheck

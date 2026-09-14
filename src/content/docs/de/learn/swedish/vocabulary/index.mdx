@@ -24,7 +24,6 @@ related:
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import VocabularyCard from '~/components/VocabularyCard.astro';
 import { getCollection, getEntry } from 'astro:content';
 
@@ -62,7 +61,7 @@ export const starters = starterIds.map((id) => {
 
 <KeyTakeaway>
 - Notiere ein schwedisches Substantiv immer mit seinem Artikel, nie als bloßes
-  Übersetzungspaar: <Sv>en bil</Sv>, nicht nur <Sv>bil</Sv> = „Auto“.
+  Übersetzungspaar: <span lang="sv">en bil</span>, nicht nur <span lang="sv">bil</span> = „Auto“.
 - Der Artikel allein reicht nicht. Lerne die vier Formen zusammen — unbestimmter
   und bestimmter Singular, unbestimmter und bestimmter Plural.
 - Die Form des Lemmas gibt oft einen Hinweis auf den Plural, aber das reicht
@@ -79,11 +78,11 @@ Substantive und Satzrahmen, die du brauchst, zusammen lernen kannst.
 ## Grundregel
 
 > Ein brauchbarer Substantiveintrag enthält fünf Dinge: das Lemma, das Genus
-> (<Sv>en</Sv> oder <Sv>ett</Sv>), den bestimmten Singular, den unbestimmten
+> (<span lang="sv">en</span> oder <span lang="sv">ett</span>), den bestimmten Singular, den unbestimmten
 > Plural und den bestimmten Plural.
 
-<Sv>Ett hus</Sv> ist im Schwedischen und im Deutschen sächlich, aber
-<Sv>ett bord</Sv> ist ein <Sv>ett</Sv>-Wort, während das deutsche
+<span lang="sv">Ett hus</span> ist im Schwedischen und im Deutschen sächlich, aber
+<span lang="sv">ett bord</span> ist ein <span lang="sv">ett</span>-Wort, während das deutsche
 <span lang="de">der Tisch</span> maskulin ist. Das deutsche Genus einfach zu
 übernehmen, scheitert oft genug, um keine Strategie sein zu können.
 
@@ -115,8 +114,8 @@ Substantive und Satzrahmen, die du brauchst, zusammen lernen kannst.
 	]}
 />
 
-Die beiden Karten zeigen die zwei Hälften des Systems: ein <Sv>en</Sv>-Wort,
-das im Plural <Sv>-ar</Sv> nimmt, und ein <Sv>ett</Sv>-Wort, das <Sv>-n</Sv>
+Die beiden Karten zeigen die zwei Hälften des Systems: ein <span lang="sv">en</span>-Wort,
+das im Plural <span lang="sv">-ar</span> nimmt, und ein <span lang="sv">ett</span>-Wort, das <span lang="sv">-n</span>
 nimmt.
 
 ## Grundwortschatz
@@ -150,9 +149,9 @@ Eine kleine Auswahl alltäglicher Substantive, mit den Formen statt nur der
 </table>
 
 Liest man die Pluralspalte von oben nach unten, zeigen sich nützliche Muster:
-<Sv>-ar</Sv> und <Sv>-or</Sv> und <Sv>-er</Sv> bei <Sv>en</Sv>-Wörtern, und gar
-keine Endung bei vielen einsilbigen <Sv>ett</Sv>-Wörtern wie <Sv>hus</Sv>,
-<Sv>barn</Sv> und <Sv>bord</Sv>.
+<span lang="sv">-ar</span> und <span lang="sv">-or</span> und <span lang="sv">-er</span> bei <span lang="sv">en</span>-Wörtern, und gar
+keine Endung bei vielen einsilbigen <span lang="sv">ett</span>-Wörtern wie <span lang="sv">hus</span>,
+<span lang="sv">barn</span> und <span lang="sv">bord</span>.
 
 ## Nachschlageseiten
 

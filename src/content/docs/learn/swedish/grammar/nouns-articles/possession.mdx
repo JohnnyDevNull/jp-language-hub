@@ -25,14 +25,13 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Add <Sv>-s</Sv> to a noun or name to make it the possessor:
-  <Sv>Annas bok</Sv>, <Sv>hundens namn</Sv>.
+- Add <span lang="sv">-s</span> to a noun or name to make it the possessor:
+  <span lang="sv">Annas bok</span>, <span lang="sv">hundens namn</span>.
 - The possessed noun normally has no article or definite suffix after a
-  possessor: <Sv>Annas nya bil</Sv>, not <Sv>den Annas bilen</Sv>.
+  possessor: <span lang="sv">Annas nya bil</span>, not <span lang="sv">den Annas bilen</span>.
 - Use a possessive pronoun when the owner is expressed as *my, your, his, her,
   our,* or *their*.
 </KeyTakeaway>
@@ -40,17 +39,17 @@ import TagList from '~/components/TagList.astro';
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Swedish nominal possession puts the owner first and marks it with
-<Sv>-s</Sv>. This page covers possession built from nouns and names; pronoun
+<span lang="sv">-s</span>. This page covers possession built from nouns and names; pronoun
 possessors have their own lookup.
 
 ## Use this now
 
 | What names the owner? | Use | Example |
 | --- | --- | --- |
-| a name | name + <Sv>-s</Sv> | <Sv>Annas bok</Sv> |
-| a noun phrase | noun phrase + <Sv>-s</Sv> | <Sv>min väns bil</Sv> |
-| *my, your, his, her, our, their* | a possessive pronoun | <Sv>min bok</Sv> |
-| the third-person subject's own thing | <Sv>sin / sitt / sina</Sv> | <Sv>Anna tar sin bok.</Sv> |
+| a name | name + <span lang="sv">-s</span> | <span lang="sv">Annas bok</span> |
+| a noun phrase | noun phrase + <span lang="sv">-s</span> | <span lang="sv">min väns bil</span> |
+| *my, your, his, her, our, their* | a possessive pronoun | <span lang="sv">min bok</span> |
+| the third-person subject's own thing | <span lang="sv">sin / sitt / sina</span> | <span lang="sv">Anna tar sin bok.</span> |
 
 ## Core rule
 
@@ -58,37 +57,37 @@ The possessor comes before the possessed noun:
 
 | Owner | Possessive phrase |
 | --- | --- |
-| <Sv>Anna</Sv> | <Sv>Annas cykel</Sv> |
-| <Sv>hunden</Sv> | <Sv>hundens namn</Sv> |
-| <Sv>mina vänner</Sv> | <Sv>mina vänners hus</Sv> |
+| <span lang="sv">Anna</span> | <span lang="sv">Annas cykel</span> |
+| <span lang="sv">hunden</span> | <span lang="sv">hundens namn</span> |
+| <span lang="sv">mina vänner</span> | <span lang="sv">mina vänners hus</span> |
 
-The <Sv>-s</Sv> belongs to the complete possessor expression. Swedish writes
-it without an apostrophe: <Sv>Eriks rum</Sv>, not <Sv>Erik's rum</Sv>.
+The <span lang="sv">-s</span> belongs to the complete possessor expression. Swedish writes
+it without an apostrophe: <span lang="sv">Eriks rum</span>, not <span lang="sv">Erik's rum</span>.
 
-Names already ending in <Sv>-s</Sv>, <Sv>-x</Sv>, or <Sv>-z</Sv> normally do
-not take another written <Sv>s</Sv>: <Sv>Lars bok</Sv>, <Sv>Max cykel</Sv>.
+Names already ending in <span lang="sv">-s</span>, <span lang="sv">-x</span>, or <span lang="sv">-z</span> normally do
+not take another written <span lang="sv">s</span>: <span lang="sv">Lars bok</span>, <span lang="sv">Max cykel</span>.
 
 ## The possessed noun stays indefinite in form
 
 After a possessor, the noun normally appears without an article and without
 the simple definite suffix:
 
-- <Sv>Annas bil</Sv> — Anna's car
-- <Sv>Annas nya bil</Sv> — Anna's new car
-- <Sv>hundens namn</Sv> — the dog's name
+- <span lang="sv">Annas bil</span> — Anna's car
+- <span lang="sv">Annas nya bil</span> — Anna's new car
+- <span lang="sv">hundens namn</span> — the dog's name
 
-An adjective takes its definite-looking <Sv>-a</Sv> form, but Swedish still
-does not add <Sv>den</Sv> or make the possessed noun definite:
-<Sv>Annas nya bil</Sv>.
+An adjective takes its definite-looking <span lang="sv">-a</span> form, but Swedish still
+does not add <span lang="sv">den</span> or make the possessed noun definite:
+<span lang="sv">Annas nya bil</span>.
 
 ## Other natural possession statements
 
 The s-genitive builds a noun phrase. When the point is to state who owns
 something, a full clause is often clearer:
 
-- <Sv>Boken tillhör Anna.</Sv> — The book belongs to Anna.
-- <Sv>Det är Annas bok.</Sv> — It is Anna's book.
-- <Sv>Anna har en bok.</Sv> — Anna has a book.
+- <span lang="sv">Boken tillhör Anna.</span> — The book belongs to Anna.
+- <span lang="sv">Det är Annas bok.</span> — It is Anna's book.
+- <span lang="sv">Anna har en bok.</span> — Anna has a book.
 
 ## Direct comparison
 
@@ -102,14 +101,14 @@ English uses an apostrophe in this construction; Swedish and German do not.
 Swedish also leaves the possessed noun without a separate article.
 
 <MistakeBox title="Common mistakes">
-- <Sv>❌ Anna's bok</Sv> → <Sv>✅ Annas bok</Sv>
-- <Sv>❌ Annas bilen</Sv> → <Sv>✅ Annas bil</Sv>
-- <Sv>❌ Annas ny bil</Sv> → <Sv>✅ Annas nya bil</Sv>
+- <span lang="sv">❌ Anna's bok</span> → <span lang="sv">✅ Annas bok</span>
+- <span lang="sv">❌ Annas bilen</span> → <span lang="sv">✅ Annas bil</span>
+- <span lang="sv">❌ Annas ny bil</span> → <span lang="sv">✅ Annas nya bil</span>
 </MistakeBox>
 
 <MemoryTip>
-Put the owner first, add <Sv>-s</Sv>, and leave the owned noun bare:
-<Sv><strong>Anna + s + bok → Annas bok</strong></Sv>.
+Put the owner first, add <span lang="sv">-s</span>, and leave the owned noun bare:
+<span lang="sv"><strong>Anna + s + bok → Annas bok</strong></span>.
 </MemoryTip>
 
 <QuickCheck

@@ -24,15 +24,14 @@ import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Använd <Sv>Jag vill åka till …</Sv> för resmålet och
-  <Sv>Vilken buss går till …?</Sv> för att hitta rätt linje.
-- Använd <Sv>När går …?</Sv> för tidtabellsenliga avgångar och
-  <Sv>Är tåget försenat?</Sv> för förseningar.
-- Resesvenska använder <Sv>till</Sv> för resmålet men ofta <Sv>på</Sv> för att
+- Använd <span lang="sv">Jag vill åka till …</span> för resmålet och
+  <span lang="sv">Vilken buss går till …?</span> för att hitta rätt linje.
+- Använd <span lang="sv">När går …?</span> för tidtabellsenliga avgångar och
+  <span lang="sv">Är tåget försenat?</span> för förseningar.
+- Resesvenska använder <span lang="sv">till</span> för resmålet men ofta <span lang="sv">på</span> för att
   vara på en buss, ett tåg eller en perrong.
 </KeyTakeaway>
 
@@ -45,26 +44,26 @@ meningen kring resmålet, avgångstiden och om något har ändrats.
 
 | Mönster | Använd det när … | Register |
 | --- | --- | --- |
-| <Sv>Jag vill åka till …</Sv> | du säger vart du vill åka | neutral |
-| <Sv>Vilken buss går till …?</Sv> | du frågar vilken buss som går dit | neutral |
-| <Sv>Går den här bussen till …?</Sv> | du kontrollerar den här bussen | neutral |
-| <Sv>Varifrån går tåget?</Sv> | du frågar varifrån tåget går | neutral |
-| <Sv>Vilken perrong?</Sv> | du frågar om perrongen | talspråk |
-| <Sv>Måste jag byta?</Sv> | du frågar om du måste byta | neutral |
+| <span lang="sv">Jag vill åka till …</span> | du säger vart du vill åka | neutral |
+| <span lang="sv">Vilken buss går till …?</span> | du frågar vilken buss som går dit | neutral |
+| <span lang="sv">Går den här bussen till …?</span> | du kontrollerar den här bussen | neutral |
+| <span lang="sv">Varifrån går tåget?</span> | du frågar varifrån tåget går | neutral |
+| <span lang="sv">Vilken perrong?</span> | du frågar om perrongen | talspråk |
+| <span lang="sv">Måste jag byta?</span> | du frågar om du måste byta | neutral |
 
-<Sv>åka</Sv> är det allmänna verbet för att resa med ett fordon. Använd
-<Sv>gå</Sv> för en tidtabellsenlig avgång: <Sv>När går tåget?</Sv>
+<span lang="sv">åka</span> är det allmänna verbet för att resa med ett fordon. Använd
+<span lang="sv">gå</span> för en tidtabellsenlig avgång: <span lang="sv">När går tåget?</span>
 
 ## Biljetter och avgångar
 
 | Mönster | Använd det när … | Register |
 | --- | --- | --- |
-| <Sv>En biljett till …, tack.</Sv> | du köper en biljett | neutral |
-| <Sv>En enkelbiljett, tack.</Sv> | en resa åt ena hållet | neutral |
-| <Sv>En tur och retur, tack.</Sv> | en resa dit och tillbaka | neutral |
-| <Sv>När går nästa tåg?</Sv> | du frågar om nästa avgång | neutral |
-| <Sv>När kommer bussen?</Sv> | du frågar om bussens ankomst | neutral |
-| <Sv>Är tåget försenat?</Sv> | du frågar om förseningen | neutral |
+| <span lang="sv">En biljett till …, tack.</span> | du köper en biljett | neutral |
+| <span lang="sv">En enkelbiljett, tack.</span> | en resa åt ena hållet | neutral |
+| <span lang="sv">En tur och retur, tack.</span> | en resa dit och tillbaka | neutral |
+| <span lang="sv">När går nästa tåg?</span> | du frågar om nästa avgång | neutral |
+| <span lang="sv">När kommer bussen?</span> | du frågar om bussens ankomst | neutral |
+| <span lang="sv">Är tåget försenat?</span> | du frågar om förseningen | neutral |
 
 ## Kort scen på stationen
 
@@ -86,8 +85,8 @@ meningen kring resmålet, avgångstiden och om något har ändrats.
 	<p slot="sv">Jag vill åka till Uppsala.</p>
 </LanguageComparison>
 
-Svenska använder inte ett enda verb för alla sorters ”gå”. <Sv>åka</Sv>
-betyder att förflytta sig med ett fordon; <Sv>gå</Sv> kan betyda att promenera
+Svenska använder inte ett enda verb för alla sorters ”gå”. <span lang="sv">åka</span>
+betyder att förflytta sig med ett fordon; <span lang="sv">gå</span> kan betyda att promenera
 eller en tidtabellsenlig avgång.
 
 <LanguageComparison title="Tidtabellsenlig avgång">

@@ -26,58 +26,57 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Det som ägs bestämmer formen: <Sv>min bil</Sv>, <Sv>mitt hus</Sv>,
-  <Sv>mina böcker</Sv>.
-- <Sv>hans</Sv>, <Sv>hennes</Sv>, <Sv>hens</Sv> och <Sv>deras</Sv> ändras
+- Det som ägs bestämmer formen: <span lang="sv">min bil</span>, <span lang="sv">mitt hus</span>,
+  <span lang="sv">mina böcker</span>.
+- <span lang="sv">hans</span>, <span lang="sv">hennes</span>, <span lang="sv">hens</span> och <span lang="sv">deras</span> ändras
   aldrig.
-- Samma former kan stå ensamma: <Sv>Bilen är min</Sv>,
-  <Sv>Huset är mitt</Sv>, <Sv>Böckerna är mina</Sv>.
+- Samma former kan stå ensamma: <span lang="sv">Bilen är min</span>,
+  <span lang="sv">Huset är mitt</span>, <span lang="sv">Böckerna är mina</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
 Svenska possessiva pronomen ändras ofta efter det som ägs. För många former
-följer valet samma mönster som du redan känner från <Sv>en</Sv>-ord,
-<Sv>ett</Sv>-ord och pluralord.
+följer valet samma mönster som du redan känner från <span lang="sv">en</span>-ord,
+<span lang="sv">ett</span>-ord och pluralord.
 
 ## Använd detta nu
 
 | Vad du behöver | Välj efter | Exempel |
 | --- | --- | --- |
-| en form före ett substantiv | genus eller antal hos det ägda substantivet | <Sv>min bil, mitt hus, mina böcker</Sv> |
-| en form utan följande substantiv | genus eller antal hos det underförstådda | <Sv>Bilen är min. Huset är mitt.</Sv> |
-| tredje personens egen sak | den särskilda subjektreflexiva regeln | <Sv>Anna tar sin jacka.</Sv> |
+| en form före ett substantiv | genus eller antal hos det ägda substantivet | <span lang="sv">min bil, mitt hus, mina böcker</span> |
+| en form utan följande substantiv | genus eller antal hos det underförstådda | <span lang="sv">Bilen är min. Huset är mitt.</span> |
+| tredje personens egen sak | den särskilda subjektreflexiva regeln | <span lang="sv">Anna tar sin jacka.</span> |
 
 ## Grundmönster
 
 Välj possessivformen efter substantivet som följer:
 
-| Ägare | <Sv>en</Sv>-ord | <Sv>ett</Sv>-ord | Pluralord |
+| Ägare | <span lang="sv">en</span>-ord | <span lang="sv">ett</span>-ord | Pluralord |
 | --- | --- | --- | --- |
-| jag | <Sv>min bil</Sv> | <Sv>mitt hus</Sv> | <Sv>mina böcker</Sv> |
-| du | <Sv>din bil</Sv> | <Sv>ditt hus</Sv> | <Sv>dina böcker</Sv> |
-| han / hon / de, egen sak | <Sv>sin bil</Sv> | <Sv>sitt hus</Sv> | <Sv>sina böcker</Sv> |
-| vi | <Sv>vår bil</Sv> | <Sv>vårt hus</Sv> | <Sv>våra böcker</Sv> |
-| ni | <Sv>er bil</Sv> | <Sv>ert hus</Sv> | <Sv>era böcker</Sv> |
+| jag | <span lang="sv">min bil</span> | <span lang="sv">mitt hus</span> | <span lang="sv">mina böcker</span> |
+| du | <span lang="sv">din bil</span> | <span lang="sv">ditt hus</span> | <span lang="sv">dina böcker</span> |
+| han / hon / de, egen sak | <span lang="sv">sin bil</span> | <span lang="sv">sitt hus</span> | <span lang="sv">sina böcker</span> |
+| vi | <span lang="sv">vår bil</span> | <span lang="sv">vårt hus</span> | <span lang="sv">våra böcker</span> |
+| ni | <span lang="sv">er bil</span> | <span lang="sv">ert hus</span> | <span lang="sv">era böcker</span> |
 
 ## Former som inte ändras
 
-Vissa svenska possessiv ändras inte efter <Sv>en</Sv>, <Sv>ett</Sv> eller
+Vissa svenska possessiv ändras inte efter <span lang="sv">en</span>, <span lang="sv">ett</span> eller
 plural:
 
 | Ägare | Form | Exempel |
 | --- | --- | --- |
-| han | <Sv>hans</Sv> | <Sv>hans bil</Sv>, <Sv>hans hus</Sv>, <Sv>hans böcker</Sv> |
-| hon | <Sv>hennes</Sv> | <Sv>hennes bil</Sv>, <Sv>hennes hus</Sv>, <Sv>hennes böcker</Sv> |
-| könsneutral person i singular | <Sv>hens</Sv> | <Sv>hens bil</Sv>, <Sv>hens hus</Sv>, <Sv>hens böcker</Sv> |
-| de | <Sv>deras</Sv> | <Sv>deras bil</Sv>, <Sv>deras hus</Sv>, <Sv>deras böcker</Sv> |
+| han | <span lang="sv">hans</span> | <span lang="sv">hans bil</span>, <span lang="sv">hans hus</span>, <span lang="sv">hans böcker</span> |
+| hon | <span lang="sv">hennes</span> | <span lang="sv">hennes bil</span>, <span lang="sv">hennes hus</span>, <span lang="sv">hennes böcker</span> |
+| könsneutral person i singular | <span lang="sv">hens</span> | <span lang="sv">hens bil</span>, <span lang="sv">hens hus</span>, <span lang="sv">hens böcker</span> |
+| de | <span lang="sv">deras</span> | <span lang="sv">deras bil</span>, <span lang="sv">deras hus</span>, <span lang="sv">deras böcker</span> |
 
 De här formerna pekar ut en ägare, men visar inte om det ägda är ett
-<Sv>en</Sv>-ord, ett <Sv>ett</Sv>-ord eller plural.
+<span lang="sv">en</span>-ord, ett <span lang="sv">ett</span>-ord eller plural.
 
 ## Former som ändras med det ägda substantivet
 
@@ -85,27 +84,27 @@ De föränderliga possessiven följer samma mönster för en-ord, ett-ord och pl
 
 | Typ av substantiv | Min | Din | Vår | Er |
 | --- | --- | --- | --- | --- |
-| <Sv>en</Sv>-ord | <Sv>min jacka</Sv> | <Sv>din jacka</Sv> | <Sv>vår jacka</Sv> | <Sv>er jacka</Sv> |
-| <Sv>ett</Sv>-ord | <Sv>mitt rum</Sv> | <Sv>ditt rum</Sv> | <Sv>vårt rum</Sv> | <Sv>ert rum</Sv> |
-| Pluralord | <Sv>mina skor</Sv> | <Sv>dina skor</Sv> | <Sv>våra skor</Sv> | <Sv>era skor</Sv> |
+| <span lang="sv">en</span>-ord | <span lang="sv">min jacka</span> | <span lang="sv">din jacka</span> | <span lang="sv">vår jacka</span> | <span lang="sv">er jacka</span> |
+| <span lang="sv">ett</span>-ord | <span lang="sv">mitt rum</span> | <span lang="sv">ditt rum</span> | <span lang="sv">vårt rum</span> | <span lang="sv">ert rum</span> |
+| Pluralord | <span lang="sv">mina skor</span> | <span lang="sv">dina skor</span> | <span lang="sv">våra skor</span> | <span lang="sv">era skor</span> |
 
 ## När pronomenet står ensamt
 
 Possessivet kan ersätta hela nominalfrasen. Formen följer fortfarande det
 underförstådda substantivet:
 
-- <Sv>Vems bil är det? — Den är min.</Sv>
-- <Sv>Är huset ert? — Ja, det är vårt.</Sv>
-- <Sv>Vilka böcker är hennes? — De här är hennes.</Sv>
+- <span lang="sv">Vems bil är det? — Den är min.</span>
+- <span lang="sv">Är huset ert? — Ja, det är vårt.</span>
+- <span lang="sv">Vilka böcker är hennes? — De här är hennes.</span>
 
-Oföränderliga <Sv>hans</Sv>, <Sv>hennes</Sv>, <Sv>hens</Sv> och <Sv>deras</Sv>
-förblir oförändrade även här: <Sv>Bilen är hennes</Sv>, <Sv>Huset är hennes</Sv>.
+Oföränderliga <span lang="sv">hans</span>, <span lang="sv">hennes</span>, <span lang="sv">hens</span> och <span lang="sv">deras</span>
+förblir oförändrade även här: <span lang="sv">Bilen är hennes</span>, <span lang="sv">Huset är hennes</span>.
 
 ## Subjektets egen sak
 
 Med ett subjekt i tredje person avgör du först om saken tillhör just det
-subjektet. Då använder svenskan vanligen <Sv>sin, sitt,</Sv> eller <Sv>sina</Sv>;
-annars <Sv>hans, hennes, hens,</Sv> eller <Sv>deras</Sv>. Den fullständiga
+subjektet. Då använder svenskan vanligen <span lang="sv">sin, sitt,</span> eller <span lang="sv">sina</span>;
+annars <span lang="sv">hans, hennes, hens,</span> eller <span lang="sv">deras</span>. Den fullständiga
 referensen om [*sin, sitt, sina*](../sin-sitt-sina/) tar upp den betydelsen,
 satsgränsen och den detaljerade kontrasten.
 
@@ -139,18 +138,18 @@ jackan tillhör Anna själv.
 ## Vanliga misstag
 
 <MistakeBox title="Vanliga misstag">
-	- ❌ <Sv>mitt bil</Sv>
-	  ✅ <Sv>min bil</Sv>
-	- ❌ <Sv>min hus</Sv>
-	  ✅ <Sv>mitt hus</Sv>
-	- ❌ <Sv>din böcker</Sv>
-	  ✅ <Sv>dina böcker</Sv>
-	- Välj inte <Sv>min</Sv>, <Sv>din</Sv> eller <Sv>sin</Sv> efter ägaren.
+	- ❌ <span lang="sv">mitt bil</span>
+	  ✅ <span lang="sv">min bil</span>
+	- ❌ <span lang="sv">min hus</span>
+	  ✅ <span lang="sv">mitt hus</span>
+	- ❌ <span lang="sv">din böcker</span>
+	  ✅ <span lang="sv">dina böcker</span>
+	- Välj inte <span lang="sv">min</span>, <span lang="sv">din</span> eller <span lang="sv">sin</span> efter ägaren.
 	  Välj formen efter det som ägs.
 </MistakeBox>
 
 <MemoryTip title="Det ägda substantivet avgör">
-I <Sv>min bil</Sv>, <Sv>mitt hus</Sv> och <Sv>mina böcker</Sv> är ägaren alltid
+I <span lang="sv">min bil</span>, <span lang="sv">mitt hus</span> och <span lang="sv">mina böcker</span> är ägaren alltid
 ”jag”. Formen ändras eftersom det ägda ändras.
 </MemoryTip>
 

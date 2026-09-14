@@ -30,7 +30,6 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 export const stor = (await getEntry('adjectives', 'sv-stor'))?.data ?? (() => {
@@ -44,11 +43,11 @@ export const glad = (await getEntry('adjectives', 'sv-glad'))?.data ?? (() => {
 })();
 
 <KeyTakeaway>
-- Das indefinite Muster ist Grundform, <Sv>-t</Sv>, <Sv>-a</Sv>:
-  <Sv>en stor bil</Sv>, <Sv>ett stort hus</Sv>, <Sv>stora bilar</Sv>.
+- Das indefinite Muster ist Grundform, <span lang="sv">-t</span>, <span lang="sv">-a</span>:
+  <span lang="sv">en stor bil</span>, <span lang="sv">ett stort hus</span>, <span lang="sv">stora bilar</span>.
 - Die Pluralform ist bei en-Wörtern und ett-Wörtern identisch.
 - Eine bestimmte Nominalphrase markiert Bestimmtheit zweimal: Artikel plus
-  bestimmtes Adjektiv plus bestimmtes Substantiv — <Sv>den stora bilen</Sv>.
+  bestimmtes Adjektiv plus bestimmtes Substantiv — <span lang="sv">den stora bilen</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -65,39 +64,39 @@ Phrase du bildest:
 
 | Frage | Verwende | Beispiel |
 | --- | --- | --- |
-| Ist es ein indefinites en-Wort? | Grundform | <Sv>en stor bil</Sv> |
-| Ist es ein indefinites ett-Wort? | meist <Sv>-t</Sv> ergänzen | <Sv>ett stort hus</Sv> |
-| Ist es Plural? | meist <Sv>-a</Sv> ergänzen | <Sv>stora bilar</Sv>, <Sv>stora hus</Sv> |
-| Ist es eine bestimmte Nominalphrase? | Artikel + <Sv>-a</Sv>-Adjektiv + bestimmtes Substantiv | <Sv>den stora bilen</Sv>, <Sv>det stora huset</Sv> |
+| Ist es ein indefinites en-Wort? | Grundform | <span lang="sv">en stor bil</span> |
+| Ist es ein indefinites ett-Wort? | meist <span lang="sv">-t</span> ergänzen | <span lang="sv">ett stort hus</span> |
+| Ist es Plural? | meist <span lang="sv">-a</span> ergänzen | <span lang="sv">stora bilar</span>, <span lang="sv">stora hus</span> |
+| Ist es eine bestimmte Nominalphrase? | Artikel + <span lang="sv">-a</span>-Adjektiv + bestimmtes Substantiv | <span lang="sv">den stora bilen</span>, <span lang="sv">det stora huset</span> |
 
 Prüfe danach eine der häufigen Ausnahmen:
 
 - Manche Adjektive ändern die Schreibweise vor einer Endung:
-  <Sv>röd → rött → röda</Sv>, <Sv>öppen → öppet → öppna</Sv>.
+  <span lang="sv">röd → rött → röda</span>, <span lang="sv">öppen → öppet → öppna</span>.
 - Manche häufigen Adjektive sind unregelmäßig oder unveränderlich:
-  <Sv>liten → litet → små</Sv>, aber <Sv>bra → bra → bra</Sv>.
-- Nach Verben wie <Sv>vara</Sv> und <Sv>bli</Sv> richte dich nach Genus oder
+  <span lang="sv">liten → litet → små</span>, aber <span lang="sv">bra → bra → bra</span>.
+- Nach Verben wie <span lang="sv">vara</span> und <span lang="sv">bli</span> richte dich nach Genus oder
   Numerus des Subjekts, verwende aber keine doppelte Bestimmtheit:
-  <Sv>Huset är stort.</Sv>
+  <span lang="sv">Huset är stort.</span>
 
 Wenn du unsicher bist, bilde zuerst die ganze Nominalphrase:
-<Sv>en stor bil</Sv>, <Sv>ett stort hus</Sv>,
-<Sv>stora bilar</Sv>, <Sv>den stora bilen</Sv>.
+<span lang="sv">en stor bil</span>, <span lang="sv">ett stort hus</span>,
+<span lang="sv">stora bilar</span>, <span lang="sv">den stora bilen</span>.
 
 ## Kernmuster
 
 | Nominalphrase | Adjektivform | Beispiel |
 | --- | --- | --- |
-| indefinit en-Singular | Grundform | <Sv>en <strong>{stor.morphology.en}</strong> bil</Sv> |
-| indefinit ett-Singular | meist <Sv>-t</Sv> | <Sv>ett <strong>{stor.morphology.ett}</strong> hus</Sv> |
-| indefiniter Plural | meist <Sv>-a</Sv> | <Sv><strong>{stor.morphology.plural}</strong> bilar</Sv> |
-| definit | meist <Sv>-a</Sv> | <Sv>den <strong>{stor.morphology.definite}</strong> bilen</Sv> |
+| indefinit en-Singular | Grundform | <span lang="sv">en <strong>{stor.morphology.en}</strong> bil</span> |
+| indefinit ett-Singular | meist <span lang="sv">-t</span> | <span lang="sv">ett <strong>{stor.morphology.ett}</strong> hus</span> |
+| indefiniter Plural | meist <span lang="sv">-a</span> | <span lang="sv"><strong>{stor.morphology.plural}</strong> bilar</span> |
+| definit | meist <span lang="sv">-a</span> | <span lang="sv">den <strong>{stor.morphology.definite}</strong> bilen</span> |
 
 Die gleiche Pluralform des Adjektivs wird bei en-Wörtern und ett-Wörtern
 verwendet:
 
-- <Sv>stora bilar</Sv>
-- <Sv>stora hus</Sv>
+- <span lang="sv">stora bilar</span>
+- <span lang="sv">stora hus</span>
 
 <AdjectiveForms
 	forms={[
@@ -116,8 +115,8 @@ Gehe von der Wörterbuch- oder en-Form aus:
 
 <p lang="sv">stor</p>
 
-Ergänze <Sv>-t</Sv> für die reguläre ett-Form und
-<Sv>-a</Sv> für den regulären Plural:
+Ergänze <span lang="sv">-t</span> für die reguläre ett-Form und
+<span lang="sv">-a</span> für den regulären Plural:
 
 <p lang="sv">stor → stort → stora</p>
 
@@ -128,55 +127,55 @@ Ein weiteres reguläres Beispiel:
 Beim Anfügen von Endungen kann sich die Schreibweise ändern, und manche
 Adjektive sind unregelmäßig. Zum Beispiel:
 
-- <Sv>{glad.morphology.en} → {glad.morphology.ett} → {glad.morphology.plural}</Sv>
-- <Sv>liten → litet → små</Sv>
-- <Sv>bra → bra → bra</Sv>
+- <span lang="sv">{glad.morphology.en} → {glad.morphology.ett} → {glad.morphology.plural}</span>
+- <span lang="sv">liten → litet → små</span>
+- <span lang="sv">bra → bra → bra</span>
 
 Lerne häufige Ausnahmen anhand vollständiger Phrasen.
 
 ## Schreibmuster
 
-Die Endungen <Sv>-t</Sv> und <Sv>-a</Sv> sind
+Die Endungen <span lang="sv">-t</span> und <span lang="sv">-a</span> sind
 regulär, aber der Stamm ändert sich beim Anfügen oft. Diese Muster
 decken die meisten Adjektive ab:
 
 | Stammmuster | en-Form | ett-Form | Plural / definit |
 | --- | --- | --- | --- |
-| betonter Vokal | <Sv>ny</Sv>, <Sv>blå</Sv> | <Sv>nytt</Sv>, <Sv>blått</Sv> | <Sv>nya</Sv>, <Sv>blåa</Sv> |
-| Vokal + <Sv>-d</Sv> | <Sv>röd</Sv>, <Sv>god</Sv> | <Sv>rött</Sv>, <Sv>gott</Sv> | <Sv>röda</Sv>, <Sv>goda</Sv> |
-| Konsonant + <Sv>-d</Sv> | <Sv>hård</Sv> | <Sv>hårt</Sv> | <Sv>hårda</Sv> |
-| Vokal + <Sv>-t</Sv> | <Sv>vit</Sv>, <Sv>söt</Sv> | <Sv>vitt</Sv>, <Sv>sött</Sv> | <Sv>vita</Sv>, <Sv>söta</Sv> |
-| Konsonant + <Sv>-t</Sv> | <Sv>kort</Sv>, <Sv>svart</Sv> | <Sv>kort</Sv>, <Sv>svart</Sv> | <Sv>korta</Sv>, <Sv>svarta</Sv> |
-| <Sv>-nn</Sv> | <Sv>sann</Sv>, <Sv>tunn</Sv> | <Sv>sant</Sv>, <Sv>tunt</Sv> | <Sv>sanna</Sv>, <Sv>tunna</Sv> |
-| <Sv>-en</Sv> | <Sv>öppen</Sv>, <Sv>mogen</Sv> | <Sv>öppet</Sv>, <Sv>moget</Sv> | <Sv>öppna</Sv>, <Sv>mogna</Sv> |
-| <Sv>-er</Sv>, <Sv>-el</Sv> | <Sv>vacker</Sv>, <Sv>enkel</Sv> | <Sv>vackert</Sv>, <Sv>enkelt</Sv> | <Sv>vackra</Sv>, <Sv>enkla</Sv> |
+| betonter Vokal | <span lang="sv">ny</span>, <span lang="sv">blå</span> | <span lang="sv">nytt</span>, <span lang="sv">blått</span> | <span lang="sv">nya</span>, <span lang="sv">blåa</span> |
+| Vokal + <span lang="sv">-d</span> | <span lang="sv">röd</span>, <span lang="sv">god</span> | <span lang="sv">rött</span>, <span lang="sv">gott</span> | <span lang="sv">röda</span>, <span lang="sv">goda</span> |
+| Konsonant + <span lang="sv">-d</span> | <span lang="sv">hård</span> | <span lang="sv">hårt</span> | <span lang="sv">hårda</span> |
+| Vokal + <span lang="sv">-t</span> | <span lang="sv">vit</span>, <span lang="sv">söt</span> | <span lang="sv">vitt</span>, <span lang="sv">sött</span> | <span lang="sv">vita</span>, <span lang="sv">söta</span> |
+| Konsonant + <span lang="sv">-t</span> | <span lang="sv">kort</span>, <span lang="sv">svart</span> | <span lang="sv">kort</span>, <span lang="sv">svart</span> | <span lang="sv">korta</span>, <span lang="sv">svarta</span> |
+| <span lang="sv">-nn</span> | <span lang="sv">sann</span>, <span lang="sv">tunn</span> | <span lang="sv">sant</span>, <span lang="sv">tunt</span> | <span lang="sv">sanna</span>, <span lang="sv">tunna</span> |
+| <span lang="sv">-en</span> | <span lang="sv">öppen</span>, <span lang="sv">mogen</span> | <span lang="sv">öppet</span>, <span lang="sv">moget</span> | <span lang="sv">öppna</span>, <span lang="sv">mogna</span> |
+| <span lang="sv">-er</span>, <span lang="sv">-el</span> | <span lang="sv">vacker</span>, <span lang="sv">enkel</span> | <span lang="sv">vackert</span>, <span lang="sv">enkelt</span> | <span lang="sv">vackra</span>, <span lang="sv">enkla</span> |
 
 Zwei häufige Adjektive sind über diese Muster hinaus unregelmäßig:
 
-- <Sv>gammal → gammalt → gamla</Sv>
-- <Sv>liten → litet → små</Sv>, mit
-  <Sv>lilla</Sv> im bestimmten Singular:
-  <Sv>den lilla bilen</Sv>
+- <span lang="sv">gammal → gammalt → gamla</span>
+- <span lang="sv">liten → litet → små</span>, mit
+  <span lang="sv">lilla</span> im bestimmten Singular:
+  <span lang="sv">den lilla bilen</span>
 
 Das Muster, das du dir zuerst einprägen solltest, ist die
-<Sv>-en</Sv>-Gruppe, weil das unbetonte
-<Sv>e</Sv> im Plural verschwindet:
-<Sv>ett öppet fönster</Sv>, aber
-<Sv>öppna fönster</Sv>.
+<span lang="sv">-en</span>-Gruppe, weil das unbetonte
+<span lang="sv">e</span> im Plural verschwindet:
+<span lang="sv">ett öppet fönster</span>, aber
+<span lang="sv">öppna fönster</span>.
 
 ## Adjektive, die sich nie ändern
 
 Eine kleine Gruppe nimmt überhaupt keine Endungen an. Sie zu verwenden ist
 einfach, sobald du weißt, welche das sind:
 
-<Sv>bra</Sv>, <Sv>kul</Sv>,
-<Sv>äkta</Sv>, <Sv>sakta</Sv>,
-<Sv>främmande</Sv> sowie Farbwörter wie
-<Sv>rosa</Sv>, <Sv>lila</Sv>,
-<Sv>beige</Sv>.
+<span lang="sv">bra</span>, <span lang="sv">kul</span>,
+<span lang="sv">äkta</span>, <span lang="sv">sakta</span>,
+<span lang="sv">främmande</span> sowie Farbwörter wie
+<span lang="sv">rosa</span>, <span lang="sv">lila</span>,
+<span lang="sv">beige</span>.
 
-- <Sv>ett bra hus</Sv>, <Sv>bra bilar</Sv>
-- <Sv>ett rosa hus</Sv>, <Sv>rosa bilar</Sv>
+- <span lang="sv">ett bra hus</span>, <span lang="sv">bra bilar</span>
+- <span lang="sv">ett rosa hus</span>, <span lang="sv">rosa bilar</span>
 
 ## Partizipien als Adjektive
 
@@ -184,20 +183,20 @@ Partizip-Perfekt-Formen werden wie gewöhnliche Adjektive gebeugt:
 
 | Nominalphrase | Beispiel |
 | --- | --- |
-| indefinit en | <Sv>en stängd dörr</Sv> |
-| indefinit ett | <Sv>ett stängt fönster</Sv> |
-| Plural | <Sv>stängda dörrar</Sv> |
+| indefinit en | <span lang="sv">en stängd dörr</span> |
+| indefinit ett | <span lang="sv">ett stängt fönster</span> |
+| Plural | <span lang="sv">stängda dörrar</span> |
 
 Das Gleiche gilt für Partizipien anderer Verbgruppen:
-<Sv>en målad vägg</Sv>,
-<Sv>ett målat hus</Sv>,
-<Sv>målade väggar</Sv>; sowie
-<Sv>en skriven text</Sv>,
-<Sv>ett skrivet brev</Sv>,
-<Sv>skrivna brev</Sv>.
+<span lang="sv">en målad vägg</span>,
+<span lang="sv">ett målat hus</span>,
+<span lang="sv">målade väggar</span>; sowie
+<span lang="sv">en skriven text</span>,
+<span lang="sv">ett skrivet brev</span>,
+<span lang="sv">skrivna brev</span>.
 
-Partizip-Präsens-Formen auf <Sv>-ande</Sv> und
-<Sv>-ende</Sv> werden nie gebeugt:
+Partizip-Präsens-Formen auf <span lang="sv">-ande</span> und
+<span lang="sv">-ende</span> werden nie gebeugt:
 
 <p lang="sv">ett leende barn · en leende flicka · leende barn</p>
 
@@ -207,17 +206,17 @@ Partizip-Perfekt-Formen sind auch die Grundlage des bli-Passivs. Siehe
 ## Das optionale maskuline -e
 
 Bei Bezug auf eine männliche Person kann die bestimmte Form
-<Sv>-e</Sv> statt <Sv>-a</Sv> annehmen:
+<span lang="sv">-e</span> statt <span lang="sv">-a</span> annehmen:
 
-- <Sv>den gamle mannen</Sv> neben
-  <Sv>den gamla mannen</Sv>
-- <Sv>min gode vän</Sv>
+- <span lang="sv">den gamle mannen</span> neben
+  <span lang="sv">den gamla mannen</span>
+- <span lang="sv">min gode vän</span>
 
 Das ist optional und gehört einem leicht formellen oder traditionellen
 Register an; es überlebt auch in festen Namen wie
-<Sv>Karl den store</Sv>. Die
-<Sv>-a</Sv>-Form ist immer akzeptabel — behandle
-<Sv>-e</Sv> also eher als etwas zum Wiedererkennen denn als
+<span lang="sv">Karl den store</span>. Die
+<span lang="sv">-a</span>-Form ist immer akzeptabel — behandle
+<span lang="sv">-e</span> also eher als etwas zum Wiedererkennen denn als
 anzuwendende Regel.
 
 ## Bestimmte Nominalphrasen und doppelte Bestimmtheit
@@ -234,19 +233,19 @@ heißt **doppelte Bestimmtheit**.
 
 | Numerus und Genus | Bestimmter Artikel | Adjektiv | Bestimmtes Substantiv | Vollständige Phrase |
 | --- | --- | --- | --- | --- |
-| en-Singular | <Sv>den</Sv> | <Sv>{stor.morphology.definite}</Sv> | <Sv>bilen</Sv> | <Sv>den {stor.morphology.definite} bilen</Sv> |
-| ett-Singular | <Sv>det</Sv> | <Sv>{stor.morphology.definite}</Sv> | <Sv>huset</Sv> | <Sv>det {stor.morphology.definite} huset</Sv> |
-| Plural | <Sv>de</Sv> | <Sv>{stor.morphology.definite}</Sv> | <Sv>bilarna</Sv> | <Sv>de {stor.morphology.definite} bilarna</Sv> |
+| en-Singular | <span lang="sv">den</span> | <span lang="sv">{stor.morphology.definite}</span> | <span lang="sv">bilen</span> | <span lang="sv">den {stor.morphology.definite} bilen</span> |
+| ett-Singular | <span lang="sv">det</span> | <span lang="sv">{stor.morphology.definite}</span> | <span lang="sv">huset</span> | <span lang="sv">det {stor.morphology.definite} huset</span> |
+| Plural | <span lang="sv">de</span> | <span lang="sv">{stor.morphology.definite}</span> | <span lang="sv">bilarna</span> | <span lang="sv">de {stor.morphology.definite} bilarna</span> |
 
 Das dreiteilige Muster lautet also:
 
 <p lang="sv"><strong>den / det / de + bestimmtes Adjektiv + bestimmtes Substantiv</strong></p>
 
 Der Artikel markiert Genus oder Numerus, das Adjektiv verwendet meist seine
-<Sv>-a</Sv>-Form, und das Substantiv behält seine bestimmte Endung. Das
+<span lang="sv">-a</span>-Form, und das Substantiv behält seine bestimmte Endung. Das
 Englische markiert dieselbe Phrase meist nur einmal in <span lang="en">the big car</span>;
-das Schwedische verwendet sowohl <Sv>den</Sv> als auch <Sv>-en</Sv> in
-<Sv>den stora bilen</Sv>.
+das Schwedische verwendet sowohl <span lang="sv">den</span> als auch <span lang="sv">-en</span> in
+<span lang="sv">den stora bilen</span>.
 
 Possessiva sind eine wichtige Ausnahme vom Standardmuster. Das Adjektiv
 verwendet die bestimmte Form, aber es gibt keinen eigenen bestimmten Artikel,
@@ -254,10 +253,10 @@ und das Substantiv nimmt keine bestimmte Endung an:
 
 <p lang="sv">min stora bil</p>
 
-Demonstrativa wie <Sv>den här</Sv> und
-<Sv>det där</Sv> folgen dem Rhythmus der bestimmten Nominalphrase:
-<Sv>den här stora bilen</Sv>,
-<Sv>det där stora huset</Sv>.
+Demonstrativa wie <span lang="sv">den här</span> und
+<span lang="sv">det där</span> folgen dem Rhythmus der bestimmten Nominalphrase:
+<span lang="sv">den här stora bilen</span>,
+<span lang="sv">det där stora huset</span>.
 
 Siehe [Substantivformen](../../nouns-articles/noun-forms/) für die
 Substantivendungen selbst.
@@ -267,9 +266,9 @@ Substantivendungen selbst.
 Prädikative Adjektive richten sich nach dem Subjekt, verwenden aber keine
 doppelte Bestimmtheit:
 
-- <Sv>Bilen är stor.</Sv>
-- <Sv>Huset är stort.</Sv>
-- <Sv>Bilarna är stora.</Sv>
+- <span lang="sv">Bilen är stor.</span>
+- <span lang="sv">Huset är stort.</span>
+- <span lang="sv">Bilarna är stora.</span>
 
 ## Direkter Vergleich
 
@@ -299,21 +298,21 @@ zusätzlich von Kasus und Artikeltyp ab, nicht nur von Genus und Numerus.
 <MistakeBox title="Häufige Fehler">
 Achte darauf, dass Artikel, Adjektiv und Substantiv zusammenpassen:
 
-<Sv>❌ ett stor hus</Sv>
-<Sv>✅ ett stort hus</Sv>
+<span lang="sv">❌ ett stor hus</span>
+<span lang="sv">✅ ett stort hus</span>
 
 Lasse in einer normalen bestimmten Phrase keinen Teil der doppelten
 Bestimmtheit weg:
 
-<Sv>❌ det stora hus</Sv>
-<Sv>✅ det stora huset</Sv>
+<span lang="sv">❌ det stora hus</span>
+<span lang="sv">✅ det stora huset</span>
 </MistakeBox>
 
 <MemoryTip>
 Merke dir den dreiteiligen Rhythmus:
-<Sv><strong>en stor — ett stort — flera stora</strong></Sv>.
-Für eine bestimmte Phrase verwende die vertraute <Sv>-a</Sv>-Form:
-<Sv>den stora bilen</Sv>.
+<span lang="sv"><strong>en stor — ett stort — flera stora</strong></span>.
+Für eine bestimmte Phrase verwende die vertraute <span lang="sv">-a</span>-Form:
+<span lang="sv">den stora bilen</span>.
 </MemoryTip>
 
 <QuickCheck

@@ -18,15 +18,14 @@ related:
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Preise werden mit <Sv>kostar</Sv> ausgedrückt: <Sv>Vad kostar den?</Sv>
-- Zeige mit <Sv>den här</Sv> oder <Sv>det här</Sv>, wenn du das Wort nicht
+- Preise werden mit <span lang="sv">kostar</span> ausgedrückt: <span lang="sv">Vad kostar den?</span>
+- Zeige mit <span lang="sv">den här</span> oder <span lang="sv">det här</span>, wenn du das Wort nicht
   kennst.
-- Zahlungsausdrücke sind kurz: <Sv>med kort</Sv>, <Sv>med Swish</Sv>,
-  <Sv>kontant</Sv>.
+- Zahlungsausdrücke sind kurz: <span lang="sv">med kort</span>, <span lang="sv">med Swish</span>,
+  <span lang="sv">kontant</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -38,39 +37,39 @@ oder die grundlegenden Kassenwörter verstehen möchtest.
 
 | Bereich | Schwedisch | Deutsch |
 | --- | --- | --- |
-| Ort | <Sv>en affär, affärer</Sv> | Geschäft |
-| Ort | <Sv>en butik, butiker</Sv> | Laden |
-| Gegenstand | <Sv>en vara, varor</Sv> | Ware, Artikel |
-| Gegenstand | <Sv>ett kvitto, kvitton</Sv> | Quittung |
-| Geld | <Sv>ett pris, priser</Sv> | Preis |
-| Geld | <Sv>en krona, kronor</Sv> | Krone |
-| Zahlung | <Sv>ett kort, kort</Sv> | Karte |
-| Zahlung | <Sv>kontanter</Sv> | Bargeld |
+| Ort | <span lang="sv">en affär, affärer</span> | Geschäft |
+| Ort | <span lang="sv">en butik, butiker</span> | Laden |
+| Gegenstand | <span lang="sv">en vara, varor</span> | Ware, Artikel |
+| Gegenstand | <span lang="sv">ett kvitto, kvitton</span> | Quittung |
+| Geld | <span lang="sv">ett pris, priser</span> | Preis |
+| Geld | <span lang="sv">en krona, kronor</span> | Krone |
+| Zahlung | <span lang="sv">ett kort, kort</span> | Karte |
+| Zahlung | <span lang="sv">kontanter</span> | Bargeld |
 
 ## Einkaufsmuster
 
 | Bedarf | Schwedisches Muster |
 | --- | --- |
-| nach dem Preis fragen | <Sv>Vad kostar den?</Sv> |
-| nach einem Ding im Neutrum fragen | <Sv>Vad kostar det här?</Sv> |
-| sagen, dass du dieses hier nimmst | <Sv>Jag tar den här.</Sv> |
-| um Hilfe bitten | <Sv>Kan du hjälpa mig?</Sv> |
-| mit Karte bezahlen | <Sv>Jag betalar med kort.</Sv> |
-| nach einer Quittung fragen | <Sv>Kan jag få kvitto?</Sv> |
+| nach dem Preis fragen | <span lang="sv">Vad kostar den?</span> |
+| nach einem Ding im Neutrum fragen | <span lang="sv">Vad kostar det här?</span> |
+| sagen, dass du dieses hier nimmst | <span lang="sv">Jag tar den här.</span> |
+| um Hilfe bitten | <span lang="sv">Kan du hjälpa mig?</span> |
+| mit Karte bezahlen | <span lang="sv">Jag betalar med kort.</span> |
+| nach einer Quittung fragen | <span lang="sv">Kan jag få kvitto?</span> |
 
 ## Preiswörter
 
 | Schwedisch | Deutsch |
 | --- | --- |
-| <Sv>billig</Sv> | günstig |
-| <Sv>dyr</Sv> | teuer |
-| <Sv>rea</Sv> | Ausverkauf |
-| <Sv>rabatt</Sv> | Rabatt |
-| <Sv>öppet</Sv> | geöffnet |
-| <Sv>stängt</Sv> | geschlossen |
+| <span lang="sv">billig</span> | günstig |
+| <span lang="sv">dyr</span> | teuer |
+| <span lang="sv">rea</span> | Ausverkauf |
+| <span lang="sv">rabatt</span> | Rabatt |
+| <span lang="sv">öppet</span> | geöffnet |
+| <span lang="sv">stängt</span> | geschlossen |
 
-Bei Preisen sagt man auf Schwedisch normalerweise die Zahl plus <Sv>kronor</Sv>:
-<Sv>Det kostar femtio kronor.</Sv>
+Bei Preisen sagt man auf Schwedisch normalerweise die Zahl plus <span lang="sv">kronor</span>:
+<span lang="sv">Det kostar femtio kronor.</span>
 
 <QuickCheck
 	items={[

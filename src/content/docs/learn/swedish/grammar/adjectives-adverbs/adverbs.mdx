@@ -29,7 +29,6 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RuleBox from '~/components/RuleBox.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => {
@@ -37,12 +36,12 @@ export const snabb = (await getEntry('adjectives', 'sv-snabb'))?.data ?? (() => 
 })();
 
 <KeyTakeaway>
-- Many manner adverbs use the adjective's <Sv>-t</Sv> form, the same one you
-  use with an ett-word: <Sv>{snabb.morphology.ett}</Sv>.
+- Many manner adverbs use the adjective's <span lang="sv">-t</span> form, the same one you
+  use with an ett-word: <span lang="sv">{snabb.morphology.ett}</span>.
 - Two sets are not derivable and have to be memorized:
-  <Sv>gärna — hellre — helst</Sv> and the direction/position pairs such as
-  <Sv>hem / hemma</Sv>.
-- Many sentence adverbs follow the <Sv>inte</Sv> placement pattern; use the
+  <span lang="sv">gärna — hellre — helst</span> and the direction/position pairs such as
+  <span lang="sv">hem / hemma</span>.
+- Many sentence adverbs follow the <span lang="sv">inte</span> placement pattern; use the
   dedicated word-order page when position is the question.
 </KeyTakeaway>
 
@@ -56,16 +55,16 @@ direction.
 ## Adverbs from adjectives
 
 <RuleBox title="Rule">
-	Many manner adverbs use the adjective's <Sv>-t</Sv> form: the
+	Many manner adverbs use the adjective's <span lang="sv">-t</span> form: the
 	same form you already use with an ett-word.
 </RuleBox>
 
 | Adjective | Adverb | Example |
 | --- | --- | --- |
-| <Sv>{snabb.morphology.en}</Sv> | <Sv>{snabb.morphology.ett}</Sv> | <Sv>Han springer snabbt.</Sv> |
-| <Sv>tydlig</Sv> | <Sv>tydligt</Sv> | <Sv>Hon talar tydligt.</Sv> |
-| <Sv>vacker</Sv> | <Sv>vackert</Sv> | <Sv>Hon sjunger vackert.</Sv> |
-| <Sv>försiktig</Sv> | <Sv>försiktigt</Sv> | <Sv>Kör försiktigt!</Sv> |
+| <span lang="sv">{snabb.morphology.en}</span> | <span lang="sv">{snabb.morphology.ett}</span> | <span lang="sv">Han springer snabbt.</span> |
+| <span lang="sv">tydlig</span> | <span lang="sv">tydligt</span> | <span lang="sv">Hon talar tydligt.</span> |
+| <span lang="sv">vacker</span> | <span lang="sv">vackert</span> | <span lang="sv">Hon sjunger vackert.</span> |
+| <span lang="sv">försiktig</span> | <span lang="sv">försiktigt</span> | <span lang="sv">Kör försiktigt!</span> |
 
 When an adverb reuses the ett-form, the spelling patterns are the same ones.
 See
@@ -82,21 +81,21 @@ form:
 
 | Adverb | Meaning | Note |
 | --- | --- | --- |
-| <Sv>bra</Sv> | well | also the adjective *good*; <Sv>Han sjunger bra.</Sv> |
-| <Sv>väl</Sv> | well | narrower than <Sv>bra</Sv>: <Sv>väl gjort</Sv> |
-| <Sv>illa</Sv> | badly | <Sv>Han mår illa.</Sv> |
-| <Sv>gärna</Sv> | gladly, willingly | no adjective behind it |
-| <Sv>mycket</Sv> | very, much | with adjectives: <Sv>mycket bra</Sv> |
+| <span lang="sv">bra</span> | well | also the adjective *good*; <span lang="sv">Han sjunger bra.</span> |
+| <span lang="sv">väl</span> | well | narrower than <span lang="sv">bra</span>: <span lang="sv">väl gjort</span> |
+| <span lang="sv">illa</span> | badly | <span lang="sv">Han mår illa.</span> |
+| <span lang="sv">gärna</span> | gladly, willingly | no adjective behind it |
+| <span lang="sv">mycket</span> | very, much | with adjectives: <span lang="sv">mycket bra</span> |
 
-<Sv>Gärna</Sv> is worth learning as a full set, because its
+<span lang="sv">Gärna</span> is worth learning as a full set, because its
 comparison is irregular and extremely frequent in polite speech:
 
 <p lang="sv">gärna → hellre → helst</p>
 
-- <Sv>Jag vill gärna komma.</Sv> — *I would like to come.*
-- <Sv>Jag vill hellre stanna hemma.</Sv> — *I would rather stay
+- <span lang="sv">Jag vill gärna komma.</span> — *I would like to come.*
+- <span lang="sv">Jag vill hellre stanna hemma.</span> — *I would rather stay
   home.*
-- <Sv>Jag vill helst åka på fredag.</Sv> — *I would most prefer
+- <span lang="sv">Jag vill helst åka på fredag.</span> — *I would most prefer
   to go on Friday.*
 
 ## Comparison
@@ -109,13 +108,13 @@ The irregular ones follow their own chains:
 
 | Adverb | Comparative | Superlative |
 | --- | --- | --- |
-| <Sv>bra / väl</Sv> | <Sv>bättre</Sv> | <Sv>bäst</Sv> |
-| <Sv>gärna</Sv> | <Sv>hellre</Sv> | <Sv>helst</Sv> |
-| <Sv>illa</Sv> | <Sv>värre</Sv> | <Sv>värst</Sv> |
+| <span lang="sv">bra / väl</span> | <span lang="sv">bättre</span> | <span lang="sv">bäst</span> |
+| <span lang="sv">gärna</span> | <span lang="sv">hellre</span> | <span lang="sv">helst</span> |
+| <span lang="sv">illa</span> | <span lang="sv">värre</span> | <span lang="sv">värst</span> |
 
-<Sv>Sämre</Sv> and <Sv>värre</Sv> both translate as
-*worse*, with <Sv>sämre</Sv> tending towards lower quality and
-<Sv>värre</Sv> towards greater severity. The boundary is not
+<span lang="sv">Sämre</span> and <span lang="sv">värre</span> both translate as
+*worse*, with <span lang="sv">sämre</span> tending towards lower quality and
+<span lang="sv">värre</span> towards greater severity. The boundary is not
 sharp, so learn them in phrases. See
 [adjective comparison](../adjective-comparison/).
 
@@ -127,42 +126,42 @@ pairs:
 
 | Direction | Position | Example |
 | --- | --- | --- |
-| <Sv>hem</Sv> | <Sv>hemma</Sv> | <Sv>Jag går hem.</Sv> · <Sv>Jag är hemma.</Sv> |
-| <Sv>ut</Sv> | <Sv>ute</Sv> | <Sv>Vi går ut.</Sv> · <Sv>Vi är ute.</Sv> |
-| <Sv>in</Sv> | <Sv>inne</Sv> | <Sv>Kom in!</Sv> · <Sv>Hon är inne.</Sv> |
-| <Sv>upp</Sv> | <Sv>uppe</Sv> | <Sv>Han går upp.</Sv> · <Sv>Han är uppe.</Sv> |
-| <Sv>ner</Sv> | <Sv>nere</Sv> | <Sv>Gå ner!</Sv> · <Sv>Hon är nere.</Sv> |
-| <Sv>bort</Sv> | <Sv>borta</Sv> | <Sv>Han reste bort.</Sv> · <Sv>Han är borta.</Sv> |
-| <Sv>dit</Sv> | <Sv>där</Sv> | <Sv>Vi åker dit.</Sv> · <Sv>Vi är där.</Sv> |
+| <span lang="sv">hem</span> | <span lang="sv">hemma</span> | <span lang="sv">Jag går hem.</span> · <span lang="sv">Jag är hemma.</span> |
+| <span lang="sv">ut</span> | <span lang="sv">ute</span> | <span lang="sv">Vi går ut.</span> · <span lang="sv">Vi är ute.</span> |
+| <span lang="sv">in</span> | <span lang="sv">inne</span> | <span lang="sv">Kom in!</span> · <span lang="sv">Hon är inne.</span> |
+| <span lang="sv">upp</span> | <span lang="sv">uppe</span> | <span lang="sv">Han går upp.</span> · <span lang="sv">Han är uppe.</span> |
+| <span lang="sv">ner</span> | <span lang="sv">nere</span> | <span lang="sv">Gå ner!</span> · <span lang="sv">Hon är nere.</span> |
+| <span lang="sv">bort</span> | <span lang="sv">borta</span> | <span lang="sv">Han reste bort.</span> · <span lang="sv">Han är borta.</span> |
+| <span lang="sv">dit</span> | <span lang="sv">där</span> | <span lang="sv">Vi åker dit.</span> · <span lang="sv">Vi är där.</span> |
 
 The same split runs through the question words
-<Sv>vart</Sv> and <Sv>var</Sv>. See
+<span lang="sv">vart</span> and <span lang="sv">var</span>. See
 [question words](../../questions-negation/question-words/).
 
 ## Where sentence adverbs go
 
-Many sentence adverbs, including <Sv>alltid</Sv>,
-<Sv>aldrig</Sv>, and <Sv>ofta</Sv>, follow the same placement
-pattern as <Sv>inte</Sv>: after the finite verb in a main clause,
+Many sentence adverbs, including <span lang="sv">alltid</span>,
+<span lang="sv">aldrig</span>, and <span lang="sv">ofta</span>, follow the same placement
+pattern as <span lang="sv">inte</span>: after the finite verb in a main clause,
 before it in a subordinate clause. Some adverbs have narrower behavior, so use
 the word-order page when position is the main question.
 
-- <Sv>Hon kommer alltid sent.</Sv>
-- <Sv>…eftersom hon alltid kommer sent.</Sv>
+- <span lang="sv">Hon kommer alltid sent.</span>
+- <span lang="sv">…eftersom hon alltid kommer sent.</span>
 
 See [Placement of *inte*](../../sentence-structure/inte-placement/).
 
 ## The small attitude words
 
-<Sv>Ju</Sv>, <Sv>nog</Sv>,
-<Sv>väl</Sv>, and <Sv>visst</Sv> add attitude
+<span lang="sv">Ju</span>, <span lang="sv">nog</span>,
+<span lang="sv">väl</span>, and <span lang="sv">visst</span> add attitude
 rather than information, much like German
 <span lang="de">ja</span>, <span lang="de">wohl</span>, and
 <span lang="de">doch</span>:
 
-- <Sv>Det är ju sant.</Sv> — *as we both know*
-- <Sv>Han kommer nog.</Sv> — *I expect he will*
-- <Sv>Du har väl gjort det?</Sv> — seeking agreement
+- <span lang="sv">Det är ju sant.</span> — *as we both know*
+- <span lang="sv">Han kommer nog.</span> — *I expect he will*
+- <span lang="sv">Du har väl gjort det?</span> — seeking agreement
 
 They resist clean translation and are best picked up from context. German
 speakers have an advantage here, because the mechanism is familiar.
@@ -176,25 +175,25 @@ speakers have an advantage here, because the mechanism is familiar.
 </LanguageComparison>
 
 <MistakeBox title="Common mistakes">
-	- ❌ <Sv>Han springer snabb.</Sv>
-	  ✅ <Sv>Han springer snabbt.</Sv>
-	- ❌ <Sv>Jag är hem.</Sv>
-	  ✅ <Sv>Jag är hemma.</Sv>
-	- ❌ <Sv>Jag går hemma.</Sv>
-	  ✅ <Sv>Jag går hem.</Sv>
-	- ❌ <Sv>Jag vill mer gärna stanna.</Sv>
-	  ✅ <Sv>Jag vill hellre stanna.</Sv>
-	- ❌ <Sv>…eftersom hon kommer alltid sent.</Sv>
-	  ✅ <Sv>…eftersom hon alltid kommer sent.</Sv>
+	- ❌ <span lang="sv">Han springer snabb.</span>
+	  ✅ <span lang="sv">Han springer snabbt.</span>
+	- ❌ <span lang="sv">Jag är hem.</span>
+	  ✅ <span lang="sv">Jag är hemma.</span>
+	- ❌ <span lang="sv">Jag går hemma.</span>
+	  ✅ <span lang="sv">Jag går hem.</span>
+	- ❌ <span lang="sv">Jag vill mer gärna stanna.</span>
+	  ✅ <span lang="sv">Jag vill hellre stanna.</span>
+	- ❌ <span lang="sv">…eftersom hon kommer alltid sent.</span>
+	  ✅ <span lang="sv">…eftersom hon alltid kommer sent.</span>
 </MistakeBox>
 
 <MemoryTip>
 Start from the ett-form for ordinary manner adverbs: if you can say
-<Sv><strong>ett snabbt tåg</strong></Sv>, you can say
-<Sv><strong>han springer snabbt</strong></Sv>. Then add the two
+<span lang="sv"><strong>ett snabbt tåg</strong></span>, you can say
+<span lang="sv"><strong>han springer snabbt</strong></span>. Then add the two
 sets that are not derivable:
-<Sv><strong>gärna — hellre — helst</strong></Sv> and
-<Sv><strong>hem / hemma</strong></Sv>.
+<span lang="sv"><strong>gärna — hellre — helst</strong></span> and
+<span lang="sv"><strong>hem / hemma</strong></span>.
 </MemoryTip>
 
 <QuickCheck

@@ -30,15 +30,14 @@ import LanguageComparison from '~/components/LanguageComparison.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Das deutsche Genus sagt nichts über <Sv>en</Sv> oder <Sv>ett</Sv> voraus; die
+- Das deutsche Genus sagt nichts über <span lang="sv">en</span> oder <span lang="sv">ett</span> voraus; die
   beiden Systeme sind unabhängig voneinander.
 - Schwedisch flektiert das prädikative Adjektiv, wo Deutsch es unverändert
-  lässt: <Sv>Huset är stort.</Sv>
-- <Sv>inte</Sv> steht im Hauptsatz direkt nach dem finiten Verb, während
+  lässt: <span lang="sv">Huset är stort.</span>
+- <span lang="sv">inte</span> steht im Hauptsatz direkt nach dem finiten Verb, während
   deutsches *nicht* ans Satzende wandert.
 </KeyTakeaway>
 
@@ -51,8 +50,8 @@ die den Fehler behebt.
 ## en/ett aus dem deutschen Genus erraten
 
 <MistakeBox incorrect="ett bok, en brev, en bord" correct="en bok, ett brev, ett bord" lang="sv">
-	*das Buch* heißt <Sv>en bok</Sv>, *der Brief* heißt <Sv>ett brev</Sv>, *der
-	Tisch* heißt <Sv>ett bord</Sv>. Lerne das Genus zusammen mit dem Substantiv
+	*das Buch* heißt <span lang="sv">en bok</span>, *der Brief* heißt <span lang="sv">ett brev</span>, *der
+	Tisch* heißt <span lang="sv">ett bord</span>. Lerne das Genus zusammen mit dem Substantiv
 	und nutze die Endungssignale statt des Deutschen. Siehe
 	[en / ett](../../grammar/nouns-articles/en-ett/).
 </MistakeBox>
@@ -86,8 +85,8 @@ Siehe [Adjektivkongruenz](../../grammar/adjectives-adverbs/agreement/).
 	correct="Anna såg Erik och sin hund."
 	lang="sv"
 >
-	Verwende <Sv>sin</Sv>, <Sv>sitt</Sv>, <Sv>sina</Sv>, wenn der Besitzer das
-	Subjekt desselben Satzes ist; <Sv>hans</Sv> und <Sv>hennes</Sv> verweisen auf
+	Verwende <span lang="sv">sin</span>, <span lang="sv">sitt</span>, <span lang="sv">sina</span>, wenn der Besitzer das
+	Subjekt desselben Satzes ist; <span lang="sv">hans</span> und <span lang="sv">hennes</span> verweisen auf
 	jemand anderen. Deutsches *sein* deckt beides ab, daher muss die
 	Unterscheidung bewusst getroffen werden. Siehe
 	[sin, sitt und sina](../../grammar/pronouns-roles/sin-sitt-sina/).
@@ -101,7 +100,7 @@ Siehe [Adjektivkongruenz](../../grammar/adjectives-adverbs/agreement/).
 	lang="sv"
 >
 	Deutsch schickt das finite Verb ans Ende des Nebensatzes. Schwedisch hält das
-	finite Verb nach Satzadverbialen wie <Sv>inte</Sv>: Subjekt, <Sv>inte</Sv>,
+	finite Verb nach Satzadverbialen wie <span lang="sv">inte</span>: Subjekt, <span lang="sv">inte</span>,
 	finites Verb, dann der Rest. Siehe
 	[BIFF](../../grammar/sentence-structure/biff/).
 </MistakeBox>
@@ -129,7 +128,7 @@ also nicht mechanisch durch zusätzliche Präpositionen oder Artikelformen:
 </LanguageComparison>
 
 Personalpronomen unterscheiden weiterhin Subjekt- und Objektrolle:
-<Sv>med mig</Sv>, <Sv>till honom</Sv>, niemals <Sv>med jag</Sv>. Siehe
+<span lang="sv">med mig</span>, <span lang="sv">till honom</span>, niemals <span lang="sv">med jag</span>. Siehe
 [Personalpronomen](../../grammar/pronouns-roles/personal-pronouns/) und
 [Besitz](../../grammar/nouns-articles/possession/) für die beiden gezielten
 Nachschlageseiten.
@@ -137,7 +136,7 @@ Nachschlageseiten.
 ## Deutsche Verbpartikeln annehmen
 
 Deutsche trennbare Präfixe wandern ans Satzende. Eine lose schwedische Partikel
-bleibt direkt hinter dem Verb, und nur <Sv>inte</Sv> darf dazwischentreten:
+bleibt direkt hinter dem Verb, und nur <span lang="sv">inte</span> darf dazwischentreten:
 
 <LanguageComparison title="Lose Partikel" languages={['de', 'sv']}>
 	<p slot="de">Ich stehe um sieben auf.</p>
@@ -154,11 +153,11 @@ Siehe [Partikelverben](../../grammar/verb-patterns-voice/particle-verbs/).
 ## inte an die Stelle von nicht setzen
 
 <MistakeBox incorrect="Jag kommer idag inte." correct="Jag kommer inte idag." lang="sv">
-	Im Hauptsatz steht <Sv>inte</Sv> direkt nach dem finiten Verb, vor
+	Im Hauptsatz steht <span lang="sv">inte</span> direkt nach dem finiten Verb, vor
 	Adverbialen und den meisten Objekten. Siehe
 	[Stellung von inte](../../grammar/sentence-structure/inte-placement/).
-	Für *kein* verwende <Sv>ingen</Sv>, <Sv>inget</Sv>, <Sv>inga</Sv>:
-	<Sv>Jag har ingen bil.</Sv>
+	Für *kein* verwende <span lang="sv">ingen</span>, <span lang="sv">inget</span>, <span lang="sv">inga</span>:
+	<span lang="sv">Jag har ingen bil.</span>
 </MistakeBox>
 
 <QuickCheck

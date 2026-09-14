@@ -27,11 +27,10 @@ import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
 import SentenceSchema from '~/components/SentenceSchema.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Återge ett påstående med <Sv>att</Sv>, en ja/nej-fråga med <Sv>om</Sv> och
+- Återge ett påstående med <span lang="sv">att</span>, en ja/nej-fråga med <span lang="sv">om</span> och
   en frågeordsfråga med sitt frågeord.
 - Indirekta frågor har bisatsordföljd, inte den inversion som direkta frågor
   har.
@@ -49,21 +48,21 @@ ursprungliga meningen som citat.
 
 | Ursprungligt yttrande | Länkord | Återgivning |
 | --- | --- | --- |
-| påstående | <Sv>att</Sv> | <Sv>Hon säger att hon kommer.</Sv> |
-| ja/nej-fråga | <Sv>om</Sv> | <Sv>Han frågar om jag kommer.</Sv> |
-| frågeordsfråga | samma frågeord | <Sv>Hon frågar när tåget går.</Sv> |
+| påstående | <span lang="sv">att</span> | <span lang="sv">Hon säger att hon kommer.</span> |
+| ja/nej-fråga | <span lang="sv">om</span> | <span lang="sv">Han frågar om jag kommer.</span> |
+| frågeordsfråga | samma frågeord | <span lang="sv">Hon frågar när tåget går.</span> |
 
-## Påståenden med <Sv>att</Sv>
+## Påståenden med <span lang="sv">att</span>
 
-Använd ett återgivande verb som <Sv>säga</Sv>, <Sv>berätta</Sv> eller
-<Sv>förklara</Sv> följt av en <Sv>att</Sv>-sats:
+Använd ett återgivande verb som <span lang="sv">säga</span>, <span lang="sv">berätta</span> eller
+<span lang="sv">förklara</span> följt av en <span lang="sv">att</span>-sats:
 
-<Sv>Lisa säger: “Jag är trött.”</Sv> →
-<Sv>Lisa säger att hon är trött.</Sv>
+<span lang="sv">Lisa säger: “Jag är trött.”</span> →
+<span lang="sv">Lisa säger att hon är trött.</span>
 
 ## Indirekta frågor
 
-En ja/nej-fråga blir en <Sv>om</Sv>-sats. En frågeordsfråga behåller sitt
+En ja/nej-fråga blir en <span lang="sv">om</span>-sats. En frågeordsfråga behåller sitt
 frågeord. Båda har bisatsordföljd:
 
 <SentenceSchema
@@ -75,21 +74,21 @@ frågeord. Båda har bisatsordföljd:
 	]}
 />
 
-- <Sv>Han frågar om du inte kan komma.</Sv>
-- <Sv>Jag undrar varför hon gick hem.</Sv>
+- <span lang="sv">Han frågar om du inte kan komma.</span>
+- <span lang="sv">Jag undrar varför hon gick hem.</span>
 
-Behåll inte den direkta frågans inversion: <Sv>varför hon gick</Sv>, inte
-<Sv>varför gick hon</Sv> inuti återgivningen.
+Behåll inte den direkta frågans inversion: <span lang="sv">varför hon gick</span>, inte
+<span lang="sv">varför gick hon</span> inuti återgivningen.
 
 ## Perspektivbyten
 
 Ändra former endast när återgivningssituationen kräver det:
 
-- person: <Sv>jag</Sv> kan bli <Sv>hon</Sv> eller <Sv>han</Sv>
-- ägande: <Sv>min</Sv> kan bli <Sv>hennes</Sv>, <Sv>hans</Sv> eller ett
+- person: <span lang="sv">jag</span> kan bli <span lang="sv">hon</span> eller <span lang="sv">han</span>
+- ägande: <span lang="sv">min</span> kan bli <span lang="sv">hennes</span>, <span lang="sv">hans</span> eller ett
   reflexivt possessivt pronomen i den aktuella satsen
-- tid: <Sv>i dag</Sv> kan bli <Sv>den dagen</Sv>
-- plats: <Sv>här</Sv> kan bli <Sv>där</Sv>
+- tid: <span lang="sv">i dag</span> kan bli <span lang="sv">den dagen</span>
+- plats: <span lang="sv">här</span> kan bli <span lang="sv">där</span>
 
 Om det ursprungliga perspektivet fortfarande delas kan en ändring vara
 onödig.
@@ -97,10 +96,10 @@ onödig.
 ## Tempus i återgivningen
 
 Svenskan behåller ofta ett tempus som fortfarande är sant eller relevant:
-<Sv>Hon sa att hon bor i Malmö.</Sv> kan återge ett fortfarande gällande
+<span lang="sv">Hon sa att hon bor i Malmö.</span> kan återge ett fortfarande gällande
 faktum. En dåtidsform är också naturlig när återgivningen hör hemma i en
 förfluten ram eller situationen inte längre gäller:
-<Sv>Hon sa att hon bodde i Malmö.</Sv>
+<span lang="sv">Hon sa att hon bodde i Malmö.</span>
 
 Använd inte en mekanisk bakåtförskjutningsregel enligt engelskt mönster.
 Välj tempus utifrån talarens nuvarande tidsperspektiv och den avsedda
@@ -115,16 +114,16 @@ betydelsen.
 </LanguageComparison>
 
 <MistakeBox title="Vanliga misstag">
-	- ❌ <Sv>Han frågar att jag kommer.</Sv>
-	  ✅ <Sv>Han frågar om jag kommer.</Sv>
-	- ❌ <Sv>Hon frågar var bor du.</Sv>
-	  ✅ <Sv>Hon frågar var du bor.</Sv>
+	- ❌ <span lang="sv">Han frågar att jag kommer.</span>
+	  ✅ <span lang="sv">Han frågar om jag kommer.</span>
+	- ❌ <span lang="sv">Hon frågar var bor du.</span>
+	  ✅ <span lang="sv">Hon frågar var du bor.</span>
 	- Ändra inte varje presens till preteritum bara för att det återgivande
 	  verbet står i preteritum.
 </MistakeBox>
 
 <MemoryTip>
-Välj länkordet först: påstående <Sv>att</Sv>, ja/nej-fråga <Sv>om</Sv>,
+Välj länkordet först: påstående <span lang="sv">att</span>, ja/nej-fråga <span lang="sv">om</span>,
 frågeordsfråga det ursprungliga frågeordet. Byt sedan till bisatsordföljd.
 </MemoryTip>
 

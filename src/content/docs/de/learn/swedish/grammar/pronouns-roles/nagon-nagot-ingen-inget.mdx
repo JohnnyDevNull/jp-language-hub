@@ -25,64 +25,63 @@ import MemoryTip from '~/components/MemoryTip.astro';
 import MistakeBox from '~/components/MistakeBox.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Vor einem Nomen folgt die Form dem Nomen: <Sv>någon</Sv> bei <Sv>en</Sv>,
-  <Sv>något</Sv> bei <Sv>ett</Sv>, <Sv>några</Sv> im Plural.
-- Alleinstehend bezeichnet <Sv>någon</Sv> eine Person, <Sv>något</Sv> eine Sache
-  und <Sv>några</Sv> eine Gruppe im Plural.
-- <Sv>ingen</Sv>, <Sv>inget</Sv> und <Sv>inga</Sv> sind die negativen Formen
+- Vor einem Nomen folgt die Form dem Nomen: <span lang="sv">någon</span> bei <span lang="sv">en</span>,
+  <span lang="sv">något</span> bei <span lang="sv">ett</span>, <span lang="sv">några</span> im Plural.
+- Alleinstehend bezeichnet <span lang="sv">någon</span> eine Person, <span lang="sv">något</span> eine Sache
+  und <span lang="sv">några</span> eine Gruppe im Plural.
+- <span lang="sv">ingen</span>, <span lang="sv">inget</span> und <span lang="sv">inga</span> sind die negativen Formen
   derselben Dreiteilung.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-Schwedisch verwendet <Sv>någon</Sv>, <Sv>något</Sv> und <Sv>några</Sv> für
+Schwedisch verwendet <span lang="sv">någon</span>, <span lang="sv">något</span> und <span lang="sv">några</span> für
 unbestimmte Bedeutung: „ein/einige“, „irgend-“ oder „jemand/etwas“. Die
-negativen Formen sind <Sv>ingen</Sv>, <Sv>inget</Sv> und <Sv>inga</Sv>:
+negativen Formen sind <span lang="sv">ingen</span>, <span lang="sv">inget</span> und <span lang="sv">inga</span>:
 „kein“, „niemand“ oder „nichts“.
 
 ## Grundformen
 
 Steht eines dieser Wörter vor einem Nomen, wählst du nach dem Nomen:
 
-| Bedeutung | <Sv>en</Sv>-Nomen | <Sv>ett</Sv>-Nomen | Pluralnomen |
+| Bedeutung | <span lang="sv">en</span>-Nomen | <span lang="sv">ett</span>-Nomen | Pluralnomen |
 | --- | --- | --- | --- |
-| ein / irgendein | <Sv>någon</Sv> | <Sv>något</Sv> | <Sv>några</Sv> |
-| kein | <Sv>ingen</Sv> | <Sv>inget</Sv> | <Sv>inga</Sv> |
+| ein / irgendein | <span lang="sv">någon</span> | <span lang="sv">något</span> | <span lang="sv">några</span> |
+| kein | <span lang="sv">ingen</span> | <span lang="sv">inget</span> | <span lang="sv">inga</span> |
 
 ## Vor einem Nomen
 
-Vor einem <Sv>en</Sv>-Nomen im Singular steht <Sv>någon</Sv>:
+Vor einem <span lang="sv">en</span>-Nomen im Singular steht <span lang="sv">någon</span>:
 
-<Sv>Finns det någon mataffär?</Sv>
+<span lang="sv">Finns det någon mataffär?</span>
 
 <span lang="de">Gibt es einen Supermarkt?</span>
 
-Vor einem <Sv>ett</Sv>-Nomen im Singular steht <Sv>något</Sv>:
+Vor einem <span lang="sv">ett</span>-Nomen im Singular steht <span lang="sv">något</span>:
 
-<Sv>Har du något smultronställe?</Sv>
+<span lang="sv">Har du något smultronställe?</span>
 
 <span lang="de">Hast du einen Lieblingsplatz?</span>
 
-Vor einem Pluralnomen steht <Sv>några</Sv>:
+Vor einem Pluralnomen steht <span lang="sv">några</span>:
 
-<Sv>Har ni några lediga rum?</Sv>
+<span lang="sv">Har ni några lediga rum?</span>
 
 <span lang="de">Habt ihr irgendwelche freien Zimmer?</span>
 
 ## Negative Formen
 
-Für die Verneinung verwendest du <Sv>ingen</Sv>, <Sv>inget</Sv> oder
-<Sv>inga</Sv> nach demselben Nomenschema:
+Für die Verneinung verwendest du <span lang="sv">ingen</span>, <span lang="sv">inget</span> oder
+<span lang="sv">inga</span> nach demselben Nomenschema:
 
 | Frage | Verneinte Antwort |
 | --- | --- |
-| <Sv>Finns det någon kyrka?</Sv> | <Sv>Nej, det finns ingen kyrka.</Sv> |
-| <Sv>Finns det något hav här?</Sv> | <Sv>Nej, det finns inget hav här.</Sv> |
-| <Sv>Har ni några lediga rum?</Sv> | <Sv>Nej, vi har inga lediga rum.</Sv> |
+| <span lang="sv">Finns det någon kyrka?</span> | <span lang="sv">Nej, det finns ingen kyrka.</span> |
+| <span lang="sv">Finns det något hav här?</span> | <span lang="sv">Nej, det finns inget hav här.</span> |
+| <span lang="sv">Har ni några lediga rum?</span> | <span lang="sv">Nej, vi har inga lediga rum.</span> |
 
 Deutsch heißt das oft „kein“, „keine“ oder „nicht irgendein“:
 
@@ -90,20 +89,20 @@ Deutsch heißt das oft „kein“, „keine“ oder „nicht irgendein“:
 
 ## Alleinstehend
 
-<Sv>Någon</Sv> und <Sv>något</Sv> können auch allein stehen. Dann entscheidest
+<span lang="sv">Någon</span> und <span lang="sv">något</span> können auch allein stehen. Dann entscheidest
 du zwischen Person und Sache:
 
 | Schwedisch | Bedeutung | Beispiel |
 | --- | --- | --- |
-| <Sv>någon</Sv> | jemand / irgendjemand | <Sv>Ska någon gå till spaavdelningen?</Sv> |
-| <Sv>något</Sv> | etwas / irgendetwas | <Sv>Finns det något att äta?</Sv> |
-| <Sv>ingen</Sv> | niemand | <Sv>Ingen behöver köpa ägg.</Sv> |
-| <Sv>inget</Sv> | nichts | <Sv>Jag förstår inget.</Sv> |
-| <Sv>några</Sv> | einige Personen oder Dinge | <Sv>Några kom tidigt.</Sv> |
-| <Sv>inga</Sv> | keine | <Sv>Inga kom för sent.</Sv> |
+| <span lang="sv">någon</span> | jemand / irgendjemand | <span lang="sv">Ska någon gå till spaavdelningen?</span> |
+| <span lang="sv">något</span> | etwas / irgendetwas | <span lang="sv">Finns det något att äta?</span> |
+| <span lang="sv">ingen</span> | niemand | <span lang="sv">Ingen behöver köpa ägg.</span> |
+| <span lang="sv">inget</span> | nichts | <span lang="sv">Jag förstår inget.</span> |
+| <span lang="sv">några</span> | einige Personen oder Dinge | <span lang="sv">Några kom tidigt.</span> |
+| <span lang="sv">inga</span> | keine | <span lang="sv">Inga kom för sent.</span> |
 
 Die Pluralformen können auch ein verstandenes Pluralnomen ersetzen:
-<Sv>Jag köpte några</Sv> („Ich kaufte welche“) und <Sv>Jag hittade inga</Sv>
+<span lang="sv">Jag köpte några</span> („Ich kaufte welche“) und <span lang="sv">Jag hittade inga</span>
 („Ich fand keine“).
 
 Vergleiche:
@@ -114,28 +113,28 @@ Vergleiche:
 
 ## Fragen und Aussagen
 
-In Fragen bedeuten <Sv>någon</Sv>, <Sv>något</Sv> und <Sv>några</Sv> oft
+In Fragen bedeuten <span lang="sv">någon</span>, <span lang="sv">något</span> und <span lang="sv">några</span> oft
 „irgendein“ oder „etwas“:
 
-- <Sv>Finns det någon kyrka?</Sv>
-- <Sv>Finns det något hav här?</Sv>
-- <Sv>Har du några planer för semestern?</Sv>
+- <span lang="sv">Finns det någon kyrka?</span>
+- <span lang="sv">Finns det något hav här?</span>
+- <span lang="sv">Har du några planer för semestern?</span>
 
-In Aussagen kann <Sv>några</Sv> auch „ein paar“ bedeuten:
+In Aussagen kann <span lang="sv">några</span> auch „ein paar“ bedeuten:
 
-<Sv>Jag tar några tomater också.</Sv>
+<span lang="sv">Jag tar några tomater också.</span>
 
 <span lang="de">Ich nehme auch ein paar Tomaten.</span>
 
 ## Gesprochene Formen
 
-Im Alltag wird <Sv>någon</Sv> oft als <Sv>nån</Sv> gesprochen und informell auch
-so geschrieben. Ebenso wird <Sv>något</Sv> oft zu <Sv>nåt</Sv>.
+Im Alltag wird <span lang="sv">någon</span> oft als <span lang="sv">nån</span> gesprochen und informell auch
+so geschrieben. Ebenso wird <span lang="sv">något</span> oft zu <span lang="sv">nåt</span>.
 
 | Standardsprache | Informell | Bedeutung |
 | --- | --- | --- |
-| <Sv>någon</Sv> | <Sv>nån</Sv> | jemand / irgendein <Sv>en</Sv>-Nomen |
-| <Sv>något</Sv> | <Sv>nåt</Sv> | etwas / irgendein <Sv>ett</Sv>-Nomen |
+| <span lang="sv">någon</span> | <span lang="sv">nån</span> | jemand / irgendein <span lang="sv">en</span>-Nomen |
+| <span lang="sv">något</span> | <span lang="sv">nåt</span> | etwas / irgendein <span lang="sv">ett</span>-Nomen |
 
 Verwende in sorgfältigen Texten die Standardformen, außer der Ton soll bewusst
 informell sein.
@@ -144,10 +143,10 @@ informell sein.
 
 | Kontext | Entscheide nach | Verwende |
 | --- | --- | --- |
-| Ein Nomen folgt | <Sv>en</Sv>, <Sv>ett</Sv> oder Plural | <Sv>någon</Sv> / <Sv>något</Sv> / <Sv>några</Sv> |
-| Eine negative Nomengruppe folgt | <Sv>en</Sv>, <Sv>ett</Sv> oder Plural | <Sv>ingen</Sv> / <Sv>inget</Sv> / <Sv>inga</Sv> |
-| Kein Nomen folgt | Person, Sache oder Pluralgruppe | <Sv>någon</Sv> = jemand, <Sv>något</Sv> = etwas, <Sv>några</Sv> = einige |
-| Negativ, ohne Nomen | Person, Sache oder Pluralgruppe | <Sv>ingen</Sv> = niemand, <Sv>inget</Sv> = nichts, <Sv>inga</Sv> = keine |
+| Ein Nomen folgt | <span lang="sv">en</span>, <span lang="sv">ett</span> oder Plural | <span lang="sv">någon</span> / <span lang="sv">något</span> / <span lang="sv">några</span> |
+| Eine negative Nomengruppe folgt | <span lang="sv">en</span>, <span lang="sv">ett</span> oder Plural | <span lang="sv">ingen</span> / <span lang="sv">inget</span> / <span lang="sv">inga</span> |
+| Kein Nomen folgt | Person, Sache oder Pluralgruppe | <span lang="sv">någon</span> = jemand, <span lang="sv">något</span> = etwas, <span lang="sv">några</span> = einige |
+| Negativ, ohne Nomen | Person, Sache oder Pluralgruppe | <span lang="sv">ingen</span> = niemand, <span lang="sv">inget</span> = nichts, <span lang="sv">inga</span> = keine |
 
 Diese Seite behandelt Formen und Übereinstimmung in der Nominalgruppe. Für die
 größere Wahl zwischen Satzverneinung, negativer Nominalgruppe und negativem
@@ -156,14 +155,14 @@ Adverb siehe [Negation](../../questions-negation/negation/).
 ## Typische Fehler
 
 <MistakeBox title="Typische Fehler">
-	- ❌ <Sv>något kyrka</Sv> ✅ <Sv>någon kyrka</Sv>
-	- ❌ <Sv>någon hav</Sv> ✅ <Sv>något hav</Sv>
-	- ❌ <Sv>ingen lediga rum</Sv> ✅ <Sv>inga lediga rum</Sv>
-	- ❌ <Sv>någon</Sv> und <Sv>något</Sv> bei folgendem Nomen nach Person oder
-	  Sache wählen. Wähle dann nach <Sv>en</Sv>, <Sv>ett</Sv> oder Plural.
+	- ❌ <span lang="sv">något kyrka</span> ✅ <span lang="sv">någon kyrka</span>
+	- ❌ <span lang="sv">någon hav</span> ✅ <span lang="sv">något hav</span>
+	- ❌ <span lang="sv">ingen lediga rum</span> ✅ <span lang="sv">inga lediga rum</span>
+	- ❌ <span lang="sv">någon</span> und <span lang="sv">något</span> bei folgendem Nomen nach Person oder
+	  Sache wählen. Wähle dann nach <span lang="sv">en</span>, <span lang="sv">ett</span> oder Plural.
 </MistakeBox>
 
-<MemoryTip title="Nomen oder kein Nomen?">Folgt ein Nomen, prüfe <Sv>en</Sv>, <Sv>ett</Sv> oder Plural. Folgt keines, frage nach Person, Sache oder Pluralgruppe.</MemoryTip>
+<MemoryTip title="Nomen oder kein Nomen?">Folgt ein Nomen, prüfe <span lang="sv">en</span>, <span lang="sv">ett</span> oder Plural. Folgt keines, frage nach Person, Sache oder Pluralgruppe.</MemoryTip>
 
 <QuickCheck items={[
 	{ prompt: 'Ergänze: Finns det ___ hav här? (hav ist ein ett-Wort)', answer: 'Finns det något hav här?' },

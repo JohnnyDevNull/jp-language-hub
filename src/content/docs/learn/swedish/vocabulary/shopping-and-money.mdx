@@ -18,14 +18,13 @@ related:
 import KeyTakeaway from '~/components/KeyTakeaway.astro';
 import QuickCheck from '~/components/QuickCheck.astro';
 import RelatedTopics from '~/components/RelatedTopics.astro';
-import Sv from '~/components/Sv.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Prices use <Sv>kostar</Sv>: <Sv>Vad kostar den?</Sv>
-- Point with <Sv>den här</Sv> or <Sv>det här</Sv> when you do not know the word.
-- Payment frames are short: <Sv>med kort</Sv>, <Sv>med Swish</Sv>,
-  <Sv>kontant</Sv>.
+- Prices use <span lang="sv">kostar</span>: <span lang="sv">Vad kostar den?</span>
+- Point with <span lang="sv">den här</span> or <span lang="sv">det här</span> when you do not know the word.
+- Payment frames are short: <span lang="sv">med kort</span>, <span lang="sv">med Swish</span>,
+  <span lang="sv">kontant</span>.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -37,39 +36,39 @@ basic checkout words.
 
 | Use | Swedish | English |
 | --- | --- | --- |
-| place | <Sv>en affär, affärer</Sv> | shop |
-| place | <Sv>en butik, butiker</Sv> | store |
-| object | <Sv>en vara, varor</Sv> | item, product |
-| object | <Sv>ett kvitto, kvitton</Sv> | receipt |
-| money | <Sv>ett pris, priser</Sv> | price |
-| money | <Sv>en krona, kronor</Sv> | krona |
-| payment | <Sv>ett kort, kort</Sv> | card |
-| payment | <Sv>kontanter</Sv> | cash |
+| place | <span lang="sv">en affär, affärer</span> | shop |
+| place | <span lang="sv">en butik, butiker</span> | store |
+| object | <span lang="sv">en vara, varor</span> | item, product |
+| object | <span lang="sv">ett kvitto, kvitton</span> | receipt |
+| money | <span lang="sv">ett pris, priser</span> | price |
+| money | <span lang="sv">en krona, kronor</span> | krona |
+| payment | <span lang="sv">ett kort, kort</span> | card |
+| payment | <span lang="sv">kontanter</span> | cash |
 
 ## Shop frames
 
 | Need | Swedish frame |
 | --- | --- |
-| ask the price | <Sv>Vad kostar den?</Sv> |
-| ask about a neuter thing | <Sv>Vad kostar det här?</Sv> |
-| say you want this one | <Sv>Jag tar den här.</Sv> |
-| ask for help | <Sv>Kan du hjälpa mig?</Sv> |
-| pay by card | <Sv>Jag betalar med kort.</Sv> |
-| ask for a receipt | <Sv>Kan jag få kvitto?</Sv> |
+| ask the price | <span lang="sv">Vad kostar den?</span> |
+| ask about a neuter thing | <span lang="sv">Vad kostar det här?</span> |
+| say you want this one | <span lang="sv">Jag tar den här.</span> |
+| ask for help | <span lang="sv">Kan du hjälpa mig?</span> |
+| pay by card | <span lang="sv">Jag betalar med kort.</span> |
+| ask for a receipt | <span lang="sv">Kan jag få kvitto?</span> |
 
 ## Price words
 
 | Swedish | English |
 | --- | --- |
-| <Sv>billig</Sv> | cheap |
-| <Sv>dyr</Sv> | expensive |
-| <Sv>rea</Sv> | sale |
-| <Sv>rabatt</Sv> | discount |
-| <Sv>öppet</Sv> | open |
-| <Sv>stängt</Sv> | closed |
+| <span lang="sv">billig</span> | cheap |
+| <span lang="sv">dyr</span> | expensive |
+| <span lang="sv">rea</span> | sale |
+| <span lang="sv">rabatt</span> | discount |
+| <span lang="sv">öppet</span> | open |
+| <span lang="sv">stängt</span> | closed |
 
-With prices, Swedish normally says the number plus <Sv>kronor</Sv>:
-<Sv>Det kostar femtio kronor.</Sv>
+With prices, Swedish normally says the number plus <span lang="sv">kronor</span>:
+<span lang="sv">Det kostar femtio kronor.</span>
 
 <QuickCheck
 	items={[
