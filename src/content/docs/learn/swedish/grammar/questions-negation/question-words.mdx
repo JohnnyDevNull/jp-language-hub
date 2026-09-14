@@ -34,12 +34,12 @@ import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- In a direct question the question word comes first and the finite verb second:
-  <span lang="sv">Var bor du?</span>
-- An indirect question is a subordinate clause, so the subject comes back before
-  the verb: <span lang="sv">Jag vet inte var hon bor.</span>
+- In a direct question the question word comes first and the <span lang="sv">finit verb</span>
+  second: <span lang="sv">Var bor du?</span>
+- An indirect question is a subordinate clause, so the <span lang="sv">subjekt</span> comes
+  back before the verb: <span lang="sv">Jag vet inte var hon bor.</span>
 - In an indirect question, <span lang="sv">vem</span> and <span lang="sv">vad</span> add <span lang="sv">som</span> when
-  they are the subject of their own clause.
+  they are the <span lang="sv">subjekt</span> of their own clause.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
@@ -69,8 +69,8 @@ differ only in word order, not in the pronoun.
 
 ## Core rule: direct questions
 
-When the question word is not the subject, it fills the first field and the
-finite verb follows it. Compare that frame with a yes/no question:
+When the question word is not the <span lang="sv">subjekt</span>, it fills the first field
+and the <span lang="sv">finit verb</span> follows it. Compare that frame with a yes/no question:
 
 <SentenceSchema
 	caption="Direct question frames"
@@ -83,8 +83,9 @@ finite verb follows it. Compare that frame with a yes/no question:
 	]}
 />
 
-When the question word itself is the subject, it occupies the subject role and
-no separate subject follows: <span lang="sv">Vem ringde?</span> and <span lang="sv">Vad hände?</span>
+When the question word itself is the <span lang="sv">subjekt</span>, it occupies the
+<span lang="sv">subjekt</span> role and no separate <span lang="sv">subjekt</span> follows:
+<span lang="sv">Vem ringde?</span> and <span lang="sv">Vad hände?</span>
 
 <RuleBox title="No do-support">
 	Swedish has nothing like English *do*. <span lang="sv">Bor du här?</span> is
@@ -122,9 +123,9 @@ behind the choice.
 
 ## Indirect questions: no inversion
 
-An indirect question is a subordinate clause. The subject therefore comes
-before the finite verb, and a sentence adverb such as <span lang="sv">inte</span> comes before
-that verb:
+An indirect question is a subordinate clause. The <span lang="sv">subjekt</span> therefore
+comes before the <span lang="sv">finit verb</span>, and a <span lang="sv">satsadverbial</span> such as
+<span lang="sv">inte</span> comes before that verb:
 
 <SentenceSchema
 	caption="Direct question order"
@@ -152,17 +153,17 @@ See [Subordinate clauses](../../sentence-structure/subordinate-clauses/) for the
 general dependent-clause frame. [Questions](../questions/#indirect-yesno-questions-with-om)
 handles indirect yes/no questions with <span lang="sv">om</span>.
 
-## Insert som when the question word is the subject
+## Insert som when the question word is the <span lang="sv">subjekt</span>
 
 In an indirect question, <span lang="sv">vem</span> and
 <span lang="sv">vad</span> take <span lang="sv">som</span> when they are the
-subject of their own clause:
+<span lang="sv">subjekt</span> of their own clause:
 
 - <span lang="sv">Jag vet inte vem som ringde.</span> — *I do not know who
   called.*
 - <span lang="sv">Berätta vad som hände!</span> — *Tell me what happened!*
 
-When they are the object, no <span lang="sv">som</span> appears:
+When they are the <span lang="sv">objekt</span>, no <span lang="sv">som</span> appears:
 
 - <span lang="sv">Jag vet inte vem hon ringde.</span> — *…who she called.*
 - <span lang="sv">Berätta vad du gjorde!</span> — *…what you did.*
@@ -200,8 +201,8 @@ Direct questions do not need it: <span lang="sv">Vem ringde?</span>,
 <MemoryTip>
 Contrast one pair until it is automatic:
 <span lang="sv"><strong>Vem som ringde</strong></span> — the caller is the
-subject. <span lang="sv"><strong>Vem hon ringde</strong></span> — the caller is
-someone else. The extra <span lang="sv">som</span> marks the subject.
+<span lang="sv">subjekt</span>. <span lang="sv"><strong>Vem hon ringde</strong></span> — the caller is
+someone else. The extra <span lang="sv">som</span> marks the <span lang="sv">subjekt</span>.
 </MemoryTip>
 
 <QuickCheck
