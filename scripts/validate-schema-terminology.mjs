@@ -291,13 +291,17 @@ const CHECK_LABELS = new Set(['rest']);
 
 function targetFor(learningLanguage, label, page) {
 	const key = normalize(label);
+	// A position number is a deliberate teaching aid, so a rename that keeps the
+	// field must keep the number too, or the ledger reports phantom work.
+	const prefix = label.match(/^\d+\s+/)?.[0] ?? '';
+	const keepPrefix = (target) => (target && normalize(target) === key ? prefix + target : target);
 	if (SPLIT_LABELS.has(key)) return 'finit verb';
 	const override = PAGE_TARGETS[`${learningLanguage}/${page}`];
-	if (override && key in override) return override[key];
+	if (override && key in override) return keepPrefix(override[key]);
 	const map = TARGETS[learningLanguage] ?? {};
-	if (key in map) return map[key];
+	if (key in map) return keepPrefix(map[key]);
 	// An already-correct label still renders in the vocabulary's own spelling.
-	return (VOCABULARIES[learningLanguage] ?? []).find((term) => normalize(term) === key) ?? null;
+	return keepPrefix((VOCABULARIES[learningLanguage] ?? []).find((term) => normalize(term) === key) ?? null);
 }
 
 if (process.argv.includes('--ledger')) {

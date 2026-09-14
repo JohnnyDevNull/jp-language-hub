@@ -28,20 +28,20 @@ Columns inside a row are separated by `·`. Three actions occur:
 | --- | --- | --- | --- | --- |
 | `grammar/mood-politeness-reports/conditionals` | 1 | fundament · finit verb · adverbial · huvudsats | fundament · finit verb · adverbial · huvudsats | mechanical |
 | `grammar/mood-politeness-reports/reported-speech` | 1 | bisatsinledare · subjekt · satsadverbial · finit verb · infinit verb · adverbial | bisatsinledare · subjekt · satsadverbial · finit verb · infinit verb · adverbial | mechanical |
-| `grammar/questions-negation/question-words` | 1 | fundament · finit verb · subjekt · adverbial | fundament · finit verb · subjekt · adverbial | mechanical |
-| `grammar/questions-negation/question-words` | 2 | fundament · finit verb · subjekt · satsadverbial · adverbial | fundament · finit verb · subjekt · satsadverbial · adverbial | mechanical |
+| `grammar/questions-negation/question-words` | 1 | 1 fundament · 2 finit verb · 3 subjekt · adverbial | 1 fundament · 2 finit verb · 3 subjekt · adverbial | mechanical |
+| `grammar/questions-negation/question-words` | 2 | 1 fundament · 2 finit verb · 3 subjekt · satsadverbial · adverbial | 1 fundament · 2 finit verb · 3 subjekt · satsadverbial · adverbial | mechanical |
 | `grammar/questions-negation/question-words` | 3 | bisatsinledare · subjekt · satsadverbial · finit verb · adverbial | bisatsinledare · subjekt · satsadverbial · finit verb · adverbial | mechanical |
-| `grammar/questions-negation/questions` | 1 | fundament · finit verb · subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | fundament · finit verb · subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | mechanical |
-| `grammar/questions-negation/questions` | 2 | fundament · finit verb · subjekt · adverbial | fundament · finit verb · subjekt · adverbial | mechanical |
-| `grammar/questions-negation/questions` | 3 | fundament · finit verb · subjekt · satsadverbial · adverbial | fundament · finit verb · subjekt · satsadverbial · adverbial | mechanical |
+| `grammar/questions-negation/questions` | 1 | 1 fundament · 2 finit verb · 3 subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | 1 fundament · 2 finit verb · 3 subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | mechanical |
+| `grammar/questions-negation/questions` | 2 | 1 fundament · 2 finit verb · 3 subjekt · adverbial | 1 fundament · 2 finit verb · 3 subjekt · adverbial | mechanical |
+| `grammar/questions-negation/questions` | 3 | 1 fundament · 2 finit verb · 3 subjekt · satsadverbial · adverbial | 1 fundament · 2 finit verb · 3 subjekt · satsadverbial · adverbial | mechanical |
 | `grammar/questions-negation/questions` | 4 | bisatsinledare · subjekt · satsadverbial · finit verb · adverbial | bisatsinledare · subjekt · satsadverbial · finit verb · adverbial | mechanical |
-| `grammar/sentence-structure/basic-word-order` | 1 | fundament · finit verb · subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | fundament · finit verb · subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | mechanical |
-| `grammar/sentence-structure/biff` | 1 | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | mechanical |
-| `grammar/sentence-structure/inte-placement` | 1 | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | mechanical |
-| `grammar/sentence-structure/inversion` | 1 | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | mechanical |
+| `grammar/sentence-structure/basic-word-order` | 1 | 1 fundament · 2 finit verb · 3 subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | 1 fundament · 2 finit verb · 3 subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | mechanical |
+| `grammar/sentence-structure/biff` | 1 | 1 fundament · 2 finit verb · 3 subjekt · satsadverbial · infinit verb · adverbial | 1 fundament · 2 finit verb · 3 subjekt · satsadverbial · infinit verb · adverbial | mechanical |
+| `grammar/sentence-structure/inte-placement` | 1 | 1 fundament · 2 finit verb · 3 subjekt · satsadverbial · infinit verb · adverbial | 1 fundament · 2 finit verb · 3 subjekt · satsadverbial · infinit verb · adverbial | mechanical |
+| `grammar/sentence-structure/inversion` | 1 | 1 fundament · 2 finit verb · 3 subjekt · satsadverbial · infinit verb · adverbial | 1 fundament · 2 finit verb · 3 subjekt · satsadverbial · infinit verb · adverbial | mechanical |
 | `grammar/sentence-structure/subordinate-clauses` | 1 | bisatsinledare · subjekt · satsadverbial · finit verb · infinit verb · objekt / predikativ · adverbial | bisatsinledare · subjekt · satsadverbial · finit verb · infinit verb · objekt / predikativ · adverbial | mechanical |
-| `grammar/sentence-structure/subordinate-clauses` | 2 | fundament · finit verb · subjekt · adverbial | fundament · finit verb · subjekt · adverbial | mechanical |
-| `grammar/sentence-structure/v2` | 1 | fundament · finit verb · subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | fundament · finit verb · subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | mechanical |
+| `grammar/sentence-structure/subordinate-clauses` | 2 | 1 fundament · 2 finit verb · 3 subjekt · adverbial | 1 fundament · 2 finit verb · 3 subjekt · adverbial | mechanical |
+| `grammar/sentence-structure/v2` | 1 | 1 fundament · 2 finit verb · 3 subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | 1 fundament · 2 finit verb · 3 subjekt · satsadverbial · infinit verb · objekt / predikativ · adverbial | mechanical |
 
 ### Learn English
 
@@ -63,7 +63,7 @@ Columns inside a row are separated by `·`. Three actions occur:
 | --- | --- | --- | --- | --- |
 | `grammar/sentence-structure/coordinating-conjunctions` | 1 | Hauptsatz · Konjunktion · Hauptsatz | Hauptsatz · Konjunktion · Hauptsatz | mechanical |
 | `grammar/sentence-structure/infinitive-clauses` | 1 | Hauptsatz · Mittelfeld · rechte Satzklammer | Hauptsatz · Mittelfeld · rechte Satzklammer | mechanical |
-| `grammar/sentence-structure/main-clause-verb-second` | 1 | Vorfeld · linke Satzklammer · Mittelfeld | Vorfeld · linke Satzklammer · Mittelfeld | mechanical |
+| `grammar/sentence-structure/main-clause-verb-second` | 1 | 1 Vorfeld · 2 linke Satzklammer · Mittelfeld | 1 Vorfeld · 2 linke Satzklammer · Mittelfeld | mechanical |
 | `grammar/sentence-structure/questions` | 1 | Vorfeld · linke Satzklammer · Mittelfeld | Vorfeld · linke Satzklammer · Mittelfeld | mechanical |
 | `grammar/sentence-structure/relative-clauses` | 1 | Bezugswort · linke Satzklammer · Mittelfeld · rechte Satzklammer | Bezugswort · linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
 | `grammar/sentence-structure/subordinate-clauses` | 1 | linke Satzklammer · Mittelfeld · rechte Satzklammer | linke Satzklammer · Mittelfeld · rechte Satzklammer | mechanical |
