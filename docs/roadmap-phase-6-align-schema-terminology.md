@@ -98,8 +98,8 @@ role confusion the model exists to remove.
 Model: `satsschema`, terminology per Svenska Akademiens grammatik.
 
 Allowed terms: `fundament`, `finit verb`, `subjekt`, `satsadverbial`,
-`infinit verb`, `objekt / predikativ`, `adverbial`, `subjunktion`, `huvudsats`,
-`bisats`. Where a page teaches adverbial order, `adverbial` may be split into
+`infinit verb`, `objekt / predikativ`, `adverbial`, `bisatsinledare`,
+`huvudsats`, `bisats`. Where a page teaches adverbial order, `adverbial` may be split into
 `sätt`, `plats`, `tid`.
 
 | Today | Target | Note |
@@ -110,7 +110,7 @@ Allowed terms: `fundament`, `finit verb`, `subjekt`, `satsadverbial`,
 | `Sentence adverb`, `Satzadverbial`, `Satsadverbial` | `satsadverbial` | locale translation only |
 | `Non-finite verb`, `Verb group`, `Verbgrupp`, `Verbgruppe` | `infinit verb` | same slot, two different names |
 | `Rest` | `objekt / predikativ` **+** `adverbial` | one column becomes two |
-| `Subordinator`, `Subjunktion`, `Link`, `Länkord`, `Einleitung`, `Inledning` | `subjunktion` | the bisats introducer, `att` included |
+| `Subordinator`, `Subjunktion`, `Link`, `Länkord`, `Einleitung`, `Inledning` | `bisatsinledare` | the bisats opening field, `att` and `om` included |
 | `Question phrase`, `Question word`, `Frågefras`, `Frågeord` | `fundament` | the question phrase fills the fundament |
 | `Condition`, `Villkor`, `Bedingung` | `fundament` | the `om` clause fills the fundament |
 | `Main clause`, `Huvudsats`, `Hauptsatz` | `huvudsats` | clause-level table, not a field |
@@ -156,7 +156,8 @@ per Huddleston & Pullum) plus the auxiliary-versus-main-verb distinction that
 English genuinely needs for do-support and the passive. The requirement here is
 internal consistency, not fidelity to one published schema.
 
-Allowed terms: `subject`, `auxiliary`, `main verb`, `object / complement`,
+Allowed terms: `subject`, `auxiliary`, `verb`, `main verb`,
+`object / complement`,
 `adverbial`, `manner`, `place`, `time`, `frequency`, `agent`, `antecedent`,
 `relative pronoun`, `subordinator`, `main clause`, `question word`, `not`,
 `reporting verb`, `past participle`.
@@ -165,7 +166,8 @@ Allowed terms: `subject`, `auxiliary`, `main verb`, `object / complement`,
 | --- | --- | --- |
 | `Opening` | `adverbial` | name the fronted element in the row label |
 | `Rest` | `object / complement` **+** `adverbial` | same split as Swedish |
-| `Finite verb`, `Verb`, `First verb` | `auxiliary` or `main verb` | pick per table; English needs the distinction |
+| `Finite verb`, `Verb` | `verb` | one column where the table treats the verb phrase as a unit |
+| `First verb` | `auxiliary` | on `adverb-placement`, which teaches the split |
 | `Be` (passive) | `auxiliary` | the row shows which form |
 | `Noun` (relative clauses) | `antecedent` | stands outside the clause |
 | `Relative word` | `relative pronoun` | |
@@ -183,6 +185,19 @@ the one-name-per-concept rule the other two trees follow. The alternative,
 `negator`, is correct but heavier for an A1 reader. Resolution: keep `not` as a
 deliberate exception. It is recorded here so that a later reader finds a
 decision rather than an oversight.
+
+**Decided — the Swedish bisats opening field.** An earlier draft called it
+`subjunktion`, which names the word class that fills the field rather than the
+field. That is the very confusion `fundament` exists to prevent, and the German
+tree resolves the same field as `linke Satzklammer`, a position. Resolution:
+`bisatsinledare`.
+
+**Decided — the English verb column.** A table carries one `verb` column where
+it treats the verb phrase as a unit, and `auxiliary` plus `main verb` only where
+it teaches the difference: `adverb-placement`, do-support, and the passive. On
+`reported-speech` the existing `Verb` column becomes `main verb`, because that
+table already has a separate `Auxiliary` column. This is Column Economy applied
+to verbs.
 
 **Decided — adverbial order.** On the Swedish page that teaches adverbial order,
 `adverbial` is split into `sätt`, `plats`, `tid`, in that order. Everywhere else
@@ -204,10 +219,17 @@ to the `sätt` / `plats` / `tid` split, which stays on the adverbial-order page.
 Every column that exists must be a real field, correctly named. Not every field
 must have a column.
 
+**Decided — spelling.** Labels are spelled as their own language spells them,
+not normalized to sentence case across trees. The ledger renders every target in
+that spelling already.
+
+**Decided — execution order.** T2, T3 and T4 run as one change rather than one
+tree at a time, and T5 wires the check into `npm run quality` immediately after.
+
 ### Sign-Off
 
-Accepted on 2026-09-14, including the three decisions recorded above. The three
-vocabulary tables are now binding for T2-T4.
+Accepted on 2026-09-14, including every decision recorded above. The three
+vocabulary tables are binding for T2-T4, and the ledger carries no open row.
 
 ## T2. Learn Swedish Remediation
 

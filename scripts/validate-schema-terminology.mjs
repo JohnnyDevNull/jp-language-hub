@@ -32,7 +32,7 @@ const VOCABULARIES = {
 		'infinit verb',
 		'objekt / predikativ',
 		'adverbial',
-		'subjunktion',
+		'bisatsinledare',
 		'huvudsats',
 		'bisats',
 		'sätt',
@@ -40,19 +40,20 @@ const VOCABULARIES = {
 		'tid',
 	],
 	german: [
-		'vorfeld',
-		'linke satzklammer',
-		'mittelfeld',
-		'rechte satzklammer',
-		'nachfeld',
-		'bezugswort',
-		'hauptsatz',
-		'nebensatz',
-		'konjunktion',
+		'Vorfeld',
+		'linke Satzklammer',
+		'Mittelfeld',
+		'rechte Satzklammer',
+		'Nachfeld',
+		'Bezugswort',
+		'Hauptsatz',
+		'Nebensatz',
+		'Konjunktion',
 	],
 	english: [
 		'subject',
 		'auxiliary',
+		'verb',
 		'main verb',
 		'object / complement',
 		'adverbial',
@@ -104,22 +105,17 @@ const TARGETS = {
 		'verb group': 'infinit verb',
 		verbgrupp: 'infinit verb',
 		verbgruppe: 'infinit verb',
-		subordinator: 'subjunktion',
-		subjunktion: 'subjunktion',
-		link: 'subjunktion',
-		'länkord': 'subjunktion',
-		einleitung: 'subjunktion',
-		inledning: 'subjunktion',
-		'verknüpfung': 'subjunktion',
+		subordinator: 'bisatsinledare',
+		subjunktion: 'bisatsinledare',
+		link: 'bisatsinledare',
+		'länkord': 'bisatsinledare',
+		einleitung: 'bisatsinledare',
+		inledning: 'bisatsinledare',
+		'verknüpfung': 'bisatsinledare',
 		'main clause': 'huvudsats',
 		huvudsats: 'huvudsats',
 		hauptsatz: 'huvudsats',
 		rest: 'adverbial',
-		'finite verb (direct)': null,
-		'finites verb (direkt)': null,
-		'finit verb (direkt)': null,
-		'verb (indirect)': null,
-		'verb (indirekt)': null,
 	},
 	german: {
 		'first field': 'Vorfeld',
@@ -153,9 +149,9 @@ const TARGETS = {
 		'relative word': 'relative pronoun',
 		connector: 'subordinator',
 		rest: 'adverbial',
-		'finite verb': null,
-		verb: null,
-		'first verb': null,
+		'finite verb': 'verb',
+		verb: 'verb',
+		'first verb': 'auxiliary',
 	},
 };
 
@@ -215,7 +211,7 @@ for (const schema of schemas) {
 	const vocabulary = VOCABULARIES[schema.learningLanguage];
 	if (!vocabulary) continue;
 	for (const label of schema.columns) {
-		if (vocabulary.includes(normalize(label))) continue;
+		if (vocabulary.some((term) => normalize(term) === normalize(label))) continue;
 		problems.push({
 			defect: 'unknown-field-name',
 			file: schema.file,
@@ -250,6 +246,7 @@ for (const group of byCanonical.values()) {
 // A coordinating conjunction stands before the Vorfeld, in no field at all, so
 // this one page resolves `Connector` differently from the subordinating pages.
 const PAGE_TARGETS = {
+	'english/grammar/mood-politeness-reports/reported-speech': { verb: 'main verb' },
 	'german/grammar/sentence-structure/coordinating-conjunctions': { connector: 'Konjunktion' },
 };
 
@@ -273,7 +270,8 @@ function targetFor(learningLanguage, label, page) {
 	if (override && key in override) return override[key];
 	const map = TARGETS[learningLanguage] ?? {};
 	if (key in map) return map[key];
-	return (VOCABULARIES[learningLanguage] ?? []).includes(key) ? label : null;
+	// An already-correct label still renders in the vocabulary's own spelling.
+	return (VOCABULARIES[learningLanguage] ?? []).find((term) => normalize(term) === key) ?? null;
 }
 
 if (process.argv.includes('--ledger')) {

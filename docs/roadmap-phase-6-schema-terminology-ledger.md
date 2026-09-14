@@ -27,7 +27,7 @@ Columns inside a row are separated by `·`. Three actions occur:
 | Page | # | Today | Target | Action |
 | --- | --- | --- | --- | --- |
 | `grammar/mood-politeness-reports/conditionals` | 1 | Condition · Finite verb · Rest · Main clause | fundament · finit verb · adverbial · huvudsats | check cells |
-| `grammar/mood-politeness-reports/reported-speech` | 1 | Link · Subject · Sentence adverb · Finite verb · Rest | subjunktion · subjekt · satsadverbial · finit verb · adverbial | check cells |
+| `grammar/mood-politeness-reports/reported-speech` | 1 | Link · Subject · Sentence adverb · Finite verb · Rest | bisatsinledare · subjekt · satsadverbial · finit verb · adverbial | check cells |
 | `grammar/questions-negation/question-words` | 1 | Question phrase · Finite verb · Subject · Rest | fundament · finit verb · subjekt · adverbial | check cells |
 | `grammar/questions-negation/question-words` | 2 | Question word · Finite verb (direct) · Subject · Sentence adverb · Verb (indirect) · Rest | fundament · finit verb · subjekt · satsadverbial · finit verb · adverbial | split table |
 | `grammar/questions-negation/questions` | 1 | First field · Finite verb · Subject · Sentence adverb · Non-finite verb · Rest | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | check cells |
@@ -37,7 +37,7 @@ Columns inside a row are separated by `·`. Three actions occur:
 | `grammar/sentence-structure/biff` | 1 | 1 Fundament · 2 Finite verb · 3 Subject · Sentence adverb · Verb group · Rest | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | check cells |
 | `grammar/sentence-structure/inte-placement` | 1 | 1 Fundament · 2 Finite verb · 3 Subject · Sentence adverb · Verb group · Rest | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | check cells |
 | `grammar/sentence-structure/inversion` | 1 | 1 Fundament · 2 Finite verb · 3 Subject · Sentence adverb · Non-finite verb · Rest | fundament · finit verb · subjekt · satsadverbial · infinit verb · adverbial | check cells |
-| `grammar/sentence-structure/subordinate-clauses` | 1 | Subordinator · Subject · Sentence adverb · Finite verb · Non-finite verb · Rest | subjunktion · subjekt · satsadverbial · finit verb · infinit verb · adverbial | check cells |
+| `grammar/sentence-structure/subordinate-clauses` | 1 | Subordinator · Subject · Sentence adverb · Finite verb · Non-finite verb · Rest | bisatsinledare · subjekt · satsadverbial · finit verb · infinit verb · adverbial | check cells |
 | `grammar/sentence-structure/subordinate-clauses` | 2 | First field · Finite verb · Subject · Rest | fundament · finit verb · subjekt · adverbial | check cells |
 | `grammar/sentence-structure/v2` | 1 | 1 Fundament · 2 Finite verb · 3 Subject · Rest | fundament · finit verb · subjekt · adverbial | check cells |
 
@@ -45,15 +45,15 @@ Columns inside a row are separated by `·`. Three actions occur:
 
 | Page | # | Today | Target | Action |
 | --- | --- | --- | --- | --- |
-| `grammar/mood-politeness-reports/reported-speech` | 1 | Reporting verb · Question word · Auxiliary · Subject · Verb · Rest | Reporting verb · Question word · Auxiliary · Subject · **Verb?** · adverbial | decide |
-| `grammar/questions-negation/negation` | 1 | Subject · Auxiliary · Not · Main verb · Rest | Subject · Auxiliary · Not · Main verb · adverbial | check cells |
-| `grammar/questions-negation/questions-and-do-support` | 1 | Question word · Auxiliary · Subject · Main verb · Rest | Question word · Auxiliary · Subject · Main verb · adverbial | check cells |
-| `grammar/sentence-structure/adverb-placement` | 1 | Subject · First verb · Frequency · Main verb · Manner · Place · Time | Subject · **First verb?** · Frequency · Main verb · Manner · Place · Time | decide |
-| `grammar/sentence-structure/relative-clauses` | 1 | Noun · Relative word · Subject · Verb · Rest | antecedent · relative pronoun · Subject · **Verb?** · adverbial | decide |
-| `grammar/sentence-structure/sentence-order` | 1 | Opening · Subject · Finite verb · Object / complement · Place · Time | adverbial · Subject · **Finite verb?** · Object / complement · Place · Time | decide |
-| `grammar/sentence-structure/subordinate-clauses` | 1 | Connector · Subject · Verb · Rest · Main clause | subordinator · Subject · **Verb?** · adverbial · Main clause | decide |
-| `grammar/verb-patterns-voice/auxiliary-verbs` | 1 | Subject · Auxiliary · Main verb · Rest | Subject · Auxiliary · Main verb · adverbial | check cells |
-| `grammar/verb-patterns-voice/passive` | 1 | Subject · Be · Past participle · Agent | Subject · auxiliary · Past participle · Agent | mechanical |
+| `grammar/mood-politeness-reports/reported-speech` | 1 | Reporting verb · Question word · Auxiliary · Subject · Verb · Rest | reporting verb · question word · auxiliary · subject · main verb · adverbial | check cells |
+| `grammar/questions-negation/negation` | 1 | Subject · Auxiliary · Not · Main verb · Rest | subject · auxiliary · not · main verb · adverbial | check cells |
+| `grammar/questions-negation/questions-and-do-support` | 1 | Question word · Auxiliary · Subject · Main verb · Rest | question word · auxiliary · subject · main verb · adverbial | check cells |
+| `grammar/sentence-structure/adverb-placement` | 1 | Subject · First verb · Frequency · Main verb · Manner · Place · Time | subject · auxiliary · frequency · main verb · manner · place · time | mechanical |
+| `grammar/sentence-structure/relative-clauses` | 1 | Noun · Relative word · Subject · Verb · Rest | antecedent · relative pronoun · subject · verb · adverbial | check cells |
+| `grammar/sentence-structure/sentence-order` | 1 | Opening · Subject · Finite verb · Object / complement · Place · Time | adverbial · subject · verb · object / complement · place · time | mechanical |
+| `grammar/sentence-structure/subordinate-clauses` | 1 | Connector · Subject · Verb · Rest · Main clause | subordinator · subject · verb · adverbial · main clause | check cells |
+| `grammar/verb-patterns-voice/auxiliary-verbs` | 1 | Subject · Auxiliary · Main verb · Rest | subject · auxiliary · main verb · adverbial | check cells |
+| `grammar/verb-patterns-voice/passive` | 1 | Subject · Be · Past participle · Agent | subject · auxiliary · past participle · agent | mechanical |
 
 ### Learn German
 

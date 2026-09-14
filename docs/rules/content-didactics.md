@@ -126,6 +126,10 @@ The three language layers each have exactly one place in a schema:
 | Learning language | the `columns` labels — the field names | The model's own terminology. Byte-identical in every meta locale. Never translated. |
 | Comparison language | a row carrying `lang`, such as `lang: 'de'` | Fills the learning language's fields. Never gets column names of its own. |
 
+A label is spelled the way its own language spells it: Swedish and English
+lower case, German by German orthography, so `linke Satzklammer` keeps its lower
+case adjective. Do not capitalize a label to make the three trees look alike.
+
 The column labels are therefore the one part of a schema that must not differ
 between the `en`, `de` and `sv` copies of a page. A reader who switches the
 meta language is switching the explanation, not the grammar being explained.
