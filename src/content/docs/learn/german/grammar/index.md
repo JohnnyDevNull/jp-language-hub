@@ -60,7 +60,7 @@ mood.
 For a question, decide whether it is yes/no or question-word based, then put
 the finite verb in the required position on the [Questions](./sentence-structure/questions/)
 page. For negation, first decide what is being denied on [Negation](./function-words-negation/negation/),
-then choose `nicht` or `kein` and place it precisely.
+then choose <span lang="de">nicht</span> or <span lang="de">kein</span> and place it precisely.
 
 For a condition, [Subordinating conjunctions](./sentence-structure/subordinating-conjunctions/)
 shows the clause-order choice. For an unreal or hypothetical meaning, continue

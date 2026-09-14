@@ -1,0 +1,24 @@
+/* Inline target-language text carries an explicit `lang` span. Colouring it by
+   language makes an example visible as an example at a glance, and reuses the
+   palette LanguageComparison already assigns per language.
+
+   The selector deliberately matches spans only. SentenceSchema marks its own
+   cells and headers with `lang` on `<td>`/`<th>`, and LanguageComparison colours
+   its own slots, so neither is hit twice. */
+.sl-markdown-content span[lang='sv'] {
+	color: var(--jplh-color-language-sv-high);
+}
+
+.sl-markdown-content span[lang='de'] {
+	color: var(--jplh-color-language-de-high);
+}
+
+.sl-markdown-content span[lang='en'] {
+	color: var(--jplh-color-language-en-high);
+}
+
+/* Inside a LanguageComparison the slot already states the language, so a second
+   colour on the same words only competes with it. */
+.language-comparison span[lang] {
+	color: inherit;
+}
