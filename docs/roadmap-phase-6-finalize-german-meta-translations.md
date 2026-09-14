@@ -3,7 +3,10 @@
 ## Status and Dependencies
 
 **Status:** Planned. This plan starts only after the Learn English Phase 6
-package is complete.
+package is complete. The
+[schema-terminology alignment](./roadmap-phase-6-align-schema-terminology.md)
+corrects the canonical Learn German schemas beforehand, so this plan copies each
+`columns` array verbatim and never translates it.
 
 **Dependencies:** Phase 5 and its Whole-Tree Quality Check are complete. The
 [Phase 6 coordination plan](./roadmap-phase-6-complete-meta-language-packages.md),

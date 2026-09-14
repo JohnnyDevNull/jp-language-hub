@@ -94,6 +94,64 @@ variants as rows. Where German shares the pattern, add a German row with
 Keep cell content short enough to stay readable without wrapping, and leave a
 field empty when the sentence does not fill it.
 
+### Column labels use the learning language's own terminology
+
+Column labels name the grammar model of the language being learned, in that
+language's established terminology. Do not translate the field names into the
+page's meta language, and do not invent a label where the model already has
+one. A learner acquires a language's grammar vocabulary together with its
+grammar, so an English page about Swedish still says `Fundament`.
+
+| Learning language | Model | Authority | Field names |
+| --- | --- | --- | --- |
+| Swedish | `satsschema`, the Diderichsen field model | Svenska Akademiens grammatik | `fundament`, `finit verb`, `subjekt`, `satsadverbial`, `infinit verb`, `objekt / predikativ`, `adverbial` |
+| German | topologisches Feldermodell | Duden-Grammatik | `Vorfeld`, `linke Satzklammer`, `Mittelfeld`, `rechte Satzklammer`, `Nachfeld` |
+| English | none — see below | Quirk et al.; Huddleston & Pullum | `subject`, `verb`, `object`, `complement`, `adverbial` |
+
+English is the deliberate exception. It has no verb bracket and no verb-second
+rule, so it has no positional field schema to borrow. Label English clause
+elements by their function (the S V O C A analysis) and, on a page about
+fronting, name the element that moved instead of inventing a field name for the
+front position.
+
+Teaching versions of the Swedish and German models split the final adverbial
+field further — for Swedish into `sätt`, `plats`, `tid`, in that order. Use the
+split when the page is about adverbial order; keep the single field otherwise.
+
+The three language layers each have exactly one place in a schema:
+
+| Layer | Where it appears | Rule |
+| --- | --- | --- |
+| Meta language | `caption`, `rowHeader`, every row `label`, the prose around the table | Translated per locale. |
+| Learning language | the `columns` labels — the field names | The model's own terminology. Byte-identical in every meta locale. Never translated. |
+| Comparison language | a row carrying `lang`, such as `lang: 'de'` | Fills the learning language's fields. Never gets column names of its own. |
+
+The column labels are therefore the one part of a schema that must not differ
+between the `en`, `de` and `sv` copies of a page. A reader who switches the
+meta language is switching the explanation, not the grammar being explained.
+
+A comparison row is only admissible where the pattern genuinely matches. German
+fills the opening fields of the Swedish schema, but sends non-finite verb forms
+to its own right bracket, so a German row must stop before the point where the
+models diverge. Explain the divergence in prose instead of bending a field to
+fit.
+
+Known deviations, left in place on purpose (2026-09-14):
+
+- Swedish field names are currently translated per locale: `Finite verb`,
+  `Finites Verb`, `Finit verb`. Only `Fundament` and `Rest` are shared across
+  the three copies. Under this rule every copy must read `finit verb`.
+- `Rest` is not a field name in any version of the schema. The model ends in two
+  separate fields, `objekt / predikativ` and `adverbial`.
+- German pages use `1 First field` and `Rest` — the model's own structure under
+  English names.
+- English pages use `Opening`, which is not one of the S V O C A elements.
+
+Bringing the content in line means re-cutting 63 schema instances: 14 Learn
+Swedish schemas in each of three locales, 9 canonical Learn English schemas, and
+12 canonical Learn German schemas. That work is planned as
+[Phase 6: Align Sentence-Schema Terminology](../roadmap-phase-6-align-schema-terminology.md).
+
 ## Marking Swedish text
 
 In `.mdx`, wrap inline Swedish in `<Sv>`. In plain `.md` — the cheat sheets —

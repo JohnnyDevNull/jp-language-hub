@@ -26,13 +26,22 @@ Replace the intended German- and Swedish-meta-language fallback experiences
 with complete authored translation packages while preserving the Phase 5
 learning-language trees exactly.
 
-Phase 6 has three large buckets, one per learning language:
+Phase 6 has three large buckets, one per learning language, and one
+cross-cutting remediation step between the first and the second:
 
 | Order | Learning-language bucket | Authored target package          | Planning baseline                                           |
 | ----- | ------------------------ | -------------------------------- | ----------------------------------------------------------- |
 | 1     | Learn Swedish            | German and Swedish meta language | 90 canonical pages; 4 German and 4 Swedish authored mirrors |
-| 2     | Learn English            | German and Swedish meta language | 66 canonical pages; no authored learning-tree mirrors       |
-| 3     | Learn German             | German and Swedish meta language | 82 canonical pages; no authored learning-tree mirrors       |
+| 2     | *(all three trees)*      | schema-terminology remediation   | 63 `SentenceSchema` instances; see the step plan            |
+| 3     | Learn English            | German and Swedish meta language | 66 canonical pages; no authored learning-tree mirrors       |
+| 4     | Learn German             | German and Swedish meta language | 82 canonical pages; no authored learning-tree mirrors       |
+
+Step 2 is
+[Phase 6: Align Sentence-Schema Terminology](./roadmap-phase-6-align-schema-terminology.md).
+It reviews every schema against the terminology rule in
+[Content Didactics](./rules/content-didactics.md) and corrects the canonical
+sources before buckets 3 and 4 copy them into two further meta languages. It
+authors no translations and changes no route.
 
 The counts are the Phase 5 hand-off, not permanent scope constants. Each
 language inventory must reconcile the current repository before translation.

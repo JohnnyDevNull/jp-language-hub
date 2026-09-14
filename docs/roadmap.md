@@ -210,15 +210,29 @@ Detailed plan:
 Execution plans:
 
 - [Phase 6: Finalize Learn Swedish Meta-Language Translations](./roadmap-phase-6-finalize-swedish-meta-translations.md)
+- [Phase 6: Align Sentence-Schema Terminology](./roadmap-phase-6-align-schema-terminology.md)
 - [Phase 6: Finalize Learn English Meta-Language Translations](./roadmap-phase-6-finalize-english-meta-translations.md)
 - [Phase 6: Finalize Learn German Meta-Language Translations](./roadmap-phase-6-finalize-german-meta-translations.md)
 
-Phase 6 has three large learning-language buckets and executes them in this
+Phase 6 has three large learning-language buckets and one cross-cutting
+remediation step between the first and the second, and executes them in this
 order:
 
 1. complete Learn Swedish in German and Swedish meta language;
-2. complete Learn English in German and Swedish meta language; and
-3. complete Learn German in German and Swedish meta language.
+2. align sentence-schema terminology across all three learning trees;
+3. complete Learn English in German and Swedish meta language; and
+4. complete Learn German in German and Swedish meta language.
+
+Step 2 is a review followed by a remediation. It reviews every `SentenceSchema`
+against the terminology rule in
+[Content Didactics](./rules/content-didactics.md), then corrects the canonical
+Learn English and Learn German pages and all three Learn Swedish locales, and
+adds a check that keeps the column labels identical across meta locales.
+
+It sits before the English and German buckets on purpose. Those buckets copy
+each canonical page into two further meta languages, so a schema defect left in
+a source is reproduced three times rather than corrected once. The buckets
+afterwards copy the `columns` array verbatim instead of translating it.
 
 Learn Swedish begins with a complete translation inventory. Every canonical
 page/meta-language pair is classified as a verified existing translation, a

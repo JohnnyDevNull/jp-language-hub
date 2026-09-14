@@ -3,7 +3,10 @@
 ## Status and Dependencies
 
 **Status:** Planned. This plan starts only after the Learn Swedish Phase 6
-package is complete.
+package and the
+[schema-terminology alignment](./roadmap-phase-6-align-schema-terminology.md)
+are complete. Canonical Learn English schemas are corrected there, so this
+plan copies each `columns` array verbatim and never translates it.
 
 **Dependencies:** Phase 5 and its Whole-Tree Quality Check are complete. The
 [Phase 6 coordination plan](./roadmap-phase-6-complete-meta-language-packages.md)

@@ -16,7 +16,8 @@
     "validate:links": "node scripts/validate-doc-links.mjs",
     "validate:language-layers": "node scripts/validate-language-layers.mjs",
     "validate:language-glosses": "node scripts/validate-language-glosses.mjs",
-    "report:length": "node scripts/report-content-length.mjs"
+    "report:length": "node scripts/report-content-length.mjs",
+    "validate:schema-terminology": "node scripts/validate-schema-terminology.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.10",
