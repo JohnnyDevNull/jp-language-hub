@@ -153,6 +153,26 @@ components are unavailable, so `<span lang="sv">` stays correct there.
 Mark German and English examples with `lang="de"` and `lang="en"` directly; the
 comparison and schema components do this for their own content.
 
+### Grammar terms count as target-language text
+
+A field name carried into the prose — `fundament` in an English sentence,
+`rechte Satzklammer` in one about German — is foreign text like any example, and
+is marked the same way. Without the mark a screen reader pronounces it in the
+meta language. `<Sv>` and `lang` add no visible styling, so marking costs the
+reader nothing.
+
+Two consequences:
+
+- A run of field names is wrapped once, not term by term:
+  `**<Sv>subjekt + finit verb + satsadverbial</Sv>**`.
+- A term needs no mark when the page's meta language is the same language. An
+  `sv/` page about Swedish writes `fundament` plain.
+
+`SentenceSchema` marks its own column labels with the learning language, so a
+table needs nothing. The limit is props: `caption` and a row `label` are plain
+strings and cannot carry markup, so a term inside one stays unmarked. Prefer a
+caption that does not need a field name.
+
 ## Translating Reference Pages
 
 Translate for didactic equivalence, not literal sentence-by-sentence matching.

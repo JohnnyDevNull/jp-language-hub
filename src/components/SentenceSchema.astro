@@ -26,7 +26,7 @@ const hasRowHeaders = rows.some((row) => row.label !== undefined);
 			<tr>
 				{hasRowHeaders && <th scope="col">{rowHeader}</th>}
 				{columns.map((column) => (
-					<th scope="col">{column}</th>
+					<th scope="col" lang={lang}>{column}</th>
 				))}
 			</tr>
 		</thead>
