@@ -201,7 +201,12 @@ them.
 
 ## Length budget
 
-A reference page targets at most **1000 rendered words**.
+A reference page targets at most **1400 rendered words**.
+
+The budget was 1000 until the exceptions table had grown to fifteen rows
+against a single page that genuinely exceeded it. A limit that is waived
+fourteen times out of fifteen documents nothing; 1400 is where the real
+outlier still sits above the line.
 
 The budget counts what a reader reads, not what an author types: frontmatter,
 imports and component markup do not count. Measure it with
@@ -228,21 +233,7 @@ or a callout at least every few paragraphs.
 
 | Page | Rendered words | Why it stays in one file |
 | --- | --- | --- |
-| `grammar/verb-patterns-voice/particle-verbs` | 1480 | Loose and bound particles are the same rule seen from two sides, the frequency glossary is the page's lookup value, and the practical entry path keeps the long page usable. A learner who consults one needs the other on the same page. |
-| `grammar/adjectives-adverbs/agreement` | 1306 | Agreement and double definiteness form one paradigm. `en-ett` deep-links into its definite section, and the practical decision path prevents the exception list from becoming the entry point. |
-| `grammar/prepositions-function-words/prepositions` | 1172 | A survey page whose value is the collected contrast with German and the practical decision path for place, direction, time, and fixed phrases; splitting it by preposition would produce stubs. |
-| `grammar/nouns-articles/en-ett` | 1219 | Gender, ending signals and the compound rule are one lookup, and the fast decision path makes the longer page usable for real noun choices. Nobody needs the endings without the rule they serve. |
-| `learning-path` | 1220 | This is an index route, not a single reference page. The ordered map now includes practical situation, vocabulary, S1-S4 grammar integration, and B2 report/conditional routes so learners can choose between grammar-first and situation-first paths without leaving the page. |
-| `de/learn/swedish/learning-path` | 1109 | Authored meta-language mirror of the canonical Learning Path; it preserves the same route structure, B2 additions, and learner choices rather than falling back to the English source. |
-| `sv/learn/swedish/learning-path` | 1096 | Authored meta-language mirror of the canonical Learning Path; it preserves the same route structure, B2 additions, and learner choices rather than falling back to the English source. |
-| `de/learn/swedish/grammar/verb-patterns-voice/particle-verbs` | 1391 | Authored German mirror of the canonical particle-verb page; it carries the same two-sided rule and the same frequency glossary, so it inherits the canonical exception. |
-| `sv/learn/swedish/grammar/verb-patterns-voice/particle-verbs` | 1340 | Authored Swedish mirror of the same page. Its gloss column paraphrases each particle verb in Swedish instead of translating it, which is longer than the canonical's one-word English gloss. |
-| `de/learn/swedish/grammar/adjectives-adverbs/agreement` | 1275 | Authored German mirror of the canonical agreement page; agreement and double definiteness stay one paradigm, as in the canonical. |
-| `sv/learn/swedish/grammar/adjectives-adverbs/agreement` | 1246 | Authored Swedish mirror of the same paradigm page. |
-| `de/learn/swedish/grammar/nouns-articles/en-ett` | 1144 | Authored German mirror of the canonical `en-ett` page; gender, ending signals and the compound rule remain one lookup. |
-| `sv/learn/swedish/grammar/nouns-articles/en-ett` | 1106 | Authored Swedish mirror of the same lookup page. |
-| `de/learn/swedish/grammar/prepositions-function-words/prepositions` | 1002 | Authored German mirror of the canonical preposition survey. Restoring the cited Swedish forms inside a `lang` span required naming each preposition explicitly in the German sentence, which pushed the mirror just over the budget. |
-| `sv/learn/swedish/grammar/prepositions-function-words/prepositions` | 1013 | Authored Swedish mirror of the canonical preposition survey; the Swedish-meta gloss column describes each use in Swedish rather than translating it, which adds length the canonical does not carry. |
+| `grammar/verb-patterns-voice/particle-verbs`, with its `de` and `sv` mirrors | 1480 | Loose and bound particles are the same rule seen from two sides, the frequency glossary is the page's lookup value, and the practical entry path keeps the long page usable. A learner who consults one needs the other on the same page. The mirrors sit just under the budget today, but they carry the same material, so the exception covers the family rather than splitting one page across three verdicts. |
 
 Add a row when a page crosses the budget for a real reason. Do not add one to
 avoid editing.

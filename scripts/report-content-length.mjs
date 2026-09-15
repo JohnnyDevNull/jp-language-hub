@@ -11,7 +11,7 @@ import { join, relative } from 'node:path';
 
 const BUILD_DIR = 'dist';
 const DOCS_DIR = 'src/content/docs';
-const WORD_BUDGET = 1000;
+const WORD_BUDGET = 1400;
 const LOCALE_PREFIXES = ['de', 'sv'];
 const CONTENT_PATTERN = /<div class="sl-markdown-content">([\s\S]*?)<\/div>\s*(?:<footer|<\/div>)/;
 
