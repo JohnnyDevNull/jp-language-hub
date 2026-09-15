@@ -152,6 +152,7 @@ export default defineConfig({
 						{ slug: 'learn/swedish/vocabulary/transport-and-travel' },
 						{ slug: 'learn/swedish/vocabulary/home-and-everyday-objects' },
 						{ slug: 'learn/swedish/vocabulary/daily-routines' },
+						{ slug: 'learn/swedish/vocabulary/family-and-relatives' },
 					],
 				},
 				{
