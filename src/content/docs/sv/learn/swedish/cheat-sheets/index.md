@@ -20,6 +20,7 @@ använda på små skärmar.
 - [Fusklapp för partikelverb](./particle-verbs/)
 - [Fusklapp för räkneord](./numbers/)
 - [Fusklapp för relativa pronomen](./relative-pronouns/)
+- [att och som](./att-and-som/)
 - [Fusklapp för frågeord](./question-words/)
 - [Fusklapp för adverb](./adverbs/)
 

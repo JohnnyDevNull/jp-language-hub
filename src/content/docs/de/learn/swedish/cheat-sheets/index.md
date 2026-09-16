@@ -20,6 +20,7 @@ auf kleinen Bildschirmen nutzbar.
 - [Partikelverben-Spickzettel](./particle-verbs/)
 - [Zahlen-Spickzettel](./numbers/)
 - [Relativpronomen-Spickzettel](./relative-pronouns/)
+- [att und som](./att-and-som/)
 - [Fragewörter-Spickzettel](./question-words/)
 - [Adverbien-Spickzettel](./adverbs/)
 

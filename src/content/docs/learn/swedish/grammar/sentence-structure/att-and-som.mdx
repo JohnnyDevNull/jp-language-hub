@@ -1,0 +1,207 @@
+---
+title: att and som
+description: Decide whether a clause needs att or som, and recognize att as the infinitive marker.
+metaLanguage: en
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+  - /learn/swedish/grammar/pronouns-roles/relative-pronouns/
+  - /learn/swedish/grammar/mood-politeness-reports/reported-speech/
+  - /learn/swedish/grammar/verb-patterns-voice/modal-verbs/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- <span lang="sv">som</span> introduces a clause that describes the noun right before it.
+- <span lang="sv">att</span> introduces a clause that states what someone says, thinks, or
+  knows.
+- <span lang="sv">att</span> before a bare verb form is not a clause at all: it is the
+  <span lang="sv">infinitivmärke</span>.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+English hands one word, *that*, to three different jobs. Swedish splits them
+between <span lang="sv">att</span> and <span lang="sv">som</span>, and German splits them the
+same way into *dass* and *der*/*die*/*das*. The distinction is therefore
+familiar; only the labels are new.
+
+## Use this now
+
+| What the clause does | Word | Example |
+| --- | --- | --- |
+| describes the noun before it | <span lang="sv">som</span> | <span lang="sv">Jag har en kompis som bor i Malmö.</span> |
+| states a thought, a statement, or a fact | <span lang="sv">att</span> | <span lang="sv">Jag tycker att huset är för dyrt.</span> |
+| adds a bare verb with no new subject | <span lang="sv">att</span> + infinitive | <span lang="sv">Vi planerar att flytta.</span> |
+
+## Core rule
+
+<span lang="sv">att</span> and <span lang="sv">som</span> compete only in the first two rows,
+because only those two open a real clause with its own
+<span lang="sv">subjekt</span> and <span lang="sv">finit verb</span>:
+
+<SentenceSchema
+	caption="Two clause types, one opening field"
+	rowHeader="Clause type"
+	columns={['bisatsinledare', 'subjekt', 'satsadverbial', 'finit verb', 'objekt / predikativ', 'adverbial']}
+	rows={[
+		{ label: 'Content clause', cells: ['att', 'han', 'inte', 'kommer', '', 'idag'] },
+		{ label: 'Relative, som = subject', cells: ['som', '', 'inte', 'bor', '', 'här'] },
+		{ label: 'Relative, som = object', cells: ['som', 'jag', '', 'läste', '', 'igår'] },
+	]}
+/>
+
+Read the empty <span lang="sv">subjekt</span> cell in row two: <span lang="sv">som</span> is
+the subject of its own clause, so nothing else fills that field.
+<span lang="sv">att</span> never takes a role inside the clause, so a subject always
+follows it.
+
+The third use has no row here on purpose. <span lang="sv">att göra</span> has no subject
+and no <span lang="sv">finit verb</span>, so it is an infinitive phrase, not a clause.
+
+## att before an infinitive
+
+The <span lang="sv">infinitivmärke</span> appears after most ordinary verbs, after
+adjectives, after nouns, and after prepositions:
+
+- <span lang="sv">Jag gillar **att spela** gitarr.</span>
+- <span lang="sv">Det är roligt **att resa**.</span>
+- <span lang="sv">Vi har tid **att äta** först.</span>
+- <span lang="sv">Han gick ut utan **att säga** något.</span>
+
+Modal verbs are the systematic exception: they take a bare infinitive.
+[Modal verbs](../../verb-patterns-voice/modal-verbs/) owns that pattern, and
+[Future forms](../../verbs-time-forms/future-forms/) owns why
+<span lang="sv">kommer att</span> keeps the marker while <span lang="sv">ska</span> drops it.
+
+## att before a clause
+
+Here <span lang="sv">att</span> is a <span lang="sv">bisatsinledare</span>. The clause answers
+*what* after a verb of saying, thinking, or knowing:
+
+- <span lang="sv">Hon berättade **att läraren var sjuk**.</span>
+- <span lang="sv">Jag vet **att tåget är sent**.</span>
+
+[Reported speech](../../mood-politeness-reports/reported-speech/) owns the
+reporting frame around it, and [Subordinate clauses](../subordinate-clauses/)
+owns the word order inside it.
+
+## som after a noun
+
+<span lang="sv">som</span> is a <span lang="sv">relativpronomen</span>. It points back at the
+word in front of it and adds information about that word:
+
+- <span lang="sv">Jag har en kompis **som bor i Malmö**.</span>
+- <span lang="sv">Huset **som vi ska köpa** är gammalt.</span>
+
+It is invariable: no gender, no number, no case.
+[Relative pronouns](../../pronouns-roles/relative-pronouns/) owns the full set
+with <span lang="sv">vilket</span>, <span lang="sv">vars</span>, and preposition placement.
+
+## Where the choice is real
+
+After a noun or an indefinite pronoun such as <span lang="sv">något</span>, both words
+fit the slot and only the meaning decides:
+
+- <span lang="sv">Det är något **som** min man verkligen vill göra.</span> — the clause
+  describes <span lang="sv">något</span>.
+- <span lang="sv">Jag tycker **att** det blir bra.</span> — the clause is the content of
+  <span lang="sv">tycker</span>.
+
+Test it by replacement. If *which* or *who* fits the English version, use
+<span lang="sv">som</span>. If only *that* fits and you could drop it, use
+<span lang="sv">att</span>.
+
+## When the word disappears
+
+| Word | May be dropped? |
+| --- | --- |
+| <span lang="sv">att</span> as <span lang="sv">bisatsinledare</span> | Often, in everyday speech: <span lang="sv">Jag tror (att) han kommer.</span> |
+| <span lang="sv">att</span> as <span lang="sv">infinitivmärke</span> | No, apart from a few verbs where it is optional: <span lang="sv">Hon började (att) läsa.</span> |
+| <span lang="sv">som</span> | Only as the object of its clause, never as its subject. |
+
+## Direct comparison
+
+<LanguageComparison title="Relative clause">
+	<p slot="de">Ich habe einen Freund, der in Malmö wohnt.</p>
+	<p slot="en">I have a friend who lives in Malmö.</p>
+	<p slot="sv">Jag har en kompis som bor i Malmö.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Content clause">
+	<p slot="de">Ich glaube, dass das Haus zu teuer ist.</p>
+	<p slot="en">I think that the house is too expensive.</p>
+	<p slot="sv">Jag tycker att huset är för dyrt.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Infinitive after a preposition">
+	<p slot="de">Ich bin daran interessiert, Schwedisch zu lernen.</p>
+	<p slot="en">I am interested in learning Swedish.</p>
+	<p slot="sv">Jag är intresserad av att lära mig svenska.</p>
+</LanguageComparison>
+
+German marks all three the same way Swedish does. English is the odd one: it
+merges the first two under *that* and switches to an *-ing* form in the third.
+
+<MistakeBox
+	incorrect="Jag har en vän att bor i Stockholm."
+	correct="Jag har en vän som bor i Stockholm."
+	lang="sv"
+>
+English *that* covers a describing clause too, so it pulls
+<span lang="sv">att</span> into a slot that belongs to <span lang="sv">som</span>.
+</MistakeBox>
+
+<MemoryTip>
+Describe a thing → <span lang="sv">som</span>. Report a thought →
+<span lang="sv">att</span>. Bare verb → <span lang="sv">att</span>.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Fill in: Jag har en bok … handlar om Sverige.',
+			answer: 'Jag har en bok som handlar om Sverige.',
+		},
+		{
+			prompt: 'Fill in: Hon sa … hon var trött.',
+			answer: 'Hon sa att hon var trött.',
+		},
+		{
+			prompt: 'Fill in: Vi hoppas … kunna resa i juni.',
+			answer: 'Vi hoppas att kunna resa i juni.',
+		},
+		{
+			prompt: 'Correct: Det finns något att jag vill fråga dig.',
+			answer: 'Det finns något som jag vill fråga dig.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../subordinate-clauses/', label: 'Subordinate clauses' },
+		{ href: '../../pronouns-roles/relative-pronouns/', label: 'Relative pronouns' },
+		{ href: '../../mood-politeness-reports/reported-speech/', label: 'Reported speech' },
+		{ href: '../../verb-patterns-voice/modal-verbs/', label: 'Modal verbs' },
+	]}
+/>

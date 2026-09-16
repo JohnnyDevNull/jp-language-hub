@@ -1,0 +1,203 @@
+---
+title: att och som
+description: Avgör om en bisats behöver att eller som, och känn igen att som infinitivmärke.
+metaLanguage: sv
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+  - /learn/swedish/grammar/pronouns-roles/relative-pronouns/
+  - /learn/swedish/grammar/mood-politeness-reports/reported-speech/
+  - /learn/swedish/grammar/verb-patterns-voice/modal-verbs/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- som introducerar en bisats som beskriver substantivet direkt framför den.
+- att introducerar en bisats som anger vad någon säger, tänker eller vet.
+- att framför en ren verbform är ingen bisats alls: det är
+  infinitivmärket.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Engelskan låter ett enda ord, *that*, sköta tre olika uppgifter. Svenskan
+delar upp dem mellan att och som, och tyskan gör samma uppdelning mellan
+*dass* och *der*/*die*/*das*. Skillnaden är alltså redan bekant; det är bara
+etiketterna som är nya.
+
+## Använd detta nu
+
+| Vad bisatsen gör | Ord | Exempel |
+| --- | --- | --- |
+| beskriver substantivet framför den | som | Jag har en kompis som bor i Malmö. |
+| anger en tanke, ett påstående eller ett faktum | att | Jag tycker att huset är för dyrt. |
+| lägger till en ren verbform utan nytt subjekt | att + infinitiv | Vi planerar att flytta. |
+
+## Kärnregel
+
+att och som konkurrerar bara i de första två raderna, eftersom bara de två
+öppnar en riktig bisats med eget subjekt och finit verb:
+
+<SentenceSchema
+	caption="Två satstyper, ett gemensamt öppningsfält"
+	rowHeader="Satstyp"
+	columns={['bisatsinledare', 'subjekt', 'satsadverbial', 'finit verb', 'objekt / predikativ', 'adverbial']}
+	rows={[
+		{ label: 'Innehållssats', cells: ['att', 'han', 'inte', 'kommer', '', 'idag'] },
+		{ label: 'Relativsats, som = subjekt', cells: ['som', '', 'inte', 'bor', '', 'här'] },
+		{ label: 'Relativsats, som = objekt', cells: ['som', 'jag', '', 'läste', '', 'igår'] },
+	]}
+/>
+
+Titta på den tomma subjekt-cellen i rad två: som är subjektet i sin egen
+bisats, så inget annat fyller det fältet. att tar aldrig en roll inne i
+bisatsen, så ett subjekt följer alltid efter den.
+
+Den tredje användningen har medvetet ingen egen rad här. att göra har varken
+subjekt eller finit verb, så det är en infinitivfras, inte en bisats.
+
+## att framför en infinitiv
+
+Infinitivmärket förekommer efter de flesta vanliga verb, efter adjektiv,
+efter substantiv och efter prepositioner:
+
+- Jag gillar **att spela** gitarr.
+- Det är roligt **att resa**.
+- Vi har tid **att äta** först.
+- Han gick ut utan **att säga** något.
+
+Modala verb är det systematiska undantaget: de tar en ren infinitiv.
+[Modala verb](../../verb-patterns-voice/modal-verbs/) äger det mönstret, och
+[Futurumformer](../../verbs-time-forms/future-forms/) äger varför
+kommer att behåller märket medan ska släpper det.
+
+## att framför en bisats
+
+Här är att en bisatsinledare. Bisatsen svarar på vad efter ett verb som
+uttrycker att säga, tänka eller veta:
+
+- Hon berättade **att läraren var sjuk**.
+- Jag vet **att tåget är sent**.
+
+[Indirekt tal](../../mood-politeness-reports/reported-speech/) äger
+återgivningsramen omkring den, och [Bisatser](../subordinate-clauses/) äger
+ordföljden inuti den.
+
+## som efter ett substantiv
+
+som är ett relativpronomen. Det pekar tillbaka på ordet framför sig och
+lägger till information om det ordet:
+
+- Jag har en kompis **som bor i Malmö**.
+- Huset **som vi ska köpa** är gammalt.
+
+Det är oböjligt: inget genus, inget numerus, inget kasus.
+[Relativa pronomen](../../pronouns-roles/relative-pronouns/) äger hela
+uppsättningen med vilket, vars och prepositionens placering.
+
+## Där valet är verkligt
+
+Efter ett substantiv eller ett obestämt pronomen som något passar båda orden
+in i luckan, och det är bara betydelsen som avgör:
+
+- Det är något **som** min man verkligen vill göra. — bisatsen beskriver
+  något.
+- Jag tycker **att** det blir bra. — bisatsen är innehållet i tycker.
+
+Testa genom ersättning. Går ordet att byta mot vilken, vilket eller vilka i
+formellt skriftspråk, är det som. Annars är det att.
+
+## När ordet försvinner
+
+| Ord | Kan det utelämnas? |
+| --- | --- |
+| att som bisatsinledare | Ofta, i vardagligt tal: Jag tror (att) han kommer. |
+| att som infinitivmärke | Nej, förutom några få verb där det är valfritt: Hon började (att) läsa. |
+| som | Bara som objekt i sin bisats, aldrig som subjekt. |
+
+## Direkt jämförelse
+
+<LanguageComparison title="Relativsats">
+	<p slot="de">Ich habe einen Freund, der in Malmö wohnt.</p>
+	<p slot="en">I have a friend who lives in Malmö.</p>
+	<p slot="sv">Jag har en kompis som bor i Malmö.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Innehållssats">
+	<p slot="de">Ich glaube, dass das Haus zu teuer ist.</p>
+	<p slot="en">I think that the house is too expensive.</p>
+	<p slot="sv">Jag tycker att huset är för dyrt.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Infinitiv efter en preposition">
+	<p slot="de">Ich bin daran interessiert, Schwedisch zu lernen.</p>
+	<p slot="en">I am interested in learning Swedish.</p>
+	<p slot="sv">Jag är intresserad av att lära mig svenska.</p>
+</LanguageComparison>
+
+Tyskan markerar alla tre på samma sätt som svenskan. Engelskan är den udda:
+den slår ihop de två första under *that* och byter till en *-ing*-form i den
+tredje.
+
+<MistakeBox
+	incorrect="Jag har en vän att bor i Stockholm."
+	correct="Jag har en vän som bor i Stockholm."
+	lang="sv"
+>
+Engelskans *that* täcker också en beskrivande bisats, så det drar att in i
+en plats som tillhör som.
+</MistakeBox>
+
+<MemoryTip>
+Beskriv en sak → som. Återge en tanke →
+att. Ren verbform → att.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Fyll i: Jag har en bok … handlar om Sverige.',
+			answer: 'Jag har en bok som handlar om Sverige.',
+		},
+		{
+			prompt: 'Fyll i: Hon sa … hon var trött.',
+			answer: 'Hon sa att hon var trött.',
+		},
+		{
+			prompt: 'Fyll i: Vi hoppas … kunna resa i juni.',
+			answer: 'Vi hoppas att kunna resa i juni.',
+		},
+		{
+			prompt: 'Rätta: Det finns något att jag vill fråga dig.',
+			answer: 'Det finns något som jag vill fråga dig.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../subordinate-clauses/', label: 'Bisatser' },
+		{ href: '../../pronouns-roles/relative-pronouns/', label: 'Relativa pronomen' },
+		{ href: '../../mood-politeness-reports/reported-speech/', label: 'Indirekt tal' },
+		{ href: '../../verb-patterns-voice/modal-verbs/', label: 'Modala verb' },
+	]}
+/>

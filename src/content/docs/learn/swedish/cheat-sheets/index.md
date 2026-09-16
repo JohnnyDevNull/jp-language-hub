@@ -19,6 +19,7 @@ compact, link back to complete explanations, and remain usable on small screens.
 - [Particle verbs](./particle-verbs/)
 - [Numbers](./numbers/)
 - [Relative pronouns](./relative-pronouns/)
+- [att and som](./att-and-som/)
 - [Question words](./question-words/)
 - [Adverbs](./adverbs/)
 

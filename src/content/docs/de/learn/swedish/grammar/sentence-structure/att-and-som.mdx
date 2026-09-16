@@ -1,0 +1,216 @@
+---
+title: att und som
+description: Entscheide, ob ein Nebensatz att oder som braucht, und erkenne att als Infinitivmarker.
+metaLanguage: de
+grammarLanguage: sv
+comparisonLanguages:
+  - de
+  - en
+  - sv
+levels:
+  - A2
+  - B1
+tags:
+  - grammar
+  - sentence-structure
+  - important
+related:
+  - /learn/swedish/grammar/sentence-structure/subordinate-clauses/
+  - /learn/swedish/grammar/pronouns-roles/relative-pronouns/
+  - /learn/swedish/grammar/mood-politeness-reports/reported-speech/
+  - /learn/swedish/grammar/verb-patterns-voice/modal-verbs/
+---
+
+import KeyTakeaway from '~/components/KeyTakeaway.astro';
+import LanguageComparison from '~/components/LanguageComparison.astro';
+import MemoryTip from '~/components/MemoryTip.astro';
+import MistakeBox from '~/components/MistakeBox.astro';
+import QuickCheck from '~/components/QuickCheck.astro';
+import RelatedTopics from '~/components/RelatedTopics.astro';
+import SentenceSchema from '~/components/SentenceSchema.astro';
+import TagList from '~/components/TagList.astro';
+
+<KeyTakeaway>
+- <span lang="sv">som</span> leitet einen Nebensatz ein, der das Substantiv direkt davor beschreibt.
+- <span lang="sv">att</span> leitet einen Nebensatz ein, der wiedergibt, was jemand sagt, denkt
+  oder weiß.
+- <span lang="sv">att</span> vor einer bloßen Verbform ist gar kein Nebensatz: es ist das
+  <span lang="sv">infinitivmärke</span>.
+</KeyTakeaway>
+
+<TagList levels={frontmatter.levels} tags={frontmatter.tags} />
+
+Im Englischen erledigt ein einziges Wort, <span lang="en">that</span>, drei
+verschiedene Aufgaben. Das Schwedische verteilt sie auf <span lang="sv">att</span> und
+<span lang="sv">som</span>, und das Deutsche verteilt sie auf die gleiche Weise auf
+<span lang="de">dass</span> und <span lang="de">der</span>/<span lang="de">die</span>/<span lang="de">das</span>. Die Unterscheidung ist dir daher vertraut; nur die
+Bezeichnungen sind neu.
+
+## Jetzt anwenden
+
+| Was der Nebensatz tut | Wort | Beispiel |
+| --- | --- | --- |
+| beschreibt das Substantiv davor | <span lang="sv">som</span> | <span lang="sv">Jag har en kompis som bor i Malmö.</span> |
+| gibt einen Gedanken, eine Aussage oder eine Tatsache wieder | <span lang="sv">att</span> | <span lang="sv">Jag tycker att huset är för dyrt.</span> |
+| fügt ein bloßes Verb ohne neues Subjekt hinzu | <span lang="sv">att</span> + Infinitiv | <span lang="sv">Vi planerar att flytta.</span> |
+
+## Kernregel
+
+<span lang="sv">att</span> und <span lang="sv">som</span> konkurrieren nur in den ersten
+beiden Zeilen, denn nur diese beiden eröffnen einen echten Nebensatz mit eigenem
+<span lang="sv">subjekt</span> und <span lang="sv">finit verb</span>:
+
+<SentenceSchema
+	caption="Zwei Nebensatztypen, ein Eröffnungsfeld"
+	rowHeader="Nebensatztyp"
+	columns={['bisatsinledare', 'subjekt', 'satsadverbial', 'finit verb', 'objekt / predikativ', 'adverbial']}
+	rows={[
+		{ label: 'Inhaltssatz', cells: ['att', 'han', 'inte', 'kommer', '', 'idag'] },
+		{ label: 'Relativsatz, som = Subjekt', cells: ['som', '', 'inte', 'bor', '', 'här'] },
+		{ label: 'Relativsatz, som = Objekt', cells: ['som', 'jag', '', 'läste', '', 'igår'] },
+	]}
+/>
+
+Beachte die leere <span lang="sv">subjekt</span>-Zelle in Zeile zwei:
+<span lang="sv">som</span> ist selbst das Subjekt seines Nebensatzes, deshalb füllt nichts
+anderes dieses Feld. <span lang="sv">att</span> übernimmt nie eine Rolle im Nebensatz,
+deshalb folgt immer ein Subjekt danach.
+
+Die dritte Verwendung hat hier absichtlich keine eigene Zeile.
+<span lang="sv">att göra</span> hat weder ein Subjekt noch ein
+<span lang="sv">finit verb</span>, es ist also eine Infinitivphrase, kein Nebensatz.
+
+## att vor einem Infinitiv
+
+Das <span lang="sv">infinitivmärke</span> steht nach den meisten gewöhnlichen Verben,
+nach Adjektiven, nach Substantiven und nach Präpositionen:
+
+- <span lang="sv">Jag gillar **att spela** gitarr.</span>
+- <span lang="sv">Det är roligt **att resa**.</span>
+- <span lang="sv">Vi har tid **att äta** först.</span>
+- <span lang="sv">Han gick ut utan **att säga** något.</span>
+
+Modalverben sind die systematische Ausnahme: Sie nehmen einen bloßen
+Infinitiv. [Modalverben](../../verb-patterns-voice/modal-verbs/) behandelt
+dieses Muster, und [Futurformen](../../verbs-time-forms/future-forms/)
+behandelt, warum <span lang="sv">kommer att</span> den Marker behält, während
+<span lang="sv">ska</span> ihn weglässt.
+
+## att vor einem Nebensatz
+
+Hier ist <span lang="sv">att</span> ein <span lang="sv">bisatsinledare</span>. Der Nebensatz
+beantwortet die Frage *was* nach einem Verb des Sagens, Denkens oder Wissens:
+
+- <span lang="sv">Hon berättade **att läraren var sjuk**.</span>
+- <span lang="sv">Jag vet **att tåget är sent**.</span>
+
+[Indirekte Rede](../../mood-politeness-reports/reported-speech/) behandelt
+den Berichtsrahmen darum, und [Nebensätze](../subordinate-clauses/) behandelt
+die Wortstellung darin.
+
+## som nach einem Substantiv
+
+<span lang="sv">som</span> ist ein <span lang="sv">relativpronomen</span>. Es verweist
+zurück auf das Wort davor und fügt Information über dieses Wort hinzu:
+
+- <span lang="sv">Jag har en kompis **som bor i Malmö**.</span>
+- <span lang="sv">Huset **som vi ska köpa** är gammalt.</span>
+
+Es ist unveränderlich: kein Genus, kein Numerus, kein Kasus.
+[Relativpronomen](../../pronouns-roles/relative-pronouns/) behandelt die
+vollständige Übersicht mit <span lang="sv">vilket</span>, <span lang="sv">vars</span>
+und der Stellung der Präposition.
+
+## Wo die Wahl wirklich zählt
+
+Nach einem Substantiv oder einem unbestimmten Pronomen wie
+<span lang="sv">något</span> passen beide Wörter in die Lücke, und nur die
+Bedeutung entscheidet:
+
+- <span lang="sv">Det är något **som** min man verkligen vill göra.</span> — der
+  Nebensatz beschreibt <span lang="sv">något</span>.
+- <span lang="sv">Jag tycker **att** det blir bra.</span> — der Nebensatz ist der
+  Inhalt von <span lang="sv">tycker</span>.
+
+Teste es durch Ersetzen: Passt im Deutschen <span lang="de">der</span>,
+<span lang="de">die</span> oder <span lang="de">das</span>, verwende
+<span lang="sv">som</span>. Passt nur <span lang="de">dass</span> und du könntest
+es weglassen, verwende <span lang="sv">att</span>.
+
+## Wann das Wort wegfällt
+
+| Wort | Kann wegfallen? |
+| --- | --- |
+| <span lang="sv">att</span> als <span lang="sv">bisatsinledare</span> | Oft, in der Alltagssprache: <span lang="sv">Jag tror (att) han kommer.</span> |
+| <span lang="sv">att</span> als <span lang="sv">infinitivmärke</span> | Nein, außer bei einigen Verben, wo es optional ist: <span lang="sv">Hon började (att) läsa.</span> |
+| <span lang="sv">som</span> | Nur als Objekt seines Nebensatzes, nie als sein Subjekt. |
+
+## Direkter Vergleich
+
+<LanguageComparison title="Relativsatz">
+	<p slot="de">Ich habe einen Freund, der in Malmö wohnt.</p>
+	<p slot="en">I have a friend who lives in Malmö.</p>
+	<p slot="sv">Jag har en kompis som bor i Malmö.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Inhaltssatz">
+	<p slot="de">Ich glaube, dass das Haus zu teuer ist.</p>
+	<p slot="en">I think that the house is too expensive.</p>
+	<p slot="sv">Jag tycker att huset är för dyrt.</p>
+</LanguageComparison>
+
+<LanguageComparison title="Infinitiv nach einer Präposition">
+	<p slot="de">Ich bin daran interessiert, Schwedisch zu lernen.</p>
+	<p slot="en">I am interested in learning Swedish.</p>
+	<p slot="sv">Jag är intresserad av att lära mig svenska.</p>
+</LanguageComparison>
+
+Das Deutsche markiert alle drei auf die gleiche Weise wie das Schwedische.
+Das Englische ist der Sonderfall: Es fasst die ersten beiden unter
+<span lang="en">that</span> zusammen und wechselt bei der dritten zu einer
+<span lang="en">-ing</span>-Form.
+
+<MistakeBox
+	incorrect="Jag har en vän att bor i Stockholm."
+	correct="Jag har en vän som bor i Stockholm."
+	lang="sv"
+>
+Englisches <span lang="en">that</span> deckt auch einen beschreibenden Nebensatz ab,
+deshalb zieht es <span lang="sv">att</span> in eine Lücke, die
+<span lang="sv">som</span> gehört.
+</MistakeBox>
+
+<MemoryTip>
+Eine Sache beschreiben → <span lang="sv">som</span>. Gedanken wiedergeben →
+<span lang="sv">att</span>. Bloßes Verb → <span lang="sv">att</span>.
+</MemoryTip>
+
+<QuickCheck
+	items={[
+		{
+			prompt: 'Ergänze: Jag har en bok … handlar om Sverige.',
+			answer: 'Jag har en bok som handlar om Sverige.',
+		},
+		{
+			prompt: 'Ergänze: Hon sa … hon var trött.',
+			answer: 'Hon sa att hon var trött.',
+		},
+		{
+			prompt: 'Ergänze: Vi hoppas … kunna resa i juni.',
+			answer: 'Vi hoppas att kunna resa i juni.',
+		},
+		{
+			prompt: 'Korrigiere: Det finns något att jag vill fråga dig.',
+			answer: 'Det finns något som jag vill fråga dig.',
+		},
+	]}
+/>
+
+<RelatedTopics
+	topics={[
+		{ href: '../subordinate-clauses/', label: 'Nebensätze' },
+		{ href: '../../pronouns-roles/relative-pronouns/', label: 'Relativpronomen' },
+		{ href: '../../mood-politeness-reports/reported-speech/', label: 'Indirekte Rede' },
+		{ href: '../../verb-patterns-voice/modal-verbs/', label: 'Modalverben' },
+	]}
+/>
