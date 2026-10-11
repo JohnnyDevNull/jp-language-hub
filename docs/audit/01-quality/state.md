@@ -1,14 +1,35 @@
 # Audit State
 
 **Phase:** 2 — canonical audit (find only)
-**Next:** audit batch S1.
-**Rules frozen:** yes, since 2026-10-11. New rule ideas go to
+**Next:** audit batch F0 (front door), canonical and both mirrors.
+**Rules frozen:** yes, since 2026-10-11 (after R-15). New rule ideas go to
 `rule-proposals.md` as `proposed` and wait for Phase 5.
 
 Open decisions for the author: none.
 
 Cell values: `open` · `wip` · `done@<sha>` (commit the work was done
 against). Scopes are relative to `src/content/docs/`.
+
+## Front door
+
+The pages a new reader meets first, run end to end before S1: audit, fix,
+translate, then a native `de` reader checks them. Their regular batches
+(S1, S3, S6, X1) skip these pages once F0 is fixed.
+
+| Batch | Scope (canonical, `de/`, `sv/`) | Pages | Audit | Fix | de review |
+| --- | --- | --- | --- | --- | --- |
+| F0 | `index.mdx`, `learn/swedish/{learning-path.mdx,grammar/sentence-structure/v2.mdx,grammar/sentence-structure/biff.mdx,grammar/nouns-articles/en-ett.mdx}` | 15 | open | open | open |
+
+## Outside the pages
+
+Reader-visible text that no page batch covers. Runs after F0. Scope is
+relative to the repository root.
+
+| Batch | Scope | Audit | Fix |
+| --- | --- | --- | --- |
+| U1 | `src/lib/ui-labels.ts` (component labels, all locales); `src/data/{verbs,adjectives,vocabulary}.json` (forms rendered into page tables) | open | open |
+
+Sidebar labels are not in U1; they are backlog B-05 with their own task.
 
 ## Canonical
 
@@ -41,7 +62,8 @@ against). Scopes are relative to `src/content/docs/`.
 
 ## Translations
 
-Starts only after the matching canonical batch is fixed. Scope is the
+Runs directly after the matching canonical batch is fixed, not after all
+of them. Scope is the
 canonical scope under `de/` (ledger `D<n>`) and `sv/` (ledger `V<n>`); batch
 1 also includes the locale's root `index.mdx`.
 

@@ -5,7 +5,9 @@ Proposed changes to `docs/rules/`. Status: `proposed` · `accepted` ·
 to `docs/rules/` before the fix pass starts.
 
 R-01 – R-10 accepted and applied to `content-didactics.md` on 2026-10-11.
-R-11 records decision D-01 as a rule.
+R-11 records decision D-01 as a rule. R-12 – R-15 come from a native
+reader's test of the start page, the learning path and the V2 page
+(2026-10-11) and were applied before any batch was audited.
 
 | ID | Target | Proposal | Evidence | Status |
 | --- | --- | --- | --- | --- |
@@ -20,3 +22,7 @@ R-11 records decision D-01 as a rule.
 | R-09 | `content-didactics.md` → RelatedTopics | Labels use sentence case, like titles. | SYS-03. | applied |
 | R-10 | `content-didactics.md` → KeyTakeaway | A KeyTakeaway bullet uses plain words or carries the glossary link itself, because it comes before every explanation. | SYS-04. | applied |
 | R-11 | `content-didactics.md` → Standard page order, LanguageComparison | Every grammar page in every learning-language tree has a `## Direct comparison` with the other two languages, unless no meaningful parallel exists. | D-01: the author's project standard; SYS-02. | applied |
+| R-12 | `content-didactics.md` → "A page carries itself" | A page must be understandable without following any link. Links deepen; they are never required. Length is judged against this test, not against a word count. | Reader feedback: a reference must not need ten more lookups. | applied |
+| R-13 | `content-didactics.md` → "Grammar terms" | Prose uses the school term of the meta language (`konjugiertes Verb`, `Subjekt`); the field name appears once in parentheses. A term without a school word is explained inline and linked. Replaces the link-only first mention of R-02. | Reader feedback: `finit verb` not understood, lower-case `subjekt` read as a spelling error. | applied |
+| R-14 | `content-didactics.md` → "Natural language", project vocabulary | Native-speaker register in every locale; list of machine patterns; no project vocabulary in reader text. | Reader feedback: text reads machine-translated; "Frontmatter" on the German start page and in all three learning-path descriptions. | applied |
+| R-15 | `content-didactics.md` → "Titles, headings and labels" (replaces "RelatedTopics labels") | Titles and labels name the topic in plain words; abbreviations in parentheses; headings are noun phrases or questions; link descriptions only when they add something. | Reader feedback: `BIFF`, `V2-Regel`, "Heute hier anfangen", "sage, was jetzt … passiert". | applied |

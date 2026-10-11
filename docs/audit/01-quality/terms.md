@@ -7,7 +7,7 @@ belongs in; a term used in several trees is listed once per tree.
 | Term | Tree | Plain gloss (draft) | Seen in |
 | --- | --- | --- | --- |
 | supine (`supinum`) | sv | verb form used after `har`/`hade` | P0 perfect, verb-forms |
-| finite verb (`finit verb`) | sv, de | the verb that shows tense | P0 perfect, biff, from-german |
+| finite verb (`finit verb`) | sv, de | school term in prose: "conjugated verb" / "konjugiertes Verb" (R-13) | P0 perfect, biff, from-german |
 | non-finite verb (`infinit verb`) | sv | verb form without tense | P0 biff |
 | auxiliary | sv, en | helper verb, e.g. `har`, `have` | P0 perfect, present-perfect |
 | past participle | en | form after `have`: `seen`, `worked` | P0 present-perfect |
@@ -25,6 +25,7 @@ belongs in; a term used in several trees is listed once per tree.
 | s-passive | sv | passive with `-s`: `städas` | P0 verb-forms |
 | agent | sv | who does the action in a passive | P0 verb-forms |
 | compound | sv | word built from two words | P0 family-and-relatives |
+| CEFR levels | all | language levels from A1 (beginner) to C1 | reader feedback, learning path |
 | case | de | form that shows a word's role | P0 dative |
 | dative | de | case for receivers and many prepositions | P0 dative |
 | two-way preposition (`Wechselpräposition`) | de | preposition taking dative or accusative | P0 dative |

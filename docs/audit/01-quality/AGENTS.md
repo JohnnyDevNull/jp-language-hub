@@ -36,6 +36,9 @@ it forces the next one to re-audit.
 | 2026-10-11 | D-01: every grammar page in every tree compares with the other two languages (now R-11). |
 | 2026-10-11 | D-02: `false-friends` keeps the rude-English traps; no softening for readers 12+. |
 | 2026-10-11 | D-03: Swedish uses the everyday joined forms `idag`, `igår`, `imorgon`, `ikväll`. |
+| 2026-10-11 | Goal sharpened after native-reader feedback: a page must be understandable on its own. Shorter is not a goal. R-12 – R-15 applied. |
+| 2026-10-11 | Batch U1 covers reader-visible text outside the pages: component labels and data files. |
+| 2026-10-11 | Front-door batch F0 runs first; every mirror batch follows its canonical batch directly; each `de` batch ends with a native-reader check. |
 
 ## Files
 
@@ -93,6 +96,12 @@ Per fixed batch: `npm run quality`, then
 
 ## History
 
+- 2026-10-11 — Native-reader feedback on the `de` start page, learning path
+  and V2 page. Added R-12 – R-15 (self-contained pages, school terms in
+  prose, natural language, plain titles and labels), dimension N with a
+  human `de` check, and front-door batch F0 before S1. Untranslated sidebar
+  labels recorded as B-05. Added batch U1 (component labels, data files).
+  Next: audit F0.
 - 2026-10-11 — Phase 1 closed: author accepted R-01 – R-10 and decided
   D-01 – D-03. Rules applied to `content-didactics.md` (reader level,
   grammar terms, glossary pages, intro, MistakeBox, schema field integrity,

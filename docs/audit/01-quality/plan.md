@@ -129,10 +129,23 @@ Fix per batch, S1 findings first. One commit per batch,
 `report:length` after each batch. Glossary pages are created at the start
 of this phase.
 
-### Phase 4 — Translation audit (after Phase 3)
+### Front door (F0) — before S1
 
-Mirrors follow the canonical source, so they are audited only after its
-fixes land — auditing earlier would review text that is about to change.
+Start page, learning path, and the three quick-start pages a native reader
+tested (V2, BIFF, en/ett), in all three locales. Audited, fixed and
+translated in one go, then checked by a native `de` reader. It is the first
+human calibration of the rubric and the first visible improvement.
+
+### Outside the pages (U1) — after F0
+
+Component labels in `src/lib/ui-labels.ts` and the data files in
+`src/data/` that render forms into page tables. Same rubric; C2 for every
+form in the data files, N for every label.
+
+### Phase 4 — Translation audit (per batch)
+
+Mirrors follow the canonical source, so each mirror batch runs right after
+its canonical batch is fixed — auditing earlier would review text that is about to change.
 Batches D1–D9 and V1–V9 mirror S1–S9; D1/V1 add the locale's root `index.mdx`. Check dimension T plus C1 in the
 meta language.
 
