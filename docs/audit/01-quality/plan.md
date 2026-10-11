@@ -69,7 +69,7 @@ Severity: **S1** wrong or misleading · **S2** hinders understanding ·
 ### Phase 0 — Setup and pilot (1 session)
 
 1. Folder, `AGENTS.md`, `state.md` — done 2026-10-11.
-2. Pilot-audit 10 deliberately different pages into `ledgers/P0.md`
+2. Done 2026-10-11. Pilot-audit 10 deliberately different pages into `ledgers/P0.md`
    (paths under `src/content/docs/`):
 
    | # | Page | Why |
@@ -84,8 +84,9 @@ Severity: **S1** wrong or misleading · **S2** hinders understanding ·
    | 8 | `learn/english/grammar/verbs-time-forms/present-perfect.mdx` | same topic as #1 in another tree |
    | 9 | `learn/german/grammar/cases/dative.mdx` | German grammar terms |
    | 10 | `de/learn/swedish/grammar/verbs-time-forms/perfect.mdx` | mirror of #1, calibrates dimension T |
-3. Calibrate the rubric with the pilot results; confirm batch sizes.
-4. Write `rubric.md`; draft rule proposals from the pilot evidence (see
+3. Done. Batch sizes confirmed. Exception: most German batches will be
+   `rewrite` work (SYS-02); plan one G batch per session in Phase 3.
+4. Done. Write `rubric.md`; draft rule proposals from the pilot evidence (see
    Phase 1). Pilot pages are re-audited in their batch against the final
    rubric.
 

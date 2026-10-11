@@ -1,9 +1,11 @@
 # Audit State
 
-**Phase:** 0 — setup and pilot
-**Next:** audit the 10 pilot pages into `ledgers/P0.md` (`plan.md`, Phase 0,
-step 2), then write `rubric.md`.
-**Rules frozen:** no
+**Phase:** 2 — canonical audit (find only)
+**Next:** audit batch S1.
+**Rules frozen:** yes, since 2026-10-11. New rule ideas go to
+`rule-proposals.md` as `proposed` and wait for Phase 5.
+
+Open decisions for the author: none.
 
 Cell values: `open` · `wip` · `done@<sha>` (commit the work was done
 against). Scopes are relative to `src/content/docs/`.

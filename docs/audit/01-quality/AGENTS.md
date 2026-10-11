@@ -32,18 +32,23 @@ it forces the next one to re-audit.
 | 2026-10-11 | One glossary page per learning language, `learn/<language>/glossary/`, one anchor per term, mirrored to `de`/`sv`. |
 | 2026-10-11 | Audit and fix are separate passes. An audit pass changes no content. |
 | 2026-10-11 | Translations are audited only after their canonical batch is fixed. |
+| 2026-10-11 | R-01 – R-11 accepted and applied to `docs/rules/content-didactics.md`; rules frozen. |
+| 2026-10-11 | D-01: every grammar page in every tree compares with the other two languages (now R-11). |
+| 2026-10-11 | D-02: `false-friends` keeps the rude-English traps; no softening for readers 12+. |
+| 2026-10-11 | D-03: Swedish uses the everyday joined forms `idag`, `igår`, `imorgon`, `ikväll`. |
 
 ## Files
 
 | File | Holds | Created |
 | --- | --- | --- |
-| `state.md` | phase, next step, batch board | now |
-| `plan.md` | goal, phases, rubric draft | now |
-| `rubric.md` | final criteria and severity | Phase 0 |
+| `state.md` | phase, next step, open decisions, batch board | setup |
+| `plan.md` | goal, phases | setup |
+| `rubric.md` | reader level, criteria, severity, recording rules | Phase 0 |
 | `ledgers/<batch>.md` | per-page verdicts and findings | at batch start |
-| `rule-proposals.md` | proposed `docs/rules/` changes, with status | on first entry |
-| `terms.md` | grammar-term register: term, gloss, glossary anchor | on first entry |
-| `backlog.md` | out-of-scope observations | on first entry |
+| `systemic.md` | patterns across many pages, fixed in one pass | Phase 0 |
+| `rule-proposals.md` | proposed `docs/rules/` changes, with status | Phase 0 |
+| `terms.md` | grammar-term register, source for the glossaries | Phase 0 |
+| `backlog.md` | out-of-scope observations | Phase 0 |
 
 ## Ledger format
 
@@ -88,6 +93,15 @@ Per fixed batch: `npm run quality`, then
 
 ## History
 
+- 2026-10-11 — Phase 1 closed: author accepted R-01 – R-10 and decided
+  D-01 – D-03. Rules applied to `content-didactics.md` (reader level,
+  grammar terms, glossary pages, intro, MistakeBox, schema field integrity,
+  comparison standard, spelling, label case). Next: audit S1.
+- 2026-10-11 — Pilot done: 10 pages in `ledgers/P0.md` (3 pass, 6 fix,
+  1 rewrite; 3 S1 findings). Wrote `rubric.md`, `systemic.md` (SYS-01 –
+  SYS-05), `rule-proposals.md` (R-01 – R-10), `terms.md`, `backlog.md`.
+  Biggest signals: unexplained terms everywhere, and a much thinner German
+  tree. Next: author decisions (Phase 1).
 - 2026-10-11 — Audit set up: plan, state board with 24 canonical and 9×2
   translation batches, session protocol. Decisions on reader age, glossary
   placement and audit/fix separation recorded. Next: Phase 0 pilot.
