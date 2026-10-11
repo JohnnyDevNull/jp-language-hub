@@ -7,7 +7,7 @@ hero:
   title: JP Language Hub
   tagline: Deutsch · English · Svenska
   actions:
-    - text: Starta den svenska lärvägen
+    - text: Börja med den svenska lärvägen
       link: ./learn/swedish/learning-path/
       icon: right-arrow
     - text: Bläddra i svensk grammatik
@@ -19,8 +19,8 @@ hero:
 import { Card, CardGrid } from '@astrojs/starlight/components';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 
-En personlig språkreferens för att jämföra tyska, engelska och svenska, med
-svenska som aktuellt lärfokus.
+En personlig språkreferens som förklarar tyska, engelska och svenska sida vid
+sida. Just nu ligger fokus på att lära sig svenska.
 
 <LanguageComparison title="En betydelse, tre språk">
 	<p slot="de">Ich habe ein Auto.</p>
@@ -30,57 +30,49 @@ svenska som aktuellt lärfokus.
 
 ## Var du börjar
 
-Referensen är tillräckligt stor för att "läs allt" inte ska vara ett svar. Den
-[svenska lärvägen](./learn/swedish/learning-path/) ger en kurerad ordnad väg
-genom den svenska referensen, grupperad efter CEFR-nivåerna sidorna redan
-anger, och säger i en rad varför varje steg ligger där.
+Det finns många sidor här, så det hjälper att ha en ordning. Den
+[svenska lärvägen](./learn/swedish/learning-path/) listar sidorna från
+nybörjare (A1) till övre medelnivå (B2) och säger för varje sida varför den
+kommer just där. Vill du bara ha en kort start, börjar lärvägen med fem sidor.
 
-## Snabbstart för svenska
-
-- [Lär dig när du använder *en* och *ett*](./learn/swedish/grammar/nouns-articles/en-ett/)
-- [Förstå V2-ordföljd](./learn/swedish/grammar/sentence-structure/v2/)
-- [Placera *inte* med BIFF](./learn/swedish/grammar/sentence-structure/biff/)
-- [Bygg svenska substantivformer](./learn/swedish/grammar/nouns-articles/noun-forms/)
-- [Matcha adjektivändelser](./learn/swedish/grammar/adjectives-adverbs/agreement/)
-- [Känn igen de centrala verbformerna](./learn/swedish/grammar/verbs-time-forms/verb-forms/)
-- [Säg vad du tycker med återanvändbara mönster](./learn/swedish/sentence-patterns/opinions-and-uncertainty/)
-
-## Utforska referensen
+## Det här hittar du
 
 <CardGrid stagger>
-	<Card title="Svensk lärväg" icon="rocket">
-		En kurerad ordnad väg genom den svenska referensen, grupperad efter
-		CEFR-nivå.
+	<Card title="Lärväg" icon="rocket">
+		Alla svenska sidor i en bra ordning, från nybörjare till övre medelnivå.
 		[Öppna lärvägen](./learn/swedish/learning-path/)
 	</Card>
 	<Card title="Grammatik" icon="open-book">
-		Satsstruktur, verb, substantiv, adjektiv och funktionsord.
+		Hur meningar byggs upp, verb, substantiv, adjektiv och småord som
+		prepositioner och bindeord.
 		[Öppna grammatiken](./learn/swedish/grammar/)
 	</Card>
 	<Card title="Ordförråd" icon="document">
-		Ordförråd ordnat efter verkliga situationer i stället för isolerade listor.
+		Ord ordnade efter vardagliga situationer, inte som lösa listor.
 		[Öppna ordförråd](./learn/swedish/vocabulary/)
 	</Card>
-	<Card title="Svenska satsmönster" icon="comment">
-		Återanvändbara konstruktioner för åsikter, instämmande, skäl, villkor och
-		samtal.
-		[Öppna satsmönster](./learn/swedish/sentence-patterns/)
+	<Card title="Meningsmönster" icon="comment">
+		Färdiga meningar för att säga vad du tycker, hålla med, ge skäl och hålla
+		ett samtal igång.
+		[Öppna meningsmönster](./learn/swedish/sentence-patterns/)
 	</Card>
 	<Card title="Uttal" icon="puzzle">
-		Vokallängd, hårda och mjuka vokaler, ordaccent och talspråkliga reduktioner.
+		Långa och korta vokaler, hårda och mjuka vokaler, ordaccent och ljud som
+		försvinner när man pratar snabbt.
 		[Öppna uttal](./learn/swedish/pronunciation-basics/)
 	</Card>
-	<Card title="Vanliga misstag" icon="warning">
-		Typiska överföringsfel, falska vänner och missvisande direktöversättningar.
-		[Öppna vanliga misstag](./learn/swedish/common-mistakes/)
+	<Card title="Vanliga fel" icon="warning">
+		Fel som kommer från tyska eller engelska vanor, falska vänner och
+		översättningar ord för ord som blir fel.
+		[Öppna vanliga fel](./learn/swedish/common-mistakes/)
 	</Card>
-	<Card title="Snabbreferenser" icon="list-format">
-		Kompakta referenser för former, ordföljd och återkommande mönster.
-		[Öppna snabbreferenser](./learn/swedish/cheat-sheets/)
+	<Card title="Fusklappar" icon="list-format">
+		Korta översikter över former, ordföljd och vanliga mönster.
+		[Öppna fusklapparna](./learn/swedish/cheat-sheets/)
 	</Card>
 	<Card title="Övning" icon="pencil">
-		Varje referenssida slutar med en snabb kontroll. Den här sidan förklarar vad
-		det täcker idag och vad ett övningsområde skulle lägga till.
+		Varje sida slutar med några frågor där du kan testa dig själv. Den här
+		sidan förklarar hur du använder dem.
 		[Öppna övning](./practice/)
 	</Card>
 </CardGrid>

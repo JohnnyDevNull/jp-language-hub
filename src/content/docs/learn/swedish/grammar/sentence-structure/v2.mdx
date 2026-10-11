@@ -1,6 +1,6 @@
 ---
-title: V2 rule
-description: Understand why the finite verb normally occupies the second constituent position in Swedish main clauses.
+title: Verb in second position (V2)
+description: In a Swedish statement the conjugated verb always comes second. What counts as first, and where the subject goes.
 metaLanguage: en
 grammarLanguage: sv
 comparisonLanguages:
@@ -33,33 +33,41 @@ import SpecialRule from '~/components/SpecialRule.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- The <span lang="sv">finit verb</span> is the second **constituent**, not the second word.
-- If something other than the <span lang="sv">subjekt</span> fills position one, the
-  <span lang="sv">subjekt</span> follows the <span lang="sv">finit verb</span>.
-- Only the <span lang="sv">finit verb</span> counts. <span lang="sv">Infinit verb</span> stay later in
-  the clause.
+- In a Swedish statement, the conjugated verb is always the second sentence
+  part — not necessarily the second word.
+- If the sentence starts with something other than the subject, the subject
+  moves behind the verb: <span lang="sv">Idag köper jag en bil.</span>
+- Only the conjugated verb moves to second place. Other verb forms, such as
+  <span lang="sv">köpa</span> or <span lang="sv">köpt</span>, stay further back.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-**V2** means that the <span lang="sv">finit verb</span> normally occupies the second position in a
-Swedish declarative main clause. It is one of the most important rules for
-producing natural Swedish sentences, and German speakers already know it.
+In a Swedish statement, the conjugated verb
+([<span lang="sv">finit verb</span>](../../../glossary/#finit-verb)) — the verb
+that shows the tense, like <span lang="sv">köper</span> or
+<span lang="sv">har</span> — always comes second. Before it stands exactly one
+sentence part: a word or a group of words that belongs together, such as
+<span lang="sv">jag</span>, <span lang="sv">idag</span> or
+<span lang="sv">efter jobbet</span>. So you say
+<span lang="sv">Jag köper en bil idag</span>, but also
+<span lang="sv">Idag köper jag en bil</span>. You use this rule in almost every
+Swedish sentence; German works the same way, English does not.
 
 ## Core rule
 
-> In a Swedish declarative main clause, the **<span lang="sv">finit verb</span>** normally comes in
-> the **second constituent position**.
+> In a Swedish statement, the **conjugated verb** comes **second**, after
+> exactly one sentence part.
 
-Read the clause as a row of fields. Position one is a single field no matter how
-many words it holds, and the <span lang="sv">finit verb</span> owns position two:
+Think of the sentence as a row of boxes. The first box holds one sentence part,
+however many words it has. The second box always holds the conjugated verb:
 
 <SentenceSchema
-	caption="V2 in a declarative main clause"
+	caption="The verb in second place"
 	rowHeader="Variant"
 	columns={['1 fundament', '2 finit verb', '3 subjekt', 'satsadverbial', 'infinit verb', 'objekt / predikativ', 'adverbial']}
 	rows={[
-		{ label: 'Neutral', cells: ['Jag', 'köper', '', '', '', 'en bil', 'idag.'] },
+		{ label: 'Normal order', cells: ['Jag', 'köper', '', '', '', 'en bil', 'idag.'] },
 		{ label: 'Time first', cells: ['Idag', 'köper', 'jag', '', '', 'en bil.', ''] },
 		{ label: 'Object first', cells: ['Den boken', 'har', 'jag', 'redan', 'läst.', '', ''] },
 		{
@@ -70,98 +78,109 @@ many words it holds, and the <span lang="sv">finit verb</span> owns position two
 	]}
 />
 
-In a neutral sentence the <span lang="sv">subjekt</span> itself fills position one, so
-position three stays empty. As soon as something else is fronted, the
-<span lang="sv">subjekt</span> moves behind the verb:
+The column names are the Swedish grammar terms. The first box is called
+[<span lang="sv">fundament</span>](../../../glossary/#fundament), the
+foundation of the sentence.
 
-<ExampleBox title="Time expression in position one" lang="sv">
+In a normal sentence the subject itself fills the first box, so box three stays
+empty. As soon as something else comes first, the subject moves behind the verb:
+
+<ExampleBox title="A time word in the first box" lang="sv">
 	<p><strong>Idag</strong> <strong>köper</strong> jag en bil.</p>
 </ExampleBox>
 
-## Position does not mean word
+## When the first part has several words
 
-One constituent may contain several words:
+One sentence part can be several words long:
 
 <p lang="sv"><strong>Efter jobbet</strong> <strong>köper</strong> jag mat.</p>
 
-<span lang="sv">Efter jobbet</span> is one adverbial constituent. The verb <span lang="sv">köper</span> is
-still in the second sentence position even though it is the third written word.
+<span lang="sv">Efter jobbet</span> is two words, but one sentence part: together
+they say when. So <span lang="sv">köper</span> is still in second place, even
+though it is the third word.
 
-## Compound verb phrases
+## Sentences with more than one verb
 
-V2 applies to the **<span lang="sv">finit verb</span>**, not to every verb in the clause:
+Only the conjugated verb moves to second place:
 
 <p lang="sv">Idag <strong>vill</strong> jag köpa en bil.</p>
 <p lang="sv">Idag <strong>har</strong> jag köpt en bil.</p>
 
-The <span lang="sv">infinit verb</span> forms <span lang="sv">köpa</span> and <span lang="sv">köpt</span> stay later in the clause.
+<span lang="sv">köpa</span> (the basic form) and <span lang="sv">köpt</span> (the
+form after <span lang="sv">har</span>) show no tense, so they stay further back.
+In the schema they stand under
+[<span lang="sv">infinit verb</span>](../../../glossary/#infinit-verb).
 
-## What can occupy position one?
+## What can come first?
 
-Common choices include:
+Almost any sentence part:
 
-- the <span lang="sv">subjekt</span>: <span lang="sv">Jag arbetar hemma idag.</span>
-- time: <span lang="sv">Idag arbetar jag hemma.</span>
-- place: <span lang="sv">Hemma arbetar jag bäst.</span>
-- an <span lang="sv">objekt</span>: <span lang="sv">Den boken har jag redan läst.</span>
-- a subordinate clause: <span lang="sv">När jag är klar går jag hem.</span>
+- the subject: <span lang="sv">Jag arbetar hemma idag.</span>
+- a time: <span lang="sv">Idag arbetar jag hemma.</span>
+- a place: <span lang="sv">Hemma arbetar jag bäst.</span>
+- an object: <span lang="sv">Den boken har jag redan läst.</span>
+- a whole part-sentence: <span lang="sv">När jag är klar går jag hem.</span>
 
-Changing position one changes the emphasis, not the V2 requirement.
+Whatever comes first gets a little more weight. The verb stays in second place
+either way.
 
 ## Direct comparison
 
-<LanguageComparison title="Neutral order">
+<LanguageComparison title="Normal order">
 	<p slot="de">Ich kaufe heute ein Auto.</p>
 	<p slot="en">I am buying a car today.</p>
 	<p slot="sv">Jag köper en bil idag.</p>
 </LanguageComparison>
 
-<LanguageComparison title="Time expression first">
+<LanguageComparison title="Time first">
 	<p slot="de">Heute kaufe ich ein Auto.</p>
 	<p slot="en">Today I am buying a car.</p>
 	<p slot="sv">Idag köper jag en bil.</p>
 </LanguageComparison>
 
-German is a useful bridge because its main clauses also normally follow V2.
-English does not generally invert the subject and verb after an initial time
-expression.
+German works the same way: in a main clause the conjugated verb comes second.
+English does not. After <span lang="en">today</span>, the subject still comes
+before the verb.
 
 <MistakeBox
 	incorrect="På måndag morgon jag börjar mitt nya jobb."
 	correct="På måndag morgon börjar jag mitt nya jobb."
 	lang="sv"
 >
-Do not count individual words and do not leave the <span lang="sv">subjekt</span> before the
-verb after fronting another constituent.
+Count sentence parts, not words. When something other than the subject comes
+first, the subject goes behind the verb.
 </MistakeBox>
 
-<SpecialRule language="Swedish" title="Scope of V2">
-	V2 describes declarative **main clauses**. A subordinate clause has a
-	different internal pattern; in particular, <span lang="sv">satsadverbial</span> such as
-	<span lang="sv">inte</span> normally come before the <span lang="sv">finit verb</span>. See
-	[Subordinate clauses](../subordinate-clauses/) for the whole pattern and
-	[BIFF](../biff/) for <span lang="sv">satsadverbial</span> placement.
+<SpecialRule language="Swedish" title="Where the rule applies">
+	The rule covers statements. A yes/no question starts with the verb:
+	<span lang="sv">Köper du en bil?</span> A question with a question word keeps
+	the verb second: <span lang="sv">Vad köper du?</span> In a subordinate
+	clause — a part-sentence that starts with a word like <span lang="sv">att</span>
+	or <span lang="sv">eftersom</span> — the order changes again. See
+	[Negation in subordinate clauses (BIFF)](../biff/).
 </SpecialRule>
 
 <MemoryTip>
-Think in blocks: **first block → <span lang="sv">finit verb</span> → <span lang="sv">subjekt</span> (if it
-was not first) → the rest**.
+First part → **conjugated verb** → subject (if it was not first) → the rest.
 </MemoryTip>
 
 <QuickCheck
 	items={[
 		{
-			prompt: 'Front the time expression: Jag åker till Malmö i morgon.',
-			answer: 'I morgon åker jag till Malmö.',
+			prompt: 'Start with the time: Jag åker till Malmö imorgon.',
+			answer: 'Imorgon åker jag till Malmö.',
 		},
 		{
-			prompt:
-				'Why is köper still in position two in “Efter jobbet köper jag mat”?',
-			answer: 'Efter jobbet is two words but one constituent, so it fills position one.',
+			prompt: 'Start with “Efter jobbet”: Jag köper mat efter jobbet.',
+			answer: 'Efter jobbet köper jag mat.',
 		},
 		{
 			prompt: 'Correct this sentence: Den boken jag har redan läst.',
 			answer: 'Den boken har jag redan läst.',
+		},
+		{
+			prompt: 'Make it a yes/no question: Du köper en bil.',
+			answer: 'Köper du en bil?',
 		},
 	]}
 />

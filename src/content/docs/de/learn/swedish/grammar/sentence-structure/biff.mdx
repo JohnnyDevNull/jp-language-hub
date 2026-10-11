@@ -1,6 +1,6 @@
 ---
-title: BIFF
-description: Nutze die Merkhilfe BIFF, um inte und andere Satzadverbiale in schwedischen Nebensätzen zu platzieren.
+title: Verneinung im Nebensatz (BIFF)
+description: Wo inte im schwedischen Nebensatz steht, mit der Merkregel BIFF.
 metaLanguage: de
 grammarLanguage: sv
 comparisonLanguages:
@@ -31,78 +31,75 @@ import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Im neutralen Standardschwedisch steht <span lang="sv">inte</span> im Nebensatz **vor** dem
-  <span lang="sv">finit verb</span>; im Hauptsatz steht es danach.
-- Der Nebensatz lässt Position zwei leer: Das <span lang="sv">finit verb</span> rückt hinter das
-  <span lang="sv">satsadverbial</span>.
-- Dieselbe Position nutzen auch andere <span lang="sv">satsadverbial</span>, nicht nur <span lang="sv">inte</span>.
+- Im Hauptsatz steht <span lang="sv">inte</span> hinter dem konjugierten Verb:
+  <span lang="sv">Jag kommer inte.</span>
+- Im Nebensatz steht <span lang="sv">inte</span> davor:
+  <span lang="sv">… eftersom jag inte kommer.</span>
+- Wörter wie <span lang="sv">aldrig</span>, <span lang="sv">alltid</span> und
+  <span lang="sv">kanske</span> folgen derselben Regel.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-**BIFF** ist eine schwedische Merkhilfe für die neutrale Standardstellung von
-<span lang="sv">satsadverbial</span> in Nebensätzen:
+Ein Nebensatz ([<span lang="sv">bisats</span>](../../../glossary/#bisats)) ist
+ein Satz, der nicht allein stehen kann. Er beginnt mit einem Wort wie
+<span lang="sv">att</span> (dass), <span lang="sv">eftersom</span> (weil) oder
+<span lang="sv">om</span> (ob, wenn). Darin rückt <span lang="sv">inte</span> vor
+das konjugierte Verb:
+<span lang="sv">Jag stannar hemma eftersom jag <strong>inte mår</strong> bra.</span>
+Du brauchst das, sobald du etwas begründest, wiedergibst, was jemand gesagt hat,
+oder zwei Sätze verbindest.
 
-> **B**isats: **I**nte **F**öre **F**init  
-> Im Nebensatz steht <span lang="sv">inte</span> vor dem <span lang="sv">finit verb</span>.
+Zum Merken gibt es im Schwedischen das Kürzel **BIFF**:
 
-## Kernregel
+> **B**isats — **I**nte — **F**öre — **F**init  
+> Im Nebensatz steht <span lang="sv">inte</span> vor dem konjugierten Verb.
 
-> **<span lang="sv">bisatsinledare + subjekt + satsadverbial + finit verb + adverbial</span>**
+Die vier Buchstaben stehen für vier schwedische Wörter:
+<span lang="sv">bisats</span> heißt Nebensatz, <span lang="sv">inte</span> heißt
+nicht, <span lang="sv">före</span> heißt vor, und <span lang="sv">finit</span>
+steht für das konjugierte Verb
+([<span lang="sv">finit verb</span>](../../../glossary/#finit-verb)).
 
-Dieselben Felder machen die Verschiebung sichtbar. Im Hauptsatz steht das
-<span lang="sv">finit verb</span> in Position zwei, und <span lang="sv">inte</span> folgt ihm. Im Nebensatz bleibt
-Position zwei leer: Das <span lang="sv">finit verb</span> ist in die Verbgruppe hinter <span lang="sv">inte</span>
-gerückt.
+## Die Kernregel
+
+Im Hauptsatz steht erst das konjugierte Verb, dann <span lang="sv">inte</span>.
 
 <SentenceSchema
-	caption="Position von inte im Hauptsatz und im Nebensatz"
+	caption="inte im Hauptsatz"
 	rowHeader="Satz"
-	columns={[
-		'1 fundament',
-		'2 finit verb',
-		'3 subjekt',
-		'satsadverbial',
-		'infinit verb',
-		'adverbial',
-	]}
+	columns={['1 fundament', '2 finit verb', '3 subjekt', 'satsadverbial', 'infinit verb', 'adverbial']}
+	rows={[{ label: 'Hauptsatz', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] }]}
+/>
+
+Im Nebensatz steht erst <span lang="sv">inte</span>, dann das konjugierte Verb.
+
+<SentenceSchema
+	caption="inte im Nebensatz"
+	rowHeader="Satz"
+	columns={['bisatsinledare', 'subjekt', 'satsadverbial', 'finit verb', 'infinit verb', 'adverbial']}
 	rows={[
-		{ label: 'Hauptsatz', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] },
-		{
-			label: 'Nebensatz',
-			cells: ['eftersom', '', 'jag', 'inte', 'kommer', 'idag.'],
-		},
-		{
-			label: 'Deutsch, Hauptsatz',
-			lang: 'de',
-			cells: ['Ich', 'komme', '', 'heute nicht.', '', ''],
-		},
-		{
-			label: 'Deutsch, Nebensatz',
-			lang: 'de',
-			cells: ['weil', '', 'ich', 'heute nicht', 'komme.', ''],
-		},
+		{ label: 'Nebensatz', cells: ['eftersom', 'jag', 'inte', 'kommer', '', 'idag.'] },
 	]}
 />
 
-Die deutschen Zeilen lohnen einen genauen Blick. Deutsch trifft dieselbe
-Unterscheidung zwischen Haupt- und Nebensatz, und auch dort landet das
-<span lang="sv">satsadverbial</span> vor dem Verb — allerdings aus einem anderen Grund: Deutsch
-schickt das gesamte finite Verb ans **Ende** des Nebensatzes. Schwedisch
-verschiebt es nur hinter das <span lang="sv">satsadverbial</span>, alles andere im Satz folgt
-weiterhin danach.
+Die beiden Tabellen haben verschiedene Felder, weil die beiden Satzarten
+verschieden gebaut sind. Ein Nebensatz beginnt mit dem Wort, das ihn einleitet
+([<span lang="sv">bisatsinledare</span>](../../../glossary/#bisatsinledare)),
+danach kommt das Subjekt. Wörter wie <span lang="sv">inte</span> stehen im Feld
+[<span lang="sv">satsadverbial</span>](../../../glossary/#satsadverbial), das
+ist das Feld für Wörter, die den ganzen Satz kommentieren. Im Nebensatz steht
+dieses Feld vor dem konjugierten Verb. Alles andere folgt wie gewohnt.
 
-<p lang="sv">Jag stannar hemma <strong>eftersom jag inte mår bra</strong>.</p>
+## Wörter, die einen Nebensatz einleiten
 
-## Häufige Subjunktionen
-
-BIFF wird nach Wörtern wie diesen nützlich:
+BIFF gilt nach Wörtern wie diesen:
 
 - <span lang="sv">att</span> — dass
 - <span lang="sv">eftersom</span> — weil
-- <span lang="sv">om</span> — ob / falls
-- <span lang="sv">när</span> — wenn / als
-- <span lang="sv">fast</span> — obwohl / auch wenn
+- <span lang="sv">om</span> — ob, wenn
+- <span lang="sv">när</span> — als, wenn
+- <span lang="sv">fast</span> — obwohl
 - <span lang="sv">innan</span> — bevor
 
 Beispiele:
@@ -111,11 +108,12 @@ Beispiele:
 - <span lang="sv">Vi går ut om det inte regnar.</span>
 - <span lang="sv">Han ringde när jag inte var hemma.</span>
 
-## Mehr als *inte*
+## Nicht nur <span lang="sv">inte</span>
 
-Dieselbe Position nutzen viele Satzadverbiale, zum Beispiel <span lang="sv">alltid</span>,
-<span lang="sv">aldrig</span>, <span lang="sv">kanske</span> und <span lang="sv">redan</span>, auch wenn ihre genaue
-Bedeutung und bevorzugte Stellung vom Kontext abhängen können.
+Andere kleine Wörter, die den ganzen Satz kommentieren, stehen an derselben
+Stelle: <span lang="sv">aldrig</span> (nie), <span lang="sv">alltid</span>
+(immer), <span lang="sv">kanske</span> (vielleicht),
+<span lang="sv">redan</span> (schon).
 
 <p lang="sv">Hon säger att hon <strong>aldrig äter</strong> kött.</p>
 
@@ -133,29 +131,34 @@ Bedeutung und bevorzugte Stellung vom Kontext abhängen können.
 	<p slot="sv">… eftersom jag inte kommer idag.</p>
 </LanguageComparison>
 
-Englisch zeigt den schwedischen Kontrast beim <span lang="sv">finit verb</span> nicht deutlich.
-Deutsch verändert die Nebensatzstellung ebenfalls, schickt das finite Verb
-aber normalerweise ans Ende; das ist nicht die schwedische Regel.
+Auch im Deutschen steht „nicht“ im Nebensatz vor dem Verb, aber aus einem
+anderen Grund: Das Deutsche schiebt das konjugierte Verb ganz ans Ende. Das
+Schwedische setzt es nur hinter <span lang="sv">inte</span>, und der Rest des
+Satzes folgt noch:
+<span lang="sv">eftersom jag inte kommer <strong>idag</strong></span>. Im
+Englischen bleibt die Reihenfolge in beiden Satzarten gleich.
 
 <MistakeBox
 	incorrect="Jag stannar hemma eftersom jag mår inte bra."
 	correct="Jag stannar hemma eftersom jag inte mår bra."
 	lang="sv"
 >
-Übernimm nicht die Hauptsatzstellung in einen Nebensatz.
+Nach <span lang="sv">eftersom</span>, <span lang="sv">att</span> oder
+<span lang="sv">om</span> steht <span lang="sv">inte</span> vor dem Verb.
 </MistakeBox>
 
-:::note[BIFF ist eine Lernregel]
-BIFF hilft dabei, das <span lang="sv">satsadverbial</span> zu finden; es ist keine vollständige Grammatik
-der schwedischen Nebensätze. Du brauchst weiterhin die Subjunktion, ein
-<span lang="sv">subjekt</span>, die passenden Verbformen und den Rest des Satzes. Hauptsatzähnliche
-Stellung kommt auch in manchen eingebetteten Sätzen vor, besonders in der
-gesprochenen Sprache und wenn der Inhalt als behauptet dargestellt wird; nutze
-BIFF bis B2 als verlässlichen Standard.
+:::note[Eine sichere Grundregel]
+BIFF sagt dir, wo <span lang="sv">inte</span> steht. Es ist nicht die ganze
+Grammatik der Nebensätze. In der gesprochenen Sprache behalten Schweden nach
+<span lang="sv">att</span> manchmal die Reihenfolge des Hauptsatzes, besonders
+wenn sie etwas nachdrücklich sagen. Bis zum Niveau B2 (sicherer Umgang im
+Alltag) ist BIFF die Regel, an die du dich halten solltest.
 :::
 
 <MemoryTip>
-Im **BI**satz steht **I**nte **F**öre (vor) dem <span lang="sv">**F**init verb</span>.
+**B**isats (Nebensatz): **I**nte (nicht) **F**öre (vor) **F**init (dem
+konjugierten Verb). Im Nebensatz steht <span lang="sv">inte</span> also vor dem
+konjugierten Verb.
 </MemoryTip>
 
 <QuickCheck
@@ -169,7 +172,7 @@ Im **BI**satz steht **I**nte **F**öre (vor) dem <span lang="sv">**F**init verb<
 			answer: 'Jag vet att hon inte arbetar idag.',
 		},
 		{
-			prompt: 'Setze aldrig ein: Hon säger att hon äter kött.',
+			prompt: 'Ergänze aldrig: Hon säger att hon äter kött.',
 			answer: 'Hon säger att hon aldrig äter kött.',
 		},
 	]}
@@ -179,7 +182,7 @@ Im **BI**satz steht **I**nte **F**öre (vor) dem <span lang="sv">**F**init verb<
 	topics={[
 		{ href: '../subordinate-clauses/', label: 'Nebensätze' },
 		{ href: '../inte-placement/', label: 'Stellung von inte' },
-		{ href: '../v2/', label: 'V2-Regel' },
+		{ href: '../v2/', label: 'Das Verb an zweiter Stelle (V2)' },
 		{ href: '../inversion/', label: 'Inversion' },
 		{ href: '../basic-word-order/', label: 'Grundwortstellung' },
 	]}

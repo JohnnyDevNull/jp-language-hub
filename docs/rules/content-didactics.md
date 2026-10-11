@@ -396,6 +396,7 @@ or a callout at least every few paragraphs.
 
 | Page | Rendered words | Why it stays in one file |
 | --- | --- | --- |
+| `learning-path`, with its `de` and `sv` mirrors | 1581 | It is a map of 58 steps, and each step needs one plain sentence on why it comes there (R-12). Splitting the map would break the order it exists to show; cutting the notes back to fragments is what made it hard to read. |
 | `grammar/verb-patterns-voice/particle-verbs`, with its `de` and `sv` mirrors | 1480 | Loose and bound particles are the same rule seen from two sides, the frequency glossary is the page's lookup value, and the practical entry path keeps the long page usable. A learner who consults one needs the other on the same page. The mirrors sit just under the budget today, but they carry the same material, so the exception covers the family rather than splitting one page across three verdicts. |
 
 Add a row when a page crosses the budget for a real reason. Do not add one to

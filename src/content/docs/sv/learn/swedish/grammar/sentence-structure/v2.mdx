@@ -1,6 +1,6 @@
 ---
-title: V2-regeln
-description: Förstå varför det finita verbet normalt står på andra satsdelsplatsen i svenska huvudsatser.
+title: Verbet på andra plats (V2)
+description: I en svensk påståendesats står verbet alltid på andra plats. Här ser du vad som räknas som första plats och var subjektet hamnar.
 metaLanguage: sv
 grammarLanguage: sv
 comparisonLanguages:
@@ -33,34 +33,43 @@ import SpecialRule from '~/components/SpecialRule.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Det finita verbet är den andra **satsdelen**, inte det andra ordet.
-- Om något annat än subjektet fyller den första platsen följer subjektet efter
-  det finita verbet.
-- Bara det finita verbet räknas. Infinita verb står senare i satsen.
+- I en svensk påståendesats är verbet som visar tid alltid den andra
+  satsdelen, inte nödvändigtvis det andra ordet.
+- Börjar meningen med något annat än subjektet, står subjektet efter verbet:
+  <span lang="sv">Idag köper jag en bil.</span>
+- Bara verbet som visar tid flyttas till andra plats. Andra verbformer, som
+  <span lang="sv">köpa</span> eller <span lang="sv">köpt</span>, står längre
+  bak.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-**V2** betyder att det finita verbet normalt intar den andra platsen i en
-svensk påståendesats. Det är en av de viktigaste reglerna för att bilda
-naturliga svenska meningar, och tysktalande känner redan igen den.
+I en svensk påståendesats står det finita verbet
+([finit verb](../../../glossary/#finit-verb)) alltid på andra plats. Det är
+verbet som visar tid, som <span lang="sv">köper</span> eller
+<span lang="sv">har</span>. Före det står exakt en satsdel: ett ord eller en
+grupp ord som hör ihop, till exempel <span lang="sv">jag</span>,
+<span lang="sv">idag</span> eller <span lang="sv">efter jobbet</span>. Därför
+kan du säga både <span lang="sv">Jag köper en bil idag</span> och
+<span lang="sv">Idag köper jag en bil</span>. Regeln använder du i nästan varje
+svensk mening. Tyskan fungerar likadant, engelskan inte.
 
 ## Kärnregel
 
-> I en svensk påståendesats kommer det **finita verbet** normalt på den
-> **andra satsdelsplatsen**.
+> I en svensk påståendesats kommer det **finita verbet** på **andra plats**,
+> efter exakt en satsdel.
 
-Läs satsen som en rad fält. Den första platsen är ett enda fält oavsett hur
-många ord den innehåller, och det finita verbet äger den andra platsen:
+Tänk dig meningen som en rad rutor. Den första rutan rymmer en satsdel, hur
+många ord den än har. Den andra rutan innehåller alltid det finita verbet:
 
 <SentenceSchema
-	caption="V2 i en påståendesats"
+	caption="Verbet på andra plats"
 	rowHeader="Variant"
 	columns={['1 fundament', '2 finit verb', '3 subjekt', 'satsadverbial', 'infinit verb', 'objekt / predikativ', 'adverbial']}
 	rows={[
-		{ label: 'Neutral', cells: ['Jag', 'köper', '', '', '', 'en bil', 'idag.'] },
-		{ label: 'Tid först', cells: ['Idag', 'köper', 'jag', '', '', 'en bil.', ''] },
-		{ label: 'Objekt först', cells: ['Den boken', 'har', 'jag', 'redan', 'läst.', '', ''] },
+		{ label: 'Rak ordföljd', cells: ['Jag', 'köper', '', '', '', 'en bil', 'idag.'] },
+		{ label: 'Tiden först', cells: ['Idag', 'köper', 'jag', '', '', 'en bil.', ''] },
+		{ label: 'Objektet först', cells: ['Den boken', 'har', 'jag', 'redan', 'läst.', '', ''] },
 		{
 			label: 'Tyska',
 			lang: 'de',
@@ -69,100 +78,110 @@ många ord den innehåller, och det finita verbet äger den andra platsen:
 	]}
 />
 
-I en neutral sats fyller subjektet självt den första platsen, så den tredje
-platsen förblir tom. Så snart något annat flyttas fram hamnar subjektet bakom
-verbet:
+Rubrikerna i tabellen är de svenska grammatiska termerna. Den första rutan
+heter [fundament](../../../glossary/#fundament), alltså meningens grund.
 
-<ExampleBox title="Tidsuttryck på första platsen" lang="sv">
+I en mening med rak ordföljd fyller subjektet själv den första rutan, så ruta
+tre är tom. Så fort något annat står först flyttar subjektet till efter
+verbet. Då får du omvänd ordföljd:
+
+<ExampleBox title="Ett tidsord i första rutan" lang="sv">
 	<p><strong>Idag</strong> <strong>köper</strong> jag en bil.</p>
 </ExampleBox>
 
-## Position betyder inte ord
+## När den första delen har flera ord
 
-En satsdel kan innehålla flera ord:
+En satsdel kan vara flera ord lång:
 
 <p lang="sv"><strong>Efter jobbet</strong> <strong>köper</strong> jag mat.</p>
 
-<span lang="sv">Efter jobbet</span> är en adverbiell satsdel. Verbet <span lang="sv">köper</span> står
-fortfarande på den andra satspositionen, även om det är det tredje skrivna
-ordet.
+<span lang="sv">Efter jobbet</span> är två ord men en enda satsdel: tillsammans
+säger de när något händer. Därför står <span lang="sv">köper</span> ändå på
+andra plats, fast det är det tredje ordet.
 
-## Sammansatta verbfraser
+## Meningar med fler än ett verb
 
-V2 gäller det **finita** verbet, inte varje verb i satsen:
+Bara det finita verbet flyttas till andra plats:
 
 <p lang="sv">Idag <strong>vill</strong> jag köpa en bil.</p>
 <p lang="sv">Idag <strong>har</strong> jag köpt en bil.</p>
 
-De infinita verben <span lang="sv">köpa</span> och <span lang="sv">köpt</span> står senare i satsen.
+<span lang="sv">köpa</span> (grundformen) och <span lang="sv">köpt</span>
+(formen efter <span lang="sv">har</span>) visar ingen tid, så de står längre
+bak. I tabellen står de under
+[infinit verb](../../../glossary/#infinit-verb), alltså verb som inte visar
+tid.
 
-## Vad kan fylla den första platsen?
+## Vad kan stå först?
 
-Vanliga val är:
+Nästan vilken satsdel som helst:
 
 - subjektet: <span lang="sv">Jag arbetar hemma idag.</span>
-- tid: <span lang="sv">Idag arbetar jag hemma.</span>
-- plats: <span lang="sv">Hemma arbetar jag bäst.</span>
+- en tid: <span lang="sv">Idag arbetar jag hemma.</span>
+- en plats: <span lang="sv">Hemma arbetar jag bäst.</span>
 - ett objekt: <span lang="sv">Den boken har jag redan läst.</span>
-- en bisats: <span lang="sv">När jag är klar går jag hem.</span>
+- en hel bisats: <span lang="sv">När jag är klar går jag hem.</span>
 
-Att byta ut vad som står på den första platsen ändrar betoningen, inte
-V2-kravet.
+Det som står först får lite extra tyngd. Verbet står på andra plats ändå.
 
 ## Direkt jämförelse
 
-<LanguageComparison title="Neutral ordföljd">
+<LanguageComparison title="Rak ordföljd">
 	<p slot="de">Ich kaufe heute ein Auto.</p>
 	<p slot="en">I am buying a car today.</p>
 	<p slot="sv">Jag köper en bil idag.</p>
 </LanguageComparison>
 
-<LanguageComparison title="Tidsuttryck först">
+<LanguageComparison title="Tiden först">
 	<p slot="de">Heute kaufe ich ein Auto.</p>
 	<p slot="en">Today I am buying a car.</p>
 	<p slot="sv">Idag köper jag en bil.</p>
 </LanguageComparison>
 
-Tyska är en bra brygga, eftersom även dess huvudsatser normalt följer V2.
-Engelskan vänder i regel inte på subjekt och verb efter ett inledande
-tidsuttryck.
+I tyskan fungerar det likadant: i en huvudsats står verbet som visar tid på
+andra plats. I engelskan är det inte så. Efter <span lang="en">today</span>
+står subjektet fortfarande före verbet.
 
 <MistakeBox
 	incorrect="På måndag morgon jag börjar mitt nya jobb."
 	correct="På måndag morgon börjar jag mitt nya jobb."
 	lang="sv"
 >
-Räkna inte enskilda ord, och lämna inte subjektet före verbet när en annan
-satsdel har flyttats fram.
+Räkna satsdelar, inte ord. När något annat än subjektet står först ska
+subjektet stå efter verbet.
 </MistakeBox>
 
-<SpecialRule language="Swedish" title="V2:s räckvidd">
-	V2 beskriver påståendesatser i **huvudsatser**. En bisats har ett annat
-	inre mönster; satsadverbial som <span lang="sv">inte</span> kommer till exempel normalt
-	före det finita verbet. Se [Bisatser](../subordinate-clauses/) för hela
-	mönstret och [BIFF](../biff/) för placeringen av satsadverbial.
+<SpecialRule language="Swedish" title="Där regeln gäller">
+	Regeln gäller påståendesatser. En fråga som du kan svara ja eller nej på
+	börjar med verbet: <span lang="sv">Köper du en bil?</span> En fråga med
+	frågeord har verbet på andra plats: <span lang="sv">Vad köper du?</span> I en
+	bisats, alltså en sats som inte kan stå ensam och som börjar med ett ord som
+	<span lang="sv">att</span> eller <span lang="sv">eftersom</span>, ändras
+	ordningen igen. Se [Nekning i bisatser (BIFF)](../biff/).
 </SpecialRule>
 
 <MemoryTip>
-Tänk i block: **första blocket → finit verb → subjekt (om det inte stod
-först) → resten**.
+Första satsdelen → **finita verbet** → subjektet (om det inte stod först) →
+resten.
 </MemoryTip>
 
 <QuickCheck
 	items={[
 		{
-			prompt: 'Flytta fram tidsuttrycket: Jag åker till Malmö i morgon.',
-			answer: 'I morgon åker jag till Malmö.',
+			prompt: 'Börja med tiden: Jag åker till Malmö imorgon.',
+			answer: 'Imorgon åker jag till Malmö.',
 		},
 		{
-			prompt:
-				'Varför står köper fortfarande på den andra platsen i "Efter jobbet köper jag mat"?',
-			answer:
-				'Efter jobbet är två ord men en enda satsdel, så det fyller den första platsen.',
+			prompt: 'Börja med ”Efter jobbet”: Jag köper mat efter jobbet.',
+			answer: 'Efter jobbet köper jag mat.',
 		},
 		{
 			prompt: 'Rätta meningen: Den boken jag har redan läst.',
 			answer: 'Den boken har jag redan läst.',
+		},
+		{
+			prompt: 'Gör en fråga som man kan svara ja eller nej på: Du köper en bil.',
+			answer: 'Köper du en bil?',
 		},
 	]}
 />

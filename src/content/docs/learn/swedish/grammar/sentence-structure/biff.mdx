@@ -1,6 +1,6 @@
 ---
-title: BIFF
-description: Use the BIFF memory rule to place inte and other sentence adverbs in Swedish subordinate clauses.
+title: Negation in subordinate clauses (BIFF)
+description: Where inte goes in a Swedish subordinate clause, with the memory rule BIFF.
 metaLanguage: en
 grammarLanguage: sv
 comparisonLanguages:
@@ -31,76 +31,74 @@ import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- In neutral standard order, <span lang="sv">inte</span> comes **before** the <span lang="sv">finit verb</span> in a
-  subordinate clause; in a main clause it comes after it.
-- The subordinate clause leaves position two empty: the <span lang="sv">finit verb</span> moves behind
-  the <span lang="sv">satsadverbial</span>.
-- The same position is used by other <span lang="sv">satsadverbial</span>, not only <span lang="sv">inte</span>.
+- In a main clause, <span lang="sv">inte</span> comes after the conjugated verb:
+  <span lang="sv">Jag kommer inte.</span>
+- In a subordinate clause, <span lang="sv">inte</span> comes before it:
+  <span lang="sv">… eftersom jag inte kommer.</span>
+- Words like <span lang="sv">aldrig</span>, <span lang="sv">alltid</span> and
+  <span lang="sv">kanske</span> follow the same rule.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-**BIFF** is a Swedish memory rule for the neutral standard placement of
-<span lang="sv">satsadverbial</span> in subordinate clauses:
+A subordinate clause
+([<span lang="sv">bisats</span>](../../../glossary/#bisats)) is a part-sentence
+that cannot stand alone. It starts with a word like <span lang="sv">att</span>
+(that), <span lang="sv">eftersom</span> (because) or <span lang="sv">om</span>
+(if). In it, <span lang="sv">inte</span> moves in front of the conjugated verb:
+<span lang="sv">Jag stannar hemma eftersom jag <strong>inte mår</strong> bra.</span> You need
+this as soon as you give reasons, report what someone said, or join two
+sentences.
 
-> **B**isats: **I**nte **F**öre **F**init  
-> In a subordinate clause, <span lang="sv">inte</span> comes before the <span lang="sv">finit verb</span>.
+Swedish learners remember it with **BIFF**:
+
+> **B**isats — **I**nte — **F**öre — **F**init  
+> In a subordinate clause, <span lang="sv">inte</span> comes before the
+> conjugated verb.
+
+<span lang="sv">Bisats</span> means subordinate clause, <span lang="sv">före</span>
+means before, and <span lang="sv">finit</span> stands for the conjugated verb
+([<span lang="sv">finit verb</span>](../../../glossary/#finit-verb)).
 
 ## Core rule
 
-> **<span lang="sv">bisatsinledare + subjekt + satsadverbial + finit verb + adverbial</span>**
-
-The same fields make the shift visible. In the main clause the <span lang="sv">finit verb</span> sits
-in position two and <span lang="sv">inte</span> follows it. In the subordinate clause position
-two is empty: the <span lang="sv">finit verb</span> has moved into the verb group behind
-<span lang="sv">inte</span>.
+Main clause: conjugated verb, then <span lang="sv">inte</span>.
 
 <SentenceSchema
-	caption="Position of inte in the main clause and in the bisats"
+	caption="inte in a main clause"
 	rowHeader="Clause"
-	columns={[
-		'1 fundament',
-		'2 finit verb',
-		'3 subjekt',
-		'satsadverbial',
-		'infinit verb',
-		'adverbial',
-	]}
+	columns={['1 fundament', '2 finit verb', '3 subjekt', 'satsadverbial', 'infinit verb', 'adverbial']}
+	rows={[{ label: 'Main clause', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] }]}
+/>
+
+Subordinate clause: <span lang="sv">inte</span>, then the conjugated verb.
+
+<SentenceSchema
+	caption="inte in a subordinate clause"
+	rowHeader="Clause"
+	columns={['bisatsinledare', 'subjekt', 'satsadverbial', 'finit verb', 'infinit verb', 'adverbial']}
 	rows={[
-		{ label: 'Main clause', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] },
-		{
-			label: 'Subordinate clause',
-			cells: ['eftersom', '', 'jag', 'inte', 'kommer', 'idag.'],
-		},
-		{
-			label: 'Deutsch, Hauptsatz',
-			lang: 'de',
-			cells: ['Ich', 'komme', '', 'heute nicht.', '', ''],
-		},
-		{
-			label: 'Deutsch, Nebensatz',
-			lang: 'de',
-			cells: ['weil', '', 'ich', 'heute nicht', 'komme.', ''],
-		},
+		{ label: 'Subordinate clause', cells: ['eftersom', 'jag', 'inte', 'kommer', '', 'idag.'] },
 	]}
 />
 
-The German rows are worth reading closely. German makes the same main-clause
-versus subordinate-clause split, and the <span lang="sv">satsadverbial</span> also ends up before the
-verb — but for a different reason: German sends the whole finite verb to the
-**end** of the subordinate clause. Swedish only moves it behind the <span lang="sv">satsadverbial</span>, and anything else in the clause still follows it.
+The two tables have different boxes, because the two kinds of clause are built
+differently. A subordinate clause starts with the word that introduces it
+([<span lang="sv">bisatsinledare</span>](../../../glossary/#bisatsinledare)),
+then comes the subject. Words like <span lang="sv">inte</span> sit in the box
+[<span lang="sv">satsadverbial</span>](../../../glossary/#satsadverbial), and in
+a subordinate clause that box comes before the conjugated verb. Everything else
+follows as usual.
 
-<p lang="sv">Jag stannar hemma <strong>eftersom jag inte mår bra</strong>.</p>
+## Words that start a subordinate clause
 
-## Common subordinators
-
-BIFF becomes useful after words such as:
+BIFF applies after words such as:
 
 - <span lang="sv">att</span> — that
 - <span lang="sv">eftersom</span> — because
-- <span lang="sv">om</span> — if / whether
+- <span lang="sv">om</span> — if, whether
 - <span lang="sv">när</span> — when
-- <span lang="sv">fast</span> — although / even though
+- <span lang="sv">fast</span> — although
 - <span lang="sv">innan</span> — before
 
 Examples:
@@ -109,11 +107,11 @@ Examples:
 - <span lang="sv">Vi går ut om det inte regnar.</span>
 - <span lang="sv">Han ringde när jag inte var hemma.</span>
 
-## More than *inte*
+## Not only <span lang="sv">inte</span>
 
-The same position is used by many sentence adverbs, for example <span lang="sv">alltid</span>,
-<span lang="sv">aldrig</span>, <span lang="sv">kanske</span>, and <span lang="sv">redan</span>, although their exact
-meaning and preferred placement can depend on context.
+Other small words that comment on the whole sentence take the same place:
+<span lang="sv">aldrig</span> (never), <span lang="sv">alltid</span> (always),
+<span lang="sv">kanske</span> (maybe), <span lang="sv">redan</span> (already).
 
 <p lang="sv">Hon säger att hon <strong>aldrig äter</strong> kött.</p>
 
@@ -131,28 +129,33 @@ meaning and preferred placement can depend on context.
 	<p slot="sv">… eftersom jag inte kommer idag.</p>
 </LanguageComparison>
 
-English does not show the Swedish <span lang="sv">finit verb</span> contrast clearly. German also
-changes subordinate-clause order, but its finite verb normally moves to the end;
-that is not the Swedish rule.
+German also puts <span lang="de">nicht</span> before the verb in a subordinate
+clause, but for a different reason: German moves the conjugated verb to the very
+end. Swedish only moves it behind <span lang="sv">inte</span>, and the rest of the
+sentence still follows: <span lang="sv">eftersom jag inte kommer <strong>idag</strong></span>.
+English keeps the same order in both kinds of clause.
 
 <MistakeBox
 	incorrect="Jag stannar hemma eftersom jag mår inte bra."
 	correct="Jag stannar hemma eftersom jag inte mår bra."
 	lang="sv"
 >
-Do not keep main-clause placement inside a subordinate clause.
+After <span lang="sv">eftersom</span>, <span lang="sv">att</span> or
+<span lang="sv">om</span>, put <span lang="sv">inte</span> in front of the
+verb.
 </MistakeBox>
 
-:::note[BIFF is a learning rule]
-BIFF helps locate the <span lang="sv">satsadverbial</span>; it is not a complete grammar of Swedish
-subordinate clauses. You still need the subordinator, a <span lang="sv">subjekt</span>, the appropriate
-verb forms, and the rest of the clause. Main-clause-like order also occurs in
-some embedded clauses, especially in speech and when the content is presented
-as asserted; use BIFF as the reliable default through B2.
+:::note[A safe default]
+BIFF tells you where <span lang="sv">inte</span> goes. It is not the whole
+grammar of subordinate clauses. In speech, Swedes sometimes keep main-clause
+order after <span lang="sv">att</span>, especially when they state something
+strongly. Until you reach level B2 (confident everyday use), BIFF is the rule
+to follow.
 :::
 
 <MemoryTip>
-In a **BI**sats, put **I**nte **F**öre the <span lang="sv">**F**init verb</span>.
+**B**isats: **I**nte **F**öre **F**init — in a subordinate clause,
+<span lang="sv">inte</span> comes before the conjugated verb.
 </MemoryTip>
 
 <QuickCheck
@@ -166,7 +169,7 @@ In a **BI**sats, put **I**nte **F**öre the <span lang="sv">**F**init verb</span
 			answer: 'Jag vet att hon inte arbetar idag.',
 		},
 		{
-			prompt: 'Place aldrig: Hon säger att hon äter kött.',
+			prompt: 'Add aldrig: Hon säger att hon äter kött.',
 			answer: 'Hon säger att hon aldrig äter kött.',
 		},
 	]}
@@ -176,7 +179,7 @@ In a **BI**sats, put **I**nte **F**öre the <span lang="sv">**F**init verb</span
 	topics={[
 		{ href: '../subordinate-clauses/', label: 'Subordinate clauses' },
 		{ href: '../inte-placement/', label: 'Placement of inte' },
-		{ href: '../v2/', label: 'V2 rule' },
+		{ href: '../v2/', label: 'Verb in second position (V2)' },
 		{ href: '../inversion/', label: 'Inversion' },
 		{ href: '../basic-word-order/', label: 'Basic word order' },
 	]}

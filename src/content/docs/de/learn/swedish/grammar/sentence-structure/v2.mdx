@@ -1,6 +1,6 @@
 ---
-title: V2-Regel
-description: Verstehe, warum das finite Verb in schwedischen Hauptsätzen normalerweise die zweite Konstituentenposition besetzt.
+title: Das Verb an zweiter Stelle (V2)
+description: In einem schwedischen Aussagesatz steht das konjugierte Verb immer an zweiter Stelle. Hier steht, was davor stehen darf und wohin das Subjekt rückt.
 metaLanguage: de
 grammarLanguage: sv
 comparisonLanguages:
@@ -33,76 +33,103 @@ import SpecialRule from '~/components/SpecialRule.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- Das <span lang="sv">finit verb</span> steht an zweiter **Konstituentenposition**, nicht beim zweiten Wort.
-- Füllt etwas anderes als das <span lang="sv">subjekt</span> Position eins, folgt das <span lang="sv">subjekt</span> dem <span lang="sv">finit verb</span>.
-- Nur das <span lang="sv">finit verb</span> zählt; <span lang="sv">infinit verb</span> bleiben später im Satz.
+- Im schwedischen Aussagesatz steht das konjugierte Verb immer an zweiter
+  Stelle, nach genau einem Satzglied. Das muss nicht das zweite Wort sein.
+- Beginnt der Satz nicht mit dem Subjekt, rückt das Subjekt hinter das Verb:
+  <span lang="sv">Idag köper jag en bil.</span>
+- Nur das konjugierte Verb rückt an die zweite Stelle. Andere Verbformen wie
+  <span lang="sv">köpa</span> oder <span lang="sv">köpt</span> bleiben weiter
+  hinten.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-**V2** bedeutet: In einem schwedischen aussagenden Hauptsatz steht das
-<span lang="sv">finit verb</span> normalerweise an zweiter Stelle. Die Regel ist zentral für natürliche
-Sätze; Deutschsprachige kennen sie bereits.
+Im schwedischen Aussagesatz steht das konjugierte Verb
+([<span lang="sv">finit verb</span>](../../../glossary/#finit-verb)) immer an
+zweiter Stelle. Das ist das Verb, das die Zeitform zeigt, wie
+<span lang="sv">köper</span> oder <span lang="sv">har</span>. Davor steht genau
+ein Satzglied: ein Wort oder eine Wortgruppe, die zusammengehört, zum Beispiel
+<span lang="sv">jag</span>, <span lang="sv">idag</span> oder
+<span lang="sv">efter jobbet</span>. Du kannst also sagen
+<span lang="sv">Jag köper en bil idag</span>, aber auch
+<span lang="sv">Idag köper jag en bil</span>. Du brauchst diese Regel in fast
+jedem schwedischen Satz; im Deutschen gilt sie genauso, im Englischen nicht.
 
-## Kernregel
+## Die Kernregel
 
-> In einem schwedischen aussagenden Hauptsatz steht das **<span lang="sv">finit verb</span>**
-> normalerweise an der **zweiten Konstituentenposition**.
+> Im schwedischen Aussagesatz steht das **konjugierte Verb** an **zweiter
+> Stelle**, nach genau einem Satzglied.
 
-Lies den Satz als Felder: Position eins bleibt ein Feld, auch wenn sie mehrere
-Wörter enthält; das <span lang="sv">finit verb</span> besitzt Position zwei.
+Stell dir den Satz als eine Reihe von Feldern vor. Im ersten Feld steht ein
+Satzglied, egal wie viele Wörter es hat. Im zweiten Feld steht immer das
+konjugierte Verb:
 
 <SentenceSchema
-	caption="V2 im aussagenden Hauptsatz"
+	caption="Das Verb an zweiter Stelle"
 	rowHeader="Variante"
 	columns={['1 fundament', '2 finit verb', '3 subjekt', 'satsadverbial', 'infinit verb', 'objekt / predikativ', 'adverbial']}
 	rows={[
-		{ label: 'Neutral', cells: ['Jag', 'köper', '', '', '', 'en bil', 'idag.'] },
-		{ label: 'Zeit zuerst', cells: ['Idag', 'köper', 'jag', '', '', 'en bil.', ''] },
+		{ label: 'Normale Reihenfolge', cells: ['Jag', 'köper', '', '', '', 'en bil', 'idag.'] },
+		{ label: 'Zeitangabe zuerst', cells: ['Idag', 'köper', 'jag', '', '', 'en bil.', ''] },
 		{ label: 'Objekt zuerst', cells: ['Den boken', 'har', 'jag', 'redan', 'läst.', '', ''] },
-		{ label: 'Deutsch', lang: 'de', cells: ['Heute', 'kaufe', 'ich', '', '', 'ein Auto.', ''] },
+		{
+			label: 'Deutsch',
+			lang: 'de',
+			cells: ['Heute', 'kaufe', 'ich', '', '', 'ein Auto.', ''],
+		},
 	]}
 />
 
-Im neutralen Satz füllt das <span lang="sv">subjekt</span> Position eins, daher bleibt
-Position drei leer. Wird etwas vorangestellt, rückt das <span lang="sv">subjekt</span> hinter
-das Verb.
+Die Spaltennamen sind die schwedischen Fachwörter für die Teile des Satzes. Das
+erste Feld heißt [<span lang="sv">fundament</span>](../../../glossary/#fundament),
+das ist die Grundlage des Satzes.
 
-<ExampleBox title="Zeitangabe in Position eins" lang="sv">
+Im normalen Satz steht das Subjekt selbst im ersten Feld, deshalb bleibt Feld
+drei leer. Sobald etwas anderes vorn steht, rückt das Subjekt hinter das Verb:
+
+<ExampleBox title="Eine Zeitangabe im ersten Feld" lang="sv">
 	<p><strong>Idag</strong> <strong>köper</strong> jag en bil.</p>
 </ExampleBox>
 
-## Position bedeutet nicht Wort
+## Wenn das erste Satzglied aus mehreren Wörtern besteht
 
-Eine Konstituente kann mehrere Wörter haben:
+Ein Satzglied kann aus mehreren Wörtern bestehen:
 
 <p lang="sv"><strong>Efter jobbet</strong> <strong>köper</strong> jag mat.</p>
 
-<span lang="sv">Efter jobbet</span> ist eine adverbiale Konstituente. <span lang="sv">köper</span> bleibt
-an zweiter Satzposition, obwohl es als drittes Wort geschrieben wird.
+<span lang="sv">Efter jobbet</span> sind zwei Wörter, aber nur ein Satzglied:
+Zusammen sagen sie, wann etwas passiert. Deshalb steht
+<span lang="sv">köper</span> trotzdem an zweiter Stelle, obwohl es das dritte
+Wort ist.
 
-## Zusammengesetzte Verbgruppen
+## Sätze mit mehr als einem Verb
 
-V2 gilt für das **<span lang="sv">finit verb</span>**, nicht für jedes Verb:
+Nur das konjugierte Verb rückt an die zweite Stelle:
 
 <p lang="sv">Idag <strong>vill</strong> jag köpa en bil.</p>
 <p lang="sv">Idag <strong>har</strong> jag köpt en bil.</p>
 
-Die <span lang="sv">infinit verb</span>-Formen <span lang="sv">köpa</span> und <span lang="sv">köpt</span> bleiben später im Satz.
+<span lang="sv">köpa</span> (die Grundform) und <span lang="sv">köpt</span>
+(die Form nach <span lang="sv">har</span>) sind nicht konjugiert, deshalb
+bleiben sie weiter hinten. Im Schema stehen sie unter
+[<span lang="sv">infinit verb</span>](../../../glossary/#infinit-verb).
 
-## Was kann Position eins füllen?
+## Was kann vorn stehen?
 
-- das <span lang="sv">subjekt</span>: <span lang="sv">Jag arbetar hemma idag.</span>
-- Zeit: <span lang="sv">Idag arbetar jag hemma.</span>
-- Ort: <span lang="sv">Hemma arbetar jag bäst.</span>
-- ein <span lang="sv">objekt</span>: <span lang="sv">Den boken har jag redan läst.</span>
-- ein Nebensatz: <span lang="sv">När jag är klar går jag hem.</span>
+Fast jedes Satzglied:
 
-Die Voranstellung verändert die Betonung, nicht die V2-Pflicht.
+- das Subjekt: <span lang="sv">Jag arbetar hemma idag.</span>
+- eine Zeitangabe: <span lang="sv">Idag arbetar jag hemma.</span>
+- eine Ortsangabe: <span lang="sv">Hemma arbetar jag bäst.</span>
+- ein Objekt: <span lang="sv">Den boken har jag redan läst.</span>
+- ein ganzer Nebensatz: <span lang="sv">När jag är klar går jag hem.</span>
+
+Was vorn steht, wird ein wenig stärker betont. Das Verb bleibt trotzdem an
+zweiter Stelle.
 
 ## Direkter Vergleich
 
-<LanguageComparison title="Neutrale Reihenfolge">
+<LanguageComparison title="Normale Reihenfolge">
 	<p slot="de">Ich kaufe heute ein Auto.</p>
 	<p slot="en">I am buying a car today.</p>
 	<p slot="sv">Jag köper en bil idag.</p>
@@ -114,36 +141,60 @@ Die Voranstellung verändert die Betonung, nicht die V2-Pflicht.
 	<p slot="sv">Idag köper jag en bil.</p>
 </LanguageComparison>
 
-Deutsch ist eine gute Brücke, weil seine Hauptsätze ebenfalls meist V2
-verwenden. Englisch invertiert nach einer vorangestellten Zeitangabe
-normalerweise nicht.
+Im Deutschen gilt dasselbe: Im Hauptsatz steht das konjugierte Verb an zweiter
+Stelle. Im Englischen ist das anders. Nach <span lang="en">today</span> steht
+das Subjekt weiter vor dem Verb.
 
-<MistakeBox incorrect="På måndag morgon jag börjar mitt nya jobb." correct="På måndag morgon börjar jag mitt nya jobb." lang="sv">
-Zähle nicht einzelne Wörter. Nach der Voranstellung einer anderen Konstituente
-bleibt das <span lang="sv">subjekt</span> nicht vor dem Verb.
+<MistakeBox
+	incorrect="På måndag morgon jag börjar mitt nya jobb."
+	correct="På måndag morgon börjar jag mitt nya jobb."
+	lang="sv"
+>
+Zähle Satzglieder, nicht Wörter. Wenn etwas anderes als das Subjekt vorn steht,
+rückt das Subjekt hinter das Verb.
 </MistakeBox>
 
-<SpecialRule language="Swedish" title="Geltungsbereich von V2">
-	V2 beschreibt aussagende **Hauptsätze**. Ein Nebensatz hat ein anderes
-	inneres Muster: <span lang="sv">satsadverbial</span> wie <span lang="sv">inte</span> stehen dort normalerweise vor
-	dem <span lang="sv">finit verb</span>. Siehe [Nebensätze](../subordinate-clauses/) für das ganze
-	Muster und [BIFF](../biff/) für <span lang="sv">satsadverbial</span>.
+<SpecialRule language="Swedish" title="Wo die Regel gilt">
+	Die Regel gilt für Aussagesätze. Eine Ja/Nein-Frage beginnt mit dem Verb:
+	<span lang="sv">Köper du en bil?</span> Eine Frage mit Fragewort lässt das Verb
+	an zweiter Stelle: <span lang="sv">Vad köper du?</span> In einem Nebensatz, der
+	mit einem Wort wie <span lang="sv">att</span> oder
+	<span lang="sv">eftersom</span> beginnt, ändert sich die Reihenfolge noch
+	einmal. Mehr dazu auf der Seite
+	[Verneinung im Nebensatz (BIFF)](../biff/).
 </SpecialRule>
 
 <MemoryTip>
-Denke in Blöcken: **erster Block → <span lang="sv">finit verb</span> → <span lang="sv">subjekt</span> (wenn es
-nicht zuerst stand) → Rest**.
+Erstes Satzglied → **konjugiertes Verb** → Subjekt (wenn es nicht vorn stand) →
+der Rest.
 </MemoryTip>
 
-<QuickCheck items={[
-	{ prompt: 'Stelle die Zeitangabe voran: Jag åker till Malmö i morgon.', answer: 'I morgon åker jag till Malmö.' },
-	{ prompt: 'Warum steht köper in „Efter jobbet köper jag mat“ noch an Position zwei?', answer: 'Efter jobbet hat zwei Wörter, ist aber eine Konstituente und füllt Position eins.' },
-	{ prompt: 'Korrigiere: Den boken jag har redan läst.', answer: 'Den boken har jag redan läst.' },
-]}/>
+<QuickCheck
+	items={[
+		{
+			prompt: 'Beginne mit der Zeitangabe: Jag åker till Malmö imorgon.',
+			answer: 'Imorgon åker jag till Malmö.',
+		},
+		{
+			prompt: 'Beginne mit „Efter jobbet“: Jag köper mat efter jobbet.',
+			answer: 'Efter jobbet köper jag mat.',
+		},
+		{
+			prompt: 'Korrigiere diesen Satz: Den boken jag har redan läst.',
+			answer: 'Den boken har jag redan läst.',
+		},
+		{
+			prompt: 'Mach daraus eine Ja/Nein-Frage: Du köper en bil.',
+			answer: 'Köper du en bil?',
+		},
+	]}
+/>
 
-<RelatedTopics topics={[
-	{ href: '../basic-word-order/', label: 'Grundwortstellung' },
-	{ href: '../inversion/', label: 'Inversion' },
-	{ href: '../subordinate-clauses/', label: 'Nebensätze' },
-	{ href: '../inte-placement/', label: 'Stellung von inte' },
-]}/>
+<RelatedTopics
+	topics={[
+		{ href: '../basic-word-order/', label: 'Grundwortstellung' },
+		{ href: '../inversion/', label: 'Inversion' },
+		{ href: '../subordinate-clauses/', label: 'Nebensätze' },
+		{ href: '../inte-placement/', label: 'Stellung von inte' },
+	]}
+/>

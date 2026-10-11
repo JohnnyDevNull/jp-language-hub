@@ -7,6 +7,7 @@ type UiLabelKey =
 	| 'Common mistake'
 	| 'Correct'
 	| 'Example'
+	| 'Glossary'
 	| 'Grammar'
 	| 'Home'
 	| 'Important'
@@ -77,6 +78,11 @@ const UI_LABELS: Record<UiLabelKey, Record<MetaLocale, string>> = {
 		en: 'Home',
 		de: 'Startseite',
 		sv: 'Startsida',
+	},
+	Glossary: {
+		en: 'Glossary',
+		de: 'Glossar',
+		sv: 'Ordlista',
 	},
 	Important: {
 		en: 'Important',

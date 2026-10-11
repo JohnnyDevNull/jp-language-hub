@@ -1,6 +1,6 @@
 ---
-title: BIFF
-description: Använd minnesregeln BIFF för att placera inte och andra satsadverbial i svenska bisatser.
+title: Nekning i bisatser (BIFF)
+description: Var inte står i en svensk bisats, med minnesregeln BIFF.
 metaLanguage: sv
 grammarLanguage: sv
 comparisonLanguages:
@@ -31,77 +31,73 @@ import SentenceSchema from '~/components/SentenceSchema.astro';
 import TagList from '~/components/TagList.astro';
 
 <KeyTakeaway>
-- I neutral standardsvenska kommer <span lang="sv">inte</span> **före** det finita verbet i
-  en bisats; i en huvudsats kommer det efter.
-- Bisatsen lämnar plats två tom: det finita verbet flyttar bakom
-  satsadverbialet.
-- Samma plats används av andra satsadverbial, inte bara <span lang="sv">inte</span>.
+- I en huvudsats står <span lang="sv">inte</span> efter verbet som visar tid:
+  <span lang="sv">Jag kommer inte.</span>
+- I en bisats står <span lang="sv">inte</span> före det verbet:
+  <span lang="sv">… eftersom jag inte kommer.</span>
+- Ord som <span lang="sv">aldrig</span>, <span lang="sv">alltid</span> och
+  <span lang="sv">kanske</span> följer samma regel.
 </KeyTakeaway>
 
 <TagList levels={frontmatter.levels} tags={frontmatter.tags} />
 
-**BIFF** är en svensk minnesregel för den neutrala standardplaceringen av
-satsadverbial i bisatser:
+En bisats ([bisats](../../../glossary/#bisats)) är en sats som inte kan stå
+ensam. Den börjar med ett ord som <span lang="sv">att</span>,
+<span lang="sv">eftersom</span> eller <span lang="sv">om</span>. I en bisats
+flyttar <span lang="sv">inte</span> fram till före det finita verbet, alltså
+verbet som visar tid:
+<span lang="sv">Jag stannar hemma eftersom jag <strong>inte mår</strong> bra.</span>
+Du behöver det så fort du ger skäl, berättar vad någon har sagt eller binder
+ihop två meningar.
 
-> **B**isats: **I**nte **F**öre **F**init  
-> I en bisats kommer <span lang="sv">inte</span> före det finita verbet.
+Många som lär sig svenska kommer ihåg regeln med **BIFF**:
+
+> **B**isats — **I**nte — **F**öre — **F**init  
+> I en bisats står <span lang="sv">inte</span> före det finita verbet.
+
+<span lang="sv">Finit</span> står här för det finita verbet
+([finit verb](../../../glossary/#finit-verb)), alltså verbet som visar tid.
 
 ## Kärnregel
 
-> **bisatsinledare + subjekt + satsadverbial + finit verb + adverbial**
-
-Samma fält gör skiftet synligt. I huvudsatsen står det finita verbet på plats
-två, och <span lang="sv">inte</span> kommer efter det. I bisatsen är plats två tom: det
-finita verbet har flyttat in i verbgruppen bakom <span lang="sv">inte</span>.
+Huvudsats: det finita verbet, sedan <span lang="sv">inte</span>.
 
 <SentenceSchema
-	caption="Placeringen av inte i huvudsats och i bisats"
+	caption="inte i en huvudsats"
 	rowHeader="Sats"
-	columns={[
-		'1 fundament',
-		'2 finit verb',
-		'3 subjekt',
-		'satsadverbial',
-		'infinit verb',
-		'adverbial',
-	]}
+	columns={['1 fundament', '2 finit verb', '3 subjekt', 'satsadverbial', 'infinit verb', 'adverbial']}
+	rows={[{ label: 'Huvudsats', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] }]}
+/>
+
+Bisats: <span lang="sv">inte</span>, sedan det finita verbet.
+
+<SentenceSchema
+	caption="inte i en bisats"
+	rowHeader="Sats"
+	columns={['bisatsinledare', 'subjekt', 'satsadverbial', 'finit verb', 'infinit verb', 'adverbial']}
 	rows={[
-		{ label: 'Huvudsats', cells: ['Jag', 'kommer', '', 'inte', '', 'idag.'] },
-		{
-			label: 'Bisats',
-			cells: ['eftersom', '', 'jag', 'inte', 'kommer', 'idag.'],
-		},
-		{
-			label: 'Tyska, huvudsats',
-			lang: 'de',
-			cells: ['Ich', 'komme', '', 'heute nicht.', '', ''],
-		},
-		{
-			label: 'Tyska, bisats',
-			lang: 'de',
-			cells: ['weil', '', 'ich', 'heute nicht', 'komme.', ''],
-		},
+		{ label: 'Bisats', cells: ['eftersom', 'jag', 'inte', 'kommer', '', 'idag.'] },
 	]}
 />
 
-De tyska raderna är värda en närmare titt. Tyskan gör samma skillnad mellan
-huvudsats och bisats, och satsadverbialet hamnar också där före verbet — men
-av ett annat skäl: tyskan skickar hela det finita verbet till **slutet** av
-bisatsen. Svenskan flyttar det bara bakom satsadverbialet, och allt annat i
-satsen följer fortfarande efter det.
+De två tabellerna har olika rutor, eftersom de två sorternas satser är byggda
+på olika sätt. En bisats börjar med ordet som inleder den
+([bisatsinledare](../../../glossary/#bisatsinledare)), sedan kommer subjektet.
+Ord som <span lang="sv">inte</span> står i rutan
+[satsadverbial](../../../glossary/#satsadverbial). Det är små ord som
+kommenterar hela meningen. I en bisats kommer den rutan före det finita
+verbet. Allt annat följer som vanligt.
 
-<p lang="sv">Jag stannar hemma <strong>eftersom jag inte mår bra</strong>.</p>
+## Ord som inleder en bisats
 
-## Vanliga subjunktioner
+BIFF gäller efter ord som:
 
-BIFF blir användbart efter ord som dessa:
-
-- <span lang="sv">att</span> — inleder att-satser
-- <span lang="sv">eftersom</span> — anger orsak
-- <span lang="sv">om</span> — anger villkor
-- <span lang="sv">när</span> — anger tidpunkt
-- <span lang="sv">fast</span> — anger motsättning
-- <span lang="sv">innan</span> — anger vad som kommer tidigare
+- <span lang="sv">att</span> — som i ”Jag vet att …”
+- <span lang="sv">eftersom</span> — ger ett skäl
+- <span lang="sv">om</span> — ifall
+- <span lang="sv">när</span> — säger när något händer
+- <span lang="sv">fast</span> — trots att
+- <span lang="sv">innan</span> — före det att
 
 Exempel:
 
@@ -109,11 +105,11 @@ Exempel:
 - <span lang="sv">Vi går ut om det inte regnar.</span>
 - <span lang="sv">Han ringde när jag inte var hemma.</span>
 
-## Mer än *inte*
+## Fler ord än <span lang="sv">inte</span>
 
-Samma plats används av många satsadverbial, till exempel <span lang="sv">alltid</span>,
-<span lang="sv">aldrig</span>, <span lang="sv">kanske</span> och <span lang="sv">redan</span>, även om deras exakta
-betydelse och föredragna placering kan bero på sammanhanget.
+Andra små ord som kommenterar hela meningen står på samma plats:
+<span lang="sv">aldrig</span>, <span lang="sv">alltid</span>,
+<span lang="sv">kanske</span> och <span lang="sv">redan</span>.
 
 <p lang="sv">Hon säger att hon <strong>aldrig äter</strong> kött.</p>
 
@@ -131,42 +127,46 @@ betydelse och föredragna placering kan bero på sammanhanget.
 	<p slot="sv">… eftersom jag inte kommer idag.</p>
 </LanguageComparison>
 
-Engelskan visar inte den svenska kontrasten hos det finita verbet tydligt.
-Tyskan ändrar också bisatsens ordföljd, men dess finita verb flyttar normalt
-till slutet; det är inte den svenska regeln.
+I tyskan står <span lang="de">nicht</span> också före verbet i en bisats, men av
+ett annat skäl: tyskan flyttar det finita verbet allra sist. Svenskan flyttar
+det bara till efter <span lang="sv">inte</span>, och resten av meningen följer
+efter: <span lang="sv">eftersom jag inte kommer <strong>idag</strong></span>.
+I engelskan är ordningen densamma i båda sorternas satser.
 
 <MistakeBox
 	incorrect="Jag stannar hemma eftersom jag mår inte bra."
 	correct="Jag stannar hemma eftersom jag inte mår bra."
 	lang="sv"
 >
-Behåll inte huvudsatsens placering i en bisats.
+Efter <span lang="sv">eftersom</span>, <span lang="sv">att</span> eller
+<span lang="sv">om</span> ska <span lang="sv">inte</span> stå före verbet.
 </MistakeBox>
 
-:::note[BIFF är en inlärningsregel]
-BIFF hjälper dig att hitta satsadverbialet; det är ingen fullständig grammatik
-för svenska bisatser. Du behöver ändå subjunktionen, ett subjekt, rätt
-verbformer och resten av satsen. Huvudsatslik ordföljd förekommer även i vissa
-inbäddade satser, särskilt i talspråk och när innehållet presenteras som
-hävdat; använd BIFF som den pålitliga standarden upp till B2.
+:::note[En trygg grundregel]
+BIFF visar var <span lang="sv">inte</span> står. Det är inte hela grammatiken
+för bisatser. När man pratar behåller svenskar ibland huvudsatsens ordföljd
+efter <span lang="sv">att</span>, särskilt när de säger något med eftertryck.
+Tills du har nått nivå B2 (du kan prata säkert i vardagen) är BIFF regeln att
+följa.
 :::
 
 <MemoryTip>
-I en **BI**sats kommer **I**nte **F**öre det **F**inita verbet.
+**B**isats: **I**nte **F**öre **F**init — i en bisats står
+<span lang="sv">inte</span> före det finita verbet.
 </MemoryTip>
 
 <QuickCheck
 	items={[
 		{
-			prompt: 'Foga ihop med eftersom: Jag stannar hemma. + Jag mår inte bra.',
+			prompt: 'Sätt ihop med eftersom: Jag stannar hemma. + Jag mår inte bra.',
 			answer: 'Jag stannar hemma eftersom jag inte mår bra.',
 		},
 		{
-			prompt: 'Rätta den här meningen: Jag vet att hon arbetar inte idag.',
+			prompt: 'Rätta meningen: Jag vet att hon arbetar inte idag.',
 			answer: 'Jag vet att hon inte arbetar idag.',
 		},
 		{
-			prompt: 'Placera aldrig: Hon säger att hon äter kött.',
+			prompt: 'Lägg till aldrig: Hon säger att hon äter kött.',
 			answer: 'Hon säger att hon aldrig äter kött.',
 		},
 	]}
@@ -176,7 +176,7 @@ I en **BI**sats kommer **I**nte **F**öre det **F**inita verbet.
 	topics={[
 		{ href: '../subordinate-clauses/', label: 'Bisatser' },
 		{ href: '../inte-placement/', label: 'Placering av inte' },
-		{ href: '../v2/', label: 'V2-regeln' },
+		{ href: '../v2/', label: 'Verbet på andra plats (V2)' },
 		{ href: '../inversion/', label: 'Inversion' },
 		{ href: '../basic-word-order/', label: 'Grundläggande ordföljd' },
 	]}

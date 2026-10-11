@@ -9,7 +9,7 @@ hero:
     - text: Start the Swedish learning path
       link: ./learn/swedish/learning-path/
       icon: right-arrow
-    - text: Browse Swedish Grammar
+    - text: Browse Swedish grammar
       link: ./learn/swedish/grammar/
       icon: open-book
       variant: minimal
@@ -18,8 +18,8 @@ hero:
 import { Card, CardGrid } from '@astrojs/starlight/components';
 import LanguageComparison from '~/components/LanguageComparison.astro';
 
-A personal language reference for comparing German, English, and Swedish, with
-Swedish as the current learning focus.
+A personal language reference that explains German, English and Swedish side by
+side. Right now the focus is on learning Swedish.
 
 <LanguageComparison title="One meaning, three languages">
 	<p slot="de">Ich habe ein Auto.</p>
@@ -29,56 +29,48 @@ Swedish as the current learning focus.
 
 ## Where to start
 
-The reference is large enough that "read everything" is not an answer. The
-[Swedish learning path](./learn/swedish/learning-path/) gives a curated ordered
-route through the Swedish reference, grouped by the CEFR levels pages already
-declare, and says in one line why each step comes where it does.
+There are many pages here, so it helps to have an order. The
+[Swedish learning path](./learn/swedish/learning-path/) lists the pages from
+beginner (A1) to upper intermediate (B2) and says for each one why it comes at
+that point. If you only want a short start, it begins with five pages.
 
-## Swedish quick start
-
-- [Learn when to use *en* and *ett*](./learn/swedish/grammar/nouns-articles/en-ett/)
-- [Understand V2 word order](./learn/swedish/grammar/sentence-structure/v2/)
-- [Place *inte* with BIFF](./learn/swedish/grammar/sentence-structure/biff/)
-- [Build Swedish noun forms](./learn/swedish/grammar/nouns-articles/noun-forms/)
-- [Match adjective endings](./learn/swedish/grammar/adjectives-adverbs/agreement/)
-- [Recognize the core verb forms](./learn/swedish/grammar/verbs-time-forms/verb-forms/)
-- [Say what you think with reusable patterns](./learn/swedish/sentence-patterns/opinions-and-uncertainty/)
-
-## Explore the reference
+## What you find here
 
 <CardGrid stagger>
-	<Card title="Swedish Learning Path" icon="rocket">
-		A curated ordered route through the Swedish reference, grouped by CEFR level.
-		[Open the Learning Path](./learn/swedish/learning-path/)
+	<Card title="Learning path" icon="rocket">
+		All Swedish pages in a sensible order, from beginner to upper intermediate.
+		[Open the learning path](./learn/swedish/learning-path/)
 	</Card>
 	<Card title="Grammar" icon="open-book">
 		Sentence structure, verbs, nouns, adjectives, and function words.
-		[Open Grammar](./learn/swedish/grammar/)
+		[Open grammar](./learn/swedish/grammar/)
 	</Card>
 	<Card title="Vocabulary" icon="document">
-		Vocabulary organized by real-life situations instead of isolated lists.
-		[Open Vocabulary](./learn/swedish/vocabulary/)
+		Words sorted by everyday situations, not as loose lists.
+		[Open vocabulary](./learn/swedish/vocabulary/)
 	</Card>
-	<Card title="Swedish Sentence Patterns" icon="comment">
-		Reusable constructions for opinions, agreement, reasons, conditions, and
-		conversation.
-		[Open Sentence Patterns](./learn/swedish/sentence-patterns/)
+	<Card title="Sentence patterns" icon="comment">
+		Ready-made sentences for giving opinions, agreeing, giving reasons and
+		keeping a conversation going.
+		[Open sentence patterns](./learn/swedish/sentence-patterns/)
 	</Card>
 	<Card title="Pronunciation" icon="puzzle">
-		Vowel length, hard and soft vowels, word accent, and spoken reductions.
-		[Open Pronunciation](./learn/swedish/pronunciation-basics/)
+		Long and short vowels, hard and soft vowels, word melody, and the sounds
+		that disappear in fast speech.
+		[Open pronunciation](./learn/swedish/pronunciation-basics/)
 	</Card>
-	<Card title="Common Mistakes" icon="warning">
-		Typical transfer errors, false friends, and misleading direct translations.
-		[Open Common Mistakes](./learn/swedish/common-mistakes/)
+	<Card title="Common mistakes" icon="warning">
+		Mistakes that come from German or English habits, false friends, and
+		word-for-word translations that go wrong.
+		[Open common mistakes](./learn/swedish/common-mistakes/)
 	</Card>
-	<Card title="Cheat Sheets" icon="list-format">
-		Compact references for forms, word order, and recurring patterns.
-		[Open Cheat Sheets](./learn/swedish/cheat-sheets/)
+	<Card title="Cheat sheets" icon="list-format">
+		Short overviews of forms, word order and common patterns.
+		[Open cheat sheets](./learn/swedish/cheat-sheets/)
 	</Card>
 	<Card title="Practice" icon="pencil">
-		Every reference page ends with a quick check. This page explains what that
-		covers and what a drill area would add.
-		[Open Practice](./practice/)
+		Every page ends with a few questions to test yourself. This page explains
+		how to use them.
+		[Open practice](./practice/)
 	</Card>
 </CardGrid>
