@@ -1,7 +1,8 @@
 # Audit State
 
 **Phase:** 2 — canonical audit (find only)
-**Next:** audit batch F0 (front door), canonical and both mirrors.
+**Next:** native `de` review of F0 (pages listed in `ledgers/F0.md`,
+"Native review"); meanwhile audit U1, then S1.
 **Rules frozen:** yes, since 2026-10-11 (after R-15). New rule ideas go to
 `rule-proposals.md` as `proposed` and wait for Phase 5.
 
@@ -18,7 +19,7 @@ translate, then a native `de` reader checks them. Their regular batches
 
 | Batch | Scope (canonical, `de/`, `sv/`) | Pages | Audit | Fix | de review |
 | --- | --- | --- | --- | --- | --- |
-| F0 | `index.mdx`, `learn/swedish/{learning-path.mdx,grammar/sentence-structure/v2.mdx,grammar/sentence-structure/biff.mdx,grammar/nouns-articles/en-ett.mdx}` | 15 | open | open | open |
+| F0 | `index.mdx`, `learn/swedish/{learning-path.mdx,grammar/sentence-structure/v2.mdx,grammar/sentence-structure/biff.mdx,grammar/nouns-articles/en-ett.mdx}` | 15 | done@56c8902 | done | open |
 
 ## Outside the pages
 

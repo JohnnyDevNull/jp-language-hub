@@ -29,3 +29,23 @@ belongs in; a term used in several trees is listed once per tree.
 | case | de | form that shows a word's role | P0 dative |
 | dative | de | case for receivers and many prepositions | P0 dative |
 | two-way preposition (`Wechselpräposition`) | de | preposition taking dative or accusative | P0 dative |
+
+## School terms per meta language (R-13)
+
+Prose uses these; the technical or field term goes once in parentheses.
+Collected from F0. Extend per batch.
+
+| Concept | en | de | sv |
+| --- | --- | --- | --- |
+| finite verb | conjugated verb | konjugiertes Verb | to confirm with a native reader (`böjt verb`?) |
+| constituent | sentence part | Satzglied | satsdel |
+| subject | subject | Subjekt | subjekt |
+| straight / inverted word order | normal / inverted word order | normale / umgestellte Wortstellung | rak / omvänd ordföljd |
+| subordinate clause | subordinate clause | Nebensatz | bisats |
+| subordinator | word that starts a subordinate clause | Wort, das einen Nebensatz einleitet | bisatsinledare |
+| connector | linking word | Bindewort (Konjunktion) | bindeord |
+| last part of a compound | last part | Grundwort | efterled |
+| first part of a compound | first part | Bestimmungswort | förled |
+| sentence patterns (hub section) | sentence patterns | Satzmuster | meningsmönster |
+| cheat sheets (hub section) | cheat sheets | Spickzettel | fusklappar |
+

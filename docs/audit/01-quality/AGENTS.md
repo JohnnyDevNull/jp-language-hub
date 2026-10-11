@@ -37,6 +37,8 @@ it forces the next one to re-audit.
 | 2026-10-11 | D-02: `false-friends` keeps the rude-English traps; no softening for readers 12+. |
 | 2026-10-11 | D-03: Swedish uses the everyday joined forms `idag`, `igår`, `imorgon`, `ikväll`. |
 | 2026-10-11 | Goal sharpened after native-reader feedback: a page must be understandable on its own. Shorter is not a goal. R-12 – R-15 applied. |
+| 2026-10-11 | D-04: the "Swedish quick start" list leaves the start page. |
+| 2026-10-11 | D-05: a native Swedish reader (the author's SFI teacher) may check `sv` later. Until then `sv` work proceeds on best knowledge; uncertain Swedish idiom is marked, not guessed, and `sv` batches stay "N unconfirmed". |
 | 2026-10-11 | Batch U1 covers reader-visible text outside the pages: component labels and data files. |
 | 2026-10-11 | Front-door batch F0 runs first; every mirror batch follows its canonical batch directly; each `de` batch ends with a native-reader check. |
 
@@ -96,6 +98,16 @@ Per fixed batch: `npm run quality`, then
 
 ## History
 
+- 2026-10-11 — F0 fixed: five canonical pages rewritten in plain language,
+  BIFF schema error fixed, quick start removed (D-04), Swedish glossary
+  created (10 terms, all locales), `de` and `sv` re-translated from briefs.
+  Two content errors found and fixed on the way (F0-29, F0-30). Quality and
+  build pass. Next: native `de` review; `sv` questions listed for D-05.
+- 2026-10-11 — F0 audited: 15 of 15 pages `fix`, none `rewrite`. Canonical:
+  28 findings (titles as abbreviations, jargon before explanation, project
+  vocabulary, CEFR unexplained); grammar and forms correct. Mirrors: 18 `de`
+  and 17 `sv` translation findings, 2 of them S1/meaning-changing, plus
+  re-translation briefs. Next: D-04/D-05, then fix F0.
 - 2026-10-11 — Native-reader feedback on the `de` start page, learning path
   and V2 page. Added R-12 – R-15 (self-contained pages, school terms in
   prose, natural language, plain titles and labels), dimension N with a
