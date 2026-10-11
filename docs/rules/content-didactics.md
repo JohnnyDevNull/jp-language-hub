@@ -44,6 +44,21 @@ and practical; do not use it to duplicate the full rule.
 Readers are 12 years and older, with school grammar. They can look things
 up, but must not need to in order to follow a page.
 
+### A page carries itself
+
+The hub is a reference: a reader opens one page to understand one topic and
+should not have to open ten more to get there. The test for every page:
+
+> Reading only this page, without following a link, a reader can explain the
+> rule in their own words and answer its QuickCheck.
+
+Everything the page needs for that is either on the assumed-known list below
+or explained on the page itself, in a sentence or a short parenthesis. Links
+— to the glossary, to a related page — deepen; they are never required to
+follow the page. Length serves this test: a page that is long because it
+explains its own prerequisites is right, one that is short because it relies
+on other pages is not.
+
 - Use plain words and one idea per sentence. Keep prose sentences under
   about 25 words.
 - Follow every rule with an example within two sentences. A rule that is
@@ -51,24 +66,50 @@ up, but must not need to in order to follow a page.
 - Academic register is a defect, not a style: "productive system",
   "foreground a result", "the appropriate perspective" all have plain
   equivalents.
+- Project vocabulary never reaches a reader: frontmatter, canonical, route,
+  tree, locale, meta language, curated.
+
+### Natural language
+
+Write the way a native speaker of the meta language writes, in every locale,
+including the English source. The patterns below make a text read as
+machine-made and are defects:
+
+- imperative fragments as descriptions: "say what happens now",
+  "hear why vowel length changes meaning";
+- dropped articles: "warum Vokallänge Bedeutung verändert";
+- a heading that is a fragment of a sentence: "Start here today",
+  "Heute hier anfangen";
+- clever framing instead of a statement: "'read everything' is not a
+  helpful answer";
+- English sentence structure carried into German or Swedish.
 
 ### Grammar terms
 
 These terms count as known and need no explanation: noun, verb, adjective,
 adverb, pronoun, article, subject, object, sentence, question, singular,
-plural, present tense, past tense, future, word order.
+plural, present tense, past tense, future, word order. So do their school
+names in each meta language — in German, for example, `Subjekt`,
+`konjugiertes Verb`, `Gegenwart`.
 
-Every other grammar term — supine, finite, auxiliary, participle, preterite,
-subordinate clause, case, dative, a field name such as `fundament` — links
-to the learning language's glossary on its **first use on the page**:
-`[supine](../../glossary/#supine)`. Later uses on the same page stay plain.
+**Prose uses the school term of the meta language.** Where school grammar
+has a word, the explanation uses it: German "das konjugierte Verb", English
+"the conjugated verb", not "the finite verb" or `finit verb`. The learning
+language's field name appears once, in parentheses at the first use, so the
+reader recognises it in a schema: "das konjugierte Verb
+(<span lang="sv">finit verb</span>)". After that, the prose keeps the school
+term. Field names otherwise live in `SentenceSchema` columns and in the
+glossary.
 
-Where a link cannot be placed, because the term sits in a component prop
-that only takes a string, add a short gloss in parentheses and italics
-right after it: `supine (*the form after har*)`.
+**A term without a school word** — supine, sentence adverb, case for an
+English reader, the CEFR levels — is explained in plain words at its **first
+use on the page**, and links to the glossary there:
+`[supine](../../glossary/#supine) (the verb form after har)`. The explanation
+is what makes the page readable; the link is only the way to more. Later
+uses on the same page stay plain.
 
-A useful term is not avoided for being technical. Learners who will meet
-`finit verb` in every Swedish grammar should meet it here first, explained.
+Inside a component prop that only takes a string, the plain explanation in
+parentheses stands alone.
 
 ## Glossary pages
 
@@ -247,9 +288,11 @@ needs nothing.
 
 ### Grammar terms count as target-language text
 
-A field name carried into the prose — `fundament` in an English sentence,
-`rechte Satzklammer` in one about German — is foreign text like any example, and
-is marked the same way. Without the mark a screen reader pronounces it in the
+Prose names clause parts with school terms (see [Grammar terms](#grammar-terms)).
+Where a field name does appear in prose — in its first-use parenthesis, or
+in a field formula such as a core-rule pattern line — it is foreign text like
+any example, and is marked the same way: `fundament` in an English sentence,
+`rechte Satzklammer` in one about German. Without the mark a screen reader pronounces it in the
 meta language. The mark adds no visible styling, so it costs the reader
 nothing.
 
@@ -287,11 +330,21 @@ content that does not exist in the canonical learning tree. New learning
 topics belong in the root-locale source first, then translations can mirror
 them.
 
-## RelatedTopics labels
+## Titles, headings and labels
 
-Labels use sentence case, like page titles: `Two-way prepositions`, not
-`Two Way Prepositions`. A label in the learning language keeps that
-language's own spelling.
+A reader decides from a title, a sidebar entry, a card or a link label
+whether to click. Each of them names the topic in plain words.
+
+- An abbreviation or memory rule never stands alone. The topic comes first,
+  the name in parentheses: `Negation in subordinate clauses (BIFF)`,
+  `Verb in second position (V2)`.
+- A heading is a noun phrase or a complete question, never a fragment:
+  `Where to start`, not `Start here today`.
+- A link description is optional. Write it only when it adds something the
+  label does not say, and then as a complete, natural sentence.
+- Labels use sentence case, like page titles: `Two-way prepositions`, not
+  `Two Way Prepositions`. A label in the learning language keeps that
+  language's own spelling, for example `en- and ett-words`.
 
 ## Spelling conventions
 
