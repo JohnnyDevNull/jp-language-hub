@@ -16,13 +16,15 @@ for symmetry.
 1. `<KeyTakeaway>` — the first block on the page, before any prose.
 2. `<TagList>` — the page's level and tags, passed straight from the
    frontmatter as `levels={frontmatter.levels} tags={frontmatter.tags}`.
-3. Intro prose, one to three sentences.
+3. Intro prose, two to five sentences — see [Intro](#intro).
 4. `## Use this now` or another fast decision path, where a practical lookup
    page benefits from an immediate action layer.
 5. `## Core rule` — the rule itself, plus a `<SentenceSchema>` where the rule is
    about positions in a clause.
 6. Topic sections.
 7. `## Direct comparison` — one `<LanguageComparison>` per compared meaning.
+   Required on every grammar page in every learning-language tree; see
+   [LanguageComparison](#languagecomparison).
 8. `<MistakeBox>` for the typical transfer error.
 9. `<SpecialRule>` where Swedish deviates from both German and English.
 10. `<MemoryTip>` for the one thing worth memorizing.
@@ -37,6 +39,64 @@ Use the fast decision path for pages where the learner needs to choose a form,
 phrase, or pattern quickly before reading the full explanation. Keep it short
 and practical; do not use it to duplicate the full rule.
 
+## Reader level
+
+Readers are 12 years and older, with school grammar. They can look things
+up, but must not need to in order to follow a page.
+
+- Use plain words and one idea per sentence. Keep prose sentences under
+  about 25 words.
+- Follow every rule with an example within two sentences. A rule that is
+  only stated abstractly is not yet taught.
+- Academic register is a defect, not a style: "productive system",
+  "foreground a result", "the appropriate perspective" all have plain
+  equivalents.
+
+### Grammar terms
+
+These terms count as known and need no explanation: noun, verb, adjective,
+adverb, pronoun, article, subject, object, sentence, question, singular,
+plural, present tense, past tense, future, word order.
+
+Every other grammar term — supine, finite, auxiliary, participle, preterite,
+subordinate clause, case, dative, a field name such as `fundament` — links
+to the learning language's glossary on its **first use on the page**:
+`[supine](../../glossary/#supine)`. Later uses on the same page stay plain.
+
+Where a link cannot be placed, because the term sits in a component prop
+that only takes a string, add a short gloss in parentheses and italics
+right after it: `supine (*the form after har*)`.
+
+A useful term is not avoided for being technical. Learners who will meet
+`finit verb` in every Swedish grammar should meet it here first, explained.
+
+## Glossary pages
+
+Each learning language has one glossary page at `learn/<language>/glossary/`,
+mirrored to `de` and `sv` like any canonical page. It is a lookup, not a
+lesson:
+
+- one `##` heading per term, so its anchor stays stable;
+- one plain sentence of explanation, one example, and a link to the page
+  that teaches it;
+- terms in the language's own terminology, as in the
+  [SentenceSchema](#sentenceschema) table, with the meta-language name next
+  to it where they differ.
+
+A term enters the glossary when a page links to it, not in advance.
+
+## Intro
+
+Two to five sentences, with three jobs:
+
+1. say what the topic is, in plain words;
+2. show it once, in a short example;
+3. say when the learner needs it.
+
+A lookup page may stop at two sentences. A complex topic uses the full five
+rather than a new section: the intro is where a reader decides whether the
+page answers the question.
+
 ## KeyTakeaway
 
 One to three bullets, each a full statement a learner could repeat from memory.
@@ -45,6 +105,14 @@ learner needs without reading anything else.
 
 Do not restate the page title, do not tease ("read on to learn…"), and do not
 exceed three bullets. If a page needs four, it is really two pages.
+
+The KeyTakeaway comes before every explanation. A grammar term in it either
+carries its glossary link there, or the bullet says the same in plain words.
+
+## MistakeBox
+
+One error is taught in one place. The KeyTakeaway may name it; the page then
+shows it in a single `<MistakeBox>`, not again under a second heading.
 
 ## TagList
 
@@ -76,6 +144,12 @@ Do not hand-build a comparison table in Markdown: the component keeps the
 `🇩🇪 → 🇬🇧 → 🇸🇪` order, marks each column with the right `lang`, carries the
 language colors, and stacks on narrow viewports where a four-column table does
 not.
+
+Every grammar page compares, in every learning-language tree: the language
+being learned against the other two. This is the project's standard, not an
+optional extra — the comparison is how a learner reuses what they already
+know. Omit it only where no meaningful parallel exists, and say so in one
+sentence of prose instead.
 
 One component per compared meaning. When a page compares several functions, use
 the component's `title` for the function ("Neutral order", "Time first") and
@@ -143,6 +217,14 @@ it. Diff the three locales by hand after editing one. The `de`/`sv` mirrors are 
 the gloss validator for `columns` alone: an identical label there is the rule,
 not an untranslated leftover.
 
+A cell may only sit under a field label that is true for it. Main and
+subordinate clauses fill different fields: a subordinator is not a
+`fundament`, and a finite verb never stands under `infinit verb`. Compare
+them in two schemas, or give the subordinate-clause rows the subordinate
+field order (`bisatsinledare`, `subjekt`, `satsadverbial`, `finit verb`, …)
+in a schema of their own. Never move a word into a wrong field to make two
+rows line up.
+
 A comparison row is only admissible where the pattern genuinely matches. German
 fills the opening fields of the Swedish schema, but sends non-finite verb forms
 to its own right bracket, so a German row must stop before the point where the
@@ -194,10 +276,38 @@ Translate page titles, descriptions, headings, prose, visible helper labels,
 card text, related-topic labels, and quick-check prompts. Keep Swedish example
 sentences and forms in Swedish, still marked with `<span lang="sv">`.
 
+Translate into natural, plain meta language at the same reader level as the
+source. Do not carry over English abstract nouns as calques: "die passende
+Perspektive" or "eine strukturelle Brücke" read as translated, not written.
+A grammar term gets its glossary link in the translation exactly as in the
+source.
+
 Do not use a Swedish meta-language translation to add extra Swedish-learning
 content that does not exist in the canonical learning tree. New learning
 topics belong in the root-locale source first, then translations can mirror
 them.
+
+## RelatedTopics labels
+
+Labels use sentence case, like page titles: `Two-way prepositions`, not
+`Two Way Prepositions`. A label in the learning language keeps that
+language's own spelling.
+
+## Spelling conventions
+
+Where Swedish accepts two spellings, the hub uses the one more common in
+everyday writing, and uses it everywhere:
+
+| Use | Not |
+| --- | --- |
+| `idag` | `i dag` |
+| `igår` | `i går` |
+| `imorgon` | `i morgon` |
+| `ikväll` | `i kväll` |
+
+Both spellings are correct Swedish (SAOL lists both). The other form is not
+an error a learner must avoid; it is simply not the hub's form. Add a row
+when a page meets another variant pair.
 
 ## Length budget
 
